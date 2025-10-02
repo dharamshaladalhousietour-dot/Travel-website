@@ -13,16 +13,16 @@ const Header = () => {
           <div className="flex items-center space-x-6">
             <div className="flex items-center space-x-1">
               <Phone className="h-3 w-3" />
-              <span>+91 98765 43210</span>
+              <span>+91 189 235 2108</span>
             </div>
             <div className="flex items-center space-x-1">
               <Mail className="h-3 w-3" />
-              <span>info@prettyplanettravels.com</span>
+              <span>prettyplanettravels@hotmail.com</span>
             </div>
           </div>
           <div className="hidden md:flex items-center space-x-1">
             <MapPin className="h-3 w-3" />
-            <span>Sector 15, Chandigarh, India</span>
+            <span>Corporate House, Potala Marg, Dharamshala, H.P - 176215</span>
           </div>
         </div>
       </div>
