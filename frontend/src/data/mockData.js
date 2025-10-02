@@ -115,7 +115,7 @@ export const mockTestimonials = [
     name: "Priya & Arjun Sharma",
     location: "Mumbai, India",
     rating: 5,
-    text: "Pretty Planet made our Kashmir honeymoon absolutely magical! From the houseboat stays to the Shikara rides, every moment was perfect. The Dal Lake sunset will forever be etched in our hearts.",
+    text: "Pretty Planet Travels and Events made our Kashmir honeymoon absolutely magical! From the houseboat stays to the Shikara rides, every moment was perfect. The Dal Lake sunset will forever be etched in our hearts.",
     image: "https://images.unsplash.com/photo-1494790108755-2616b612b789?w=150&h=150&fit=crop&crop=face",
     service: "Kashmir Honeymoon"
   },
