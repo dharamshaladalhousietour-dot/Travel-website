@@ -56,8 +56,28 @@ const Header = () => {
             <a href="#contact" className="text-gray-700 hover:text-blue-900 font-medium transition-colors">Contact</a>
           </div>
 
-          {/* CTA Buttons */}
+          {/* Social Media & CTA Buttons */}
           <div className="hidden md:flex items-center space-x-4">
+            <div className="flex items-center space-x-2 mr-4">
+              <a
+                href="https://www.facebook.com/share/1BafLWD3au/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-8 h-8 bg-blue-600 hover:bg-blue-700 rounded-full flex items-center justify-center transition-colors"
+                aria-label="Facebook"
+              >
+                <Facebook className="h-4 w-4 text-white" />
+              </a>
+              <a
+                href="https://www.instagram.com/prettyplanettravelsandevents?igsh=MWtoYzZucmtwZGl0Mw=="
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-8 h-8 bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 rounded-full flex items-center justify-center transition-colors"
+                aria-label="Instagram"
+              >
+                <Instagram className="h-4 w-4 text-white" />
+              </a>
+            </div>
             <Button variant="outline" className="border-blue-900 text-blue-900 hover:bg-blue-50">
               Get Quote
             </Button>
