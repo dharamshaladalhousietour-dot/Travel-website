@@ -237,5 +237,26 @@ export const mockGalleryImages = [
     category: "Destinations",
     title: "Habba Khatoon Spring",
     description: "Natural beauty of Kashmir springs"
+  },
+  {
+    id: 9,
+    url: "https://images.unsplash.com/photo-1670684960567-a6631b892968?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzV8MHwxfHNlYXJjaHwxfHxLYXNobWlyJTIwdG91cmlzdHN8ZW58MHx8fHwxNzU5NDA1NDEzfDA&ixlib=rb-4.1.0&q=85",
+    category: "Events",
+    title: "Happy Travelers in Kashmir",
+    description: "Groups enjoying snowy Kashmir landscapes"
+  },
+  {
+    id: 10,
+    url: "https://images.unsplash.com/photo-1548013146-72479768bada?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2Njl8MHwxfHNlYXJjaHwxfHxJbmRpYSUyMHRyYXZlbHxlbnwwfHx8fDE3NTk0MDU0MDd8MA&ixlib=rb-4.1.0&q=85",
+    category: "Destinations",
+    title: "Taj Mahal Experience",
+    description: "Visitors exploring India's iconic monument"
+  },
+  {
+    id: 11,
+    url: "https://images.unsplash.com/photo-1598190896090-9dc5c70361d8?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2Njl8MHwxfHNlYXJjaHw0fHxJbmRpYSUyMHRyYXZlbHxlbnwwfHx8fDE3NTk0MDU0MDd8MA&ixlib=rb-4.1.0&q=85",
+    category: "Events",
+    title: "Cultural Adventure Tours",
+    description: "Unique experiences with local traditions"
   }
 ];
