@@ -69,15 +69,15 @@ const About = () => {
               <h3 className="text-3xl font-bold text-blue-900 mb-6">Our Story</h3>
               <div className="space-y-4 text-gray-600 leading-relaxed">
                 <p>
-                  Founded in 2008, Pretty Planet Travels and Events began with a simple belief: 
-                  every journey should be extraordinary, every event should be flawless, and every 
-                  celebration should be magical.
+                  Founded in 2008 under the leadership of Managing Director Rajeev K Bhatia, Pretty Planet 
+                  Travels and Events began with a simple belief: every journey should be extraordinary, 
+                  every event should be flawless, and every celebration should be magical.
                 </p>
                 <p>
-                  What started as a small travel consultancy has grown into a full-service company 
-                  specializing in luxury travel experiences, corporate events, and destination weddings. 
-                  Our team of passionate travel experts and event planners work tirelessly to transform 
-                  your vision into unforgettable memories.
+                  What started as a small travel consultancy in the beautiful hills of Dharamshala has grown 
+                  into a full-service company specializing in luxury travel experiences, corporate events, and 
+                  destination weddings. Our team of passionate travel experts and event planners work tirelessly 
+                  to transform your vision into unforgettable memories.
                 </p>
                 <p>
                   From intimate getaways to grand corporate conferences, from romantic honeymoons to 
