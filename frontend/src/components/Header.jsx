@@ -21,7 +21,7 @@ const Header = () => {
             </div>
             <div className="flex items-center space-x-1">
               <Mail className="h-3 w-3" />
-              <span>prettyplanettravels@hotmail.com</span>
+              <span>holidays@prettyplanettravels.com | events.prettyplanettravels@gmail.com</span>
             </div>
           </div>
           <div className="hidden md:flex items-center space-x-1">
