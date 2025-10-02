@@ -49,17 +49,17 @@ const Contact = () => {
     {
       icon: <MapPin className="h-6 w-6" />,
       title: "Visit Our Office",
-      details: ["Sector 15, SCO 45-46", "Chandigarh, Punjab - 160015", "India"]
+      details: ["Corporate House, Potala Marg", "Dharamshala, H.P - 176215", "India"]
     },
     {
       icon: <Phone className="h-6 w-6" />,
       title: "Call Us",
-      details: ["+91 98765 43210", "+91 98765 43211", "Toll-free: 1800-TRAVEL-1"]
+      details: ["+91 189 235 2108", "+91-86793-33355", "+91-98161-54248"]
     },
     {
       icon: <Mail className="h-6 w-6" />,
       title: "Email Us",
-      details: ["info@prettyplanettravels.com", "bookings@prettyplanettravels.com", "events@prettyplanettravels.com"]
+      details: ["prettyplanettravels@hotmail.com", "info@prettyplanettravels.com", "bookings@prettyplanettravels.com"]
     },
     {
       icon: <Clock className="h-6 w-6" />,
