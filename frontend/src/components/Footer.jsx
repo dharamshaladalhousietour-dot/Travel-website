@@ -162,9 +162,15 @@ const Footer = () => {
                   <span>Events: +91 8679333354</span>
                 </div>
               </div>
-              <div className="flex items-center space-x-3 text-blue-200">
-                <Mail className="h-4 w-4 text-amber-400" />
-                <span>prettyplanettravels@hotmail.com</span>
+              <div className="flex flex-col space-y-1 text-blue-200">
+                <div className="flex items-center space-x-3">
+                  <Mail className="h-4 w-4 text-amber-400" />
+                  <span>holidays@prettyplanettravels.com</span>
+                </div>
+                <div className="flex items-center space-x-3">
+                  <Mail className="h-4 w-4 text-amber-400" />
+                  <span>events.prettyplanettravels@gmail.com</span>
+                </div>
               </div>
             </div>
           </div>
