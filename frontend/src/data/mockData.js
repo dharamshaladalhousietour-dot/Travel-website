@@ -184,17 +184,17 @@ export const mockBlogPosts = [
 export const mockGalleryImages = [
   {
     id: 1,
-    url: "https://images.unsplash.com/photo-1758351820488-8cadd8fde79d?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1Nzl8MHwxfHNlYXJjaHwxfHxsdXh1cnklMjB0cmF2ZWwlMjBkZXN0aW5hdGlvbnN8ZW58MHx8fHwxNzU5NDAxMjg0fDA&ixlib=rb-4.1.0&q=85",
+    url: "https://images.unsplash.com/photo-1708179070772-abf3a1d16b74",
     category: "Destinations",
-    title: "Luxury Marina Resort",
-    description: "Exclusive waterfront luxury experience"
+    title: "Kashmir Valley Paradise",
+    description: "Pristine river flowing through mountain valleys"
   },
   {
     id: 2,
     url: "https://images.unsplash.com/photo-1505944357431-27579db47558?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NjZ8MHwxfHNlYXJjaHwxfHxiZWF1dGlmdWwlMjB3ZWRkaW5nJTIwdmVudWVzfGVufDB8fHx8MTc1OTQwMTI5NHww&ixlib=rb-4.1.0&q=85",
     category: "Weddings",
-    title: "Waterfront Wedding Ceremony",
-    description: "Breathtaking oceanside wedding venue"
+    title: "Mountain Wedding Ceremony",
+    description: "Breathtaking Himalayan backdrop for ceremonies"
   },
   {
     id: 3,
@@ -205,23 +205,37 @@ export const mockGalleryImages = [
   },
   {
     id: 4,
-    url: "https://images.unsplash.com/photo-1719294008010-44116946e5b5?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1Nzl8MHwxfHNlYXJjaHwzfHxsdXh1cnklMjB0cmF2ZWwlMjBkZXN0aW5hdGlvbnN8ZW58MHx8fHwxNzU5NDAxMjg0fDA&ixlib=rb-4.1.0&q=85",
+    url: "https://images.unsplash.com/photo-1657894736581-ccc35d62d9e2",
     category: "Destinations",
-    title: "Historic Architecture",
-    description: "Cultural heritage destinations"
+    title: "Shimla Hill Station",
+    description: "Charming colonial architecture and misty mountains"
   },
   {
     id: 5,
     url: "https://images.unsplash.com/photo-1714004941173-0054629146c2?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NjZ8MHwxfHNlYXJjaHwzfHxiZWF1dGlmdWwlMjB3ZWRkaW5nJTIwdmVudWVzfGVufDB8fHx8MTc1OTQwMTI5NHww&ixlib=rb-4.1.0&q=85",
     category: "Weddings",
-    title: "Elegant Reception Hall",
-    description: "Luxury indoor wedding venue"
+    title: "Luxury Mountain Resort",
+    description: "Premium wedding venues in hill stations"
   },
   {
     id: 6,
-    url: "https://images.unsplash.com/photo-1692380827087-eacf69856b1b?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1ODF8MHwxfHNlYXJjaHwyfHxlbGVnYW50JTIwY29ycG9yYXRlJTIwZXZlbnRzfGVufDB8fHx8MTc1OTQwMTI4OXww&ixlib=rb-4.1.0&q=85",
-    category: "Events",
-    title: "Modern Conference Venue",
-    description: "State-of-the-art meeting facilities"
+    url: "https://images.unsplash.com/photo-1745737204244-db3bbf72e3fa",
+    category: "Destinations",
+    title: "Himalayan Sunrise",
+    description: "Golden peaks of Leh Ladakh at dawn"
+  },
+  {
+    id: 7,
+    url: "https://images.unsplash.com/photo-1581791534721-e599df4417f7",
+    category: "Destinations",
+    title: "Parvati River, Kasol",
+    description: "Crystal clear waters through pine forests"
+  },
+  {
+    id: 8,
+    url: "https://images.unsplash.com/photo-1708186320869-0a527e67023d",
+    category: "Destinations",
+    title: "Habba Khatoon Spring",
+    description: "Natural beauty of Kashmir springs"
   }
 ];
