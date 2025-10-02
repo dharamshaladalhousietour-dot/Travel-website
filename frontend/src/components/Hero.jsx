@@ -55,7 +55,7 @@ const Hero = () => {
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-16">
             <a
-              href="https://wa.me/918679333355?text=Hello!%20I%20want%20to%20book%20travel%20with%20an%20expert.%20Please%20help%20me%20plan%20my%20trip."
+              href="https://wa.me/918679333355?text=Hello!%20I%20want%20to%20book%20tour%20with%20an%20expert.%20Please%20help%20me%20plan%20my%20trip."
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -63,11 +63,11 @@ const Hero = () => {
                 size="lg" 
                 className="bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 text-white px-8 py-4 text-lg font-bold transition-all duration-300 transform hover:scale-105 shadow-xl animate-pulse"
               >
-                🏔️ Book with Expert
+                🏔️ Book Tour with Expert
               </Button>
             </a>
             <a
-              href="https://wa.me/918679333354?text=Hello!%20I%20want%20to%20book%20wedding/event%20services.%20Please%20help%20me%20plan%20my%20event."
+              href="https://wa.me/918679333354?text=Hello!%20I%20want%20to%20book%20events%20with%20an%20expert.%20Please%20help%20me%20plan%20my%20event."
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -75,7 +75,7 @@ const Hero = () => {
                 size="lg" 
                 className="bg-gradient-to-r from-purple-500 to-purple-600 hover:from-purple-600 hover:to-purple-700 text-white px-8 py-4 text-lg font-bold transition-all duration-300 transform hover:scale-105 shadow-xl animate-pulse"
               >
-                💒 Book with Events
+                💒 Book Events with Expert
               </Button>
             </a>
             <Button 
