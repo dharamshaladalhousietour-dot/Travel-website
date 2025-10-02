@@ -42,10 +42,10 @@ const Hero = () => {
       {/* Content */}
       <div className="relative z-10 max-w-7xl mx-auto px-4 py-20 text-center">
         <div className="mb-12">
-          <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight">
-            Create
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-400 to-amber-600"> Unforgettable </span>
-            Moments
+          <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight font-playfair">
+            <span className="inline-block transform hover:scale-105 transition-transform duration-300">Create</span>
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-400 via-yellow-300 to-orange-400 animate-pulse"> Unforgettable </span>
+            <span className="inline-block transform hover:scale-105 transition-transform duration-300">Moments</span>
           </h1>
           <p className="text-xl md:text-2xl text-blue-100 mb-8 max-w-3xl mx-auto leading-relaxed">
             From magical destinations to seamless corporate events and dream weddings, 
