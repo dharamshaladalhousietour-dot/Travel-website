@@ -114,9 +114,15 @@ const Footer = () => {
                 <MapPin className="h-4 w-4 text-amber-400" />
                 <span>Corporate House, Potala Marg, Dharamshala, H.P - 176215</span>
               </div>
-              <div className="flex items-center space-x-3 text-blue-200">
-                <Phone className="h-4 w-4 text-amber-400" />
-                <span>+91 8679333355</span>
+              <div className="flex flex-col space-y-1 text-blue-200">
+                <div className="flex items-center space-x-3">
+                  <Phone className="h-4 w-4 text-amber-400" />
+                  <span>Travel: +91 8679333355 | +91 9816154248</span>
+                </div>
+                <div className="flex items-center space-x-3">
+                  <Phone className="h-4 w-4 text-amber-400" />
+                  <span>Events: +91 8679333354</span>
+                </div>
               </div>
               <div className="flex items-center space-x-3 text-blue-200">
                 <Mail className="h-4 w-4 text-amber-400" />
