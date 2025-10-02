@@ -98,37 +98,37 @@ const Header = () => {
 
         {/* Mobile Navigation */}
         {isMenuOpen && (
-          <div className="md:hidden mt-4 pb-4 border-t border-gray-200 pt-4">
+          <div className="lg:hidden mt-4 pb-4 border-t border-gray-200 pt-4">
             <div className="flex flex-col space-y-3">
-              <a href="#home" className="text-gray-700 hover:text-blue-900 font-medium transition-colors">Home</a>
-              <a href="#about" className="text-gray-700 hover:text-blue-900 font-medium transition-colors">About</a>
-              <a href="#services" className="text-gray-700 hover:text-blue-900 font-medium transition-colors">Services</a>
-              <a href="#packages" className="text-gray-700 hover:text-blue-900 font-medium transition-colors">Packages</a>
-              <a href="#gallery" className="text-gray-700 hover:text-blue-900 font-medium transition-colors">Gallery</a>
-              <a href="#blog" className="text-gray-700 hover:text-blue-900 font-medium transition-colors">Blog</a>
-              <a href="#contact" className="text-gray-700 hover:text-blue-900 font-medium transition-colors">Contact</a>
-              <div className="pt-3 flex flex-col space-y-2">
+              <a href="#home" className="text-gray-700 hover:text-blue-900 font-medium transition-colors px-3 py-2 rounded-lg hover:bg-blue-50">Home</a>
+              <a href="#about" className="text-gray-700 hover:text-blue-900 font-medium transition-colors px-3 py-2 rounded-lg hover:bg-blue-50">About</a>
+              <a href="#services" className="text-gray-700 hover:text-blue-900 font-medium transition-colors px-3 py-2 rounded-lg hover:bg-blue-50">Services</a>
+              <a href="#packages" className="text-gray-700 hover:text-blue-900 font-medium transition-colors px-3 py-2 rounded-lg hover:bg-blue-50">Packages</a>
+              <a href="#gallery" className="text-gray-700 hover:text-blue-900 font-medium transition-colors px-3 py-2 rounded-lg hover:bg-blue-50">Gallery</a>
+              <a href="#blog" className="text-gray-700 hover:text-blue-900 font-medium transition-colors px-3 py-2 rounded-lg hover:bg-blue-50">Blog</a>
+              <a href="#contact" className="text-gray-700 hover:text-blue-900 font-medium transition-colors px-3 py-2 rounded-lg hover:bg-blue-50">Contact</a>
+              <div className="pt-4 flex flex-col space-y-3">
                 <a
-                  href="https://wa.me/918679333355?text=Hello!%20I%20want%20to%20book%20travel%20with%20an%20expert.%20Please%20help%20me%20plan%20my%20trip."
+                  href="https://wa.me/918679333355?text=Hello!%20I%20want%20to%20book%20tour%20with%20an%20expert.%20Please%20help%20me%20plan%20my%20trip."
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-full"
                 >
-                  <Button className="bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 text-white w-full font-bold">
-                    🏔️ Book with Expert
+                  <Button className="bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 text-white w-full font-bold py-3">
+                    🏔️ Book Tour with Expert
                   </Button>
                 </a>
                 <a
-                  href="https://wa.me/918679333354?text=Hello!%20I%20want%20to%20book%20wedding/event%20services.%20Please%20help%20me%20plan%20my%20event."
+                  href="https://wa.me/918679333354?text=Hello!%20I%20want%20to%20book%20events%20with%20an%20expert.%20Please%20help%20me%20plan%20my%20event."
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-full"
                 >
-                  <Button className="bg-gradient-to-r from-purple-500 to-purple-600 hover:from-purple-600 hover:to-purple-700 text-white w-full font-bold">
-                    💒 Book with Events
+                  <Button className="bg-gradient-to-r from-purple-500 to-purple-600 hover:from-purple-600 hover:to-purple-700 text-white w-full font-bold py-3">
+                    💒 Book Events with Expert
                   </Button>
                 </a>
-                <Button variant="outline" className="border-blue-900 text-blue-900 hover:bg-blue-50 w-full">
+                <Button variant="outline" className="border-blue-900 text-blue-900 hover:bg-blue-50 w-full py-3">
                   Get Quote
                 </Button>
               </div>
