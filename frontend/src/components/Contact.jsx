@@ -54,7 +54,7 @@ const Contact = () => {
     {
       icon: <Phone className="h-6 w-6" />,
       title: "Call Us",
-      details: ["+91 8679333355", "+91-86793-33355", "+91-98161-54248"]
+      details: ["Travel & Tours: +91 8679333355 | +91 9816154248", "Weddings & Events: +91 8679333354", "General Inquiry: +91-86793-33355"]
     },
     {
       icon: <Mail className="h-6 w-6" />,
