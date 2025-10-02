@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Menu, X, MapPin, Phone, Mail } from 'lucide-react';
+import { Menu, X, MapPin, Phone, Mail, Facebook, Instagram } from 'lucide-react';
 import { Button } from './ui/button';
 
 const Header = () => {
