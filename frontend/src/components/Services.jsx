@@ -108,6 +108,38 @@ const Services = () => {
           })}
         </div>
 
+        {/* WedMeGood Portfolio Section */}
+        <div className="text-center bg-gradient-to-r from-pink-600 to-purple-600 rounded-2xl p-12 text-white mb-12">
+          <h3 className="text-3xl font-bold mb-4 flex items-center justify-center">
+            <span className="mr-3">💒</span>
+            View Our Wedding Portfolios
+            <span className="ml-3">💍</span>
+          </h3>
+          <p className="text-xl text-pink-100 mb-8 max-w-2xl mx-auto">
+            Explore our verified wedding planning services and client reviews on WedMeGood - India's largest wedding platform.
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <a
+              href="https://www.wedmegood.com/profile/Destination-Weddings-And-Honeymoon-1743009"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Button size="lg" className="bg-white text-purple-600 hover:bg-gray-100 px-8 font-bold">
+                💒 Destination Weddings & Honeymoon
+              </Button>
+            </a>
+            <a
+              href="https://www.wedmegood.com/profile/Pretty-Planet-Travels-and-Events-4367953"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Button size="lg" className="bg-white text-purple-600 hover:bg-gray-100 px-8 font-bold">
+                💍 Pretty Planet Travels and Events
+              </Button>
+            </a>
+          </div>
+        </div>
+
         {/* CTA Section */}
         <div className="text-center bg-gradient-to-r from-blue-900 to-blue-800 rounded-2xl p-12 text-white">
           <h3 className="text-3xl font-bold mb-4">
