@@ -43,8 +43,8 @@ const Footer = () => {
   ];
 
   const socialLinks = [
-    { name: 'Facebook', icon: <Facebook className="h-5 w-5" />, href: '#' },
-    { name: 'Instagram', icon: <Instagram className="h-5 w-5" />, href: '#' },
+    { name: 'Facebook', icon: <Facebook className="h-5 w-5" />, href: 'https://www.facebook.com/share/1BafLWD3au/' },
+    { name: 'Instagram', icon: <Instagram className="h-5 w-5" />, href: 'https://www.instagram.com/prettyplanettravelsandevents?igsh=MWtoYzZucmtwZGl0Mw==' },
     { name: 'Twitter', icon: <Twitter className="h-5 w-5" />, href: '#' },
     { name: 'LinkedIn', icon: <Linkedin className="h-5 w-5" />, href: '#' },
     { name: 'YouTube', icon: <Youtube className="h-5 w-5" />, href: '#' }
