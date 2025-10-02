@@ -102,8 +102,8 @@ const About = () => {
           <div className="relative">
             <div className="relative overflow-hidden rounded-2xl shadow-2xl">
               <img 
-                src="https://images.unsplash.com/photo-1728137490905-281e8c23712f"
-                alt="Beautiful Kashmir Valley landscape"
+                src="https://images.unsplash.com/photo-1463760959829-d829ea46e191?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1Nzd8MHwxfHNlYXJjaHwzfHxtb3VudGFpbiUyMHZpc3RhfGVufDB8fHx8MTc1OTQwODc5N3ww&ixlib=rb-4.1.0&q=85"
+                alt="Inspiring mountain lake view - Our Story"
                 className="w-full h-96 object-cover transform hover:scale-105 transition-transform duration-700"
               />
               {/* Overlay */}
