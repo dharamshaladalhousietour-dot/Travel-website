@@ -53,7 +53,7 @@ const About = () => {
             <Heart className="h-8 w-8 text-white" />
           </div>
           <h2 className="text-4xl md:text-5xl font-bold text-blue-900 mb-6">
-            About Pretty Planet
+            About Pretty Planet Travels and Events
           </h2>
           <div className="w-24 h-1 bg-gradient-to-r from-amber-400 to-amber-600 mx-auto mb-8"></div>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
