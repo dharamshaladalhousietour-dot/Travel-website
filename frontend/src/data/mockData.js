@@ -124,7 +124,7 @@ export const mockTestimonials = [
     name: "Rajesh Kumar",
     location: "Delhi, India",
     rating: 5,
-    text: "The corporate retreat in Manali was exceptional. Beautiful valley views, professional organization, and team building activities that brought our employees together. Highly recommend Pretty Planet!",
+    text: "The corporate retreat in Manali was exceptional. Beautiful valley views, professional organization, and team building activities that brought our employees together. Highly recommend Pretty Planet Travels and Events!",
     image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop&crop=face",
     service: "Corporate Retreat"
   },
