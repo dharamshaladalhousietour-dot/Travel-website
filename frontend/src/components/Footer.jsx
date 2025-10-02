@@ -50,6 +50,19 @@ const Footer = () => {
     { name: 'YouTube', icon: <Youtube className="h-5 w-5" />, href: '#' }
   ];
 
+  const wedmeGoodLinks = [
+    { 
+      name: 'Destination Weddings & Honeymoon', 
+      href: 'https://www.wedmegood.com/profile/Destination-Weddings-And-Honeymoon-1743009',
+      icon: '💒'
+    },
+    { 
+      name: 'Pretty Planet Travels and Events', 
+      href: 'https://www.wedmegood.com/profile/Pretty-Planet-Travels-and-Events-4367953',
+      icon: '💍'
+    }
+  ];
+
   return (
     <footer className="bg-gradient-to-b from-blue-900 to-blue-950 text-white">
       {/* Newsletter Section */}
