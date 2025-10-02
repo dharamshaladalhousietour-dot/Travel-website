@@ -1,14 +1,24 @@
 import React, { useState } from 'react';
-import { MessageCircle, X } from 'lucide-react';
+import { MessageCircle, X, Phone } from 'lucide-react';
 
 const WhatsAppButton = () => {
   const [isHovered, setIsHovered] = useState(false);
+  const [showOptions, setShowOptions] = useState(false);
 
-  const handleWhatsAppClick = () => {
-    const phoneNumber = '918679333355'; // Your phone number without + and spaces
+  const handleTravelWhatsApp = () => {
+    const phoneNumber = '918679333355'; // Travel number
     const message = encodeURIComponent('Hello! I am interested in your travel packages. Can you please help me?');
     const whatsappUrl = `https://wa.me/${phoneNumber}?text=${message}`;
     window.open(whatsappUrl, '_blank');
+    setShowOptions(false);
+  };
+
+  const handleEventsWhatsApp = () => {
+    const phoneNumber = '918679333354'; // Events number
+    const message = encodeURIComponent('Hello! I am interested in your wedding/event planning services. Can you please help me?');
+    const whatsappUrl = `https://wa.me/${phoneNumber}?text=${message}`;
+    window.open(whatsappUrl, '_blank');
+    setShowOptions(false);
   };
 
   return (
