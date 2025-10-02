@@ -53,7 +53,9 @@ const About = () => {
             <Heart className="h-8 w-8 text-white" />
           </div>
           <h2 className="text-4xl md:text-5xl font-bold text-blue-900 mb-6">
-            About Pretty Planet Travels and Events
+            About 
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-900 to-purple-600 font-playfair"> Pretty Planet </span>
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-500 to-orange-500 font-playfair"> Travels & Events</span>
           </h2>
           <div className="w-24 h-1 bg-gradient-to-r from-amber-400 to-amber-600 mx-auto mb-8"></div>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
