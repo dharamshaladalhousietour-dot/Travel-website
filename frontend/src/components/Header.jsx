@@ -43,7 +43,7 @@ const Header = () => {
               <h1 className="text-2xl font-bold company-name sparkle glow-text">
                 Pretty Planet Travels & Events
               </h1>
-              <p className="text-sm font-semibold bg-gradient-to-r from-amber-600 to-orange-600 bg-clip-text text-transparent">
+              <p className="text-sm font-semibold bg-gradient-to-r from-amber-600 to-orange-600 bg-clip-text text-transparent animate-pulse">
                 ✨ Travel · Corporate Events · Weddings ✨
               </p>
             </div>
