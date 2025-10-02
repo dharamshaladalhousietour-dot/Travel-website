@@ -182,81 +182,95 @@ export const mockBlogPosts = [
 ];
 
 export const mockGalleryImages = [
+  // Wedding Portfolio Images
   {
     id: 1,
+    url: "https://images.unsplash.com/photo-1726508684402-ee6029833696",
+    category: "Weddings",
+    title: "Lakeside Mountain Wedding",
+    description: "Stunning destination wedding with mountain lake backdrop"
+  },
+  {
+    id: 2,
+    url: "https://images.pexels.com/photos/169211/pexels-photo-169211.jpeg",
+    category: "Weddings",
+    title: "Beach Wedding Ceremony",
+    description: "Elegant beachside ceremony with professional setup"
+  },
+  {
+    id: 3,
+    url: "https://images.unsplash.com/photo-1723832347953-83c28e2d4dd2",
+    category: "Weddings",
+    title: "Luxury Indoor Ceremony",
+    description: "Elegant chandelier venue for sophisticated weddings"
+  },
+  {
+    id: 4,
+    url: "https://images.pexels.com/photos/169196/pexels-photo-169196.jpeg",
+    category: "Weddings",
+    title: "Tropical Beach Wedding",
+    description: "Paradise wedding setup with ocean views"
+  },
+  {
+    id: 5,
+    url: "https://images.unsplash.com/photo-1507915977619-6ccfe8003ae6",
+    category: "Weddings",
+    title: "Autumn Outdoor Ceremony",
+    description: "Beautiful natural setting with fall foliage"
+  },
+  
+  // Corporate Events Portfolio
+  {
+    id: 6,
+    url: "https://images.unsplash.com/photo-1561489396-888724a1543d",
+    category: "Events",
+    title: "Professional Conference Setup",
+    description: "Modern corporate event venue and presentation"
+  },
+  {
+    id: 7,
+    url: "https://images.pexels.com/photos/50675/banquet-wedding-society-deco-50675.jpeg",
+    category: "Events",
+    title: "Elegant Banquet Setup",
+    description: "Sophisticated dining arrangement for corporate events"
+  },
+  {
+    id: 8,
+    url: "https://images.unsplash.com/photo-1558008258-3256797b43f3",
+    category: "Events",
+    title: "Corporate Presentation Venue",
+    description: "Professional audience setting for business events"
+  },
+
+  // Destination Travel Images
+  {
+    id: 9,
     url: "https://images.unsplash.com/photo-1708179070772-abf3a1d16b74",
     category: "Destinations",
     title: "Kashmir Valley Paradise",
     description: "Pristine river flowing through mountain valleys"
   },
   {
-    id: 2,
-    url: "https://images.unsplash.com/photo-1505944357431-27579db47558?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NjZ8MHwxfHNlYXJjaHwxfHxiZWF1dGlmdWwlMjB3ZWRkaW5nJTIwdmVudWVzfGVufDB8fHx8MTc1OTQwMTI5NHww&ixlib=rb-4.1.0&q=85",
-    category: "Weddings",
-    title: "Mountain Wedding Ceremony",
-    description: "Breathtaking Himalayan backdrop for ceremonies"
-  },
-  {
-    id: 3,
-    url: "https://images.unsplash.com/photo-1653821355736-0c2598d0a63e?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1ODF8MHwxfHNlYXJjaHwxfHxlbGVnYW50JTIwY29ycG9yYXRlJTIwZXZlbnRzfGVufDB8fHx8MTc1OTQwMTI4OXww&ixlib=rb-4.1.0&q=85",
-    category: "Events",
-    title: "Elegant Corporate Dinner",
-    description: "Sophisticated business event setup"
-  },
-  {
-    id: 4,
+    id: 10,
     url: "https://images.unsplash.com/photo-1657894736581-ccc35d62d9e2",
     category: "Destinations",
     title: "Shimla Hill Station",
     description: "Charming colonial architecture and misty mountains"
   },
   {
-    id: 5,
-    url: "https://images.unsplash.com/photo-1714004941173-0054629146c2?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NjZ8MHwxfHNlYXJjaHwzfHxiZWF1dGlmdWwlMjB3ZWRkaW5nJTIwdmVudWVzfGVufDB8fHx8MTc1OTQwMTI5NHww&ixlib=rb-4.1.0&q=85",
-    category: "Weddings",
-    title: "Luxury Mountain Resort",
-    description: "Premium wedding venues in hill stations"
-  },
-  {
-    id: 6,
+    id: 11,
     url: "https://images.unsplash.com/photo-1745737204244-db3bbf72e3fa",
     category: "Destinations",
     title: "Himalayan Sunrise",
     description: "Golden peaks of Leh Ladakh at dawn"
   },
+
+  // Special Venue
   {
-    id: 7,
-    url: "https://images.unsplash.com/photo-1581791534721-e599df4417f7",
-    category: "Destinations",
-    title: "Parvati River, Kasol",
-    description: "Crystal clear waters through pine forests"
-  },
-  {
-    id: 8,
-    url: "https://images.unsplash.com/photo-1708186320869-0a527e67023d",
-    category: "Destinations",
-    title: "Habba Khatoon Spring",
-    description: "Natural beauty of Kashmir springs"
-  },
-  {
-    id: 9,
-    url: "https://images.unsplash.com/photo-1670684960567-a6631b892968?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzV8MHwxfHNlYXJjaHwxfHxLYXNobWlyJTIwdG91cmlzdHN8ZW58MHx8fHwxNzU5NDA1NDEzfDA&ixlib=rb-4.1.0&q=85",
-    category: "Events",
-    title: "Happy Travelers in Kashmir",
-    description: "Groups enjoying snowy Kashmir landscapes"
-  },
-  {
-    id: 10,
-    url: "https://images.unsplash.com/photo-1548013146-72479768bada?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2Njl8MHwxfHNlYXJjaHwxfHxJbmRpYSUyMHRyYXZlbHxlbnwwfHx8fDE3NTk0MDU0MDd8MA&ixlib=rb-4.1.0&q=85",
-    category: "Destinations",
-    title: "Taj Mahal Experience",
-    description: "Visitors exploring India's iconic monument"
-  },
-  {
-    id: 11,
-    url: "https://images.unsplash.com/photo-1598190896090-9dc5c70361d8?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2Njl8MHwxfHNlYXJjaHw0fHxJbmRpYSUyMHRyYXZlbHxlbnwwfHx8fDE3NTk0MDU0MDd8MA&ixlib=rb-4.1.0&q=85",
-    category: "Events",
-    title: "Cultural Adventure Tours",
-    description: "Unique experiences with local traditions"
+    id: 12,
+    url: "https://images.unsplash.com/photo-1726682811289-968611755fca",
+    category: "Weddings",
+    title: "Venice Gondola Wedding",
+    description: "Unique destination wedding experience in Venice"
   }
 ];
