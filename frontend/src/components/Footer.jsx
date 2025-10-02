@@ -95,8 +95,11 @@ const Footer = () => {
                 <span className="text-white font-bold text-xl">PP</span>
               </div>
               <div>
-                <h3 className="text-xl font-bold text-white">Pretty Planet Travels and Events</h3>
-                <p className="text-sm text-amber-400 font-medium">Travel • Events • Weddings</p>
+                <h3 className="text-xl font-bold font-playfair">
+                  <span className="text-transparent bg-clip-text bg-gradient-to-r from-white to-blue-100">Pretty Planet</span>
+                  <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-400 to-orange-300 ml-1">Travels & Events</span>
+                </h3>
+                <p className="text-sm text-amber-300 font-medium">✨ Travel • Events • Weddings ✨</p>
               </div>
             </div>
             
