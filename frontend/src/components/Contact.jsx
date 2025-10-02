@@ -49,12 +49,12 @@ const Contact = () => {
     {
       icon: <MapPin className="h-6 w-6" />,
       title: "Visit Our Office",
-      details: ["123 Travel Street", "Beautiful City, State 12345", "United States"]
+      details: ["Sector 15, SCO 45-46", "Chandigarh, Punjab - 160015", "India"]
     },
     {
       icon: <Phone className="h-6 w-6" />,
       title: "Call Us",
-      details: ["+1 (555) 123-4567", "+1 (555) 123-4568", "Toll-free: 1-800-TRAVEL"]
+      details: ["+91 98765 43210", "+91 98765 43211", "Toll-free: 1800-TRAVEL-1"]
     },
     {
       icon: <Mail className="h-6 w-6" />,
