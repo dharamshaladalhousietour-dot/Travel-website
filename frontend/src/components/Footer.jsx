@@ -120,6 +120,31 @@ const Footer = () => {
               Creating unforgettable journeys, seamless corporate events, and magical weddings 
               since 2008. Your trusted partner for extraordinary experiences.
             </p>
+
+            {/* WedMeGood Profiles */}
+            <div className="mb-6">
+              <h4 className="text-white font-bold mb-3 flex items-center">
+                <span className="text-pink-400 mr-2">💒</span>
+                Our WedMeGood Profiles
+              </h4>
+              <div className="space-y-2">
+                {wedmeGoodLinks.map((link, index) => (
+                  <a
+                    key={index}
+                    href={link.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center space-x-2 text-blue-200 hover:text-pink-300 transition-colors duration-300 text-sm"
+                  >
+                    <span>{link.icon}</span>
+                    <span>{link.name}</span>
+                    <svg className="h-3 w-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                    </svg>
+                  </a>
+                ))}
+              </div>
+            </div>
             
             {/* Contact Info */}
             <div className="space-y-3 text-sm">
