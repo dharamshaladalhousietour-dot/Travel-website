@@ -213,7 +213,7 @@ const About = () => {
           </div>
 
           {/* Social Media Buttons */}
-          <div className="flex justify-center space-x-6">
+          <div className="flex flex-wrap justify-center gap-4">
             <a
               href="https://www.facebook.com/share/1BafLWD3au/"
               target="_blank"
@@ -236,6 +236,16 @@ const About = () => {
                 <path d="M12.017 0C5.396 0 .029 5.367.029 11.987c0 6.62 5.367 11.987 11.988 11.987 6.62 0 11.987-5.367 11.987-11.987C24.014 5.367 18.637.001 12.017.001zM8.449 16.988c-1.297 0-2.448-.49-3.326-1.297C4.198 14.895 3.708 13.744 3.708 12.447s.49-2.448 1.415-3.326c.878-.878 2.029-1.415 3.326-1.415s2.448.537 3.326 1.415c.878.878 1.415 2.029 1.415 3.326s-.537 2.448-1.415 3.244c-.878.807-2.029 1.297-3.326 1.297zm7.718-.878V9.865h-1.297v6.245h1.297zm-.649-7.133c-.439 0-.78-.342-.78-.78s.342-.78.78-.78.78.342.78.78-.341.78-.78.78z"/>
               </svg>
               <span>Follow us on Instagram</span>
+            </a>
+            
+            <a
+              href="https://www.wedmegood.com/profile/Pretty-Planet-Travels-and-Events-4367953"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center space-x-2 bg-gradient-to-r from-pink-500 to-red-500 hover:from-pink-600 hover:to-red-600 text-white px-6 py-3 rounded-full font-medium transition-all duration-300 transform hover:scale-105"
+            >
+              <span className="text-lg">💍</span>
+              <span>View on WedMeGood</span>
             </a>
           </div>
         </div>
