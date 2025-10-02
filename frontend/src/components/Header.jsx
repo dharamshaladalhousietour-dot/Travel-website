@@ -55,14 +55,14 @@ const Header = () => {
           </div>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center space-x-8">
-            <a href="#home" className="text-gray-700 hover:text-blue-900 font-medium transition-colors">Home</a>
-            <a href="#about" className="text-gray-700 hover:text-blue-900 font-medium transition-colors">About</a>
-            <a href="#services" className="text-gray-700 hover:text-blue-900 font-medium transition-colors">Services</a>
-            <a href="#packages" className="text-gray-700 hover:text-blue-900 font-medium transition-colors">Packages</a>
-            <a href="#gallery" className="text-gray-700 hover:text-blue-900 font-medium transition-colors">Gallery</a>
-            <a href="#blog" className="text-gray-700 hover:text-blue-900 font-medium transition-colors">Blog</a>
-            <a href="#contact" className="text-gray-700 hover:text-blue-900 font-medium transition-colors">Contact</a>
+          <div className="hidden lg:flex items-center space-x-6 flex-grow justify-center">
+            <a href="#home" className="text-gray-700 hover:text-blue-900 font-medium transition-colors px-3 py-2 rounded-lg hover:bg-blue-50">Home</a>
+            <a href="#about" className="text-gray-700 hover:text-blue-900 font-medium transition-colors px-3 py-2 rounded-lg hover:bg-blue-50">About</a>
+            <a href="#services" className="text-gray-700 hover:text-blue-900 font-medium transition-colors px-3 py-2 rounded-lg hover:bg-blue-50">Services</a>
+            <a href="#packages" className="text-gray-700 hover:text-blue-900 font-medium transition-colors px-3 py-2 rounded-lg hover:bg-blue-50">Packages</a>
+            <a href="#gallery" className="text-gray-700 hover:text-blue-900 font-medium transition-colors px-3 py-2 rounded-lg hover:bg-blue-50">Gallery</a>
+            <a href="#blog" className="text-gray-700 hover:text-blue-900 font-medium transition-colors px-3 py-2 rounded-lg hover:bg-blue-50">Blog</a>
+            <a href="#contact" className="text-gray-700 hover:text-blue-900 font-medium transition-colors px-3 py-2 rounded-lg hover:bg-blue-50">Contact</a>
           </div>
 
           {/* CTA Buttons */}
