@@ -5,7 +5,7 @@ export const mockServices = [
     description: "Discover the world with our curated travel experiences, from luxury getaways to adventure expeditions.",
     features: ["Holiday Packages", "Adventure Trips", "Family Getaways", "Luxury Cruises", "Cultural Tours"],
     icon: "Globe",
-    image: "https://images.unsplash.com/photo-1758351820488-8cadd8fde79d?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1Nzl8MHwxfHNlYXJjaHwxfHxsdXh1cnklMjB0cmF2ZWwlMjBkZXN0aW5hdGlvbnN8ZW58MHx8fHwxNzU5NDAxMjg0fDA&ixlib=rb-4.1.0&q=85",
+    image: "https://images.unsplash.com/photo-1597074866923-dc0589150358",
     color: "blue"
   },
   {
