@@ -55,29 +55,35 @@ const Hero = () => {
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-16">
             <a
-              href="https://wa.me/918679333355?text=Hello!%20I%20want%20to%20book%20with%20an%20expert.%20Please%20help%20me%20plan%20my%20trip."
+              href="https://wa.me/918679333355?text=Hello!%20I%20want%20to%20book%20travel%20with%20an%20expert.%20Please%20help%20me%20plan%20my%20trip."
               target="_blank"
               rel="noopener noreferrer"
             >
               <Button 
                 size="lg" 
-                className="bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700 text-white px-8 py-4 text-lg font-bold transition-all duration-300 transform hover:scale-105 shadow-xl animate-bounce"
+                className="bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 text-white px-8 py-4 text-lg font-bold transition-all duration-300 transform hover:scale-105 shadow-xl animate-pulse"
               >
-                📞 Book with Expert
+                🏔️ Book with Expert
               </Button>
             </a>
-            <Button 
-              size="lg" 
-              className="bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-600 hover:to-amber-700 text-white px-8 py-4 text-lg font-semibold transition-all duration-300 transform hover:scale-105 shadow-xl"
+            <a
+              href="https://wa.me/918679333354?text=Hello!%20I%20want%20to%20book%20wedding/event%20services.%20Please%20help%20me%20plan%20my%20event."
+              target="_blank"
+              rel="noopener noreferrer"
             >
-              Plan Your Trip
-            </Button>
+              <Button 
+                size="lg" 
+                className="bg-gradient-to-r from-purple-500 to-purple-600 hover:from-purple-600 hover:to-purple-700 text-white px-8 py-4 text-lg font-bold transition-all duration-300 transform hover:scale-105 shadow-xl animate-pulse"
+              >
+                💒 Book with Events
+              </Button>
+            </a>
             <Button 
               size="lg" 
               variant="outline" 
               className="border-2 border-white text-white hover:bg-white hover:text-blue-900 px-8 py-4 text-lg font-semibold transition-all duration-300 backdrop-blur-sm"
             >
-              Book an Event
+              Plan Your Trip
             </Button>
           </div>
         </div>
