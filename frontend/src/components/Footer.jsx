@@ -58,7 +58,7 @@ const Footer = () => {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
               <h3 className="text-3xl font-bold mb-4">
-                Stay Connected with Pretty Planet
+                Stay Connected with Pretty Planet Travels and Events
               </h3>
               <p className="text-blue-200 text-lg leading-relaxed">
                 Subscribe to our newsletter for exclusive travel deals, event planning tips, 
