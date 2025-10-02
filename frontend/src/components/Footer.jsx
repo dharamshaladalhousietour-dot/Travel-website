@@ -109,11 +109,11 @@ const Footer = () => {
             <div className="space-y-3 text-sm">
               <div className="flex items-center space-x-3 text-blue-200">
                 <MapPin className="h-4 w-4 text-amber-400" />
-                <span>123 Travel Street, Beautiful City, State 12345</span>
+                <span>Sector 15, Chandigarh, Punjab, India - 160015</span>
               </div>
               <div className="flex items-center space-x-3 text-blue-200">
                 <Phone className="h-4 w-4 text-amber-400" />
-                <span>+1 (555) 123-4567</span>
+                <span>+91 98765 43210</span>
               </div>
               <div className="flex items-center space-x-3 text-blue-200">
                 <Mail className="h-4 w-4 text-amber-400" />
