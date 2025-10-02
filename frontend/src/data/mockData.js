@@ -112,39 +112,39 @@ export const mockPackages = [
 export const mockTestimonials = [
   {
     id: 1,
-    name: "Sarah & Michael Johnson",
-    location: "New York, USA",
+    name: "Priya & Arjun Sharma",
+    location: "Mumbai, India",
     rating: 5,
-    text: "Pretty Planet made our dream wedding in Santorini absolutely perfect. Every detail was flawlessly executed, from the venue to the photography. We couldn't have asked for a better experience!",
+    text: "Pretty Planet made our Kashmir honeymoon absolutely magical! From the houseboat stays to the Shikara rides, every moment was perfect. The Dal Lake sunset will forever be etched in our hearts.",
     image: "https://images.unsplash.com/photo-1494790108755-2616b612b789?w=150&h=150&fit=crop&crop=face",
-    service: "Destination Wedding"
+    service: "Kashmir Honeymoon"
   },
   {
     id: 2,
-    name: "David Chen",
-    location: "Singapore",
+    name: "Rajesh Kumar",
+    location: "Delhi, India",
     rating: 5,
-    text: "The corporate retreat in Bali was exceptional. The team building activities were engaging, and the venue was perfect for our 50-person team. Highly professional service throughout.",
+    text: "The corporate retreat in Manali was exceptional. Beautiful valley views, professional organization, and team building activities that brought our employees together. Highly recommend Pretty Planet!",
     image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop&crop=face",
-    service: "Corporate Event"
+    service: "Corporate Retreat"
   },
   {
     id: 3,
-    name: "Emily Rodriguez",
-    location: "Los Angeles, USA",
+    name: "Neha Patel",
+    location: "Ahmedabad, India",
     rating: 5,
-    text: "Our family trip to Japan was incredible! The itinerary was perfectly planned, and the local experiences were authentic. My kids still talk about the sushi-making class!",
+    text: "Our family trip to Himachal was incredible! The kids loved Solang Valley, and we all enjoyed the toy train ride in Shimla. Such authentic local experiences and warm hospitality.",
     image: "https://images.unsplash.com/photo-1544725176-7c40e5a71c5e?w=150&h=150&fit=crop&crop=face",
-    service: "Family Travel"
+    service: "Family Adventure"
   },
   {
     id: 4,
-    name: "James & Lisa Thompson",
-    location: "London, UK",
+    name: "Vikram & Kavya Reddy",
+    location: "Bangalore, India",
     rating: 5,
-    text: "The Maldives honeymoon package exceeded all expectations. The overwater villa was stunning, and the private butler service made us feel like royalty. Unforgettable!",
+    text: "The Leh Ladakh expedition was a once-in-a-lifetime experience! Pangong Lake's beauty and the monastery visits were spiritually enriching. Pretty Planet handled everything perfectly!",
     image: "https://images.unsplash.com/photo-1521146764736-56c929d59c83?w=150&h=150&fit=crop&crop=face",
-    service: "Honeymoon Package"
+    service: "Adventure Package"
   }
 ];
 
