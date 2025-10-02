@@ -142,7 +142,7 @@ export const mockTestimonials = [
     name: "Vikram & Kavya Reddy",
     location: "Bangalore, India",
     rating: 5,
-    text: "The Leh Ladakh expedition was a once-in-a-lifetime experience! Pangong Lake's beauty and the monastery visits were spiritually enriching. Pretty Planet handled everything perfectly!",
+    text: "The Leh Ladakh expedition was a once-in-a-lifetime experience! Pangong Lake's beauty and the monastery visits were spiritually enriching. Pretty Planet Travels and Events handled everything perfectly!",
     image: "https://images.unsplash.com/photo-1521146764736-56c929d59c83?w=150&h=150&fit=crop&crop=face",
     service: "Adventure Package"
   }
