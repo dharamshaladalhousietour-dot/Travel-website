@@ -151,33 +151,33 @@ export const mockTestimonials = [
 export const mockBlogPosts = [
   {
     id: 1,
-    title: "Top 10 Romantic Destinations for 2024",
-    excerpt: "Discover the most enchanting places for couples seeking romance and adventure this year.",
-    image: "https://images.unsplash.com/photo-1505944357431-27579db47558?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NjZ8MHwxfHNlYXJjaHwxfHxiZWF1dGlmdWwlMjB3ZWRkaW5nJTIwdmVudWVzfGVufDB8fHx8MTc1OTQwMTI5NHww&ixlib=rb-4.1.0&q=85",
+    title: "Best Time to Visit Kashmir: A Complete Guide",
+    excerpt: "Discover the perfect seasons to experience Kashmir's beauty, from blooming tulips to snow-covered landscapes.",
+    image: "https://images.unsplash.com/photo-1708179070772-abf3a1d16b74",
     category: "Travel Tips",
     readTime: "5 min read",
     date: "Jan 15, 2024",
-    author: "Sarah Mitchell"
+    author: "Anjali Sharma"
   },
   {
     id: 2,
-    title: "Planning the Perfect Corporate Event: A Complete Guide",
-    excerpt: "Essential tips and strategies for organizing memorable corporate events that engage and inspire.",
+    title: "Planning Corporate Retreats in Himachal Pradesh",
+    excerpt: "Essential tips for organizing memorable corporate events in the beautiful mountain destinations of Himachal.",
     image: "https://images.unsplash.com/photo-1653821355736-0c2598d0a63e?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1ODF8MHwxfHNlYXJjaHwxfHxlbGVnYW50JTIwY29ycG9yYXRlJTIwZXZlbnRzfGVufDB8fHx8MTc1OTQwMTI4OXww&ixlib=rb-4.1.0&q=85",
     category: "Event Planning",
     readTime: "8 min read",
     date: "Jan 10, 2024",
-    author: "Mark Johnson"
+    author: "Rajesh Gupta"
   },
   {
     id: 3,
-    title: "Destination Wedding Trends: What's Hot in 2024",
-    excerpt: "From intimate ceremonies to grand celebrations, explore the latest trends in destination weddings.",
+    title: "Mountain Destination Weddings: Himachal & Kashmir Venues",
+    excerpt: "From intimate hill station ceremonies to grand mountain celebrations, explore the most romantic venues in North India.",
     image: "https://images.unsplash.com/photo-1714004941173-0054629146c2?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NjZ8MHwxfHNlYXJjaHwzfHxiZWF1dGlmdWwlMjB3ZWRkaW5nJTIwdmVudWVzfGVufDB8fHx8MTc1OTQwMTI5NHww&ixlib=rb-4.1.0&q=85",
     category: "Wedding Planning",
     readTime: "6 min read",
     date: "Jan 5, 2024",
-    author: "Emma Davis"
+    author: "Priya Mehta"
   }
 ];
 
