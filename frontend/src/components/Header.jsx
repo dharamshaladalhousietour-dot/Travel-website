@@ -128,6 +128,16 @@ const Header = () => {
                 <Button variant="outline" className="border-blue-900 text-blue-900 hover:bg-blue-50 w-full">
                   Get Quote
                 </Button>
+                <a
+                  href="https://wa.me/918679333355?text=Hello!%20I%20want%20to%20book%20with%20an%20expert.%20Please%20help%20me%20plan%20my%20trip."
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-full"
+                >
+                  <Button className="bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700 text-white w-full font-bold">
+                    📞 Book with Expert
+                  </Button>
+                </a>
                 <Button className="bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-600 hover:to-amber-700 text-white w-full">
                   Book Now
                 </Button>
