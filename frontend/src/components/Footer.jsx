@@ -16,12 +16,12 @@ const Footer = () => {
   ];
 
   const destinations = [
-    { name: 'Maldives Packages', href: '#packages' },
-    { name: 'Paris Romance Tours', href: '#packages' },
-    { name: 'Bali Adventures', href: '#packages' },
-    { name: 'Swiss Alps Getaway', href: '#packages' },
-    { name: 'Tokyo Cultural Tours', href: '#packages' },
-    { name: 'Santorini Luxury', href: '#packages' }
+    { name: 'Kashmir Valley Tours', href: '#packages' },
+    { name: 'Shimla Hill Station', href: '#packages' },
+    { name: 'Manali Adventures', href: '#packages' },
+    { name: 'Leh Ladakh Expedition', href: '#packages' },
+    { name: 'Dharamshala Retreats', href: '#packages' },
+    { name: 'Himachal Luxury', href: '#packages' }
   ];
 
   const company = [
