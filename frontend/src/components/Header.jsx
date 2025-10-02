@@ -34,9 +34,9 @@ const Header = () => {
           <div className="flex items-center space-x-3">
             <div className="w-12 h-12 rounded-full overflow-hidden flex items-center justify-center">
               <img 
-                src="https://customer-assets.emergentagent.com/job_wanderlust-web-3/artifacts/41u9keji_image.png" 
+                src="https://customer-assets.emergentagent.com/job_wanderlust-web-3/artifacts/gj7j2eju_image.png" 
                 alt="Pretty Planet Travels and Events Logo"
-                className="w-full h-full object-cover"
+                className="w-full h-full object-contain"
               />
             </div>
             <div>
