@@ -23,11 +23,11 @@ const Hero = () => {
       {/* Background Images */}
       <div className="absolute inset-0 z-0">
         <div className="relative h-full w-full">
-          {/* Primary background image */}
+          {/* Primary background image - Himachal Pradesh Mountains */}
           <div 
             className="absolute inset-0 bg-cover bg-center bg-no-repeat"
             style={{
-              backgroundImage: 'url(https://images.unsplash.com/photo-1758351820488-8cadd8fde79d?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1Nzl8MHwxfHNlYXJjaHwxfHxsdXh1cnklMjB0cmF2ZWwlMjBkZXN0aW5hdGlvbnN8ZW58MHx8fHwxNzU5NDAxMjg0fDA&ixlib=rb-4.1.0&q=85)'
+              backgroundImage: 'url(https://images.unsplash.com/photo-1648034902541-b239c599114e)'
             }}
           />
           
