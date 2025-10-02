@@ -32,11 +32,15 @@ const Header = () => {
         <div className="flex justify-between items-center">
           {/* Logo */}
           <div className="flex items-center space-x-3">
-            <div className="w-12 h-12 bg-gradient-to-br from-blue-900 to-blue-700 rounded-full flex items-center justify-center">
-              <span className="text-white font-bold text-xl">PP</span>
+            <div className="w-12 h-12 rounded-full overflow-hidden flex items-center justify-center">
+              <img 
+                src="https://customer-assets.emergentagent.com/job_wanderlust-web-3/artifacts/41u9keji_image.png" 
+                alt="Pretty Planet Travels and Events Logo"
+                className="w-full h-full object-cover"
+              />
             </div>
             <div>
-              <h1 className="text-2xl font-bold text-blue-900">Pretty Planet</h1>
+              <h1 className="text-2xl font-bold text-blue-900">Pretty Planet Travels and Events</h1>
               <p className="text-sm text-amber-600 font-medium">Travel · Corporate Events · Weddings</p>
             </div>
           </div>
