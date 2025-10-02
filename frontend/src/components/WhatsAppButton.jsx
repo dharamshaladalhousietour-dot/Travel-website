@@ -5,7 +5,7 @@ const WhatsAppButton = () => {
   const [isHovered, setIsHovered] = useState(false);
 
   const handleWhatsAppClick = () => {
-    const phoneNumber = '911892352108'; // Your phone number without + and spaces
+    const phoneNumber = '918679333355'; // Your phone number without + and spaces
     const message = encodeURIComponent('Hello! I am interested in your travel packages. Can you please help me?');
     const whatsappUrl = `https://wa.me/${phoneNumber}?text=${message}`;
     window.open(whatsappUrl, '_blank');
