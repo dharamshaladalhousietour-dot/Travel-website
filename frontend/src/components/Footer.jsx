@@ -75,7 +75,7 @@ const Footer = () => {
               </h3>
               <p className="text-blue-200 text-lg leading-relaxed">
                 Subscribe to our newsletter for exclusive travel deals, event planning tips, 
-                and inspiring destination stories delivered to your inbox.
+                and inspiring destination stories delivered directly to your inbox.
               </p>
             </div>
             
