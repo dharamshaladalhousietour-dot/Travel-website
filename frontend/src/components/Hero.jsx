@@ -84,12 +84,12 @@ const Hero = () => {
                   <SelectValue placeholder="Where to?" />
                 </SelectTrigger>
                 <SelectContent>
-                  <SelectItem value="paris">Paris, France</SelectItem>
-                  <SelectItem value="bali">Bali, Indonesia</SelectItem>
-                  <SelectItem value="maldives">Maldives</SelectItem>
-                  <SelectItem value="tokyo">Tokyo, Japan</SelectItem>
-                  <SelectItem value="dubai">Dubai, UAE</SelectItem>
-                  <SelectItem value="santorini">Santorini, Greece</SelectItem>
+                  <SelectItem value="shimla">Shimla, Himachal Pradesh</SelectItem>
+                  <SelectItem value="kashmir">Kashmir Valley</SelectItem>
+                  <SelectItem value="manali">Manali, Himachal Pradesh</SelectItem>
+                  <SelectItem value="dharamshala">Dharamshala, Himachal Pradesh</SelectItem>
+                  <SelectItem value="srinagar">Srinagar, Kashmir</SelectItem>
+                  <SelectItem value="leh-ladakh">Leh Ladakh</SelectItem>
                 </SelectContent>
               </Select>
             </div>
