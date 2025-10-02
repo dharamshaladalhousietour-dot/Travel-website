@@ -40,11 +40,8 @@ const Header = () => {
               />
             </div>
             <div>
-              <h1 className="text-2xl font-bold bg-gradient-to-r from-blue-900 via-blue-700 to-purple-600 bg-clip-text text-transparent hover:from-purple-600 hover:via-blue-700 hover:to-blue-900 transition-all duration-500 cursor-pointer font-playfair">
-                Pretty Planet
-                <span className="text-2xl font-bold bg-gradient-to-r from-amber-500 via-orange-500 to-red-500 bg-clip-text text-transparent ml-2">
-                  Travels & Events
-                </span>
+              <h1 className="text-2xl font-bold company-name sparkle glow-text">
+                Pretty Planet Travels & Events
               </h1>
               <p className="text-sm font-semibold bg-gradient-to-r from-amber-600 to-orange-600 bg-clip-text text-transparent">
                 ✨ Travel · Corporate Events · Weddings ✨
