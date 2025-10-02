@@ -54,7 +54,7 @@ const Contact = () => {
     {
       icon: <Phone className="h-6 w-6" />,
       title: "Call Us",
-      details: ["+91 189 235 2108", "+91-86793-33355", "+91-98161-54248"]
+      details: ["+91 8679333355", "+91-86793-33355", "+91-98161-54248"]
     },
     {
       icon: <Mail className="h-6 w-6" />,
