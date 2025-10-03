@@ -10,10 +10,10 @@ const Header = () => {
       {/* Top bar with contact info */}
       <div className="bg-gradient-to-r from-blue-900 to-blue-800 text-white py-2">
         <div className="max-w-7xl mx-auto px-4 flex justify-between items-center text-sm">
-          <div className="flex items-center space-x-4 text-xs">
+          <div className="hidden md:flex items-center space-x-4 text-xs">
             <div className="flex items-center space-x-1">
               <Phone className="h-3 w-3" />
-              <span>Travel: +91 8679333355 | +91 9816154248</span>
+              <span>Travel: +91 8679333355</span>
             </div>
             <div className="flex items-center space-x-1">
               <Phone className="h-3 w-3" />
@@ -21,7 +21,8 @@ const Header = () => {
             </div>
             <div className="flex items-center space-x-1">
               <Mail className="h-3 w-3" />
-              <span>holidays@prettyplanettravels.com | events.prettyplanettravels@gmail.com</span>
+              <span className="hidden lg:inline">holidays@prettyplanettravels.com</span>
+              <span className="lg:hidden">Contact Us</span>
             </div>
           </div>
           <div className="hidden md:flex items-center space-x-1">
