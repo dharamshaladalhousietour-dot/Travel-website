@@ -110,7 +110,7 @@ const Footer = () => {
               <div>
                 <h3 className="text-xl font-bold font-playfair">
                   <span className="text-transparent bg-clip-text bg-gradient-to-r from-white to-blue-100">Pretty Planet</span>
-                  <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-400 to-orange-300 ml-1">Travels & Events</span>
+                  <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-400 to-orange-300 ml-1">Travels and Events</span>
                 </h3>
                 <p className="text-sm text-amber-300 font-medium">✨ Travel • Events • Weddings ✨</p>
               </div>
