@@ -7,10 +7,10 @@ const Header = () => {
 
   return (
     <header className="bg-white shadow-lg sticky top-0 z-50">
-      {/* Top bar with contact info */}
-      <div className="bg-gradient-to-r from-blue-900 to-blue-800 text-white py-2">
+      {/* Top bar with contact info - Desktop Only */}
+      <div className="hidden md:block bg-gradient-to-r from-blue-900 to-blue-800 text-white py-2">
         <div className="max-w-7xl mx-auto px-4 flex justify-between items-center text-sm">
-          <div className="hidden md:flex items-center space-x-4 text-xs">
+          <div className="flex items-center space-x-4 text-xs">
             <div className="flex items-center space-x-1">
               <Phone className="h-3 w-3" />
               <span>Travel: +91 8679333355</span>
@@ -25,7 +25,7 @@ const Header = () => {
               <span className="lg:hidden">Contact Us</span>
             </div>
           </div>
-          <div className="hidden md:flex items-center space-x-1">
+          <div className="hidden lg:flex items-center space-x-1">
             <MapPin className="h-3 w-3" />
             <span>Corporate House, Potala Marg, Dharamshala, H.P - 176215</span>
           </div>
