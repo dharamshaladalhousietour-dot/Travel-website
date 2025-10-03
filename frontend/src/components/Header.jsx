@@ -46,7 +46,7 @@ const Header = () => {
             <div className="min-w-0">
               <h1 className="text-2xl font-bold font-playfair whitespace-nowrap">
                 <span className="bg-gradient-to-r from-blue-900 via-blue-700 to-blue-600 bg-clip-text text-transparent">Pretty Planet</span>
-                <span className="bg-gradient-to-r from-amber-500 via-orange-500 to-red-500 bg-clip-text text-transparent ml-2">Travels & Events</span>
+                <span className="bg-gradient-to-r from-amber-500 via-orange-500 to-red-500 bg-clip-text text-transparent ml-2">Travels and Events</span>
               </h1>
               <p className="text-sm font-semibold bg-gradient-to-r from-amber-600 to-orange-600 bg-clip-text text-transparent animate-pulse">
                 ✨ Travel · Corporate Events · Weddings ✨
