@@ -1,12 +1,18 @@
 import React, { useState } from 'react';
 import { Menu, X, MapPin, Phone, Mail, Facebook, Instagram } from 'lucide-react';
 import { Button } from './ui/button';
+import MobileHeader from './MobileHeader';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <header className="bg-white shadow-lg sticky top-0 z-50">
+    <>
+      {/* Mobile Header - Only visible on mobile */}
+      <MobileHeader />
+      
+      {/* Desktop Header - Hidden on mobile */}
+      <header className="hidden md:block bg-white shadow-lg sticky top-0 z-50">
       {/* Top bar with contact info - Desktop Only */}
       <div className="hidden md:block bg-gradient-to-r from-blue-900 to-blue-800 text-white py-2">
         <div className="max-w-7xl mx-auto px-4 flex justify-between items-center text-sm">
