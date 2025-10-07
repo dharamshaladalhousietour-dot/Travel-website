@@ -17,12 +17,21 @@ const PackageDetail = () => {
     message: ''
   });
 
-  const packageData = packageDetails[packageSlug];
+  const packageData = getPackageBySlug(packageSlug);
 
   if (!packageData) {
     return (
       <div className="py-20 text-center">
-        <h1 className="text-2xl text-gray-600">Package not found</h1>
+        <div className="max-w-md mx-auto">
+          <h1 className="text-3xl font-bold text-gray-800 mb-4">Package Not Found</h1>
+          <p className="text-gray-600 mb-8">The package you're looking for doesn't exist or may have been moved.</p>
+          <Link to="/tour-packages">
+            <Button className="bg-blue-600 hover:bg-blue-700">
+              <ArrowLeft className="h-4 w-4 mr-2" />
+              Back to All Packages
+            </Button>
+          </Link>
+        </div>
       </div>
     );
   }
