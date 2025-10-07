@@ -293,7 +293,7 @@ const EventsWeddings = () => {
 
           <Card className="shadow-2xl">
             <CardContent className="p-8">
-              <form onSubmit={handleSubmit} className="space-y-6">
+              <form onSubmit={handleSubmit} className="space-y-6" method="POST">
                 <div className="grid md:grid-cols-2 gap-6">
                   <div className="space-y-2">
                     <Label htmlFor="name">Full Name *</Label>
