@@ -78,8 +78,8 @@ const PackageDetail = () => {
         });
         
         // Also send WhatsApp notification for instant contact
-        const whatsappMessage = `New enquiry received for "${packageData.title}". Customer: ${formData.name}, Phone: ${formData.phone}`;
-        window.open(`https://wa.me/918679333355?text=${encodeURIComponent(whatsappMessage)}`, '_blank');
+        const whatsappMessage = WHATSAPP_CONFIG.MESSAGES.FORM_NOTIFICATION(formData.name, 'Package Enquiry');
+        WHATSAPP_CONFIG.openWhatsApp(WHATSAPP_CONFIG.NUMBERS.TOURS, whatsappMessage);
       } else {
         throw new Error('Form submission failed');
       }
