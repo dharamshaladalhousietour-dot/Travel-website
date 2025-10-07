@@ -218,11 +218,38 @@ const TourPackages = () => {
     window.open(whatsappUrl, '_blank');
   };
 
-  const handleEmailEnquiry = (packageTitle) => {
-    const subject = `Enquiry for ${packageTitle}`;
-    const body = `Hi,\n\nI'm interested in the "${packageTitle}" package. Please share more details including itinerary, pricing, and availability.\n\nThanks!`;
-    const emailUrl = `mailto:info@prettyplanettravels.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
-    window.location.href = emailUrl;
+  const handleEmailEnquiry = async (packageTitle) => {
+    const name = prompt('Please enter your name:');
+    const email = prompt('Please enter your email:');
+    const phone = prompt('Please enter your phone number:');
+    
+    if (name && email && phone) {
+      try {
+        const response = await fetch('https://formspree.io/f/yourformid', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({
+            name: name,
+            email: email,
+            phone: phone,
+            message: `I'm interested in the "${packageTitle}" package. Please share more details including itinerary, pricing, and availability.`,
+            package: packageTitle,
+            formType: 'Quick Package Enquiry'
+          }),
+        });
+
+        if (response.ok) {
+          alert('Thank you! Your enquiry has been submitted successfully. We will contact you soon.');
+        } else {
+          throw new Error('Form submission failed');
+        }
+      } catch (error) {
+        alert('Sorry, there was an error submitting your enquiry. Please try again or contact us directly at +91 8679333355');
+        console.error('Form submission error:', error);
+      }
+    }
   };
 
   const PackageCard = ({ pkg }) => {
