@@ -214,9 +214,8 @@ const TourPackages = () => {
 
   // Contact form handlers
   const handleWhatsAppEnquiry = (packageTitle) => {
-    const message = `Hi! I'm interested in the "${packageTitle}" package. Please share more details.`;
-    const whatsappUrl = `https://wa.me/918679333355?text=${encodeURIComponent(message)}`;
-    window.open(whatsappUrl, '_blank');
+    const message = WHATSAPP_CONFIG.MESSAGES.PACKAGE_ENQUIRY(packageTitle);
+    WHATSAPP_CONFIG.openWhatsApp(WHATSAPP_CONFIG.NUMBERS.TOURS, message);
   };
 
   const handleEmailEnquiry = async (packageTitle) => {
