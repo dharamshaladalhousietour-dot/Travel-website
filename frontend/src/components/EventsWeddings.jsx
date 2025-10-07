@@ -24,21 +24,55 @@ const EventsWeddings = () => {
     setFormData(prev => ({ ...prev, [field]: value }));
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    const whatsappMessage = `Hello! I'm interested in wedding/event planning services.
     
-Details:
-- Name: ${formData.name}
-- Event Type: ${formData.eventType}
-- Date: ${formData.eventDate}
-- Guests: ${formData.guestCount}
-- Budget: ${formData.budget}
-- Venue Preference: ${formData.venue}
-- Message: ${formData.message}`;
-    
-    const encodedMessage = encodeURIComponent(whatsappMessage);
-    window.open(`https://wa.me/918679333354?text=${encodedMessage}`, '_blank');
+    try {
+      // Submit to Formspree
+      const response = await fetch('https://formspree.io/f/yourformid', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          name: formData.name,
+          email: formData.email,
+          phone: formData.phone,
+          eventType: formData.eventType,
+          eventDate: formData.eventDate,
+          guestCount: formData.guestCount,
+          budget: formData.budget,
+          venue: formData.venue,
+          message: formData.message,
+          formType: 'Events & Weddings Enquiry'
+        }),
+      });
+
+      if (response.ok) {
+        alert('Thank you! Your enquiry has been submitted successfully. We will contact you soon.');
+        // Reset form
+        setFormData({
+          name: '',
+          email: '',
+          phone: '',
+          eventType: '',
+          eventDate: '',
+          guestCount: '',
+          budget: '',
+          venue: '',
+          message: ''
+        });
+        
+        // Also send WhatsApp notification for instant contact
+        const whatsappMessage = `New ${formData.eventType} enquiry received. Customer: ${formData.name}, Phone: ${formData.phone}, Event Date: ${formData.eventDate}`;
+        window.open(`https://wa.me/918679333354?text=${encodeURIComponent(whatsappMessage)}`, '_blank');
+      } else {
+        throw new Error('Form submission failed');
+      }
+    } catch (error) {
+      alert('Sorry, there was an error submitting your enquiry. Please try again or contact us directly at +91 8679333354');
+      console.error('Form submission error:', error);
+    }
   };
 
   const destinations = [
