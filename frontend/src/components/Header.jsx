@@ -64,13 +64,13 @@ const Header = () => {
 
           {/* Desktop Navigation */}
           <div className="hidden lg:flex items-center space-x-6 flex-grow justify-center">
-            <a href="/" className="text-gray-700 hover:text-blue-900 font-medium transition-colors px-3 py-2 rounded-lg hover:bg-blue-50">Home</a>
-            <a href="#about" className="text-gray-700 hover:text-blue-900 font-medium transition-colors px-3 py-2 rounded-lg hover:bg-blue-50">About</a>
-            <a href="#services" className="text-gray-700 hover:text-blue-900 font-medium transition-colors px-3 py-2 rounded-lg hover:bg-blue-50">Services</a>
-            <a href="/tour-packages" className="text-gray-700 hover:text-blue-900 font-medium transition-colors px-3 py-2 rounded-lg hover:bg-blue-50">Tour Packages</a>
-            <a href="/events-weddings" className="text-gray-700 hover:text-blue-900 font-medium transition-colors px-3 py-2 rounded-lg hover:bg-blue-50">Events & Weddings</a>
-            <a href="#gallery" className="text-gray-700 hover:text-blue-900 font-medium transition-colors px-3 py-2 rounded-lg hover:bg-blue-50">Gallery</a>
-            <a href="#contact" className="text-gray-700 hover:text-blue-900 font-medium transition-colors px-3 py-2 rounded-lg hover:bg-blue-50">Contact</a>
+            <Link to="/" className="text-gray-700 hover:text-blue-900 font-medium transition-colors px-3 py-2 rounded-lg hover:bg-blue-50">Home</Link>
+            <a href="/#about" className="text-gray-700 hover:text-blue-900 font-medium transition-colors px-3 py-2 rounded-lg hover:bg-blue-50">About</a>
+            <a href="/#services" className="text-gray-700 hover:text-blue-900 font-medium transition-colors px-3 py-2 rounded-lg hover:bg-blue-50">Services</a>
+            <Link to="/tour-packages" className="text-gray-700 hover:text-blue-900 font-medium transition-colors px-3 py-2 rounded-lg hover:bg-blue-50">Tour Packages</Link>
+            <Link to="/events-weddings" className="text-gray-700 hover:text-blue-900 font-medium transition-colors px-3 py-2 rounded-lg hover:bg-blue-50">Events & Weddings</Link>
+            <a href="/#gallery" className="text-gray-700 hover:text-blue-900 font-medium transition-colors px-3 py-2 rounded-lg hover:bg-blue-50">Gallery</a>
+            <a href="/#contact" className="text-gray-700 hover:text-blue-900 font-medium transition-colors px-3 py-2 rounded-lg hover:bg-blue-50">Contact</a>
           </div>
 
           {/* CTA Buttons */}
