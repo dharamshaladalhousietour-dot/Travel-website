@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Heart, Users, MapPin, Star, Send, Phone, Mail, Calendar } from 'lucide-react';
 import { Card, CardContent } from './ui/card';
 import { Button } from './ui/button';
+import { WHATSAPP_CONFIG } from '../config/whatsapp';
 import { Input } from './ui/input';
 import { Textarea } from './ui/textarea';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from './ui/select';
