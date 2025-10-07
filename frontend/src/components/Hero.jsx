@@ -20,23 +20,18 @@ const Hero = () => {
   };
 
   return (
-    <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      {/* Background Images */}
+    <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-blue-50 via-white to-blue-100">
+      {/* Background Pattern (Optional) */}
       <div className="absolute inset-0 z-0">
         <div className="relative h-full w-full">
-          {/* Primary background image - Himachal Pradesh Mountains */}
-          <div 
-            className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-            style={{
-              backgroundImage: 'url(https://images.unsplash.com/photo-1648034902541-b239c599114e)'
-            }}
-          />
+          {/* Subtle gradient background */}
+          <div className="absolute inset-0 bg-gradient-to-br from-blue-50 via-white to-indigo-100"></div>
           
-          {/* Overlay gradient */}
-          <div className="absolute inset-0 bg-gradient-to-r from-blue-900/70 via-blue-800/50 to-transparent"></div>
-          
-          {/* Secondary overlay for text readability */}
-          <div className="absolute inset-0 bg-black/20"></div>
+          {/* Optional: Subtle pattern overlay */}
+          <div className="absolute inset-0 opacity-5" style={{
+            backgroundImage: 'radial-gradient(circle at 1px 1px, rgba(59, 130, 246, 0.3) 1px, transparent 0)',
+            backgroundSize: '20px 20px'
+          }}></div>
         </div>
       </div>
 
