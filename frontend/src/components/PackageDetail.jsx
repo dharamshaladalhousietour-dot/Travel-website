@@ -43,37 +43,49 @@ const PackageDetail = () => {
     });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     
-    // Send to Email
-    const subject = `Tour Package Enquiry: ${packageData.title}`;
-    const emailBody = `
-Package: ${packageData.title}
-Duration: ${packageData.duration}
+    try {
+      // Submit to Formspree
+      const response = await fetch('https://formspree.io/f/yourformid', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          name: formData.name,
+          email: formData.email,
+          phone: formData.phone,
+          travelMonth: formData.travelMonth,
+          message: formData.message,
+          package: packageData.title,
+          duration: packageData.duration,
+          formType: 'Package Enquiry'
+        }),
+      });
 
-Customer Details:
-Name: ${formData.name}
-Email: ${formData.email}
-Phone: ${formData.phone}
-Preferred Travel Month: ${formData.travelMonth}
-Message: ${formData.message}
-    `;
-    const emailUrl = `mailto:info@prettyplanettravels.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(emailBody)}`;
-    
-    // Send to WhatsApp
-    const whatsappMessage = `Hi! I'm interested in "${packageData.title}" (${packageData.duration}). 
-Name: ${formData.name}
-Phone: ${formData.phone}
-Travel Month: ${formData.travelMonth}
-Message: ${formData.message}`;
-    const whatsappUrl = `https://wa.me/918679333355?text=${encodeURIComponent(whatsappMessage)}`;
-    
-    // Open both
-    window.location.href = emailUrl;
-    setTimeout(() => {
-      window.open(whatsappUrl, '_blank');
-    }, 500);
+      if (response.ok) {
+        alert('Thank you! Your enquiry has been submitted successfully. We will contact you soon.');
+        // Reset form
+        setFormData({
+          name: '',
+          email: '',
+          phone: '',
+          travelMonth: '',
+          message: ''
+        });
+        
+        // Also send WhatsApp notification for instant contact
+        const whatsappMessage = `New enquiry received for "${packageData.title}". Customer: ${formData.name}, Phone: ${formData.phone}`;
+        window.open(`https://wa.me/918679333355?text=${encodeURIComponent(whatsappMessage)}`, '_blank');
+      } else {
+        throw new Error('Form submission failed');
+      }
+    } catch (error) {
+      alert('Sorry, there was an error submitting your enquiry. Please try again or contact us directly at +91 8679333355');
+      console.error('Form submission error:', error);
+    }
   };
 
   const handleDownloadPDF = () => {
