@@ -133,22 +133,50 @@ const EventsWeddings = () => {
 
   return (
     <div className="min-h-screen bg-white">
-      {/* Clean Hero Section (No Image) */}
-      <header className="flex items-center justify-center text-center py-24 px-5" style={{ background: '#f8f9fa' }}>
-        <div className="max-w-4xl mx-auto">
-          <h1 className="text-4xl md:text-5xl font-bold text-blue-900 mb-4 leading-tight">
-            Destination Weddings & Events
-          </h1>
-          <p className="text-lg md:text-xl text-gray-700 mb-8 max-w-3xl mx-auto">
-            Your trusted partner for unforgettable weddings and corporate events across India
-          </p>
-          <Button 
-            size="lg"
-            className="bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white px-8 py-3 rounded-full"
-            onClick={() => document.getElementById('enquiry')?.scrollIntoView({ behavior: 'smooth' })}
-          >
-            Plan Your Event
-          </Button>
+      {/* Hero Section with Background Image */}
+      <header className="relative min-h-screen flex items-center justify-center overflow-hidden">
+        {/* Background Image */}
+        <div className="absolute inset-0 z-0">
+          <div className="relative h-full w-full">
+            {/* Beautiful wedding/event background image */}
+            <div 
+              className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+              style={{
+                backgroundImage: 'url(https://images.unsplash.com/photo-1519225421980-715cb0215aed?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80)'
+              }}
+            />
+            
+            {/* Lighter overlay for better image visibility */}
+            <div className="absolute inset-0 bg-gradient-to-r from-pink-900/40 via-purple-800/30 to-blue-900/20"></div>
+            
+            {/* Subtle additional overlay */}
+            <div className="absolute inset-0 bg-black/15"></div>
+          </div>
+        </div>
+
+        {/* Content */}
+        <div className="relative z-10 max-w-4xl mx-auto px-4 text-center">
+          {/* Semi-transparent background behind text */}
+          <div className="bg-black/20 backdrop-blur-sm rounded-2xl p-8 mx-auto">
+            <h1 className="text-4xl md:text-6xl font-bold text-white mb-6 leading-tight"
+                style={{ textShadow: '2px 2px 4px rgba(0, 0, 0, 0.8), 0 0 8px rgba(0, 0, 0, 0.3)' }}>
+              Destination Weddings &
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-pink-400 to-purple-400 drop-shadow-lg"
+                    style={{ textShadow: '2px 2px 4px rgba(0, 0, 0, 0.9)' }}> Events</span>
+            </h1>
+            <p className="text-lg md:text-xl text-white mb-8 max-w-3xl mx-auto"
+               style={{ textShadow: '1px 1px 3px rgba(0, 0, 0, 0.7)' }}>
+              Your trusted partner for unforgettable weddings and corporate events across India
+            </p>
+            <Button 
+              size="lg"
+              className="bg-gradient-to-r from-pink-500 to-purple-600 hover:from-pink-600 hover:to-purple-700 text-white px-8 py-3 rounded-full shadow-2xl transform hover:scale-105 transition-all duration-300"
+              onClick={() => document.getElementById('enquiry')?.scrollIntoView({ behavior: 'smooth' })}
+              style={{ textShadow: '1px 1px 2px rgba(0, 0, 0, 0.5)' }}
+            >
+              Plan Your Event
+            </Button>
+          </div>
         </div>
       </header>
 
