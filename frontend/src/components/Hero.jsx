@@ -86,7 +86,7 @@ const Hero = () => {
             <Button 
               size="lg" 
               variant="outline" 
-              className="w-full sm:w-auto border-2 border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white px-6 sm:px-8 py-4 text-base sm:text-lg font-semibold transition-all duration-300 shadow-lg"
+              className="w-full sm:w-auto border-2 border-white text-white hover:bg-white hover:text-blue-900 px-6 sm:px-8 py-4 text-base sm:text-lg font-semibold transition-all duration-300 shadow-lg backdrop-blur-sm"
             >
               Plan Your Trip
             </Button>
