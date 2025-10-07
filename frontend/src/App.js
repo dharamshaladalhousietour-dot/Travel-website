@@ -92,6 +92,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/tour-packages" element={<PageLayout><TourPackages /></PageLayout>} />
+          <Route path="/tour-packages/:packageSlug" element={<PageLayout><PackageDetail /></PageLayout>} />
           <Route path="/events-weddings" element={<PageLayout><EventsWeddings /></PageLayout>} />
         </Routes>
       </BrowserRouter>
