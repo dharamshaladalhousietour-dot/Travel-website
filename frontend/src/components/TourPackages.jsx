@@ -253,12 +253,13 @@ const TourPackages = () => {
           <h3 className="text-xl font-bold text-blue-900 mb-4">{pkg.title}</h3>
           
           <div className="space-y-3">
-            <Button 
-              className="w-full bg-gradient-to-r from-blue-600 to-blue-800 hover:from-blue-700 hover:to-blue-900"
-              onClick={() => window.location.href = `#${pkg.slug}`}
-            >
-              View Details
-            </Button>
+            <Link to={`/tour-packages/${pkg.slug}`}>
+              <Button 
+                className="w-full bg-gradient-to-r from-blue-600 to-blue-800 hover:from-blue-700 hover:to-blue-900"
+              >
+                View Details
+              </Button>
+            </Link>
             
             <div className="flex space-x-2">
               <Button 
