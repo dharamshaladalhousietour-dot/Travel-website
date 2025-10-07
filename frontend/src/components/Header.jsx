@@ -118,7 +118,7 @@ const Header = () => {
               <a href="/#contact" className="text-gray-700 hover:text-blue-900 font-medium transition-colors px-3 py-2 rounded-lg hover:bg-blue-50" onClick={() => setIsMenuOpen(false)}>Contact</a>
               <div className="pt-4 flex flex-col space-y-3">
                 <a
-                  href="https://wa.me/918679333355?text=Hello!%20I%20want%20to%20book%20tour%20with%20an%20expert.%20Please%20help%20me%20plan%20my%20trip."
+                  href={WHATSAPP_CONFIG.createWhatsAppURL(WHATSAPP_CONFIG.NUMBERS.TOURS, WHATSAPP_CONFIG.MESSAGES.TOURS)}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-full"
@@ -128,7 +128,7 @@ const Header = () => {
                   </Button>
                 </a>
                 <a
-                  href="https://wa.me/918679333354?text=Hello!%20I%20want%20to%20book%20events%20with%20an%20expert.%20Please%20help%20me%20plan%20my%20event."
+                  href={WHATSAPP_CONFIG.createWhatsAppURL(WHATSAPP_CONFIG.NUMBERS.EVENTS, WHATSAPP_CONFIG.MESSAGES.EVENTS)}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-full"
