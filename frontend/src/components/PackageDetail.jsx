@@ -221,7 +221,7 @@ const PackageDetail = () => {
             <section id="enquiryForm" className="bg-gray-50 p-8 rounded-lg">
               <h2 className="text-3xl font-bold text-blue-900 mb-6 text-center">Enquire Now</h2>
               
-              <form onSubmit={handleSubmit} className="max-w-2xl mx-auto">
+              <form onSubmit={handleSubmit} className="max-w-2xl mx-auto" method="POST">
                 <div className="grid md:grid-cols-2 gap-6 mb-6">
                   <div>
                     <label className="block text-sm font-medium text-gray-700 mb-2">Your Name *</label>
