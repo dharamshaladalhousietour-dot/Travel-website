@@ -6,6 +6,7 @@ import { Button } from './ui/button';
 import { Badge } from './ui/badge';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from './ui/accordion';
 import { getPackageBySlug } from '../data/packageDetails';
+import { WHATSAPP_CONFIG } from '../config/whatsapp';
 
 const PackageDetail = () => {
   const { packageSlug } = useParams();
