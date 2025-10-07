@@ -422,10 +422,10 @@ const EventsWeddings = () => {
                     variant="outline"
                     size="lg"
                     className="flex-1"
-                    onClick={() => window.open('tel:+918679333354')}
+                    onClick={() => WHATSAPP_CONFIG.openWhatsApp(WHATSAPP_CONFIG.NUMBERS.EVENTS, WHATSAPP_CONFIG.MESSAGES.EVENTS)}
                   >
                     <Phone className="h-5 w-5 mr-2" />
-                    Call Now
+                    WhatsApp Now
                   </Button>
                 </div>
 
