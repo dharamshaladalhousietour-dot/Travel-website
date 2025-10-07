@@ -61,8 +61,10 @@ const Hero = () => {
             </p>
           </div>
           
+          </div>
+          
           {/* CTA Buttons */}
-          <div className="flex flex-col sm:flex-row gap-4 justify-center mb-16 px-4">
+          <div className="flex flex-col sm:flex-row gap-4 justify-center mb-16 px-4 mt-12">
             <a
               href={WHATSAPP_CONFIG.createWhatsAppURL(WHATSAPP_CONFIG.NUMBERS.TOURS, WHATSAPP_CONFIG.MESSAGES.TOURS)}
               target="_blank"
@@ -71,7 +73,8 @@ const Hero = () => {
             >
               <Button 
                 size="lg" 
-                className="w-full sm:w-auto bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white px-6 sm:px-8 py-4 text-base sm:text-lg font-bold transition-all duration-300 transform hover:scale-105 shadow-xl"
+                className="w-full sm:w-auto bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white px-6 sm:px-8 py-4 text-base sm:text-lg font-bold transition-all duration-300 transform hover:scale-105 shadow-2xl"
+                style={{ textShadow: '1px 1px 2px rgba(0, 0, 0, 0.5)' }}
               >
                 🏔️ Book Tour with Expert
               </Button>
@@ -84,7 +87,8 @@ const Hero = () => {
             >
               <Button 
                 size="lg" 
-                className="w-full sm:w-auto bg-gradient-to-r from-purple-600 to-purple-700 hover:from-purple-700 hover:to-purple-800 text-white px-6 sm:px-8 py-4 text-base sm:text-lg font-bold transition-all duration-300 transform hover:scale-105 shadow-xl"
+                className="w-full sm:w-auto bg-gradient-to-r from-purple-600 to-purple-700 hover:from-purple-700 hover:to-purple-800 text-white px-6 sm:px-8 py-4 text-base sm:text-lg font-bold transition-all duration-300 transform hover:scale-105 shadow-2xl"
+                style={{ textShadow: '1px 1px 2px rgba(0, 0, 0, 0.5)' }}
               >
                 💒 Book Events with Expert
               </Button>
@@ -92,7 +96,8 @@ const Hero = () => {
             <Button 
               size="lg" 
               variant="outline" 
-              className="w-full sm:w-auto border-2 border-white text-white hover:bg-white hover:text-blue-900 px-6 sm:px-8 py-4 text-base sm:text-lg font-semibold transition-all duration-300 shadow-lg backdrop-blur-sm"
+              className="w-full sm:w-auto border-2 border-white text-white hover:bg-white hover:text-blue-900 px-6 sm:px-8 py-4 text-base sm:text-lg font-semibold transition-all duration-300 shadow-2xl backdrop-blur-sm"
+              style={{ textShadow: '1px 1px 2px rgba(0, 0, 0, 0.5)' }}
             >
               Plan Your Trip
             </Button>
