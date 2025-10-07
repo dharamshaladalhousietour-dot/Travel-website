@@ -100,6 +100,16 @@ Message: ${formData.message}`;
       </header>
 
       <div className="max-w-6xl mx-auto px-4 -mt-10 relative z-10">
+        {/* Back Button */}
+        <div className="mb-6">
+          <Link to="/tour-packages">
+            <Button variant="outline" className="bg-white hover:bg-gray-50">
+              <ArrowLeft className="h-4 w-4 mr-2" />
+              Back to All Packages
+            </Button>
+          </Link>
+        </div>
+        
         {/* Main Content Card */}
         <Card className="shadow-2xl bg-white">
           <CardContent className="p-8">
