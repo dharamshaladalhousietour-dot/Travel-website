@@ -20,18 +20,23 @@ const Hero = () => {
   };
 
   return (
-    <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-blue-50 via-white to-blue-100">
-      {/* Background Pattern (Optional) */}
+    <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden">
+      {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <div className="relative h-full w-full">
-          {/* Subtle gradient background */}
-          <div className="absolute inset-0 bg-gradient-to-br from-blue-50 via-white to-indigo-100"></div>
+          {/* Beautiful travel background image */}
+          <div 
+            className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+            style={{
+              backgroundImage: 'url(https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80)'
+            }}
+          />
           
-          {/* Optional: Subtle pattern overlay */}
-          <div className="absolute inset-0 opacity-5" style={{
-            backgroundImage: 'radial-gradient(circle at 1px 1px, rgba(59, 130, 246, 0.3) 1px, transparent 0)',
-            backgroundSize: '20px 20px'
-          }}></div>
+          {/* Dark overlay for text readability */}
+          <div className="absolute inset-0 bg-gradient-to-r from-blue-900/75 via-blue-800/60 to-black/40"></div>
+          
+          {/* Additional overlay for better text contrast */}
+          <div className="absolute inset-0 bg-black/30"></div>
         </div>
       </div>
 
