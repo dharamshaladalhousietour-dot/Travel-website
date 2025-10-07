@@ -99,6 +99,12 @@ function App() {
           <Route path="/tour-packages" element={<PageLayout><TourPackages /></PageLayout>} />
           <Route path="/tour-packages/:packageSlug" element={<PageLayout><PackageDetail /></PageLayout>} />
           <Route path="/events-weddings" element={<PageLayout><EventsWeddings /></PageLayout>} />
+          <Route path="/contact" element={<PageLayout><Contact /></PageLayout>} />
+          <Route path="/faq" element={<PageLayout><FAQ /></PageLayout>} />
+          <Route path="/travel-insurance" element={<PageLayout><TravelInsurance /></PageLayout>} />
+          <Route path="/terms" element={<PageLayout><TermsConditions /></PageLayout>} />
+          <Route path="/privacy" element={<PageLayout><PrivacyPolicy /></PageLayout>} />
+          <Route path="/refund-policy" element={<PageLayout><RefundPolicy /></PageLayout>} />
         </Routes>
       </BrowserRouter>
     </div>
