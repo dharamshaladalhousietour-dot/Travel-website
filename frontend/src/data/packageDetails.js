@@ -341,6 +341,90 @@ export const packageDetails = {
       "Lunch & dinner",
       "Personal expenses"
     ]
+  },
+
+  // Adding more packages to cover the major ones
+  "dalhousie-2n3d": {
+    title: "Dalhousie Short Break",
+    duration: "2 Nights / 3 Days",
+    heroImage: "https://source.unsplash.com/1600x500/?dalhousie,himachal",
+    price: "Price on Demand",
+    region: "Himachal",
+    itinerary: [
+      { day: 1, title: "Arrival Dalhousie", description: "Check-in, local exploration.", overnight: "Dalhousie" },
+      { day: 2, title: "Dalhousie Sightseeing", description: "Khajjiar, local temples, markets.", overnight: "Dalhousie" },
+      { day: 3, title: "Departure", description: "Checkout and departure." }
+    ],
+    hotels: [{ location: "Dalhousie (2N)", description: "Hotel Mount View or similar" }],
+    inclusions: ["Accommodation with breakfast", "Local sightseeing", "Hotel transfers"],
+    exclusions: ["Transport to Dalhousie", "Meals other than breakfast", "Personal expenses"]
+  },
+
+  "dharamshala-2n3d": {
+    title: "Dharamshala Short Break",
+    duration: "2 Nights / 3 Days", 
+    heroImage: "https://source.unsplash.com/1600x500/?dharamshala,mcleodganj",
+    price: "Price on Demand",
+    region: "Himachal",
+    itinerary: [
+      { day: 1, title: "Arrival Dharamshala", description: "Check-in, evening at McLeod Ganj.", overnight: "Dharamshala" },
+      { day: 2, title: "Dharamshala Local", description: "Dalai Lama Temple, Bhagsunag Falls.", overnight: "Dharamshala" },
+      { day: 3, title: "Departure", description: "Checkout and departure." }
+    ],
+    hotels: [{ location: "Dharamshala (2N)", description: "Hotel Bhagsu or similar" }],
+    inclusions: ["2 nights accommodation", "Breakfast", "Local sightseeing"],
+    exclusions: ["Transport to Dharamshala", "Lunch & dinner", "Personal expenses"]
+  },
+
+  "spiti-valley-7n8d": {
+    title: "Spiti Valley Adventure",
+    duration: "7 Nights / 8 Days",
+    heroImage: "https://source.unsplash.com/1600x500/?spiti,ladakh",
+    price: "Price on Demand", 
+    region: "Himachal",
+    itinerary: [
+      { day: 1, title: "Arrival Manali", description: "Check-in, acclimatization.", overnight: "Manali" },
+      { day: 2, title: "Manali to Kaza", description: "Drive via Rohtang Pass, Kunzum Pass.", overnight: "Kaza" },
+      { day: 3, title: "Kaza Local", description: "Key Monastery, Langza, Hikkim.", overnight: "Kaza" },
+      { day: 4, title: "Kaza to Tabo", description: "Tabo Monastery, ancient caves.", overnight: "Tabo" },
+      { day: 5, title: "Tabo to Kalpa", description: "Drive to Kalpa via Reckong Peo.", overnight: "Kalpa" },
+      { day: 6, title: "Kalpa Local", description: "Kinnaur Kailash views, apple orchards.", overnight: "Kalpa" },
+      { day: 7, title: "Kalpa to Shimla", description: "Scenic drive to Shimla.", overnight: "Shimla" },
+      { day: 8, title: "Departure", description: "Shimla sightseeing and departure." }
+    ],
+    hotels: [
+      { location: "Manali (1N)", description: "Hotel Snow Peak or similar" },
+      { location: "Kaza (2N)", description: "Hotel Spiti Sarai or similar" },
+      { location: "Tabo (1N)", description: "Monastery guest house" },
+      { location: "Kalpa (2N)", description: "Hotel Kinner Kailash or similar" },
+      { location: "Shimla (1N)", description: "Hotel Combermere or similar" }
+    ],
+    inclusions: ["All accommodation with MAP", "Private vehicle", "Permits", "Driver allowances"],
+    exclusions: ["Airfare", "Adventure activities", "Personal expenses", "Travel insurance"]
+  },
+
+  "kerala-munnar-backwaters-5n6d": {
+    title: "Kerala – Munnar & Backwaters",
+    duration: "5 Nights / 6 Days",
+    heroImage: "https://source.unsplash.com/1600x500/?kerala,backwaters",
+    price: "Price on Demand",
+    region: "South India",
+    itinerary: [
+      { day: 1, title: "Arrival Cochin", description: "Airport pickup, drive to Munnar.", overnight: "Munnar" },
+      { day: 2, title: "Munnar Sightseeing", description: "Tea gardens, Mattupetty Dam, Echo Point.", overnight: "Munnar" },
+      { day: 3, title: "Munnar to Thekkady", description: "Drive to Thekkady, spice plantation visit.", overnight: "Thekkady" },
+      { day: 4, title: "Thekkady to Alleppey", description: "Drive to Alleppey, houseboat check-in.", overnight: "Houseboat" },
+      { day: 5, title: "Alleppey to Cochin", description: "Checkout, drive to Cochin, city tour.", overnight: "Cochin" },
+      { day: 6, title: "Departure", description: "Airport transfer." }
+    ],
+    hotels: [
+      { location: "Munnar (2N)", description: "Hotel Tea County or similar hill resort" },
+      { location: "Thekkady (1N)", description: "Spice Village or similar eco-resort" }, 
+      { location: "Houseboat (1N)", description: "Premium AC houseboat with all meals" },
+      { location: "Cochin (1N)", description: "Hotel Casino or similar heritage hotel" }
+    ],
+    inclusions: ["5 nights accommodation", "Houseboat with all meals", "Private AC vehicle", "All transfers"],
+    exclusions: ["Airfare to/from Cochin", "Lunch & dinner (except houseboat)", "Entrance fees", "Personal expenses"]
   }
 };
 
