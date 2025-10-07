@@ -3,6 +3,7 @@ import { Button } from './ui/button';
 import { Input } from './ui/input';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from './ui/select';
 import { Calendar, Users, MapPin, Search } from 'lucide-react';
+import { WHATSAPP_CONFIG } from '../config/whatsapp';
 
 const Hero = () => {
   const [searchData, setSearchData] = useState({
