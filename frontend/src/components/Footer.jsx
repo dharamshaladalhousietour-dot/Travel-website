@@ -34,12 +34,12 @@ const Footer = () => {
   ];
 
   const support = [
-    { name: 'Contact Us', href: '#contact' },
-    { name: 'FAQ', href: '#contact' },
-    { name: 'Travel Insurance', href: '#contact' },
-    { name: 'Terms & Conditions', href: '#contact' },
-    { name: 'Privacy Policy', href: '#contact' },
-    { name: 'Refund Policy', href: '#contact' }
+    { name: 'Contact Us', href: '/contact' },
+    { name: 'FAQ', href: '/faq' },
+    { name: 'Travel Insurance', href: '/travel-insurance' },
+    { name: 'Terms & Conditions', href: '/terms' },
+    { name: 'Privacy Policy', href: '/privacy' },
+    { name: 'Refund Policy', href: '/refund-policy' }
   ];
 
   const socialLinks = [
