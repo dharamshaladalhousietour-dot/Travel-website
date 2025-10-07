@@ -4,6 +4,7 @@ import { MapPin, Clock, Download, Send, Mail, ArrowRight } from 'lucide-react';
 import { Card, CardContent } from './ui/card';
 import { Button } from './ui/button';
 import { Badge } from './ui/badge';
+import { WHATSAPP_CONFIG } from '../config/whatsapp';
 
 const TourPackages = () => {
   const [selectedRegion, setSelectedRegion] = useState('All');
