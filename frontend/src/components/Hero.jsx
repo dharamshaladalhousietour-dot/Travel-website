@@ -32,11 +32,11 @@ const Hero = () => {
             }}
           />
           
-          {/* Dark overlay for text readability */}
-          <div className="absolute inset-0 bg-gradient-to-r from-blue-900/75 via-blue-800/60 to-black/40"></div>
+          {/* Lighter overlay for better image visibility */}
+          <div className="absolute inset-0 bg-gradient-to-r from-blue-900/40 via-blue-800/30 to-black/20"></div>
           
-          {/* Additional overlay for better text contrast */}
-          <div className="absolute inset-0 bg-black/30"></div>
+          {/* Subtle additional overlay */}
+          <div className="absolute inset-0 bg-black/15"></div>
         </div>
       </div>
 
