@@ -65,8 +65,8 @@ const EventsWeddings = () => {
         });
         
         // Also send WhatsApp notification for instant contact
-        const whatsappMessage = `New ${formData.eventType} enquiry received. Customer: ${formData.name}, Phone: ${formData.phone}, Event Date: ${formData.eventDate}`;
-        window.open(`https://wa.me/918679333354?text=${encodeURIComponent(whatsappMessage)}`, '_blank');
+        const whatsappMessage = WHATSAPP_CONFIG.MESSAGES.FORM_NOTIFICATION(formData.name, 'Events & Weddings Enquiry');
+        WHATSAPP_CONFIG.openWhatsApp(WHATSAPP_CONFIG.NUMBERS.EVENTS, whatsappMessage);
       } else {
         throw new Error('Form submission failed');
       }
