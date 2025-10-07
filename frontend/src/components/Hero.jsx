@@ -89,7 +89,7 @@ const Hero = () => {
         </div>
 
         {/* Search Widget */}
-        <div className="bg-white/95 backdrop-blur-lg rounded-2xl p-4 sm:p-6 shadow-2xl max-w-4xl mx-4 sm:mx-auto">
+        <div className="bg-white border border-gray-200 rounded-2xl p-4 sm:p-6 shadow-2xl max-w-4xl mx-4 sm:mx-auto">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 items-end">
             {/* Destination */}
             <div className="space-y-2">
