@@ -61,8 +61,6 @@ const Hero = () => {
             </p>
           </div>
           
-          </div>
-          
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-16 px-4 mt-12">
             <a
