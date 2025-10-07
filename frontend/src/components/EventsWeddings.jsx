@@ -133,33 +133,24 @@ const EventsWeddings = () => {
 
   return (
     <div className="min-h-screen bg-white">
-      {/* Hero Section */}
-      <section className="relative h-screen flex items-center justify-center overflow-hidden">
-        <div 
-          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-          style={{
-            backgroundImage: 'url(https://images.unsplash.com/photo-1726508684402-ee6029833696)'
-          }}
-        />
-        <div className="absolute inset-0 bg-gradient-to-r from-purple-900/80 via-blue-800/70 to-transparent"></div>
-        
-        <div className="relative z-10 text-center text-white px-4 max-w-4xl mx-auto">
-          <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
-            Destination Weddings &
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-pink-400 to-purple-400"> Events</span>
+      {/* Clean Hero Section (No Image) */}
+      <header className="flex items-center justify-center text-center py-24 px-5" style={{ background: '#f8f9fa' }}>
+        <div className="max-w-4xl mx-auto">
+          <h1 className="text-4xl md:text-5xl font-bold text-blue-900 mb-4 leading-tight">
+            Destination Weddings & Events
           </h1>
-          <p className="text-xl md:text-2xl mb-8 text-blue-100">
-            Make your wedding & events unforgettable with Pretty Planet Travels
+          <p className="text-lg md:text-xl text-gray-700 mb-8 max-w-3xl mx-auto">
+            Your trusted partner for unforgettable weddings and corporate events across India
           </p>
           <Button 
             size="lg"
-            className="bg-gradient-to-r from-pink-500 to-purple-600 hover:from-pink-600 hover:to-purple-700 text-white px-8 py-4 text-lg font-bold"
-            onClick={() => document.getElementById('enquiry').scrollIntoView({ behavior: 'smooth' })}
+            className="bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white px-8 py-3 rounded-full"
+            onClick={() => document.getElementById('enquiry')?.scrollIntoView({ behavior: 'smooth' })}
           >
             Plan Your Event
           </Button>
         </div>
-      </section>
+      </header>
 
       {/* Destination Weddings */}
       <section className="py-20 bg-gradient-to-b from-gray-50 to-white">
