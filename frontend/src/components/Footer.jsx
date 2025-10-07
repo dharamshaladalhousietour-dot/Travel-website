@@ -233,12 +233,12 @@ const Footer = () => {
             <ul className="space-y-3">
               {support.map((item, index) => (
                 <li key={index}>
-                  <a 
-                    href={item.href} 
+                  <Link 
+                    to={item.href} 
                     className="text-blue-200 hover:text-amber-400 transition-colors text-sm"
                   >
                     {item.name}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>
