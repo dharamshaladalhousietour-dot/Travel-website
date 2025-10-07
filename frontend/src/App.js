@@ -6,6 +6,8 @@ import Hero from "./components/Hero";
 import About from "./components/About";
 import Services from "./components/Services";
 import Packages from "./components/Packages";
+import TourPackages from "./components/TourPackages";
+import EventsWeddings from "./components/EventsWeddings";
 import Testimonials from "./components/Testimonials";
 import Gallery from "./components/Gallery";
 import Blog from "./components/Blog";
