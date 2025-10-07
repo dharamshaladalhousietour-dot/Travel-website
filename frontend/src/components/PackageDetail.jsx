@@ -1,72 +1,14 @@
 import React, { useState } from 'react';
-import { Clock, MapPin, Download, Send, Star, Users } from 'lucide-react';
+import { useParams, Link } from 'react-router-dom';
+import { Clock, MapPin, Download, Send, Star, Users, ArrowLeft } from 'lucide-react';
 import { Card, CardContent } from './ui/card';
 import { Button } from './ui/button';
 import { Badge } from './ui/badge';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from './ui/accordion';
+import { getPackageBySlug } from '../data/packageDetails';
 
-// Sample package data - this would come from props or API in real implementation
-const packageDetails = {
-  "manali-honeymoon-4n5d": {
-    title: "Manali Honeymoon Delight",
-    duration: "4 Nights / 5 Days",
-    heroImage: "https://source.unsplash.com/1600x500/?manali,honeymoon",
-    price: "Price on Demand",
-    itinerary: [
-      {
-        day: 1,
-        title: "Arrival Manali",
-        description: "Private transfer & check-in; evening Mall Road.",
-        overnight: "Manali"
-      },
-      {
-        day: 2,
-        title: "Romantic Solang",
-        description: "Solang Valley day trip; candle-light dinner.",
-        overnight: "Manali"
-      },
-      {
-        day: 3,
-        title: "Atal Tunnel & Sissu",
-        description: "Photo stops at Sissu (weather permitting).",
-        overnight: "Manali"
-      },
-      {
-        day: 4,
-        title: "Manali Local",
-        description: "Hadimba Temple, Old Manali cafés.",
-        overnight: "Manali"
-      },
-      {
-        day: 5,
-        title: "Departure",
-        description: "Checkout & drop."
-      }
-    ],
-    hotels: [
-      {
-        location: "Manali (4N)",
-        description: "Honeymoon decor room – Snow Valley / similar"
-      }
-    ],
-    inclusions: [
-      "Assistance on Arrival/Departure",
-      "Accommodation with Breakfast & Dinner (MAP)",
-      "Private transport for transfers & sightseeing",
-      "Driver allowances, tolls, parking & fuel",
-      "Price on Demand (no dates/pax shown)"
-    ],
-    exclusions: [
-      "Air/Train/Bus fare",
-      "Lunch & personal expenses",
-      "Entry fees, guide/camera charges; union cabs where applicable",
-      "Adventure activities (rafting, paragliding, gondola etc.)",
-      "Anything not mentioned in inclusions"
-    ]
-  }
-};
-
-const PackageDetail = ({ packageSlug = "manali-honeymoon-4n5d" }) => {
+const PackageDetail = () => {
+  const { packageSlug } = useParams();
   const [formData, setFormData] = useState({
     name: '',
     email: '',
