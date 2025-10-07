@@ -43,17 +43,23 @@ const Hero = () => {
       {/* Content */}
       <div className="relative z-10 max-w-7xl mx-auto px-4 py-20 text-center">
         <div className="mb-12">
-          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-bold text-white mb-6 leading-tight font-playfair text-center">
-            <span className="inline-block transform hover:scale-105 transition-transform duration-300">Create</span>
-            <br className="sm:hidden" />
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-400 via-yellow-300 to-orange-400 animate-pulse"> Unforgettable </span>
-            <br className="sm:hidden" />
-            <span className="inline-block transform hover:scale-105 transition-transform duration-300">Moments</span>
-          </h1>
-          <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-blue-100 mb-8 max-w-3xl mx-auto leading-relaxed text-center px-4">
-            From magical destinations to seamless corporate events and dream weddings, 
-            we turn your vision into extraordinary experiences.
-          </p>
+          {/* Semi-transparent background behind text */}
+          <div className="bg-black/20 backdrop-blur-sm rounded-2xl p-8 mx-auto max-w-5xl">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-bold text-white mb-6 leading-tight font-playfair text-center" 
+                style={{ textShadow: '2px 2px 4px rgba(0, 0, 0, 0.8), 0 0 8px rgba(0, 0, 0, 0.3)' }}>
+              <span className="inline-block transform hover:scale-105 transition-transform duration-300 drop-shadow-lg">Create</span>
+              <br className="sm:hidden" />
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-400 via-yellow-300 to-orange-400 animate-pulse drop-shadow-lg" 
+                    style={{ textShadow: '2px 2px 4px rgba(0, 0, 0, 0.9)' }}> Unforgettable </span>
+              <br className="sm:hidden" />
+              <span className="inline-block transform hover:scale-105 transition-transform duration-300 drop-shadow-lg">Moments</span>
+            </h1>
+            <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-white mb-8 max-w-3xl mx-auto leading-relaxed text-center px-4" 
+               style={{ textShadow: '1px 1px 3px rgba(0, 0, 0, 0.7)' }}>
+              From magical destinations to seamless corporate events and dream weddings, 
+              we turn your vision into extraordinary experiences.
+            </p>
+          </div>
           
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-16 px-4">
