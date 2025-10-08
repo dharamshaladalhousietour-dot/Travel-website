@@ -210,7 +210,12 @@ const TourPackages = () => {
             <Button 
               variant="outline" 
               className="flex-1"
-              onClick={handleEnquireNow}
+              onClick={() => {
+                console.log('Send Enquiry clicked for:', pkg.title);
+                alert(`Opening enquiry form for ${pkg.title}`);
+                setSelectedPackage(pkg);
+                setShowEnquiryForm(true);
+              }}
             >
               <Send className="h-4 w-4 mr-2" />
               Send Enquiry
