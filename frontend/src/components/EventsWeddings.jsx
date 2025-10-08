@@ -109,11 +109,11 @@ Details:
         <div className="absolute inset-0 bg-gradient-to-r from-purple-900/30 via-blue-800/20 to-transparent"></div>
         
         <div className="relative z-10 text-center text-white px-4 max-w-4xl mx-auto">
-          <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
+          <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight" style={{ textShadow: '2px 2px 4px rgba(0,0,0,0.8)' }}>
             Destination Weddings &
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-pink-400 to-purple-400"> Events</span>
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-pink-300 to-purple-300"> Events</span>
           </h1>
-          <p className="text-xl md:text-2xl mb-8 text-blue-100">
+          <p className="text-xl md:text-2xl mb-8 text-white font-semibold" style={{ textShadow: '1px 1px 3px rgba(0,0,0,0.7)' }}>
             Make your wedding & events unforgettable with Pretty Planet Travels
           </p>
           <Button 
