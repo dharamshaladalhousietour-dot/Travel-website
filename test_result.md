@@ -230,3 +230,5 @@ test_plan:
 agent_communication:
     -agent: "main"
     -message: "Phase 1 (Homepage fixes) completed successfully. All major UI issues resolved: 1) Made by Emergent text removed from footer 2) Book with Expert buttons working properly on desktop/mobile 3) Homepage enquiry form implemented with all specified fields 4) No text cut-off issues found 5) No extra header images found. Form functionality needs final testing to confirm thank-you message display."
+    -agent: "testing"
+    -message: "✅ BACKEND TESTING COMPLETE - All enquiry system APIs working perfectly! Comprehensive testing performed: 1) POST /api/enquiry endpoint accepts all required fields and saves to MongoDB with UUID/timestamp 2) GET /api/enquiry retrieves data correctly 3) CORS headers properly configured for frontend communication 4) Form validation rejects invalid data appropriately 5) Environment variables (REACT_APP_BACKEND_URL, MONGO_URL) working correctly. Fixed minor logging configuration issue. Backend is ready for production use. The enquiry form submission error reported by user should now be resolved as all backend APIs are functioning correctly."
