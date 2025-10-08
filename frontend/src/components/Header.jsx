@@ -42,14 +42,7 @@ const Header = () => {
       <nav className="max-w-7xl mx-auto px-4 py-3 md:py-5">
         <div className="flex justify-between items-center">
           {/* Logo */}
-          <div className="flex items-center space-x-3 flex-shrink-0">
-            <div className="w-10 h-10 md:w-14 md:h-14 rounded-full overflow-hidden flex items-center justify-center shadow-lg">
-              <img 
-                src="https://customer-assets.emergentagent.com/job_wanderlust-web-3/artifacts/gj7j2eju_image.png" 
-                alt="Pretty Planet Travels and Events Logo"
-                className="w-full h-full object-contain"
-              />
-            </div>
+          <div className="flex items-center flex-shrink-0">
             <div className="min-w-0">
               <h1 className="text-sm sm:text-lg md:text-2xl font-bold font-playfair leading-tight">
                 <span className="bg-gradient-to-r from-blue-900 via-blue-700 to-blue-600 bg-clip-text text-transparent">Pretty Planet</span>
