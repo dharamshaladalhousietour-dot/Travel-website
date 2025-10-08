@@ -8,6 +8,8 @@ import EnquiryForm from './EnquiryForm';
 
 const TourPackages = () => {
   const [selectedRegion, setSelectedRegion] = useState('All');
+  const [showEnquiryForm, setShowEnquiryForm] = useState(false);
+  const [selectedPackage, setSelectedPackage] = useState(null);
 
   const tourPackages = [
     // Kashmir
