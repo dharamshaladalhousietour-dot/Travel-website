@@ -16,9 +16,66 @@ const Hero = () => {
 
   const [showThankYou, setShowThankYou] = useState(false);
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log('Enquiry data:', enquiryData);
+    console.log('Homepage enquiry submitted:', enquiryData);
+    
+    try {
+      // Create formatted message for WhatsApp and email
+      const formattedMessage = `📩 New Travel Enquiry Received
+👤 Name: Homepage Visitor
+📧 Email: Not provided
+📱 Phone: Not provided
+
+📍 Destination: ${enquiryData.destination}
+📅 Dates: ${enquiryData.startDate} – ${enquiryData.endDate}
+👨‍👩‍👧 Pax: ${enquiryData.adults} Adults${enquiryData.kids && enquiryData.kids !== '0' ? `, ${enquiryData.kids}` : ''}
+💰 Budget: ₹ Not specified
+🕒 Duration: ${enquiryData.days}
+
+💬 Message: Quick enquiry from homepage form`;
+
+      // Submit to backend API
+      const backendUrl = process.env.REACT_APP_BACKEND_URL || '';
+      
+      const response = await fetch(`${backendUrl}/api/enquiry`, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          destination: enquiryData.destination,
+          start_date: enquiryData.startDate,
+          end_date: enquiryData.endDate,
+          adults: enquiryData.adults,
+          kids: enquiryData.kids,
+          days: enquiryData.days,
+          name: 'Homepage Visitor',
+          email: 'homepage@enquiry.com',
+          phone: 'Not provided',
+          budget: 'Not specified',
+          message: 'Quick enquiry from homepage form',
+          formatted_message: formattedMessage
+        })
+      });
+
+      if (response.ok) {
+        console.log('✅ Homepage enquiry submitted to backend');
+        
+        // Send WhatsApp message
+        const whatsappMessage = encodeURIComponent(formattedMessage);
+        const whatsappUrl = `https://wa.me/918679333355?text=${whatsappMessage}`;
+        
+        // Open WhatsApp in new tab
+        window.open(whatsappUrl, '_blank');
+        console.log('✅ WhatsApp message sent from homepage');
+      } else {
+        console.error('❌ Failed to submit homepage enquiry to backend');
+      }
+    } catch (error) {
+      console.error('❌ Error submitting homepage enquiry:', error);
+    }
+    
     // Show thank you message
     setShowThankYou(true);
     // Reset form
