@@ -228,11 +228,11 @@ metadata:
 
 test_plan:
   current_focus:
-    - "Implement homepage enquiry form with required fields"
   stuck_tasks:
   test_all: false
   test_priority: "high_first"
   backend_testing_complete: true
+  homepage_enquiry_testing_complete: true
 
 agent_communication:
     -agent: "main"
