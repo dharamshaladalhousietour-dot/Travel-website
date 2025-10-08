@@ -204,7 +204,11 @@ const TourPackages = () => {
             >
               {showDetails ? 'Hide Details' : 'View Details'}
             </Button>
-            <Button variant="outline" className="flex-1">
+            <Button 
+              variant="outline" 
+              className="flex-1"
+              onClick={handleEnquireNow}
+            >
               <Send className="h-4 w-4 mr-2" />
               Enquire Now
             </Button>
