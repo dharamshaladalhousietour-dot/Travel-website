@@ -35,6 +35,21 @@ logging.basicConfig(
 )
 logger = logging.getLogger(__name__)
 
+# Email configuration (placeholder - will be updated with real credentials)
+def send_enquiry_email(enquiry_data: EnquiryForm):
+    """Send enquiry notification email to info@prettyplanettravels.com"""
+    try:
+        # For now, just log the email content
+        # TODO: Implement actual email sending once SMTP credentials are provided
+        logger.info(f"📧 EMAIL NOTIFICATION TO info@prettyplanettravels.com")
+        logger.info(f"Subject: New Travel Enquiry from {enquiry_data.name}")
+        logger.info(f"Content: {enquiry_data.formatted_message}")
+        logger.info("✅ Email notification logged (SMTP integration pending)")
+        return True
+    except Exception as e:
+        logger.error(f"❌ Error sending email notification: {str(e)}")
+        return False
+
 
 # Define Models
 class StatusCheck(BaseModel):
