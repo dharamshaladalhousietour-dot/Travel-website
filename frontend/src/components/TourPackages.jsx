@@ -346,6 +346,26 @@ const TourPackages = () => {
           </div>
         </div>
       </div>
+
+      {/* Enquiry Form Modal */}
+      {showEnquiryForm && (
+        <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-4">
+          <div className="max-w-2xl w-full max-h-[90vh] overflow-y-auto">
+            <div className="relative">
+              <button
+                onClick={() => setShowEnquiryForm(false)}
+                className="absolute top-2 right-2 z-10 bg-white rounded-full p-2 shadow-lg hover:bg-gray-100 transition-colors"
+              >
+                <X className="h-4 w-4" />
+              </button>
+              <EnquiryForm
+                packageTitle={selectedPackage?.title || ""}
+                onClose={() => setShowEnquiryForm(false)}
+              />
+            </div>
+          </div>
+        </div>
+      )}
     </section>
   );
 };
