@@ -148,6 +148,11 @@ const TourPackages = () => {
   const PackageCard = ({ pkg }) => {
     const [showDetails, setShowDetails] = useState(false);
 
+    const handleEnquireNow = () => {
+      setSelectedPackage(pkg);
+      setShowEnquiryForm(true);
+    };
+
     return (
       <Card className="overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
         <div className="relative">
