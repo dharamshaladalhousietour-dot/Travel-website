@@ -31,17 +31,41 @@ const EnquiryForm = ({ packageTitle = "", onClose = null }) => {
     setSubmitStatus(null);
 
     try {
+      // Create formatted message for WhatsApp and email
+      const formattedMessage = `📩 New Travel Enquiry Received
+👤 Name: ${formData.name}
+📧 Email: ${formData.email}
+📱 Phone: ${formData.phone}
+
+📍 Destination: ${formData.destination}
+📅 Dates: ${formData.start_date} – ${formData.end_date}
+👨‍👩‍👧 Pax: ${formData.adults} Adults${formData.kids !== '0' ? `, ${formData.kids}` : ''}
+💰 Budget: ₹ ${formData.budget || 'Not specified'}
+🕒 Duration: ${formData.days}
+
+💬 Message: ${formData.message || 'No additional message'}`;
+
+      // Submit to backend API
       const backendUrl = process.env.REACT_APP_BACKEND_URL || '';
       const response = await fetch(`${backendUrl}/api/enquiry`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
         },
-        body: JSON.stringify(formData)
+        body: JSON.stringify({
+          ...formData,
+          formatted_message: formattedMessage
+        })
       });
 
       if (response.ok) {
         setSubmitStatus('success');
+        
+        // Send WhatsApp message
+        const whatsappMessage = encodeURIComponent(formattedMessage);
+        const whatsappUrl = `https://wa.me/918679333355?text=${whatsappMessage}`;
+        window.open(whatsappUrl, '_blank');
+        
         // Reset form
         setFormData({
           destination: packageTitle || '',
@@ -53,14 +77,15 @@ const EnquiryForm = ({ packageTitle = "", onClose = null }) => {
           name: '',
           email: '',
           phone: '',
+          budget: '',
           message: ''
         });
         
-        // Auto-close after 3 seconds if onClose is provided
+        // Auto-close after 5 seconds if onClose is provided
         if (onClose) {
           setTimeout(() => {
             onClose();
-          }, 3000);
+          }, 5000);
         }
       } else {
         throw new Error('Failed to submit enquiry');
