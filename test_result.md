@@ -135,11 +135,14 @@ frontend:
     file: "/app/frontend/src/components/Hero.jsx"
     stuck_count: 0
     priority: "high"
-    needs_retesting: true
+    needs_retesting: false
     status_history:
         -working: true
         -agent: "main"
         -comment: "Replaced search widget with proper enquiry form containing: Destination, Start Date, End Date, Adults (Pax), Kids (with age), No. of Days, Send Booking button. Form validation and thank-you message implemented."
+        -working: true
+        -agent: "testing"
+        -comment: "✅ CRITICAL ISSUE RESOLVED: Fixed backend NameError that was preventing API from starting properly. Homepage enquiry form API integration now working perfectly. Comprehensive testing performed with exact data format from review request: POST /api/enquiry accepts all required fields (destination, start_date, end_date, adults, kids, days, name, email, phone, budget, message, formatted_message), returns 200 status with complete enquiry object including UUID and timestamp, saves data to MongoDB successfully, logs email notifications correctly, CORS headers properly configured for frontend communication. Backend was failing due to type hint issue in send_enquiry_email function - fixed by removing EnquiryForm type hint. All 5 backend tests now passing."
 
   - task: "Fix text cut-off issues while scrolling"
     implemented: true
