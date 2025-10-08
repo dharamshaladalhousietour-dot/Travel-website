@@ -171,7 +171,6 @@ const Hero = () => {
                   className="h-12"
                   value={enquiryData.endDate}
                   onChange={(e) => setEnquiryData({...enquiryData, endDate: e.target.value})}
-                  required
                 />
               </div>
 
