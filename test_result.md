@@ -180,6 +180,9 @@ backend:
         -working: true
         -agent: "testing"
         -comment: "✅ POST /api/enquiry endpoint working perfectly. Successfully accepts enquiry data with all required fields (destination, start_date, end_date, adults, kids, days, name, email, phone, message), generates UUID and timestamp, saves to MongoDB, returns proper response format. Tested with sample Kashmir Honeymoon Special enquiry."
+        -working: true
+        -agent: "testing"
+        -comment: "✅ CRITICAL FIX APPLIED: Fixed NameError in backend server.py that was preventing service from starting (send_enquiry_email function referenced EnquiryForm before it was defined). Removed type hint to resolve issue. API now working perfectly with exact homepage form data format: Manali destination enquiry processed successfully, returns 200 status, generates UUID cc20310d-db14-4a32-827d-c5764ffe060d, saves to database, logs email notification correctly. All backend connectivity restored."
 
   - task: "Database Integration - MongoDB enquiry storage"
     implemented: true
