@@ -35,6 +35,32 @@ class StatusCheck(BaseModel):
 class StatusCheckCreate(BaseModel):
     client_name: str
 
+class EnquiryForm(BaseModel):
+    id: str = Field(default_factory=lambda: str(uuid.uuid4()))
+    destination: str
+    start_date: str
+    end_date: str
+    adults: str
+    kids: str
+    days: str
+    name: str = ""
+    email: str = ""
+    phone: str = ""
+    message: str = ""
+    timestamp: datetime = Field(default_factory=datetime.utcnow)
+
+class EnquiryFormCreate(BaseModel):
+    destination: str
+    start_date: str
+    end_date: str
+    adults: str
+    kids: str
+    days: str
+    name: str = ""
+    email: str = ""
+    phone: str = ""
+    message: str = ""
+
 # Add your routes to the router instead of directly to app
 @api_router.get("/")
 async def root():
