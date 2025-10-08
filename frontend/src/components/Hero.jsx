@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Button } from './ui/button';
 import { Input } from './ui/input';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from './ui/select';
-import { Calendar, Users, MapPin, Search } from 'lucide-react';
+import { Calendar, Users, MapPin } from 'lucide-react';
 
 const Hero = () => {
   const [enquiryData, setEnquiryData] = useState({
