@@ -116,14 +116,15 @@ async def create_enquiry(input: EnquiryFormCreate):
         # Save to database
         _ = await db.enquiries.insert_one(enquiry_obj.dict())
         
-        # TODO: Send WhatsApp and email notifications
-        # This will be implemented in the next phase
+        # Send email notification
+        send_enquiry_email(enquiry_obj)
         
-        logger.info(f"Enquiry received: {enquiry_obj.destination} from {enquiry_obj.name}")
+        logger.info(f"✅ Enquiry processed: {enquiry_obj.destination} from {enquiry_obj.name}")
+        logger.info(f"📱 WhatsApp message will be sent from frontend")
         
         return enquiry_obj
     except Exception as e:
-        logger.error(f"Error creating enquiry: {str(e)}")
+        logger.error(f"❌ Error creating enquiry: {str(e)}")
         raise
 
 @api_router.get("/enquiry", response_model=List[EnquiryForm])
