@@ -84,3 +84,48 @@ code {
     @apply bg-background text-foreground;
     }
 }
+
+/* Fix horizontal scrolling and responsive issues */
+html, body {
+  overflow-x: hidden;
+  max-width: 100vw;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Prevent text overflow */
+.text-wrap {
+  word-wrap: break-word;
+  word-break: break-word;
+  hyphens: auto;
+}
+
+/* Container responsive fix */
+.container {
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+/* Grid responsive fixes */
+.grid {
+  width: 100%;
+  max-width: 100%;
+}
+
+/* Card responsive fixes */
+.card {
+  width: 100%;
+  max-width: 100%;
+  word-wrap: break-word;
+}
+
+/* Image responsive fixes */
+img {
+  max-width: 100%;
+  height: auto;
+}
