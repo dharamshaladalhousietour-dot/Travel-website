@@ -108,90 +108,163 @@ const Hero = () => {
           </div>
         </div>
 
-        {/* Search Widget */}
-        <div className="bg-white/95 backdrop-blur-lg rounded-2xl p-4 sm:p-6 shadow-2xl max-w-4xl mx-4 sm:mx-auto">
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 items-end">
-            {/* Destination */}
-            <div className="space-y-2">
-              <label className="text-sm font-medium text-gray-700 flex items-center gap-1">
-                <MapPin className="h-4 w-4" />
-                Destination
-              </label>
-              <Select onValueChange={(value) => setSearchData({...searchData, destination: value})}>
-                <SelectTrigger className="h-12">
-                  <SelectValue placeholder="Where to?" />
-                </SelectTrigger>
-                <SelectContent>
-                  <SelectItem value="shimla">Shimla, Himachal Pradesh</SelectItem>
-                  <SelectItem value="kashmir">Kashmir Valley</SelectItem>
-                  <SelectItem value="manali">Manali, Himachal Pradesh</SelectItem>
-                  <SelectItem value="dharamshala">Dharamshala, Himachal Pradesh</SelectItem>
-                  <SelectItem value="srinagar">Srinagar, Kashmir</SelectItem>
-                  <SelectItem value="leh-ladakh">Leh Ladakh</SelectItem>
-                </SelectContent>
-              </Select>
+        {/* Enquiry Form */}
+        <div className="bg-white/95 backdrop-blur-lg rounded-2xl p-4 sm:p-6 shadow-2xl max-w-5xl mx-4 sm:mx-auto">
+          {showThankYou && (
+            <div className="mb-6 p-4 bg-green-100 border border-green-400 text-green-700 rounded-lg text-center">
+              <p className="font-semibold">Thank you for your enquiry! Our team will get back to you within 1 hour.</p>
             </div>
-
-            {/* Check-in Date */}
-            <div className="space-y-2">
-              <label className="text-sm font-medium text-gray-700 flex items-center gap-1">
-                <Calendar className="h-4 w-4" />
-                Check-in
-              </label>
-              <Input 
-                type="date" 
-                className="h-12"
-                value={searchData.checkIn}
-                onChange={(e) => setSearchData({...searchData, checkIn: e.target.value})}
-              />
-            </div>
-
-            {/* Check-out Date */}
-            <div className="space-y-2">
-              <label className="text-sm font-medium text-gray-700 flex items-center gap-1">
-                <Calendar className="h-4 w-4" />
-                Check-out
-              </label>
-              <Input 
-                type="date" 
-                className="h-12"
-                value={searchData.checkOut}
-                onChange={(e) => setSearchData({...searchData, checkOut: e.target.value})}
-              />
-            </div>
-
-            {/* Guests */}
-            <div className="space-y-2">
-              <label className="text-sm font-medium text-gray-700 flex items-center gap-1">
-                <Users className="h-4 w-4" />
-                Guests
-              </label>
-              <Select onValueChange={(value) => setSearchData({...searchData, guests: value})}>
-                <SelectTrigger className="h-12">
-                  <SelectValue placeholder="Guests" />
-                </SelectTrigger>
-                <SelectContent>
-                  <SelectItem value="1">1 Guest</SelectItem>
-                  <SelectItem value="2">2 Guests</SelectItem>
-                  <SelectItem value="3-5">3-5 Guests</SelectItem>
-                  <SelectItem value="6-10">6-10 Guests</SelectItem>
-                  <SelectItem value="10+">10+ Guests</SelectItem>
-                </SelectContent>
-              </Select>
-            </div>
-          </div>
+          )}
           
-          {/* Search Button */}
-          <div className="mt-6">
-            <Button 
-              onClick={handleSearch}
-              size="lg" 
-              className="w-full md:w-auto bg-gradient-to-r from-blue-900 to-blue-800 hover:from-blue-800 hover:to-blue-700 text-white px-12 py-4 text-lg font-semibold transition-all duration-300"
-            >
-              <Search className="h-5 w-5 mr-2" />
-              Search Experiences
-            </Button>
-          </div>
+          <form onSubmit={handleSubmit}>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 items-end">
+              {/* Destination */}
+              <div className="space-y-2">
+                <label className="text-sm font-medium text-gray-700 flex items-center gap-1">
+                  <MapPin className="h-4 w-4" />
+                  Destination
+                </label>
+                <Select 
+                  value={enquiryData.destination}
+                  onValueChange={(value) => setEnquiryData({...enquiryData, destination: value})}
+                >
+                  <SelectTrigger className="h-12">
+                    <SelectValue placeholder="Select Destination" />
+                  </SelectTrigger>
+                  <SelectContent>
+                    <SelectItem value="shimla">Shimla, Himachal Pradesh</SelectItem>
+                    <SelectItem value="kashmir">Kashmir Valley</SelectItem>
+                    <SelectItem value="manali">Manali, Himachal Pradesh</SelectItem>
+                    <SelectItem value="dharamshala">Dharamshala, Himachal Pradesh</SelectItem>
+                    <SelectItem value="srinagar">Srinagar, Kashmir</SelectItem>
+                    <SelectItem value="leh-ladakh">Leh Ladakh</SelectItem>
+                    <SelectItem value="goa">Goa</SelectItem>
+                    <SelectItem value="kerala">Kerala</SelectItem>
+                    <SelectItem value="rajasthan">Rajasthan</SelectItem>
+                    <SelectItem value="other">Other (Specify in message)</SelectItem>
+                  </SelectContent>
+                </Select>
+              </div>
+
+              {/* Start Date */}
+              <div className="space-y-2">
+                <label className="text-sm font-medium text-gray-700 flex items-center gap-1">
+                  <Calendar className="h-4 w-4" />
+                  Start Date
+                </label>
+                <Input 
+                  type="date" 
+                  className="h-12"
+                  value={enquiryData.startDate}
+                  onChange={(e) => setEnquiryData({...enquiryData, startDate: e.target.value})}
+                  required
+                />
+              </div>
+
+              {/* End Date */}
+              <div className="space-y-2">
+                <label className="text-sm font-medium text-gray-700 flex items-center gap-1">
+                  <Calendar className="h-4 w-4" />
+                  End Date
+                </label>
+                <Input 
+                  type="date" 
+                  className="h-12"
+                  value={enquiryData.endDate}
+                  onChange={(e) => setEnquiryData({...enquiryData, endDate: e.target.value})}
+                  required
+                />
+              </div>
+
+              {/* Adults (Pax) */}
+              <div className="space-y-2">
+                <label className="text-sm font-medium text-gray-700 flex items-center gap-1">
+                  <Users className="h-4 w-4" />
+                  Adults (Pax)
+                </label>
+                <Select 
+                  value={enquiryData.adults}
+                  onValueChange={(value) => setEnquiryData({...enquiryData, adults: value})}
+                >
+                  <SelectTrigger className="h-12">
+                    <SelectValue placeholder="Adults" />
+                  </SelectTrigger>
+                  <SelectContent>
+                    <SelectItem value="1">1 Adult</SelectItem>
+                    <SelectItem value="2">2 Adults</SelectItem>
+                    <SelectItem value="3">3 Adults</SelectItem>
+                    <SelectItem value="4">4 Adults</SelectItem>
+                    <SelectItem value="5">5 Adults</SelectItem>
+                    <SelectItem value="6">6 Adults</SelectItem>
+                    <SelectItem value="7">7 Adults</SelectItem>
+                    <SelectItem value="8">8 Adults</SelectItem>
+                    <SelectItem value="9">9 Adults</SelectItem>
+                    <SelectItem value="10+">10+ Adults</SelectItem>
+                  </SelectContent>
+                </Select>
+              </div>
+
+              {/* Kids (with age) */}
+              <div className="space-y-2">
+                <label className="text-sm font-medium text-gray-700 flex items-center gap-1">
+                  <Users className="h-4 w-4" />
+                  Kids (with age)
+                </label>
+                <Select 
+                  value={enquiryData.kids}
+                  onValueChange={(value) => setEnquiryData({...enquiryData, kids: value})}
+                >
+                  <SelectTrigger className="h-12">
+                    <SelectValue placeholder="Kids" />
+                  </SelectTrigger>
+                  <SelectContent>
+                    <SelectItem value="0">No Kids</SelectItem>
+                    <SelectItem value="1 (2-5 years)">1 Kid (2-5 years)</SelectItem>
+                    <SelectItem value="1 (6-12 years)">1 Kid (6-12 years)</SelectItem>
+                    <SelectItem value="2 (2-5 years)">2 Kids (2-5 years)</SelectItem>
+                    <SelectItem value="2 (6-12 years)">2 Kids (6-12 years)</SelectItem>
+                    <SelectItem value="2 (mixed ages)">2 Kids (mixed ages)</SelectItem>
+                    <SelectItem value="3+ kids">3+ Kids</SelectItem>
+                  </SelectContent>
+                </Select>
+              </div>
+
+              {/* No. of Days */}
+              <div className="space-y-2">
+                <label className="text-sm font-medium text-gray-700 flex items-center gap-1">
+                  <Calendar className="h-4 w-4" />
+                  No. of Days
+                </label>
+                <Select 
+                  value={enquiryData.days}
+                  onValueChange={(value) => setEnquiryData({...enquiryData, days: value})}
+                >
+                  <SelectTrigger className="h-12">
+                    <SelectValue placeholder="Days" />
+                  </SelectTrigger>
+                  <SelectContent>
+                    <SelectItem value="1-2">1-2 Days</SelectItem>
+                    <SelectItem value="3-4">3-4 Days</SelectItem>
+                    <SelectItem value="5-6">5-6 Days</SelectItem>
+                    <SelectItem value="7-10">7-10 Days</SelectItem>
+                    <SelectItem value="11-15">11-15 Days</SelectItem>
+                    <SelectItem value="15+">15+ Days</SelectItem>
+                  </SelectContent>
+                </Select>
+              </div>
+            </div>
+            
+            {/* Submit Button */}
+            <div className="mt-6 text-center">
+              <Button 
+                type="submit"
+                size="lg" 
+                className="w-full md:w-auto bg-gradient-to-r from-blue-900 to-blue-800 hover:from-blue-800 hover:to-blue-700 text-white px-12 py-4 text-lg font-semibold transition-all duration-300 transform hover:scale-105 shadow-xl"
+              >
+                📨 Send Booking Enquiry
+              </Button>
+            </div>
+          </form>
         </div>
       </div>
     </section>
