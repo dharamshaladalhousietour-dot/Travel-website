@@ -57,24 +57,12 @@ const MobileHeader = () => {
 
             {/* CTA Buttons */}
             <div className="space-y-3 pt-4">
-              <a
-                href="https://wa.me/918679333355?text=Hello!%20I%20want%20to%20book%20tour%20with%20an%20expert.%20Please%20help%20me%20plan%20my%20trip."
-                target="_blank"
-                rel="noopener noreferrer"
+              <Button 
+                className="w-full bg-gradient-to-r from-green-600 to-green-700 hover:from-green-700 hover:to-green-800 text-white py-4 text-lg font-bold"
+                onClick={() => alert('Razorpay integration will be activated once API keys are provided')}
               >
-                <Button className="w-full bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 text-white py-4 text-lg font-bold">
-                  🏔️ Book Tour with Expert
-                </Button>
-              </a>
-              <a
-                href="https://wa.me/918679333354?text=Hello!%20I%20want%20to%20book%20events%20with%20an%20expert.%20Please%20help%20me%20plan%20my%20event."
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <Button className="w-full bg-gradient-to-r from-purple-500 to-purple-600 hover:from-purple-600 hover:to-purple-700 text-white py-4 text-lg font-bold">
-                  💒 Book Events with Expert
-                </Button>
-              </a>
+                💳 Pay Now
+              </Button>
             </div>
           </div>
         </div>
