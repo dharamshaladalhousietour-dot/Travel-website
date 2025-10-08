@@ -78,6 +78,30 @@ async def get_status_checks():
     status_checks = await db.status_checks.find().to_list(1000)
     return [StatusCheck(**status_check) for status_check in status_checks]
 
+@api_router.post("/enquiry", response_model=EnquiryForm)
+async def create_enquiry(input: EnquiryFormCreate):
+    try:
+        enquiry_dict = input.dict()
+        enquiry_obj = EnquiryForm(**enquiry_dict)
+        
+        # Save to database
+        _ = await db.enquiries.insert_one(enquiry_obj.dict())
+        
+        # TODO: Send WhatsApp and email notifications
+        # This will be implemented in the next phase
+        
+        logger.info(f"Enquiry received: {enquiry_obj.destination} from {enquiry_obj.name}")
+        
+        return enquiry_obj
+    except Exception as e:
+        logger.error(f"Error creating enquiry: {str(e)}")
+        raise
+
+@api_router.get("/enquiry", response_model=List[EnquiryForm])
+async def get_enquiries():
+    enquiries = await db.enquiries.find().to_list(1000)
+    return [EnquiryForm(**enquiry) for enquiry in enquiries]
+
 # Include the router in the main app
 app.include_router(api_router)
 
