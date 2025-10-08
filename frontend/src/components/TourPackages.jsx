@@ -123,7 +123,7 @@ const TourPackages = () => {
       title: "Rishikesh Yoga & Adventure",
       duration: "3 Nights / 4 Days",
       region: "Uttarakhand",
-      image: "https://images.unsplash.com/photo-1578662996442-48f60103fc96",
+      image: "https://images.unsplash.com/photo-1581791534721-e599df4417f7",
       highlights: ["River Rafting", "Yoga Sessions", "Ganga Aarti", "Beatles Ashram"],
       itinerary: [
         { day: 1, title: "Arrival Rishikesh", description: "Check-in, Ganga Aarti evening" },
