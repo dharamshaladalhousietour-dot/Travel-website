@@ -356,18 +356,25 @@ const TourPackages = () => {
       </div>
 
       {/* Enquiry Form Modal */}
-      {showEnquiryForm && (
-        <div 
-          className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center p-4" 
-          style={{ zIndex: 9999 }}
-        >
-          <div className="max-w-2xl w-full max-h-[90vh] overflow-y-auto">
-            <SimpleEnquiryForm
-              packageTitle={selectedPackage?.title || ""}
-              onClose={() => setShowEnquiryForm(false)}
-            />
+      {showEnquiryForm && selectedPackage && (
+        <>
+          <div 
+            className="fixed inset-0 bg-black bg-opacity-75" 
+            style={{ zIndex: 10000 }}
+            onClick={() => setShowEnquiryForm(false)}
+          ></div>
+          <div 
+            className="fixed inset-0 flex items-center justify-center p-4" 
+            style={{ zIndex: 10001 }}
+          >
+            <div className="max-w-2xl w-full max-h-[90vh] overflow-y-auto bg-white rounded-lg">
+              <SimpleEnquiryForm
+                packageTitle={selectedPackage.title}
+                onClose={() => setShowEnquiryForm(false)}
+              />
+            </div>
           </div>
-        </div>
+        </>
       )}
     </section>
   );
