@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
-import { MapPin, Clock, Users, Star, Download, Send } from 'lucide-react';
+import { MapPin, Clock, Users, Star, Download, Send, X } from 'lucide-react';
 import { Card, CardContent } from './ui/card';
 import { Button } from './ui/button';
 import { Badge } from './ui/badge';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from './ui/accordion';
+import EnquiryForm from './EnquiryForm';
 
 const TourPackages = () => {
   const [selectedRegion, setSelectedRegion] = useState('All');
