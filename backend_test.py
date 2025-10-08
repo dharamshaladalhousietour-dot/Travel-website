@@ -52,16 +52,18 @@ def test_enquiry_post_api():
     
     # Sample enquiry data as specified in the review request
     enquiry_data = {
-        "destination": "Kashmir Honeymoon Special",
+        "destination": "Manali, Himachal Pradesh",
         "start_date": "2024-12-15",
         "end_date": "2024-12-20",
         "adults": "2",
         "kids": "0",
         "days": "5-6",
-        "name": "Test User",
-        "email": "test@prettyplanettravels.com",
-        "phone": "+91 9999999999",
-        "message": "Looking for honeymoon package"
+        "name": "Homepage Visitor",
+        "email": "homepage@enquiry.com",
+        "phone": "Not provided",
+        "budget": "Not specified",
+        "message": "Quick enquiry from homepage form",
+        "formatted_message": "📩 New Travel Enquiry Received\n👤 Name: Homepage Visitor\n📧 Email: homepage@enquiry.com..."
     }
     
     try:
