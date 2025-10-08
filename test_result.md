@@ -166,6 +166,53 @@ frontend:
         -comment: "No extra header images found in current implementation. Header shows only logo and company name as expected."
 
 backend:
+  - task: "Enquiry Form API - POST /api/enquiry endpoint"
+    implemented: true
+    working: true
+    file: "/app/backend/server.py"
+    stuck_count: 0
+    priority: "high"
+    needs_retesting: false
+    status_history:
+        -working: true
+        -agent: "testing"
+        -comment: "✅ POST /api/enquiry endpoint working perfectly. Successfully accepts enquiry data with all required fields (destination, start_date, end_date, adults, kids, days, name, email, phone, message), generates UUID and timestamp, saves to MongoDB, returns proper response format. Tested with sample Kashmir Honeymoon Special enquiry."
+
+  - task: "Database Integration - MongoDB enquiry storage"
+    implemented: true
+    working: true
+    file: "/app/backend/server.py"
+    stuck_count: 0
+    priority: "high"
+    needs_retesting: false
+    status_history:
+        -working: true
+        -agent: "testing"
+        -comment: "✅ MongoDB integration working correctly. Enquiries are properly stored with UUID and timestamp. GET /api/enquiry successfully retrieves all enquiries from database. No data corruption or missing fields observed. Database connection via MONGO_URL environment variable working."
+
+  - task: "CORS and Connectivity - Frontend-Backend communication"
+    implemented: true
+    working: true
+    file: "/app/backend/server.py"
+    stuck_count: 0
+    priority: "high"
+    needs_retesting: false
+    status_history:
+        -working: true
+        -agent: "testing"
+        -comment: "✅ CORS configuration working perfectly. Frontend can connect to backend API via REACT_APP_BACKEND_URL. All CORS headers properly set (allow-origin, allow-methods, allow-headers). OPTIONS preflight requests handled correctly. Environment variables (REACT_APP_BACKEND_URL, MONGO_URL) working as expected."
+
+  - task: "API Validation and Error Handling"
+    implemented: true
+    working: true
+    file: "/app/backend/server.py"
+    stuck_count: 0
+    priority: "medium"
+    needs_retesting: false
+    status_history:
+        -working: true
+        -agent: "testing"
+        -comment: "✅ Form validation working correctly. API properly rejects invalid data with 422 status code. Error handling implemented for enquiry creation. Fixed minor logging issue where logger was used before definition - moved logging configuration earlier in code."
 
 metadata:
   created_by: "main_agent"
