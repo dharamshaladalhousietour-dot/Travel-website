@@ -36,7 +36,7 @@ logging.basicConfig(
 logger = logging.getLogger(__name__)
 
 # Email configuration (placeholder - will be updated with real credentials)
-def send_enquiry_email(enquiry_data: EnquiryForm):
+def send_enquiry_email(enquiry_data):
     """Send enquiry notification email to info@prettyplanettravels.com"""
     try:
         # For now, just log the email content
