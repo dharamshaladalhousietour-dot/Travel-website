@@ -274,6 +274,26 @@ const EnquiryForm = ({ packageTitle = "", onClose = null }) => {
           </div>
 
           <div className="space-y-2">
+            <Label htmlFor="budget" className="flex items-center gap-1">
+              💰 Budget (₹)
+            </Label>
+            <Select value={formData.budget} onValueChange={(value) => handleInputChange('budget', value)}>
+              <SelectTrigger>
+                <SelectValue placeholder="Select your budget range" />
+              </SelectTrigger>
+              <SelectContent>
+                <SelectItem value="15,000 - 25,000">₹15,000 - ₹25,000</SelectItem>
+                <SelectItem value="25,000 - 50,000">₹25,000 - ₹50,000</SelectItem>
+                <SelectItem value="50,000 - 1,00,000">₹50,000 - ₹1,00,000</SelectItem>
+                <SelectItem value="1,00,000 - 2,00,000">₹1,00,000 - ₹2,00,000</SelectItem>
+                <SelectItem value="2,00,000 - 5,00,000">₹2,00,000 - ₹5,00,000</SelectItem>
+                <SelectItem value="5,00,000+">₹5,00,000+</SelectItem>
+                <SelectItem value="Custom Budget">Custom Budget (Will discuss)</SelectItem>
+              </SelectContent>
+            </Select>
+          </div>
+
+          <div className="space-y-2">
             <Label htmlFor="message">Special Requirements</Label>
             <Textarea
               id="message"
