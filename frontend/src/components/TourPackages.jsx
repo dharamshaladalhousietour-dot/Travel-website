@@ -61,7 +61,7 @@ const TourPackages = () => {
       title: "Manali Honeymoon Delight",
       duration: "4 Nights / 5 Days", 
       region: "Himachal",
-      image: "https://images.unsplash.com/photo-1620720970374-5b7e67e1e610",
+      image: "https://images.pexels.com/photos/2961109/pexels-photo-2961109.jpeg",
       highlights: ["Solang Valley", "Atal Tunnel", "Hadimba Temple", "Mall Road"],
       itinerary: [
         { day: 1, title: "Arrival Manali", description: "Private transfer & check-in; evening Mall Road" },
