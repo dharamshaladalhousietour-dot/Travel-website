@@ -10,6 +10,8 @@ const TourPackages = () => {
   const [selectedRegion, setSelectedRegion] = useState('All');
   const [showEnquiryForm, setShowEnquiryForm] = useState(false);
   const [selectedPackage, setSelectedPackage] = useState(null);
+  
+  console.log('TourPackages render - showEnquiryForm:', showEnquiryForm, 'selectedPackage:', selectedPackage?.title);
 
   const tourPackages = [
     // Kashmir
