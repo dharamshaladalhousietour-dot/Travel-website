@@ -33,6 +33,30 @@ const Home = () => {
   );
 };
 
+// Tour Packages Page Component
+const TourPackagesPage = () => {
+  return (
+    <div className="min-h-screen">
+      <Header />
+      <TourPackages />
+      <Footer />
+      <WhatsAppButton />
+    </div>
+  );
+};
+
+// Events & Weddings Page Component
+const EventsWeddingsPage = () => {
+  return (
+    <div className="min-h-screen">
+      <Header />
+      <EventsWeddings />
+      <Footer />
+      <WhatsAppButton />
+    </div>
+  );
+};
+
 function App() {
   return (
     <div className="App">
