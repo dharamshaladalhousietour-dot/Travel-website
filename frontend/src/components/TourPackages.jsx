@@ -210,7 +210,7 @@ const TourPackages = () => {
               onClick={handleEnquireNow}
             >
               <Send className="h-4 w-4 mr-2" />
-              Enquire Now
+              Send Enquiry
             </Button>
           </div>
 
