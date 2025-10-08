@@ -106,7 +106,7 @@ Details:
             backgroundImage: 'url(https://images.unsplash.com/photo-1726508684402-ee6029833696)'
           }}
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-purple-900/80 via-blue-800/70 to-transparent"></div>
+        <div className="absolute inset-0 bg-gradient-to-r from-purple-900/30 via-blue-800/20 to-transparent"></div>
         
         <div className="relative z-10 text-center text-white px-4 max-w-4xl mx-auto">
           <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
