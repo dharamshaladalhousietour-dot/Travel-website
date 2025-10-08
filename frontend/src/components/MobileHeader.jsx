@@ -10,14 +10,7 @@ const MobileHeader = () => {
       {/* Mobile Header */}
       <div className="px-4 py-4 flex justify-between items-center">
         {/* Logo */}
-        <div className="flex items-center space-x-3">
-          <div className="w-12 h-12 rounded-full overflow-hidden">
-            <img 
-              src="https://customer-assets.emergentagent.com/job_wanderlust-web-3/artifacts/gj7j2eju_image.png" 
-              alt="Pretty Planet Logo"
-              className="w-full h-full object-contain"
-            />
-          </div>
+        <div className="flex items-center">
           <div>
             <h1 className="text-base font-bold font-playfair leading-tight">
               <span className="bg-gradient-to-r from-blue-900 to-blue-600 bg-clip-text text-transparent">Pretty Planet</span>
