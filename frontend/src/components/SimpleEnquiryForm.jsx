@@ -36,6 +36,13 @@ const SimpleEnquiryForm = ({ packageTitle = "", onClose = null }) => {
     e.preventDefault();
     setIsSubmitting(true);
 
+    // Validate required fields
+    if (!formData.name || !formData.email || !formData.phone) {
+      alert('Please fill in all required fields: Name, Email, and Phone');
+      setIsSubmitting(false);
+      return;
+    }
+
     try {
       // Create formatted message for WhatsApp and email
       const formattedMessage = `📩 New Travel Enquiry Received
@@ -51,7 +58,7 @@ const SimpleEnquiryForm = ({ packageTitle = "", onClose = null }) => {
 
 💬 Message: ${formData.message || 'No additional message'}`;
 
-      // Submit to backend API
+      // Submit to backend API (this handles email notification)
       const backendUrl = process.env.REACT_APP_BACKEND_URL || '';
       
       const response = await fetch(`${backendUrl}/api/enquiry`, {
@@ -61,12 +68,15 @@ const SimpleEnquiryForm = ({ packageTitle = "", onClose = null }) => {
         },
         body: JSON.stringify({
           ...formData,
+          start_date: formData.startDate,
+          end_date: formData.endDate,
           formatted_message: formattedMessage
         })
       });
 
       if (response.ok) {
         setSubmitStatus('success');
+        console.log('✅ Enquiry submitted successfully to backend');
         
         // Send WhatsApp message with full details
         const whatsappMessage = encodeURIComponent(formattedMessage);
@@ -74,29 +84,19 @@ const SimpleEnquiryForm = ({ packageTitle = "", onClose = null }) => {
         
         // Open WhatsApp in new tab
         window.open(whatsappUrl, '_blank');
+        console.log('✅ WhatsApp message sent');
         
-        // Close modal after 2 seconds
+        // Close modal after 3 seconds
         setTimeout(() => {
           if (onClose) onClose();
-        }, 2000);
+        }, 3000);
         
       } else {
-        throw new Error('Failed to submit enquiry');
+        throw new Error('Failed to submit enquiry to backend');
       }
     } catch (error) {
-      console.error('Error submitting enquiry:', error);
-      
-      // Fallback: Open WhatsApp with basic message
-      const basicMessage = `Hi! I'm interested in ${formData.destination} package. 
-Name: ${formData.name}
-Email: ${formData.email}
-Phone: ${formData.phone}
-Please contact me with details.`;
-      
-      const whatsappUrl = `https://wa.me/918679333355?text=${encodeURIComponent(basicMessage)}`;
-      window.open(whatsappUrl, '_blank');
-      
-      setSubmitStatus('sent_whatsapp');
+      console.error('❌ Error submitting enquiry:', error);
+      setSubmitStatus('error');
     } finally {
       setIsSubmitting(false);
     }
