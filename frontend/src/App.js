@@ -39,6 +39,7 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/tour-packages" element={<TourPackages />} />
         </Routes>
       </BrowserRouter>
     </div>
