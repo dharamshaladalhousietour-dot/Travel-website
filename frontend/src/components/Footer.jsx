@@ -251,9 +251,7 @@ const Footer = () => {
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             {/* Copyright */}
             <div className="flex items-center space-x-1 text-blue-200 text-sm">
-              <span>© {currentYear} Pretty Planet Travels and Events. Made with</span>
-              <Heart className="h-4 w-4 text-red-400 fill-current" />
-              <span>All rights reserved.</span>
+              <span>© {currentYear} Pretty Planet Travels and Events. All rights reserved.</span>
             </div>
             
             {/* Social Links */}
