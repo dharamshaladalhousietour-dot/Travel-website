@@ -18,6 +18,7 @@ const EnquiryForm = ({ packageTitle = "", onClose = null }) => {
     name: '',
     email: '',
     phone: '',
+    budget: '',
     message: ''
   });
 
