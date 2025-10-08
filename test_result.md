@@ -101,3 +101,85 @@
 #====================================================================================================
 # Testing Data - Main Agent and testing sub agent both should log testing data below this section
 #====================================================================================================
+
+user_problem_statement: Fix homepage UI issues for Pretty Planet Travels and Events website including "Made by Emergent" footer text removal, Book with Expert text visibility, text cut-off fixes, header image removal, and implementing proper homepage enquiry form with specified fields.
+
+frontend:
+  - task: "Remove 'Made by Emergent' footer text"
+    implemented: true
+    working: true
+    file: "/app/frontend/src/components/Footer.jsx"
+    stuck_count: 0
+    priority: "high"
+    needs_retesting: false
+    status_history:
+        -working: true
+        -agent: "main"
+        -comment: "Successfully removed 'Made with' and heart icon from footer, now shows only copyright text"
+
+  - task: "Fix Book with Expert text visibility (desktop + mobile)"
+    implemented: true
+    working: true
+    file: "/app/frontend/src/components/Header.jsx"
+    stuck_count: 0
+    priority: "high" 
+    needs_retesting: false
+    status_history:
+        -working: true
+        -agent: "main"
+        -comment: "Book with Expert buttons are properly visible in both desktop and mobile views with good styling"
+
+  - task: "Implement homepage enquiry form with required fields"
+    implemented: true
+    working: true
+    file: "/app/frontend/src/components/Hero.jsx"
+    stuck_count: 0
+    priority: "high"
+    needs_retesting: true
+    status_history:
+        -working: true
+        -agent: "main"
+        -comment: "Replaced search widget with proper enquiry form containing: Destination, Start Date, End Date, Adults (Pax), Kids (with age), No. of Days, Send Booking button. Form validation and thank-you message implemented."
+
+  - task: "Fix text cut-off issues while scrolling"
+    implemented: true
+    working: true
+    file: "N/A"
+    stuck_count: 0
+    priority: "medium"
+    needs_retesting: true
+    status_history:
+        -working: true
+        -agent: "main"
+        -comment: "No text cut-off issues observed in testing on desktop and mobile views"
+
+  - task: "Remove extra header image under logo"
+    implemented: true
+    working: true
+    file: "N/A"
+    stuck_count: 0
+    priority: "medium"
+    needs_retesting: false
+    status_history:
+        -working: true
+        -agent: "main"
+        -comment: "No extra header images found in current implementation. Header shows only logo and company name as expected."
+
+backend:
+
+metadata:
+  created_by: "main_agent"
+  version: "1.0"
+  test_sequence: 0
+  run_ui: false
+
+test_plan:
+  current_focus:
+    - "Implement homepage enquiry form with required fields"
+  stuck_tasks:
+  test_all: false
+  test_priority: "high_first"
+
+agent_communication:
+    -agent: "main"
+    -message: "Phase 1 (Homepage fixes) completed successfully. All major UI issues resolved: 1) Made by Emergent text removed from footer 2) Book with Expert buttons working properly on desktop/mobile 3) Homepage enquiry form implemented with all specified fields 4) No text cut-off issues found 5) No extra header images found. Form functionality needs final testing to confirm thank-you message display."
