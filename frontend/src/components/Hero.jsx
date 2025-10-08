@@ -5,17 +5,33 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '.
 import { Calendar, Users, MapPin, Search } from 'lucide-react';
 
 const Hero = () => {
-  const [searchData, setSearchData] = useState({
+  const [enquiryData, setEnquiryData] = useState({
     destination: '',
-    checkIn: '',
-    checkOut: '',
-    guests: ''
+    startDate: '',
+    endDate: '',
+    adults: '',
+    kids: '',
+    days: ''
   });
 
-  const handleSearch = () => {
-    console.log('Search data:', searchData);
-    // Mock search functionality
-    alert('Search functionality coming soon!');
+  const [showThankYou, setShowThankYou] = useState(false);
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    console.log('Enquiry data:', enquiryData);
+    // Show thank you message
+    setShowThankYou(true);
+    // Reset form
+    setEnquiryData({
+      destination: '',
+      startDate: '',
+      endDate: '',
+      adults: '',
+      kids: '',
+      days: ''
+    });
+    // Hide thank you message after 5 seconds
+    setTimeout(() => setShowThankYou(false), 5000);
   };
 
   return (
