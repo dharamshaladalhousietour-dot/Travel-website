@@ -18,7 +18,7 @@ const TourPackages = () => {
       title: "Kashmir Honeymoon Special",
       duration: "5 Nights / 6 Days",
       region: "Kashmir",
-      image: "https://images.unsplash.com/photo-1708179070772-abf3a1d16b74",
+      image: "https://images.unsplash.com/photo-1595815771614-ade9d652a65d",
       highlights: ["Houseboats", "Shikara Rides", "Gulmarg Snow", "Pahalgam Valley"],
       itinerary: [
         { day: 1, title: "Arrival Srinagar", description: "Airport pickup, Dal Lake evening walk" },
