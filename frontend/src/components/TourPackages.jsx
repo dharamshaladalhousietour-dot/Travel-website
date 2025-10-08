@@ -39,7 +39,7 @@ const TourPackages = () => {
       title: "Kashmir Short Escape", 
       duration: "4 Nights / 5 Days",
       region: "Kashmir",
-      image: "https://images.unsplash.com/photo-1708186320869-0a527e67023d",
+      image: "https://images.unsplash.com/photo-1598091383021-15ddea10925d",
       highlights: ["Dal Lake", "Gulmarg", "Local Markets", "Shikara Rides"],
       itinerary: [
         { day: 1, title: "Arrival Srinagar", description: "Airport pickup, hotel check-in" },
