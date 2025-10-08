@@ -149,18 +149,21 @@ const TourPackages = () => {
     const [showDetails, setShowDetails] = useState(false);
 
     const handleEnquireNow = () => {
-      console.log('Enquire Now clicked for:', pkg.title);
-      try {
-        setSelectedPackage(pkg);
-        setShowEnquiryForm(true);
-        console.log('Modal should be showing now');
-      } catch (error) {
-        console.error('Error opening enquiry form:', error);
-        // Fallback to WhatsApp direct link
-        const message = `Hi! I'm interested in ${pkg.title} package. Please share more details.`;
-        const whatsappUrl = `https://wa.me/918679333355?text=${encodeURIComponent(message)}`;
-        window.open(whatsappUrl, '_blank');
-      }
+      // Create detailed WhatsApp message with package info
+      const message = `📩 New Travel Enquiry
+
+👤 Interested in: ${pkg.title}
+📍 Destination: ${pkg.region}
+🕒 Duration: ${pkg.duration}
+⭐ Rating: ${pkg.rating} (${pkg.reviews} reviews)
+🎯 Highlights: ${pkg.highlights.join(', ')}
+
+💬 Please share detailed itinerary, pricing, and availability.
+
+I would like more information about this package. Please contact me.`;
+
+      const whatsappUrl = `https://wa.me/918679333355?text=${encodeURIComponent(message)}`;
+      window.open(whatsappUrl, '_blank');
     };
 
     return (
