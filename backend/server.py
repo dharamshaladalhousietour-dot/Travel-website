@@ -53,7 +53,9 @@ class EnquiryForm(BaseModel):
     name: str = ""
     email: str = ""
     phone: str = ""
+    budget: str = ""
     message: str = ""
+    formatted_message: str = ""
     timestamp: datetime = Field(default_factory=datetime.utcnow)
 
 class EnquiryFormCreate(BaseModel):
@@ -66,7 +68,9 @@ class EnquiryFormCreate(BaseModel):
     name: str = ""
     email: str = ""
     phone: str = ""
+    budget: str = ""
     message: str = ""
+    formatted_message: str = ""
 
 # Add your routes to the router instead of directly to app
 @api_router.get("/")
