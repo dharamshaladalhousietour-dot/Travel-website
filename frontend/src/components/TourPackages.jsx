@@ -368,7 +368,7 @@ const TourPackages = () => {
               >
                 <X className="h-4 w-4" />
               </button>
-              <EnquiryForm
+              <SimpleEnquiryForm
                 packageTitle={selectedPackage?.title || ""}
                 onClose={() => setShowEnquiryForm(false)}
               />
