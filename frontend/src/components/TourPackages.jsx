@@ -4,7 +4,7 @@ import { Card, CardContent } from './ui/card';
 import { Button } from './ui/button';
 import { Badge } from './ui/badge';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from './ui/accordion';
-import EnquiryForm from './EnquiryForm';
+import SimpleEnquiryForm from './SimpleEnquiryForm';
 
 const TourPackages = () => {
   const [selectedRegion, setSelectedRegion] = useState('All');
