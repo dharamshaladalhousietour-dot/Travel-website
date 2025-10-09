@@ -36,6 +36,12 @@ logging.basicConfig(
 )
 logger = logging.getLogger(__name__)
 
+# Initialize Razorpay client
+razorpay_client = razorpay.Client(auth=(
+    os.environ.get('RAZORPAY_KEY_ID'),
+    os.environ.get('RAZORPAY_KEY_SECRET')
+))
+
 # Email configuration (placeholder - will be updated with real credentials)
 def send_enquiry_email(enquiry_data):
     """Send enquiry notification email to info@prettyplanettravels.com"""
