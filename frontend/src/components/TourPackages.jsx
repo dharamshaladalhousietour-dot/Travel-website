@@ -5,6 +5,7 @@ import { Button } from './ui/button';
 import { Badge } from './ui/badge';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from './ui/accordion';
 import SimpleEnquiryForm from './SimpleEnquiryForm';
+import RazorpayCheckout from './RazorpayCheckout';
 
 const TourPackages = () => {
   const [selectedRegion, setSelectedRegion] = useState('All');
