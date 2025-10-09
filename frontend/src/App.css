@@ -308,48 +308,51 @@ img {
 }
 
 /* Payment Icons Styles */
-.payment-icon {
+.payment-methods-container {
+  margin-bottom: 1.5rem;
+}
+
+.payment-icon-container {
   min-width: 60px;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  background: linear-gradient(135deg, #ffffff 0%, #f8fafc 100%);
+}
+
+.payment-icon-container:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  background: linear-gradient(135deg, #ffffff 0%, #f1f5f9 100%);
+}
+
+.payment-icon-container svg {
   transition: all 0.3s ease;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.payment-icon:hover {
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
-  transform: translateY(-2px);
-}
-
-.payment-icon img {
-  filter: grayscale(1) brightness(0.8);
-  transition: all 0.3s ease;
-}
-
-.payment-icon:hover img {
-  filter: grayscale(0) brightness(1);
-}
-
-.payment-icon div {
-  transition: all 0.3s ease;
-  filter: grayscale(1) brightness(0.8);
-}
-
-.payment-icon:hover div {
-  filter: grayscale(0) brightness(1);
 }
 
 /* Mobile responsive payment icons */
 @media (max-width: 768px) {
-  .payment-icon {
-    min-width: 50px;
+  .payment-icon-container {
+    min-width: 48px;
+    padding: 6px;
   }
   
-  .payment-icon img {
+  .payment-icon-container svg {
+    width: 40px;
     height: 24px;
   }
   
-  .payment-icon div {
-    height: 24px;
+  .payment-icon-container text {
     font-size: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .payment-methods-container .flex {
+    gap: 8px;
+  }
+  
+  .payment-icon-container {
+    min-width: 44px;
+    padding: 4px;
   }
 }
 
