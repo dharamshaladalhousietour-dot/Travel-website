@@ -68,12 +68,19 @@ const Header = () => {
 
           {/* CTA Buttons */}
           <div className="hidden lg:flex items-center space-x-3 flex-shrink-0">
-            <Button 
-              className="bg-gradient-to-r from-green-600 to-green-700 hover:from-green-700 hover:to-green-800 text-white font-bold px-6 py-2.5 text-sm shadow-lg transform hover:scale-105 transition-all duration-300 whitespace-nowrap"
-              onClick={() => alert('Razorpay integration will be activated once API keys are provided')}
+            <RazorpayCheckout
+              amount={100} // ₹1 for testing
+              name="Test User"
+              email="test@prettyplanettravels.com"
+              phone="9999999999"
+              packageName="General Payment"
             >
-              💳 Pay Now
-            </Button>
+              <Button 
+                className="bg-gradient-to-r from-green-600 to-green-700 hover:from-green-700 hover:to-green-800 text-white font-bold px-6 py-2.5 text-sm shadow-lg transform hover:scale-105 transition-all duration-300 whitespace-nowrap"
+              >
+                💳 Pay Now
+              </Button>
+            </RazorpayCheckout>
           </div>
 
           {/* Mobile menu button */}
