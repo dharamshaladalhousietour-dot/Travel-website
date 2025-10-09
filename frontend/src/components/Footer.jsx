@@ -1,5 +1,6 @@
 import React from 'react';
 import { MapPin, Phone, Mail, Facebook, Instagram, Twitter, Linkedin, Youtube, Heart } from 'lucide-react';
+import PaymentIcons from './PaymentIcons';
 import { Button } from './ui/button';
 import { Input } from './ui/input';
 
