@@ -201,7 +201,7 @@ const TourPackages = () => {
             )}
           </div>
 
-          <div className="flex space-x-2 mb-4">
+          <div className="flex space-x-2 mb-4 flex-wrap">
             <Button 
               onClick={() => setShowDetails(!showDetails)}
               className="flex-1 bg-blue-600 hover:bg-blue-700"
@@ -221,6 +221,23 @@ const TourPackages = () => {
               <Send className="h-4 w-4 mr-2" />
               Send Enquiry
             </Button>
+          </div>
+          
+          {/* Book This Package Button */}
+          <div className="mt-3">
+            <RazorpayCheckout
+              amount={parseInt(pkg.price.replace(/[₹,]/g, '')) * 100} // Convert price to paise
+              name="Customer Name"
+              email="customer@example.com"
+              phone="9999999999"
+              packageName={pkg.title}
+            >
+              <Button 
+                className="w-full bg-gradient-to-r from-green-600 to-green-700 hover:from-green-700 hover:to-green-800 text-white font-bold py-3 text-lg shadow-lg transform hover:scale-105 transition-all duration-300"
+              >
+                💳 Book This Package - {pkg.price}
+              </Button>
+            </RazorpayCheckout>
           </div>
 
           {showDetails && (
