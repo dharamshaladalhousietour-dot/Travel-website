@@ -104,12 +104,19 @@ const Header = () => {
               <a href="#blog" className="text-gray-700 hover:text-blue-900 font-medium transition-colors px-3 py-2 rounded-lg hover:bg-blue-50">Blog</a>
               <a href="#contact" className="text-gray-700 hover:text-blue-900 font-medium transition-colors px-3 py-2 rounded-lg hover:bg-blue-50">Contact</a>
               <div className="pt-4 flex flex-col space-y-3">
-                <Button 
-                  className="bg-gradient-to-r from-green-600 to-green-700 hover:from-green-700 hover:to-green-800 text-white w-full font-bold py-3"
-                  onClick={() => alert('Razorpay integration will be activated once API keys are provided')}
+                <RazorpayCheckout
+                  amount={100} // ₹1 for testing
+                  name="Test User"
+                  email="test@prettyplanettravels.com"
+                  phone="9999999999"
+                  packageName="General Payment"
                 >
-                  💳 Pay Now
-                </Button>
+                  <Button 
+                    className="bg-gradient-to-r from-green-600 to-green-700 hover:from-green-700 hover:to-green-800 text-white w-full font-bold py-3"
+                  >
+                    💳 Pay Now
+                  </Button>
+                </RazorpayCheckout>
               </div>
             </div>
           </div>
