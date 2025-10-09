@@ -248,6 +248,70 @@ const Footer = () => {
       {/* Bottom Footer */}
       <div className="border-t border-blue-800">
         <div className="max-w-7xl mx-auto px-4 py-8">
+          {/* Payment Methods Section */}
+          <div className="text-center mb-6 pb-6 border-b border-blue-700/50">
+            <div className="flex flex-col items-center space-y-3">
+              <span className="text-blue-200 text-sm font-medium">💳 We Accept:</span>
+              <div className="flex flex-wrap items-center justify-center gap-4">
+                {/* Visa */}
+                <div className="payment-icon bg-white rounded-lg p-2 hover:bg-blue-50 transition-all duration-300 transform hover:scale-105">
+                  <img 
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/visa/visa-original.svg" 
+                    alt="Visa" 
+                    className="h-8 w-auto grayscale hover:grayscale-0 transition-all duration-300"
+                    onError={(e) => {e.target.style.display='none'}}
+                  />
+                </div>
+                
+                {/* MasterCard */}
+                <div className="payment-icon bg-white rounded-lg p-2 hover:bg-blue-50 transition-all duration-300 transform hover:scale-105">
+                  <img 
+                    src="https://upload.wikimedia.org/wikipedia/commons/2/2a/Mastercard-logo.svg" 
+                    alt="MasterCard" 
+                    className="h-8 w-auto grayscale hover:grayscale-0 transition-all duration-300"
+                    onError={(e) => {e.target.style.display='none'}}
+                  />
+                </div>
+                
+                {/* RuPay */}
+                <div className="payment-icon bg-white rounded-lg p-2 hover:bg-blue-50 transition-all duration-300 transform hover:scale-105">
+                  <div className="h-8 w-12 bg-gradient-to-r from-orange-500 to-green-500 rounded flex items-center justify-center text-white text-xs font-bold grayscale hover:grayscale-0 transition-all duration-300">
+                    RuPay
+                  </div>
+                </div>
+                
+                {/* UPI */}
+                <div className="payment-icon bg-white rounded-lg p-2 hover:bg-blue-50 transition-all duration-300 transform hover:scale-105">
+                  <div className="h-8 w-12 bg-gradient-to-r from-orange-400 to-white to-green-400 rounded flex items-center justify-center text-gray-800 text-xs font-bold border grayscale hover:grayscale-0 transition-all duration-300">
+                    UPI
+                  </div>
+                </div>
+                
+                {/* Razorpay */}
+                <div className="payment-icon bg-white rounded-lg p-2 hover:bg-blue-50 transition-all duration-300 transform hover:scale-105">
+                  <div className="h-8 w-16 bg-blue-600 rounded flex items-center justify-center text-white text-xs font-bold grayscale hover:grayscale-0 transition-all duration-300">
+                    Razorpay
+                  </div>
+                </div>
+                
+                {/* Paytm */}
+                <div className="payment-icon bg-white rounded-lg p-2 hover:bg-blue-50 transition-all duration-300 transform hover:scale-105">
+                  <div className="h-8 w-14 bg-gradient-to-r from-blue-600 to-cyan-400 rounded flex items-center justify-center text-white text-xs font-bold grayscale hover:grayscale-0 transition-all duration-300">
+                    Paytm
+                  </div>
+                </div>
+                
+                {/* Net Banking */}
+                <div className="payment-icon bg-white rounded-lg p-2 hover:bg-blue-50 transition-all duration-300 transform hover:scale-105">
+                  <div className="h-8 w-16 bg-green-600 rounded flex items-center justify-center text-white text-xs font-bold grayscale hover:grayscale-0 transition-all duration-300">
+                    NetBank
+                  </div>
+                </div>
+              </div>
+              <p className="text-blue-300 text-xs">Secure payments powered by industry-leading encryption</p>
+            </div>
+          </div>
+          
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             {/* Copyright */}
             <div className="flex items-center space-x-1 text-blue-200 text-sm">
