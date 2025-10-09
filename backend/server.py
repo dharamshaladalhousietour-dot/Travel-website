@@ -97,6 +97,45 @@ class EnquiryFormCreate(BaseModel):
     message: str = ""
     formatted_message: str = ""
 
+# Payment Models
+class PaymentOrder(BaseModel):
+    amount: int  # Amount in paise (multiply rupees by 100)
+    currency: str = "INR"
+    name: str = ""
+    email: str = ""
+    phone: str = ""
+    package_name: str = ""
+
+class PaymentOrderCreate(BaseModel):
+    amount: int
+    currency: str = "INR"
+    name: str = ""
+    email: str = ""
+    phone: str = ""
+    package_name: str = ""
+
+class PaymentSuccess(BaseModel):
+    id: str = Field(default_factory=lambda: str(uuid.uuid4()))
+    razorpay_order_id: str
+    razorpay_payment_id: str
+    razorpay_signature: str
+    amount: int
+    name: str
+    email: str
+    phone: str
+    package_name: str
+    timestamp: datetime = Field(default_factory=datetime.utcnow)
+
+class PaymentSuccessCreate(BaseModel):
+    razorpay_order_id: str
+    razorpay_payment_id: str
+    razorpay_signature: str
+    amount: int
+    name: str
+    email: str
+    phone: str
+    package_name: str
+
 # Add your routes to the router instead of directly to app
 @api_router.get("/")
 async def root():
