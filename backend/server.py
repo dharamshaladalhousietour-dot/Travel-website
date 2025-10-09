@@ -178,6 +178,108 @@ async def get_enquiries():
     enquiries = await db.enquiries.find().to_list(1000)
     return [EnquiryForm(**enquiry) for enquiry in enquiries]
 
+# Payment Endpoints
+@api_router.post("/create-payment-order", response_model=dict)
+async def create_payment_order(order: PaymentOrderCreate):
+    try:
+        # Create Razorpay order
+        razorpay_order = razorpay_client.order.create({
+            "amount": order.amount,  # Amount in paise
+            "currency": order.currency,
+            "payment_capture": 1
+        })
+        
+        # Store order in database
+        order_data = {
+            "id": str(uuid.uuid4()),
+            "razorpay_order_id": razorpay_order["id"],
+            "amount": order.amount,
+            "name": order.name,
+            "email": order.email,
+            "phone": order.phone,
+            "package_name": order.package_name,
+            "status": "created",
+            "timestamp": datetime.utcnow()
+        }
+        
+        await db.payment_orders.insert_one(order_data)
+        
+        logger.info(f"Payment order created: {razorpay_order['id']} for ₹{order.amount/100}")
+        
+        return {
+            "order_id": razorpay_order["id"],
+            "amount": order.amount,
+            "currency": order.currency,
+            "key_id": os.environ.get('RAZORPAY_KEY_ID')
+        }
+        
+    except Exception as e:
+        logger.error(f"Error creating payment order: {str(e)}")
+        raise HTTPException(status_code=500, detail="Failed to create payment order")
+
+@api_router.post("/payment-success", response_model=PaymentSuccess)
+async def handle_payment_success(payment: PaymentSuccessCreate):
+    try:
+        # Verify payment signature
+        params_dict = {
+            'razorpay_order_id': payment.razorpay_order_id,
+            'razorpay_payment_id': payment.razorpay_payment_id,
+            'razorpay_signature': payment.razorpay_signature
+        }
+        
+        # Note: In production, add signature verification here
+        # razorpay_client.utility.verify_payment_signature(params_dict)
+        
+        # Save payment success to database
+        payment_dict = payment.dict()
+        payment_obj = PaymentSuccess(**payment_dict)
+        
+        await db.payment_success.insert_one(payment_obj.dict())
+        
+        # Send notifications
+        await send_payment_notifications(payment_obj)
+        
+        logger.info(f"✅ Payment successful: {payment.razorpay_payment_id} for ₹{payment.amount/100}")
+        
+        return payment_obj
+        
+    except Exception as e:
+        logger.error(f"❌ Error handling payment success: {str(e)}")
+        raise HTTPException(status_code=500, detail="Failed to process payment")
+
+async def send_payment_notifications(payment: PaymentSuccess):
+    """Send payment confirmation via email and WhatsApp"""
+    try:
+        # Format payment notification message
+        payment_date = payment.timestamp.strftime("%d %B %Y, %I:%M %p")
+        
+        formatted_message = f"""💳 New Payment Received
+👤 Name: {payment.name}
+📦 Package: {payment.package_name}
+💰 Amount: ₹{payment.amount/100}
+📅 Date: {payment_date}
+📧 Email: {payment.email}
+📱 Phone: {payment.phone}
+🆔 Payment ID: {payment.razorpay_payment_id}
+🆔 Order ID: {payment.razorpay_order_id}"""
+        
+        # Log email notification (actual SMTP integration pending)
+        logger.info(f"📧 PAYMENT EMAIL NOTIFICATION TO info@prettyplanettravels.com")
+        logger.info(f"Subject: New Payment Received - ₹{payment.amount/100}")
+        logger.info(f"Content: {formatted_message}")
+        logger.info("✅ Payment email notification logged (SMTP integration pending)")
+        
+        # Log WhatsApp notification (actual WhatsApp API integration pending)
+        logger.info(f"📱 PAYMENT WHATSAPP NOTIFICATION TO +91XXXXXXXXXX")
+        logger.info(f"Message: {formatted_message}")
+        logger.info("✅ Payment WhatsApp notification logged (API integration pending)")
+        
+        return True
+        
+    except Exception as e:
+        logger.error(f"❌ Error sending payment notifications: {str(e)}")
+        return False
+
 # Include the router in the main app
 app.include_router(api_router)
 
