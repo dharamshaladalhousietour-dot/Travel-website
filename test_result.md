@@ -109,12 +109,96 @@ user_problem_statement: Comprehensive improvements for Pretty Planet Travels and
 4. General - Improve mobile responsiveness for all forms, fix slow loading/layout issues
 
 frontend:
+  - task: "Tour Packages - Fix Send Enquiry form (responsiveness, mandatory fields, WhatsApp/email)"
+    implemented: false
+    working: false
+    file: "/app/frontend/src/components/SimpleEnquiryForm.jsx"
+    stuck_count: 0
+    priority: "high"
+    needs_retesting: true
+    status_history:
+        -working: false
+        -agent: "main"
+        -comment: "Current form exists but needs improvements: make all fields responsive & mandatory, ensure WhatsApp/email integration works properly, add success message"
+
+  - task: "Tour Packages - Fix missing package images or add placeholders"
+    implemented: false
+    working: false
+    file: "/app/frontend/src/components/TourPackages.jsx"
+    stuck_count: 0
+    priority: "medium"
+    needs_retesting: true
+    status_history:
+        -working: false
+        -agent: "main"
+        -comment: "Need to check and fix missing package images or implement placeholder system"
+
+  - task: "Homepage - Add two new WhatsApp buttons below 'Create Unforgettable Moments'"
+    implemented: false
+    working: false
+    file: "/app/frontend/src/components/Hero.jsx"
+    stuck_count: 0
+    priority: "high"
+    needs_retesting: true
+    status_history:
+        -working: false
+        -agent: "main"
+        -comment: "Need to add 'Talk with Travel Expert' (+91 8679333355) and 'Talk with Event Expert' (+91 8679333354) buttons"
+
+  - task: "Homepage - Fix enquiry form to send full details to WhatsApp"
+    implemented: false
+    working: false
+    file: "/app/frontend/src/components/Hero.jsx"
+    stuck_count: 0
+    priority: "high"
+    needs_retesting: true
+    status_history:
+        -working: false
+        -agent: "main"
+        -comment: "Current form sends generic messages, needs to send full enquiry details to WhatsApp"
+
+  - task: "Get in Touch - Change budget symbol from $ to ₹"
+    implemented: false
+    working: false
+    file: "/app/frontend/src/components/Contact.jsx"
+    stuck_count: 0
+    priority: "medium"
+    needs_retesting: true
+    status_history:
+        -working: false
+        -agent: "main"
+        -comment: "Budget field currently uses $ symbol, needs to be changed to ₹"
+
+  - task: "Get in Touch - Fix Send Message button for WhatsApp integration"
+    implemented: false
+    working: false
+    file: "/app/frontend/src/components/Contact.jsx"
+    stuck_count: 0
+    priority: "high"
+    needs_retesting: true
+    status_history:
+        -working: false
+        -agent: "main"
+        -comment: "Send Message button needs to send full enquiry to WhatsApp (+91 8679333355) with success confirmation"
+
+  - task: "General - Improve mobile responsiveness for all forms"
+    implemented: false
+    working: false
+    file: "Multiple components"
+    stuck_count: 0
+    priority: "medium"
+    needs_retesting: true
+    status_history:
+        -working: false
+        -agent: "main"
+        -comment: "Need to ensure all enquiry forms work smoothly on both desktop and mobile"
+
   - task: "Remove 'Made by Emergent' footer text"
     implemented: true
     working: true
     file: "/app/frontend/src/components/Footer.jsx"
     stuck_count: 0
-    priority: "high"
+    priority: "low"
     needs_retesting: false
     status_history:
         -working: true
