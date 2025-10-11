@@ -137,8 +137,8 @@ const SimpleEnquiryForm = ({ packageTitle = "", onClose = null }) => {
       <CardContent className="p-6">
         {submitStatus === 'success' && (
           <div className="mb-6 p-4 bg-green-100 border border-green-400 text-green-700 rounded-lg text-center">
-            <p className="font-semibold">Thank you for your enquiry! Our team will get back to you within 1 hour.</p>
-            <p className="text-sm mt-2">WhatsApp message sent successfully!</p>
+            <p className="font-semibold">✅ Thank you for your enquiry! Our team will contact you soon.</p>
+            <p className="text-sm mt-2">Your enquiry has been sent to WhatsApp and Email successfully!</p>
           </div>
         )}
 
