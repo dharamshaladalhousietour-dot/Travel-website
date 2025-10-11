@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Menu, X, MapPin, Phone, Mail, Facebook, Instagram } from 'lucide-react';
 import { Button } from './ui/button';
+import { Link } from 'react-router-dom';
 import RazorpayCheckout from './RazorpayCheckout';
 import MobileHeader from './MobileHeader';
 
