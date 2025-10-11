@@ -284,17 +284,22 @@ const SimpleEnquiryForm = ({ packageTitle = "", onClose = null }) => {
             </div>
 
             <div>
-              <Label htmlFor="days">Duration *</Label>
-              <Select value={formData.days} onValueChange={(value) => handleInputChange('days', value)} required>
-                <SelectTrigger>
-                  <SelectValue placeholder="Select days" />
+              <Label htmlFor="days" className="block text-sm font-medium text-gray-700 mb-2">Duration *</Label>
+              <Select 
+                value={formData.days} 
+                onValueChange={(value) => handleInputChange('days', value)} 
+                required
+              >
+                <SelectTrigger className="w-full h-12 border border-gray-300 rounded-md px-3 py-2 bg-white hover:border-blue-500 focus:border-blue-500 focus:ring-2 focus:ring-blue-200 transition-colors">
+                  <SelectValue placeholder="Select trip duration" />
                 </SelectTrigger>
-                <SelectContent>
-                  <SelectItem value="2-3 Days">2-3 Days</SelectItem>
-                  <SelectItem value="4-5 Days">4-5 Days</SelectItem>
-                  <SelectItem value="6-7 Days">6-7 Days</SelectItem>
-                  <SelectItem value="8-10 Days">8-10 Days</SelectItem>
-                  <SelectItem value="10+ Days">10+ Days</SelectItem>
+                <SelectContent className="bg-white border border-gray-200 rounded-md shadow-lg max-h-60 overflow-y-auto">
+                  <SelectItem value="2-3 Days" className="px-3 py-2 hover:bg-blue-50 cursor-pointer">2-3 Days</SelectItem>
+                  <SelectItem value="4-5 Days" className="px-3 py-2 hover:bg-blue-50 cursor-pointer">4-5 Days</SelectItem>
+                  <SelectItem value="6-7 Days" className="px-3 py-2 hover:bg-blue-50 cursor-pointer">6-7 Days</SelectItem>
+                  <SelectItem value="8-10 Days" className="px-3 py-2 hover:bg-blue-50 cursor-pointer">8-10 Days</SelectItem>
+                  <SelectItem value="11-15 Days" className="px-3 py-2 hover:bg-blue-50 cursor-pointer">11-15 Days</SelectItem>
+                  <SelectItem value="15+ Days" className="px-3 py-2 hover:bg-blue-50 cursor-pointer">15+ Days</SelectItem>
                 </SelectContent>
               </Select>
             </div>
