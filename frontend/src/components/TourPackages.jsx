@@ -109,6 +109,7 @@ const TourPackages = () => {
       title: "Jaipur Ajmer Pushkar Tour",
       duration: "4 Nights / 5 Days",
       region: "Rajasthan",
+      slug: "jaipur-ajmer-pushkar-4n5d",
       image: "https://images.pexels.com/photos/2907578/pexels-photo-2907578.jpeg",
       highlights: ["Pink City", "Ajmer Sharif", "Pushkar Lake", "Amber Fort"],
       itinerary: [
