@@ -22,6 +22,7 @@ const TourPackages = () => {
       title: "Kashmir Honeymoon Special",
       duration: "5 Nights / 6 Days",
       region: "Kashmir",
+      slug: "kashmir-honeymoon-5n6d",
       image: "https://images.unsplash.com/photo-1595815771614-ade9d652a65d",
       highlights: ["Houseboats", "Shikara Rides", "Gulmarg Snow", "Pahalgam Valley"],
       itinerary: [
