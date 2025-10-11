@@ -86,8 +86,8 @@ const SimpleEnquiryForm = ({ packageTitle = "", onClose = null }) => {
 
 📍 Destination: ${formData.destination}
 📅 Dates: ${formData.startDate} – ${formData.endDate}
-👨‍👩‍👧 Pax: ${formData.adults} Adults${formData.kids && formData.kids !== '0' ? `, ${formData.kids}` : ''}
-💰 Budget: ₹ ${formData.budget || 'Not specified'}
+👨‍👩‍👧 Pax: ${formData.adults} Adults${formData.kids && formData.kids !== '0' ? `, ${formData.kids}` : ', No Kids'}
+💰 Budget: ${formData.budget || 'Not specified'}
 🕒 Duration: ${formData.days}
 
 💬 Message: ${formData.message || 'No additional message'}`;
