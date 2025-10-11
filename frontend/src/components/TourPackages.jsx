@@ -682,7 +682,7 @@ const TourPackages = () => {
     }
   ];
 
-  const regions = ['All', 'Kashmir', 'Himachal', 'Rajasthan', 'Uttarakhand', 'South India'];
+  const regions = ['All', 'Kashmir', 'Himachal', 'Rajasthan', 'Uttarakhand', 'Goa', 'Kerala', 'Madhya Pradesh', 'Karnataka', 'West Bengal', 'International'];
   
   const filteredPackages = selectedRegion === 'All' 
     ? tourPackages 
