@@ -17,6 +17,7 @@ import WhatsAppButton from "./components/WhatsAppButton";
 import TermsConditions from "./components/TermsConditions";
 import RefundPolicy from "./components/RefundPolicy";
 import TravelInsurance from "./components/TravelInsurance";
+import PackageDetail from "./components/PackageDetail";
 
 const Home = () => {
   return (
