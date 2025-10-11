@@ -942,9 +942,11 @@ const TourPackages = () => {
       <Card className="overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
         <div className="relative">
           <img 
-            src={pkg.image} 
+            src={imageError ? placeholderImage : pkg.image} 
             alt={pkg.title}
             className="w-full h-48 object-cover"
+            onError={handleImageError}
+            onLoad={() => setImageError(false)}
           />
           <div className="absolute top-4 left-4">
             <Badge className="bg-blue-600 text-white">{pkg.region}</Badge>
