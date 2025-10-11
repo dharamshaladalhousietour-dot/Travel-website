@@ -54,11 +54,11 @@ const Hero = () => {
           adults: enquiryData.adults,
           kids: enquiryData.kids,
           days: enquiryData.days,
-          name: 'Homepage Visitor',
-          email: 'homepage@enquiry.com',
-          phone: 'Not provided',
-          budget: 'Not specified',
-          message: 'Quick enquiry from homepage form',
+          name: enquiryData.name || 'Homepage Visitor',
+          email: enquiryData.email || 'homepage@enquiry.com',
+          phone: enquiryData.phone || 'Not provided',
+          budget: enquiryData.budget || 'Not specified',
+          message: 'Homepage enquiry form submission',
           formatted_message: formattedMessage
         })
       });
