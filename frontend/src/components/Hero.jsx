@@ -89,7 +89,11 @@ const Hero = () => {
       endDate: '',
       adults: '',
       kids: '',
-      days: ''
+      days: '',
+      budget: '',
+      name: '',
+      email: '',
+      phone: ''
     });
     // Hide thank you message after 5 seconds
     setTimeout(() => setShowThankYou(false), 5000);
