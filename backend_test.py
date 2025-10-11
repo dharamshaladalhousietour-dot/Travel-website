@@ -52,18 +52,18 @@ def test_enquiry_post_api():
     
     # Sample enquiry data as specified in the review request
     enquiry_data = {
-        "destination": "Manali, Himachal Pradesh",
-        "start_date": "2024-12-15",
-        "end_date": "2024-12-20",
+        "name": "John Smith",
+        "email": "john@example.com", 
+        "phone": "+91 9876543210",
+        "destination": "Kashmir Honeymoon Special",
+        "start_date": "2024-01-15",
+        "end_date": "2024-01-21", 
         "adults": "2",
         "kids": "0",
-        "days": "5-6",
-        "name": "Homepage Visitor",
-        "email": "homepage@enquiry.com",
-        "phone": "Not provided",
-        "budget": "Not specified",
-        "message": "Quick enquiry from homepage form",
-        "formatted_message": "📩 New Travel Enquiry Received\n👤 Name: Homepage Visitor\n📧 Email: homepage@enquiry.com..."
+        "days": "6 Days",
+        "budget": "₹35,000 - ₹50,000",
+        "message": "Looking for a romantic honeymoon package",
+        "formatted_message": "Test WhatsApp message format"
     }
     
     try:
