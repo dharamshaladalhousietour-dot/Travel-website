@@ -923,12 +923,20 @@ const TourPackages = () => {
 
   const PackageCard = ({ pkg }) => {
     const [showDetails, setShowDetails] = useState(false);
+    const [imageError, setImageError] = useState(false);
 
     const handleEnquireNow = () => {
       console.log('Opening enquiry form for:', pkg.title);
       setSelectedPackage(pkg);
       setShowEnquiryForm(true);
     };
+
+    const handleImageError = () => {
+      setImageError(true);
+    };
+
+    // Default placeholder image for broken/missing images
+    const placeholderImage = "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=400&h=200&fit=crop";
 
     return (
       <Card className="overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
