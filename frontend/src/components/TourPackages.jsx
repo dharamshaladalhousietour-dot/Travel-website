@@ -1015,20 +1015,19 @@ const TourPackages = () => {
             )}
           </div>
 
-          <div className="flex space-x-2 mb-4 flex-wrap">
+          <div className="flex flex-col sm:flex-row space-y-2 sm:space-y-0 sm:space-x-2 mb-4">
             <Link to={`/package/${pkg.slug}`} className="flex-1">
               <Button 
-                className="w-full bg-blue-600 hover:bg-blue-700"
+                className="w-full bg-blue-600 hover:bg-blue-700 transition-colors duration-200"
               >
                 View Details
               </Button>
             </Link>
             <Button 
               variant="outline" 
-              className="flex-1"
+              className="flex-1 border-blue-600 text-blue-600 hover:bg-blue-50 transition-colors duration-200"
               onClick={() => {
                 console.log('Send Enquiry clicked for:', pkg.title);
-                alert(`Opening enquiry form for ${pkg.title}`);
                 setSelectedPackage(pkg);
                 setShowEnquiryForm(true);
               }}
