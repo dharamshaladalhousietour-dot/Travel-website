@@ -218,8 +218,8 @@ const SimpleEnquiryForm = ({ packageTitle = "", onClose = null }) => {
             </div>
 
             <div>
-              <Label htmlFor="budget">Budget (₹)</Label>
-              <Select value={formData.budget} onValueChange={(value) => handleInputChange('budget', value)}>
+              <Label htmlFor="budget">Budget (₹) *</Label>
+              <Select value={formData.budget} onValueChange={(value) => handleInputChange('budget', value)} required>
                 <SelectTrigger>
                   <SelectValue placeholder="Select budget" />
                 </SelectTrigger>
