@@ -11,7 +11,11 @@ const Hero = () => {
     endDate: '',
     adults: '',
     kids: '',
-    days: ''
+    days: '',
+    budget: '',
+    name: '',
+    email: '',
+    phone: ''
   });
 
   const [showThankYou, setShowThankYou] = useState(false);
