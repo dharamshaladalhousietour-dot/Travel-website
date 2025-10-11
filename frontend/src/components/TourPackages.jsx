@@ -1189,15 +1189,15 @@ const TourPackages = () => {
       {showEnquiryForm && selectedPackage && (
         <>
           <div 
-            className="fixed inset-0 bg-black bg-opacity-75" 
+            className="fixed inset-0 bg-black bg-opacity-75 backdrop-blur-sm" 
             style={{ zIndex: 10000 }}
             onClick={() => setShowEnquiryForm(false)}
           ></div>
           <div 
-            className="fixed inset-0 flex items-center justify-center p-4" 
+            className="fixed inset-0 flex items-center justify-center p-2 md:p-4" 
             style={{ zIndex: 10001 }}
           >
-            <div className="max-w-2xl w-full max-h-[90vh] overflow-y-auto bg-white rounded-lg">
+            <div className="max-w-2xl w-full max-h-[95vh] overflow-y-auto bg-white rounded-lg shadow-2xl mx-2 md:mx-4">
               <SimpleEnquiryForm
                 packageTitle={selectedPackage.title}
                 onClose={() => setShowEnquiryForm(false)}
