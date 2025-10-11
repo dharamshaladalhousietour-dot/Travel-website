@@ -206,13 +206,14 @@ const SimpleEnquiryForm = ({ packageTitle = "", onClose = null }) => {
             </div>
 
             <div>
-              <Label htmlFor="destination">Destination</Label>
+              <Label htmlFor="destination">Destination *</Label>
               <Input
                 id="destination"
                 type="text"
                 placeholder="Kashmir, Manali, etc."
                 value={formData.destination}
                 onChange={(e) => handleInputChange('destination', e.target.value)}
+                required
               />
             </div>
 
