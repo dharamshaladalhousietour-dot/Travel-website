@@ -209,12 +209,13 @@ const TourPackages = () => {
           </div>
 
           <div className="flex space-x-2 mb-4 flex-wrap">
-            <Button 
-              onClick={() => setShowDetails(!showDetails)}
-              className="flex-1 bg-blue-600 hover:bg-blue-700"
-            >
-              {showDetails ? 'Hide Details' : 'View Details'}
-            </Button>
+            <Link to={`/package/${pkg.slug}`} className="flex-1">
+              <Button 
+                className="w-full bg-blue-600 hover:bg-blue-700"
+              >
+                View Details
+              </Button>
+            </Link>
             <Button 
               variant="outline" 
               className="flex-1"
