@@ -292,6 +292,70 @@ const Hero = () => {
                   </SelectContent>
                 </Select>
               </div>
+
+              {/* Budget */}
+              <div className="space-y-2">
+                <label className="text-sm font-medium text-gray-700 flex items-center gap-1">
+                  💰 Budget (₹)
+                </label>
+                <Select 
+                  value={enquiryData.budget}
+                  onValueChange={(value) => setEnquiryData({...enquiryData, budget: value})}
+                >
+                  <SelectTrigger className="h-12">
+                    <SelectValue placeholder="Select Budget" />
+                  </SelectTrigger>
+                  <SelectContent>
+                    <SelectItem value="₹15,000 - ₹25,000">₹15,000 - ₹25,000</SelectItem>
+                    <SelectItem value="₹25,000 - ₹50,000">₹25,000 - ₹50,000</SelectItem>
+                    <SelectItem value="₹50,000 - ₹1,00,000">₹50,000 - ₹1,00,000</SelectItem>
+                    <SelectItem value="₹1,00,000 - ₹2,00,000">₹1,00,000 - ₹2,00,000</SelectItem>
+                    <SelectItem value="₹2,00,000+">₹2,00,000+</SelectItem>
+                  </SelectContent>
+                </Select>
+              </div>
+
+              {/* Name */}
+              <div className="space-y-2">
+                <label className="text-sm font-medium text-gray-700 flex items-center gap-1">
+                  👤 Name
+                </label>
+                <Input 
+                  type="text" 
+                  className="h-12"
+                  placeholder="Your Name"
+                  value={enquiryData.name}
+                  onChange={(e) => setEnquiryData({...enquiryData, name: e.target.value})}
+                />
+              </div>
+
+              {/* Phone */}
+              <div className="space-y-2">
+                <label className="text-sm font-medium text-gray-700 flex items-center gap-1">
+                  📱 Phone
+                </label>
+                <Input 
+                  type="tel" 
+                  className="h-12"
+                  placeholder="+91 9999999999"
+                  value={enquiryData.phone}
+                  onChange={(e) => setEnquiryData({...enquiryData, phone: e.target.value})}
+                />
+              </div>
+            </div>
+            
+            {/* Email - Full Width */}
+            <div className="mt-4 space-y-2">
+              <label className="text-sm font-medium text-gray-700 flex items-center gap-1">
+                📧 Email
+              </label>
+              <Input 
+                type="email" 
+                className="h-12"
+                placeholder="your@email.com"
+                value={enquiryData.email}
+                onChange={(e) => setEnquiryData({...enquiryData, email: e.target.value})}
+              />
             </div>
             
             {/* Submit Button */}
