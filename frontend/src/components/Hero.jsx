@@ -136,7 +136,7 @@ const Hero = () => {
           </p>
           
           {/* CTA Buttons */}
-          <div className="flex flex-col sm:flex-row gap-4 justify-center mb-16 px-4">
+          <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8 px-4">
             <Button 
               size="lg" 
               className="w-full sm:w-auto bg-gradient-to-r from-green-600 to-green-700 hover:from-green-700 hover:to-green-800 text-white px-6 sm:px-8 py-4 text-base sm:text-lg font-bold transition-all duration-300 transform hover:scale-105 shadow-xl animate-pulse"
@@ -150,6 +150,30 @@ const Hero = () => {
               className="w-full sm:w-auto border-2 border-white text-white hover:bg-white hover:text-blue-900 px-6 sm:px-8 py-4 text-base sm:text-lg font-semibold transition-all duration-300 backdrop-blur-sm"
             >
               Plan Your Trip
+            </Button>
+          </div>
+
+          {/* New WhatsApp Expert Buttons */}
+          <div className="flex flex-col sm:flex-row gap-4 justify-center mb-16 px-4">
+            <Button 
+              size="lg" 
+              className="w-full sm:w-auto bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white px-6 sm:px-8 py-4 text-base sm:text-lg font-semibold transition-all duration-300 transform hover:scale-105 shadow-xl"
+              onClick={() => {
+                const message = "Hi! I would like to talk with a Travel Expert about planning my trip.";
+                window.open(`https://wa.me/918679333355?text=${encodeURIComponent(message)}`, '_blank');
+              }}
+            >
+              🔹 Talk with Travel Expert
+            </Button>
+            <Button 
+              size="lg" 
+              className="w-full sm:w-auto bg-gradient-to-r from-purple-600 to-purple-700 hover:from-purple-700 hover:to-purple-800 text-white px-6 sm:px-8 py-4 text-base sm:text-lg font-semibold transition-all duration-300 transform hover:scale-105 shadow-xl"
+              onClick={() => {
+                const message = "Hi! I would like to talk with an Event Expert about planning my wedding/event.";
+                window.open(`https://wa.me/918679333354?text=${encodeURIComponent(message)}`, '_blank');
+              }}
+            >
+              🔹 Talk with Event Expert
             </Button>
           </div>
         </div>
