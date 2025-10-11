@@ -924,6 +924,7 @@ const TourPackages = () => {
   const PackageCard = ({ pkg }) => {
     const [showDetails, setShowDetails] = useState(false);
     const [imageError, setImageError] = useState(false);
+    const [imageLoaded, setImageLoaded] = useState(false);
 
     const handleEnquireNow = () => {
       console.log('Opening enquiry form for:', pkg.title);
@@ -933,10 +934,27 @@ const TourPackages = () => {
 
     const handleImageError = () => {
       setImageError(true);
+      setImageLoaded(true);
     };
 
-    // Default placeholder image for broken/missing images
-    const placeholderImage = "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=400&h=200&fit=crop";
+    const handleImageLoad = () => {
+      setImageError(false);
+      setImageLoaded(true);
+    };
+
+    // High-quality fallback images based on region
+    const getFallbackImage = (region) => {
+      const fallbacks = {
+        'Kashmir': 'https://images.unsplash.com/photo-1595815771614-ade9d652a65d?w=800&h=400&fit=crop&q=80',
+        'Himachal': 'https://images.unsplash.com/photo-1648034902541-b239c599114e?w=800&h=400&fit=crop&q=80',
+        'Rajasthan': 'https://images.unsplash.com/photo-1599661046289-e31897b6a1ba?w=800&h=400&fit=crop&q=80',
+        'Goa': 'https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?w=800&h=400&fit=crop&q=80',
+        'Kerala': 'https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?w=800&h=400&fit=crop&q=80',
+        'Uttarakhand': 'https://images.unsplash.com/photo-1581791534721-e599df4417f7?w=800&h=400&fit=crop&q=80',
+        'International': 'https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=800&h=400&fit=crop&q=80'
+      };
+      return fallbacks[region] || 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&h=400&fit=crop&q=80';
+    };
 
     return (
       <Card className="overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
