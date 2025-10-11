@@ -959,18 +959,31 @@ const TourPackages = () => {
     return (
       <Card className="overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
         <div className="relative">
-          <img 
-            src={imageError ? placeholderImage : pkg.image} 
-            alt={pkg.title}
-            className="w-full h-48 object-cover"
-            onError={handleImageError}
-            onLoad={() => setImageError(false)}
-          />
+          {/* Fixed aspect ratio container to prevent layout shifts */}
+          <div className="w-full h-48 bg-gray-200 relative overflow-hidden">
+            {/* Loading skeleton */}
+            {!imageLoaded && (
+              <div className="absolute inset-0 bg-gradient-to-r from-gray-200 via-gray-300 to-gray-200 animate-pulse" />
+            )}
+            
+            {/* Actual image */}
+            <img 
+              src={imageError ? getFallbackImage(pkg.region) : pkg.image} 
+              alt={pkg.title}
+              className={`w-full h-full object-cover transition-opacity duration-300 ${
+                imageLoaded ? 'opacity-100' : 'opacity-0'
+              }`}
+              onError={handleImageError}
+              onLoad={handleImageLoad}
+              loading="lazy"
+            />
+          </div>
+          
           <div className="absolute top-4 left-4">
-            <Badge className="bg-blue-600 text-white">{pkg.region}</Badge>
+            <Badge className="bg-blue-600 text-white shadow-lg">{pkg.region}</Badge>
           </div>
           <div className="absolute top-4 right-4">
-            <Badge className="bg-green-600 text-white">{pkg.price}</Badge>
+            <Badge className="bg-green-600 text-white shadow-lg">{pkg.price}</Badge>
           </div>
         </div>
         
