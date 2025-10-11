@@ -814,10 +814,7 @@ const TourPackages = () => {
                     <div className="space-y-3">
                       {pkg.itinerary.map((day, index) => (
                         <div key={index} className="border-l-2 border-blue-200 pl-4">
-                          <h5 className="font-semibold text-blue-900">
-                            Day {day.day}: {day.title}
-                          </h5>
-                          <p className="text-sm text-gray-600">{day.description}</p>
+                          <p className="text-sm text-gray-700 font-medium">{day}</p>
                         </div>
                       ))}
                     </div>
