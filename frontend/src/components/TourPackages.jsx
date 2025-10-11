@@ -16,7 +16,7 @@ const TourPackages = () => {
   console.log('TourPackages render - showEnquiryForm:', showEnquiryForm, 'selectedPackage:', selectedPackage?.title);
 
   const tourPackages = [
-    // Kashmir
+    // DOMESTIC PACKAGES - HIMACHAL PRADESH (15 packages)
     {
       id: 1,
       title: "Kashmir Honeymoon Special",
@@ -24,128 +24,661 @@ const TourPackages = () => {
       region: "Kashmir",
       slug: "kashmir-honeymoon-5n6d",
       image: "https://images.unsplash.com/photo-1595815771614-ade9d652a65d",
-      highlights: ["Houseboats", "Shikara Rides", "Gulmarg Snow", "Pahalgam Valley"],
-      itinerary: [
-        { day: 1, title: "Arrival Srinagar", description: "Airport pickup, Dal Lake evening walk" },
-        { day: 2, title: "Srinagar Local", description: "Mughal Gardens, Houseboat stay" },
-        { day: 3, title: "Gulmarg Day Trip", description: "Gondola ride, snow activities" },
-        { day: 4, title: "Pahalgam Excursion", description: "Betaab Valley, Aru Valley" },
-        { day: 5, title: "Shopping & Leisure", description: "Local markets, last minute shopping" },
-        { day: 6, title: "Departure", description: "Checkout and airport drop" }
-      ],
-      inclusions: ["Accommodation", "Transfers", "Breakfast", "Sightseeing"],
-      exclusions: ["Flights", "Lunch/Dinner", "Personal Expenses", "Adventure Activities"],
-      price: "Price on Demand",
+      price: "₹35,999",
       rating: 4.8,
-      reviews: 124
+      reviews: 156,
+      highlights: ["Shikara ride in Dal Lake", "Houseboat stay", "Gulmarg cable car", "Pahalgam sightseeing"],
+      itinerary: [
+        "Day 1: Arrival in Srinagar, Shikara ride on Dal Lake, Houseboat check-in",
+        "Day 2: Srinagar sightseeing - Mughal gardens, Hazratbal Mosque, local markets",
+        "Day 3: Gulmarg excursion - Gondola ride, snow activities, beautiful meadows",
+        "Day 4: Pahalgam visit - Betaab Valley, Aru Valley, Chandanwari sightseeing",
+        "Day 5: Pahalgam local tour - river rafting, shopping, leisure time",
+        "Day 6: Return to Srinagar airport, departure with beautiful memories"
+      ],
+      inclusions: ["Accommodation", "Transfers", "Breakfast & Dinner", "Sightseeing"],
+      exclusions: ["Airfare", "Lunch", "Personal expenses", "Adventure activities"]
     },
     {
       id: 2,
-      title: "Kashmir Short Escape", 
-      duration: "4 Nights / 5 Days",
-      region: "Kashmir",
-      slug: "kashmir-short-escape-4n5d",
-      image: "https://images.unsplash.com/photo-1598091383021-15ddea10925d",
-      highlights: ["Dal Lake", "Gulmarg", "Local Markets", "Shikara Rides"],
-      itinerary: [
-        { day: 1, title: "Arrival Srinagar", description: "Airport pickup, hotel check-in" },
-        { day: 2, title: "Srinagar Sightseeing", description: "Mughal Gardens, Dal Lake" },
-        { day: 3, title: "Gulmarg Day Trip", description: "Cable car ride, scenic views" },
-        { day: 4, title: "Local Exploration", description: "Markets, handicrafts shopping" },
-        { day: 5, title: "Departure", description: "Checkout and airport transfer" }
-      ],
-      inclusions: ["Hotels", "Transfers", "Breakfast", "Sightseeing"],
-      exclusions: ["Airfare", "Meals", "Personal Expenses"],
-      price: "Price on Demand",
-      rating: 4.7,
-      reviews: 89
-    },
-    
-    // Himachal
-    {
-      id: 3,
       title: "Manali Honeymoon Delight",
       duration: "4 Nights / 5 Days", 
       region: "Himachal",
       slug: "manali-honeymoon-4n5d",
       image: "https://images.pexels.com/photos/2961109/pexels-photo-2961109.jpeg",
-      highlights: ["Solang Valley", "Atal Tunnel", "Hadimba Temple", "Mall Road"],
+      price: "₹18,999",
+      rating: 4.7,
+      reviews: 203,
+      highlights: ["Rohtang Pass", "Solang Valley", "Old Manali", "Adventure sports"],
       itinerary: [
-        { day: 1, title: "Arrival Manali", description: "Private transfer & check-in; evening Mall Road" },
-        { day: 2, title: "Romantic Solang", description: "Solang Valley day trip; candle-light dinner" },
-        { day: 3, title: "Atal Tunnel & Sissu", description: "Photo stops at Sissu (weather permitting)" },
-        { day: 4, title: "Manali Local", description: "Hadimba Temple, Old Manali cafés" },
-        { day: 5, title: "Departure", description: "Checkout & drop" }
+        "Day 1: Arrival in Manali, check-in hotel, evening Mall Road exploration",
+        "Day 2: Manali local sightseeing - Hadimba Temple, Manu Temple, Club House",
+        "Day 3: Solang Valley adventure - paragliding, zorbing, cable car ride",
+        "Day 4: Rohtang Pass excursion (subject to weather), snow activities",
+        "Day 5: Check-out and departure, transfer to bus stand/airport"
       ],
       inclusions: ["Accommodation", "Transfers", "Breakfast", "Sightseeing"],
-      exclusions: ["Flights", "Lunch/Dinner", "Adventure Activities"],
-      price: "Price on Demand",
-      rating: 4.9,
-      reviews: 156
+      exclusions: ["Airfare", "Lunch & Dinner", "Adventure activities", "Personal expenses"]
+    },
+    {
+      id: 3,
+      title: "Shimla Kufri Weekend",
+      duration: "2 Nights / 3 Days",
+      region: "Himachal", 
+      slug: "shimla-kufri-weekend-2n3d",
+      image: "https://images.unsplash.com/photo-1657894736581-ccc35d62d9e2",
+      price: "₹12,999",
+      rating: 4.5,
+      reviews: 134,
+      highlights: ["Mall Road", "Jakhu Temple", "Kufri", "Ridge"],
+      itinerary: [
+        "Day 1: Arrival in Shimla, check-in, evening Mall Road and Ridge walk",
+        "Day 2: Shimla-Kufri sightseeing - Jakhu Temple, Kufri Fun World, horse riding",
+        "Day 3: Local shopping, Christ Church visit, departure to bus stand"
+      ],
+      inclusions: ["Hotel", "Breakfast", "Local transfers"],
+      exclusions: ["Transport to Shimla", "Meals", "Shopping"]
     },
     {
       id: 4,
-      title: "Shimla Weekend Getaway",
-      duration: "2 Nights / 3 Days",
-      region: "Himachal", 
-      slug: "shimla-weekend-2n3d",
-      image: "https://images.unsplash.com/photo-1657894736581-ccc35d62d9e2",
-      highlights: ["Toy Train", "Mall Road", "Jakhu Temple", "Ridge Walk"],
-      itinerary: [
-        { day: 1, title: "Arrival Shimla", description: "Check-in, evening Mall Road walk" },
-        { day: 2, title: "Shimla Sightseeing", description: "Jakhu Temple, Ridge, local markets" },
-        { day: 3, title: "Departure", description: "Checkout and departure" }
-      ],
-      inclusions: ["Hotels", "Transfers", "Breakfast", "Sightseeing"],
-      exclusions: ["Transport to Shimla", "Meals", "Personal Expenses"],
-      price: "Price on Demand",
+      title: "Dharamshala Dalhousie Tour",
+      duration: "5 Nights / 6 Days",
+      region: "Himachal",
+      slug: "dharamshala-dalhousie-5n6d",
+      image: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4",
+      price: "₹22,999",
       rating: 4.6,
-      reviews: 78
+      reviews: 189,
+      highlights: ["McLeod Ganj", "Dalai Lama Temple", "Khajjiar", "Dalhousie hills"],
+      itinerary: [
+        "Day 1: Arrival Dharamshala, check-in, local market visit",
+        "Day 2: McLeod Ganj tour - Dalai Lama Temple, Bhagsu Waterfall",
+        "Day 3: Drive to Dalhousie, check-in, local sightseeing",
+        "Day 4: Khajjiar excursion - Mini Switzerland of India, activities",
+        "Day 5: Dalhousie local tour - Mall Road, churches, viewpoints",
+        "Day 6: Check-out and departure to nearest railway station"
+      ],
+      inclusions: ["Hotels", "Cab", "Breakfast", "Sightseeing"],
+      exclusions: ["Railway/Air fare", "Lunch/Dinner", "Entry fees", "Personal expenses"]
     },
-    
-    // Rajasthan
     {
       id: 5,
-      title: "Jaipur Ajmer Pushkar Tour",
-      duration: "4 Nights / 5 Days",
-      region: "Rajasthan",
-      slug: "jaipur-ajmer-pushkar-4n5d",
-      image: "https://images.pexels.com/photos/2907578/pexels-photo-2907578.jpeg",
-      highlights: ["Pink City", "Ajmer Sharif", "Pushkar Lake", "Amber Fort"],
-      itinerary: [
-        { day: 1, title: "Arrival Jaipur", description: "Airport pickup, city introduction" },
-        { day: 2, title: "Jaipur Sightseeing", description: "Amber Fort, City Palace, Hawa Mahal" },
-        { day: 3, title: "Ajmer Excursion", description: "Ajmer Sharif Dargah visit" },
-        { day: 4, title: "Pushkar Day Trip", description: "Pushkar Lake, Brahma Temple" },
-        { day: 5, title: "Departure", description: "Shopping and departure" }
-      ],
-      inclusions: ["Accommodation", "Transfers", "Breakfast", "Sightseeing"],
-      exclusions: ["Flights", "Meals", "Personal Expenses"],
-      price: "Price on Demand",
+      title: "Kullu Manali Adventure",
+      duration: "6 Nights / 7 Days",
+      region: "Himachal",
+      slug: "kullu-manali-adventure-6n7d",
+      image: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4",
+      price: "₹28,999",
       rating: 4.8,
-      reviews: 102
+      reviews: 245,
+      highlights: ["River rafting", "Trekking", "Manikaran", "Hot springs"],
+      itinerary: [
+        "Day 1: Arrival in Kullu, check-in, evening at leisure",
+        "Day 2: Kullu-Manali drive, Kullu Shawl factory, Apple orchards",
+        "Day 3: Manali local sightseeing, Hadimba Temple, Old Manali",
+        "Day 4: Solang Valley adventure activities, paragliding, skiing",
+        "Day 5: Manikaran excursion, hot springs, Gurudwara visit",
+        "Day 6: River rafting in Beas river, trekking options",
+        "Day 7: Check-out and departure, memorable journey ends"
+      ],
+      inclusions: ["Accommodation", "Meals", "Adventure activities", "Transport"],
+      exclusions: ["Airfare", "Personal expenses", "Tips", "Insurance"]
     },
-    
-    // Uttarakhand  
     {
       id: 6,
-      title: "Rishikesh Yoga & Adventure",
+      title: "Spiti Valley Expedition",
+      duration: "8 Nights / 9 Days",
+      region: "Himachal",
+      slug: "spiti-valley-expedition-8n9d",
+      image: "https://images.unsplash.com/photo-1544735716-392fe2489ffa",
+      price: "₹45,999",
+      rating: 4.9,
+      reviews: 167,
+      highlights: ["High altitude desert", "Monasteries", "Chandratal Lake", "Key Monastery"],
+      itinerary: [
+        "Day 1: Shimla arrival, acclimatization, local sightseeing",
+        "Day 2: Shimla to Kalpa, Kinnaur valley drive, apple orchards",
+        "Day 3: Kalpa to Tabo, ancient monasteries, cave paintings",
+        "Day 4: Tabo to Kaza, Pin Valley National Park, wildlife",
+        "Day 5: Kaza local - Key Monastery, Kibber village, highest villages",
+        "Day 6: Kaza to Chandratal Lake, camping, stargazing",
+        "Day 7: Chandratal to Manali via Rohtang Pass, scenic drive",
+        "Day 8: Manali local sightseeing, shopping, leisure",
+        "Day 9: Departure from Manali, end of high altitude adventure"
+      ],
+      inclusions: ["Accommodation", "Meals", "Permits", "Guide", "Transport"],
+      exclusions: ["Airfare", "Personal gear", "Tips", "Emergency evacuation"]
+    },
+    {
+      id: 7,
+      title: "Kasauli Chail Hill Station",
+      duration: "3 Nights / 4 Days",
+      region: "Himachal",
+      slug: "kasauli-chail-3n4d",
+      image: "https://images.unsplash.com/photo-1571115764595-644a1f56a55c",
+      price: "₹15,999",
+      rating: 4.4,
+      reviews: 112,
+      highlights: ["Colonial charm", "Monkey Point", "Chail Palace", "Pine forests"],
+      itinerary: [
+        "Day 1: Arrival in Kasauli, check-in, Monkey Point sunset view",
+        "Day 2: Kasauli sightseeing - Christ Church, Mall Road, Gilbert Trail",
+        "Day 3: Chail excursion - Chail Palace, highest cricket ground, forest walk",
+        "Day 4: Morning leisure, check-out and departure to Chandigarh"
+      ],
+      inclusions: ["Hotels", "Breakfast", "Transfers", "Sightseeing"],
+      exclusions: ["Lunch/Dinner", "Entry fees", "Personal expenses"]
+    },
+
+    // RAJASTHAN (8 packages)
+    {
+      id: 8,
+      title: "Jaipur Udaipur Royal Tour",
+      duration: "5 Nights / 6 Days",
+      region: "Rajasthan",
+      slug: "jaipur-udaipur-royal-5n6d",
+      image: "https://images.pexels.com/photos/2907578/pexels-photo-2907578.jpeg",
+      price: "₹24,999",
+      rating: 4.6,
+      reviews: 167,
+      highlights: ["Pink City", "City of Lakes", "Palaces", "Rajasthani culture"],
+      itinerary: [
+        "Day 1: Jaipur arrival, City Palace, Jantar Mantar, local markets",
+        "Day 2: Amber Fort, Hawa Mahal, Jal Mahal, traditional dinner",
+        "Day 3: Jaipur to Udaipur via Ajmer, Pushkar lake visit (optional)",
+        "Day 4: Udaipur sightseeing - City Palace, Lake Pichola boat ride",
+        "Day 5: Udaipur local - Jagdish Temple, Saheliyon ki Bari, sunset at Fateh Sagar",
+        "Day 6: Check-out and departure to airport/railway station"
+      ],
+      inclusions: ["Accommodation", "Transport", "Guide", "Breakfast"],
+      exclusions: ["Flights", "Lunch/Dinner", "Entry fees", "Shopping"]
+    },
+    {
+      id: 9,
+      title: "Jodhpur Jaisalmer Desert Safari",
+      duration: "4 Nights / 5 Days",
+      region: "Rajasthan",
+      slug: "jodhpur-jaisalmer-desert-4n5d",
+      image: "https://images.unsplash.com/photo-1599661046289-e31897b6a1ba",
+      price: "₹21,999",
+      rating: 4.7,
+      reviews: 198,
+      highlights: ["Blue City", "Golden City", "Camel safari", "Sand dunes"],
+      itinerary: [
+        "Day 1: Jodhpur arrival, Mehrangarh Fort, blue city walk",
+        "Day 2: Jodhpur to Jaisalmer, check-in, Gadisar Lake sunset",
+        "Day 3: Jaisalmer Fort, Patwon ki Haveli, evening Sam sand dunes",
+        "Day 4: Desert safari, camel riding, cultural program, desert camping",
+        "Day 5: Sunrise at dunes, return Jaisalmer, departure"
+      ],
+      inclusions: ["Hotels", "Desert camp", "Camel safari", "Cultural program", "Meals"],
+      exclusions: ["Transport to Jodhpur", "Personal expenses", "Tips"]
+    },
+    {
+      id: 10,
+      title: "Pushkar Ajmer Spiritual Tour",
+      duration: "3 Nights / 4 Days",
+      region: "Rajasthan",
+      slug: "pushkar-ajmer-spiritual-3n4d",
+      image: "https://images.unsplash.com/photo-1578067892900-b684d4fb5bb3",
+      price: "₹13,999",
+      rating: 4.5,
+      reviews: 143,
+      highlights: ["Brahma Temple", "Ajmer Sharif", "Holy lake", "Spiritual experience"],
+      itinerary: [
+        "Day 1: Arrival in Pushkar, Brahma Temple, Pushkar Lake aarti",
+        "Day 2: Pushkar sightseeing - ghats, temples, local bazaar",
+        "Day 3: Ajmer excursion - Ajmer Sharif Dargah, Ana Sagar Lake",
+        "Day 4: Morning prayers, check-out, departure to Jaipur"
+      ],
+      inclusions: ["Hotels", "Local transport", "Guide", "Breakfast"],
+      exclusions: ["Train/Flight", "Other meals", "Donations", "Shopping"]
+    },
+    {
+      id: 11,
+      title: "Mount Abu Hill Station",
+      duration: "3 Nights / 4 Days",
+      region: "Rajasthan",
+      slug: "mount-abu-hill-station-3n4d",
+      image: "https://images.unsplash.com/photo-1570193582-5b8d11c6c7ee",
+      price: "₹16,999",
+      rating: 4.3,
+      reviews: 124,
+      highlights: ["Dilwara Temples", "Sunset Point", "Nakki Lake", "Cool climate"],
+      itinerary: [
+        "Day 1: Arrival in Mount Abu, check-in, Nakki Lake boating",
+        "Day 2: Dilwara Temples, Guru Shikhar, Achalgarh Fort",
+        "Day 3: Sunset Point, Honeymoon Point, local market shopping",
+        "Day 4: Morning leisure, check-out and departure"
+      ],
+      inclusions: ["Accommodation", "Breakfast", "Local sightseeing"],
+      exclusions: ["Transport to Mount Abu", "Other meals", "Entry fees"]
+    },
+
+    // GOA (4 packages)
+    {
+      id: 12,
+      title: "Goa Beach Paradise",
+      duration: "4 Nights / 5 Days",
+      region: "Goa",
+      slug: "goa-beach-paradise-4n5d",
+      image: "https://images.unsplash.com/photo-1512343879784-a960bf40e7f2",
+      price: "₹19,999",
+      rating: 4.6,
+      reviews: 234,
+      highlights: ["Beach hopping", "Water sports", "Nightlife", "Portuguese heritage"],
+      itinerary: [
+        "Day 1: Arrival in Goa, check-in beach resort, Baga Beach evening",
+        "Day 2: North Goa - Calangute, Anjuna, Vagator beaches, flea market",
+        "Day 3: South Goa - Colva, Palolem beaches, Dudhsagar Falls (optional)",
+        "Day 4: Old Goa churches, spice plantation, river cruise with dinner",
+        "Day 5: Beach leisure, water sports, departure from airport"
+      ],
+      inclusions: ["Beach resort", "Airport transfers", "Breakfast", "River cruise"],
+      exclusions: ["Flights", "Lunch/Dinner", "Water sports", "Personal expenses"]
+    },
+    {
+      id: 13,
+      title: "Goa Honeymoon Special",
+      duration: "5 Nights / 6 Days",
+      region: "Goa",
+      slug: "goa-honeymoon-special-5n6d",
+      image: "https://images.unsplash.com/photo-1559827260-dc66d52bef19",
+      price: "₹28,999",
+      rating: 4.8,
+      reviews: 189,
+      highlights: ["Romantic beaches", "Candlelight dinner", "Luxury resort", "Couple spa"],
+      itinerary: [
+        "Day 1: Arrival, luxury beach resort check-in, welcome drinks",
+        "Day 2: Private beach time, couple spa, romantic beachside dinner",
+        "Day 3: Dudhsagar Falls, spice garden, traditional Goan lunch",
+        "Day 4: Dolphin watching, water sports, sunset cruise with dinner",
+        "Day 5: Old Goa heritage tour, shopping, leisure at resort",
+        "Day 6: Beach walk, check-out, departure with beautiful memories"
+      ],
+      inclusions: ["Luxury resort", "All meals", "Spa session", "Cruise", "Transfers"],
+      exclusions: ["Airfare", "Alcohol", "Personal expenses", "Additional spa"]
+    },
+
+    // KERALA (4 packages)
+    {
+      id: 14,
+      title: "Kerala Backwaters Houseboat",
+      duration: "5 Nights / 6 Days",
+      region: "Kerala",
+      slug: "kerala-backwaters-5n6d",
+      image: "https://images.unsplash.com/photo-1602216056096-3b40cc0c9944",
+      price: "₹26,999",
+      rating: 4.7,
+      reviews: 178,
+      highlights: ["Houseboat cruise", "Backwaters", "Coconut lagoons", "Ayurvedic spa"],
+      itinerary: [
+        "Day 1: Cochin arrival, Chinese fishing nets, spice market tour",
+        "Day 2: Munnar drive, tea gardens, Mattupetty Dam, Echo Point",
+        "Day 3: Munnar sightseeing - Eravikulam Park, Tea Museum, Top Station",
+        "Day 4: Alleppey drive, houseboat check-in, backwater cruise",
+        "Day 5: Houseboat experience, village visits, traditional Kerala lunch",
+        "Day 6: Cochin return, Ayurvedic massage, departure"
+      ],
+      inclusions: ["Hotels", "Houseboat", "All meals on houseboat", "Transfers"],
+      exclusions: ["Flights", "Ayurvedic treatments", "Shopping", "Tips"]
+    },
+    {
+      id: 15,
+      title: "Munnar Hill Station Escape",
+      duration: "4 Nights / 5 Days",
+      region: "Kerala",
+      slug: "munnar-hill-station-4n5d",
+      image: "https://images.unsplash.com/photo-1587474260584-136574528def",
+      price: "₹18,999",
+      rating: 4.5,
+      reviews: 156,
+      highlights: ["Tea plantations", "Misty hills", "Wildlife sanctuary", "Cool climate"],
+      itinerary: [
+        "Day 1: Cochin to Munnar, check-in hill resort, local market",
+        "Day 2: Munnar sightseeing - Tea Museum, Mattupetty, Echo Point",
+        "Day 3: Eravikulam National Park, Top Station, tea garden walk",
+        "Day 4: Munnar local, spice shopping, Kundala Lake boating",
+        "Day 5: Early morning hill view, departure to Cochin airport"
+      ],
+      inclusions: ["Hill resort", "Breakfast", "Sightseeing", "Transfers"],
+      exclusions: ["Airfare", "Other meals", "Entry fees", "Shopping"]
+    },
+
+    // UTTARAKHAND (4 packages)
+    {
+      id: 16,
+      title: "Rishikesh Haridwar Spiritual",
       duration: "3 Nights / 4 Days",
       region: "Uttarakhand",
-      slug: "rishikesh-yoga-adventure-3n4d",
+      slug: "rishikesh-haridwar-spiritual-3n4d",
       image: "https://images.unsplash.com/photo-1581791534721-e599df4417f7",
-      highlights: ["River Rafting", "Yoga Sessions", "Ganga Aarti", "Beatles Ashram"],
+      price: "₹14,999",
+      rating: 4.8,
+      reviews: 198,
+      highlights: ["Ganga Aarti", "River rafting", "Yoga sessions", "Spiritual experience"],
       itinerary: [
-        { day: 1, title: "Arrival Rishikesh", description: "Check-in, Ganga Aarti evening" },
-        { day: 2, title: "Adventure Day", description: "River rafting, bungee jumping" },
-        { day: 3, title: "Spiritual Experience", description: "Yoga session, Beatles Ashram visit" },
-        { day: 4, title: "Departure", description: "Morning yoga, checkout" }
+        "Day 1: Haridwar arrival, Har ki Pauri Ganga Aarti, evening prayers",
+        "Day 2: Rishikesh excursion - Laxman Jhula, Beatles Ashram, yoga session",
+        "Day 3: River rafting in Ganges, adventure activities, Neelkanth Temple",
+        "Day 4: Morning meditation, temple visits, departure"
       ],
-      inclusions: ["Hotels", "Transfers", "Breakfast", "Activities"],
-      exclusions: ["Transport to Rishikesh", "Meals", "Personal Expenses"],
-      price: "Price on Demand", 
+      inclusions: ["Hotels", "Yoga classes", "Breakfast", "Rafting"],
+      exclusions: ["Transport to destination", "Other meals", "Personal expenses"]
+    },
+    {
+      id: 17,
+      title: "Nainital Mussoorie Hill Tour",
+      duration: "5 Nights / 6 Days",
+      region: "Uttarakhand",
+      slug: "nainital-mussoorie-5n6d",
+      image: "https://images.unsplash.com/photo-1571115764595-644a1f56a55c",
+      price: "₹22,999",
+      rating: 4.6,
+      reviews: 167,
+      highlights: ["Naini Lake", "Mall Road", "Cable car", "Queen of Hills"],
+      itinerary: [
+        "Day 1: Delhi to Nainital, lake city check-in, boat ride",
+        "Day 2: Nainital sightseeing - Naina Devi Temple, Snow View Point",
+        "Day 3: Nainital to Mussoorie, Queen of Hills arrival, Mall Road",
+        "Day 4: Mussoorie local - Kempty Falls, Gun Hill, cable car ride",
+        "Day 5: Dhanaulti excursion, eco-park, apple orchards visit",
+        "Day 6: Morning leisure, departure to Delhi/Dehradun"
+      ],
+      inclusions: ["Hotels", "Breakfast", "Transfers", "Boating"],
+      exclusions: ["Transport from Delhi", "Other meals", "Cable car", "Shopping"]
+    },
+
+    // MADHYA PRADESH (3 packages)
+    {
+      id: 18,
+      title: "Khajuraho Temple Tour",
+      duration: "3 Nights / 4 Days",
+      region: "Madhya Pradesh",
+      slug: "khajuraho-temple-tour-3n4d",
+      image: "https://images.unsplash.com/photo-1571047399443-7d25c8ff6e43",
+      price: "₹17,999",
+      rating: 4.4,
+      reviews: 134,
+      highlights: ["UNESCO World Heritage", "Erotic sculptures", "Light & Sound show", "Ancient architecture"],
+      itinerary: [
+        "Day 1: Arrival in Khajuraho, temple complex visit, heritage walk",
+        "Day 2: Eastern & Western group temples, museum visit, sculpture tour",
+        "Day 3: Light & Sound show, local market, traditional crafts shopping",
+        "Day 4: Morning temple prayers, departure to nearest airport"
+      ],
+      inclusions: ["Heritage hotel", "Guide", "Breakfast", "Light show"],
+      exclusions: ["Flights", "Other meals", "Entry fees", "Shopping"]
+    },
+
+    // KARNATAKA (3 packages)
+    {
+      id: 19,
+      title: "Coorg Coffee Plantation",
+      duration: "4 Nights / 5 Days",
+      region: "Karnataka",
+      slug: "coorg-coffee-plantation-4n5d",
+      image: "https://images.unsplash.com/photo-1540979388789-6cee28a1cdc9",
+      price: "₹19,999",
       rating: 4.7,
-      reviews: 91
+      reviews: 145,
+      highlights: ["Coffee estates", "Abbey Falls", "Dubare Elephant Camp", "Misty hills"],
+      itinerary: [
+        "Day 1: Bangalore to Coorg, coffee plantation resort check-in",
+        "Day 2: Coorg sightseeing - Abbey Falls, Raja's Seat, coffee tour",
+        "Day 3: Dubare Elephant Camp, river rafting, spice plantation visit",
+        "Day 4: Namdroling Monastery, local Coorg culture, traditional lunch",
+        "Day 5: Morning plantation walk, departure to Bangalore"
+      ],
+      inclusions: ["Plantation resort", "All meals", "Plantation tour", "Activities"],
+      exclusions: ["Transport from Bangalore", "Personal expenses", "Tips"]
+    },
+
+    // WEST BENGAL (2 packages)
+    {
+      id: 20,
+      title: "Darjeeling Tea Garden Tour",
+      duration: "4 Nights / 5 Days",
+      region: "West Bengal",
+      slug: "darjeeling-tea-garden-4n5d",
+      image: "https://images.unsplash.com/photo-1597149101112-afc363d4c4b7",
+      price: "₹21,999",
+      rating: 4.6,
+      reviews: 189,
+      highlights: ["Toy train", "Tiger Hill sunrise", "Tea gardens", "Himalayan views"],
+      itinerary: [
+        "Day 1: Arrival in Darjeeling, hotel check-in, Mall Road walk",
+        "Day 2: Tiger Hill sunrise, Batasia Loop, Darjeeling Railway",
+        "Day 3: Tea garden visit, Happy Valley Tea Estate, tea tasting",
+        "Day 4: Himalayan Mountaineering Institute, Zoo, Peace Pagoda",
+        "Day 5: Morning leisure, toy train ride, departure"
+      ],
+      inclusions: ["Hotels", "Toy train", "Tea garden tour", "Breakfast"],
+      exclusions: ["Transport to Darjeeling", "Other meals", "Personal expenses"]
+    },
+
+    // INTERNATIONAL PACKAGES (10 packages)
+    {
+      id: 21,
+      title: "Dubai Marina Luxury",
+      duration: "4 Nights / 5 Days",
+      region: "International",
+      slug: "dubai-marina-luxury-4n5d",
+      image: "https://images.unsplash.com/photo-1512453979798-5ea266f8880c",
+      price: "₹45,999",
+      rating: 4.8,
+      reviews: 298,
+      highlights: ["Burj Khalifa", "Desert safari", "Marina cruise", "Shopping festival"],
+      itinerary: [
+        "Day 1: Dubai arrival, Marina hotel check-in, Dhow cruise dinner",
+        "Day 2: Burj Khalifa visit, Dubai Mall, fountain show, gold souk",
+        "Day 3: Desert safari adventure, camel riding, BBQ dinner with entertainment",
+        "Day 4: Abu Dhabi day trip - Sheikh Zayed Mosque, Emirates Palace",
+        "Day 5: Last minute shopping, departure from Dubai International Airport"
+      ],
+      inclusions: ["4-star hotel", "Desert safari", "Abu Dhabi tour", "Airport transfers"],
+      exclusions: ["Flights", "Visa fees", "Personal expenses", "Additional meals"]
+    },
+    {
+      id: 22,
+      title: "Singapore Malaysia Combo",
+      duration: "6 Nights / 7 Days",
+      region: "International",
+      slug: "singapore-malaysia-combo-6n7d",
+      image: "https://images.unsplash.com/photo-1525625293386-3f8f99389edd",
+      price: "₹52,999",
+      rating: 4.7,
+      reviews: 234,
+      highlights: ["Universal Studios", "Petronas Towers", "Gardens by Bay", "Genting Highlands"],
+      itinerary: [
+        "Day 1: Singapore arrival, city tour - Merlion, Marina Bay Sands",
+        "Day 2: Universal Studios full day, Sentosa Island, cable car",
+        "Day 3: Gardens by the Bay, Singapore Zoo, night safari",
+        "Day 4: Singapore to Kuala Lumpur, Petronas Towers, KLCC shopping",
+        "Day 5: Genting Highlands day trip, casino, outdoor theme park",
+        "Day 6: Batu Caves, city tour, Central Market, traditional dinner",
+        "Day 7: Last minute shopping, departure from Kuala Lumpur"
+      ],
+      inclusions: ["Hotels", "Universal Studios", "Transfers", "City tours"],
+      exclusions: ["Flights", "Visa", "Meals", "Personal expenses", "Casino chips"]
+    },
+    {
+      id: 23,
+      title: "Thailand Bangkok Pattaya",
+      duration: "5 Nights / 6 Days",
+      region: "International",
+      slug: "thailand-bangkok-pattaya-5n6d",
+      image: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4",
+      price: "₹38,999",
+      rating: 4.6,
+      reviews: 267,
+      highlights: ["Golden Buddha", "Coral Island", "Floating market", "Thai massage"],
+      itinerary: [
+        "Day 1: Bangkok arrival, Golden Buddha Temple, Chao Phraya river cruise",
+        "Day 2: Bangkok city tour - Grand Palace, Emerald Buddha, local markets",
+        "Day 3: Bangkok to Pattaya, Coral Island tour, water sports, beach time",
+        "Day 4: Pattaya local - Nong Nooch Garden, elephant show, cultural program",
+        "Day 5: Floating market, Thai cooking class, traditional massage",
+        "Day 6: Shopping at weekend market, departure from Bangkok airport"
+      ],
+      inclusions: ["Hotels", "Island tour", "Cultural shows", "Airport transfers"],
+      exclusions: ["International flights", "Visa fees", "Personal expenses", "Water sports"]
+    },
+    {
+      id: 24,
+      title: "Bali Indonesia Paradise",
+      duration: "5 Nights / 6 Days",
+      region: "International",
+      slug: "bali-indonesia-paradise-5n6d",
+      image: "https://images.unsplash.com/photo-1537953773345-d172ccf13cf1",
+      price: "₹42,999",
+      rating: 4.8,
+      reviews: 189,
+      highlights: ["Uluwatu Temple", "Rice terraces", "Volcano tour", "Beach clubs"],
+      itinerary: [
+        "Day 1: Bali arrival, Seminyak beach resort, sunset at Tanah Lot",
+        "Day 2: Ubud day trip - rice terraces, monkey forest, art villages",
+        "Day 3: Volcano sunrise tour - Mount Batur, hot springs, coffee plantation",
+        "Day 4: Uluwatu Temple, Kecak dance, Jimbaran seafood dinner on beach",
+        "Day 5: Water sports at Tanjung Benoa, spa treatment, beach leisure",
+        "Day 6: Traditional market shopping, departure from Ngurah Rai airport"
+      ],
+      inclusions: ["Beach resort", "Volcano tour", "Cultural shows", "Spa session"],
+      exclusions: ["International flights", "Visa on arrival", "Personal expenses", "Water sports"]
+    },
+    {
+      id: 25,
+      title: "Maldives Honeymoon Villa",
+      duration: "4 Nights / 5 Days",
+      region: "International",
+      slug: "maldives-honeymoon-villa-4n5d",
+      image: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4",
+      price: "₹85,999",
+      rating: 4.9,
+      reviews: 134,
+      highlights: ["Overwater villa", "Private beach", "Couple spa", "Dolphin watching"],
+      itinerary: [
+        "Day 1: Male arrival, seaplane transfer to resort, overwater villa check-in",
+        "Day 2: Snorkeling trip, coral reef exploration, romantic beach dinner",
+        "Day 3: Dolphin watching cruise, couple spa treatment, sunset fishing",
+        "Day 4: Island hopping, local village visit, water sports, private dining",
+        "Day 5: Morning leisure, seaplane back to Male, international departure"
+      ],
+      inclusions: ["Overwater villa", "All meals", "Seaplane transfers", "Activities"],
+      exclusions: ["International flights", "Alcohol", "Personal expenses", "Additional spa"]
+    },
+    {
+      id: 26,
+      title: "Sri Lanka Cultural Tour",
+      duration: "6 Nights / 7 Days",
+      region: "International",
+      slug: "sri-lanka-cultural-tour-6n7d",
+      image: "https://images.unsplash.com/photo-1566043263610-85d5b2a5eef9",
+      price: "₹34,999",
+      rating: 4.5,
+      reviews: 156,
+      highlights: ["Sigiriya Rock", "Kandy Temple", "Tea plantations", "Wildlife safari"],
+      itinerary: [
+        "Day 1: Colombo arrival, city tour, Galle Face Green, local markets",
+        "Day 2: Colombo to Sigiriya, ancient rock fortress, cave paintings",
+        "Day 3: Polonnaruwa ancient city, medieval capital ruins, archaeological sites",
+        "Day 4: Kandy drive, Temple of Tooth Relic, cultural dance performance",
+        "Day 5: Nuwara Eliya hill station, tea factory visit, colonial architecture",
+        "Day 6: Yala National Park safari, leopard spotting, elephant watching",
+        "Day 7: Return to Colombo, last minute shopping, departure"
+      ],
+      inclusions: ["Hotels", "Safari jeep", "Cultural shows", "All transfers"],
+      exclusions: ["Flights", "Visa", "Personal expenses", "Tips to guides"]
+    },
+    {
+      id: 27,
+      title: "Nepal Kathmandu Pokhara",
+      duration: "5 Nights / 6 Days",
+      region: "International",
+      slug: "nepal-kathmandu-pokhara-5n6d",
+      image: "https://images.unsplash.com/photo-1605859050862-5b07008e0feb",
+      price: "₹29,999",
+      rating: 4.6,
+      reviews: 178,
+      highlights: ["Himalayan views", "Pashupatinath", "Phewa Lake", "Mountain flights"],
+      itinerary: [
+        "Day 1: Kathmandu arrival, Durbar Square, Swayambhunath Stupa (Monkey Temple)",
+        "Day 2: Kathmandu sightseeing - Pashupatinath, Boudhanath, Patan Durbar Square",
+        "Day 3: Mountain flight (optional), drive to Pokhara, Phewa Lake boating",
+        "Day 4: Pokhara sightseeing - Sarangkot sunrise, Davis Falls, Gupteshwor Cave",
+        "Day 5: Pokhara adventure - paragliding (optional), Peace Pagoda, lakeside walk",
+        "Day 6: Return to Kathmandu, traditional market shopping, departure"
+      ],
+      inclusions: ["Hotels", "Sightseeing", "Transfers", "Boating"],
+      exclusions: ["Flights", "Visa fees", "Mountain flight", "Adventure activities"]
+    },
+    {
+      id: 28,
+      title: "Bhutan Thimphu Paro",
+      duration: "4 Nights / 5 Days",
+      region: "International",
+      slug: "bhutan-thimphu-paro-4n5d",
+      image: "https://images.unsplash.com/photo-1609137144813-7d9921338f24",
+      price: "₹48,999",
+      rating: 4.7,
+      reviews: 112,
+      highlights: ["Tiger's Nest", "Gross National Happiness", "Buddhist monasteries", "Carbon negative country"],
+      itinerary: [
+        "Day 1: Paro arrival, drive to Thimphu, Memorial Chorten, local market",
+        "Day 2: Thimphu sightseeing - Tashichho Dzong, Buddha Dordenma statue",
+        "Day 3: Thimphu to Paro, Rinpung Dzong, traditional farm house visit",
+        "Day 4: Tiger's Nest Monastery hike (3-4 hours), most sacred Buddhist site",
+        "Day 5: Paro local sightseeing, traditional handicrafts shopping, departure"
+      ],
+      inclusions: ["Hotels", "All meals", "Guide", "Permits", "Transfers"],
+      exclusions: ["Flights", "Visa fees", "Personal expenses", "Tips"]
+    },
+    {
+      id: 29,
+      title: "Turkey Istanbul Cappadocia",
+      duration: "6 Nights / 7 Days",
+      region: "International",
+      slug: "turkey-istanbul-cappadocia-6n7d",
+      image: "https://images.unsplash.com/photo-1541432901042-2d8bd64b4a9b",
+      price: "₹65,999",
+      rating: 4.8,
+      reviews: 167,
+      highlights: ["Hot air balloon", "Hagia Sophia", "Fairy chimneys", "Grand Bazaar"],
+      itinerary: [
+        "Day 1: Istanbul arrival, Blue Mosque, Hagia Sophia, Sultanahmet Square",
+        "Day 2: Topkapi Palace, Grand Bazaar shopping, Bosphorus cruise dinner",
+        "Day 3: Flight to Cappadocia, fairy chimneys, underground city tour",
+        "Day 4: Hot air balloon ride (optional), Open Air Museum, pottery workshop",
+        "Day 5: Cappadocia valleys, cave churches, traditional Turkish night",
+        "Day 6: Return to Istanbul, Galata Tower, Taksim Square, last minute shopping",
+        "Day 7: Istanbul departure, transfer to airport for international flight"
+      ],
+      inclusions: ["Hotels", "Domestic flights", "Cave hotel", "City tours"],
+      exclusions: ["International flights", "Visa", "Hot air balloon", "Personal expenses"]
+    },
+    {
+      id: 30,
+      title: "Egypt Cairo Luxor Cruise",
+      duration: "7 Nights / 8 Days",
+      region: "International",
+      slug: "egypt-cairo-luxor-cruise-7n8d",
+      image: "https://images.unsplash.com/photo-1539650116574-75c0c6d73f6e",
+      price: "₹72,999",
+      rating: 4.6,
+      reviews: 145,
+      highlights: ["Pyramids of Giza", "Nile cruise", "Valley of Kings", "Sphinx"],
+      itinerary: [
+        "Day 1: Cairo arrival, Pyramids of Giza, Great Sphinx, Sound & Light show",
+        "Day 2: Egyptian Museum, Islamic Cairo, Khan El Khalili bazaar",
+        "Day 3: Flight to Luxor, Valley of Kings, Karnak Temple, Nile cruise check-in",
+        "Day 4: Nile cruise - Edfu Temple, sailing through scenic landscapes",
+        "Day 5: Kom Ombo Temple, Aswan High Dam, Philae Temple, Nubian village",
+        "Day 6: Abu Simbel excursion (optional), traditional felucca sailing",
+        "Day 7: Return to Luxor, Luxor Temple, traditional Egyptian dinner",
+        "Day 8: Flight to Cairo, last minute shopping, departure"
+      ],
+      inclusions: ["Hotels", "Nile cruise", "Domestic flights", "All tours"],
+      exclusions: ["International flights", "Visa", "Abu Simbel", "Personal expenses"]
     }
   ];
 
