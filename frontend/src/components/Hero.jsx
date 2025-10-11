@@ -27,17 +27,17 @@ const Hero = () => {
     try {
       // Create formatted message for WhatsApp and email
       const formattedMessage = `📩 New Travel Enquiry Received
-👤 Name: Homepage Visitor
-📧 Email: Not provided
-📱 Phone: Not provided
+👤 Name: ${enquiryData.name || 'Not provided'}
+📧 Email: ${enquiryData.email || 'Not provided'}
+📱 Phone: ${enquiryData.phone || 'Not provided'}
 
 📍 Destination: ${enquiryData.destination}
 📅 Dates: ${enquiryData.startDate} – ${enquiryData.endDate}
 👨‍👩‍👧 Pax: ${enquiryData.adults} Adults${enquiryData.kids && enquiryData.kids !== '0' ? `, ${enquiryData.kids}` : ''}
-💰 Budget: ₹ Not specified
+💰 Budget: ${enquiryData.budget || 'Not specified'}
 🕒 Duration: ${enquiryData.days}
 
-💬 Message: Quick enquiry from homepage form`;
+💬 Message: Homepage enquiry form submission`;
 
       // Submit to backend API
       const backendUrl = process.env.REACT_APP_BACKEND_URL || '';
