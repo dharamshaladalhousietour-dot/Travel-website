@@ -102,7 +102,11 @@
 # Testing Data - Main Agent and testing sub agent both should log testing data below this section
 #====================================================================================================
 
-user_problem_statement: Fix homepage UI issues for Pretty Planet Travels and Events website including "Made by Emergent" footer text removal, Book with Expert text visibility, text cut-off fixes, header image removal, and implementing proper homepage enquiry form with specified fields.
+user_problem_statement: Comprehensive improvements for Pretty Planet Travels and Events website including: 
+1. Tour Packages - Fix "Send Enquiry" form responsiveness, mandatory fields, WhatsApp/email integration with success messages, and missing images 
+2. Homepage - Add two new WhatsApp buttons below "Create Unforgettable Moments", fix enquiry form to send full details to WhatsApp, optimize loading speed
+3. Get in Touch - Change budget symbol from $ to ₹, fix form submission to WhatsApp with success confirmation
+4. General - Improve mobile responsiveness for all forms, fix slow loading/layout issues
 
 frontend:
   - task: "Remove 'Made by Emergent' footer text"
