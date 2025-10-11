@@ -316,11 +316,16 @@ metadata:
 
 test_plan:
   current_focus:
+    - "Tour Packages - Fix Send Enquiry form (responsiveness, mandatory fields, WhatsApp/email)"
+    - "Homepage - Add two new WhatsApp buttons below 'Create Unforgettable Moments'"
+    - "Homepage - Fix enquiry form to send full details to WhatsApp"
+    - "Get in Touch - Change budget symbol from $ to ₹"
+    - "Get in Touch - Fix Send Message button for WhatsApp integration"
   stuck_tasks:
   test_all: false
   test_priority: "high_first"
   backend_testing_complete: true
-  homepage_enquiry_testing_complete: true
+  homepage_enquiry_testing_complete: false
 
 agent_communication:
     -agent: "main"
