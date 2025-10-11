@@ -36,9 +36,28 @@ const SimpleEnquiryForm = ({ packageTitle = "", onClose = null }) => {
     e.preventDefault();
     setIsSubmitting(true);
 
-    // Comprehensive validation
-    if (!formData.name || !formData.email || !formData.phone || !formData.destination) {
-      alert('Please fill in all required fields: Name, Email, Phone, and Destination');
+    // Comprehensive validation for all mandatory fields
+    const requiredFields = {
+      name: 'Name',
+      email: 'Email',
+      phone: 'Phone', 
+      destination: 'Destination',
+      startDate: 'Start Date',
+      endDate: 'End Date',
+      adults: 'Adults',
+      days: 'Duration',
+      budget: 'Budget'
+    };
+
+    const missingFields = [];
+    for (const [field, label] of Object.entries(requiredFields)) {
+      if (!formData[field] || formData[field].trim() === '') {
+        missingFields.push(label);
+      }
+    }
+
+    if (missingFields.length > 0) {
+      alert(`Please fill in all required fields: ${missingFields.join(', ')}`);
       setIsSubmitting(false);
       return;
     }
