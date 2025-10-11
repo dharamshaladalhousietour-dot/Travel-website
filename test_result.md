@@ -158,16 +158,16 @@ frontend:
         -comment: "Current form sends generic messages, needs to send full enquiry details to WhatsApp"
 
   - task: "Get in Touch - Change budget symbol from $ to ₹"
-    implemented: false
-    working: false
+    implemented: true
+    working: true
     file: "/app/frontend/src/components/Contact.jsx"
     stuck_count: 0
     priority: "medium"
-    needs_retesting: true
+    needs_retesting: false
     status_history:
-        -working: false
+        -working: true
         -agent: "main"
-        -comment: "Budget field currently uses $ symbol, needs to be changed to ₹"
+        -comment: "✅ COMPLETED: Changed budget dropdown options from $ to ₹ format (Under ₹25,000, ₹25,000 - ₹50,000, etc.) to use Indian Rupee currency"
 
   - task: "Get in Touch - Fix Send Message button for WhatsApp integration"
     implemented: false
