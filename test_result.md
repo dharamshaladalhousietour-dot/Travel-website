@@ -111,15 +111,18 @@ user_problem_statement: Comprehensive improvements for Pretty Planet Travels and
 frontend:
   - task: "Tour Packages - Fix Send Enquiry form (responsiveness, mandatory fields, WhatsApp/email)"
     implemented: true
-    working: true
+    working: false
     file: "/app/frontend/src/components/SimpleEnquiryForm.jsx"
-    stuck_count: 0
+    stuck_count: 1
     priority: "high"
-    needs_retesting: true
+    needs_retesting: false
     status_history:
         -working: true
         -agent: "main"
         -comment: "✅ COMPLETED: Enhanced SimpleEnquiryForm with all mandatory fields (Name*, Email*, Phone*, Destination*, Start Date*, End Date*, Adults*, Duration*, Budget*), improved validation with comprehensive field checking, properly formatted WhatsApp message with kids information, success message shows '✅ Thank you for your enquiry! Our team will contact you soon. Your enquiry has been sent to WhatsApp and Email successfully!'"
+        -working: false
+        -agent: "testing"
+        -comment: "❌ CRITICAL ISSUE: Tour Packages page navigation not working properly. When navigating to /tour-packages URL, it redirects to homepage instead of showing actual tour packages with Send Enquiry buttons. The SimpleEnquiryForm modal is not opening when clicking Send Enquiry buttons. Only homepage enquiry form is working. Desktop and mobile testing both show same issue - no actual tour packages with individual Send Enquiry buttons are accessible. The tour packages page implementation appears to be missing or not properly routed."
 
   - task: "Tour Packages - Fix missing package images or add placeholders"
     implemented: true
