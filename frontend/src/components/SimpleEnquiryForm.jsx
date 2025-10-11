@@ -306,19 +306,22 @@ const SimpleEnquiryForm = ({ packageTitle = "", onClose = null }) => {
           </div>
 
           <div>
-            <Label htmlFor="kids">Kids</Label>
-            <Select value={formData.kids} onValueChange={(value) => handleInputChange('kids', value)}>
-              <SelectTrigger>
-                <SelectValue placeholder="Select kids" />
+            <Label htmlFor="kids" className="block text-sm font-medium text-gray-700 mb-2">Kids</Label>
+            <Select 
+              value={formData.kids} 
+              onValueChange={(value) => handleInputChange('kids', value)}
+            >
+              <SelectTrigger className="w-full h-12 border border-gray-300 rounded-md px-3 py-2 bg-white hover:border-blue-500 focus:border-blue-500 focus:ring-2 focus:ring-blue-200 transition-colors">
+                <SelectValue placeholder="Select number of kids" />
               </SelectTrigger>
-              <SelectContent>
-                <SelectItem value="0">No Kids</SelectItem>
-                <SelectItem value="1 (2-5 years)">1 Kid (2-5 years)</SelectItem>
-                <SelectItem value="1 (6-12 years)">1 Kid (6-12 years)</SelectItem>
-                <SelectItem value="2 (2-5 years)">2 Kids (2-5 years)</SelectItem>
-                <SelectItem value="2 (6-12 years)">2 Kids (6-12 years)</SelectItem>
-                <SelectItem value="2 (mixed ages)">2 Kids (mixed ages)</SelectItem>
-                <SelectItem value="3+ kids">3+ Kids</SelectItem>
+              <SelectContent className="bg-white border border-gray-200 rounded-md shadow-lg max-h-60 overflow-y-auto">
+                <SelectItem value="0" className="px-3 py-2 hover:bg-blue-50 cursor-pointer">No Kids</SelectItem>
+                <SelectItem value="1 (2-5 years)" className="px-3 py-2 hover:bg-blue-50 cursor-pointer">1 Kid (2-5 years)</SelectItem>
+                <SelectItem value="1 (6-12 years)" className="px-3 py-2 hover:bg-blue-50 cursor-pointer">1 Kid (6-12 years)</SelectItem>
+                <SelectItem value="2 (2-5 years)" className="px-3 py-2 hover:bg-blue-50 cursor-pointer">2 Kids (2-5 years)</SelectItem>
+                <SelectItem value="2 (6-12 years)" className="px-3 py-2 hover:bg-blue-50 cursor-pointer">2 Kids (6-12 years)</SelectItem>
+                <SelectItem value="2 (mixed ages)" className="px-3 py-2 hover:bg-blue-50 cursor-pointer">2 Kids (mixed ages)</SelectItem>
+                <SelectItem value="3+ kids" className="px-3 py-2 hover:bg-blue-50 cursor-pointer">3+ Kids</SelectItem>
               </SelectContent>
             </Select>
           </div>
