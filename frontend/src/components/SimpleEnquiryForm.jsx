@@ -256,8 +256,8 @@ const SimpleEnquiryForm = ({ packageTitle = "", onClose = null }) => {
             </div>
 
             <div>
-              <Label htmlFor="adults">Adults</Label>
-              <Select value={formData.adults} onValueChange={(value) => handleInputChange('adults', value)}>
+              <Label htmlFor="adults">Adults *</Label>
+              <Select value={formData.adults} onValueChange={(value) => handleInputChange('adults', value)} required>
                 <SelectTrigger>
                   <SelectValue placeholder="Select adults" />
                 </SelectTrigger>
@@ -272,8 +272,8 @@ const SimpleEnquiryForm = ({ packageTitle = "", onClose = null }) => {
             </div>
 
             <div>
-              <Label htmlFor="days">Duration</Label>
-              <Select value={formData.days} onValueChange={(value) => handleInputChange('days', value)}>
+              <Label htmlFor="days">Duration *</Label>
+              <Select value={formData.days} onValueChange={(value) => handleInputChange('days', value)} required>
                 <SelectTrigger>
                   <SelectValue placeholder="Select days" />
                 </SelectTrigger>
