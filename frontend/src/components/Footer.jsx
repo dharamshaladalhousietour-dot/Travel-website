@@ -234,12 +234,21 @@ const Footer = () => {
             <ul className="space-y-3">
               {support.map((item, index) => (
                 <li key={index}>
-                  <a 
-                    href={item.href} 
-                    className="text-blue-200 hover:text-amber-400 transition-colors text-sm"
-                  >
-                    {item.name}
-                  </a>
+                  {item.href.startsWith('/') ? (
+                    <Link 
+                      to={item.href} 
+                      className="text-blue-200 hover:text-amber-400 transition-colors text-sm"
+                    >
+                      {item.name}
+                    </Link>
+                  ) : (
+                    <a 
+                      href={item.href} 
+                      className="text-blue-200 hover:text-amber-400 transition-colors text-sm"
+                    >
+                      {item.name}
+                    </a>
+                  )}
                 </li>
               ))}
             </ul>
