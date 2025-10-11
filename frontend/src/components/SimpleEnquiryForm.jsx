@@ -289,6 +289,24 @@ const SimpleEnquiryForm = ({ packageTitle = "", onClose = null }) => {
           </div>
 
           <div>
+            <Label htmlFor="kids">Kids</Label>
+            <Select value={formData.kids} onValueChange={(value) => handleInputChange('kids', value)}>
+              <SelectTrigger>
+                <SelectValue placeholder="Select kids" />
+              </SelectTrigger>
+              <SelectContent>
+                <SelectItem value="0">No Kids</SelectItem>
+                <SelectItem value="1 (2-5 years)">1 Kid (2-5 years)</SelectItem>
+                <SelectItem value="1 (6-12 years)">1 Kid (6-12 years)</SelectItem>
+                <SelectItem value="2 (2-5 years)">2 Kids (2-5 years)</SelectItem>
+                <SelectItem value="2 (6-12 years)">2 Kids (6-12 years)</SelectItem>
+                <SelectItem value="2 (mixed ages)">2 Kids (mixed ages)</SelectItem>
+                <SelectItem value="3+ kids">3+ Kids</SelectItem>
+              </SelectContent>
+            </Select>
+          </div>
+
+          <div>
             <Label htmlFor="message">Additional Message</Label>
             <Textarea
               id="message"
