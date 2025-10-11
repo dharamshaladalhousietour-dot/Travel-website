@@ -68,6 +68,9 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/tour-packages" element={<TourPackagesPage />} />
           <Route path="/events-weddings" element={<EventsWeddingsPage />} />
+          <Route path="/terms-conditions" element={<><Header /><TermsConditions /><Footer /><WhatsAppButton /></>} />
+          <Route path="/refund-policy" element={<><Header /><RefundPolicy /><Footer /><WhatsAppButton /></>} />
+          <Route path="/travel-insurance" element={<><Header /><TravelInsurance /><Footer /><WhatsAppButton /></>} />
         </Routes>
       </BrowserRouter>
     </div>
