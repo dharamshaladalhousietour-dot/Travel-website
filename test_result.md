@@ -271,6 +271,9 @@ backend:
         -working: true
         -agent: "testing"
         -comment: "✅ CRITICAL FIX APPLIED: Fixed NameError in backend server.py that was preventing service from starting (send_enquiry_email function referenced EnquiryForm before it was defined). Removed type hint to resolve issue. API now working perfectly with exact homepage form data format: Manali destination enquiry processed successfully, returns 200 status, generates UUID cc20310d-db14-4a32-827d-c5764ffe060d, saves to database, logs email notification correctly. All backend connectivity restored."
+        -working: true
+        -agent: "testing"
+        -comment: "✅ COMPREHENSIVE TESTING COMPLETED: Tested POST /api/enquiry with exact review request sample data (John Smith, Kashmir Honeymoon Special, ₹35,000-₹50,000 budget). API successfully processed enquiry, generated UUID c084d095-212d-4cc6-9b08-7ab3fae526d6, saved to MongoDB with all fields intact including formatted_message, logged email notification to info@prettyplanettravels.com. All 5 backend tests passing: connectivity, POST enquiry, GET enquiry, validation (422 for invalid data), and CORS headers properly configured."
 
   - task: "Database Integration - MongoDB enquiry storage"
     implemented: true
