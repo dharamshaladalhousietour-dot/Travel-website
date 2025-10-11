@@ -36,9 +36,24 @@ const SimpleEnquiryForm = ({ packageTitle = "", onClose = null }) => {
     e.preventDefault();
     setIsSubmitting(true);
 
-    // Validate required fields
-    if (!formData.name || !formData.email || !formData.phone) {
-      alert('Please fill in all required fields: Name, Email, and Phone');
+    // Comprehensive validation
+    if (!formData.name || !formData.email || !formData.phone || !formData.destination) {
+      alert('Please fill in all required fields: Name, Email, Phone, and Destination');
+      setIsSubmitting(false);
+      return;
+    }
+
+    // Email validation
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(formData.email)) {
+      alert('Please enter a valid email address');
+      setIsSubmitting(false);
+      return;
+    }
+
+    // Phone validation
+    if (formData.phone.length < 10) {
+      alert('Please enter a valid phone number');
       setIsSubmitting(false);
       return;
     }
