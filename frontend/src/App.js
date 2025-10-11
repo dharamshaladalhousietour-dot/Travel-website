@@ -14,6 +14,9 @@ import Blog from "./components/Blog";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import WhatsAppButton from "./components/WhatsAppButton";
+import TermsConditions from "./components/TermsConditions";
+import RefundPolicy from "./components/RefundPolicy";
+import TravelInsurance from "./components/TravelInsurance";
 
 const Home = () => {
   return (
