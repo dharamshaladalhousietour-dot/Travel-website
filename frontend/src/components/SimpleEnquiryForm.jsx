@@ -256,17 +256,23 @@ const SimpleEnquiryForm = ({ packageTitle = "", onClose = null }) => {
             </div>
 
             <div>
-              <Label htmlFor="adults">Adults *</Label>
-              <Select value={formData.adults} onValueChange={(value) => handleInputChange('adults', value)} required>
-                <SelectTrigger>
-                  <SelectValue placeholder="Select adults" />
+              <Label htmlFor="adults" className="block text-sm font-medium text-gray-700 mb-2">Adults *</Label>
+              <Select 
+                value={formData.adults} 
+                onValueChange={(value) => handleInputChange('adults', value)} 
+                required
+              >
+                <SelectTrigger className="w-full h-12 border border-gray-300 rounded-md px-3 py-2 bg-white hover:border-blue-500 focus:border-blue-500 focus:ring-2 focus:ring-blue-200 transition-colors">
+                  <SelectValue placeholder="Select number of adults" />
                 </SelectTrigger>
-                <SelectContent>
-                  <SelectItem value="1">1 Adult</SelectItem>
-                  <SelectItem value="2">2 Adults</SelectItem>
-                  <SelectItem value="3">3 Adults</SelectItem>
-                  <SelectItem value="4">4 Adults</SelectItem>
-                  <SelectItem value="5+">5+ Adults</SelectItem>
+                <SelectContent className="bg-white border border-gray-200 rounded-md shadow-lg max-h-60 overflow-y-auto">
+                  <SelectItem value="1" className="px-3 py-2 hover:bg-blue-50 cursor-pointer">1 Adult</SelectItem>
+                  <SelectItem value="2" className="px-3 py-2 hover:bg-blue-50 cursor-pointer">2 Adults</SelectItem>
+                  <SelectItem value="3" className="px-3 py-2 hover:bg-blue-50 cursor-pointer">3 Adults</SelectItem>
+                  <SelectItem value="4" className="px-3 py-2 hover:bg-blue-50 cursor-pointer">4 Adults</SelectItem>
+                  <SelectItem value="5" className="px-3 py-2 hover:bg-blue-50 cursor-pointer">5 Adults</SelectItem>
+                  <SelectItem value="6" className="px-3 py-2 hover:bg-blue-50 cursor-pointer">6 Adults</SelectItem>
+                  <SelectItem value="7+" className="px-3 py-2 hover:bg-blue-50 cursor-pointer">7+ Adults</SelectItem>
                 </SelectContent>
               </Select>
             </div>
