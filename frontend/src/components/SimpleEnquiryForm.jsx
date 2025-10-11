@@ -234,22 +234,24 @@ const SimpleEnquiryForm = ({ packageTitle = "", onClose = null }) => {
             </div>
 
             <div>
-              <Label htmlFor="startDate">Start Date</Label>
+              <Label htmlFor="startDate">Start Date *</Label>
               <Input
                 id="startDate"
                 type="date"
                 value={formData.startDate}
                 onChange={(e) => handleInputChange('startDate', e.target.value)}
+                required
               />
             </div>
 
             <div>
-              <Label htmlFor="endDate">End Date</Label>
+              <Label htmlFor="endDate">End Date *</Label>
               <Input
                 id="endDate"
                 type="date"
                 value={formData.endDate}
                 onChange={(e) => handleInputChange('endDate', e.target.value)}
+                required
               />
             </div>
 
