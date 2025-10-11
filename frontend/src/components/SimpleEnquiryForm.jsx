@@ -218,17 +218,23 @@ const SimpleEnquiryForm = ({ packageTitle = "", onClose = null }) => {
             </div>
 
             <div>
-              <Label htmlFor="budget">Budget (₹) *</Label>
-              <Select value={formData.budget} onValueChange={(value) => handleInputChange('budget', value)} required>
-                <SelectTrigger>
-                  <SelectValue placeholder="Select budget" />
+              <Label htmlFor="budget" className="block text-sm font-medium text-gray-700 mb-2">Budget (₹) *</Label>
+              <Select 
+                value={formData.budget} 
+                onValueChange={(value) => handleInputChange('budget', value)} 
+                required
+              >
+                <SelectTrigger className="w-full h-12 border border-gray-300 rounded-md px-3 py-2 bg-white hover:border-blue-500 focus:border-blue-500 focus:ring-2 focus:ring-blue-200 transition-colors">
+                  <SelectValue placeholder="Select your budget range" />
                 </SelectTrigger>
-                <SelectContent>
-                  <SelectItem value="15,000 - 25,000">₹15,000 - ₹25,000</SelectItem>
-                  <SelectItem value="25,000 - 50,000">₹25,000 - ₹50,000</SelectItem>
-                  <SelectItem value="50,000 - 1,00,000">₹50,000 - ₹1,00,000</SelectItem>
-                  <SelectItem value="1,00,000 - 2,00,000">₹1,00,000 - ₹2,00,000</SelectItem>
-                  <SelectItem value="2,00,000+">₹2,00,000+</SelectItem>
+                <SelectContent className="bg-white border border-gray-200 rounded-md shadow-lg max-h-60 overflow-y-auto">
+                  <SelectItem value="15,000 - 25,000" className="px-3 py-2 hover:bg-blue-50 cursor-pointer">₹15,000 - ₹25,000</SelectItem>
+                  <SelectItem value="25,000 - 50,000" className="px-3 py-2 hover:bg-blue-50 cursor-pointer">₹25,000 - ₹50,000</SelectItem>
+                  <SelectItem value="50,000 - 1,00,000" className="px-3 py-2 hover:bg-blue-50 cursor-pointer">₹50,000 - ₹1,00,000</SelectItem>
+                  <SelectItem value="1,00,000 - 2,00,000" className="px-3 py-2 hover:bg-blue-50 cursor-pointer">₹1,00,000 - ₹2,00,000</SelectItem>
+                  <SelectItem value="2,00,000 - 5,00,000" className="px-3 py-2 hover:bg-blue-50 cursor-pointer">₹2,00,000 - ₹5,00,000</SelectItem>
+                  <SelectItem value="5,00,000+" className="px-3 py-2 hover:bg-blue-50 cursor-pointer">₹5,00,000+</SelectItem>
+                  <SelectItem value="flexible" className="px-3 py-2 hover:bg-blue-50 cursor-pointer">Flexible Budget</SelectItem>
                 </SelectContent>
               </Select>
             </div>
