@@ -88,6 +88,7 @@ const TourPackages = () => {
       title: "Shimla Weekend Getaway",
       duration: "2 Nights / 3 Days",
       region: "Himachal", 
+      slug: "shimla-weekend-2n3d",
       image: "https://images.unsplash.com/photo-1657894736581-ccc35d62d9e2",
       highlights: ["Toy Train", "Mall Road", "Jakhu Temple", "Ridge Walk"],
       itinerary: [
