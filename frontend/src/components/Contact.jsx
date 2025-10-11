@@ -25,11 +25,75 @@ const Contact = () => {
     setFormData(prev => ({ ...prev, [field]: value }));
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     console.log('Form submitted:', formData);
+
+    // Validate required fields
+    if (!formData.firstName || !formData.lastName || !formData.email || !formData.message) {
+      alert('Please fill in all required fields: First Name, Last Name, Email, and Message');
+      return;
+    }
+
+    try {
+      // Create formatted message for WhatsApp
+      const fullName = `${formData.firstName} ${formData.lastName}`;
+      const formattedMessage = `📩 New Contact Form Enquiry
+
+👤 Name: ${fullName}
+📧 Email: ${formData.email}
+📱 Phone: ${formData.phone || 'Not provided'}
+
+🎯 Service: ${formData.service || 'Not specified'}
+📍 Destination/Venue: ${formData.destination || 'Not specified'}
+💰 Budget: ${formData.budget || 'Not specified'}
+
+💬 Message: ${formData.message}`;
+
+      // Submit to backend API first (for email notification)
+      const backendUrl = process.env.REACT_APP_BACKEND_URL || '';
+      
+      const response = await fetch(`${backendUrl}/api/enquiry`, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          name: fullName,
+          email: formData.email,
+          phone: formData.phone || 'Not provided',
+          destination: formData.destination || 'Contact Form Enquiry',
+          start_date: new Date().toISOString().split('T')[0],
+          end_date: new Date().toISOString().split('T')[0],
+          adults: '1',
+          kids: '0',
+          days: 'Contact Form',
+          budget: formData.budget || 'Not specified',
+          message: formData.message,
+          formatted_message: formattedMessage
+        })
+      });
+
+      if (response.ok) {
+        console.log('✅ Contact form enquiry submitted to backend');
+        
+        // Send WhatsApp message with full details
+        const whatsappMessage = encodeURIComponent(formattedMessage);
+        const whatsappUrl = `https://wa.me/918679333355?text=${whatsappMessage}`;
+        
+        // Open WhatsApp in new tab
+        window.open(whatsappUrl, '_blank');
+        console.log('✅ WhatsApp message sent from contact form');
+      } else {
+        console.error('❌ Failed to submit contact form to backend');
+      }
+    } catch (error) {
+      console.error('❌ Error submitting contact form:', error);
+    }
+
     setIsSubmitted(true);
-    // Mock form submission
+    
+    // Reset form after 3 seconds
     setTimeout(() => {
       setIsSubmitted(false);
       setFormData({
