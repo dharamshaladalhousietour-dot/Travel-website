@@ -170,10 +170,10 @@ const Contact = () => {
                       <CheckCircle className="h-10 w-10 text-green-600" />
                     </div>
                     <h4 className="text-2xl font-bold text-green-600 mb-4">
-                      Message Sent Successfully!
+                      ✅ Thank you for your enquiry! Our team will contact you soon.
                     </h4>
                     <p className="text-gray-600">
-                      Thank you for reaching out. We'll respond within 24 hours.
+                      Your enquiry has been sent to WhatsApp and Email successfully!
                     </p>
                   </div>
                 ) : (
