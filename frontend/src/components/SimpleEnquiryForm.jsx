@@ -153,7 +153,7 @@ const SimpleEnquiryForm = ({ packageTitle = "", onClose = null }) => {
         </CardTitle>
       </CardHeader>
       
-      <CardContent className="p-6">
+      <CardContent className="p-4 md:p-6 lg:p-8">
         {submitStatus === 'success' && (
           <div className="mb-6 p-4 bg-green-100 border border-green-400 text-green-700 rounded-lg text-center">
             <p className="font-semibold">✅ Thank you for your enquiry! Our team will contact you soon.</p>
