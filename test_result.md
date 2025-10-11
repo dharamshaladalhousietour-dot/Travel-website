@@ -134,16 +134,16 @@ frontend:
         -comment: "Need to check and fix missing package images or implement placeholder system"
 
   - task: "Homepage - Add two new WhatsApp buttons below 'Create Unforgettable Moments'"
-    implemented: false
-    working: false
+    implemented: true
+    working: true
     file: "/app/frontend/src/components/Hero.jsx"
     stuck_count: 0
     priority: "high"
-    needs_retesting: true
+    needs_retesting: false
     status_history:
-        -working: false
+        -working: true
         -agent: "main"
-        -comment: "Need to add 'Talk with Travel Expert' (+91 8679333355) and 'Talk with Event Expert' (+91 8679333354) buttons"
+        -comment: "✅ COMPLETED: Added two new WhatsApp buttons below 'Create Unforgettable Moments' - 'Talk with Travel Expert' (links to +91 8679333355) and 'Talk with Event Expert' (links to +91 8679333354) with proper styling and WhatsApp message integration"
 
   - task: "Homepage - Fix enquiry form to send full details to WhatsApp"
     implemented: false
