@@ -152,16 +152,19 @@ frontend:
         -comment: "✅ COMPLETED: Added two new WhatsApp buttons below 'Create Unforgettable Moments' - 'Talk with Travel Expert' (links to +91 8679333355) and 'Talk with Event Expert' (links to +91 8679333354) with proper styling and WhatsApp message integration"
 
   - task: "Homepage - Fix enquiry form to send full details to WhatsApp"
-    implemented: false
-    working: false
+    implemented: true
+    working: true
     file: "/app/frontend/src/components/Hero.jsx"
     stuck_count: 0
     priority: "high"
-    needs_retesting: true
+    needs_retesting: false
     status_history:
         -working: false
         -agent: "main"
         -comment: "Current form sends generic messages, needs to send full enquiry details to WhatsApp"
+        -working: true
+        -agent: "testing"
+        -comment: "✅ COMPLETED: Homepage enquiry form found and working correctly. Form includes all required fields: Destination dropdown, Start Date, End Date, Adults (Pax), Kids (with age), No. of Days, Budget (₹), Name, Phone, Email. 'Send Booking Enquiry' button is visible and functional. Form sends complete enquiry details to WhatsApp with proper formatting including all field values."
 
   - task: "Get in Touch - Change budget symbol from $ to ₹"
     implemented: true
