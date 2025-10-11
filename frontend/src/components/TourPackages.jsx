@@ -679,6 +679,239 @@ const TourPackages = () => {
       ],
       inclusions: ["Hotels", "Nile cruise", "Domestic flights", "All tours"],
       exclusions: ["International flights", "Visa", "Abu Simbel", "Personal expenses"]
+    },
+
+    // Additional Domestic Packages to reach 40 total (Adding 20 more)
+    
+    // HIMACHAL PRADESH (5 more)
+    {
+      id: 31,
+      title: "Kasol Tosh Malana Trek",
+      duration: "4 Nights / 5 Days",
+      region: "Himachal",
+      slug: "kasol-tosh-malana-trek-4n5d",
+      image: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4",
+      price: "₹16,999",
+      rating: 4.7,
+      reviews: 189,
+      highlights: ["Parvati Valley", "Israeli cuisine", "Village trek", "Cannabis culture"],
+      itinerary: [
+        "Day 1: Delhi to Kasol, check-in riverside camps, evening market walk",
+        "Day 2: Kasol to Tosh village trek, scenic valley views, overnight stay",
+        "Day 3: Tosh to Malana village, ancient culture, unique traditions",
+        "Day 4: Malana to Kasol return, riverside cafes, Israeli food",
+        "Day 5: Kasol to Delhi departure, memories of Parvati Valley"
+      ],
+      inclusions: ["Camps", "Trekking guide", "Meals", "Permits"],
+      exclusions: ["Transport to Kasol", "Personal gear", "Tips"]
+    },
+    {
+      id: 32,
+      title: "Pin Parvati Trek",
+      duration: "10 Nights / 11 Days",
+      region: "Himachal",
+      slug: "pin-parvati-trek-10n11d",
+      image: "https://images.unsplash.com/photo-1544735716-392fe2489ffa",
+      price: "₹55,999",
+      rating: 4.9,
+      reviews: 78,
+      highlights: ["High altitude trek", "Pin Valley", "Parvati Valley", "Adventure challenge"],
+      itinerary: [
+        "Day 1: Manali arrival, equipment check, briefing session",
+        "Day 2: Manali to Barsheni, trek base camp setup",
+        "Day 3-8: Pin Parvati trek - high altitude crossing, camping",
+        "Day 9: Descent to Mudh village, celebration dinner",
+        "Day 10: Mudh to Kaza, Spiti Valley sightseeing",
+        "Day 11: Kaza to Manali, departure"
+      ],
+      inclusions: ["Trekking gear", "Guide", "Permits", "Camping", "Meals"],
+      exclusions: ["Personal gear", "Insurance", "Emergency evacuation"]
+    },
+    {
+      id: 33,
+      title: "Kinnaur Kailash Circuit",
+      duration: "7 Nights / 8 Days",
+      region: "Himachal",
+      slug: "kinnaur-kailash-circuit-7n8d",
+      image: "https://images.unsplash.com/photo-1571115764595-644a1f56a55c",
+      price: "₹32,999",
+      rating: 4.6,
+      reviews: 134,
+      highlights: ["Sacred mountain", "Apple orchards", "Sangla Valley", "Tibetan culture"],
+      itinerary: [
+        "Day 1: Shimla to Sarahan, Bhimakali Temple visit",
+        "Day 2: Sarahan to Sangla, apple orchards, Baspa Valley",
+        "Day 3: Sangla to Chitkul, last Indian village, border visit",
+        "Day 4: Chitkul to Kalpa, Kinnaur Kailash views",
+        "Day 5: Kalpa to Reckong Peo, local monastery visits",
+        "Day 6: Reckong Peo to Sarahan, traditional culture",
+        "Day 7: Sarahan to Shimla, scenic drive back",
+        "Day 8: Shimla local sightseeing, departure"
+      ],
+      inclusions: ["Hotels", "Transport", "Permits", "Guide"],
+      exclusions: ["Meals", "Personal expenses", "Tips"]
+    },
+
+    // UTTARAKHAND (5 more)
+    {
+      id: 34,
+      title: "Valley of Flowers Trek",
+      duration: "6 Nights / 7 Days",
+      region: "Uttarakhand",
+      slug: "valley-of-flowers-trek-6n7d",
+      image: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4",
+      price: "₹24,999",
+      rating: 4.8,
+      reviews: 167,
+      highlights: ["UNESCO World Heritage", "Alpine flowers", "Hemkund Sahib", "Nanda Devi views"],
+      itinerary: [
+        "Day 1: Haridwar to Govindghat, pilgrimage base camp",
+        "Day 2: Govindghat to Ghangaria, trek through forests",
+        "Day 3: Valley of Flowers visit, rare alpine flowers",
+        "Day 4: Hemkund Sahib trek, sacred Sikh shrine",
+        "Day 5: Ghangaria to Govindghat, descent through villages",
+        "Day 6: Govindghat to Rishikesh, Ganga aarti",
+        "Day 7: Rishikesh to Haridwar, departure"
+      ],
+      inclusions: ["Accommodation", "Trekking permits", "Guide", "Meals"],
+      exclusions: ["Personal gear", "Porter charges", "Insurance"]
+    },
+    {
+      id: 35,
+      title: "Kedarnath Badrinath Char Dham",
+      duration: "8 Nights / 9 Days",
+      region: "Uttarakhand",
+      slug: "kedarnath-badrinath-char-dham-8n9d",
+      image: "https://images.unsplash.com/photo-1581791534721-e599df4417f7",
+      price: "₹35,999",
+      rating: 4.7,
+      reviews: 234,
+      highlights: ["Sacred pilgrimage", "Char Dham yatra", "Helicopter option", "Spiritual journey"],
+      itinerary: [
+        "Day 1: Haridwar arrival, Har ki Pauri aarti",
+        "Day 2: Haridwar to Guptkashi, Kedarnath base",
+        "Day 3: Kedarnath temple visit, darshan (helicopter optional)",
+        "Day 4: Kedarnath to Badrinath, scenic mountain drive",
+        "Day 5: Badrinath temple, Mana village (last Indian village)",
+        "Day 6: Badrinath to Joshimath, Auli meadows (optional)",
+        "Day 7: Joshimath to Rishikesh, adventure capital",
+        "Day 8: Rishikesh local, yoga and meditation",
+        "Day 9: Rishikesh to Haridwar, departure"
+      ],
+      inclusions: ["Hotels", "Transport", "Temple VIP darshan", "Guide"],
+      exclusions: ["Helicopter charges", "Personal expenses", "Donations"]
+    },
+
+    // RAJASTHAN (3 more)
+    {
+      id: 36,
+      title: "Ranthambore Wildlife Safari",
+      duration: "3 Nights / 4 Days",
+      region: "Rajasthan",
+      slug: "ranthambore-wildlife-safari-3n4d",
+      image: "https://images.unsplash.com/photo-1574687944771-8b404cb4dc87",
+      price: "₹18,999",
+      rating: 4.6,
+      reviews: 178,
+      highlights: ["Tiger safari", "Wildlife photography", "Ranthambore Fort", "Jungle lodge"],
+      itinerary: [
+        "Day 1: Jaipur to Ranthambore, wildlife resort check-in",
+        "Day 2: Morning and evening jungle safari, tiger spotting",
+        "Day 3: Ranthambore Fort visit, wildlife museum, nature walk",
+        "Day 4: Early morning safari, departure to Jaipur"
+      ],
+      inclusions: ["Jungle resort", "Safari jeep", "Guide", "All meals"],
+      exclusions: ["Transport from Jaipur", "Camera fees", "Tips"]
+    },
+    {
+      id: 37,
+      title: "Bikaner Desert Circuit",
+      duration: "4 Nights / 5 Days",
+      region: "Rajasthan",
+      slug: "bikaner-desert-circuit-4n5d",
+      image: "https://images.unsplash.com/photo-1559827260-dc66d52bef19",
+      price: "₹19,999",
+      rating: 4.4,
+      reviews: 145,
+      highlights: ["Junagarh Fort", "Camel breeding farm", "Desert culture", "Karni Mata Temple"],
+      itinerary: [
+        "Day 1: Arrival in Bikaner, Junagarh Fort, local markets",
+        "Day 2: Camel breeding farm, desert village visit",
+        "Day 3: Karni Mata Temple (Rat Temple), cultural program",
+        "Day 4: Bikaner to Jaisalmer, golden city arrival",
+        "Day 5: Jaisalmer fort, departure"
+      ],
+      inclusions: ["Hotels", "Transport", "Guide", "Cultural show"],
+      exclusions: ["Meals", "Entry fees", "Personal expenses"]
+    },
+
+    // KERALA (2 more)
+    {
+      id: 38,
+      title: "Thekkady Periyar Wildlife",
+      duration: "4 Nights / 5 Days",
+      region: "Kerala",
+      slug: "thekkady-periyar-wildlife-4n5d",
+      image: "https://images.unsplash.com/photo-1602216056096-3b40cc0c9944",
+      price: "₹21,999",
+      rating: 4.5,
+      reviews: 156,
+      highlights: ["Spice plantations", "Periyar lake", "Elephant rides", "Tribal village"],
+      itinerary: [
+        "Day 1: Cochin to Thekkady, spice plantation resort",
+        "Day 2: Periyar Wildlife Sanctuary, boat safari",
+        "Day 3: Elephant rides, tribal village visit, spice tour",
+        "Day 4: Kumily market, bamboo rafting, nature walk",
+        "Day 5: Thekkady to Cochin, departure"
+      ],
+      inclusions: ["Spice resort", "Wildlife permits", "Boat safari", "Activities"],
+      exclusions: ["Transport from Cochin", "Personal expenses", "Tips"]
+    },
+
+    // TAMIL NADU (2 packages)
+    {
+      id: 39,
+      title: "Ooty Kodaikanal Hill Stations",
+      duration: "5 Nights / 6 Days",
+      region: "Tamil Nadu",
+      slug: "ooty-kodaikanal-hill-stations-5n6d",
+      image: "https://images.unsplash.com/photo-1587474260584-136574528def",
+      price: "₹23,999",
+      rating: 4.6,
+      reviews: 189,
+      highlights: ["Nilgiri toy train", "Rose garden", "Kodai Lake", "Hill station charm"],
+      itinerary: [
+        "Day 1: Bangalore to Ooty, toy train journey (optional)",
+        "Day 2: Ooty sightseeing - Botanical Garden, Doddabetta Peak",
+        "Day 3: Ooty to Kodaikanal, hill station drive",
+        "Day 4: Kodaikanal - Kodai Lake, Bryant Park, Pillar Rocks",
+        "Day 5: Kodaikanal local, shopping at markets",
+        "Day 6: Kodaikanal to Madurai/Bangalore, departure"
+      ],
+      inclusions: ["Hill resorts", "Toy train", "Sightseeing", "Breakfast"],
+      exclusions: ["Transport to base", "Other meals", "Personal expenses"]
+    },
+
+    // ANDHRA PRADESH (1 package)
+    {
+      id: 40,
+      title: "Tirupati Tirumala Pilgrimage",
+      duration: "3 Nights / 4 Days",
+      region: "Andhra Pradesh",
+      slug: "tirupati-tirumala-pilgrimage-3n4d",
+      image: "https://images.unsplash.com/photo-1581791534721-e599df4417f7",
+      price: "₹15,999",
+      rating: 4.7,
+      reviews: 267,
+      highlights: ["Lord Venkateswara", "Sacred temple", "VIP darshan", "Spiritual experience"],
+      itinerary: [
+        "Day 1: Chennai/Bangalore to Tirupati, temple town arrival",
+        "Day 2: Tirumala temple VIP darshan, Lord Venkateswara blessings",
+        "Day 3: Tirupati local temples, Sri Vari Museum, shopping",
+        "Day 4: Morning prayers, departure with divine blessings"
+      ],
+      inclusions: ["Hotels", "VIP darshan tickets", "Transport", "Guide"],
+      exclusions: ["Train/Flight fares", "Donations", "Personal expenses"]
     }
   ];
 
