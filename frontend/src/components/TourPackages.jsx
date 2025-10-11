@@ -966,16 +966,17 @@ const TourPackages = () => {
               <div className="absolute inset-0 bg-gradient-to-r from-gray-200 via-gray-300 to-gray-200 animate-pulse" />
             )}
             
-            {/* Actual image */}
+            {/* Actual image with optimization */}
             <img 
-              src={imageError ? getFallbackImage(pkg.region) : pkg.image} 
+              src={imageError ? getFallbackImage(pkg.region) : `${pkg.image}&w=800&h=400&fit=crop&q=80`} 
               alt={pkg.title}
-              className={`w-full h-full object-cover transition-opacity duration-300 ${
-                imageLoaded ? 'opacity-100' : 'opacity-0'
+              className={`w-full h-full object-cover transition-all duration-300 ${
+                imageLoaded ? 'opacity-100 scale-100' : 'opacity-0 scale-110'
               }`}
               onError={handleImageError}
               onLoad={handleImageLoad}
               loading="lazy"
+              decoding="async"
             />
           </div>
           
