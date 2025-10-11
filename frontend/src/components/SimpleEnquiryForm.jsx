@@ -137,8 +137,8 @@ const SimpleEnquiryForm = ({ packageTitle = "", onClose = null }) => {
   };
 
   return (
-    <Card className="w-full max-w-2xl mx-auto bg-white">
-      <CardHeader className="bg-gradient-to-r from-blue-900 to-blue-800 text-white rounded-t-lg relative">
+    <Card className="w-full max-w-2xl mx-auto bg-white shadow-2xl">
+      <CardHeader className="bg-gradient-to-r from-blue-900 to-blue-800 text-white rounded-t-lg relative p-4 md:p-6">
         {onClose && (
           <button
             onClick={onClose}
