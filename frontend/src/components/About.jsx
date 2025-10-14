@@ -1,65 +1,58 @@
 import React from 'react';
-import { Award, Heart, Users, Globe, Star, CheckCircle } from 'lucide-react';
-import { Card, CardContent } from './ui/card';
+import { Heart, Users, Award, Globe, Star, MapPin } from 'lucide-react';
 
 const About = () => {
-  const stats = [
-    {
-      icon: <Users className="h-8 w-8 text-amber-600" />,
-      number: "5,000+",
-      label: "Happy Clients"
-    },
-    {
-      icon: <Globe className="h-8 w-8 text-amber-600" />,
-      number: "150+",
-      label: "Destinations"
-    },
-    {
-      icon: <Award className="h-8 w-8 text-amber-600" />,
-      number: "15+",
-      label: "Years Experience"
-    },
-    {
-      icon: <Star className="h-8 w-8 text-amber-600" />,
-      number: "4.9/5",
-      label: "Client Rating"
-    }
-  ];
-
-  const values = [
-    {
-      icon: <Heart className="h-6 w-6 text-blue-900" />,
-      title: "Passion for Excellence",
-      description: "We pour our heart into every detail, ensuring each experience exceeds expectations."
-    },
-    {
-      icon: <CheckCircle className="h-6 w-6 text-blue-900" />,
-      title: "Trusted Expertise",
-      description: "With 15+ years in the industry, we bring unmatched knowledge and reliability."
-    },
-    {
-      icon: <Users className="h-6 w-6 text-blue-900" />,
-      title: "Personalized Service",
-      description: "Every client is unique, and we tailor our services to match your vision perfectly."
-    }
+  const specialties = [
+    "Destination Weddings",
+    "Corporate Events", 
+    "Product Launches",
+    "Live Shows",
+    "Incentive Tours"
   ];
 
   return (
     <section id="about" className="py-20 bg-gradient-to-b from-gray-50 to-white">
-      <div className="max-w-7xl mx-auto px-4">
-        {/* Section Header */}
-        <div className="text-center mb-16">
-          <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-r from-blue-900 to-blue-800 rounded-full mb-6">
-            <Heart className="h-8 w-8 text-white" />
+      <div className="max-w-4xl mx-auto px-6">
+        {/* Header with Logo */}
+        <div className="text-center mb-8">
+          <div className="inline-flex items-center justify-center mb-4">
+            <div>
+              <h1 className="text-2xl md:text-3xl font-bold font-serif leading-tight">
+                <span className="bg-gradient-to-r from-blue-900 via-blue-700 to-blue-600 bg-clip-text text-transparent">Pretty Planet</span>
+                <span className="bg-gradient-to-r from-amber-500 via-orange-500 to-red-500 bg-clip-text text-transparent ml-2">Travels and Events</span>
+              </h1>
+              <p className="text-sm font-semibold bg-gradient-to-r from-amber-600 to-orange-600 bg-clip-text text-transparent mt-2">
+                ✨ Occasions That Create History ✨
+              </p>
+            </div>
           </div>
-          <h2 className="text-4xl md:text-5xl font-bold text-blue-900 mb-6">
-            About <span className="font-playfair"><span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-900 to-purple-600">Pretty Planet</span> <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-500 to-orange-500">Travels and Events</span></span>
+        </div>
+
+        {/* Title */}
+        <div className="text-center mb-8">
+          <h2 className="text-3xl md:text-4xl font-bold text-blue-900 mb-3 font-serif">
+            Our Story
           </h2>
-          <div className="w-24 h-1 bg-gradient-to-r from-amber-400 to-amber-600 mx-auto mb-8"></div>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-            Creating unforgettable journeys, seamless corporate events, and magical weddings 
-            that turn dreams into beautiful reality.
+          <div className="w-20 h-1 bg-gradient-to-r from-amber-400 to-blue-900 mx-auto rounded-full mb-6"></div>
+        </div>
+
+        {/* Intro */}
+        <div className="text-center mb-8">
+          <p className="text-gray-700 leading-relaxed max-w-4xl mx-auto mb-6">
+            Born in the scenic landscapes of Himachal Pradesh, <strong>Pretty Planet Travels and Events</strong> is a premier luxury travel and event management company. We curate unforgettable experiences — from destination weddings and honeymoons to corporate events, incentive tours, product launches, live shows and celebrity events. Our approach blends creativity, reliability and exquisite attention to detail.
           </p>
+        </div>
+
+        {/* Specialties Pills */}
+        <div className="flex flex-wrap justify-center gap-3 mb-12">
+          {specialties.map((specialty, index) => (
+            <div
+              key={index}
+              className="px-4 py-2 rounded-full bg-gradient-to-r from-amber-50 to-orange-50 text-amber-800 font-bold text-sm border border-amber-200 shadow-sm"
+            >
+              {specialty}
+            </div>
+          ))}
         </div>
 
         <div className="grid lg:grid-cols-2 gap-16 items-center mb-20">
