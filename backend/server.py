@@ -275,7 +275,7 @@ async def send_payment_notifications(payment: PaymentSuccess):
         logger.info("✅ Payment email notification logged (SMTP integration pending)")
         
         # Log WhatsApp notification (actual WhatsApp API integration pending)
-        logger.info(f"📱 PAYMENT WHATSAPP NOTIFICATION TO +91XXXXXXXXXX")
+        logger.info(f"📱 PAYMENT WHATSAPP NOTIFICATION TO +91 8679333355")
         logger.info(f"Message: {formatted_message}")
         logger.info("✅ Payment WhatsApp notification logged (API integration pending)")
         
