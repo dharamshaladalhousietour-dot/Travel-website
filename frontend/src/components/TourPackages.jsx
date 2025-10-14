@@ -1072,7 +1072,7 @@ const TourPackages = () => {
               <Button 
                 className="w-full bg-gradient-to-r from-green-600 to-green-700 hover:from-green-700 hover:to-green-800 text-white font-bold py-3 text-lg shadow-lg transform hover:scale-105 transition-all duration-200 hover:shadow-xl active:scale-95"
               >
-                💳 Book This Package - {pkg.price}
+                💳 Book This Package - {pkg.price} (Live Mode)
               </Button>
             </RazorpayCheckout>
           </div>
