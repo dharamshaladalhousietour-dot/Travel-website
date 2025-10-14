@@ -960,14 +960,36 @@ const TourPackages = () => {
       <Card className="overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
         <div className="relative">
           {/* Fixed aspect ratio container to prevent layout shifts */}
+
+          {!imageLoaded && (
+  <div className="absolute inset-0 bg-gray-200 animate-pulse" />
+)}
           <div className="w-full h-48 bg-gray-200 relative overflow-hidden">
             {/* Loading skeleton */}
-            {!imageLoaded && (
+            {/* {!imageLoaded && (
               <div className="absolute inset-0 bg-gradient-to-r from-gray-200 via-gray-300 to-gray-200 animate-pulse" />
-            )}
-            
+            )} */}
+            {!imageError ? (
+  <img
+    src={pkg.image}
+    alt={pkg.title}
+    loading="lazy"
+    onLoad={() => setImageLoaded(true)}
+    onError={() => setImageError(true)}
+    className={`w-full h-full object-cover transition-opacity duration-300 ${
+      imageLoaded ? "opacity-100" : "opacity-0"
+    }`}
+  />
+) : (
+  <div className="flex items-center justify-center w-full h-full bg-gray-300 text-gray-600 text-sm">
+    Image not available
+  </div>
+)}
+
+
+
             {/* Actual image with optimization */}
-            <img 
+            {/* <img 
               src={imageError ? getFallbackImage(pkg.region) : `${pkg.image}&w=800&h=400&fit=crop&q=80`} 
               alt={pkg.title}
               className={`w-full h-full object-cover transition-all duration-300 ${
@@ -977,13 +999,13 @@ const TourPackages = () => {
               onLoad={handleImageLoad}
               loading="lazy"
               decoding="async"
-            />
+            /> */}
           </div>
           
           <div className="absolute top-4 left-4">
             <Badge className="bg-blue-600 text-white shadow-lg">{pkg.region}</Badge>
           </div>
-          <div className="absolute top-4 right-4">
+          <div className="absolute top-4 rigsendht-4">
             <Badge className="bg-green-600 text-white shadow-lg">{pkg.price}</Badge>
           </div>
         </div>
@@ -1197,12 +1219,21 @@ const TourPackages = () => {
             className="fixed inset-0 flex items-center justify-center p-2 md:p-4" 
             style={{ zIndex: 10001 }}
           >
-            <div className="max-w-2xl w-full max-h-[95vh] overflow-y-auto bg-white rounded-lg shadow-2xl mx-2 md:mx-4">
+            {/* <div className="max-w-2xl w-full max-h-[95vh] overflow-y-auto bg-white rounded-lg shadow-2xl mx-2 md:mx-4 relative z-[9999]">
               <SimpleEnquiryForm
                 packageTitle={selectedPackage.title}
                 onClose={() => setShowEnquiryForm(false)}
               />
-            </div>
+            </div> */}
+            <div className="max-w-2xl w-full max-h-[95vh] bg-white rounded-lg shadow-2xl mx-2 md:mx-4 relative z-[10001]">
+  <div className="max-h-[95vh] overflow-y-auto p-4 md:p-6">
+    <SimpleEnquiryForm
+      packageTitle={selectedPackage.title}
+      onClose={() => setShowEnquiryForm(false)}
+    />
+  </div>
+</div>
+
           </div>
         </>
       )}

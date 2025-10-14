@@ -137,7 +137,7 @@ const SimpleEnquiryForm = ({ packageTitle = "", onClose = null }) => {
   };
 
   return (
-    <Card className="w-full max-w-2xl mx-auto bg-white shadow-2xl">
+   <Card className="w-full max-w-2xl mx-auto bg-white shadow-2xl relative z-[9999]">
       <CardHeader className="bg-gradient-to-r from-blue-900 to-blue-800 text-white rounded-t-lg relative p-4 md:p-6">
         {onClose && (
           <button
@@ -153,7 +153,7 @@ const SimpleEnquiryForm = ({ packageTitle = "", onClose = null }) => {
         </CardTitle>
       </CardHeader>
       
-      <CardContent className="p-4 md:p-6 lg:p-8">
+    <CardContent className="p-4 md:p-6 lg:p-8 overflow-visible relative z-[50]">
         {submitStatus === 'success' && (
           <div className="mb-6 p-4 bg-green-100 border border-green-400 text-green-700 rounded-lg text-center">
             <p className="font-semibold">✅ Thank you for your enquiry! Our team will contact you soon.</p>
@@ -177,7 +177,6 @@ const SimpleEnquiryForm = ({ packageTitle = "", onClose = null }) => {
                 placeholder="Your full name"
                 value={formData.name}
                 onChange={(e) => handleInputChange('name', e.target.value)}
-                required
               />
             </div>
 
@@ -189,7 +188,6 @@ const SimpleEnquiryForm = ({ packageTitle = "", onClose = null }) => {
                 placeholder="+91 9999999999"
                 value={formData.phone}
                 onChange={(e) => handleInputChange('phone', e.target.value)}
-                required
               />
             </div>
 
@@ -201,7 +199,6 @@ const SimpleEnquiryForm = ({ packageTitle = "", onClose = null }) => {
                 placeholder="your@email.com"
                 value={formData.email}
                 onChange={(e) => handleInputChange('email', e.target.value)}
-                required
               />
             </div>
 
@@ -213,7 +210,6 @@ const SimpleEnquiryForm = ({ packageTitle = "", onClose = null }) => {
                 placeholder="Kashmir, Manali, etc."
                 value={formData.destination}
                 onChange={(e) => handleInputChange('destination', e.target.value)}
-                required
               />
             </div>
 
@@ -222,12 +218,16 @@ const SimpleEnquiryForm = ({ packageTitle = "", onClose = null }) => {
               <Select 
                 value={formData.budget} 
                 onValueChange={(value) => handleInputChange('budget', value)} 
-                required
               >
                 <SelectTrigger className="w-full h-12 border border-gray-300 rounded-md px-3 py-2 bg-white hover:border-blue-500 focus:border-blue-500 focus:ring-2 focus:ring-blue-200 transition-colors">
                   <SelectValue placeholder="Select your budget range" />
                 </SelectTrigger>
-                <SelectContent className="bg-white border border-gray-200 rounded-md shadow-lg max-h-60 overflow-y-auto">
+                <SelectContent
+                    position="popper"
+                    avoidCollisions={false}
+                    sideOffset={4}
+                    className="z-[10002] bg-white border border-gray-200 rounded-md shadow-lg max-h-60 overflow-y-auto"                    container={document.body}
+                  >
                   <SelectItem value="15,000 - 25,000" className="px-3 py-2 hover:bg-blue-50 cursor-pointer">₹15,000 - ₹25,000</SelectItem>
                   <SelectItem value="25,000 - 50,000" className="px-3 py-2 hover:bg-blue-50 cursor-pointer">₹25,000 - ₹50,000</SelectItem>
                   <SelectItem value="50,000 - 1,00,000" className="px-3 py-2 hover:bg-blue-50 cursor-pointer">₹50,000 - ₹1,00,000</SelectItem>
@@ -246,7 +246,7 @@ const SimpleEnquiryForm = ({ packageTitle = "", onClose = null }) => {
                 type="date"
                 value={formData.startDate}
                 onChange={(e) => handleInputChange('startDate', e.target.value)}
-                required
+                // required
               />
             </div>
 
@@ -257,30 +257,36 @@ const SimpleEnquiryForm = ({ packageTitle = "", onClose = null }) => {
                 type="date"
                 value={formData.endDate}
                 onChange={(e) => handleInputChange('endDate', e.target.value)}
-                required
+                // required
               />
             </div>
 
             <div>
               <Label htmlFor="adults" className="block text-sm font-medium text-gray-700 mb-2">Adults *</Label>
-              <Select 
-                value={formData.adults} 
-                onValueChange={(value) => handleInputChange('adults', value)} 
-                required
-              >
-                <SelectTrigger className="w-full h-12 border border-gray-300 rounded-md px-3 py-2 bg-white hover:border-blue-500 focus:border-blue-500 focus:ring-2 focus:ring-blue-200 transition-colors">
-                  <SelectValue placeholder="Select number of adults" />
-                </SelectTrigger>
-                <SelectContent className="bg-white border border-gray-200 rounded-md shadow-lg max-h-60 overflow-y-auto">
-                  <SelectItem value="1" className="px-3 py-2 hover:bg-blue-50 cursor-pointer">1 Adult</SelectItem>
-                  <SelectItem value="2" className="px-3 py-2 hover:bg-blue-50 cursor-pointer">2 Adults</SelectItem>
-                  <SelectItem value="3" className="px-3 py-2 hover:bg-blue-50 cursor-pointer">3 Adults</SelectItem>
-                  <SelectItem value="4" className="px-3 py-2 hover:bg-blue-50 cursor-pointer">4 Adults</SelectItem>
-                  <SelectItem value="5" className="px-3 py-2 hover:bg-blue-50 cursor-pointer">5 Adults</SelectItem>
-                  <SelectItem value="6" className="px-3 py-2 hover:bg-blue-50 cursor-pointer">6 Adults</SelectItem>
-                  <SelectItem value="7+" className="px-3 py-2 hover:bg-blue-50 cursor-pointer">7+ Adults</SelectItem>
-                </SelectContent>
-              </Select>
+
+                  <Select
+                    value={formData.adults || undefined}
+                    onValueChange={(value) => handleInputChange('adults', value)}
+                  >
+                    <SelectTrigger className="w-full h-12 border border-gray-300 rounded-md px-3 py-2 bg-white hover:border-blue-500 focus:border-blue-500 focus:ring-2 focus:ring-blue-200">
+                      <SelectValue placeholder="Select number of adults" />
+                    </SelectTrigger>
+                   <SelectContent
+  position="popper"
+  avoidCollisions={false}
+  sideOffset={4}
+    className="z-[10002] bg-white border border-gray-200 rounded-md shadow-lg max-h-60 overflow-y-auto"
+  container={document.body}
+>
+                      <SelectItem value="1">1 Adult</SelectItem>
+                      <SelectItem value="2">2 Adults</SelectItem>
+                      <SelectItem value="3">3 Adults</SelectItem>
+                      <SelectItem value="4">4 Adults</SelectItem>
+                      <SelectItem value="5">5 Adults</SelectItem>
+                      <SelectItem value="6">6 Adults</SelectItem>
+                      <SelectItem value="7+">7+ Adults</SelectItem>
+                    </SelectContent>
+                  </Select>
             </div>
 
             <div>
@@ -288,12 +294,17 @@ const SimpleEnquiryForm = ({ packageTitle = "", onClose = null }) => {
               <Select 
                 value={formData.days} 
                 onValueChange={(value) => handleInputChange('days', value)} 
-                required
               >
                 <SelectTrigger className="w-full h-12 border border-gray-300 rounded-md px-3 py-2 bg-white hover:border-blue-500 focus:border-blue-500 focus:ring-2 focus:ring-blue-200 transition-colors">
                   <SelectValue placeholder="Select trip duration" />
                 </SelectTrigger>
-                <SelectContent className="bg-white border border-gray-200 rounded-md shadow-lg max-h-60 overflow-y-auto">
+<SelectContent
+  position="popper"
+  avoidCollisions={false}
+  sideOffset={4}
+    className="z-[10002] bg-white border border-gray-200 rounded-md shadow-lg max-h-60 overflow-y-auto"
+  container={document.body}
+>
                   <SelectItem value="2-3 Days" className="px-3 py-2 hover:bg-blue-50 cursor-pointer">2-3 Days</SelectItem>
                   <SelectItem value="4-5 Days" className="px-3 py-2 hover:bg-blue-50 cursor-pointer">4-5 Days</SelectItem>
                   <SelectItem value="6-7 Days" className="px-3 py-2 hover:bg-blue-50 cursor-pointer">6-7 Days</SelectItem>
@@ -314,7 +325,13 @@ const SimpleEnquiryForm = ({ packageTitle = "", onClose = null }) => {
               <SelectTrigger className="w-full h-12 border border-gray-300 rounded-md px-3 py-2 bg-white hover:border-blue-500 focus:border-blue-500 focus:ring-2 focus:ring-blue-200 transition-colors">
                 <SelectValue placeholder="Select number of kids" />
               </SelectTrigger>
-              <SelectContent className="bg-white border border-gray-200 rounded-md shadow-lg max-h-60 overflow-y-auto">
+<SelectContent
+  position="popper"
+  avoidCollisions={false}
+  sideOffset={4}
+    className="z-[10002] bg-white border border-gray-200 rounded-md shadow-lg max-h-60 overflow-y-auto"
+  container={document.body}
+>
                 <SelectItem value="0" className="px-3 py-2 hover:bg-blue-50 cursor-pointer">No Kids</SelectItem>
                 <SelectItem value="1 (2-5 years)" className="px-3 py-2 hover:bg-blue-50 cursor-pointer">1 Kid (2-5 years)</SelectItem>
                 <SelectItem value="1 (6-12 years)" className="px-3 py-2 hover:bg-blue-50 cursor-pointer">1 Kid (6-12 years)</SelectItem>
