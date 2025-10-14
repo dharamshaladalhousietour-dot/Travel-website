@@ -55,57 +55,56 @@ const About = () => {
           ))}
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-16 items-center mb-20">
-          {/* Content */}
-          <div className="space-y-8">
-            <div>
-              <h3 className="text-3xl font-bold text-blue-900 mb-6">Our Story</h3>
-              <div className="space-y-4 text-gray-600 leading-relaxed">
-                <p>
-                  Founded in 2008 under the leadership of Managing Director Rajeev K Bhatia, Pretty Planet 
-                  Travels and Events began with a simple belief: every journey should be extraordinary, 
-                  every event should be flawless, and every celebration should be magical.
+        {/* Founders Section */}
+        <div className="grid md:grid-cols-2 gap-8 mb-12">
+          {/* Mr. Rajeev Bhatia */}
+          <div className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100">
+            <div className="flex gap-4 items-start">
+              <div className="w-28 h-28 md:w-32 md:h-32 rounded-lg overflow-hidden flex-shrink-0 bg-gray-100 flex items-center justify-center">
+                {/* Placeholder for rajeev.jpg */}
+                <img 
+                  src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=200&h=200&fit=crop&crop=face"
+                  alt="Mr. Rajeev Bhatia"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <div className="flex-1">
+                <h3 className="text-lg md:text-xl font-bold text-blue-900 mb-1 font-serif">
+                  Mr. Rajeev Bhatia
+                </h3>
+                <p className="text-gray-600 text-sm font-semibold mb-3">
+                  Founder & Managing Director — Pretty Planet Travels and Events
                 </p>
-                <p>
-                  What started as a small travel consultancy in the beautiful hills of Dharamshala has grown 
-                  into a full-service company specializing in luxury travel experiences, corporate events, and 
-                  destination weddings. Our team of passionate travel experts and event planners work tirelessly 
-                  to transform your vision into unforgettable memories.
-                </p>
-                <p>
-                  From intimate getaways to grand corporate conferences, from romantic honeymoons to 
-                  fairy-tale weddings, we handle every detail with precision and care, allowing you 
-                  to focus on what matters most – enjoying the experience.
+                <p className="text-gray-700 text-sm leading-relaxed">
+                  With over two decades of experience in travel and hospitality, Mr. Rajeev Bhatia founded Pretty Planet Travels and Events to craft seamless journeys and unforgettable celebrations. Leading with integrity and a deep knowledge of Himachal tourism, he specializes in curated travel programs, group tours, and high-end event logistics.
                 </p>
               </div>
             </div>
-
-            {/* Mission Statement */}
-            <div className="bg-blue-50 p-8 rounded-2xl border-l-4 border-blue-900">
-              <h4 className="text-xl font-bold text-blue-900 mb-4">Our Mission</h4>
-              <p className="text-gray-700 italic leading-relaxed">
-                "To create extraordinary experiences that inspire, connect, and celebrate life's 
-                most precious moments, while building lasting relationships with our clients 
-                through exceptional service and attention to detail."
-              </p>
-            </div>
           </div>
 
-          {/* Image */}
-          <div className="relative">
-            <div className="relative overflow-hidden rounded-2xl shadow-2xl">
-              <img 
-                src="https://images.unsplash.com/photo-1463760959829-d829ea46e191?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1Nzd8MHwxfHNlYXJjaHwzfHxtb3VudGFpbiUyMHZpc3RhfGVufDB8fHx8MTc1OTQwODc5N3ww&ixlib=rb-4.1.0&q=85"
-                alt="Inspiring mountain lake view - Our Story"
-                className="w-full h-96 object-cover transform hover:scale-105 transition-transform duration-700"
-              />
-              {/* Overlay */}
-              <div className="absolute inset-0 bg-gradient-to-t from-blue-900/30 to-transparent"></div>
+          {/* Mrs. Riny Aggarwal */}
+          <div className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100">
+            <div className="flex gap-4 items-start">
+              <div className="w-28 h-28 md:w-32 md:h-32 rounded-lg overflow-hidden flex-shrink-0 bg-gray-100 flex items-center justify-center">
+                {/* Placeholder for riny.jpg */}
+                <img 
+                  src="https://images.unsplash.com/photo-1494790108755-2616b612b786?w=200&h=200&fit=crop&crop=face"
+                  alt="Mrs. Riny Aggarwal"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <div className="flex-1">
+                <h3 className="text-lg md:text-xl font-bold text-blue-900 mb-1 font-serif">
+                  Mrs. Riny Aggarwal
+                </h3>
+                <p className="text-gray-600 text-sm font-semibold mb-3">
+                  Co-Founder & Creative Director — Pretty Planet Travels and Events
+                </p>
+                <p className="text-gray-700 text-sm leading-relaxed">
+                  Mrs. Riny Aggarwal earned her <strong>Master of Tourism (Gold Medalist, 2013)</strong> from the University of Shimla and was honored by the President of India, Mr. Pranab Mukherjee, for academic excellence. Her creative leadership transforms weddings, corporate events and live shows into elegant, personalized experiences.
+                </p>
+              </div>
             </div>
-            
-            {/* Decorative elements */}
-            <div className="absolute -top-6 -right-6 w-32 h-32 bg-gradient-to-r from-amber-400 to-amber-600 rounded-full opacity-20 blur-xl"></div>
-            <div className="absolute -bottom-6 -left-6 w-24 h-24 bg-gradient-to-r from-blue-600 to-blue-800 rounded-full opacity-20 blur-xl"></div>
           </div>
         </div>
 
