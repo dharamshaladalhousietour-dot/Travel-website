@@ -138,13 +138,26 @@ const Hero = () => {
           
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8 px-4">
-            <Button 
-              size="lg" 
-              className="w-full sm:w-auto bg-gradient-to-r from-green-600 to-green-700 hover:from-green-700 hover:to-green-800 text-white px-6 sm:px-8 py-4 text-base sm:text-lg font-bold transition-all duration-300 transform hover:scale-105 shadow-xl animate-pulse"
-              onClick={() => alert('Razorpay integration will be activated once API keys are provided')}
+            <RazorpayCheckout
+              amount={5000} // ₹50 default amount
+              name="Customer"
+              email="customer@email.com"
+              phone="+91 9876543210"
+              packageName="General Travel Booking"
+              onSuccess={(response) => {
+                console.log('✅ Homepage payment successful:', response);
+              }}
+              onError={(error) => {
+                console.error('❌ Homepage payment error:', error);
+              }}
             >
-              💳 Pay Now
-            </Button>
+              <Button 
+                size="lg" 
+                className="w-full sm:w-auto bg-gradient-to-r from-green-600 to-green-700 hover:from-green-700 hover:to-green-800 text-white px-6 sm:px-8 py-4 text-base sm:text-lg font-bold transition-all duration-300 transform hover:scale-105 shadow-xl animate-pulse"
+              >
+                💳 Pay Now - Live Mode
+              </Button>
+            </RazorpayCheckout>
             <Button 
               size="lg" 
               variant="outline" 
