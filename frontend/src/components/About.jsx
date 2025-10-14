@@ -99,7 +99,7 @@ const About = () => {
                   Co-Founder & Creative Director — Pretty Planet Travels and Events
                 </p>
                 <p className="text-gray-700 text-sm leading-relaxed">
-                  Mrs. Riny Aggarwal earned her <strong>Master of Tourism (Gold Medalist, 2013)</strong> from the University of Shimla and was honored by the President of India, Mr. Pranab Mukherjee, for academic excellence. Her creative leadership transforms weddings, corporate events and live shows into elegant, personalized experiences.
+                  Mrs. Riny Aggarwal earned her <strong>Master of Tourism Administration (2012)</strong> from the University of Shimla. Gold Medalist, awarded by the President of India Mr. Pranab Mukherjee. Her creative leadership transforms weddings, corporate events and live shows into elegant, personalized experiences.
                 </p>
               </div>
             </div>
