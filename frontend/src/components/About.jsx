@@ -108,36 +108,45 @@ const About = () => {
           </div>
         </div>
 
-        {/* Stats */}
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
-          {stats.map((stat, index) => (
-            <Card key={index} className="text-center p-8 hover:shadow-xl transition-all duration-300 border-0 bg-white">
-              <CardContent className="p-0">
-                <div className="flex justify-center mb-4">
-                  {stat.icon}
-                </div>
-                <div className="text-3xl font-bold text-blue-900 mb-2">{stat.number}</div>
-                <div className="text-gray-600 font-medium">{stat.label}</div>
-              </CardContent>
-            </Card>
-          ))}
+        {/* Company Description */}
+        <div className="text-center mb-16">
+          <p className="text-gray-700 leading-relaxed max-w-4xl mx-auto">
+            At Pretty Planet Travels and Events we believe every event and journey should tell a story. Our dedicated team manages every detail — venue, décor, catering, logistics and on-site coordination — to deliver flawless experiences that guests remember forever.
+          </p>
         </div>
 
-        {/* Values */}
-        <div className="mb-20">
-          <h3 className="text-3xl font-bold text-blue-900 text-center mb-12">Why Choose Us</h3>
-          <div className="grid md:grid-cols-3 gap-8">
-            {values.map((value, index) => (
-              <Card key={index} className="p-8 hover:shadow-xl transition-all duration-300 border-0 bg-white group hover:bg-blue-50">
-                <CardContent className="p-0 text-center">
-                  <div className="inline-flex items-center justify-center w-16 h-16 bg-blue-50 group-hover:bg-white rounded-full mb-6 transition-colors duration-300">
-                    {value.icon}
-                  </div>
-                  <h4 className="text-xl font-bold text-blue-900 mb-4">{value.title}</h4>
-                  <p className="text-gray-600 leading-relaxed">{value.description}</p>
-                </CardContent>
-              </Card>
-            ))}
+        {/* Stats */}
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
+          <div className="text-center p-6 bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100">
+            <div className="flex justify-center mb-3">
+              <Users className="h-8 w-8 text-amber-600" />
+            </div>
+            <div className="text-2xl md:text-3xl font-bold text-blue-900 mb-1">5,000+</div>
+            <div className="text-gray-600 font-medium text-sm">Happy Clients</div>
+          </div>
+
+          <div className="text-center p-6 bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100">
+            <div className="flex justify-center mb-3">
+              <Globe className="h-8 w-8 text-amber-600" />
+            </div>
+            <div className="text-2xl md:text-3xl font-bold text-blue-900 mb-1">150+</div>
+            <div className="text-gray-600 font-medium text-sm">Destinations</div>
+          </div>
+
+          <div className="text-center p-6 bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100">
+            <div className="flex justify-center mb-3">
+              <Award className="h-8 w-8 text-amber-600" />
+            </div>
+            <div className="text-2xl md:text-3xl font-bold text-blue-900 mb-1">15+</div>
+            <div className="text-gray-600 font-medium text-sm">Years Experience</div>
+          </div>
+
+          <div className="text-center p-6 bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100">
+            <div className="flex justify-center mb-3">
+              <Star className="h-8 w-8 text-amber-600" />
+            </div>
+            <div className="text-2xl md:text-3xl font-bold text-blue-900 mb-1">4.9/5</div>
+            <div className="text-gray-600 font-medium text-sm">Client Rating</div>
           </div>
         </div>
 
