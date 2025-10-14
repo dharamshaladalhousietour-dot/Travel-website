@@ -1,0 +1,45 @@
+🚀 PRODUCTION DEPLOYMENT PACKAGE - Pretty Planet Travels
+===========================================================
+
+📁 FILES INCLUDED:
+- sitemap.xml (11,160 bytes) - Contains 56 URLs for Google Search Console
+- robots.txt (380 bytes) - Contains sitemap reference for search engines
+- DEPLOYMENT_INSTRUCTIONS.txt (this file)
+
+🎯 DEPLOYMENT STEPS:
+
+1. UPLOAD FILES TO PRODUCTION:
+   - Upload sitemap.xml to: https://prettyplanettravels.com/sitemap.xml
+   - Upload robots.txt to: https://prettyplanettravels.com/robots.txt
+   
+   (Files should be in the root directory of your web server)
+
+2. VERIFY DEPLOYMENT:
+   - Test URL: https://prettyplanettravels.com/sitemap.xml
+   - Should return: HTTP 200 with XML content
+   - Test URL: https://prettyplanettravels.com/robots.txt
+   - Should show sitemap reference
+
+3. GOOGLE SEARCH CONSOLE:
+   - Login to Google Search Console
+   - Go to Sitemaps section
+   - Submit: https://prettyplanettravels.com/sitemap.xml
+   - Wait for Google to process (usually 24-48 hours)
+
+📊 SITEMAP CONTENTS:
+- 56 Total URLs
+- 6 Static pages (Home, Tour Packages, Events, Terms, etc.)
+- 50 Tour package pages (Kashmir, Manali, Goa, etc.)
+- All URLs use production domain: https://prettyplanettravels.com
+- SEO metadata: Priority, Change frequency, Last modified dates
+
+🔧 TECHNICAL REQUIREMENTS:
+- Web server should serve .xml files with proper MIME type
+- Files should be accessible without authentication
+- HTTPS enabled (already configured for prettyplanettravels.com)
+
+⚡ URGENCY: HIGH
+Google Search Console cannot fetch the sitemap until these files are on the live domain.
+
+Generated: 2025-10-14
+Status: Ready for immediate deployment
