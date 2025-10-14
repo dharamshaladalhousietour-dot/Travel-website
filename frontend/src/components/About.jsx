@@ -61,10 +61,9 @@ const About = () => {
           <div className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100">
             <div className="flex gap-4 items-start">
               <div className="w-28 h-28 md:w-32 md:h-32 rounded-lg overflow-hidden flex-shrink-0 bg-gray-100 flex items-center justify-center">
-                {/* Placeholder for rajeev.jpg */}
                 <img 
-                  src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=200&h=200&fit=crop&crop=face"
-                  alt="Mr. Rajeev Bhatia"
+                  src="/assets/rajeev.jpg"
+                  alt="Mr. Rajeev Bhatia, Founder & Managing Director"
                   className="w-full h-full object-cover"
                 />
               </div>
