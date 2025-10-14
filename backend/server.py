@@ -227,8 +227,13 @@ async def handle_payment_success(payment: PaymentSuccessCreate):
             'razorpay_signature': payment.razorpay_signature
         }
         
-        # Note: In production, add signature verification here
-        # razorpay_client.utility.verify_payment_signature(params_dict)
+        # LIVE MODE: Verify payment signature for security
+        try:
+            razorpay_client.utility.verify_payment_signature(params_dict)
+            logger.info(f"✅ Payment signature verified for payment: {payment.razorpay_payment_id}")
+        except Exception as signature_error:
+            logger.error(f"❌ Payment signature verification failed: {str(signature_error)}")
+            raise HTTPException(status_code=400, detail="Invalid payment signature")
         
         # Save payment success to database
         payment_dict = payment.dict()
