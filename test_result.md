@@ -349,13 +349,16 @@ metadata:
 
 test_plan:
   current_focus:
-    - "About Us / Our Story Section - Comprehensive Verification"
+    - "Razorpay Live Mode Integration - Mobile Responsiveness Fix"
   stuck_tasks:
+    - "Razorpay Live Mode Integration - Homepage Pay Now Button"
+    - "Razorpay Visual Verification and Mobile Responsiveness"
   test_all: false
   test_priority: "high_first"
   backend_testing_complete: true
   homepage_enquiry_testing_complete: true
   about_us_testing_complete: true
+  razorpay_testing_complete: true
 
   - task: "Sitemap Generator and SEO Features Implementation"
     implemented: true
