@@ -139,6 +139,12 @@ function writeSitemap() {
   console.log(`✅ Sitemap generated successfully with ${allRoutes.length} URLs`);
   console.log(`📍 Location: ${sitemapPath}`);
   console.log(`🌐 Accessible at: ${BASE_URL}/sitemap.xml`);
+  
+  // Also log the breakdown
+  const staticCount = staticRoutes.length;
+  const dynamicCount = tourPackageRoutes.length;
+  console.log(`📊 Breakdown: ${staticCount} static pages, ${dynamicCount} tour packages`);
+  console.log(`🔍 SEO Features: Priority levels, Change frequency, Last modified dates`);
 }
 
 // Run the sitemap generation
