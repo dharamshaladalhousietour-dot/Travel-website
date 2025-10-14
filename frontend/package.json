@@ -59,8 +59,9 @@
   },
   "scripts": {
     "start": "craco start",
-    "build": "craco build",
-    "test": "craco test"
+    "build": "node scripts/generateSitemap.js && craco build",
+    "test": "craco test",
+    "sitemap": "node scripts/generateSitemap.js"
   },
   "browserslist": {
     "production": [
