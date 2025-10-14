@@ -147,7 +147,32 @@ function writeSitemap() {
   console.log(`🔍 SEO Features: Priority levels, Change frequency, Last modified dates`);
 }
 
+// Validate sitemap structure
+function validateSitemap() {
+  const publicDir = path.join(__dirname, '..', 'public');
+  const sitemapPath = path.join(publicDir, 'sitemap.xml');
+  
+  if (!fs.existsSync(sitemapPath)) {
+    console.log('❌ Sitemap not found');
+    return false;
+  }
+  
+  const content = fs.readFileSync(sitemapPath, 'utf8');
+  const hasXMLDeclaration = content.includes('<?xml version="1.0" encoding="UTF-8"?>');
+  const hasUrlset = content.includes('<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">');
+  const hasUrls = content.includes('<loc>');
+  
+  if (hasXMLDeclaration && hasUrlset && hasUrls) {
+    console.log('✅ Sitemap validation passed - Structure is correct');
+    return true;
+  } else {
+    console.log('❌ Sitemap validation failed - Structure issues detected');
+    return false;
+  }
+}
+
 // Run the sitemap generation
 writeSitemap();
+validateSitemap();
 
-module.exports = { generateSitemap, writeSitemap };
+module.exports = { generateSitemap, writeSitemap, validateSitemap };
