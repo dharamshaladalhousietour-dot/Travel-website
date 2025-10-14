@@ -85,10 +85,9 @@ const About = () => {
           <div className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100">
             <div className="flex gap-4 items-start">
               <div className="w-28 h-28 md:w-32 md:h-32 rounded-lg overflow-hidden flex-shrink-0 bg-gray-100 flex items-center justify-center">
-                {/* Placeholder for riny.jpg */}
                 <img 
-                  src="https://images.unsplash.com/photo-1494790108755-2616b612b786?w=200&h=200&fit=crop&crop=face"
-                  alt="Mrs. Riny Aggarwal"
+                  src="/assets/riny.jpg"
+                  alt="Mrs. Riny Aggarwal, Co-Founder & Creative Director"
                   className="w-full h-full object-cover"
                 />
               </div>
