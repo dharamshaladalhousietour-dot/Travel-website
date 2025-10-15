@@ -18,6 +18,7 @@ import TermsConditions from "./components/TermsConditions";
 import RefundPolicy from "./components/RefundPolicy";
 import TravelInsurance from "./components/TravelInsurance";
 import PackageDetail from "./components/PackageDetail";
+import NotFound from "./components/NotFound";
 
 const Home = () => {
   return (
