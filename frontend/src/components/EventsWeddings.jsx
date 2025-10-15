@@ -6,6 +6,7 @@ import { Input } from './ui/input';
 import { Textarea } from './ui/textarea';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from './ui/select';
 import { Label } from './ui/label';
+import SEOHead from './SEOHead';
 
 const EventsWeddings = () => {
   const [formData, setFormData] = useState({
