@@ -1,8 +1,8 @@
 const fs = require('fs');
 const path = require('path');
 
-// Base URL for the website
-const BASE_URL = 'https://prettyplanettravels.com';
+// Base URL for the website (with www for consistency)
+const BASE_URL = 'https://www.prettyplanettravels.com';
 
 // Define all the static routes
 const staticRoutes = [
