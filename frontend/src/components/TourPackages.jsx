@@ -7,6 +7,7 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from './
 import SimpleEnquiryForm from './SimpleEnquiryForm';
 import RazorpayCheckout from './RazorpayCheckout';
 import { Link } from 'react-router-dom';
+import SEOHead from './SEOHead';
 
 const TourPackages = () => {
   const [selectedRegion, setSelectedRegion] = useState('All');
