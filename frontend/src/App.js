@@ -74,6 +74,7 @@ function App() {
           <Route path="/refund-policy" element={<><Header /><RefundPolicy /><Footer /><WhatsAppButton /></>} />
           <Route path="/travel-insurance" element={<><Header /><TravelInsurance /><Footer /><WhatsAppButton /></>} />
           <Route path="/package/:packageSlug" element={<><Header /><PackageDetail /><Footer /><WhatsAppButton /></>} />
+          <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
     </div>
