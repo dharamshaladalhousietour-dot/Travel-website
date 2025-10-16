@@ -103,7 +103,7 @@ Details:
         title="Destination Weddings & Corporate Events | Pretty Planet Travels"
         description="Plan your dream destination wedding or corporate event with Pretty Planet Travels. Expert wedding planners for Himachal, Rajasthan, Goa, Kerala. MICE tourism & event management services."
         keywords="destination weddings, corporate events, wedding planner, MICE tourism, Himachal wedding, Rajasthan wedding, Goa wedding, Kerala wedding, event management"
-        canonicalUrl="/events-weddings"
+        canonical="https://www.prettyplanettravels.com/events-weddings"
       />
       {/* Hero Section */}
       <section className="relative h-screen flex items-center justify-center overflow-hidden">
