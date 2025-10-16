@@ -1,0 +1,37 @@
+# Robots.txt for Pretty Planet Travels
+User-agent: *
+Allow: /
+Disallow: /admin/
+Disallow: /.env
+Disallow: /backend/
+Disallow: /api/
+Disallow: /*?*utm_*
+Disallow: /*?*ref=*
+Disallow: /404
+Crawl-delay: 1
+
+# Specific search engines
+User-agent: Googlebot
+Allow: /
+Disallow: /api/
+
+User-agent: Bingbot  
+Allow: /
+Disallow: /api/
+
+User-agent: Slurp
+Allow: /
+Disallow: /api/
+
+# Block bad bots
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: MJ12bot
+Disallow: /
+
+# Sitemap location
+Sitemap: https://www.prettyplanettravels.com/sitemap.xml
+
+# Host directive
+Host: www.prettyplanettravels.com
