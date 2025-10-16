@@ -1146,13 +1146,12 @@ const TourPackages = () => {
 
   return (
     <section id="tour-packages" className="py-20 bg-gradient-to-b from-gray-50 to-white">
-      {/* SEOHead temporarily commented out for debugging */}
-      {/* <SEOHead 
+      <SEOHead 
         title="Tour Packages | Pretty Planet Travels - Himachal Kashmir Manali Tours"
         description="Explore 50+ tour packages including Kashmir honeymoon, Manali romantic getaways, Himachal adventure tours. Best prices guaranteed. Book online or call +91 8679333355."
         canonical="https://www.prettyplanettravels.com/tour-packages"
         keywords="Himachal tour packages, Kashmir honeymoon, Manali tours, Dharamshala packages, adventure tours, family vacation packages"
-      /> */}
+      />
       <div className="max-w-7xl mx-auto px-4">
         {/* Header */}
         <div className="text-center mb-16">
