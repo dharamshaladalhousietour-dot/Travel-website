@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Heart, Users, MapPin, Star, Send, Phone, Mail, Calendar } from 'lucide-react';
+import { Heart, Users, MapPin, Star, Send, Phone, Mail, Calendar, Mountain, Flower, Camera } from 'lucide-react';
 import { Card, CardContent } from './ui/card';
 import { Button } from './ui/button';
 import { Input } from './ui/input';
@@ -27,7 +27,7 @@ const EventsWeddings = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    const whatsappMessage = `Hello! I'm interested in wedding/event planning services.
+    const whatsappMessage = `Hello! I'm interested in Dharamshala wedding/event planning services.
     
 Details:
 - Name: ${formData.name}
@@ -36,7 +36,9 @@ Details:
 - Guests: ${formData.guestCount}
 - Budget: ${formData.budget}
 - Venue Preference: ${formData.venue}
-- Message: ${formData.message}`;
+- Message: ${formData.message}
+
+I'm looking for mountain wedding services in Dharamshala/Himachal Pradesh.`;
     
     const encodedMessage = encodeURIComponent(whatsappMessage);
     window.open(`https://wa.me/918679333354?text=${encodedMessage}`, '_blank');
