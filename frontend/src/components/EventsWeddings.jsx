@@ -44,26 +44,49 @@ I'm looking for mountain wedding services in Dharamshala/Himachal Pradesh.`;
     window.open(`https://wa.me/918679333354?text=${encodedMessage}`, '_blank');
   };
 
-  const destinations = [
+  const weddingServices = [
     {
-      name: "Himachal Pradesh",
-      image: "https://images.unsplash.com/photo-1620720970374-5b7e67e1e610",
-      description: "Mountain weddings in Manali, Shimla, and Dharamshala with stunning Himalayan backdrops."
+      icon: <Mountain className="h-8 w-8 text-teal-600" />,
+      title: "Venue Sourcing",
+      description: "Tea-terrace resorts & heritage stays with Dhauladhar mountain views"
     },
     {
-      name: "Rajasthan", 
-      image: "https://images.unsplash.com/photo-1599661046289-e31897b6a1ba",
-      description: "Royal palace weddings in Udaipur, Jaipur, and Jaisalmer with regal elegance."
+      icon: <Flower className="h-8 w-8 text-rose-500" />,
+      title: "Design & Decor",
+      description: "Himalayan-inspired aesthetics with natural elegance and mountain charm"
     },
     {
-      name: "Goa",
-      image: "https://images.pexels.com/photos/169211/pexels-photo-169211.jpeg",
-      description: "Beach weddings with golden sands, ocean views, and tropical paradise vibes."
+      icon: <Users className="h-8 w-8 text-amber-600" />,
+      title: "Local Catering",
+      description: "Authentic Himachali menus and regional delicacies for your celebration"
     },
     {
-      name: "Kerala",
-      image: "https://images.unsplash.com/photo-1602216056096-3b40cc0c9944",
-      description: "Backwater weddings with traditional houseboats and lush green landscapes."
+      icon: <Camera className="h-8 w-8 text-blue-600" />,
+      title: "Full Service Planning",
+      description: "Photography, logistics & guest management for seamless mountain weddings"
+    }
+  ];
+
+  const portfolioImages = [
+    {
+      src: "/assets/portfolio1.jpg",
+      alt: "Tea-terrace wedding ceremony with Dhauladhar mountains",
+      title: "Tea-Terrace Ceremony"
+    },
+    {
+      src: "/assets/portfolio2.jpg", 
+      alt: "Gompa blessing ceremony in Dharamshala",
+      title: "Traditional Blessing"
+    },
+    {
+      src: "/assets/portfolio3.jpg",
+      alt: "Evening wedding reception in mountain resort",
+      title: "Evening Reception"
+    },
+    {
+      src: "/assets/portfolio4.jpg",
+      alt: "Wedding photography in Himachal tea gardens",
+      title: "Tea Garden Romance"
     }
   ];
 
