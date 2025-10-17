@@ -177,34 +177,31 @@ I'm looking for mountain wedding services in Dharamshala/Himachal Pradesh.`;
         </div>
       </section>
 
-      {/* Destination Weddings */}
+      {/* Wedding Services Section */}
       <section className="py-20 bg-gradient-to-b from-gray-50 to-white">
         <div className="max-w-7xl mx-auto px-4">
+          {/* Header */}
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-blue-900 mb-6">Destination Weddings</h2>
-            <div className="w-24 h-1 bg-gradient-to-r from-pink-400 to-purple-600 mx-auto mb-8"></div>
+            <h2 className="text-4xl md:text-5xl font-bold text-blue-900 mb-6">
+              Our <span className="text-transparent bg-clip-text bg-gradient-to-r from-rose-500 to-teal-600">Wedding Services</span>
+            </h2>
+            <div className="w-24 h-1 bg-gradient-to-r from-rose-400 to-teal-600 mx-auto mb-8"></div>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-              From the serene Himalayas to the royal palaces of Rajasthan, we plan breathtaking 
-              weddings in India's most stunning locations.
+              Bespoke mountain wedding planning in Dharamshala & Himachal Pradesh. 
+              We create elegant, natural celebrations amidst tea gardens and Himalayan peaks.
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {destinations.map((destination, index) => (
-              <Card key={index} className="overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2">
-                <div className="relative h-48">
-                  <img 
-                    src={destination.image}
-                    alt={destination.name}
-                    className="w-full h-full object-cover"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
-                  <div className="absolute bottom-4 left-4 right-4">
-                    <h3 className="text-xl font-bold text-white mb-2">{destination.name}</h3>
+          {/* Services Grid */}
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
+            {weddingServices.map((service, index) => (
+              <Card key={index} className="text-center hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 group border-0 bg-white/80 backdrop-blur-sm">
+                <CardContent className="p-8">
+                  <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-br from-rose-100 to-teal-100 rounded-full mb-6 group-hover:scale-110 transition-transform duration-300">
+                    {service.icon}
                   </div>
-                </div>
-                <CardContent className="p-6">
-                  <p className="text-gray-600 leading-relaxed">{destination.description}</p>
+                  <h3 className="text-xl font-bold text-blue-900 mb-4">{service.title}</h3>
+                  <p className="text-gray-600 text-sm leading-relaxed">{service.description}</p>
                 </CardContent>
               </Card>
             ))}
