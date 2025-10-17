@@ -125,17 +125,17 @@ I'm looking for mountain wedding services in Dharamshala/Himachal Pradesh.`;
   return (
     <div className="min-h-screen bg-white">
       <SEOHead 
-        title="Destination Weddings & Corporate Events | Pretty Planet Travels"
-        description="Plan your dream destination wedding or corporate event with Pretty Planet Travels. Expert wedding planners for Himachal, Rajasthan, Goa, Kerala. MICE tourism & event management services."
-        keywords="destination weddings, corporate events, wedding planner, MICE tourism, Himachal wedding, Rajasthan wedding, Goa wedding, Kerala wedding, event management"
+        title="Destination Weddings in Dharamshala | Pretty Planet Travels - Himachal Mountain Weddings"
+        description="Bespoke destination weddings in Dharamshala & Himachal Pradesh. Tea-terrace ceremonies, Dhauladhar mountain views, authentic Himachali celebrations. Expert wedding planning services."
+        keywords="Dharamshala weddings, Himachal Pradesh destination weddings, mountain weddings, tea terrace weddings, Dhauladhar mountain weddings, Himachali wedding planner"
         canonical="https://www.prettyplanettravels.com/events-weddings"
       />
-      {/* Hero Section */}
+      {/* Hero Section - Dharamshala Mountain Wedding */}
       <section className="relative h-screen flex items-center justify-center overflow-hidden">
         <div 
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
           style={{
-            backgroundImage: 'url(https://images.unsplash.com/photo-1726508684402-ee6029833696)'
+            backgroundImage: "url('/assets/hero-dharamshala.jpg')"
           }}
         />
         <div className="absolute inset-0 bg-gradient-to-r from-purple-900/30 via-blue-800/20 to-transparent"></div>
