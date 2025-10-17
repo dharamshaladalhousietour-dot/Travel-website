@@ -206,6 +206,38 @@ I'm looking for mountain wedding services in Dharamshala/Himachal Pradesh.`;
               </Card>
             ))}
           </div>
+
+          {/* Portfolio Section */}
+          <div id="portfolio" className="mt-20">
+            <div className="text-center mb-12">
+              <h3 className="text-3xl md:text-4xl font-bold text-blue-900 mb-4">
+                Our <span className="text-transparent bg-clip-text bg-gradient-to-r from-rose-500 to-teal-600">Portfolio</span>
+              </h3>
+              <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+                Breathtaking moments from our Dharamshala mountain weddings
+              </p>
+            </div>
+            
+            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+              {portfolioImages.map((image, index) => (
+                <Card key={index} className="overflow-hidden group hover:shadow-xl transition-all duration-300">
+                  <div className="relative h-64 overflow-hidden">
+                    <img 
+                      src={image.src}
+                      alt={image.alt}
+                      className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                      loading="lazy"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                      <div className="absolute bottom-4 left-4 text-white">
+                        <h4 className="text-sm font-semibold">{image.title}</h4>
+                      </div>
+                    </div>
+                  </div>
+                </Card>
+              ))}
+            </div>
+          </div>
         </div>
       </section>
 
