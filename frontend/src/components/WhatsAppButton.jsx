@@ -21,8 +21,44 @@ const WhatsAppButton = () => {
     setShowOptions(false);
   };
 
+  const [isCallHovered, setIsCallHovered] = useState(false);
+
+  const handleCallNow = () => {
+    window.location.href = 'tel:+918679333354';
+  };
+
   return (
-    <div className="fixed bottom-6 right-6 z-50">
+    <div className="fixed bottom-6 right-6 z-50 flex flex-col items-end gap-4">
+      {/* Call Now Button */}
+      <div 
+        className="relative"
+        onMouseEnter={() => setIsCallHovered(true)}
+        onMouseLeave={() => setIsCallHovered(false)}
+      >
+        {/* Call Tooltip */}
+        {isCallHovered && (
+          <div className="absolute bottom-16 right-0 mb-2 px-4 py-2 bg-gray-800 text-white text-sm rounded-lg shadow-lg whitespace-nowrap animate-fade-scale">
+            Call Now: +91 8679333354
+            <div className="absolute top-full right-4 w-0 h-0 border-l-4 border-r-4 border-t-4 border-l-transparent border-r-transparent border-t-gray-800"></div>
+          </div>
+        )}
+
+        <button
+          onClick={handleCallNow}
+          className="w-16 h-16 bg-blue-500 hover:bg-blue-600 rounded-full shadow-2xl flex items-center justify-center transition-all duration-300 transform hover:scale-110 active:scale-95 group"
+          aria-label="Call Now"
+        >
+          <div className="relative">
+            <Phone className="h-8 w-8 text-white group-hover:rotate-12 transition-transform duration-300" />
+            <div className="absolute inset-0 rounded-full bg-blue-400 opacity-30 animate-ping"></div>
+          </div>
+        </button>
+
+        {/* Background Shadow */}
+        <div className="absolute inset-0 rounded-full bg-blue-500 opacity-20 blur-xl transform scale-75"></div>
+      </div>
+
+      {/* WhatsApp Button Section */}
       <div 
         className="relative"
         onMouseEnter={() => setIsHovered(true)}
@@ -91,10 +127,10 @@ const WhatsAppButton = () => {
 
         {/* Ripple Effect on Click */}
         <div className="absolute inset-0 rounded-full bg-green-400 opacity-0 group-active:opacity-20 group-active:animate-ping pointer-events-none"></div>
-      </div>
 
-      {/* Background Shadow */}
-      <div className="absolute inset-0 rounded-full bg-green-500 opacity-20 blur-xl transform scale-75"></div>
+        {/* Background Shadow */}
+        <div className="absolute inset-0 rounded-full bg-green-500 opacity-20 blur-xl transform scale-75"></div>
+      </div>
     </div>
   );
 };
