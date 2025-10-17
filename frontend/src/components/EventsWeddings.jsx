@@ -140,21 +140,40 @@ I'm looking for mountain wedding services in Dharamshala/Himachal Pradesh.`;
         />
         <div className="absolute inset-0 bg-gradient-to-r from-purple-900/30 via-blue-800/20 to-transparent"></div>
         
+        {/* Content */}
         <div className="relative z-10 text-center text-white px-4 max-w-4xl mx-auto">
-          <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight" style={{ textShadow: '2px 2px 4px rgba(0,0,0,0.8)' }}>
-            Destination Weddings &
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-pink-300 to-purple-300"> Events</span>
+          <div className="inline-flex items-center justify-center w-20 h-20 bg-white/10 backdrop-blur-sm rounded-full mb-8">
+            <Mountain className="h-10 w-10 text-white" />
+          </div>
+          
+          <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
+            Dharamshala <span className="text-gradient bg-gradient-to-r from-rose-300 via-teal-300 to-amber-300 bg-clip-text text-transparent font-playfair">Weddings</span>
+            <br />
+            Mountain <span className="text-gradient bg-gradient-to-r from-teal-300 via-amber-300 to-rose-300 bg-clip-text text-transparent font-playfair">Romance</span>
           </h1>
-          <p className="text-xl md:text-2xl mb-8 text-white font-semibold" style={{ textShadow: '1px 1px 3px rgba(0,0,0,0.7)' }}>
-            Make your wedding & events unforgettable with Pretty Planet Travels
+          
+          <p className="text-xl md:text-2xl mb-8 text-gray-200 leading-relaxed">
+            Celebrate amidst the Dhauladhar mountains and tea gardens. Bespoke wedding planning 
+            for elegant, natural ceremonies with breathtaking Himalayan backdrops.
           </p>
-          <Button 
-            size="lg"
-            className="bg-gradient-to-r from-pink-500 to-purple-600 hover:from-pink-600 hover:to-purple-700 text-white px-8 py-4 text-lg font-bold"
-            onClick={() => document.getElementById('enquiry').scrollIntoView({ behavior: 'smooth' })}
-          >
-            Plan Your Event
-          </Button>
+          
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Button 
+              size="lg" 
+              className="bg-gradient-to-r from-rose-500 to-teal-600 hover:from-rose-600 hover:to-teal-700 text-white px-8 py-4 text-lg font-semibold shadow-2xl"
+              onClick={() => document.getElementById('enquiry')?.scrollIntoView({ behavior: 'smooth' })}
+            >
+              Plan Mountain Wedding
+            </Button>
+            <Button 
+              size="lg" 
+              variant="outline" 
+              className="border-2 border-white text-white hover:bg-white hover:text-teal-900 px-8 py-4 text-lg font-semibold backdrop-blur-sm"
+              onClick={() => document.getElementById('portfolio')?.scrollIntoView({ behavior: 'smooth' })}
+            >
+              View Portfolio
+            </Button>
+          </div>
         </div>
       </section>
 
