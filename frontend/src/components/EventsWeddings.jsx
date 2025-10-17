@@ -25,9 +25,36 @@ const EventsWeddings = () => {
     setFormData(prev => ({ ...prev, [field]: value }));
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    const whatsappMessage = `Hello! I'm interested in Dharamshala wedding/event planning services.
+    
+    try {
+      // Prepare data for backend API
+      const enquiryData = {
+        destination: formData.venue || 'Dharamshala/Himachal Pradesh',
+        start_date: formData.eventDate || 'TBD',
+        end_date: formData.eventDate || 'TBD',
+        adults: formData.guestCount || '0',
+        kids: '0',
+        days: '1',
+        name: formData.name,
+        email: formData.email,
+        phone: formData.phone,
+        budget: formData.budget,
+        message: formData.message,
+        formatted_message: `Event Type: ${formData.eventType}\nDate: ${formData.eventDate}\nGuests: ${formData.guestCount}\nVenue: ${formData.venue}\nMessage: ${formData.message}`
+      };
+
+      // Send to backend API (for email notification to info@prettyplanettravels.com)
+      const backendUrl = process.env.REACT_APP_BACKEND_URL || '';
+      await fetch(`${backendUrl}/api/enquiry`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(enquiryData)
+      });
+
+      // Also send WhatsApp message
+      const whatsappMessage = `Hello! I'm interested in Dharamshala wedding/event planning services.
     
 Details:
 - Name: ${formData.name}
@@ -39,9 +66,43 @@ Details:
 - Message: ${formData.message}
 
 I'm looking for mountain wedding services in Dharamshala/Himachal Pradesh.`;
+      
+      const encodedMessage = encodeURIComponent(whatsappMessage);
+      window.open(`https://wa.me/918679333354?text=${encodedMessage}`, '_blank');
+
+      // Show success message
+      alert('✅ Your enquiry has been submitted! We will contact you soon via WhatsApp and Email.');
+      
+      // Reset form
+      setFormData({
+        name: '',
+        email: '',
+        phone: '',
+        eventType: '',
+        eventDate: '',
+        guestCount: '',
+        budget: '',
+        venue: '',
+        message: ''
+      });
+      
+    } catch (error) {
+      console.error('Error submitting enquiry:', error);
+      // Still open WhatsApp even if API fails
+      const whatsappMessage = `Hello! I'm interested in Dharamshala wedding/event planning services.
     
-    const encodedMessage = encodeURIComponent(whatsappMessage);
-    window.open(`https://wa.me/918679333354?text=${encodedMessage}`, '_blank');
+Details:
+- Name: ${formData.name}
+- Event Type: ${formData.eventType}
+- Date: ${formData.eventDate}
+- Guests: ${formData.guestCount}
+- Budget: ${formData.budget}
+- Venue Preference: ${formData.venue}
+- Message: ${formData.message}`;
+      
+      const encodedMessage = encodeURIComponent(whatsappMessage);
+      window.open(`https://wa.me/918679333354?text=${encodedMessage}`, '_blank');
+    }
   };
 
   const weddingServices = [
