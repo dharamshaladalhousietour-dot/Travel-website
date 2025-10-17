@@ -336,23 +336,23 @@ Details:
       <section className="py-20 bg-gradient-to-r from-blue-900 to-purple-900 text-white">
         <div className="max-w-7xl mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="text-4xl md:text-5xl font-bold mb-6">Why Choose Us</h2>
+            <h2 className="text-4xl md:text-5xl font-bold mb-6">🌸 Why Choose Us</h2>
             <div className="w-24 h-1 bg-gradient-to-r from-rose-400 to-teal-400 mx-auto mb-8"></div>
             <p className="text-xl text-blue-100 max-w-4xl mx-auto leading-relaxed mb-4">
-              At Destination Weddings Dharamshala by Pretty Planet Travels, every celebration is personal.
+              At Destination Weddings Dharamshala by Pretty Planet Travels, we believe every love story deserves a perfect mountain backdrop.
             </p>
             <p className="text-lg text-blue-100 max-w-4xl mx-auto leading-relaxed">
-              We combine mountain serenity with professional precision to make your big day effortless.
+              Our team blends local expertise, creative storytelling, and heartfelt hospitality to design unforgettable weddings in the lap of the Himalayas.
             </p>
           </div>
 
           <div className="max-w-5xl mx-auto grid md:grid-cols-2 gap-8 mt-16">
             <div className="flex items-start space-x-4 bg-white/10 backdrop-blur-sm p-6 rounded-lg hover:bg-white/20 transition-all duration-300">
-              <div className="flex-shrink-0 text-4xl">🌸</div>
+              <div className="flex-shrink-0 text-4xl">💫</div>
               <div>
-                <h3 className="text-xl font-bold mb-2 text-rose-300">Local Expertise</h3>
+                <h3 className="text-xl font-bold mb-2 text-purple-300">Local Expertise</h3>
                 <p className="text-blue-100 leading-relaxed">
-                  Our Dharamshala-based planners know the region, resorts, and rituals inside out.
+                  Our Dharamshala-based planners know every hidden gem — from tea gardens to luxury resorts. We handle local vendors, permits, and arrangements with ease.
                 </p>
               </div>
             </div>
@@ -360,9 +360,9 @@ Details:
             <div className="flex items-start space-x-4 bg-white/10 backdrop-blur-sm p-6 rounded-lg hover:bg-white/20 transition-all duration-300">
               <div className="flex-shrink-0 text-4xl">🏔</div>
               <div>
-                <h3 className="text-xl font-bold mb-2 text-teal-300">Scenic Venues</h3>
+                <h3 className="text-xl font-bold mb-2 text-teal-300">Breathtaking Venues</h3>
                 <p className="text-blue-100 leading-relaxed">
-                  From tea terraces to forest resorts, we curate only the most breathtaking Himalayan settings.
+                  From heritage homes to scenic hilltop resorts, we curate only the most romantic and picturesque venues surrounded by the Dhauladhar range.
                 </p>
               </div>
             </div>
@@ -370,19 +370,39 @@ Details:
             <div className="flex items-start space-x-4 bg-white/10 backdrop-blur-sm p-6 rounded-lg hover:bg-white/20 transition-all duration-300">
               <div className="flex-shrink-0 text-4xl">🎯</div>
               <div>
-                <h3 className="text-xl font-bold mb-2 text-amber-300">End-to-End Planning</h3>
+                <h3 className="text-xl font-bold mb-2 text-amber-300">Seamless Planning</h3>
                 <p className="text-blue-100 leading-relaxed">
-                  From decor to logistics — we handle every detail so you can truly enjoy your wedding.
+                  From decor to catering and logistics — we manage everything, ensuring your wedding feels effortless, elegant, and stress-free.
                 </p>
               </div>
             </div>
 
             <div className="flex items-start space-x-4 bg-white/10 backdrop-blur-sm p-6 rounded-lg hover:bg-white/20 transition-all duration-300">
-              <div className="flex-shrink-0 text-4xl">💫</div>
+              <div className="flex-shrink-0 text-4xl">💖</div>
               <div>
-                <h3 className="text-xl font-bold mb-2 text-purple-300">Personalized Touch</h3>
+                <h3 className="text-xl font-bold mb-2 text-rose-300">Personalized Experience</h3>
                 <p className="text-blue-100 leading-relaxed">
-                  Every wedding is unique — we customize every element to reflect your story.
+                  Every couple is unique. We customize every detail — themes, rituals, decor, and experiences — to reflect your story beautifully.
+                </p>
+              </div>
+            </div>
+
+            <div className="flex items-start space-x-4 bg-white/10 backdrop-blur-sm p-6 rounded-lg hover:bg-white/20 transition-all duration-300">
+              <div className="flex-shrink-0 text-4xl">🕊</div>
+              <div>
+                <h3 className="text-xl font-bold mb-2 text-blue-300">Trusted by Couples Worldwide</h3>
+                <p className="text-blue-100 leading-relaxed">
+                  With over a decade of experience, Pretty Planet Travels has created hundreds of joyful destination weddings across Himachal and beyond.
+                </p>
+              </div>
+            </div>
+
+            <div className="flex items-start space-x-4 bg-white/10 backdrop-blur-sm p-6 rounded-lg hover:bg-white/20 transition-all duration-300">
+              <div className="flex-shrink-0 text-4xl">📞</div>
+              <div>
+                <h3 className="text-xl font-bold mb-2 text-green-300">Ready to Begin?</h3>
+                <p className="text-blue-100 leading-relaxed">
+                  Let's start planning your mountain wedding. Contact us today for a free consultation!
                 </p>
               </div>
             </div>
