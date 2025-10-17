@@ -335,20 +335,57 @@ Details:
       {/* Why Choose Us */}
       <section className="py-20 bg-gradient-to-r from-blue-900 to-purple-900 text-white">
         <div className="max-w-7xl mx-auto px-4">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold mb-6">Why Choose Pretty Planet for Your Events?</h2>
-            <div className="w-24 h-1 bg-gradient-to-r from-pink-400 to-purple-400 mx-auto mb-8"></div>
+          <div className="text-center mb-12">
+            <h2 className="text-4xl md:text-5xl font-bold mb-6">Why Choose Us</h2>
+            <div className="w-24 h-1 bg-gradient-to-r from-rose-400 to-teal-400 mx-auto mb-8"></div>
+            <p className="text-xl text-blue-100 max-w-4xl mx-auto leading-relaxed mb-4">
+              At Destination Weddings Dharamshala by Pretty Planet Travels, every celebration is personal.
+            </p>
+            <p className="text-lg text-blue-100 max-w-4xl mx-auto leading-relaxed">
+              We combine mountain serenity with professional precision to make your big day effortless.
+            </p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {whyChooseUs.map((point, index) => (
-              <div key={index} className="flex items-start space-x-4">
-                <div className="flex-shrink-0 w-8 h-8 bg-gradient-to-r from-pink-400 to-purple-400 rounded-full flex items-center justify-center">
-                  <span className="text-white font-bold text-sm">{index + 1}</span>
-                </div>
-                <p className="text-blue-100 leading-relaxed">{point}</p>
+          <div className="max-w-5xl mx-auto grid md:grid-cols-2 gap-8 mt-16">
+            <div className="flex items-start space-x-4 bg-white/10 backdrop-blur-sm p-6 rounded-lg hover:bg-white/20 transition-all duration-300">
+              <div className="flex-shrink-0 text-4xl">🌸</div>
+              <div>
+                <h3 className="text-xl font-bold mb-2 text-rose-300">Local Expertise</h3>
+                <p className="text-blue-100 leading-relaxed">
+                  Our Dharamshala-based planners know the region, resorts, and rituals inside out.
+                </p>
               </div>
-            ))}
+            </div>
+
+            <div className="flex items-start space-x-4 bg-white/10 backdrop-blur-sm p-6 rounded-lg hover:bg-white/20 transition-all duration-300">
+              <div className="flex-shrink-0 text-4xl">🏔</div>
+              <div>
+                <h3 className="text-xl font-bold mb-2 text-teal-300">Scenic Venues</h3>
+                <p className="text-blue-100 leading-relaxed">
+                  From tea terraces to forest resorts, we curate only the most breathtaking Himalayan settings.
+                </p>
+              </div>
+            </div>
+
+            <div className="flex items-start space-x-4 bg-white/10 backdrop-blur-sm p-6 rounded-lg hover:bg-white/20 transition-all duration-300">
+              <div className="flex-shrink-0 text-4xl">🎯</div>
+              <div>
+                <h3 className="text-xl font-bold mb-2 text-amber-300">End-to-End Planning</h3>
+                <p className="text-blue-100 leading-relaxed">
+                  From decor to logistics — we handle every detail so you can truly enjoy your wedding.
+                </p>
+              </div>
+            </div>
+
+            <div className="flex items-start space-x-4 bg-white/10 backdrop-blur-sm p-6 rounded-lg hover:bg-white/20 transition-all duration-300">
+              <div className="flex-shrink-0 text-4xl">💫</div>
+              <div>
+                <h3 className="text-xl font-bold mb-2 text-purple-300">Personalized Touch</h3>
+                <p className="text-blue-100 leading-relaxed">
+                  Every wedding is unique — we customize every element to reflect your story.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
