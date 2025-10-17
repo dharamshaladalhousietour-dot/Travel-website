@@ -42,19 +42,87 @@ razorpay_client = razorpay.Client(auth=(
     os.environ.get('RAZORPAY_KEY_SECRET')
 ))
 
-# Email configuration (placeholder - will be updated with real credentials)
+# Email configuration
 def send_enquiry_email(enquiry_data):
     """Send enquiry notification email to info@prettyplanettravels.com"""
     try:
-        # For now, just log the email content
-        # TODO: Implement actual email sending once SMTP credentials are provided
-        logger.info(f"📧 EMAIL NOTIFICATION TO info@prettyplanettravels.com")
-        logger.info(f"Subject: New Travel Enquiry from {enquiry_data.name}")
-        logger.info(f"Content: {enquiry_data.formatted_message}")
-        logger.info("✅ Email notification logged (SMTP integration pending)")
+        # Email settings - using Gmail SMTP with app password
+        smtp_server = os.environ.get('SMTP_SERVER', 'smtp.gmail.com')
+        smtp_port = int(os.environ.get('SMTP_PORT', '587'))
+        smtp_username = os.environ.get('SMTP_USERNAME', '')
+        smtp_password = os.environ.get('SMTP_PASSWORD', '')
+        recipient_email = 'info@prettyplanettravels.com'
+        
+        # If SMTP credentials not configured, just log
+        if not smtp_username or not smtp_password:
+            logger.info(f"📧 EMAIL NOTIFICATION TO {recipient_email}")
+            logger.info(f"Subject: New Travel Enquiry from {enquiry_data.name}")
+            logger.info(f"Content: {enquiry_data.formatted_message}")
+            logger.warning("⚠️ SMTP credentials not configured. Email logged only.")
+            return True
+        
+        # Create email message
+        msg = MIMEMultipart('alternative')
+        msg['From'] = smtp_username
+        msg['To'] = recipient_email
+        msg['Subject'] = f"New Travel Enquiry from {enquiry_data.name}"
+        
+        # HTML email body
+        html_body = f"""
+        <html>
+        <body style="font-family: Arial, sans-serif; line-height: 1.6; color: #333;">
+            <div style="max-width: 600px; margin: 0 auto; padding: 20px; background-color: #f9f9f9;">
+                <h2 style="color: #1e40af; border-bottom: 3px solid #3b82f6; padding-bottom: 10px;">
+                    🌍 New Travel Enquiry
+                </h2>
+                
+                <div style="background-color: white; padding: 20px; border-radius: 8px; margin-top: 20px;">
+                    <h3 style="color: #1e40af;">Customer Details:</h3>
+                    <p><strong>Name:</strong> {enquiry_data.name}</p>
+                    <p><strong>Email:</strong> {enquiry_data.email}</p>
+                    <p><strong>Phone:</strong> {enquiry_data.phone}</p>
+                    
+                    <h3 style="color: #1e40af; margin-top: 20px;">Trip Details:</h3>
+                    <p><strong>Destination:</strong> {enquiry_data.destination}</p>
+                    <p><strong>Travel Dates:</strong> {enquiry_data.start_date} to {enquiry_data.end_date}</p>
+                    <p><strong>Duration:</strong> {enquiry_data.days} days</p>
+                    <p><strong>Travelers:</strong> {enquiry_data.adults} Adults, {enquiry_data.kids} Kids</p>
+                    <p><strong>Budget:</strong> {enquiry_data.budget}</p>
+                    
+                    <h3 style="color: #1e40af; margin-top: 20px;">Message:</h3>
+                    <p style="background-color: #f3f4f6; padding: 15px; border-radius: 5px;">
+                        {enquiry_data.message if enquiry_data.message else 'No additional message'}
+                    </p>
+                </div>
+                
+                <div style="margin-top: 20px; padding: 15px; background-color: #dbeafe; border-left: 4px solid #3b82f6; border-radius: 4px;">
+                    <p style="margin: 0;"><strong>📅 Received:</strong> {enquiry_data.timestamp.strftime('%d %B %Y at %I:%M %p')}</p>
+                    <p style="margin: 5px 0 0 0;"><strong>🆔 Enquiry ID:</strong> {enquiry_data.id}</p>
+                </div>
+                
+                <p style="text-align: center; margin-top: 20px; color: #6b7280; font-size: 12px;">
+                    This is an automated notification from Pretty Planet Travels & Events
+                </p>
+            </div>
+        </body>
+        </html>
+        """
+        
+        # Attach HTML body
+        msg.attach(MIMEText(html_body, 'html'))
+        
+        # Send email
+        with smtplib.SMTP(smtp_server, smtp_port) as server:
+            server.starttls()
+            server.login(smtp_username, smtp_password)
+            server.send_message(msg)
+        
+        logger.info(f"✅ Email sent successfully to {recipient_email}")
         return True
+        
     except Exception as e:
         logger.error(f"❌ Error sending email notification: {str(e)}")
+        # Don't fail the request if email fails
         return False
 
 
