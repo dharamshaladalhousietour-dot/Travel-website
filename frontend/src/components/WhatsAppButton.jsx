@@ -23,10 +23,6 @@ const WhatsAppButton = () => {
 
   const [isCallHovered, setIsCallHovered] = useState(false);
 
-  const handleCallNow = () => {
-    window.location.href = 'tel:+918679333354';
-  };
-
   return (
     <div className="fixed bottom-6 right-6 z-50 flex flex-col items-end gap-4">
       {/* Call Now Button */}
@@ -43,16 +39,16 @@ const WhatsAppButton = () => {
           </div>
         )}
 
-        <button
-          onClick={handleCallNow}
+        <a
+          href="tel:+918679333354"
           className="w-16 h-16 bg-blue-500 hover:bg-blue-600 rounded-full shadow-2xl flex items-center justify-center transition-all duration-300 transform hover:scale-110 active:scale-95 group"
-          aria-label="Call Now"
+          aria-label="Call Now: +91 8679333354"
         >
           <div className="relative">
             <Phone className="h-8 w-8 text-white group-hover:rotate-12 transition-transform duration-300" />
             <div className="absolute inset-0 rounded-full bg-blue-400 opacity-30 animate-ping"></div>
           </div>
-        </button>
+        </a>
 
         {/* Background Shadow */}
         <div className="absolute inset-0 rounded-full bg-blue-500 opacity-20 blur-xl transform scale-75"></div>
