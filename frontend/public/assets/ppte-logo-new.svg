@@ -1,0 +1,85 @@
+<svg width="500" height="150" viewBox="0 0 500 150" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background Circle with Subtle Gradient -->
+  <defs>
+    <linearGradient id="globeGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#E8B4BC;stop-opacity:0.3" />
+      <stop offset="100%" style="stop-color:#4DB8B8;stop-opacity:0.3" />
+    </linearGradient>
+    
+    <linearGradient id="textGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#D89DAC;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#4DB8B8;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3A9999;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Main Globe/Circle with Mountains -->
+  <g id="logo-icon">
+    <!-- Outer Circle -->
+    <circle cx="75" cy="75" r="45" fill="url(#globeGradient)" stroke="#4DB8B8" stroke-width="2" opacity="0.6"/>
+    
+    <!-- Mountain Silhouette (Dhauladhar Range) -->
+    <path d="M 40 85 L 50 65 L 55 70 L 65 50 L 75 60 L 85 45 L 95 55 L 105 65 L 110 85 Z" 
+          fill="#3A9999" opacity="0.7"/>
+    <path d="M 45 85 L 55 70 L 60 75 L 70 58 L 80 68 L 90 53 L 100 63 L 105 85 Z" 
+          fill="#4DB8B8" opacity="0.8"/>
+    
+    <!-- Airplane Path Arc -->
+    <path d="M 45 35 Q 75 25 105 35" stroke="#E8B4BC" stroke-width="1.5" fill="none" stroke-dasharray="3,3" opacity="0.8"/>
+    
+    <!-- Small Airplane Icon -->
+    <g transform="translate(102, 32) scale(0.7)">
+      <path d="M 0 0 L -2 -1 L -6 0 L -2 1 Z M -2 -1 L -2 1" stroke="#E8B4BC" stroke-width="1" fill="#E8B4BC"/>
+    </g>
+    
+    <!-- Floral Elements - Cherry Blossoms -->
+    <!-- Top Left Flower -->
+    <g transform="translate(35, 40)">
+      <circle cx="0" cy="0" r="3" fill="#E8B4BC" opacity="0.8"/>
+      <circle cx="-3" cy="2" r="2.5" fill="#F0A0B0" opacity="0.7"/>
+      <circle cx="3" cy="2" r="2.5" fill="#F0A0B0" opacity="0.7"/>
+      <circle cx="0" cy="4" r="2.5" fill="#F0A0B0" opacity="0.7"/>
+      <circle cx="0" cy="-3" r="2.5" fill="#F0A0B0" opacity="0.7"/>
+      <circle cx="0" cy="0" r="1.5" fill="#FFD700" opacity="0.6"/>
+    </g>
+    
+    <!-- Bottom Right Flower -->
+    <g transform="translate(115, 90)">
+      <circle cx="0" cy="0" r="3" fill="#E8B4BC" opacity="0.8"/>
+      <circle cx="-3" cy="2" r="2.5" fill="#F0A0B0" opacity="0.7"/>
+      <circle cx="3" cy="2" r="2.5" fill="#F0A0B0" opacity="0.7"/>
+      <circle cx="0" cy="4" r="2.5" fill="#F0A0B0" opacity="0.7"/>
+      <circle cx="0" cy="-3" r="2.5" fill="#F0A0B0" opacity="0.7"/>
+      <circle cx="0" cy="0" r="1.5" fill="#FFD700" opacity="0.6"/>
+    </g>
+    
+    <!-- Small Accent Flowers -->
+    <circle cx="115" cy="50" r="2" fill="#E8B4BC" opacity="0.6"/>
+    <circle cx="35" cy="95" r="2" fill="#4DB8B8" opacity="0.6"/>
+    
+    <!-- Decorative Leaf -->
+    <ellipse cx="30" cy="80" rx="3" ry="6" fill="#4DB8B8" opacity="0.5" transform="rotate(-30 30 80)"/>
+    <ellipse cx="120" cy="70" rx="3" ry="6" fill="#3A9999" opacity="0.5" transform="rotate(30 120 70)"/>
+  </g>
+  
+  <!-- Typography -->
+  <g id="logo-text">
+    <!-- "Pretty Planet" - Elegant Serif/Script Style -->
+    <text x="155" y="65" font-family="'Georgia', 'Playfair Display', serif" font-size="32" font-weight="600" font-style="italic" fill="#D89DAC" letter-spacing="1">
+      Pretty Planet
+    </text>
+    
+    <!-- "Travels and Events" - Modern Sans-Serif -->
+    <text x="155" y="90" font-family="'Helvetica', 'Arial', sans-serif" font-size="16" font-weight="400" fill="#4DB8B8" letter-spacing="3">
+      TRAVELS AND EVENTS
+    </text>
+    
+    <!-- Tagline (optional) -->
+    <text x="155" y="105" font-family="'Helvetica', 'Arial', sans-serif" font-size="10" font-weight="300" fill="#888" letter-spacing="2" opacity="0.7">
+      Dharamshala, Himachal Pradesh
+    </text>
+    
+    <!-- Decorative Divider -->
+    <line x1="155" y1="75" x2="480" y2="75" stroke="#E8B4BC" stroke-width="0.5" opacity="0.4"/>
+  </g>
+</svg>
