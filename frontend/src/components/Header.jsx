@@ -78,30 +78,6 @@ const Header = () => {
                 💳 Pay Now
               </Button>
             </RazorpayCheckout>
-            
-            <a
-              href="https://wa.me/918679333355?text=Hello!%20I%20want%20to%20book%20a%20tour%20with%20an%20expert.%20Please%20help%20me%20plan%20my%20trip."
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Button 
-                className="bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white font-bold px-4 py-2 text-xs shadow-lg transform hover:scale-105 transition-all duration-300 whitespace-nowrap"
-              >
-                🏔️ Travel Expert
-              </Button>
-            </a>
-            
-            <a
-              href="https://wa.me/918679333354?text=Hello!%20I%20want%20to%20book%20events%20with%20an%20expert.%20Please%20help%20me%20plan%20my%20event."
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Button 
-                className="bg-gradient-to-r from-purple-600 to-purple-700 hover:from-purple-700 hover:to-purple-800 text-white font-bold px-4 py-2 text-xs shadow-lg transform hover:scale-105 transition-all duration-300 whitespace-nowrap"
-              >
-                💒 Event Expert
-              </Button>
-            </a>
           </div>
 
           {/* Mobile menu button */}
