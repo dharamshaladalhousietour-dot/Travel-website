@@ -50,7 +50,7 @@ const Header = () => {
             <img 
               src="/assets/ppte-logo-custom.png"
               alt="Pretty Planet Travels and Events - Luxury Destination Weddings & Travel"
-              className="h-20 w-auto hover:opacity-90 transition-opacity duration-300"
+              className="h-32 md:h-40 w-auto hover:opacity-90 transition-opacity duration-300"
             />
           </Link>
 
