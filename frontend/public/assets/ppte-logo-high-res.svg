@@ -1,0 +1,116 @@
+<svg width="700" height="140" viewBox="0 0 700 140" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Enhanced gradients for better contrast -->
+    <linearGradient id="tealGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#00838F;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#006B75;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="blushGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#D78888;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#C77777;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- Elegant shadow for depth -->
+    <filter id="softShadow">
+      <feDropShadow dx="0" dy="1" stdDeviation="1" flood-opacity="0.15"/>
+    </filter>
+  </defs>
+  
+  <!-- Decorative Icon Elements -->
+  <g id="logo-icon" transform="translate(60, 70)" filter="url(#softShadow)">
+    <!-- Globe outline -->
+    <circle cx="0" cy="0" r="35" fill="none" stroke="#00838F" stroke-width="2.5" opacity="0.8"/>
+    <circle cx="0" cy="0" r="33" fill="white" opacity="0.05"/>
+    
+    <!-- Latitude lines -->
+    <ellipse cx="0" cy="0" rx="35" ry="12" fill="none" stroke="#00838F" stroke-width="1" opacity="0.4"/>
+    <ellipse cx="0" cy="0" rx="35" ry="22" fill="none" stroke="#00838F" stroke-width="1" opacity="0.4"/>
+    
+    <!-- Longitude lines -->
+    <ellipse cx="0" cy="0" rx="12" ry="35" fill="none" stroke="#00838F" stroke-width="1" opacity="0.4"/>
+    <ellipse cx="0" cy="0" rx="22" ry="35" fill="none" stroke="#00838F" stroke-width="1" opacity="0.4"/>
+    
+    <!-- Mountain silhouette -->
+    <g transform="translate(0, 8)">
+      <path d="M -25 12 L -18 -5 L -12 0 L -6 -10 L 0 -2 L 6 -12 L 12 -4 L 18 2 L 25 12 Z" 
+            fill="#00838F" opacity="0.85"/>
+      <path d="M -22 12 L -16 0 L -10 3 L -4 -7 L 2 1 L 8 -9 L 14 -1 L 20 5 L 25 12 Z" 
+            fill="#006B75" opacity="0.7"/>
+      <!-- Snow caps -->
+      <path d="M -6 -10 L -4 -8 L -8 -8 Z M 6 -12 L 8 -9 L 4 -9 Z" 
+            fill="#FFFFFF" opacity="0.95"/>
+    </g>
+    
+    <!-- Elegant flowers -->
+    <g transform="translate(-30, -22) scale(0.75)">
+      <circle cx="0" cy="0" r="3.5" fill="#D78888" opacity="0.9"/>
+      <circle cx="-2.5" cy="2.5" r="2.8" fill="#C77777" opacity="0.85"/>
+      <circle cx="2.5" cy="2.5" r="2.8" fill="#C77777" opacity="0.85"/>
+      <circle cx="0" cy="4.5" r="2.8" fill="#D78888" opacity="0.85"/>
+      <circle cx="0" cy="-2.5" r="2.8" fill="#C77777" opacity="0.85"/>
+      <circle cx="0" cy="0" r="1.5" fill="#FFD700" opacity="0.75"/>
+    </g>
+    
+    <g transform="translate(30, 20) scale(0.65)">
+      <circle cx="0" cy="0" r="3" fill="#D78888" opacity="0.85"/>
+      <circle cx="-2" cy="2" r="2.5" fill="#C77777" opacity="0.8"/>
+      <circle cx="2" cy="2" r="2.5" fill="#C77777" opacity="0.8"/>
+      <circle cx="0" cy="0" r="1.2" fill="#FFD700" opacity="0.7"/>
+    </g>
+    
+    <!-- Airplane path -->
+    <path d="M -28 -28 Q 0 -35 28 -28" stroke="#D78888" stroke-width="1.5" fill="none" stroke-dasharray="4,3" opacity="0.7"/>
+    
+    <!-- Small airplane -->
+    <g transform="translate(29, -29.5) scale(0.8)">
+      <path d="M 0 0 L -2.5 -1.2 L -6 0 L -2.5 1.2 Z M -2.5 -1.2 L -2.5 1.2" 
+            stroke="#C77777" stroke-width="1" fill="#D78888" opacity="0.85"/>
+    </g>
+  </g>
+  
+  <!-- Main Brand Text -->
+  <g id="brand-text">
+    <!-- "Pretty Planet Travels and Events" - High contrast teal -->
+    <text x="140" y="58" 
+          font-family="'Playfair Display', 'Georgia', serif" 
+          font-size="42" 
+          font-weight="700" 
+          font-style="italic"
+          fill="url(#tealGradient)" 
+          letter-spacing="1.5"
+          filter="url(#softShadow)">
+      Pretty Planet Travels and Events
+    </text>
+    
+    <!-- Tagline - Darker blush with better contrast -->
+    <text x="140" y="85" 
+          font-family="'Helvetica Neue', 'Arial', sans-serif" 
+          font-size="16" 
+          font-weight="500" 
+          fill="url(#blushGradient)" 
+          letter-spacing="4">
+      ✨ LUXURY WEDDINGS • TRAVEL • EVENTS ✨
+    </text>
+    
+    <!-- Subtle decorative line -->
+    <line x1="140" y1="66" x2="690" y2="66" stroke="#00838F" stroke-width="0.5" opacity="0.3"/>
+    
+    <!-- Location text -->
+    <text x="140" y="105" 
+          font-family="'Helvetica Neue', 'Arial', sans-serif" 
+          font-size="12" 
+          font-weight="400" 
+          fill="#00838F" 
+          letter-spacing="2.5" 
+          opacity="0.75">
+      DHARAMSHALA • HIMACHAL PRADESH
+    </text>
+  </g>
+  
+  <!-- Decorative accents -->
+  <g opacity="0.4">
+    <circle cx="135" cy="66" r="1.5" fill="#D78888"/>
+    <circle cx="695" cy="66" r="1.5" fill="#00838F"/>
+  </g>
+</svg>
