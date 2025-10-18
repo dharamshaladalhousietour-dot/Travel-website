@@ -44,17 +44,13 @@ const Header = () => {
       <nav className="max-w-7xl mx-auto px-4 py-3 md:py-5">
         <div className="flex justify-between items-center">
           {/* Logo */}
-          <div className="flex items-center flex-shrink-0">
-            <div className="min-w-0">
-              <h1 className="text-sm sm:text-lg md:text-2xl font-bold font-playfair leading-tight">
-                <span className="bg-gradient-to-r from-blue-900 via-blue-700 to-blue-600 bg-clip-text text-transparent">Pretty Planet</span>
-                <span className="bg-gradient-to-r from-amber-500 via-orange-500 to-red-500 bg-clip-text text-transparent ml-1 sm:ml-2">Travels and Events</span>
-              </h1>
-              <p className="hidden sm:block text-xs md:text-sm font-semibold bg-gradient-to-r from-amber-600 to-orange-600 bg-clip-text text-transparent animate-pulse">
-                ✨ Travel · Events · Weddings ✨
-              </p>
-            </div>
-          </div>
+          <Link to="/" className="flex items-center flex-shrink-0">
+            <img 
+              src="/assets/ppte-logo-horizontal.svg" 
+              alt="Pretty Planet Travels and Events - Luxury Destination Weddings & Travel"
+              className="h-14 w-auto hover:opacity-90 transition-opacity duration-300"
+            />
+          </Link>
 
           {/* Desktop Navigation */}
           <div className="hidden lg:flex items-center space-x-6 flex-grow justify-center">
