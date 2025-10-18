@@ -51,7 +51,7 @@ def send_enquiry_email(enquiry_data):
         smtp_port = int(os.environ.get('SMTP_PORT', '587'))
         smtp_username = os.environ.get('SMTP_USERNAME', '')
         smtp_password = os.environ.get('SMTP_PASSWORD', '')
-        recipient_email = 'info@prettyplanettravels.com'
+        recipient_email = smtp_username  # Send to same Gmail account
         
         # If SMTP credentials not configured, just log
         if not smtp_username or not smtp_password:
