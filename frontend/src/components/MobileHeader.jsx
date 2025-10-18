@@ -11,15 +11,13 @@ const MobileHeader = () => {
       {/* Mobile Header */}
       <div className="px-4 py-4 flex justify-between items-center">
         {/* Logo */}
-        <div className="flex items-center">
-          <div>
-            <h1 className="text-base font-bold font-playfair leading-tight">
-              <span className="bg-gradient-to-r from-blue-900 to-blue-600 bg-clip-text text-transparent">Pretty Planet</span>
-              <br />
-              <span className="bg-gradient-to-r from-amber-500 to-red-500 bg-clip-text text-transparent">Travels and Events</span>
-            </h1>
-          </div>
-        </div>
+        <Link to="/" className="flex items-center">
+          <img 
+            src="/assets/ppte-logo-horizontal.svg" 
+            alt="Pretty Planet Travels and Events"
+            className="h-12 w-auto"
+          />
+        </Link>
 
         {/* Mobile Menu Button */}
         <button
