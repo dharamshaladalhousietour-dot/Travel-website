@@ -17,7 +17,7 @@ const MobileHeader = () => {
           <img 
             src="/assets/ppte-logo-custom.png"
             alt="Pretty Planet Travels and Events"
-            className="h-14 w-auto"
+            className="h-20 w-auto"
           />
         </Link>
 
