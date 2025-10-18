@@ -109,9 +109,10 @@ const Footer = () => {
           <div className="lg:col-span-2">
             <div className="mb-6">
               <img 
-                src={isHomePage ? "/assets/ppte-logo-custom.png" : "/assets/ppte-logo-elegant.svg"}
+                src="/assets/ppte-logo-high-res.svg"
                 alt="Pretty Planet Travels and Events"
-                className={isHomePage ? "h-24 w-auto mb-4 opacity-90" : "h-32 w-auto mb-4 opacity-90"}
+                className="h-28 w-auto mb-4 opacity-95"
+                style={{ filter: 'contrast(1.1) brightness(1.05)' }}
               />
             </div>
             
