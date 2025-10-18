@@ -105,17 +105,12 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-8">
           {/* Company Info */}
           <div className="lg:col-span-2">
-            <div className="flex items-center space-x-3 mb-6">
-              <div className="w-12 h-12 bg-gradient-to-r from-amber-500 to-amber-600 rounded-full flex items-center justify-center">
-                <span className="text-white font-bold text-xl">PP</span>
-              </div>
-              <div>
-                <h3 className="text-xl font-bold font-playfair">
-                  <span className="text-transparent bg-clip-text bg-gradient-to-r from-white to-blue-100">Pretty Planet</span>
-                  <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-400 to-orange-300 ml-1">Travels and Events</span>
-                </h3>
-                <p className="text-sm text-amber-300 font-medium">✨ Travel • Events • Weddings ✨</p>
-              </div>
+            <div className="mb-6">
+              <img 
+                src="/assets/ppte-logo-elegant.svg" 
+                alt="Pretty Planet Travels and Events"
+                className="h-32 w-auto mb-4 opacity-90"
+              />
             </div>
             
             <p className="text-blue-200 mb-6 leading-relaxed">
