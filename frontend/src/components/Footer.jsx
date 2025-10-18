@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import { MapPin, Phone, Mail, Facebook, Instagram, Twitter, Linkedin, Youtube, Heart } from 'lucide-react';
 import PaymentIcons from './PaymentIcons';
 import { Button } from './ui/button';
@@ -7,6 +7,8 @@ import { Input } from './ui/input';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
+  const location = useLocation();
+  const isHomePage = location.pathname === '/';
 
   const services = [
     { name: 'Luxury Travel Packages', href: '#packages' },
