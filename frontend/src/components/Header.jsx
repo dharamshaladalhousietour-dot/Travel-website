@@ -48,9 +48,10 @@ const Header = () => {
           {/* Logo */}
           <Link to="/" className="flex items-center flex-shrink-0">
             <img 
-              src={isHomePage ? "/assets/ppte-logo-custom.png" : "/assets/ppte-logo-elegant.svg"}
+              src={isHomePage ? "/assets/ppte-logo-high-res.svg" : "/assets/ppte-logo-high-res.svg"}
               alt="Pretty Planet Travels and Events - Luxury Destination Weddings & Travel"
-              className={isHomePage ? "h-16 w-auto hover:opacity-90 transition-opacity duration-300" : "h-20 w-auto hover:opacity-90 transition-opacity duration-300"}
+              className="h-24 w-auto hover:opacity-95 transition-opacity duration-300"
+              style={{ filter: 'contrast(1.1)' }}
             />
           </Link>
 
