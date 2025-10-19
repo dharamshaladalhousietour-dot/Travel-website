@@ -193,11 +193,12 @@ Details:
       />
       {/* Hero Section - Dharamshala Mountain Wedding */}
       <section className="relative h-screen flex items-center justify-center overflow-hidden">
-        <div 
-          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-          style={{
-            backgroundImage: "url('/assets/hero-dharamshala.jpg')"
-          }}
+        <img 
+          src="/assets/hero-dharamshala.jpg"
+          alt="Dharamshala Destination Wedding - Mountain Wedding Venue in Himachal Pradesh"
+          className="absolute inset-0 w-full h-full object-cover"
+          loading="eager"
+          fetchpriority="high"
         />
         <div className="absolute inset-0 bg-gradient-to-r from-purple-900/30 via-blue-800/20 to-transparent"></div>
         
