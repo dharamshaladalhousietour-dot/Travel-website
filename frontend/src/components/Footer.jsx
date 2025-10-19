@@ -109,9 +109,10 @@ const Footer = () => {
           <div className="lg:col-span-2">
             <div className="mb-6">
               <img 
-                src="/assets/ppte-logo-transparent.png"
-                alt="Pretty Planet Travels and Events"
+                src="/assets/ppte-logo-final.png"
+                alt="Pretty Planet Travels and Events - Travel • Corporate Events • Weddings"
                 className="h-24 w-auto mb-4 opacity-95"
+                loading="lazy"
               />
             </div>
             
