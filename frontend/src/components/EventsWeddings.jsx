@@ -302,6 +302,104 @@ Details:
         </div>
       </section>
 
+      {/* Why Choose Dharamshala - New Section */}
+      <section className="py-20 bg-gradient-to-b from-white to-teal-50">
+        <div className="max-w-7xl mx-auto px-4">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+              Why Choose <span className="text-transparent bg-clip-text bg-gradient-to-r from-teal-600 to-blue-600">Dharamshala</span>
+            </h2>
+            <div className="w-24 h-1 bg-gradient-to-r from-teal-500 to-blue-600 mx-auto mb-8"></div>
+            <p className="text-xl text-gray-700 max-w-4xl mx-auto leading-relaxed">
+              Nestled in the lap of the Dhauladhar mountain range, Dharamshala offers a unique blend of natural beauty, 
+              spiritual serenity, and modern amenities - making it the perfect destination for unforgettable weddings and events.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <Card className="p-8 hover:shadow-xl transition-all duration-300 border-t-4 border-teal-500">
+              <CardContent className="p-0">
+                <Mountain className="h-12 w-12 text-teal-600 mb-4" />
+                <h3 className="text-2xl font-bold text-gray-900 mb-4">Stunning Himalayan Backdrop</h3>
+                <p className="text-gray-600 leading-relaxed">
+                  Snow-capped Dhauladhar peaks provide breathtaking photo opportunities and an unforgettable atmosphere 
+                  for your special day. Every moment becomes a cherished memory against nature's grandeur.
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card className="p-8 hover:shadow-xl transition-all duration-300 border-t-4 border-blue-500">
+              <CardContent className="p-0">
+                <Flower className="h-12 w-12 text-blue-600 mb-4" />
+                <h3 className="text-2xl font-bold text-gray-900 mb-4">Tea Garden Ceremonies</h3>
+                <p className="text-gray-600 leading-relaxed">
+                  Imagine exchanging vows surrounded by lush green tea gardens with mountain mist and the fragrance 
+                  of fresh tea leaves. Dharamshala's tea estates offer romantic, intimate settings for your celebration.
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card className="p-8 hover:shadow-xl transition-all duration-300 border-t-4 border-rose-500">
+              <CardContent className="p-0">
+                <Heart className="h-12 w-12 text-rose-600 mb-4" />
+                <h3 className="text-2xl font-bold text-gray-900 mb-4">Spiritual & Peaceful Vibes</h3>
+                <p className="text-gray-600 leading-relaxed">
+                  Home to Tibetan culture and Buddhist monasteries, Dharamshala radiates peace and positive energy. 
+                  Start your journey together in this spiritually uplifting environment.
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card className="p-8 hover:shadow-xl transition-all duration-300 border-t-4 border-amber-500">
+              <CardContent className="p-0">
+                <MapPin className="h-12 w-12 text-amber-600 mb-4" />
+                <h3 className="text-2xl font-bold text-gray-900 mb-4">Accessible Yet Exclusive</h3>
+                <p className="text-gray-600 leading-relaxed">
+                  Well-connected by road and air (Gaggal Airport), Dharamshala offers the perfect balance of accessibility 
+                  for guests while maintaining its exclusive mountain retreat charm.
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card className="p-8 hover:shadow-xl transition-all duration-300 border-t-4 border-purple-500">
+              <CardContent className="p-0">
+                <Star className="h-12 w-12 text-purple-600 mb-4" />
+                <h3 className="text-2xl font-bold text-gray-900 mb-4">Luxury Heritage Venues</h3>
+                <p className="text-gray-600 leading-relaxed">
+                  From colonial-era resorts to modern luxury hotels with panoramic mountain views, Dharamshala offers 
+                  diverse venue options that blend heritage charm with contemporary comfort.
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card className="p-8 hover:shadow-xl transition-all duration-300 border-t-4 border-green-500">
+              <CardContent className="p-0">
+                <Camera className="h-12 w-12 text-green-600 mb-4" />
+                <h3 className="text-2xl font-bold text-gray-900 mb-4">Year-Round Destination</h3>
+                <p className="text-gray-600 leading-relaxed">
+                  Pleasant weather throughout the year makes Dharamshala perfect for any season - from spring blossoms 
+                  to winter snow, each season adds its unique magic to your celebration.
+                </p>
+              </CardContent>
+            </Card>
+          </div>
+
+          <div className="mt-16 text-center">
+            <p className="text-lg text-gray-700 mb-8 max-w-3xl mx-auto">
+              <strong className="text-teal-700">Himachal Pradesh Destination Weddings</strong> in Dharamshala combine natural beauty, 
+              cultural richness, and world-class hospitality. Let us create your dream <strong className="text-blue-700">Dharamshala wedding</strong> experience.
+            </p>
+            <Button 
+              size="lg" 
+              className="bg-gradient-to-r from-teal-600 to-blue-600 hover:from-teal-700 hover:to-blue-700 text-white px-10 py-6 text-lg font-semibold shadow-xl"
+              onClick={() => document.getElementById('enquiry')?.scrollIntoView({ behavior: 'smooth' })}
+            >
+              Plan Your Dharamshala Wedding
+            </Button>
+          </div>
+        </div>
+      </section>
+
       {/* Corporate Events */}
       <section className="py-20 bg-blue-50">
         <div className="max-w-7xl mx-auto px-4">
