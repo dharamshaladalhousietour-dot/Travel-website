@@ -1,0 +1,154 @@
+<svg width="600" height="120" viewBox="0 0 600 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Gradients for depth -->
+    <linearGradient id="globeGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#00A5B8;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#00838F;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#006B75;stop-opacity:1" />
+    </linearGradient>
+    
+    <radialGradient id="globeHighlight" cx="35%" cy="35%">
+      <stop offset="0%" style="stop-color:#7DD3DE;stop-opacity:0.5" />
+      <stop offset="100%" style="stop-color:#00838F;stop-opacity:0" />
+    </radialGradient>
+    
+    <linearGradient id="tealText" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#00838F;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#006B75;stop-opacity:1" />
+    </linearGradient>
+    
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="2" flood-opacity="0.2"/>
+    </filter>
+  </defs>
+  
+  <!-- Globe with Travel Landmarks (LEFT SIDE) -->
+  <g id="globe-icon" transform="translate(60, 60)">
+    <!-- Main Globe Circle -->
+    <circle cx="0" cy="0" r="45" fill="url(#globeGradient)" filter="url(#shadow)"/>
+    <circle cx="0" cy="0" r="45" fill="url(#globeHighlight)"/>
+    
+    <!-- Globe Grid Lines -->
+    <g stroke="#FFFFFF" stroke-width="1.5" opacity="0.3" fill="none">
+      <!-- Latitude lines -->
+      <ellipse cx="0" cy="0" rx="45" ry="15"/>
+      <ellipse cx="0" cy="0" rx="45" ry="30"/>
+      <line x1="-45" y1="0" x2="45" y2="0"/>
+      <!-- Longitude lines -->
+      <ellipse cx="0" cy="0" rx="15" ry="45"/>
+      <ellipse cx="0" cy="0" rx="30" ry="45"/>
+      <line x1="0" y1="-45" x2="0" y2="45"/>
+    </g>
+    
+    <!-- Continents (simplified) -->
+    <g fill="#FFFFFF" opacity="0.25">
+      <!-- North America -->
+      <path d="M -20,-15 Q -15,-20 -10,-18 L -8,-10 Q -12,-8 -15,-5 L -20,-8 Z"/>
+      <!-- Europe -->
+      <path d="M 5,-18 Q 10,-20 15,-18 L 12,-12 Q 8,-10 5,-12 Z"/>
+      <!-- Asia -->
+      <path d="M 18,-15 Q 25,-18 30,-12 L 28,-5 Q 22,-3 18,-8 Z"/>
+      <!-- South America -->
+      <path d="M -12,5 Q -8,8 -5,15 L -10,20 Q -15,15 -12,5 Z"/>
+      <!-- Africa -->
+      <path d="M 2,5 Q 8,8 10,15 L 5,22 Q 0,18 2,5 Z"/>
+      <!-- Australia -->
+      <path d="M 22,15 Q 28,18 25,25 Q 20,23 22,15 Z"/>
+    </g>
+    
+    <!-- Travel Landmarks Around Globe -->
+    
+    <!-- Eiffel Tower (top) -->
+    <g transform="translate(-5, -50)">
+      <path d="M 0,-8 L -3,0 L 3,0 Z" fill="#FFB84D" stroke="#FF9800" stroke-width="0.5"/>
+      <rect x="-1" y="-3" width="2" height="3" fill="#FFB84D"/>
+      <circle cx="0" cy="-9" r="1" fill="#FFD700"/>
+    </g>
+    
+    <!-- Statue of Liberty (right side) -->
+    <g transform="translate(52, -15)">
+      <rect x="-1.5" y="-5" width="3" height="8" fill="#90CAF9" stroke="#42A5F5" stroke-width="0.5"/>
+      <circle cx="0" cy="-6" r="2" fill="#90CAF9"/>
+      <line x1="-3" y1="-7" x2="3" y2="-7" stroke="#FFD700" stroke-width="1"/>
+      <line x1="0" y1="-8" x2="0" y2="-10" stroke="#FFB74D" stroke-width="1"/>
+    </g>
+    
+    <!-- Airplane (top right) -->
+    <g transform="translate(35, -45)">
+      <path d="M 0,0 L -6,-2 L -2,-3 L 0,-1 L 2,-3 L 6,-2 Z" fill="#4FC3F7" stroke="#0288D1" stroke-width="0.5"/>
+      <ellipse cx="0" cy="0" rx="2" ry="1" fill="#4FC3F7"/>
+      <path d="M -3,-1 L -5,1 M 3,-1 L 5,1" stroke="#0288D1" stroke-width="0.5"/>
+    </g>
+    
+    <!-- Taj Mahal (bottom right) -->
+    <g transform="translate(48, 35)">
+      <path d="M 0,-6 L -4,0 L 4,0 Z" fill="#FFF9C4" stroke="#FBC02D" stroke-width="0.5"/>
+      <circle cx="0" cy="-7" r="1.5" fill="#FFD54F"/>
+      <rect x="-3" y="0" width="6" height="3" fill="#FFF9C4" stroke="#FBC02D" stroke-width="0.5"/>
+    </g>
+    
+    <!-- Palm Tree (bottom left) -->
+    <g transform="translate(-48, 30)">
+      <rect x="-0.5" y="-5" width="1" height="8" fill="#8D6E63"/>
+      <path d="M 0,-5 Q -4,-8 -5,-6 M 0,-5 Q 4,-8 5,-6 M 0,-5 Q -3,-9 -2,-7 M 0,-5 Q 3,-9 2,-7" 
+            stroke="#66BB6A" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+    </g>
+    
+    <!-- Hot Air Balloon (left top) -->
+    <g transform="translate(-50, -30)">
+      <ellipse cx="0" cy="0" rx="3" ry="4" fill="#E57373"/>
+      <ellipse cx="0" cy="0" rx="2" ry="3" fill="#EF5350"/>
+      <rect x="-1.5" y="4" width="3" height="2" fill="#A1887F" stroke="#795548" stroke-width="0.5"/>
+      <line x1="-1.5" y1="4" x2="-2" y2="3" stroke="#8D6E63" stroke-width="0.5"/>
+      <line x1="1.5" y1="4" x2="2" y2="3" stroke="#8D6E63" stroke-width="0.5"/>
+    </g>
+    
+    <!-- Camera (bottom) -->
+    <g transform="translate(0, 52)">
+      <rect x="-3" y="-2" width="6" height="3" rx="0.5" fill="#757575" stroke="#424242" stroke-width="0.5"/>
+      <circle cx="0" cy="0" r="1.5" fill="#90CAF9" stroke="#42A5F5" stroke-width="0.5"/>
+      <circle cx="2.5" cy="-1" r="0.5" fill="#EF5350"/>
+    </g>
+    
+    <!-- Compass Star (left) -->
+    <g transform="translate(-52, 5)">
+      <path d="M 0,-3 L 0.5,0 L 3,0.5 L 0.5,0 L 0,3 L -0.5,0 L -3,0.5 L -0.5,0 Z" 
+            fill="#FFD700" stroke="#FFA000" stroke-width="0.5"/>
+    </g>
+    
+    <!-- Sparkle/Star -->
+    <g transform="translate(25, 48)" opacity="0.7">
+      <path d="M 0,-2 L 0.3,0 L 2,0.3 L 0.3,0 L 0,2 L -0.3,0 L -2,0.3 L -0.3,0 Z" fill="#FFD700"/>
+    </g>
+    <g transform="translate(-35, 48)" opacity="0.7">
+      <path d="M 0,-2 L 0.3,0 L 2,0.3 L 0.3,0 L 0,2 L -0.3,0 L -2,0.3 L -0.3,0 Z" fill="#4FC3F7"/>
+    </g>
+  </g>
+  
+  <!-- Brand Name and Tagline (RIGHT SIDE) -->
+  <g id="brand-text">
+    <!-- Main Brand Name -->
+    <text x="140" y="55" 
+          font-family="'Helvetica Neue', 'Arial', sans-serif" 
+          font-size="36" 
+          font-weight="800" 
+          fill="url(#tealText)" 
+          letter-spacing="0.5">
+      Pretty Planet Travels & Events
+    </text>
+    
+    <!-- Tagline -->
+    <text x="140" y="82" 
+          font-family="'Helvetica Neue', 'Arial', sans-serif" 
+          font-size="15" 
+          font-weight="500" 
+          fill="#E7A6A6" 
+          letter-spacing="2">
+      Travels · Corporate Events · Weddings
+    </text>
+    
+    <!-- Decorative dots -->
+    <circle cx="138" cy="55" r="1.5" fill="#E7A6A6"/>
+    <circle cx="138" cy="82" r="1" fill="#00838F"/>
+  </g>
+</svg>
