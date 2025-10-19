@@ -111,7 +111,7 @@ const Footer = () => {
               <img 
                 src="/assets/ppte-logo-transparent.png"
                 alt="Pretty Planet Travels and Events"
-                className="h-20 w-auto mb-4 opacity-95"
+                className="h-24 w-auto mb-4 opacity-95"
               />
             </div>
             
