@@ -972,14 +972,17 @@ const TourPackages = () => {
             )} */}
             {!imageError ? (
   <img
-    src={pkg.image}
-    alt={pkg.title}
+    src={`${pkg.image}&w=800&h=400&fit=crop&q=75&auto=format,compress`}
+    alt={`${pkg.title} - ${pkg.region} Tour Package | ${pkg.duration} | Pretty Planet Travels`}
     loading="lazy"
+    decoding="async"
     onLoad={() => setImageLoaded(true)}
     onError={() => setImageError(true)}
     className={`w-full h-full object-cover transition-opacity duration-300 ${
       imageLoaded ? "opacity-100" : "opacity-0"
     }`}
+    width="800"
+    height="400"
   />
 ) : (
   <div className="flex items-center justify-center w-full h-full bg-gray-300 text-gray-600 text-sm">
