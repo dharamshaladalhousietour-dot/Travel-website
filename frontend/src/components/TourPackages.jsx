@@ -972,7 +972,7 @@ const TourPackages = () => {
             )} */}
             {!imageError ? (
   <img
-    src={`${pkg.image}&w=800&h=400&fit=crop&q=75&auto=format,compress`}
+    src={pkg.image}
     alt={`${pkg.title} - ${pkg.region} Tour Package | ${pkg.duration} | Pretty Planet Travels`}
     loading="lazy"
     decoding="async"
