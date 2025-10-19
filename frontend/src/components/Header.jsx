@@ -46,11 +46,11 @@ const Header = () => {
       <nav className="max-w-7xl mx-auto px-4 py-3 md:py-5">
         <div className="flex justify-between items-center">
           {/* Logo */}
-          <Link to="/" className="flex items-center flex-shrink-0">
+          <Link to="/" className="flex items-center flex-shrink-0 my-2">
             <img 
               src="/assets/ppte-logo-transparent.png"
               alt="Pretty Planet Travels and Events - Luxury Destination Weddings & Travel"
-              className="h-16 md:h-20 w-auto hover:opacity-95 transition-all duration-300"
+              className="h-28 w-auto hover:opacity-95 transition-all duration-300"
             />
           </Link>
 
