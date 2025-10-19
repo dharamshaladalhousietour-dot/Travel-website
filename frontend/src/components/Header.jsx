@@ -48,9 +48,10 @@ const Header = () => {
           {/* Logo */}
           <Link to="/" className="flex items-center flex-shrink-0 my-2">
             <img 
-              src="/assets/ppte-logo-transparent.png"
-              alt="Pretty Planet Travels and Events - Luxury Destination Weddings & Travel"
-              className="h-28 w-auto hover:opacity-95 transition-all duration-300"
+              src="/assets/ppte-logo-final.png"
+              alt="Pretty Planet Travels and Events - Travel • Corporate Events • Weddings"
+              className="h-24 md:h-28 w-auto hover:opacity-95 transition-all duration-300"
+              loading="eager"
             />
           </Link>
 
