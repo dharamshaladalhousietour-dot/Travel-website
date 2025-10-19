@@ -13,11 +13,11 @@ const MobileHeader = () => {
       {/* Mobile Header */}
       <div className="px-4 py-4 flex justify-between items-center">
         {/* Logo */}
-        <Link to="/" className="flex items-center">
+        <Link to="/" className="flex items-center justify-center my-2">
           <img 
             src="/assets/ppte-logo-transparent.png"
             alt="Pretty Planet Travels and Events"
-            className="h-14 w-auto"
+            className="h-32 w-auto"
           />
         </Link>
 
