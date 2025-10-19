@@ -1187,6 +1187,14 @@ const TourPackages = () => {
             Explore our handcrafted tour packages across Kashmir, Himachal Pradesh, 
             Rajasthan, Uttarakhand, and South India with expert local guidance.
           </p>
+          <div className="mt-8">
+            <Link 
+              to="/events-weddings"
+              className="inline-flex items-center px-8 py-3 bg-gradient-to-r from-rose-500 to-pink-600 hover:from-rose-600 hover:to-pink-700 text-white font-semibold rounded-full shadow-lg transition-all duration-300 transform hover:scale-105"
+            >
+              ✨ Planning a Destination Wedding? Explore Our Dharamshala Wedding Packages
+            </Link>
+          </div>
         </div>
 
         {/* Filter Tabs */}
