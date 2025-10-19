@@ -15,9 +15,9 @@ const MobileHeader = () => {
         {/* Logo */}
         <Link to="/" className="flex items-center">
           <img 
-            src="/assets/ppte-logo-custom.png"
+            src="/assets/ppte-brand-logo.svg"
             alt="Pretty Planet Travels and Events"
-            className="h-20 w-auto"
+            className="h-16 w-auto"
           />
         </Link>
 
