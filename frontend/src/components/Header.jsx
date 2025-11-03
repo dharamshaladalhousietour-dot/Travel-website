@@ -43,7 +43,7 @@ const Header = () => {
       </div>
 
       {/* Main navigation */}
-      <nav className="max-w-7xl mx-auto px-4 py-3 md:py-5">
+      <nav className="max-w-7xl mx-auto px-4 py-4 md:py-6">
         <div className="flex justify-between items-center">
           {/* Logo */}
           <Link to="/" className="flex items-center flex-shrink-0 pl-3">
