@@ -1094,20 +1094,12 @@ const TourPackages = () => {
               </Button>
             </div>
             
-            {/* Razorpay Book Button */}
-            <RazorpayCheckout
-              amount={parseInt(pkg.price.replace(/[₹,]/g, '')) * 100}
-              name="Customer Name"
-              email="customer@example.com"
-              phone="9999999999"
-              packageName={pkg.title}
-            >
-              <Button 
-                className="w-full bg-gradient-to-r from-green-600 to-green-700 hover:from-green-700 hover:to-green-800 text-white font-bold py-3 text-lg shadow-lg transform hover:scale-105 transition-all duration-200 hover:shadow-xl active:scale-95"
-              >
-                💳 Book This Package - {pkg.price} (Live Mode)
-              </Button>
-            </RazorpayCheckout>
+            {/* Package Price Display */}
+            <div className="text-center py-3 mt-2">
+              <p className="text-lg font-bold" style={{ color: '#008080' }}>
+                Starting from {pkg.price}
+              </p>
+            </div>
           </div>
 
           {showDetails && (
