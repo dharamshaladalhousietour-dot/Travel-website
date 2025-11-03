@@ -46,25 +46,25 @@ const Header = () => {
       <nav className="max-w-7xl mx-auto px-4 py-4 md:py-6">
         <div className="flex justify-between items-center">
           {/* Logo */}
-          <Link to="/" className="flex items-center flex-shrink-0 pl-3">
+          <Link to="/" className="flex items-center flex-shrink-0 pl-4 pr-2">
             <img 
               src="/assets/ppte-logo-new.jpg"
               alt="Pretty Planet Travels and Events - Travel | Corporate Events | Weddings"
-              className="h-[80px] w-auto object-contain hover:opacity-95 transition-all duration-300"
-              style={{ maxHeight: '80px' }}
+              className="h-[70px] w-auto object-contain hover:opacity-95 transition-all duration-300"
+              style={{ maxHeight: '70px', filter: 'contrast(1.05) brightness(1.05)' }}
               loading="eager"
             />
           </Link>
 
           {/* Desktop Navigation */}
           <div className="hidden lg:flex items-center space-x-6 flex-grow justify-center">
-            <Link to="/" className="text-gray-700 hover:text-blue-900 font-medium transition-colors px-3 py-2 rounded-lg hover:bg-blue-50">Home</Link>
-            <a href="/#about" className="text-gray-700 hover:text-blue-900 font-medium transition-colors px-3 py-2 rounded-lg hover:bg-blue-50">About</a>
-            <a href="/#services" className="text-gray-700 hover:text-blue-900 font-medium transition-colors px-3 py-2 rounded-lg hover:bg-blue-50">Services</a>
-            <Link to="/tour-packages" className="text-gray-700 hover:text-blue-900 font-medium transition-colors px-3 py-2 rounded-lg hover:bg-blue-50">Tour Packages</Link>
-            <Link to="/events-weddings" className="text-gray-700 hover:text-blue-900 font-medium transition-colors px-3 py-2 rounded-lg hover:bg-blue-50">Events & Weddings</Link>
-            <a href="/#gallery" className="text-gray-700 hover:text-blue-900 font-medium transition-colors px-3 py-2 rounded-lg hover:bg-blue-50">Gallery</a>
-            <a href="/#contact" className="text-gray-700 hover:text-blue-900 font-medium transition-colors px-3 py-2 rounded-lg hover:bg-blue-50">Contact</a>
+            <Link to="/" className="text-[#0D3B66] hover:text-blue-900 font-medium transition-colors px-3 py-2 rounded-lg hover:bg-blue-50">Home</Link>
+            <a href="/#about" className="text-[#0D3B66] hover:text-blue-900 font-medium transition-colors px-3 py-2 rounded-lg hover:bg-blue-50">About</a>
+            <a href="/#services" className="text-[#0D3B66] hover:text-blue-900 font-medium transition-colors px-3 py-2 rounded-lg hover:bg-blue-50">Services</a>
+            <Link to="/tour-packages" className="text-[#0D3B66] hover:text-blue-900 font-medium transition-colors px-3 py-2 rounded-lg hover:bg-blue-50">Tour Packages</Link>
+            <Link to="/events-weddings" className="text-[#0D3B66] hover:text-blue-900 font-medium transition-colors px-3 py-2 rounded-lg hover:bg-blue-50">Events & Weddings</Link>
+            <a href="/#gallery" className="text-[#0D3B66] hover:text-blue-900 font-medium transition-colors px-3 py-2 rounded-lg hover:bg-blue-50">Gallery</a>
+            <a href="/#contact" className="text-[#0D3B66] hover:text-blue-900 font-medium transition-colors px-3 py-2 rounded-lg hover:bg-blue-50">Contact</a>
           </div>
 
           {/* CTA Buttons */}
