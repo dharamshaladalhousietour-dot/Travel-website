@@ -1052,32 +1052,51 @@ const TourPackages = () => {
             )}
           </div>
 
-          <div className="flex flex-col sm:flex-row space-y-2 sm:space-y-0 sm:space-x-2 mb-4">
-            <Link to={`/package/${pkg.slug}`} className="flex-1">
+          <div className="flex flex-col space-y-3">
+            {/* Primary Action Buttons - Always Visible */}
+            <div className="flex flex-col sm:flex-row space-y-2 sm:space-y-0 sm:space-x-2">
+              <Link to={`/package/${pkg.slug}`} className="flex-1">
+                <Button 
+                  className="w-full bg-blue-600 hover:bg-blue-700 transition-colors duration-200"
+                >
+                  View Details
+                </Button>
+              </Link>
               <Button 
-                className="w-full bg-blue-600 hover:bg-blue-700 transition-colors duration-200"
+                variant="outline" 
+                className="flex-1 border-blue-600 text-blue-600 hover:bg-blue-50 transition-colors duration-200"
+                onClick={() => {
+                  console.log('Send Enquiry clicked for:', pkg.title);
+                  setSelectedPackage(pkg);
+                  setShowEnquiryForm(true);
+                }}
               >
-                View Details
+                <Send className="h-4 w-4 mr-2" />
+                Send Enquiry
               </Button>
-            </Link>
-            <Button 
-              variant="outline" 
-              className="flex-1 border-blue-600 text-blue-600 hover:bg-blue-50 transition-colors duration-200"
-              onClick={() => {
-                console.log('Send Enquiry clicked for:', pkg.title);
-                setSelectedPackage(pkg);
-                setShowEnquiryForm(true);
-              }}
-            >
-              <Send className="h-4 w-4 mr-2" />
-              Send Enquiry
-            </Button>
-          </div>
-          
-          {/* Book This Package Button */}
-          <div className="mt-3">
+            </div>
+
+            {/* CTA Buttons - Plan Your Trip & Enquire Now */}
+            <div className="flex flex-col sm:flex-row space-y-2 sm:space-y-0 sm:space-x-2">
+              <Button 
+                className="flex-1 bg-gradient-to-r from-teal-600 to-blue-600 hover:from-teal-700 hover:to-blue-700 text-white font-semibold shadow-md"
+                onClick={handleEnquireNow}
+              >
+                <Send className="h-4 w-4 mr-2" />
+                Enquire Now
+              </Button>
+              <Button 
+                variant="outline" 
+                className="flex-1 border-2 border-teal-600 text-teal-700 hover:bg-teal-50 font-semibold"
+                onClick={handleEnquireNow}
+              >
+                Plan Your Trip
+              </Button>
+            </div>
+            
+            {/* Razorpay Book Button */}
             <RazorpayCheckout
-              amount={parseInt(pkg.price.replace(/[₹,]/g, '')) * 100} // Convert price to paise
+              amount={parseInt(pkg.price.replace(/[₹,]/g, '')) * 100}
               name="Customer Name"
               email="customer@example.com"
               phone="9999999999"
