@@ -942,18 +942,39 @@ const TourPackages = () => {
       setImageLoaded(true);
     };
 
-    // High-quality fallback images based on region
+    // High-quality fallback images based on region with data URLs as ultimate fallback
     const getFallbackImage = (region) => {
-      const fallbacks = {
-        'Kashmir': 'https://images.unsplash.com/photo-1595815771614-ade9d652a65d?w=800&h=400&fit=crop&q=80',
-        'Himachal': 'https://images.unsplash.com/photo-1648034902541-b239c599114e?w=800&h=400&fit=crop&q=80',
-        'Rajasthan': 'https://images.unsplash.com/photo-1599661046289-e31897b6a1ba?w=800&h=400&fit=crop&q=80',
-        'Goa': 'https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?w=800&h=400&fit=crop&q=80',
-        'Kerala': 'https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?w=800&h=400&fit=crop&q=80',
-        'Uttarakhand': 'https://images.unsplash.com/photo-1581791534721-e599df4417f7?w=800&h=400&fit=crop&q=80',
-        'International': 'https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=800&h=400&fit=crop&q=80'
+      // Using a simple colored placeholder as ultimate fallback
+      const createColorPlaceholder = (color, text) => {
+        const canvas = document.createElement('canvas');
+        canvas.width = 800;
+        canvas.height = 400;
+        const ctx = canvas.getContext('2d');
+        ctx.fillStyle = color;
+        ctx.fillRect(0, 0, 800, 400);
+        ctx.fillStyle = '#ffffff';
+        ctx.font = 'bold 40px Arial';
+        ctx.textAlign = 'center';
+        ctx.textBaseline = 'middle';
+        ctx.fillText(text, 400, 200);
+        return canvas.toDataURL();
       };
-      return fallbacks[region] || 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&h=400&fit=crop&q=80';
+
+      const fallbacks = {
+        'Kashmir': createColorPlaceholder('#0a3570', 'Kashmir Valley'),
+        'Himachal': createColorPlaceholder('#1e4d7b', 'Himachal Pradesh'),
+        'Rajasthan': createColorPlaceholder('#d97706', 'Rajasthan'),
+        'Goa': createColorPlaceholder('#059669', 'Goa Beaches'),
+        'Kerala': createColorPlaceholder('#047857', 'Kerala Backwaters'),
+        'Uttarakhand': createColorPlaceholder('#0369a1', 'Uttarakhand'),
+        'Madhya Pradesh': createColorPlaceholder('#7c3aed', 'Madhya Pradesh'),
+        'Karnataka': createColorPlaceholder('#db2777', 'Karnataka'),
+        'West Bengal': createColorPlaceholder('#dc2626', 'West Bengal'),
+        'Tamil Nadu': createColorPlaceholder('#ea580c', 'Tamil Nadu'),
+        'Andhra Pradesh': createColorPlaceholder('#0891b2', 'Andhra Pradesh'),
+        'International': createColorPlaceholder('#6366f1', 'International Destination')
+      };
+      return fallbacks[region] || createColorPlaceholder('#64748b', pkg.region || 'Destination');
     };
 
     // Generate optimized image URL with WebP support
