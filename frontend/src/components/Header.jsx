@@ -46,12 +46,12 @@ const Header = () => {
       <nav className="max-w-7xl mx-auto px-4 py-3 md:py-5">
         <div className="flex justify-between items-center">
           {/* Logo */}
-          <Link to="/" className="flex items-center flex-shrink-0 px-4">
+          <Link to="/" className="flex items-center flex-shrink-0 pl-3">
             <img 
               src="/assets/ppte-logo-full.jpg"
               alt="Pretty Planet Travels and Events - Love. Travel. Celebrate."
-              className="h-[100px] w-[400px] object-contain hover:opacity-95 transition-all duration-300"
-              style={{ maxWidth: '400px', maxHeight: '100px' }}
+              className="h-[90px] w-[380px] object-contain hover:opacity-95 transition-all duration-300"
+              style={{ maxWidth: '380px', maxHeight: '90px' }}
               loading="eager"
             />
           </Link>
