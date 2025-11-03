@@ -13,12 +13,12 @@ const MobileHeader = () => {
       {/* Mobile Header */}
       <div className="px-4 py-4 flex justify-between items-center">
         {/* Logo */}
-        <Link to="/" className="flex items-center pl-4 pr-2">
+        <Link to="/" className="flex items-center pl-4 pr-3">
           <img 
             src="/assets/ppte-logo-new.jpg"
             alt="Pretty Planet Travels and Events - Travel | Corporate Events | Weddings"
-            className="h-[45px] w-auto object-contain"
-            style={{ maxHeight: '45px', filter: 'contrast(1.05) brightness(1.05)' }}
+            className="h-[35px] w-auto object-contain"
+            style={{ maxHeight: '35px', filter: 'contrast(1.08) brightness(1.08) saturate(1.1)' }}
             loading="eager"
           />
         </Link>
