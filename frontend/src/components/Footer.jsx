@@ -107,11 +107,12 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-8">
           {/* Company Info */}
           <div className="lg:col-span-2">
-            <div className="mb-6">
+            <div className="mb-6 flex justify-center md:justify-start">
               <img 
-                src="/assets/ppte-logo-final.png"
-                alt="Pretty Planet Travels and Events - Travel • Corporate Events • Weddings"
-                className="h-24 w-auto mb-4 opacity-95"
+                src="/assets/ppte-logo-full.jpg"
+                alt="Pretty Planet Travels and Events - Love. Travel. Celebrate."
+                className="h-[70px] w-[200px] object-contain opacity-95"
+                style={{ maxWidth: '200px', maxHeight: '70px' }}
                 loading="lazy"
               />
             </div>
