@@ -1014,23 +1014,7 @@ const TourPackages = () => {
                 height="400"
               />
             )}
-
-
-
-            {/* Actual image with optimization */}
-            {/* <img 
-              src={imageError ? getFallbackImage(pkg.region) : `${pkg.image}&w=800&h=400&fit=crop&q=80&auto=compress`} 
-              alt={pkg.title}
-              className={`w-full h-full object-cover transition-all duration-300 ${
-                imageLoaded ? 'opacity-100 scale-100' : 'opacity-0 scale-110'
-              }`}
-              onError={handleImageError}
-              onLoad={handleImageLoad}
-              loading="lazy"
-              decoding="async"
-              width="800"
-              height="400"
-            /> */}
+          </div>
           </div>
           
           <div className="absolute top-4 left-4">
