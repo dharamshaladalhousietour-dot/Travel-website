@@ -977,15 +977,15 @@ const TourPackages = () => {
       return fallbacks[region] || createColorPlaceholder('#64748b', pkg.region || 'Destination');
     };
 
-    // Generate optimized image URL with WebP support
+    // Generate optimized image URL with WebP support and fallback
     const getOptimizedImageUrl = (url) => {
       if (!url) return getFallbackImage(pkg.region);
       
-      // Check if it's an Unsplash URL
-      if (url.includes('unsplash.com')) {
-        // Add optimization parameters for Unsplash
+      // Check if it's an Unsplash or Pexels URL
+      if (url.includes('unsplash.com') || url.includes('pexels.com')) {
+        // Add optimization parameters
         const separator = url.includes('?') ? '&' : '?';
-        return `${url}${separator}w=800&h=400&fit=crop&q=80&fm=webp&auto=format`;
+        return `${url}${separator}w=800&h=400&fit=crop&q=80&auto=format`;
       }
       
       return url;
@@ -1001,39 +1001,20 @@ const TourPackages = () => {
               <div className="absolute inset-0 bg-gray-200 animate-pulse" />
             )}
             
-            {/* Image with WebP optimization and fallback */}
-            {!imageError ? (
-              <picture>
-                <source 
-                  srcSet={getOptimizedImageUrl(pkg.image)} 
-                  type="image/webp" 
-                />
-                <img
-                  src={pkg.image}
-                  alt={`${pkg.title} - ${pkg.duration} tour package in ${pkg.region}. Explore ${pkg.highlights[0]}, ${pkg.highlights[1]} and more with Pretty Planet Travels`}
-                  loading="lazy"
-                  decoding="async"
-                  onLoad={handleImageLoad}
-                  onError={handleImageError}
-                  className={`w-full h-48 object-cover transition-opacity duration-300 ${
-                    imageLoaded ? "opacity-100" : "opacity-0"
-                  }`}
-                  width="800"
-                  height="400"
-                />
-              </picture>
-            ) : (
-              <img
-                src={getFallbackImage(pkg.region)}
-                alt={`${pkg.title} - ${pkg.duration} tour package in ${pkg.region}. Explore ${pkg.highlights[0]}, ${pkg.highlights[1]} and more with Pretty Planet Travels`}
-                loading="lazy"
-                decoding="async"
-                onLoad={handleImageLoad}
-                className="w-full h-48 object-cover"
-                width="800"
-                height="400"
-              />
-            )}
+            {/* Image with WebP optimization and guaranteed fallback */}
+            <img
+              src={imageError ? getFallbackImage(pkg.region) : getOptimizedImageUrl(pkg.image)}
+              alt={`${pkg.title} - ${pkg.duration} tour package in ${pkg.region}. Explore ${pkg.highlights[0]}, ${pkg.highlights[1]} and more with Pretty Planet Travels`}
+              loading="lazy"
+              decoding="async"
+              onLoad={handleImageLoad}
+              onError={handleImageError}
+              className={`w-full h-48 object-cover transition-opacity duration-300 ${
+                imageLoaded ? "opacity-100" : "opacity-0"
+              }`}
+              width="800"
+              height="400"
+            />
           </div>
           
           <div className="absolute top-4 left-4">
