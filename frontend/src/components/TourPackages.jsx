@@ -957,38 +957,63 @@ const TourPackages = () => {
       return fallbacks[region] || 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&h=400&fit=crop&q=80';
     };
 
+    // Generate optimized image URL with WebP support
+    const getOptimizedImageUrl = (url) => {
+      if (!url) return getFallbackImage(pkg.region);
+      
+      // Check if it's an Unsplash URL
+      if (url.includes('unsplash.com')) {
+        // Add optimization parameters for Unsplash
+        const separator = url.includes('?') ? '&' : '?';
+        return `${url}${separator}w=800&h=400&fit=crop&q=80&fm=webp&auto=format`;
+      }
+      
+      return url;
+    };
+
     return (
       <Card className="overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
         <div className="relative">
           {/* Fixed aspect ratio container to prevent layout shifts */}
-
-          {!imageLoaded && (
-  <div className="absolute inset-0 bg-gray-200 animate-pulse" />
-)}
           <div className="w-full h-48 bg-gray-200 relative overflow-hidden">
             {/* Loading skeleton */}
-            {/* {!imageLoaded && (
-              <div className="absolute inset-0 bg-gradient-to-r from-gray-200 via-gray-300 to-gray-200 animate-pulse" />
-            )} */}
+            {!imageLoaded && (
+              <div className="absolute inset-0 bg-gray-200 animate-pulse" />
+            )}
+            
+            {/* Image with WebP optimization and fallback */}
             {!imageError ? (
-  <img
-    src={pkg.image}
-    alt={`${pkg.title} - ${pkg.region} Tour Package | ${pkg.duration} | Pretty Planet Travels`}
-    loading="lazy"
-    decoding="async"
-    onLoad={() => setImageLoaded(true)}
-    onError={() => setImageError(true)}
-    className={`w-full h-full object-cover transition-opacity duration-300 ${
-      imageLoaded ? "opacity-100" : "opacity-0"
-    }`}
-    width="800"
-    height="400"
-  />
-) : (
-  <div className="flex items-center justify-center w-full h-full bg-gray-300 text-gray-600 text-sm">
-    Image not available
-  </div>
-)}
+              <picture>
+                <source 
+                  srcSet={getOptimizedImageUrl(pkg.image)} 
+                  type="image/webp" 
+                />
+                <img
+                  src={pkg.image}
+                  alt={`${pkg.title} - ${pkg.duration} tour package in ${pkg.region}. Explore ${pkg.highlights[0]}, ${pkg.highlights[1]} and more with Pretty Planet Travels`}
+                  loading="lazy"
+                  decoding="async"
+                  onLoad={handleImageLoad}
+                  onError={handleImageError}
+                  className={`w-full h-48 object-cover transition-opacity duration-300 ${
+                    imageLoaded ? "opacity-100" : "opacity-0"
+                  }`}
+                  width="800"
+                  height="400"
+                />
+              </picture>
+            ) : (
+              <img
+                src={getFallbackImage(pkg.region)}
+                alt={`${pkg.title} - ${pkg.duration} tour package in ${pkg.region}. Explore ${pkg.highlights[0]}, ${pkg.highlights[1]} and more with Pretty Planet Travels`}
+                loading="lazy"
+                decoding="async"
+                onLoad={handleImageLoad}
+                className="w-full h-48 object-cover"
+                width="800"
+                height="400"
+              />
+            )}
 
 
 
