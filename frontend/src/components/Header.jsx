@@ -48,10 +48,10 @@ const Header = () => {
           {/* Logo */}
           <Link to="/" className="flex items-center flex-shrink-0 pl-3">
             <img 
-              src="/assets/ppte-logo-full.jpg"
-              alt="Pretty Planet Travels and Events - Love. Travel. Celebrate."
-              className="h-[90px] w-[380px] object-contain hover:opacity-95 transition-all duration-300"
-              style={{ maxWidth: '380px', maxHeight: '90px' }}
+              src="/assets/ppte-logo-new.jpg"
+              alt="Pretty Planet Travels and Events - Travel | Corporate Events | Weddings"
+              className="h-[80px] w-auto object-contain hover:opacity-95 transition-all duration-300"
+              style={{ maxHeight: '80px' }}
               loading="eager"
             />
           </Link>
