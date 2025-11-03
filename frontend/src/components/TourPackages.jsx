@@ -942,44 +942,9 @@ const TourPackages = () => {
       setImageLoaded(true);
     };
 
-    // High-quality fallback images based on region with data URLs as ultimate fallback
-    const getFallbackImage = (region) => {
-      // Using a simple colored placeholder as ultimate fallback
-      const createColorPlaceholder = (color, text) => {
-        const canvas = document.createElement('canvas');
-        canvas.width = 800;
-        canvas.height = 400;
-        const ctx = canvas.getContext('2d');
-        ctx.fillStyle = color;
-        ctx.fillRect(0, 0, 800, 400);
-        ctx.fillStyle = '#ffffff';
-        ctx.font = 'bold 40px Arial';
-        ctx.textAlign = 'center';
-        ctx.textBaseline = 'middle';
-        ctx.fillText(text, 400, 200);
-        return canvas.toDataURL();
-      };
-
-      const fallbacks = {
-        'Kashmir': createColorPlaceholder('#0a3570', 'Kashmir Valley'),
-        'Himachal': createColorPlaceholder('#1e4d7b', 'Himachal Pradesh'),
-        'Rajasthan': createColorPlaceholder('#d97706', 'Rajasthan'),
-        'Goa': createColorPlaceholder('#059669', 'Goa Beaches'),
-        'Kerala': createColorPlaceholder('#047857', 'Kerala Backwaters'),
-        'Uttarakhand': createColorPlaceholder('#0369a1', 'Uttarakhand'),
-        'Madhya Pradesh': createColorPlaceholder('#7c3aed', 'Madhya Pradesh'),
-        'Karnataka': createColorPlaceholder('#db2777', 'Karnataka'),
-        'West Bengal': createColorPlaceholder('#dc2626', 'West Bengal'),
-        'Tamil Nadu': createColorPlaceholder('#ea580c', 'Tamil Nadu'),
-        'Andhra Pradesh': createColorPlaceholder('#0891b2', 'Andhra Pradesh'),
-        'International': createColorPlaceholder('#6366f1', 'International Destination')
-      };
-      return fallbacks[region] || createColorPlaceholder('#64748b', pkg.region || 'Destination');
-    };
-
     // Generate optimized image URL with WebP support and fallback
     const getOptimizedImageUrl = (url) => {
-      if (!url) return getFallbackImage(pkg.region);
+      if (!url) return null;
       
       // Check if it's an Unsplash or Pexels URL
       if (url.includes('unsplash.com') || url.includes('pexels.com')) {
