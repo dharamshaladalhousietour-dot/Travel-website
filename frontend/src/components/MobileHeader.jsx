@@ -15,10 +15,10 @@ const MobileHeader = () => {
         {/* Logo */}
         <Link to="/" className="flex items-center pl-3">
           <img 
-            src="/assets/ppte-logo-full.jpg"
-            alt="Pretty Planet Travels and Events - Love. Travel. Celebrate."
-            className="h-[55px] w-[210px] object-contain"
-            style={{ maxWidth: '210px', maxHeight: '55px' }}
+            src="/assets/ppte-logo-new.jpg"
+            alt="Pretty Planet Travels and Events - Travel | Corporate Events | Weddings"
+            className="h-[50px] w-auto object-contain"
+            style={{ maxHeight: '50px' }}
             loading="eager"
           />
         </Link>
