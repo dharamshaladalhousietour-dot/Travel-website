@@ -1214,12 +1214,14 @@ const TourPackages = () => {
             Explore our handcrafted tour packages across Kashmir, Himachal Pradesh, 
             Rajasthan, Uttarakhand, and South India with expert local guidance.
           </p>
-          <div className="mt-8">
+          <div className="mt-8 mb-4">
             <Link 
               to="/events-weddings"
-              className="inline-flex items-center px-8 py-3 bg-gradient-to-r from-rose-500 to-pink-600 hover:from-rose-600 hover:to-pink-700 text-white font-semibold rounded-full shadow-lg transition-all duration-300 transform hover:scale-105"
+              className="inline-flex items-center justify-center px-8 py-4 bg-gradient-to-r from-rose-500 to-pink-600 hover:from-rose-600 hover:to-pink-700 text-white font-bold text-lg rounded-full shadow-xl transition-all duration-300 transform hover:scale-105 hover:shadow-2xl"
             >
-              ✨ Planning a Destination Wedding? Explore Our Dharamshala Wedding Packages
+              <span className="mr-2">✨</span>
+              Planning a Destination Wedding? Explore Our Dharamshala Wedding Packages
+              <span className="ml-2">→</span>
             </Link>
           </div>
         </div>
