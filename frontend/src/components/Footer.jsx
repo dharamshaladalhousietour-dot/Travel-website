@@ -109,10 +109,10 @@ const Footer = () => {
           <div className="lg:col-span-2">
             <div className="mb-6 flex justify-center md:justify-start">
               <img 
-                src="/assets/ppte-logo-full.jpg"
-                alt="Pretty Planet Travels and Events - Love. Travel. Celebrate."
-                className="h-[70px] w-[200px] object-contain opacity-95"
-                style={{ maxWidth: '200px', maxHeight: '70px' }}
+                src="/assets/ppte-logo-new.jpg"
+                alt="Pretty Planet Travels and Events - Travel | Corporate Events | Weddings"
+                className="h-[60px] w-auto object-contain opacity-95"
+                style={{ maxHeight: '60px' }}
                 loading="lazy"
               />
             </div>
