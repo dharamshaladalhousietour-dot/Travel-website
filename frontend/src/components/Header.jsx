@@ -68,7 +68,7 @@ const Header = () => {
           </div>
 
           {/* CTA Buttons */}
-          <div className="hidden lg:flex items-center space-x-2 flex-shrink-0">
+          <div className="hidden lg:flex items-center space-x-2 flex-shrink-0 pr-4">
             <RazorpayCheckout
               amount={100} // ₹1 for testing
               name="Test User"
@@ -77,7 +77,7 @@ const Header = () => {
               packageName="General Payment"
             >
               <Button 
-                className="bg-gradient-to-r from-green-600 to-green-700 hover:from-green-700 hover:to-green-800 text-white font-bold px-4 py-2 text-xs shadow-lg transform hover:scale-105 transition-all duration-300 whitespace-nowrap"
+                className="bg-gradient-to-r from-green-600 to-green-700 hover:from-green-700 hover:to-green-800 text-white font-bold px-6 py-2.5 text-sm shadow-lg transform hover:scale-105 transition-all duration-300 whitespace-nowrap"
               >
                 💳 Pay Now
               </Button>
