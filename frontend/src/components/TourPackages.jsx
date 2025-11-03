@@ -1001,20 +1001,41 @@ const TourPackages = () => {
               <div className="absolute inset-0 bg-gray-200 animate-pulse" />
             )}
             
-            {/* Image with WebP optimization and guaranteed fallback */}
-            <img
-              src={imageError ? getFallbackImage(pkg.region) : getOptimizedImageUrl(pkg.image)}
-              alt={`${pkg.title} - ${pkg.duration} tour package in ${pkg.region}. Explore ${pkg.highlights[0]}, ${pkg.highlights[1]} and more with Pretty Planet Travels`}
-              loading="lazy"
-              decoding="async"
-              onLoad={handleImageLoad}
-              onError={handleImageError}
-              className={`w-full h-48 object-cover transition-opacity duration-300 ${
-                imageLoaded ? "opacity-100" : "opacity-0"
-              }`}
-              width="800"
-              height="400"
-            />
+            {/* Image with WebP optimization and guaranteed CSS fallback */}
+            {!imageError ? (
+              <img
+                src={getOptimizedImageUrl(pkg.image)}
+                alt={`${pkg.title} - ${pkg.duration} tour package in ${pkg.region}. Explore ${pkg.highlights[0]}, ${pkg.highlights[1]} and more with Pretty Planet Travels`}
+                loading="lazy"
+                decoding="async"
+                onLoad={handleImageLoad}
+                onError={handleImageError}
+                className={`w-full h-48 object-cover transition-opacity duration-300 ${
+                  imageLoaded ? "opacity-100" : "opacity-0"
+                }`}
+                width="800"
+                height="400"
+              />
+            ) : (
+              <div 
+                className="w-full h-48 flex items-center justify-center text-white font-bold text-2xl"
+                style={{
+                  background: pkg.region === 'Kashmir' ? 'linear-gradient(135deg, #0a3570 0%, #1e4d7b 100%)' :
+                             pkg.region === 'Himachal' ? 'linear-gradient(135deg, #1e4d7b 0%, #2563eb 100%)' :
+                             pkg.region === 'Rajasthan' ? 'linear-gradient(135deg, #d97706 0%, #f59e0b 100%)' :
+                             pkg.region === 'Goa' ? 'linear-gradient(135deg, #059669 0%, #10b981 100%)' :
+                             pkg.region === 'Kerala' ? 'linear-gradient(135deg, #047857 0%, #059669 100%)' :
+                             pkg.region === 'Uttarakhand' ? 'linear-gradient(135deg, #0369a1 0%, #0284c7 100%)' :
+                             pkg.region === 'International' ? 'linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%)' :
+                             'linear-gradient(135deg, #64748b 0%, #94a3b8 100%)'
+                }}
+              >
+                <div className="text-center">
+                  <div className="text-3xl mb-2">📸</div>
+                  <div>{pkg.region}</div>
+                </div>
+              </div>
+            )}
           </div>
           
           <div className="absolute top-4 left-4">
