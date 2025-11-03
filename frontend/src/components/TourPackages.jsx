@@ -1015,12 +1015,11 @@ const TourPackages = () => {
               />
             )}
           </div>
-          </div>
           
           <div className="absolute top-4 left-4">
             <Badge className="bg-blue-600 text-white shadow-lg">{pkg.region}</Badge>
           </div>
-          <div className="absolute top-4 rigsendht-4">
+          <div className="absolute top-4 right-4">
             <Badge className="bg-green-600 text-white shadow-lg">{pkg.price}</Badge>
           </div>
         </div>
