@@ -332,12 +332,12 @@ Looking forward to creating unforgettable memories with Pretty Planet!`;
                   className="overflow-hidden hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 rounded-2xl bg-gradient-to-b from-white to-rose-50/30"
                   style={{ boxShadow: '0 4px 20px rgba(236, 72, 153, 0.1)' }}
                 >
-                  {/* Package Image */}
-                  <div className="relative h-80 overflow-hidden">
+                  {/* Package Image - Reduced Height */}
+                  <div className="relative h-64 overflow-hidden group">
                     <img 
                       src={pkg.image}
                       alt={pkg.altText}
-                      className="w-full h-full object-cover transition-transform duration-700 hover:scale-110"
+                      className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                       style={{ filter: 'sepia(10%) saturate(110%) brightness(105%)' }}
                       onError={(e) => {
                         e.target.src = 'data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" width="800" height="400"%3E%3Crect fill="%23fce7f3" width="800" height="400"/%3E%3Ctext x="50%25" y="50%25" fill="%23ec4899" text-anchor="middle" dominant-baseline="middle" font-family="serif" font-size="24"%3E' + encodeURIComponent(pkg.title) + '%3C/text%3E%3C/svg%3E';
@@ -346,34 +346,42 @@ Looking forward to creating unforgettable memories with Pretty Planet!`;
                     {/* Soft Gradient Overlay */}
                     <div className="absolute inset-0 bg-gradient-to-t from-rose-900/40 via-transparent to-transparent"></div>
                     
-                    {/* Custom Text Badge */}
-                    <div className="absolute top-6 right-6 bg-gradient-to-br from-rose-300/95 via-pink-300/95 to-amber-200/95 px-5 py-3 rounded-full shadow-xl backdrop-blur-sm">
-                      <span className="text-rose-900 font-semibold text-xs tracking-wide">{pkg.customText}</span>
+                    {/* Custom Text Badge - Reduced Padding */}
+                    <div className="absolute top-4 right-4 bg-gradient-to-br from-rose-300/95 via-pink-300/95 to-amber-200/95 px-4 py-2 rounded-full shadow-xl backdrop-blur-sm">
+                      <span className="text-rose-900 font-semibold text-sm">{pkg.customText}</span>
                     </div>
                   </div>
 
-                  <CardContent className="p-8">
-                    <h3 className="text-3xl font-serif font-semibold text-[#0D3B66] mb-4">{pkg.title}</h3>
-                    <p className="text-gray-600 mb-6 leading-relaxed font-light text-base">
+                  <CardContent className="p-6">
+                    {/* Title - Font Size 22px */}
+                    <h3 className="font-playfair font-semibold mb-3 group-hover:text-[#D9B38C] transition-colors duration-300" style={{ fontSize: '22px', color: '#2D2D2D' }}>
+                      {pkg.title}
+                    </h3>
+                    
+                    {/* Description - Limited to 2-3 Lines */}
+                    <p className="text-gray-600 mb-4 leading-relaxed font-lato line-clamp-3" style={{ fontSize: '15px', lineHeight: '1.4', color: '#555555' }}>
                       {pkg.description}
                     </p>
                     
-                    {/* Features with Check Icons */}
-                    <div className="space-y-3 mb-8">
-                      {pkg.features.map((feature, idx) => (
-                        <div key={idx} className="flex items-start space-x-3">
-                          <Check className="h-5 w-5 text-rose-500 flex-shrink-0 mt-0.5" />
-                          <span className="text-gray-700 text-sm font-light">{feature}</span>
+                    {/* Features - Only 3-4 Concise Points */}
+                    <div className="space-y-2 mb-6">
+                      {pkg.features.slice(0, 4).map((feature, idx) => (
+                        <div key={idx} className="flex items-start space-x-2">
+                          <Check className="h-4 w-4 text-rose-500 flex-shrink-0 mt-0.5" />
+                          <span className="text-gray-700 font-lato" style={{ fontSize: '14px' }}>{feature}</span>
                         </div>
                       ))}
                     </div>
 
                     <Button 
                       onClick={() => handleEnquireNow(pkg.title)}
-                      className="w-full bg-gradient-to-r from-rose-500 to-pink-500 hover:from-rose-600 hover:to-pink-600 text-white font-semibold py-4 rounded-xl shadow-lg transform hover:scale-105 transition-all duration-300"
+                      className="w-full font-lato font-semibold py-3 rounded-xl shadow-lg transform hover:scale-105 transition-all duration-300"
+                      style={{ 
+                        background: 'linear-gradient(135deg, #F8C7CC 0%, #D9B38C 100%)',
+                        color: '#2D2D2D'
+                      }}
                     >
-                      <Send className="h-5 w-5 mr-2" />
-                      Get a Custom Quote
+                      View Package Details →
                     </Button>
                   </CardContent>
                 </Card>
