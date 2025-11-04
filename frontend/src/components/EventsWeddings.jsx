@@ -330,10 +330,10 @@ Looking forward to creating unforgettable memories with Pretty Planet!`;
         <section className="py-20 px-4 bg-gradient-to-b from-amber-50/30 to-white">
           <div className="max-w-7xl mx-auto">
             <div className="text-center mb-16">
-              <h2 className="text-4xl md:text-5xl font-serif font-semibold text-[#0D3B66] mb-6">
+              <h2 className="text-4xl md:text-5xl font-playfair font-semibold mb-6" style={{ color: '#2D2D2D' }}>
                 Why Dharamshala is the Perfect Wedding Destination
               </h2>
-              <p className="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto font-light">
+              <p className="text-lg md:text-xl font-lato font-light max-w-3xl mx-auto" style={{ color: '#3B3B3B', lineHeight: '1.5' }}>
                 Where Himalayan grandeur meets unparalleled luxury and timeless romance
               </p>
             </div>
