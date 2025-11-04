@@ -219,13 +219,13 @@ Looking forward to creating unforgettable memories with Pretty Planet!`;
                 <Heart className="h-16 w-16 md:h-20 md:w-20 fill-white opacity-90" />
               </div>
               
-              <h1 className="text-4xl md:text-6xl lg:text-7xl font-serif font-bold mb-6 leading-tight drop-shadow-lg animate-fade-in-up">
+              <h1 className="text-4xl md:text-6xl lg:text-7xl font-playfair font-semibold mb-6 leading-tight drop-shadow-lg animate-fade-in-up" style={{ color: '#3B3B3B' }}>
                 Dream Weddings in Dharamshala
               </h1>
-              <h2 className="text-4xl md:text-5xl font-serif font-light mb-4 leading-tight animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
+              <h2 className="text-4xl md:text-5xl font-playfair font-normal mb-6 leading-tight animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
                 Crafted with Love, Luxury, and Himalayan Charm
               </h2>
-              <p className="text-lg md:text-2xl font-light mb-8 max-w-4xl mx-auto leading-relaxed drop-shadow-md italic animate-fade-in-up" style={{ animationDelay: '0.4s' }}>
+              <p className="text-lg md:text-2xl font-light mb-8 max-w-4xl mx-auto leading-relaxed drop-shadow-md italic animate-fade-in-up" style={{ animationDelay: '0.4s', lineHeight: '1.5' }}>
                 "Your love story deserves the magic of the mountains — let's begin your journey today."
               </p>
 
@@ -233,14 +233,19 @@ Looking forward to creating unforgettable memories with Pretty Planet!`;
               <div className="flex flex-col sm:flex-row gap-4 justify-center mt-8 animate-fade-in-up" style={{ animationDelay: '0.6s' }}>
                 <Button 
                   onClick={() => document.getElementById('enquiry-form')?.scrollIntoView({ behavior: 'smooth' })}
-                  className="bg-gradient-to-r from-rose-300 via-pink-300 to-amber-300 hover:from-rose-400 hover:to-amber-400 text-rose-900 font-bold px-10 py-5 text-lg rounded-full shadow-2xl transform hover:scale-105 transition-all duration-300"
-                  style={{ boxShadow: '0 10px 40px rgba(236, 72, 153, 0.3)' }}
+                  className="font-lato font-bold px-10 py-5 text-lg rounded-full transform hover:scale-105 transition-all duration-300"
+                  style={{ 
+                    background: 'linear-gradient(135deg, #F8C7CC 0%, #D9B38C 100%)',
+                    color: '#3B3B3B',
+                    boxShadow: '0 10px 40px rgba(248, 199, 204, 0.4), 0 0 20px rgba(217, 179, 140, 0.3)'
+                  }}
                 >
                   Start Planning Today
                 </Button>
                 <Button 
                   onClick={() => window.location.href = '/tour-packages'}
-                  className="bg-transparent border-2 border-white/80 hover:bg-white/10 text-white font-semibold px-10 py-5 text-lg rounded-full shadow-xl transform hover:scale-105 transition-all duration-300"
+                  className="bg-transparent border-2 font-lato font-semibold px-10 py-5 text-lg rounded-full shadow-xl transform hover:scale-105 transition-all duration-300"
+                  style={{ borderColor: 'rgba(255,255,255,0.8)', color: 'white' }}
                 >
                   Explore Honeymoon Packages
                 </Button>
