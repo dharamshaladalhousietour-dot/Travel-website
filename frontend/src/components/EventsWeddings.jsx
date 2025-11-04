@@ -254,56 +254,64 @@ Looking forward to creating unforgettable memories with Pretty Planet!`;
           </div>
         </section>
 
-        {/* Your Wedding Journey Starts Here Section - Moved to Top Priority */}
-        <section className="py-16 px-4" style={{ background: 'linear-gradient(180deg, #FFF6F8 0%, #FDEAEF 100%)' }}>
+        {/* Your Wedding Journey Starts Here Section - Enhanced Styling */}
+        <section className="py-16 px-4 animate-fade-in-up" style={{ background: 'linear-gradient(180deg, #FFE8EC 0%, #FFF9F7 100%)' }}>
           <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-4xl md:text-5xl font-playfair font-semibold mb-6 animate-fade-in-up" style={{ color: '#2D2D2D' }}>
+            <h2 className="text-4xl md:text-5xl font-playfair font-semibold mb-4" style={{ color: '#2D2D2D' }}>
               Your Wedding Journey Starts Here
             </h2>
-            <p className="text-lg md:text-xl font-lato font-light mb-12 max-w-3xl mx-auto animate-fade-in-up" style={{ color: '#3B3B3B', lineHeight: '1.5', animationDelay: '0.2s' }}>
+            
+            {/* Thin Gold Divider Under Title */}
+            <div className="w-32 h-px mx-auto mb-8" style={{ background: 'linear-gradient(90deg, transparent 0%, #D9B38C 50%, transparent 100%)' }}></div>
+            
+            <p className="text-lg md:text-xl font-lato font-light mb-12 max-w-3xl mx-auto" style={{ color: '#3B3B3B', lineHeight: '1.5' }}>
               Your dream wedding deserves meticulous care and effortless planning.<br />
               Explore our exclusive wedding proposal and secure your date with Pretty Planet Travels & Events.
             </p>
 
-            {/* View & Pay Buttons */}
-            <div className="flex flex-col sm:flex-row gap-6 justify-center mb-8 animate-fade-in-up" style={{ animationDelay: '0.4s' }}>
+            {/* Refined Buttons with Icons */}
+            <div className="flex flex-col sm:flex-row gap-6 justify-center mb-8">
               <a 
                 href="https://drive.google.com/file/d/YOUR_FILE_ID/preview" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="inline-flex items-center justify-center font-lato font-bold px-8 py-4 text-lg rounded-full transform hover:scale-105 transition-all duration-300"
+                className="inline-flex items-center justify-center font-lato font-semibold px-6 py-3 text-base rounded-full transform hover:scale-105 transition-all duration-300 group"
                 style={{ 
                   background: 'linear-gradient(135deg, #F8C7CC 0%, #D9B38C 100%)',
                   color: '#2D2D2D',
-                  boxShadow: '0 10px 30px rgba(248, 199, 204, 0.3)'
+                  boxShadow: '0 8px 20px rgba(248, 199, 204, 0.3)'
                 }}
+                onMouseEnter={(e) => e.currentTarget.style.boxShadow = '0 12px 30px rgba(217, 179, 140, 0.5)'}
+                onMouseLeave={(e) => e.currentTarget.style.boxShadow = '0 8px 20px rgba(248, 199, 204, 0.3)'}
               >
-                <svg className="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
-                  <path d="M9 2a2 2 0 00-2 2v8a2 2 0 002 2h6a2 2 0 002-2V6.414A2 2 0 0016.414 5L14 2.586A2 2 0 0012.586 2H9z" />
-                  <path d="M3 8a2 2 0 012-2v10h8a2 2 0 01-2 2H5a2 2 0 01-2-2V8z" />
+                {/* Heart Icon */}
+                <svg className="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                  <path fillRule="evenodd" d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z" clipRule="evenodd" />
                 </svg>
                 View Full Wedding Proposal (Read Only)
               </a>
 
-              <Button
+              <button
                 onClick={() => window.open('/pay', '_blank')}
-                className="font-lato font-bold px-8 py-4 text-lg rounded-full transform hover:scale-105 transition-all duration-300"
+                className="inline-flex items-center justify-center font-lato font-semibold px-6 py-3 text-base rounded-full transform hover:scale-105 transition-all duration-300 group"
                 style={{ 
                   background: 'linear-gradient(135deg, #F8C7CC 0%, #D9B38C 100%)',
                   color: '#2D2D2D',
-                  boxShadow: '0 10px 30px rgba(217, 179, 140, 0.3)'
+                  boxShadow: '0 8px 20px rgba(248, 199, 204, 0.3)'
                 }}
+                onMouseEnter={(e) => e.currentTarget.style.boxShadow = '0 12px 30px rgba(217, 179, 140, 0.5)'}
+                onMouseLeave={(e) => e.currentTarget.style.boxShadow = '0 8px 20px rgba(248, 199, 204, 0.3)'}
               >
-                <svg className="w-5 h-5 mr-2 inline" fill="currentColor" viewBox="0 0 20 20">
-                  <path d="M4 4a2 2 0 00-2 2v1h16V6a2 2 0 00-2-2H4z" />
-                  <path fillRule="evenodd" d="M18 9H2v5a2 2 0 002 2h12a2 2 0 002-2V9zM4 13a1 1 0 011-1h1a1 1 0 110 2H5a1 1 0 01-1-1zm5-1a1 1 0 100 2h1a1 1 0 100-2H9z" clipRule="evenodd" />
+                {/* Ring Icon */}
+                <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 8v13m0-13V6a2 2 0 112 2h-2zm0 0V5.5A2.5 2.5 0 109.5 8H12zm-7 4h14M5 12a2 2 0 110-4h14a2 2 0 110 4M5 12v7a2 2 0 002 2h10a2 2 0 002-2v-7" />
                 </svg>
                 Pay Now – Secure Booking
-              </Button>
+              </button>
             </div>
 
             {/* Subtext Below Buttons */}
-            <p className="text-sm font-lato font-light max-w-2xl mx-auto animate-fade-in-up" style={{ color: '#666', lineHeight: '1.6', animationDelay: '0.6s' }}>
+            <p className="text-sm font-lato font-light max-w-2xl mx-auto" style={{ color: '#666', lineHeight: '1.6' }}>
               For your eyes only — explore our detailed brochure in a private viewer.<br />
               Payments are processed securely through our official gateway.
             </p>
