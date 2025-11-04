@@ -369,7 +369,7 @@ Looking forward to creating unforgettable memories with Pretty Planet!`;
         <div className="w-full h-px bg-gradient-to-r from-transparent via-amber-300 to-transparent my-12"></div>
 
         {/* CTA Banner Section */}
-        <section className="py-20 px-4 bg-gradient-to-r from-rose-500 via-pink-500 to-amber-500 text-white relative overflow-hidden">
+        <section className="py-20 px-4 bg-gradient-to-r from-rose-400 via-pink-400 to-amber-400 text-white relative overflow-hidden">
           {/* Decorative Elements */}
           <div className="absolute inset-0 opacity-10">
             <div className="absolute top-10 left-10 w-32 h-32 bg-white rounded-full blur-3xl"></div>
@@ -379,7 +379,7 @@ Looking forward to creating unforgettable memories with Pretty Planet!`;
           <div className="max-w-4xl mx-auto text-center relative z-10">
             <Heart className="h-14 w-14 mx-auto mb-8 fill-white animate-pulse" />
             
-            <p className="text-xl md:text-2xl font-serif font-light mb-6 italic">
+            <p className="text-xl md:text-2xl font-serif font-light mb-8 italic">
               "Your love story deserves the magic of the mountains — let's begin your journey today."
             </p>
             
@@ -390,7 +390,8 @@ Looking forward to creating unforgettable memories with Pretty Planet!`;
             <div className="flex flex-col sm:flex-row gap-6 justify-center">
               <Button 
                 onClick={() => document.getElementById('enquiry-form')?.scrollIntoView({ behavior: 'smooth' })}
-                className="bg-gradient-to-r from-amber-300 via-rose-300 to-pink-300 hover:from-amber-400 hover:to-pink-400 text-rose-900 font-bold px-10 py-5 text-lg rounded-full shadow-2xl transform hover:scale-105 transition-all duration-300 border-2 border-white"
+                className="bg-gradient-to-r from-rose-200 via-pink-200 to-amber-200 hover:from-rose-300 hover:to-amber-300 text-rose-900 font-bold px-10 py-5 text-lg rounded-full transform hover:scale-105 transition-all duration-300"
+                style={{ boxShadow: '0 20px 50px rgba(255, 255, 255, 0.5), 0 0 30px rgba(236, 72, 153, 0.4)' }}
               >
                 Start Planning Today
                 <ArrowRight className="h-6 w-6 ml-2" />
