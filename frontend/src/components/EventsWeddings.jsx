@@ -253,7 +253,8 @@ Looking forward to creating unforgettable memories with Pretty Planet!`;
               {weddingPackages.map((pkg) => (
                 <Card 
                   key={pkg.id} 
-                  className="overflow-hidden hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 border-2 border-amber-100/50 rounded-2xl bg-gradient-to-b from-white to-rose-50/30"
+                  className="overflow-hidden hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 rounded-2xl bg-gradient-to-b from-white to-rose-50/30"
+                  style={{ boxShadow: '0 4px 20px rgba(236, 72, 153, 0.1)' }}
                 >
                   {/* Package Image */}
                   <div className="relative h-80 overflow-hidden">
@@ -261,6 +262,7 @@ Looking forward to creating unforgettable memories with Pretty Planet!`;
                       src={pkg.image}
                       alt={pkg.altText}
                       className="w-full h-full object-cover transition-transform duration-700 hover:scale-110"
+                      style={{ filter: 'sepia(10%) saturate(110%) brightness(105%)' }}
                       onError={(e) => {
                         e.target.src = 'data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" width="800" height="400"%3E%3Crect fill="%23fce7f3" width="800" height="400"/%3E%3Ctext x="50%25" y="50%25" fill="%23ec4899" text-anchor="middle" dominant-baseline="middle" font-family="serif" font-size="24"%3E' + encodeURIComponent(pkg.title) + '%3C/text%3E%3C/svg%3E';
                       }}
@@ -268,14 +270,14 @@ Looking forward to creating unforgettable memories with Pretty Planet!`;
                     {/* Soft Gradient Overlay */}
                     <div className="absolute inset-0 bg-gradient-to-t from-rose-900/40 via-transparent to-transparent"></div>
                     
-                    {/* Price Badge - Rose Gold Gradient */}
-                    <div className="absolute top-6 right-6 bg-gradient-to-br from-rose-400 to-amber-300 px-5 py-2.5 rounded-full shadow-xl">
-                      <span className="text-white font-bold text-sm tracking-wide">{pkg.price}</span>
+                    {/* Custom Text Badge */}
+                    <div className="absolute top-6 right-6 bg-gradient-to-br from-rose-300/95 via-pink-300/95 to-amber-200/95 px-5 py-3 rounded-full shadow-xl backdrop-blur-sm">
+                      <span className="text-rose-900 font-semibold text-xs tracking-wide">{pkg.customText}</span>
                     </div>
                   </div>
 
                   <CardContent className="p-8">
-                    <h3 className="text-3xl font-serif font-bold text-[#0D3B66] mb-4">{pkg.title}</h3>
+                    <h3 className="text-3xl font-serif font-semibold text-[#0D3B66] mb-4">{pkg.title}</h3>
                     <p className="text-gray-600 mb-6 leading-relaxed font-light text-base">
                       {pkg.description}
                     </p>
@@ -295,7 +297,7 @@ Looking forward to creating unforgettable memories with Pretty Planet!`;
                       className="w-full bg-gradient-to-r from-rose-500 to-pink-500 hover:from-rose-600 hover:to-pink-600 text-white font-semibold py-4 rounded-xl shadow-lg transform hover:scale-105 transition-all duration-300"
                     >
                       <Send className="h-5 w-5 mr-2" />
-                      Enquire Now
+                      Get a Custom Quote
                     </Button>
                   </CardContent>
                 </Card>
