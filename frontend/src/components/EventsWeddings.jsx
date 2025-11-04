@@ -174,7 +174,19 @@ Looking forward to creating unforgettable memories with Pretty Planet!`;
         keywords="wedding planners in Dharamshala, destination weddings in Himachal, luxury wedding packages, mountain view wedding ceremony, eco-friendly wedding, heritage wedding venues, Pretty Planet Travels & Events, Dharamshala destination wedding planner"
       />
 
-      <div className="min-h-screen bg-gradient-to-b from-white via-rose-50/20 to-amber-50/20">
+      <style>{`
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Lato:wght@300;400;700&display=swap');
+        
+        .font-playfair {
+          font-family: 'Playfair Display', serif;
+        }
+        
+        .font-lato {
+          font-family: 'Lato', sans-serif;
+        }
+      `}</style>
+
+      <div className="min-h-screen bg-gradient-to-b from-white via-[#FDF8F6] to-[#FFF9F7] font-lato">
         
         {/* Hero Section with Background Image and Overlay */}
         <section className="relative h-[600px] md:h-[700px] overflow-hidden">
