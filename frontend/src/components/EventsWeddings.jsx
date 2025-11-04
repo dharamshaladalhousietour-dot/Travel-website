@@ -306,11 +306,14 @@ Looking forward to creating unforgettable memories with Pretty Planet!`;
           </div>
         </section>
 
+        {/* Gold Divider */}
+        <div className="w-full h-px bg-gradient-to-r from-transparent via-amber-300 to-transparent my-12"></div>
+
         {/* Destination Highlights Section */}
         <section className="py-20 px-4 bg-gradient-to-b from-amber-50/30 to-white">
           <div className="max-w-7xl mx-auto">
             <div className="text-center mb-16">
-              <h2 className="text-4xl md:text-5xl font-serif font-bold text-[#0D3B66] mb-6">
+              <h2 className="text-4xl md:text-5xl font-serif font-semibold text-[#0D3B66] mb-6">
                 Why Dharamshala is the Perfect Wedding Destination
               </h2>
               <p className="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto font-light">
@@ -318,17 +321,19 @@ Looking forward to creating unforgettable memories with Pretty Planet!`;
               </p>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-10 mb-12">
               {destinationHighlights.map((highlight, idx) => (
                 <Card 
                   key={idx}
-                  className="overflow-hidden hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 border border-amber-100 rounded-2xl bg-white"
+                  className="overflow-hidden hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 rounded-2xl bg-white"
+                  style={{ boxShadow: '0 4px 15px rgba(217, 119, 6, 0.1)' }}
                 >
                   <div className="relative h-64 overflow-hidden">
                     <img 
-                      src={highlight.image}
+                      src={idx === 1 ? "/assets/portfolio2.jpg" : highlight.image}
                       alt={`Heritage wedding venues in Dharamshala by Pretty Planet Travels & Events - ${highlight.title}`}
                       className="w-full h-full object-cover transition-transform duration-700 hover:scale-110"
+                      style={{ filter: 'sepia(8%) saturate(105%) brightness(105%)' }}
                       onError={(e) => {
                         e.target.src = 'data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" width="400" height="300"%3E%3Crect fill="%23fef3c7" width="400" height="300"/%3E%3C/svg%3E';
                       }}
@@ -340,7 +345,7 @@ Looking forward to creating unforgettable memories with Pretty Planet!`;
                     <div className="mb-4 flex justify-center">
                       {highlight.icon}
                     </div>
-                    <h3 className="text-2xl font-serif font-bold text-[#0D3B66] mb-4">
+                    <h3 className="text-2xl font-serif font-semibold text-[#0D3B66] mb-4">
                       {highlight.title}
                     </h3>
                     <p className="text-gray-600 leading-relaxed font-light">
@@ -350,8 +355,18 @@ Looking forward to creating unforgettable memories with Pretty Planet!`;
                 </Card>
               ))}
             </div>
+
+            {/* Descriptive Text Block */}
+            <div className="text-center max-w-4xl mx-auto mt-12 px-6 py-8 bg-gradient-to-r from-rose-50/50 via-amber-50/50 to-rose-50/50 rounded-2xl border border-amber-200/30">
+              <p className="text-lg md:text-xl text-gray-700 leading-relaxed font-light italic">
+                "Dharamshala offers the perfect canvas for your love story — where mountain charm, luxury resorts, and soulful moments come together in harmony."
+              </p>
+            </div>
           </div>
         </section>
+
+        {/* Gold Divider */}
+        <div className="w-full h-px bg-gradient-to-r from-transparent via-amber-300 to-transparent my-12"></div>
 
         {/* CTA Banner Section */}
         <section className="py-20 px-4 bg-gradient-to-r from-rose-500 via-pink-500 to-amber-500 text-white relative overflow-hidden">
