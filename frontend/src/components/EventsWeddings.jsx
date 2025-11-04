@@ -172,7 +172,7 @@ Looking forward to creating unforgettable memories with Pretty Planet!`;
 
       <div className="min-h-screen bg-gradient-to-b from-white via-rose-50/20 to-amber-50/20">
         
-        {/* Hero Section with Background Image */}
+        {/* Hero Section with Background Image and Overlay */}
         <section className="relative h-[600px] md:h-[700px] overflow-hidden">
           {/* Background Image */}
           <div className="absolute inset-0">
@@ -184,41 +184,49 @@ Looking forward to creating unforgettable memories with Pretty Planet!`;
                 e.target.src = 'data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" width="1920" height="700"%3E%3Cdefs%3E%3ClinearGradient id="g" x1="0%25" y1="0%25" x2="100%25" y2="100%25"%3E%3Cstop offset="0%25" style="stop-color:%23ec4899;stop-opacity:1" /%3E%3Cstop offset="100%25" style="stop-color:%23f472b6;stop-opacity:1" /%3E%3C/linearGradient%3E%3C/defs%3E%3Crect fill="url(%23g)" width="1920" height="700"/%3E%3C/svg%3E';
               }}
             />
-            {/* Pink Gradient Overlay */}
-            <div className="absolute inset-0 bg-gradient-to-br from-rose-500/60 via-pink-500/55 to-amber-500/50"></div>
+            {/* Softened Pink-Orange Gradient Overlay */}
+            <div className="absolute inset-0 bg-gradient-to-br from-rose-400/70 via-pink-400/65 to-orange-300/55"></div>
+            
+            {/* Subtle Mountain Silhouette Overlay */}
+            <div className="absolute inset-0 opacity-40">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 700" className="w-full h-full">
+                <path d="M0,700 L0,400 Q200,300 400,350 Q600,400 800,300 Q1000,200 1200,280 Q1400,360 1600,320 Q1800,280 1920,350 L1920,700 Z" fill="white" opacity="0.1"/>
+              </svg>
+            </div>
           </div>
 
-          {/* Content */}
-          <div className="relative h-full flex items-center justify-center text-center text-white px-4">
+          {/* Content with Fade-in Animation */}
+          <div className="relative h-full flex items-center justify-center text-center text-white px-4 animate-fade-in">
             <div className="max-w-5xl">
               {/* Animated Heart Icon */}
               <div className="inline-block mb-6 animate-bounce">
                 <Heart className="h-16 w-16 md:h-20 md:w-20 fill-white opacity-90" />
               </div>
               
-              <h1 className="text-4xl md:text-6xl lg:text-7xl font-serif font-bold mb-6 leading-tight drop-shadow-lg">
+              <h1 className="text-4xl md:text-6xl lg:text-7xl font-serif font-bold mb-6 leading-tight drop-shadow-lg animate-fade-in-up">
                 Dream Weddings in Dharamshala
               </h1>
-              <h2 className="text-4xl md:text-5xl font-serif font-light mb-4 leading-tight">
+              <h2 className="text-4xl md:text-5xl font-serif font-light mb-4 leading-tight animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
                 Crafted with Love, Luxury, and Himalayan Charm
               </h2>
-              <p className="text-lg md:text-2xl font-light mb-8 max-w-4xl mx-auto leading-relaxed drop-shadow-md">
-                Celebrate your love amidst the breathtaking Dhauladhar ranges with Pretty Planet Travels & Events — Dharamshala's leading wedding planners.
+              <p className="text-lg md:text-2xl font-light mb-8 max-w-4xl mx-auto leading-relaxed drop-shadow-md italic animate-fade-in-up" style={{ animationDelay: '0.4s' }}>
+                "Your love story deserves the magic of the mountains — let's begin your journey today."
               </p>
 
-              {/* CTA Buttons */}
-              <div className="flex flex-col sm:flex-row gap-4 justify-center mt-8">
+              {/* CTA Buttons with Animation */}
+              <div className="flex flex-col sm:flex-row gap-4 justify-center mt-8 animate-fade-in-up" style={{ animationDelay: '0.6s' }}>
                 <Button 
                   onClick={() => document.getElementById('enquiry-form')?.scrollIntoView({ behavior: 'smooth' })}
-                  className="bg-white text-rose-600 hover:bg-rose-50 font-semibold px-8 py-4 text-lg rounded-full shadow-2xl transform hover:scale-105 transition-all duration-300"
+                  className="bg-gradient-to-r from-rose-300 via-pink-300 to-amber-300 hover:from-rose-400 hover:to-amber-400 text-rose-900 font-bold px-10 py-5 text-lg rounded-full shadow-2xl transform hover:scale-105 transition-all duration-300"
+                  style={{ boxShadow: '0 10px 40px rgba(236, 72, 153, 0.3)' }}
                 >
-                  Plan Your Dream Wedding
+                  Start Planning Today
                 </Button>
                 <Button 
-                  onClick={() => document.getElementById('packages')?.scrollIntoView({ behavior: 'smooth' })}
-                  className="bg-gradient-to-r from-amber-400 to-rose-400 hover:from-amber-500 hover:to-rose-500 text-white font-semibold px-8 py-4 text-lg rounded-full shadow-2xl transform hover:scale-105 transition-all duration-300 border-2 border-white/30"
+                  onClick={() => window.location.href = '/tour-packages'}
+                  className="bg-transparent border-2 border-white/80 hover:bg-white/10 text-white font-semibold px-10 py-5 text-lg rounded-full shadow-xl transform hover:scale-105 transition-all duration-300"
                 >
-                  Explore Packages
+                  Explore Honeymoon Packages
                 </Button>
               </div>
             </div>
