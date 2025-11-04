@@ -29,37 +29,41 @@ const EventsWeddingsLuxury = () => {
       id: 1,
       title: "Luxury Resort Wedding",
       description: "Indulge in opulence with our premium 5-star resort weddings featuring exquisite cuisine, luxury accommodations, and world-class service amidst the majestic Himalayas.",
-      price: "Starting from ₹12,00,000",
+      customText: "Tailored to your vision and guest experience",
       features: ["5-Star Resort Venue", "400-600 Guests", "4-Day Grand Celebration", "Premium Décor & Styling", "Spa & Wellness Facilities", "Professional Photography & Videography"],
       image: "/assets/portfolio2.jpg",
-      altText: "Luxury resort wedding in Dharamshala with 5-star hospitality and décor by Pretty Planet Travels & Events"
+      altText: "Luxury resort wedding in Dharamshala with 5-star hospitality and décor by Pretty Planet Travels & Events",
+      fileName: "luxury-resort-wedding.jpg"
     },
     {
       id: 2,
       title: "Dharamshala Destination Wedding",
       description: "Exchange vows with the stunning Dhauladhar ranges as your backdrop, combining traditional Himachali warmth with modern elegance for an unforgettable celebration.",
-      price: "Starting from ₹8,00,000",
+      customText: "Customized wedding package designed around your dreams",
       features: ["Mountain View Venue", "300-500 Guests", "3-Day Celebration", "Traditional Meets Modern", "Complete Event Management", "Luxury Guest Accommodations"],
       image: "/assets/hero-dharamshala.jpg",
-      altText: "Destination wedding in Dharamshala with Dhauladhar mountain views by Pretty Planet Travels & Events"
+      altText: "Destination wedding in Dharamshala with Dhauladhar mountain views by Pretty Planet Travels & Events",
+      fileName: "dharamshala-destination-wedding.jpg"
     },
     {
       id: 3,
       title: "Mountain View Ceremony",
       description: "Intimate and breathtaking, celebrate your special day with panoramic Himalayan vistas in an elegantly curated setting designed for cherished memories.",
-      price: "Starting from ₹5,00,000",
+      customText: "Personalized to create your perfect intimate celebration",
       features: ["Scenic Himalayan Location", "100-200 Guests", "2-Day Intimate Event", "Bespoke Décor Design", "Personalized Service", "Gourmet Catering"],
       image: "/assets/portfolio1.jpg",
-      altText: "Mountain-view wedding ceremony in Dharamshala with floral décor by Pretty Planet Travels & Events"
+      altText: "Mountain-view wedding ceremony in Dharamshala with floral décor by Pretty Planet Travels & Events",
+      fileName: "mountain-view-wedding-ceremony.jpg"
     },
     {
       id: 4,
       title: "Intimate Eco Wedding",
       description: "Embrace sustainability without compromising elegance. Celebrate love in harmony with nature at our eco-conscious venues surrounded by pristine Himalayan beauty.",
-      price: "Starting from ₹3,50,000",
+      customText: "Crafted with care for you and the environment",
       features: ["Eco-Friendly Venue", "50-100 Guests", "1-2 Day Celebration", "Organic Farm-to-Table Catering", "Nature-Inspired Décor", "Sustainable Practices"],
       image: "/assets/portfolio3.jpg",
-      altText: "Eco-friendly intimate wedding in Dharamshala surrounded by nature by Pretty Planet Travels & Events"
+      altText: "Eco-friendly mountain wedding in Himachal Pradesh by Pretty Planet Travels & Events",
+      fileName: "eco-friendly-mountain-wedding.jpg"
     }
   ];
 
