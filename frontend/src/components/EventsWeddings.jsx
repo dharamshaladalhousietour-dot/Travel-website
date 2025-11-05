@@ -259,7 +259,7 @@ Looking forward to creating unforgettable memories with Pretty Planet!`;
         }
       `}</style>
 
-      <div className="min-h-screen bg-gradient-to-b from-white via-[#FDF8F6] to-[#FFF9F7] font-lato">
+      <div className="min-h-screen bg-gradient-to-b from-white via-[#FDF8F6] to-[#FFF9F7] font-montserrat">
         
         {/* Hero Section with Background Image and Overlay */}
         <section className="relative h-[600px] md:h-[700px] overflow-hidden">
