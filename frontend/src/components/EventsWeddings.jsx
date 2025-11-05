@@ -533,11 +533,17 @@ Looking forward to creating unforgettable memories with Pretty Planet!`;
               ))}
             </div>
 
-            {/* Descriptive Text Block */}
-            <div className="text-center max-w-4xl mx-auto mt-12 px-6 py-8 bg-gradient-to-r from-rose-50/50 via-amber-50/50 to-rose-50/50 rounded-2xl border border-amber-200/30">
-              <p className="text-lg md:text-xl text-gray-700 leading-relaxed font-light italic">
+            {/* Descriptive Text Block - Centered with Gold Divider */}
+            <div className="text-center max-w-4xl mx-auto mt-12 px-6 py-8 bg-gradient-to-r from-rose-50/50 via-amber-50/50 to-rose-50/50 rounded-2xl border border-amber-200/30 animate-fade-in-up">
+              {/* Top Gold Divider */}
+              <div className="w-24 h-0.5 mx-auto mb-6" style={{ background: 'linear-gradient(90deg, transparent 0%, #D9B38C 50%, transparent 100%)' }}></div>
+              
+              <p className="text-lg md:text-xl text-gray-700 leading-relaxed font-light italic font-playfair">
                 "Dharamshala offers the perfect canvas for your love story — where mountain charm, luxury resorts, and soulful moments come together in harmony."
               </p>
+              
+              {/* Bottom Gold Divider */}
+              <div className="w-24 h-0.5 mx-auto mt-6" style={{ background: 'linear-gradient(90deg, transparent 0%, #D9B38C 50%, transparent 100%)' }}></div>
             </div>
           </div>
         </section>
