@@ -205,3 +205,4 @@ android-sdk/ -e
 # Environment files
 *.env
 *.env.*
+wedding_contract.pdf
