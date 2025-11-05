@@ -273,10 +273,8 @@ Looking forward to creating unforgettable memories with Pretty Planet!`;
 
             {/* Refined Buttons with Icons */}
             <div className="flex flex-col sm:flex-row gap-6 justify-center mb-8">
-              <a 
-                href="https://drive.google.com/file/d/YOUR_FILE_ID/preview" 
-                target="_blank" 
-                rel="noopener noreferrer"
+              <button
+                onClick={() => setIsProposalOpen(true)}
                 className="inline-flex items-center justify-center font-lato font-semibold px-6 py-3 text-base rounded-full transform hover:scale-105 transition-all duration-300 group"
                 style={{ 
                   background: 'linear-gradient(135deg, #F8C7CC 0%, #D9B38C 100%)',
@@ -286,12 +284,12 @@ Looking forward to creating unforgettable memories with Pretty Planet!`;
                 onMouseEnter={(e) => e.currentTarget.style.boxShadow = '0 12px 30px rgba(217, 179, 140, 0.5)'}
                 onMouseLeave={(e) => e.currentTarget.style.boxShadow = '0 8px 20px rgba(248, 199, 204, 0.3)'}
               >
-                {/* Heart Icon */}
+                {/* Ring Icon */}
                 <svg className="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20">
                   <path fillRule="evenodd" d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z" clipRule="evenodd" />
                 </svg>
-                View Full Wedding Proposal (Read Only)
-              </a>
+                💍 View Full Wedding Proposal
+              </button>
 
               <button
                 onClick={() => window.open('/pay', '_blank')}
