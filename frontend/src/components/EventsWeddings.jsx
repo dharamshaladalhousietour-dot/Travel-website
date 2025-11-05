@@ -177,14 +177,85 @@ Looking forward to creating unforgettable memories with Pretty Planet!`;
       />
 
       <style>{`
-        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Lato:wght@300;400;700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Montserrat:wght@300;400;600;700&display=swap');
         
         .font-playfair {
           font-family: 'Playfair Display', serif;
         }
         
-        .font-lato {
-          font-family: 'Lato', sans-serif;
+        .font-montserrat {
+          font-family: 'Montserrat', sans-serif;
+        }
+        
+        /* Floating Petals Animation */
+        @keyframes float-petals {
+          0%, 100% { transform: translateY(0) rotate(0deg); opacity: 0.7; }
+          25% { transform: translateY(-20px) rotate(90deg); opacity: 0.9; }
+          50% { transform: translateY(-10px) rotate(180deg); opacity: 0.5; }
+          75% { transform: translateY(-30px) rotate(270deg); opacity: 0.8; }
+        }
+        
+        .petal {
+          position: absolute;
+          width: 10px;
+          height: 10px;
+          background: rgba(255, 255, 255, 0.6);
+          border-radius: 50% 0 50% 50%;
+          animation: float-petals 8s infinite ease-in-out;
+        }
+        
+        .petal:nth-child(1) { top: 10%; left: 10%; animation-delay: 0s; }
+        .petal:nth-child(2) { top: 20%; left: 80%; animation-delay: 2s; }
+        .petal:nth-child(3) { top: 60%; left: 15%; animation-delay: 4s; }
+        .petal:nth-child(4) { top: 80%; left: 70%; animation-delay: 6s; }
+        .petal:nth-child(5) { top: 40%; left: 50%; animation-delay: 1s; }
+        .petal:nth-child(6) { top: 70%; left: 30%; animation-delay: 3s; }
+        
+        /* Light Flare Animation */
+        @keyframes flare {
+          0%, 100% { opacity: 0.3; transform: scale(1); }
+          50% { opacity: 0.8; transform: scale(1.2); }
+        }
+        
+        .flare {
+          position: absolute;
+          border-radius: 50%;
+          background: radial-gradient(circle, rgba(255,255,255,0.8) 0%, rgba(255,255,255,0) 70%);
+          animation: flare 3s infinite ease-in-out;
+        }
+        
+        /* Fade-in-up Animation */
+        @keyframes fade-in-up {
+          from {
+            opacity: 0;
+            transform: translateY(30px);
+          }
+          to {
+            opacity: 1;
+            transform: translateY(0);
+          }
+        }
+        
+        .animate-fade-in-up {
+          animation: fade-in-up 1s ease-out forwards;
+        }
+        
+        /* Card Hover Zoom */
+        .card-hover-zoom {
+          transition: transform 0.5s ease, box-shadow 0.5s ease;
+        }
+        
+        .card-hover-zoom:hover {
+          transform: scale(1.03);
+          box-shadow: 0 20px 60px rgba(248, 199, 204, 0.3);
+        }
+        
+        /* Gradient Connector */
+        .gradient-connector {
+          height: 60px;
+          width: 2px;
+          background: linear-gradient(180deg, #F8C7CC 0%, #D9B38C 50%, #F8C7CC 100%);
+          margin: 0 auto;
         }
       `}</style>
 
