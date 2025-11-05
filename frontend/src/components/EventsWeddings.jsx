@@ -735,6 +735,12 @@ Looking forward to creating unforgettable memories with Pretty Planet!`;
             </span>
           </a>
         </div>
+
+        {/* Wedding Proposal Viewer Modal */}
+        <WeddingProposalViewer 
+          isOpen={isProposalOpen} 
+          onClose={() => setIsProposalOpen(false)} 
+        />
       </div>
     </>
   );
