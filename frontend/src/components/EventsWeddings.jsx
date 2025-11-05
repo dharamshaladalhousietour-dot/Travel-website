@@ -340,8 +340,8 @@ Looking forward to creating unforgettable memories with Pretty Planet!`;
           </div>
         </section>
 
-        {/* Your Wedding Journey Starts Here Section - Enhanced Styling */}
-        <section className="py-16 px-4 animate-fade-in-up" style={{ background: 'linear-gradient(180deg, #FFE8EC 0%, #FFF9F7 100%)' }}>
+        {/* Your Wedding Journey Starts Here Section - Enhanced with Gradient Blush Background */}
+        <section className="py-16 px-4 animate-fade-in-up" style={{ background: 'linear-gradient(135deg, #FFE8EC 0%, #FFF0F3 25%, #FFF9F7 50%, #FFE8EC 100%)' }}>
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-4xl md:text-5xl font-playfair font-semibold mb-4" style={{ color: '#2D2D2D' }}>
               Your Wedding Journey Starts Here
@@ -350,16 +350,16 @@ Looking forward to creating unforgettable memories with Pretty Planet!`;
             {/* Thin Gold Divider Under Title */}
             <div className="w-32 h-px mx-auto mb-8" style={{ background: 'linear-gradient(90deg, transparent 0%, #D9B38C 50%, transparent 100%)' }}></div>
             
-            <p className="text-lg md:text-xl font-lato font-light mb-12 max-w-3xl mx-auto" style={{ color: '#3B3B3B', lineHeight: '1.5' }}>
+            <p className="text-lg md:text-xl font-montserrat font-light mb-12 max-w-3xl mx-auto" style={{ color: '#3B3B3B', lineHeight: '1.5' }}>
               Your dream wedding deserves meticulous care and effortless planning.<br />
               Explore our exclusive wedding proposal and secure your date with Pretty Planet Travels & Events.
             </p>
 
-            {/* Refined Buttons with Icons */}
+            {/* Refined Buttons with Mini Icons */}
             <div className="flex flex-col sm:flex-row gap-6 justify-center mb-8">
               <button
                 onClick={() => setIsProposalOpen(true)}
-                className="inline-flex items-center justify-center font-lato font-semibold px-6 py-3 text-base rounded-full transform hover:scale-105 transition-all duration-300 group"
+                className="inline-flex items-center justify-center font-montserrat font-semibold px-8 py-4 text-base rounded-full transform hover:scale-105 transition-all duration-300 group"
                 style={{ 
                   background: 'linear-gradient(135deg, #F8C7CC 0%, #D9B38C 100%)',
                   color: '#2D2D2D',
@@ -368,16 +368,13 @@ Looking forward to creating unforgettable memories with Pretty Planet!`;
                 onMouseEnter={(e) => e.currentTarget.style.boxShadow = '0 12px 30px rgba(217, 179, 140, 0.5)'}
                 onMouseLeave={(e) => e.currentTarget.style.boxShadow = '0 8px 20px rgba(248, 199, 204, 0.3)'}
               >
-                {/* Ring Icon */}
-                <svg className="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20">
-                  <path fillRule="evenodd" d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z" clipRule="evenodd" />
-                </svg>
-                💍 View Full Wedding Proposal
+                <Heart className="w-5 h-5 mr-2" fill="currentColor" />
+                View Full Wedding Proposal
               </button>
 
               <button
                 onClick={() => window.open('/pay', '_blank')}
-                className="inline-flex items-center justify-center font-lato font-semibold px-6 py-3 text-base rounded-full transform hover:scale-105 transition-all duration-300 group"
+                className="inline-flex items-center justify-center font-montserrat font-semibold px-8 py-4 text-base rounded-full transform hover:scale-105 transition-all duration-300 group"
                 style={{ 
                   background: 'linear-gradient(135deg, #F8C7CC 0%, #D9B38C 100%)',
                   color: '#2D2D2D',
@@ -386,16 +383,13 @@ Looking forward to creating unforgettable memories with Pretty Planet!`;
                 onMouseEnter={(e) => e.currentTarget.style.boxShadow = '0 12px 30px rgba(217, 179, 140, 0.5)'}
                 onMouseLeave={(e) => e.currentTarget.style.boxShadow = '0 8px 20px rgba(248, 199, 204, 0.3)'}
               >
-                {/* Ring Icon */}
-                <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 8v13m0-13V6a2 2 0 112 2h-2zm0 0V5.5A2.5 2.5 0 109.5 8H12zm-7 4h14M5 12a2 2 0 110-4h14a2 2 0 110 4M5 12v7a2 2 0 002 2h10a2 2 0 002-2v-7" />
-                </svg>
+                <Star className="w-5 h-5 mr-2" fill="currentColor" />
                 Pay Now – Secure Booking
               </button>
             </div>
 
             {/* Subtext Below Buttons */}
-            <p className="text-sm font-lato font-light max-w-2xl mx-auto" style={{ color: '#666', lineHeight: '1.6' }}>
+            <p className="text-sm font-montserrat font-light max-w-2xl mx-auto" style={{ color: '#666', lineHeight: '1.6' }}>
               Click to view our comprehensive wedding proposal with detailed timeline, inclusions, and pricing.<br />
               Payments are processed securely through our official gateway.
             </p>
