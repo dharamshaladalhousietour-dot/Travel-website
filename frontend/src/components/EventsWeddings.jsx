@@ -312,7 +312,7 @@ Looking forward to creating unforgettable memories with Pretty Planet!`;
 
             {/* Subtext Below Buttons */}
             <p className="text-sm font-lato font-light max-w-2xl mx-auto" style={{ color: '#666', lineHeight: '1.6' }}>
-              For your eyes only — explore our detailed brochure in a private viewer.<br />
+              Click to view our comprehensive wedding proposal with detailed timeline, inclusions, and pricing.<br />
               Payments are processed securely through our official gateway.
             </p>
           </div>
