@@ -314,23 +314,24 @@ Looking forward to creating unforgettable memories with Pretty Planet!`;
                 "Your love story deserves the magic of the mountains — let's begin your journey today."
               </p>
 
-              {/* CTA Buttons with Animation */}
+              {/* CTA Buttons with Animation - Unified Sizing */}
               <div className="flex flex-col sm:flex-row gap-4 justify-center mt-8 animate-fade-in-up" style={{ animationDelay: '0.6s' }}>
                 <Button 
                   onClick={() => document.getElementById('enquiry-form')?.scrollIntoView({ behavior: 'smooth' })}
-                  className="font-lato font-bold px-10 py-5 text-lg rounded-full transform hover:scale-105 transition-all duration-300"
+                  className="font-montserrat font-bold px-10 py-4 text-lg rounded-full transform hover:scale-105 transition-all duration-300"
                   style={{ 
                     background: 'linear-gradient(135deg, #F8C7CC 0%, #D9B38C 100%)',
                     color: '#3B3B3B',
-                    boxShadow: '0 10px 40px rgba(248, 199, 204, 0.4), 0 0 20px rgba(217, 179, 140, 0.3)'
+                    boxShadow: '0 10px 40px rgba(248, 199, 204, 0.4), 0 0 20px rgba(217, 179, 140, 0.3)',
+                    minWidth: '250px'
                   }}
                 >
                   Start Planning Today
                 </Button>
                 <Button 
                   onClick={() => window.location.href = '/tour-packages'}
-                  className="bg-transparent border-2 font-lato font-semibold px-10 py-5 text-lg rounded-full shadow-xl transform hover:scale-105 transition-all duration-300"
-                  style={{ borderColor: 'rgba(255,255,255,0.8)', color: 'white' }}
+                  className="bg-transparent border-2 font-montserrat font-semibold px-10 py-4 text-lg rounded-full shadow-xl transform hover:scale-105 transition-all duration-300"
+                  style={{ borderColor: 'rgba(255,255,255,0.8)', color: 'white', minWidth: '250px' }}
                 >
                   Explore Honeymoon Packages
                 </Button>
