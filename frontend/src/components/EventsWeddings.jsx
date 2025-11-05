@@ -282,6 +282,18 @@ Looking forward to creating unforgettable memories with Pretty Planet!`;
                 <path d="M0,700 L0,400 Q200,300 400,350 Q600,400 800,300 Q1000,200 1200,280 Q1400,360 1600,320 Q1800,280 1920,350 L1920,700 Z" fill="white" opacity="0.1"/>
               </svg>
             </div>
+            
+            {/* Floating Petals */}
+            <div className="petal"></div>
+            <div className="petal"></div>
+            <div className="petal"></div>
+            <div className="petal"></div>
+            <div className="petal"></div>
+            <div className="petal"></div>
+            
+            {/* Light Flares */}
+            <div className="flare" style={{ width: '200px', height: '200px', top: '15%', left: '10%', animationDelay: '0s' }}></div>
+            <div className="flare" style={{ width: '150px', height: '150px', top: '60%', right: '15%', animationDelay: '1.5s' }}></div>
           </div>
 
           {/* Content with Fade-in Animation */}
