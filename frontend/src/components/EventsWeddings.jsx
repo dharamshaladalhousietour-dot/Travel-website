@@ -421,7 +421,7 @@ Looking forward to creating unforgettable memories with Pretty Planet!`;
               {weddingPackages.map((pkg) => (
                 <Card 
                   key={pkg.id} 
-                  className="overflow-hidden hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 rounded-2xl bg-gradient-to-b from-white to-rose-50/30"
+                  className="overflow-hidden card-hover-zoom rounded-2xl bg-gradient-to-b from-white to-rose-50/30"
                   style={{ boxShadow: '0 4px 20px rgba(236, 72, 153, 0.1)' }}
                 >
                   {/* Package Image - Reduced Height */}
@@ -451,29 +451,30 @@ Looking forward to creating unforgettable memories with Pretty Planet!`;
                     </h3>
                     
                     {/* Description - Limited to 2-3 Lines */}
-                    <p className="text-gray-600 mb-4 leading-relaxed font-lato line-clamp-3" style={{ fontSize: '15px', lineHeight: '1.4', color: '#555555' }}>
+                    <p className="text-gray-600 mb-4 leading-relaxed font-montserrat line-clamp-3" style={{ fontSize: '15px', lineHeight: '1.4', color: '#555555' }}>
                       {pkg.description}
                     </p>
                     
-                    {/* Features - Only 3-4 Concise Points */}
+                    {/* Features - With Icons */}
                     <div className="space-y-2 mb-6">
                       {pkg.features.slice(0, 4).map((feature, idx) => (
                         <div key={idx} className="flex items-start space-x-2">
-                          <Check className="h-4 w-4 text-rose-500 flex-shrink-0 mt-0.5" />
-                          <span className="text-gray-700 font-lato" style={{ fontSize: '14px' }}>{feature}</span>
+                          <Sparkles className="h-4 w-4 flex-shrink-0 mt-0.5" style={{ color: '#D9B38C' }} />
+                          <span className="text-gray-700 font-montserrat" style={{ fontSize: '14px' }}>{feature}</span>
                         </div>
                       ))}
                     </div>
 
                     <Button 
                       onClick={() => handleEnquireNow(pkg.title)}
-                      className="w-full font-lato font-semibold py-3 rounded-xl shadow-lg transform hover:scale-105 transition-all duration-300"
+                      className="w-full font-montserrat font-semibold py-3 rounded-xl shadow-lg transform hover:scale-105 transition-all duration-300 flex items-center justify-center gap-2"
                       style={{ 
                         background: 'linear-gradient(135deg, #F8C7CC 0%, #D9B38C 100%)',
                         color: '#2D2D2D'
                       }}
                     >
-                      View Package Details →
+                      Explore Full Package
+                      <ArrowRight className="h-4 w-4" />
                     </Button>
                   </CardContent>
                 </Card>
