@@ -12,7 +12,7 @@
 #### 1. Frontend Environment Variables:
 ```bash
 # OLD (causing domain mismatch):
-REACT_APP_BACKEND_URL=https://travel-site-revamp.preview.emergentagent.com
+REACT_APP_BACKEND_URL=https://pretty-planet-travel.preview.emergentagent.com
 
 # NEW (production ready):
 REACT_APP_BACKEND_URL=https://www.prettyplanettravels.com
