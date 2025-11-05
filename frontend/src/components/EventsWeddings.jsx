@@ -8,8 +8,10 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '.
 import { Label } from './ui/label';
 import { Link } from 'react-router-dom';
 import SEOHead from './SEOHead';
+import WeddingProposalViewer from './WeddingProposalViewer';
 
 const EventsWeddingsLuxury = () => {
+  const [isProposalOpen, setIsProposalOpen] = useState(false);
   const [formData, setFormData] = useState({
     name: '',
     email: '',
