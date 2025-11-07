@@ -373,7 +373,12 @@ Looking forward to creating unforgettable memories with Pretty Planet!`;
               </button>
 
               <button
-                onClick={() => window.open('/pay', '_blank')}
+                onClick={() => {
+                  const enquiryForm = document.getElementById('enquiry-form');
+                  if (enquiryForm) {
+                    enquiryForm.scrollIntoView({ behavior: 'smooth' });
+                  }
+                }}
                 className="inline-flex items-center justify-center font-montserrat font-semibold px-8 py-4 text-base rounded-full transform hover:scale-105 transition-all duration-300 group"
                 style={{ 
                   background: 'linear-gradient(135deg, #F8C7CC 0%, #D9B38C 100%)',
@@ -384,7 +389,7 @@ Looking forward to creating unforgettable memories with Pretty Planet!`;
                 onMouseLeave={(e) => e.currentTarget.style.boxShadow = '0 8px 20px rgba(248, 199, 204, 0.3)'}
               >
                 <Star className="w-5 h-5 mr-2" fill="currentColor" />
-                Pay Now – Secure Booking
+                Secure Your Date – Book Now
               </button>
             </div>
 
