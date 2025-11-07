@@ -700,6 +700,218 @@ Looking forward to creating unforgettable memories with Pretty Planet!`;
           </div>
         </section>
 
+        {/* Timeless Wedding Inspirations Gallery Section */}
+        <section className="py-20 px-4 bg-gradient-to-b from-rose-50/30 via-amber-50/20 to-white">
+          <div className="max-w-7xl mx-auto">
+            {/* Section Header */}
+            <div className="text-center mb-12">
+              <h2 className="text-4xl md:text-5xl font-playfair font-semibold mb-4" style={{ color: '#2D2D2D' }}>
+                Timeless Wedding Inspirations
+              </h2>
+              <div className="w-24 h-1 mx-auto mb-6" style={{ background: 'linear-gradient(90deg, #D9B38C 0%, #F8C7CC 100%)' }}></div>
+              <p className="text-lg md:text-xl font-montserrat font-light max-w-3xl mx-auto italic" style={{ color: '#3B3B3B' }}>
+                "From sacred rituals to glamorous evenings — we design celebrations that reflect your story."
+              </p>
+            </div>
+
+            {/* 2-Column Grid Gallery with Lightbox */}
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+              {/* Image 1: Traditional Pichwai Décor */}
+              <div 
+                className="group relative overflow-hidden rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 cursor-pointer"
+                onClick={() => {
+                  const modal = document.getElementById('lightbox-modal');
+                  const modalImg = document.getElementById('lightbox-img');
+                  const caption = document.getElementById('lightbox-caption');
+                  modal.style.display = 'flex';
+                  modalImg.src = 'https://customer-assets.emergentagent.com/job_pretty-planet-travel/artifacts/qhauf7tw_IMG_1483.JPG';
+                  caption.innerHTML = '<h3 class="text-2xl font-playfair font-semibold mb-2">Traditional Pichwai Décor</h3><p>Vibrant Pichwai-inspired wedding setup with floral detailing</p>';
+                }}
+              >
+                <img 
+                  src="https://customer-assets.emergentagent.com/job_pretty-planet-travel/artifacts/qhauf7tw_IMG_1483.JPG"
+                  alt="Vibrant Pichwai-inspired wedding setup with floral detailing"
+                  className="w-full h-[400px] object-cover transition-transform duration-700 group-hover:scale-110"
+                  loading="lazy"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                  <div className="text-white text-center">
+                    <svg className="w-16 h-16 mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7" />
+                    </svg>
+                    <p className="text-lg font-semibold">Click to View</p>
+                  </div>
+                </div>
+                <div className="absolute bottom-0 left-0 right-0 p-6 text-white bg-gradient-to-t from-black/80 to-transparent">
+                  <h3 className="text-xl font-playfair font-semibold mb-1">Traditional Pichwai Décor</h3>
+                  <p className="text-sm font-montserrat">Vibrant Pichwai-inspired wedding setup with floral detailing</p>
+                </div>
+              </div>
+
+              {/* Image 2: Sacred Shrinathji Mandap */}
+              <div 
+                className="group relative overflow-hidden rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 cursor-pointer"
+                onClick={() => {
+                  const modal = document.getElementById('lightbox-modal');
+                  const modalImg = document.getElementById('lightbox-img');
+                  const caption = document.getElementById('lightbox-caption');
+                  modal.style.display = 'flex';
+                  modalImg.src = 'https://customer-assets.emergentagent.com/job_pretty-planet-travel/artifacts/6mmjht4l_IMG_1489.JPG';
+                  caption.innerHTML = '<h3 class="text-2xl font-playfair font-semibold mb-2">Sacred Shrinathji Mandap</h3><p>Spiritual wedding décor with Shrinathji idol and floral mandap design</p>';
+                }}
+              >
+                <img 
+                  src="https://customer-assets.emergentagent.com/job_pretty-planet-travel/artifacts/6mmjht4l_IMG_1489.JPG"
+                  alt="Spiritual wedding décor with Shrinathji idol and floral mandap design"
+                  className="w-full h-[400px] object-cover transition-transform duration-700 group-hover:scale-110"
+                  loading="lazy"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                  <div className="text-white text-center">
+                    <svg className="w-16 h-16 mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7" />
+                    </svg>
+                    <p className="text-lg font-semibold">Click to View</p>
+                  </div>
+                </div>
+                <div className="absolute bottom-0 left-0 right-0 p-6 text-white bg-gradient-to-t from-black/80 to-transparent">
+                  <h3 className="text-xl font-playfair font-semibold mb-1">Sacred Shrinathji Mandap</h3>
+                  <p className="text-sm font-montserrat">Spiritual wedding décor with Shrinathji idol and floral mandap design</p>
+                </div>
+              </div>
+
+              {/* Image 3: Sangeet Night Glam */}
+              <div 
+                className="group relative overflow-hidden rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 cursor-pointer"
+                onClick={() => {
+                  const modal = document.getElementById('lightbox-modal');
+                  const modalImg = document.getElementById('lightbox-img');
+                  const caption = document.getElementById('lightbox-caption');
+                  modal.style.display = 'flex';
+                  modalImg.src = 'https://customer-assets.emergentagent.com/job_pretty-planet-travel/artifacts/c09ne97a_IMG_1480.JPG';
+                  caption.innerHTML = '<h3 class="text-2xl font-playfair font-semibold mb-2">Sangeet Night Glam</h3><p>Modern sangeet celebration with elegant golden backdrop and stage lights</p>';
+                }}
+              >
+                <img 
+                  src="https://customer-assets.emergentagent.com/job_pretty-planet-travel/artifacts/c09ne97a_IMG_1480.JPG"
+                  alt="Modern sangeet celebration with elegant golden backdrop and stage lights"
+                  className="w-full h-[400px] object-cover transition-transform duration-700 group-hover:scale-110"
+                  loading="lazy"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                  <div className="text-white text-center">
+                    <svg className="w-16 h-16 mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7" />
+                    </svg>
+                    <p className="text-lg font-semibold">Click to View</p>
+                  </div>
+                </div>
+                <div className="absolute bottom-0 left-0 right-0 p-6 text-white bg-gradient-to-t from-black/80 to-transparent">
+                  <h3 className="text-xl font-playfair font-semibold mb-1">Sangeet Night Glam</h3>
+                  <p className="text-sm font-montserrat">Modern sangeet celebration with elegant golden backdrop and stage lights</p>
+                </div>
+              </div>
+
+              {/* Image 4: Sunset Bar Setup */}
+              <div 
+                className="group relative overflow-hidden rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 cursor-pointer"
+                onClick={() => {
+                  const modal = document.getElementById('lightbox-modal');
+                  const modalImg = document.getElementById('lightbox-img');
+                  const caption = document.getElementById('lightbox-caption');
+                  modal.style.display = 'flex';
+                  modalImg.src = 'https://customer-assets.emergentagent.com/job_pretty-planet-travel/artifacts/ae3x8fjs_IMG_1477.JPG';
+                  caption.innerHTML = '<h3 class="text-2xl font-playfair font-semibold mb-2">Sunset Bar Setup</h3><p>Outdoor cocktail bar with floral canopy at sunset wedding</p>';
+                }}
+              >
+                <img 
+                  src="https://customer-assets.emergentagent.com/job_pretty-planet-travel/artifacts/ae3x8fjs_IMG_1477.JPG"
+                  alt="Outdoor cocktail bar with floral canopy at sunset wedding"
+                  className="w-full h-[400px] object-cover transition-transform duration-700 group-hover:scale-110"
+                  loading="lazy"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                  <div className="text-white text-center">
+                    <svg className="w-16 h-16 mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7" />
+                    </svg>
+                    <p className="text-lg font-semibold">Click to View</p>
+                  </div>
+                </div>
+                <div className="absolute bottom-0 left-0 right-0 p-6 text-white bg-gradient-to-t from-black/80 to-transparent">
+                  <h3 className="text-xl font-playfair font-semibold mb-1">Sunset Bar Setup</h3>
+                  <p className="text-sm font-montserrat">Outdoor cocktail bar with floral canopy at sunset wedding</p>
+                </div>
+              </div>
+
+              {/* Image 5: Luxury Evening Stage - Full Width */}
+              <div 
+                className="md:col-span-2 group relative overflow-hidden rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 cursor-pointer"
+                onClick={() => {
+                  const modal = document.getElementById('lightbox-modal');
+                  const modalImg = document.getElementById('lightbox-img');
+                  const caption = document.getElementById('lightbox-caption');
+                  modal.style.display = 'flex';
+                  modalImg.src = 'https://customer-assets.emergentagent.com/job_pretty-planet-travel/artifacts/c2co11fh_IMG_1458.JPG';
+                  caption.innerHTML = '<h3 class="text-2xl font-playfair font-semibold mb-2">Luxury Evening Stage</h3><p>Elegant evening wedding setup with chandeliers and floral arch</p>';
+                }}
+              >
+                <img 
+                  src="https://customer-assets.emergentagent.com/job_pretty-planet-travel/artifacts/c2co11fh_IMG_1458.JPG"
+                  alt="Elegant evening wedding setup with chandeliers and floral arch"
+                  className="w-full h-[500px] object-cover transition-transform duration-700 group-hover:scale-110"
+                  loading="lazy"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                  <div className="text-white text-center">
+                    <svg className="w-16 h-16 mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7" />
+                    </svg>
+                    <p className="text-lg font-semibold">Click to View</p>
+                  </div>
+                </div>
+                <div className="absolute bottom-0 left-0 right-0 p-6 text-white bg-gradient-to-t from-black/80 to-transparent">
+                  <h3 className="text-xl font-playfair font-semibold mb-1">Luxury Evening Stage</h3>
+                  <p className="text-sm font-montserrat">Elegant evening wedding setup with chandeliers and floral arch</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Lightbox Modal */}
+        <div 
+          id="lightbox-modal" 
+          className="fixed inset-0 z-50 hidden bg-black/95 items-center justify-center p-4"
+          style={{ display: 'none' }}
+          onClick={(e) => {
+            if (e.target.id === 'lightbox-modal') {
+              document.getElementById('lightbox-modal').style.display = 'none';
+            }
+          }}
+        >
+          <button
+            onClick={() => document.getElementById('lightbox-modal').style.display = 'none'}
+            className="absolute top-4 right-4 p-3 bg-white/10 rounded-full hover:bg-white/20 transition-colors z-10"
+            aria-label="Close lightbox"
+          >
+            <X className="h-8 w-8 text-white" />
+          </button>
+          
+          <div className="max-w-6xl w-full">
+            <img 
+              id="lightbox-img"
+              src=""
+              alt=""
+              className="w-full max-h-[80vh] object-contain rounded-lg shadow-2xl"
+            />
+            <div 
+              id="lightbox-caption" 
+              className="text-white text-center mt-6 font-montserrat"
+            ></div>
+          </div>
+        </div>
+
         {/* Enquiry Form Section */}
         <section id="enquiry-form" className="py-20 px-4 bg-white">
           <div className="max-w-3xl mx-auto">
