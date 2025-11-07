@@ -11,6 +11,8 @@ import EventsWeddings from "./components/EventsWeddings";
 import Testimonials from "./components/Testimonials";
 import Gallery from "./components/Gallery";
 import Blog from "./components/Blog";
+import BlogPost from "./components/BlogPost";
+import BlogPreview from "./components/BlogPreview";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import WhatsAppButton from "./components/WhatsAppButton";
