@@ -44,6 +44,7 @@ const MobileHeader = () => {
               <Link to="/tour-packages" className="block text-lg font-medium text-[#0D3B66] hover:text-blue-900 py-2" onClick={() => setIsMenuOpen(false)}>Tour Packages</Link>
               <Link to="/events-weddings" className="block text-lg font-medium text-[#0D3B66] hover:text-blue-900 py-2" onClick={() => setIsMenuOpen(false)}>Events & Weddings</Link>
               <a href="/#gallery" className="block text-lg font-medium text-[#0D3B66] hover:text-blue-900 py-2" onClick={() => setIsMenuOpen(false)}>Gallery</a>
+              <Link to="/blog" className="block text-lg font-medium text-[#0D3B66] hover:text-blue-900 py-2" onClick={() => setIsMenuOpen(false)}>Blog</Link>
               <a href="/#contact" className="block text-lg font-medium text-[#0D3B66] hover:text-blue-900 py-2" onClick={() => setIsMenuOpen(false)}>Contact</a>
             </div>
 
