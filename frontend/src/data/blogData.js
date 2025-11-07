@@ -3,72 +3,105 @@ export const blogPosts = [
   {
     id: 1,
     slug: "why-dharamshala-perfect-destination-dream-wedding",
-    title: "Why Dharamshala Is the Perfect Destination for Your Dream Wedding",
-    metaDescription: "Discover why Dharamshala is emerging as the top destination wedding location in India. Explore stunning venues, Himalayan beauty, and luxury wedding experiences in the heart of Himachal Pradesh.",
+    title: "🩷 Why Dharamshala Is the Perfect Destination for Your Dream Wedding",
+    metaDescription: "Discover why Dharamshala is India's most enchanting destination for weddings. From breathtaking views to luxury resorts, Pretty Planet Travels & Events turns your dream celebration into reality.",
     author: "Pretty Planet Travels & Events",
-    date: "November 5, 2025",
+    date: "November 7, 2025",
     readTime: "8 min read",
-    category: "Wedding Planning",
+    category: "Weddings",
     featuredImage: "/assets/hero-dharamshala.jpg",
-    excerpt: "Nestled in the lap of the Dhauladhar mountains, Dharamshala offers the perfect blend of natural beauty, spiritual serenity, and modern luxury for destination weddings.",
+    excerpt: "Imagine exchanging vows against the snow-kissed backdrop of the Himalayas, surrounded by crisp mountain air, pine forests, and panoramic views that take your breath away. Welcome to Dharamshala — a destination where love and nature come together to create the most unforgettable weddings.",
     content: `
       <div class="blog-content">
-        <h2>The Magic of Mountain Weddings</h2>
-        <p>Imagine exchanging your vows with the majestic Dhauladhar mountain range as your backdrop, crisp Himalayan air filling your lungs, and the warmth of traditional Himachali hospitality embracing your celebration. This is what makes Dharamshala the perfect destination for your dream wedding.</p>
+        <h2 style="color: #F8C7CC;">🌿 A Wedding in the Mountains — Where Magic Meets Serenity</h2>
+        
+        <p>Imagine exchanging vows against the snow-kissed backdrop of the Himalayas, surrounded by crisp mountain air, pine forests, and panoramic views that take your breath away.</p>
+        
+        <p>Welcome to <strong>Dharamshala</strong> — a destination where love and nature come together to create the most unforgettable weddings.</p>
 
-        <h2>Unparalleled Natural Beauty</h2>
-        <p>Dharamshala is blessed with breathtaking landscapes that provide a stunning canvas for your wedding photography. From lush green valleys to snow-capped peaks, every corner offers picture-perfect moments. The changing seasons bring their own charm – spring blooms with rhododendrons, summer offers pleasant weather, autumn paints the landscape in golden hues, and winter transforms the region into a magical wonderland.</p>
+        <p>At <a href="/events-weddings" class="text-rose-600 hover:text-rose-700 font-semibold">Pretty Planet Travels & Events</a>, we've been blessed to craft dream celebrations for couples from across India and the world. Here's why Dharamshala continues to steal every couple's heart.</p>
 
-        <h3>Scenic Wedding Venues</h3>
-        <p>The region boasts numerous luxury resorts and heritage properties that combine natural beauty with world-class amenities. Whether you envision an intimate ceremony in a colonial-era estate or a grand celebration at a modern luxury resort, Dharamshala has it all.</p>
+        <h2 style="color: #D9B38C;">🌸 1. A Destination Straight Out of a Fairytale</h2>
+        
+        <p>Dharamshala's natural beauty adds a timeless charm to every wedding. Whether you prefer a grand resort ceremony or an intimate outdoor affair, this hill town offers settings that feel straight out of a dream.</p>
+        
+        <p>From serene monasteries to misty tea gardens and luxury resorts, every location becomes the perfect canvas for your love story.</p>
 
-        <h2>Accessibility Meets Exclusivity</h2>
-        <p>One of Dharamshala's biggest advantages is its accessibility. Located just 10 km from Gaggal Airport and well-connected by road from major cities, it offers the perfect balance of being exclusive yet easily reachable for your guests. The journey itself becomes part of the experience, with scenic mountain roads adding to the excitement.</p>
+        <h2 style="color: #D9B38C;">🏨 2. Stunning Venues for Every Style</h2>
+        
+        <p>Dharamshala is home to some of the most luxurious and picturesque venues in Himachal Pradesh — and we've worked with the best of them:</p>
 
-        <h2>Cultural Richness and Spiritual Ambiance</h2>
-        <p>Dharamshala is home to the Tibetan government-in-exile and His Holiness the Dalai Lama, giving it a unique spiritual atmosphere. This cultural blend of Himachali tradition and Tibetan influence creates a serene and meaningful setting for your wedding ceremonies. Many couples find that this spiritual energy adds a deeper dimension to their celebration.</p>
-
-        <h3>Traditional Ceremonies with Modern Comfort</h3>
-        <p>You can incorporate traditional Himachali rituals or Tibetan blessings into your wedding while enjoying modern luxury amenities. This fusion of tradition and comfort is what sets Dharamshala apart from other destinations.</p>
-
-        <h2>Year-Round Wedding Destination</h2>
-        <p>Unlike many hill stations that are only suitable for weddings during specific seasons, Dharamshala offers beautiful weather throughout the year. Each season brings its own charm:</p>
         <ul>
-          <li><strong>Spring (March-May):</strong> Perfect weather, blooming flowers, and clear mountain views</li>
-          <li><strong>Monsoon (June-September):</strong> Lush greenery and romantic rain showers</li>
-          <li><strong>Autumn (October-November):</strong> Clear skies, pleasant temperatures, and golden landscapes</li>
-          <li><strong>Winter (December-February):</strong> Snow-covered mountains and cozy celebrations</li>
+          <li><strong>Radisson Blu Resort Dharamshala</strong> – For modern elegance with stunning valley views.</li>
+          <li><strong>The Amoha by ITC Storii</strong> – Ideal for intimate destination weddings with a luxury touch.</li>
+          <li><strong>Hyatt Regency Dharamshala</strong> – Perfect for chic celebrations with full 5-star hospitality.</li>
         </ul>
 
-        <h2>Professional Wedding Services</h2>
-        <p>Dharamshala has emerged as a preferred destination wedding location, which means you'll find experienced wedding planners, decorators, photographers, and caterers who understand destination weddings. At <a href="/events-weddings" class="text-rose-600 hover:text-rose-700 font-semibold">Pretty Planet Travels & Events</a>, we have successfully executed numerous luxury weddings in Dharamshala, including royal weddings and celebrity celebrations.</p>
+        <p>Each venue offers unique layouts, breathtaking views, and top-tier amenities — and we handle every detail from décor to guest experience.</p>
 
-        <h2>Guest Experience Beyond the Wedding</h2>
-        <p>Your guests will have plenty to explore during their stay. From visiting the Dalai Lama Temple and Bhagsunag Waterfall to shopping at McLeod Ganj's Tibetan markets, there's something for everyone. Adventure enthusiasts can trek, paraglide, or explore the tea gardens, while those seeking relaxation can enjoy spa treatments and yoga sessions.</p>
+        <h2 style="color: #F8C7CC;">💫 3. Hassle-Free Destination Planning</h2>
+        
+        <p>Planning a wedding away from home can feel overwhelming — but with <a href="/events-weddings" class="text-rose-600 hover:text-rose-700 font-semibold">Pretty Planet</a>, it's effortless.</p>
+        
+        <p><strong>Our team handles everything:</strong></p>
+        <ul>
+          <li>✅ Venue scouting & bookings</li>
+          <li>✅ Décor & theme design</li>
+          <li>✅ Vendor coordination</li>
+          <li>✅ Guest logistics & hospitality</li>
+          <li>✅ Photography, entertainment & ceremonies</li>
+        </ul>
 
-        <h2>Cost-Effective Luxury</h2>
-        <p>Compared to international destinations or even some other Indian locations, Dharamshala offers exceptional value for money. You get luxury accommodations, stunning venues, and professional services at competitive prices, allowing you to create a grand celebration within your budget.</p>
+        <p>All you need to do is enjoy your celebrations while we handle the rest.</p>
 
-        <h2>Creating Lasting Memories</h2>
-        <p>A wedding in Dharamshala is not just an event – it's an experience that your guests will remember forever. The combination of natural beauty, cultural richness, modern amenities, and warm hospitality creates the perfect setting for celebrating your love story.</p>
+        <h2 style="color: #D9B38C;">💐 4. Décor That Tells Your Story</h2>
+        
+        <p>Every couple is unique, and so should be your wedding décor.</p>
+        
+        <p>Whether you dream of royal grandeur or minimalist elegance, our décor artists create magic with flowers, colors, and lighting — blending local Himachali charm with world-class style.</p>
+
+        <p>From traditional mandaps to modern boho setups, every Pretty Planet wedding is designed to reflect your personality and love story.</p>
+
+        <h2 style="color: #F8C7CC;">✨ 5. A Complete Experience for You and Your Guests</h2>
+        
+        <p>Dharamshala is not just about the wedding — it's an experience your guests will cherish forever.</p>
+        
+        <p>From mountain treks and monasteries to cafés and nature walks, there's something for everyone.</p>
+
+        <p>We also manage your guests' stay, transfers, welcome hampers, and more — because true luxury lies in attention to detail.</p>
+
+        <h2 style="color: #D9B38C;">💖 Your Dream, Our Destination</h2>
+        
+        <p>Every Pretty Planet wedding is crafted with passion, precision, and love.</p>
+        
+        <p>Whether it's a royal affair or an intimate mountain celebration, our team ensures that every moment becomes a beautiful memory.</p>
 
         <div class="cta-section bg-gradient-to-r from-rose-50 to-amber-50 rounded-xl p-8 my-8 text-center border-2 border-rose-200">
-          <h3 class="text-2xl font-playfair font-semibold mb-4" style="color: #2D2D2D;">Ready to Plan Your Dream Wedding in Dharamshala?</h3>
-          <p class="mb-6 text-gray-700">Let our expert wedding planners bring your vision to life amidst the breathtaking beauty of the Himalayas.</p>
+          <h3 class="text-2xl font-playfair font-semibold mb-4" style="color: #2D2D2D;">💖 Ready to Plan Your Dharamshala Wedding?</h3>
+          <p class="mb-6 text-gray-700">Contact us today to start planning your dream destination wedding in the heart of the Himalayas.</p>
           <div class="flex flex-col sm:flex-row gap-4 justify-center">
             <a href="/events-weddings" class="inline-block bg-gradient-to-r from-rose-500 to-pink-500 text-white font-semibold px-8 py-3 rounded-full hover:shadow-xl transition-all">
-              Explore Wedding Packages
+              View Wedding Packages
             </a>
             <a href="/contact" class="inline-block border-2 border-rose-500 text-rose-600 font-semibold px-8 py-3 rounded-full hover:bg-rose-50 transition-all">
-              Contact Our Team
+              📞 Contact Us Today
             </a>
           </div>
         </div>
 
-        <p class="mt-8 text-gray-600 italic">Want to see how we bring wedding dreams to life? <a href="/events-weddings" class="text-rose-600 hover:text-rose-700 font-semibold">View our comprehensive wedding proposal</a> to learn more about our services, past weddings, and exclusive packages.</p>
+        <div class="mt-8 p-6 bg-rose-50 rounded-xl border-2 border-rose-200">
+          <p class="text-lg font-semibold mb-3" style="color: #2D2D2D;">📧 Get in Touch:</p>
+          <p class="text-gray-700 mb-2"><strong>Email:</strong> info@prettyplanettravels.com</p>
+          <p class="text-gray-700 mb-2"><strong>Phone:</strong> +91 86793 33354</p>
+          <p class="text-gray-700"><strong>Location:</strong> Dharamshala, Himachal Pradesh</p>
+        </div>
+
+        <p class="mt-8 text-center text-xl font-playfair italic" style="color: #D9B38C;">"Memorable Events Don't Just Happen — They Happen with Pretty Planet."</p>
+
+        <p class="mt-6 text-gray-600 italic">Want to see our complete wedding services and packages? <a href="/events-weddings" class="text-rose-600 hover:text-rose-700 font-semibold">Explore our wedding proposal</a> to discover how we bring your vision to life.</p>
       </div>
     `,
-    tags: ["Dharamshala Weddings", "Destination Weddings", "Himachal Wedding Venues", "Mountain Weddings"]
+    tags: ["Dharamshala Weddings", "Destination Weddings", "Himachal Wedding Venues", "Mountain Weddings", "Luxury Weddings"]
   },
   {
     id: 2,
