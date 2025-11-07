@@ -72,6 +72,8 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/tour-packages" element={<TourPackagesPage />} />
           <Route path="/events-weddings" element={<EventsWeddingsPage />} />
+          <Route path="/blog" element={<><Header /><Blog /><Footer /><WhatsAppButton /></>} />
+          <Route path="/blog/:slug" element={<><Header /><BlogPost /><Footer /><WhatsAppButton /></>} />
           <Route path="/terms-conditions" element={<><Header /><TermsConditions /><Footer /><WhatsAppButton /></>} />
           <Route path="/refund-policy" element={<><Header /><RefundPolicy /><Footer /><WhatsAppButton /></>} />
           <Route path="/travel-insurance" element={<><Header /><TravelInsurance /><Footer /><WhatsAppButton /></>} />
