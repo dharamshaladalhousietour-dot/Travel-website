@@ -589,6 +589,117 @@ Looking forward to creating unforgettable memories with Pretty Planet!`;
           </div>
         </section>
 
+        {/* Wedding Décor Gallery Section */}
+        <section className="py-20 px-4 bg-gradient-to-b from-white via-rose-50/30 to-white">
+          <div className="max-w-7xl mx-auto">
+            {/* Section Header */}
+            <div className="text-center mb-16">
+              <h2 className="text-4xl md:text-5xl font-playfair font-semibold mb-4" style={{ color: '#2D2D2D' }}>
+                A Glimpse of Our Dream Weddings
+              </h2>
+              <div className="w-24 h-1 mx-auto mb-6" style={{ background: 'linear-gradient(90deg, #F8C7CC 0%, #D9B38C 100%)' }}></div>
+              <p className="text-lg md:text-xl font-montserrat font-light max-w-3xl mx-auto" style={{ color: '#3B3B3B' }}>
+                Experience the artistry and elegance of our signature wedding décor, crafted with love for celebrations in the Himalayas
+              </p>
+            </div>
+
+            {/* 2-Column Grid Gallery */}
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+              {/* Image 1: Blue & White Arch Décor */}
+              <div className="group relative overflow-hidden rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2">
+                <img 
+                  src="https://customer-assets.emergentagent.com/job_pretty-planet-travel/artifacts/61lsv454_IMG_1513%20%281%29.JPG"
+                  alt="Elegant floral arch for Dharamshala mountain wedding"
+                  className="w-full h-[400px] object-cover transition-transform duration-700 group-hover:scale-110"
+                  loading="lazy"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                <div className="absolute bottom-0 left-0 right-0 p-6 text-white transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+                  <h3 className="text-2xl font-playfair font-semibold mb-2">Blue & White Arch Décor</h3>
+                  <p className="font-montserrat">Elegant floral arch for Dharamshala mountain wedding</p>
+                </div>
+              </div>
+
+              {/* Image 2: Red Mountain Theme */}
+              <div className="group relative overflow-hidden rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2">
+                <img 
+                  src="https://customer-assets.emergentagent.com/job_pretty-planet-travel/artifacts/fa5cll3o_IMG_1510%20%281%29.JPG"
+                  alt="Vibrant Himachal wedding décor with red and orange flowers"
+                  className="w-full h-[400px] object-cover transition-transform duration-700 group-hover:scale-110"
+                  loading="lazy"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                <div className="absolute bottom-0 left-0 right-0 p-6 text-white transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+                  <h3 className="text-2xl font-playfair font-semibold mb-2">Red Mountain Theme</h3>
+                  <p className="font-montserrat">Vibrant Himachal wedding décor with red and orange flowers</p>
+                </div>
+              </div>
+
+              {/* Image 3: Krishna Floral Décor */}
+              <div className="group relative overflow-hidden rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2">
+                <img 
+                  src="https://customer-assets.emergentagent.com/job_pretty-planet-travel/artifacts/dtz9gv5h_IMG_1504%20%281%29.JPG"
+                  alt="Traditional wedding setup inspired by Krishna art and florals"
+                  className="w-full h-[400px] object-cover transition-transform duration-700 group-hover:scale-110"
+                  loading="lazy"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                <div className="absolute bottom-0 left-0 right-0 p-6 text-white transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+                  <h3 className="text-2xl font-playfair font-semibold mb-2">Krishna Floral Décor</h3>
+                  <p className="font-montserrat">Traditional wedding setup inspired by Krishna art and florals</p>
+                </div>
+              </div>
+
+              {/* Image 4: Drunk in Love Bar */}
+              <div className="group relative overflow-hidden rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2">
+                <img 
+                  src="https://customer-assets.emergentagent.com/job_pretty-planet-travel/artifacts/k31jqf5e_IMG_1495.JPG"
+                  alt="Outdoor bar setup with palm trees and wedding cocktails"
+                  className="w-full h-[400px] object-cover transition-transform duration-700 group-hover:scale-110"
+                  loading="lazy"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                <div className="absolute bottom-0 left-0 right-0 p-6 text-white transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+                  <h3 className="text-2xl font-playfair font-semibold mb-2">Drunk in Love Bar</h3>
+                  <p className="font-montserrat">Outdoor bar setup with palm trees and wedding cocktails</p>
+                </div>
+              </div>
+
+              {/* Image 5: Night Chandelier Décor - Full Width */}
+              <div className="md:col-span-2 group relative overflow-hidden rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2">
+                <img 
+                  src="https://customer-assets.emergentagent.com/job_pretty-planet-travel/artifacts/8e8ttsmv_IMG_1499.JPG"
+                  alt="Luxury evening wedding with chandeliers and candles"
+                  className="w-full h-[500px] object-cover transition-transform duration-700 group-hover:scale-110"
+                  loading="lazy"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                <div className="absolute bottom-0 left-0 right-0 p-6 text-white transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+                  <h3 className="text-2xl font-playfair font-semibold mb-2">Night Chandelier Décor</h3>
+                  <p className="font-montserrat">Luxury evening wedding with chandeliers and candles</p>
+                </div>
+              </div>
+            </div>
+
+            {/* CTA Button */}
+            <div className="text-center">
+              <Link to="/events-weddings#packages">
+                <Button 
+                  className="font-montserrat font-semibold px-10 py-4 text-lg rounded-full transform hover:scale-105 transition-all duration-300 inline-flex items-center gap-2"
+                  style={{ 
+                    background: 'linear-gradient(135deg, #F8C7CC 0%, #D9B38C 100%)',
+                    color: '#2D2D2D',
+                    boxShadow: '0 8px 20px rgba(248, 199, 204, 0.3)'
+                  }}
+                >
+                  View Wedding Packages
+                  <ArrowRight className="h-5 w-5" />
+                </Button>
+              </Link>
+            </div>
+          </div>
+        </section>
+
         {/* Enquiry Form Section */}
         <section id="enquiry-form" className="py-20 px-4 bg-white">
           <div className="max-w-3xl mx-auto">
