@@ -1016,7 +1016,7 @@ Looking forward to creating unforgettable memories with Pretty Planet!`;
                   const caption = document.getElementById('lightbox-caption');
                   modal.style.display = 'flex';
                   modalImg.src = 'https://customer-assets.emergentagent.com/job_pretty-planet-travel/artifacts/4f0qv7th_IMG_1510.JPG';
-                  caption.innerHTML = '<h3 class="text-2xl font-playfair font-semibold mb-2">Tropical Mehendi Backdrop</h3><p>Boho-chic mehendi setup with yellow florals and geometric panels</p>';
+                  caption.innerHTML = '<h3 class="text-2xl font-playfair font-semibold mb-2" style="color: #CBA135;">Tropical Mehendi Backdrop</h3><p>Boho-chic mehendi setup with yellow florals and geometric panels</p>';
                 }}
               >
                 <img 
