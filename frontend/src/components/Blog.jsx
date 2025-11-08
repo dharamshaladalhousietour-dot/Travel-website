@@ -199,17 +199,11 @@ const Blog = () => {
                 Explore Wedding Packages
               </Link>
               <Link
-                to="/#contact"
+                to="/"
                 className="inline-block border-2 border-white text-white font-semibold px-10 py-4 rounded-full hover:bg-white/10 transition-all"
                 onClick={(e) => {
                   e.preventDefault();
-                  window.location.href = '/';
-                  setTimeout(() => {
-                    const contactSection = document.getElementById('contact');
-                    if (contactSection) {
-                      contactSection.scrollIntoView({ behavior: 'smooth' });
-                    }
-                  }, 100);
+                  window.location.href = '/#contact';
                 }}
               >
                 Contact Our Team
