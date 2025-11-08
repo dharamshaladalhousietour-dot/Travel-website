@@ -344,14 +344,18 @@ const Contact = () => {
               </Card>
             ))}
 
-            {/* Map Placeholder */}
+            {/* Google Maps Embed - Pretty Planet Travels and Events, Dharamshala */}
             <Card className="border-0 shadow-lg overflow-hidden">
-              <div className="relative h-64 bg-gray-200 flex items-center justify-center">
-                <div className="text-center text-gray-500">
-                  <Globe className="h-12 w-12 mx-auto mb-2" />
-                  <p className="font-medium">Interactive Map</p>
-                  <p className="text-sm">Location visualization coming soon</p>
-                </div>
+              <div className="relative w-full" style={{ paddingBottom: '75%' }}>
+                <iframe 
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3375.286760293723!2d76.31938487393774!3d32.223444412073235!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391b5123f086151d%3A0x78e2a4a7cd142d1d!2sPretty%20Planet%20Travels%20and%20Events!5e0!3m2!1sen!2sin!4v1762614274033!5m2!1sen!2sin" 
+                  className="absolute top-0 left-0 w-full h-full"
+                  style={{ border: 0 }}
+                  allowFullScreen="" 
+                  loading="lazy" 
+                  referrerPolicy="no-referrer-when-downgrade"
+                  title="Pretty Planet Travels and Events Location - Dharamshala"
+                ></iframe>
               </div>
             </Card>
           </div>
