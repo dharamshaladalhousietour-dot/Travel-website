@@ -221,7 +221,7 @@ export const blogPosts = [
     title: "Top 10 Luxury Wedding Venues in Himachal Pradesh — Why Dharamshala Leads the List for 2026",
     metaDescription: "Discover why Dharamshala is #1 for luxury weddings in Himachal Pradesh. Explore the top 10 venues for 2026, featuring Radisson Blu, Hyatt Regency, and The Amoha by ITC Storii.",
     author: "Pretty Planet Travels & Events",
-    date: "October 15, 2025",
+    date: "November 8, 2025",
     readTime: "12 min read",
     category: "Venue Guide",
     featuredImage: "/assets/portfolio1.jpg",
