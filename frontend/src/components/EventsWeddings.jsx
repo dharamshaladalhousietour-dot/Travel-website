@@ -1066,7 +1066,7 @@ Looking forward to creating unforgettable memories with Pretty Planet!`;
                   </div>
                 </div>
                 <div className="absolute bottom-0 left-0 right-0 p-6 text-white bg-gradient-to-t from-amber-900/90 to-transparent">
-                  <h3 className="text-xl font-playfair font-semibold mb-1">Blue & White Royal Stage</h3>
+                  <h3 className="text-xl font-playfair font-semibold mb-1" style={{ color: '#CBA135' }}>Blue & White Royal Stage</h3>
                   <p className="text-sm font-montserrat">Elegant blue and white wedding stage décor inspired by Mughal design</p>
                 </div>
               </div>
