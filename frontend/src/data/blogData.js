@@ -382,7 +382,7 @@ export const blogPosts = [
 
         <p class="mt-8 text-center text-2xl font-playfair italic" style="color: #D9B38C;">"Dharamshala isn't just a destination — it's where love meets the mountains."</p>
 
-        <p class="mt-6 text-gray-600 italic font-montserrat">Ready to explore our complete wedding services? <a href="/events-weddings" class="text-rose-600 hover:text-rose-700 font-semibold">View our wedding proposal</a> or <a href="/contact" class="text-rose-600 hover:text-rose-700 font-semibold">schedule a consultation</a> with our Dharamshala wedding experts.</p>
+        <p class="mt-6 text-gray-600 italic font-montserrat">Ready to explore our complete wedding services? <a href="/events-weddings" class="text-rose-600 hover:text-rose-700 font-semibold">View our wedding proposal</a> or <a href="/#contact" class="text-rose-600 hover:text-rose-700 font-semibold" onclick="event.preventDefault(); window.location.href='/'; setTimeout(() => document.getElementById('contact')?.scrollIntoView({behavior: 'smooth'}), 100);">schedule a consultation</a> with our Dharamshala wedding experts.</p>
       </div>
     `,
     tags: ["Dharamshala Weddings", "Luxury Wedding Venues Himachal", "Destination Wedding Planner Dharamshala", "Himachal Wedding Venues 2026", "Top Wedding Destinations", "Mountain Weddings"]
