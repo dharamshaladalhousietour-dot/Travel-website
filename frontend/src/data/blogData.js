@@ -228,161 +228,161 @@ export const blogPosts = [
     excerpt: "Nestled in the lap of the Dhauladhar ranges, Dharamshala has emerged as Himachal Pradesh's crown jewel for luxury weddings in 2026. Discover why this serene mountain town tops our list of the 10 best wedding destinations.",
     content: `
       <div class="blog-content">
-        <h2>Introduction: Why Himachal Pradesh for Luxury Weddings?</h2>
-        <p>Himachal Pradesh has emerged as India's premier destination for luxury weddings, offering a perfect blend of natural beauty, accessibility, and world-class hospitality. As we look towards 2026, we're seeing unprecedented demand for destination weddings in this Himalayan paradise.</p>
-
-        <p>Based on our experience organizing over 200 weddings in Himachal Pradesh, we've curated this list of the top 10 luxury venues that consistently deliver exceptional experiences. Each venue has been personally evaluated by our team for quality, service, capacity, and overall guest experience.</p>
-
-        <h2>1. The Oberoi Wildflower Hall, Shimla</h2>
-        <h3>Colonial Grandeur Meets Modern Luxury</h3>
-        <p><strong>Capacity:</strong> 150-200 guests<br />
-        <strong>Best Season:</strong> March-June, September-November<br />
-        <strong>Starting Price:</strong> ₹25,00,000+</p>
+        <h2 style="color: #D9B38C;">🏔️ Introduction: Where Luxury Meets Nature</h2>
         
-        <p>Perched at 8,250 feet, this former residence of Lord Kitchener combines colonial architecture with contemporary luxury. The property offers breathtaking cedar forest views and snow-capped mountain vistas.</p>
+        <p>When it comes to destination weddings in Himachal Pradesh, one name stands out above the rest: <strong>Dharamshala</strong>.</p>
         
-        <h4>Highlights:</h4>
-        <ul>
-          <li>Award-winning spa and wellness facilities</li>
-          <li>Multiple outdoor and indoor event spaces</li>
-          <li>World-class cuisine with customizable menus</li>
-          <li>47 luxury rooms and suites</li>
-          <li>Professional wedding coordination team</li>
+        <p>Nestled in the lap of the majestic Dhauladhar ranges, Dharamshala has emerged as India's most sought-after luxury wedding destination for 2026. This serene mountain town offers an unparalleled combination of natural beauty, world-class resorts, accessibility, and spiritual charm that creates the perfect backdrop for couples seeking an unforgettable celebration.</p>
+
+        <p>As <a href="/events-weddings" class="text-rose-600 hover:text-rose-700 font-semibold">Pretty Planet Travels & Events</a>' most-requested destination, we've organized over 150 luxury weddings in Dharamshala alone. Here's why Dharamshala continues to lead as <strong>Himachal's #1 wedding destination</strong> — and our curated list of the top 10 venues across the state.</p>
+
+        <div class="divider-line" style="width: 100px; height: 2px; background: linear-gradient(90deg, #D9B38C 0%, #F8C7CC 100%); margin: 2rem auto;"></div>
+
+        <h2 style="color: #F8C7CC;">✨ Dharamshala – The Crown Jewel of Himachal Weddings</h2>
+        
+        <p>Dharamshala isn't just a wedding destination — it's an experience where luxury resorts meet Himalayan grandeur, creating celebrations that your guests will remember for a lifetime.</p>
+
+        <h3 style="color: #2D2D2D;">Why Dharamshala is #1 for Luxury Weddings in 2026:</h3>
+        <ul class="custom-list">
+          <li>🌄 <strong>Breathtaking Dhauladhar Mountain Views:</strong> Panoramic snow-capped peaks form a natural, awe-inspiring backdrop for every ceremony</li>
+          <li>✈️ <strong>Excellent Accessibility:</strong> Gaggal Airport (just 10 km away) offers direct connectivity from Delhi, making it the most accessible hill station in Himachal</li>
+          <li>🏨 <strong>World-Class Luxury Resorts:</strong> Home to 5-star properties like Radisson Blu, Hyatt Regency, and ITC Storii</li>
+          <li>🧘 <strong>Serene & Spiritual Ambiance:</strong> Tibetan monasteries, prayer flags, and peaceful mountain air create a calming, romantic atmosphere</li>
+          <li>🌤️ <strong>Year-Round Weather:</strong> Pleasant climate makes Dharamshala ideal for weddings in any season</li>
+          <li>🎭 <strong>Rich Cultural Experiences:</strong> Blend traditional Himachali and Tibetan culture into your wedding celebrations</li>
         </ul>
 
-        <h2>2. Wildflower Hall Dharamshala (McLeod Ganj Properties)</h2>
-        <h3>Spiritual Serenity with Luxury Comfort</h3>
-        <p><strong>Capacity:</strong> 200-300 guests<br />
-        <strong>Best Season:</strong> Year-round<br />
-        <strong>Starting Price:</strong> ₹20,00,000+</p>
+        <div class="divider-line" style="width: 100px; height: 2px; background: linear-gradient(90deg, #D9B38C 0%, #F8C7CC 100%); margin: 2rem auto;"></div>
+
+        <h2 style="color: #D9B38C;">🏔️ Top 3 Luxury Wedding Venues in Dharamshala</h2>
         
-        <p>Our personal favorite for destination weddings, offering multiple luxury resorts in the Dharamshala-McLeod Ganj region. The combination of Tibetan culture, Himalayan views, and modern amenities creates a unique wedding experience.</p>
+        <p>Based on our extensive experience planning weddings in Dharamshala, here are the three venues that consistently deliver extraordinary experiences:</p>
 
-        <h4>Why We Recommend It:</h4>
-        <ul>
-          <li>Close to Gaggal Airport (10 km)</li>
-          <li>Multiple venue options within the property</li>
-          <li>Experienced in handling international guests</li>
-          <li>Beautiful terraced gardens for outdoor ceremonies</li>
-          <li>Panoramic Dhauladhar mountain views</li>
-        </ul>
-
-        <h2>3. Hyatt Regency Dharamshala Resort</h2>
-        <h3>Contemporary Luxury in the Mountains</h3>
-        <p><strong>Capacity:</strong> 300-500 guests<br />
-        <strong>Best Season:</strong> March-November<br />
-        <strong>Starting Price:</strong> ₹22,00,000+</p>
+        <h3 style="color: #2D2D2D;">1. Radisson Blu Resort Dharamshala ⭐</h3>
+        <p><strong>Capacity:</strong> 250-400 guests | <strong>Best Season:</strong> Year-round</p>
         
-        <p>One of the newest luxury properties in Himachal, the Hyatt Regency offers modern amenities with traditional Himalayan aesthetics. Perfect for larger weddings requiring extensive guest accommodations.</p>
-
-        <h2>4. Radisson Blu Resort, Dharamshala</h2>
-        <h3>Modern Elegance with Mountain Charm</h3>
-        <p><strong>Capacity:</strong> 250-400 guests<br />
-        <strong>Best Season:</strong> Year-round<br />
-        <strong>Starting Price:</strong> ₹18,00,000+</p>
+        <p>The <strong>Radisson Blu Resort Dharamshala</strong> is our top recommendation for couples seeking modern elegance paired with authentic mountain charm. Set amidst lush green landscapes with stunning valley views, this 5-star resort offers expansive indoor and outdoor event spaces, premium guest accommodations, and impeccable hospitality.</p>
         
-        <p>This property stands out for its expansive event spaces and professional wedding services. The resort offers multiple dining options and spacious rooms ideal for wedding guests.</p>
+        <p><em>Perfect for:</em> Grand celebrations with large guest lists, multi-day events, and luxury hospitality experiences.</p>
 
-        <h2>5. Fortune Park Moksha, McLeod Ganj</h2>
-        <h3>Budget-Friendly Luxury</h3>
-        <p><strong>Capacity:</strong> 150-250 guests<br />
-        <strong>Best Season:</strong> March-October<br />
-        <strong>Starting Price:</strong> ₹15,00,000+</p>
+        <h3 style="color: #2D2D2D;">2. The Amoha by ITC Storii 🌿</h3>
+        <p><strong>Capacity:</strong> 150-250 guests | <strong>Best Season:</strong> March-November</p>
         
-        <p>Offering excellent value for money, this ITC property provides luxury amenities at competitive prices. Ideal for couples looking for a premium experience within a moderate budget.</p>
-
-        <h2>6. The Himalayan, Manali</h2>
-        <h3>Adventure Meets Luxury</h3>
-        <p><strong>Capacity:</strong> 100-150 guests<br />
-        <strong>Best Season:</strong> April-June, September-November<br />
-        <strong>Starting Price:</strong> ₹20,00,000+</p>
+        <p>For couples desiring an intimate, boutique wedding experience, <strong>The Amoha by ITC Storii</strong> offers unmatched sophistication. This luxury property blends contemporary design with Himalayan aesthetics, featuring terraced gardens, cozy indoor venues, and personalized service that makes every guest feel special.</p>
         
-        <p>Perfect for couples who want to combine their wedding with adventure activities. Located on the banks of Beas River, offering riverside ceremonies and mountain adventures.</p>
+        <p><em>Perfect for:</em> Intimate destination weddings, couples seeking personalized luxury, and events with a focus on bespoke décor and curated experiences.</p>
 
-        <h2>7. Manuallaya Resort, Manali</h2>
-        <h3>Old World Charm</h3>
-        <p><strong>Capacity:</strong> 80-120 guests<br />
-        <strong>Best Season:</strong> May-October<br />
-        <strong>Starting Price:</strong> ₹12,00,000+</p>
+        <h3 style="color: #2D2D2D;">3. Hyatt Regency Dharamshala Resort 💎</h3>
+        <p><strong>Capacity:</strong> 300-500 guests | <strong>Best Season:</strong> March-November</p>
         
-        <p>This boutique resort offers an intimate setting with personalized service. The property's design reflects traditional Himachali architecture while providing modern comfort.</p>
-
-        <h2>8. Anantmaya Resort, Kasauli</h2>
-        <h3>Colonial Heritage Retreat</h3>
-        <p><strong>Capacity:</strong> 150-200 guests<br />
-        <strong>Best Season:</strong> September-May<br />
-        <strong>Starting Price:</strong> ₹16,00,000+</p>
+        <p><strong>Hyatt Regency Dharamshala</strong> stands out as one of the newest and most luxurious properties in the region. With its chic, contemporary design, expansive event spaces, full-service spa, and multiple dining venues, this resort is ideal for couples who want cutting-edge luxury without compromising on mountain views and natural beauty.</p>
         
-        <p>Located in the charming colonial town of Kasauli, this resort offers a perfect blend of heritage and luxury. The property's elevated location provides stunning valley views.</p>
-
-        <h2>9. Timber Trail Heights, Parwanoo</h2>
-        <h3>Unique Cable Car Experience</h3>
-        <p><strong>Capacity:</strong> 100-150 guests<br />
-        <strong>Best Season:</strong> March-November<br />
-        <strong>Starting Price:</strong> ₹14,00,000+</p>
-        
-        <p>Accessible only by cable car, this venue offers a unique arrival experience for guests. The property provides 360-degree mountain views and complete privacy.</p>
-
-        <h2>10. Clarks Exotica Convention Resort & Spa, Zirakpur</h2>
-        <h3>Convenience Meets Luxury</h3>
-        <p><strong>Capacity:</strong> 400-600 guests<br />
-        <strong>Best Season:</strong> Year-round<br />
-        <strong>Starting Price:</strong> ₹25,00,000+</p>
-        
-        <p>Ideal for couples planning large weddings, this resort offers extensive event spaces and excellent connectivity. Perfect for guests traveling from Delhi or Chandigarh.</p>
-
-        <h2>Factors to Consider When Choosing Your Venue</h2>
-        
-        <h3>1. Guest Count and Accommodation</h3>
-        <p>Ensure the venue can comfortably accommodate your guest list. Consider both the ceremony space and guest room availability.</p>
-
-        <h3>2. Accessibility</h3>
-        <p>Consider proximity to airports and road connectivity. Dharamshala's Gaggal Airport offers the best accessibility in the region.</p>
-
-        <h3>3. Season and Weather</h3>
-        <p>Different venues shine in different seasons. Discuss weather patterns and backup plans with your venue coordinator.</p>
-
-        <h3>4. Vendor Restrictions</h3>
-        <p>Some venues have preferred vendor lists or restrictions on outside vendors. Clarify these policies early in your planning.</p>
-
-        <h3>5. Customization Options</h3>
-        <p>Ensure the venue allows you to personalize the space according to your vision. Some properties have strict décor guidelines.</p>
-
-        <h3>6. Additional Activities</h3>
-        <p>Consider what activities and experiences the location offers for guests beyond the wedding events.</p>
-
-        <h2>Booking Timeline for 2026 Weddings</h2>
-        <p>Luxury venues in Himachal Pradesh book up 12-18 months in advance, especially for peak season dates. If you're planning a 2026 wedding, we recommend:</p>
-        <ul>
-          <li><strong>Now - December 2025:</strong> Shortlist venues and schedule site visits</li>
-          <li><strong>December 2025 - February 2026:</strong> Finalize venue and pay booking advance</li>
-          <li><strong>March 2026 onwards:</strong> Begin detailed planning and vendor coordination</li>
-        </ul>
-
-        <h2>Our Venue Selection Service</h2>
-        <p>At <a href="/events-weddings" class="text-rose-600 hover:text-rose-700 font-semibold">Pretty Planet Travels & Events</a>, we offer complimentary venue selection services for our wedding planning clients. Our team will:</p>
-        <ul>
-          <li>Understand your vision, requirements, and budget</li>
-          <li>Provide personalized venue recommendations</li>
-          <li>Arrange site visits and walkthroughs</li>
-          <li>Negotiate rates and terms on your behalf</li>
-          <li>Handle all venue coordination and logistics</li>
-        </ul>
+        <p><em>Perfect for:</em> Large, lavish celebrations, international guests expecting 5-star amenities, and couples who value modern aesthetics with premium service.</p>
 
         <div class="cta-section bg-gradient-to-r from-rose-50 to-amber-50 rounded-xl p-8 my-8 text-center border-2 border-rose-200">
-          <h3 class="text-2xl font-playfair font-semibold mb-4" style="color: #2D2D2D;">Ready to Find Your Perfect Wedding Venue?</h3>
-          <p class="mb-6 text-gray-700">Let our venue experts help you discover and secure the ideal location for your dream wedding in Himachal Pradesh.</p>
+          <h3 class="text-2xl font-playfair font-semibold mb-4" style="color: #2D2D2D;">💌 Want Full Dharamshala Venue Pricing, Décor Options & 2026 Availability?</h3>
+          <p class="mb-6 text-gray-700 font-montserrat">Contact <strong>Pretty Planet Travels & Events</strong> for your personalized Dharamshala wedding plan. We'll help you choose the perfect venue, coordinate décor, and ensure every detail is flawlessly executed.</p>
           <div class="flex flex-col sm:flex-row gap-4 justify-center">
-            <a href="/events-weddings" class="inline-block bg-gradient-to-r from-rose-500 to-pink-500 text-white font-semibold px-8 py-3 rounded-full hover:shadow-xl transition-all">
-              Explore Wedding Services
+            <a href="/events-weddings" class="inline-block bg-gradient-to-r from-rose-500 to-pink-500 text-white font-semibold px-8 py-3 rounded-full hover:shadow-xl transition-all font-montserrat">
+              View Wedding Packages
             </a>
-            <a href="/contact" class="inline-block border-2 border-rose-500 text-rose-600 font-semibold px-8 py-3 rounded-full hover:bg-rose-50 transition-all">
-              Schedule Venue Tour
+            <a href="/contact" class="inline-block border-2 border-rose-500 text-rose-600 font-semibold px-8 py-3 rounded-full hover:bg-rose-50 transition-all font-montserrat">
+              📞 Get Pricing & Availability
             </a>
           </div>
         </div>
 
-        <p class="mt-8 text-gray-600 italic">Want to learn more about planning your destination wedding? <a href="/events-weddings" class="text-rose-600 hover:text-rose-700 font-semibold">View our comprehensive wedding proposal</a> or <a href="/contact" class="text-rose-600 hover:text-rose-700 font-semibold">contact our team</a> for a personalized consultation.</p>
+        <div class="divider-line" style="width: 100px; height: 2px; background: linear-gradient(90deg, #D9B38C 0%, #F8C7CC 100%); margin: 2rem auto;"></div>
+
+        <h2 style="color: #D9B38C;">🌸 Other Luxury Venues Across Himachal Pradesh</h2>
+        
+        <p>While Dharamshala leads the list, Himachal Pradesh offers several other stunning venues for destination weddings. Here's a quick look at other luxurious options:</p>
+
+        <h3 style="color: #2D2D2D;">4. The Oberoi Wildflower Hall, Shimla</h3>
+        <p><strong>Capacity:</strong> 150-200 guests | Colonial grandeur with cedar forest views and Oberoi's legendary hospitality.</p>
+
+        <h3 style="color: #2D2D2D;">5. Wildflower Hall Resort, Manali</h3>
+        <p><strong>Capacity:</strong> 200-300 guests | Perfect for couples seeking adventure alongside luxury, located on the banks of the Beas River.</p>
+
+        <h3 style="color: #2D2D2D;">6. Taj Theog Resort & Spa, Theog</h3>
+        <p><strong>Capacity:</strong> 180-250 guests | Tranquil mountain resort with apple orchards, luxury spa, and breathtaking views.</p>
+
+        <h3 style="color: #2D2D2D;">7. Norwood Green Resort, Palampur</h3>
+        <p><strong>Capacity:</strong> 150-200 guests | Charming tea estate venue offering colonial architecture and lush green landscapes.</p>
+
+        <h3 style="color: #2D2D2D;">8. Rakkh Resort, Palampur</h3>
+        <p><strong>Capacity:</strong> 100-150 guests | Eco-luxury resort perfect for intimate weddings surrounded by pine forests.</p>
+
+        <h3 style="color: #2D2D2D;">9. The Pavilion Resort, Kangra</h3>
+        <p><strong>Capacity:</strong> 120-180 guests | Boutique luxury resort near Kangra Fort, ideal for heritage-inspired celebrations.</p>
+
+        <h3 style="color: #2D2D2D;">10. Span Resort & Spa, Manali</h3>
+        <p><strong>Capacity:</strong> 200-300 guests | Riverside resort offering adventure activities and luxury accommodations for guests.</p>
+
+        <p class="mt-6 italic" style="color: #666;">💡 <strong>Pro Tip:</strong> While these venues are exceptional, Dharamshala remains our #1 choice due to its unbeatable combination of accessibility, luxury infrastructure, and year-round wedding-friendly climate.</p>
+
+        <div class="divider-line" style="width: 100px; height: 2px; background: linear-gradient(90deg, #D9B38C 0%, #F8C7CC 100%); margin: 2rem auto;"></div>
+
+        <h2 style="color: #F8C7CC;">🎯 Why Choose Pretty Planet for Your Dharamshala Wedding?</h2>
+        
+        <p>At <a href="/events-weddings" class="text-rose-600 hover:text-rose-700 font-semibold">Pretty Planet Travels & Events</a>, Dharamshala isn't just a destination — it's our specialty. As Dharamshala's leading wedding planners, we bring:</p>
+
+        <ul class="custom-list">
+          <li>✅ <strong>150+ Dharamshala Weddings Executed:</strong> We know every venue, vendor, and hidden gem</li>
+          <li>✅ <strong>Exclusive Venue Partnerships:</strong> Access to preferred rates and priority booking at top resorts</li>
+          <li>✅ <strong>Full-Service Planning:</strong> From décor design to guest logistics, we handle it all</li>
+          <li>✅ <strong>Local Expertise:</strong> Deep knowledge of weather patterns, best photography spots, and cultural experiences</li>
+          <li>✅ <strong>Transparent Pricing:</strong> No hidden costs — just honest, detailed proposals</li>
+        </ul>
+
+        <h3 style="color: #2D2D2D;">📅 Booking Timeline for 2026 Dharamshala Weddings</h3>
+        
+        <p>Dharamshala's luxury venues book up <strong>12-18 months in advance</strong>, especially for peak season dates (March-June, September-November). If you're planning a 2026 wedding:</p>
+
+        <ul>
+          <li><strong>Now - December 2025:</strong> Shortlist venues, schedule site visits, and secure your preferred dates</li>
+          <li><strong>January - March 2026:</strong> Finalize contracts, confirm vendors, and begin detailed planning</li>
+          <li><strong>April 2026 onwards:</strong> Execute planning, conduct venue walkthroughs, and prepare for your celebration</li>
+        </ul>
+
+        <p class="mt-4" style="color: #D9B38C; font-weight: 600;">⏰ Don't wait — 2026 dates at top Dharamshala venues are filling fast!</p>
+
+        <div class="divider-line" style="width: 100px; height: 2px; background: linear-gradient(90deg, #D9B38C 0%, #F8C7CC 100%); margin: 2rem auto;"></div>
+
+        <h2 style="color: #D9B38C;">💖 Plan Your Dharamshala Wedding With Pretty Planet Travels & Events</h2>
+        
+        <p>Your dream Dharamshala wedding is just one conversation away. Whether you envision a grand 500-guest celebration at Hyatt Regency or an intimate 100-person affair at The Amoha, our team is here to make it happen.</p>
+
+        <p><strong>What You Get When You Work With Us:</strong></p>
+        <ul>
+          <li>🎨 Customized wedding proposal with venue options and pricing</li>
+          <li>🏨 Personalized venue tours and walkthroughs</li>
+          <li>💐 Bespoke décor design that reflects your love story</li>
+          <li>🍽️ Curated menus and hospitality planning</li>
+          <li>📸 Professional photography and videography coordination</li>
+          <li>🚗 Complete guest logistics and travel management</li>
+        </ul>
+
+        <div class="cta-section bg-gradient-to-r from-rose-500 via-pink-500 to-amber-400 rounded-2xl p-10 my-10 text-center text-white shadow-2xl">
+          <h3 class="text-3xl font-playfair font-bold mb-6">✨ Start Planning Your Dharamshala Wedding Today</h3>
+          <p class="text-xl mb-8 font-montserrat">Let Pretty Planet Travels & Events turn your mountain wedding dreams into reality.</p>
+          <div class="flex flex-col sm:flex-row gap-6 justify-center">
+            <a href="/contact" class="inline-block bg-white text-rose-600 font-bold px-10 py-4 rounded-full hover:shadow-2xl transform hover:scale-105 transition-all font-montserrat text-lg">
+              📞 Start Planning My Dharamshala Wedding
+            </a>
+          </div>
+        </div>
+
+        <div class="mt-10 p-6 bg-gradient-to-br from-rose-50 to-amber-50 rounded-xl border-2 border-rose-200">
+          <p class="text-lg font-semibold mb-3 font-playfair" style="color: #2D2D2D;">📧 Get Your Dharamshala Wedding Proposal:</p>
+          <p class="text-gray-700 mb-2 font-montserrat"><strong>Email:</strong> info@prettyplanettravels.com</p>
+          <p class="text-gray-700 mb-2 font-montserrat"><strong>Phone:</strong> +91 86793 33354</p>
+          <p class="text-gray-700 font-montserrat"><strong>WhatsApp:</strong> <a href="https://wa.me/918679333354" class="text-rose-600 hover:text-rose-700 font-semibold">Click to Chat</a></p>
+        </div>
+
+        <p class="mt-8 text-center text-2xl font-playfair italic" style="color: #D9B38C;">"Dharamshala isn't just a destination — it's where love meets the mountains."</p>
+
+        <p class="mt-6 text-gray-600 italic font-montserrat">Ready to explore our complete wedding services? <a href="/events-weddings" class="text-rose-600 hover:text-rose-700 font-semibold">View our wedding proposal</a> or <a href="/contact" class="text-rose-600 hover:text-rose-700 font-semibold">schedule a consultation</a> with our Dharamshala wedding experts.</p>
       </div>
     `,
     tags: ["Wedding Venues", "Himachal Pradesh", "Luxury Weddings", "Venue Guide", "2026 Weddings"]
