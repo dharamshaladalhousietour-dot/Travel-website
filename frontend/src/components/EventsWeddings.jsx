@@ -920,7 +920,7 @@ Looking forward to creating unforgettable memories with Pretty Planet!`;
                   const caption = document.getElementById('lightbox-caption');
                   modal.style.display = 'flex';
                   modalImg.src = 'https://customer-assets.emergentagent.com/job_pretty-planet-travel/artifacts/oumegv8a_IMG_1461.JPG';
-                  caption.innerHTML = '<h3 class="text-2xl font-playfair font-semibold mb-2">Hanging Lantern Lights</h3><p>Dreamy outdoor wedding décor with elegant lantern lighting on trees</p>';
+                  caption.innerHTML = '<h3 class="text-2xl font-playfair font-semibold mb-2" style="color: #CBA135;">Hanging Lantern Lights</h3><p>Dreamy outdoor wedding décor with elegant lantern lighting on trees</p>';
                 }}
               >
                 <img 
