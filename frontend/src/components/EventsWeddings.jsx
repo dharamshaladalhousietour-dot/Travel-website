@@ -833,7 +833,7 @@ Looking forward to creating unforgettable memories with Pretty Planet!`;
                   const caption = document.getElementById('lightbox-caption');
                   modal.style.display = 'flex';
                   modalImg.src = 'https://customer-assets.emergentagent.com/job_pretty-planet-travel/artifacts/ae3x8fjs_IMG_1477.JPG';
-                  caption.innerHTML = '<h3 class="text-2xl font-playfair font-semibold mb-2">Sunset Bar Setup</h3><p>Outdoor cocktail bar with floral canopy at sunset wedding</p>';
+                  caption.innerHTML = '<h3 class="text-2xl font-playfair font-semibold mb-2" style="color: #CBA135;">Sunset Bar Setup</h3><p>Outdoor cocktail bar with floral canopy at sunset wedding</p>';
                 }}
               >
                 <img 
