@@ -952,7 +952,7 @@ Looking forward to creating unforgettable memories with Pretty Planet!`;
                   const caption = document.getElementById('lightbox-caption');
                   modal.style.display = 'flex';
                   modalImg.src = 'https://customer-assets.emergentagent.com/job_pretty-planet-travel/artifacts/nlqfjzkt_IMG_1424.JPG';
-                  caption.innerHTML = '<h3 class="text-2xl font-playfair font-semibold mb-2">Golden Haldi Setup</h3><p>Bright haldi ceremony décor with marigold flowers and traditional yellow theme</p>';
+                  caption.innerHTML = '<h3 class="text-2xl font-playfair font-semibold mb-2" style="color: #CBA135;">Golden Haldi Setup</h3><p>Bright haldi ceremony décor with marigold flowers and traditional yellow theme</p>';
                 }}
               >
                 <img 
