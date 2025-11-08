@@ -787,7 +787,7 @@ Looking forward to creating unforgettable memories with Pretty Planet!`;
                   </div>
                 </div>
                 <div className="absolute bottom-0 left-0 right-0 p-6 text-white bg-gradient-to-t from-black/80 to-transparent">
-                  <h3 className="text-xl font-playfair font-semibold mb-1">Sacred Shrinathji Mandap</h3>
+                  <h3 className="text-xl font-playfair font-semibold mb-1" style={{ color: '#CBA135' }}>Sacred Shrinathji Mandap</h3>
                   <p className="text-sm font-montserrat">Spiritual wedding décor with Shrinathji idol and floral mandap design</p>
                 </div>
               </div>
