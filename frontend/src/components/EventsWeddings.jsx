@@ -755,7 +755,7 @@ Looking forward to creating unforgettable memories with Pretty Planet!`;
                   </div>
                 </div>
                 <div className="absolute bottom-0 left-0 right-0 p-6 text-white bg-gradient-to-t from-black/80 to-transparent">
-                  <h3 className="text-xl font-playfair font-semibold mb-1">Traditional Pichwai Décor</h3>
+                  <h3 className="text-xl font-playfair font-semibold mb-1" style={{ color: '#CBA135' }}>Traditional Pichwai Décor</h3>
                   <p className="text-sm font-montserrat">Vibrant Pichwai-inspired wedding setup with floral detailing</p>
                 </div>
               </div>
