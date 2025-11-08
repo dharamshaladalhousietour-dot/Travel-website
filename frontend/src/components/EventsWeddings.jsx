@@ -851,7 +851,7 @@ Looking forward to creating unforgettable memories with Pretty Planet!`;
                   </div>
                 </div>
                 <div className="absolute bottom-0 left-0 right-0 p-6 text-white bg-gradient-to-t from-black/80 to-transparent">
-                  <h3 className="text-xl font-playfair font-semibold mb-1">Sunset Bar Setup</h3>
+                  <h3 className="text-xl font-playfair font-semibold mb-1" style={{ color: '#CBA135' }}>Sunset Bar Setup</h3>
                   <p className="text-sm font-montserrat">Outdoor cocktail bar with floral canopy at sunset wedding</p>
                 </div>
               </div>
