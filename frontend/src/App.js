@@ -23,6 +23,19 @@ import PackageDetail from "./components/PackageDetail";
 import NotFound from "./components/NotFound";
 
 const Home = () => {
+  React.useEffect(() => {
+    // Handle hash navigation
+    const hash = window.location.hash;
+    if (hash === '#contact') {
+      setTimeout(() => {
+        const contactSection = document.getElementById('contact');
+        if (contactSection) {
+          contactSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      }, 100);
+    }
+  }, []);
+
   return (
     <div className="min-h-screen">
       <Header />
