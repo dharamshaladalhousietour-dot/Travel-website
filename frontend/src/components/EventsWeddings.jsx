@@ -769,7 +769,7 @@ Looking forward to creating unforgettable memories with Pretty Planet!`;
                   const caption = document.getElementById('lightbox-caption');
                   modal.style.display = 'flex';
                   modalImg.src = 'https://customer-assets.emergentagent.com/job_pretty-planet-travel/artifacts/6mmjht4l_IMG_1489.JPG';
-                  caption.innerHTML = '<h3 class="text-2xl font-playfair font-semibold mb-2">Sacred Shrinathji Mandap</h3><p>Spiritual wedding décor with Shrinathji idol and floral mandap design</p>';
+                  caption.innerHTML = '<h3 class="text-2xl font-playfair font-semibold mb-2" style="color: #CBA135;">Sacred Shrinathji Mandap</h3><p>Spiritual wedding décor with Shrinathji idol and floral mandap design</p>';
                 }}
               >
                 <img 
