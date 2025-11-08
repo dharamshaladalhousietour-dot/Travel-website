@@ -467,7 +467,7 @@ const WeddingProposalViewer = ({ isOpen, onClose }) => {
                   "It is your responsibility to provide us with contact names, telephone numbers and any scheduled timetables for all service providers no later than 14 days prior to the wedding.",
                   "We will use our professional judgment when taking action regarding changes beyond control, weather, etc. based on the situation and time limitations.",
                   "If change in weather causes us to change the decor, the extra cost will be on direct payable cost to you and will be taken before delivery of services.",
-                  "There will be 08 hospitality personnel in all including shadows who will be on service for two days.",
+                  "There will be 04 hospitality personnel in all including shadows who will be on service for two days.",
                   "There will be 01 hospitality desk, where our staff will assist in check-in and logistics requirements.",
                   "We shall NOT require any room at any wedding venue & even we shall NOT charge for any recce visit or meeting charges for Dharamshala venues.",
                   "For outside Dharamshala, we do charge TBL for all members and rooms at venue.",
