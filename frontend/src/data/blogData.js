@@ -385,7 +385,7 @@ export const blogPosts = [
         <p class="mt-6 text-gray-600 italic font-montserrat">Ready to explore our complete wedding services? <a href="/events-weddings" class="text-rose-600 hover:text-rose-700 font-semibold">View our wedding proposal</a> or <a href="/contact" class="text-rose-600 hover:text-rose-700 font-semibold">schedule a consultation</a> with our Dharamshala wedding experts.</p>
       </div>
     `,
-    tags: ["Wedding Venues", "Himachal Pradesh", "Luxury Weddings", "Venue Guide", "2026 Weddings"]
+    tags: ["Dharamshala Weddings", "Luxury Wedding Venues Himachal", "Destination Wedding Planner Dharamshala", "Himachal Wedding Venues 2026", "Top Wedding Destinations", "Mountain Weddings"]
   }
 ];
 
