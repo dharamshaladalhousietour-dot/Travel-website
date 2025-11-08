@@ -592,19 +592,30 @@ Looking forward to creating unforgettable memories with Pretty Planet!`;
         {/* Wedding Décor Gallery Section */}
         <section className="py-20 px-4 bg-gradient-to-b from-white via-rose-50/30 to-white">
           <div className="max-w-7xl mx-auto">
-            {/* Section Header */}
+            {/* Main Showcase Title */}
             <div className="text-center mb-16">
-              <h2 className="text-4xl md:text-5xl font-playfair font-semibold mb-4" style={{ color: '#2D2D2D' }}>
-                A Glimpse of Our Dream Weddings
+              <h2 className="text-5xl md:text-6xl font-playfair font-bold mb-3" style={{ color: '#CBA135' }}>
+                Wedding Décor Showcase
               </h2>
-              <div className="w-24 h-1 mx-auto mb-6" style={{ background: 'linear-gradient(90deg, #F8C7CC 0%, #D9B38C 100%)' }}></div>
-              <p className="text-lg md:text-xl font-montserrat font-light max-w-3xl mx-auto" style={{ color: '#3B3B3B' }}>
-                Experience the artistry and elegance of our signature wedding décor, crafted with love for celebrations in the Himalayas
+              <p className="text-xl md:text-2xl font-montserrat font-light italic mb-8" style={{ color: '#E7C5A0' }}>
+                Curated Moments by Pretty Planet
               </p>
+              <div className="w-32 h-1 mx-auto" style={{ background: 'linear-gradient(90deg, #CBA135 0%, #E7C5A0 100%)' }}></div>
             </div>
 
-            {/* 2-Column Grid Gallery */}
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+            {/* Gallery Subsection 1: A Glimpse of Our Dream Weddings */}
+            <div className="mb-12">
+              <div className="text-center mb-8">
+                <h3 className="text-3xl md:text-4xl font-playfair font-semibold mb-4" style={{ color: '#2D2D2D' }}>
+                  A Glimpse of Our Dream Weddings
+                </h3>
+                <p className="text-lg font-montserrat font-light max-w-3xl mx-auto" style={{ color: '#3B3B3B' }}>
+                  Experience the artistry and elegance of our signature wedding décor, crafted with love for celebrations in the Himalayas
+                </p>
+              </div>
+
+              {/* 2-Column Grid Gallery */}
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-5 mb-8">
               {/* Image 1: Blue & White Arch Décor */}
               <div className="group relative overflow-hidden rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2">
                 <img 
