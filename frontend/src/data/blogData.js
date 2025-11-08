@@ -204,7 +204,7 @@ export const blogPosts = [
             <a href="/events-weddings" class="inline-block bg-gradient-to-r from-rose-500 to-pink-500 text-white font-semibold px-8 py-3 rounded-full hover:shadow-xl transition-all">
               View Our Portfolio
             </a>
-            <a href="/contact" class="inline-block border-2 border-rose-500 text-rose-600 font-semibold px-8 py-3 rounded-full hover:bg-rose-50 transition-all">
+            <a href="/#contact" class="inline-block border-2 border-rose-500 text-rose-600 font-semibold px-8 py-3 rounded-full hover:bg-rose-50 transition-all" onclick="event.preventDefault(); window.location.href='/'; setTimeout(() => document.getElementById('contact')?.scrollIntoView({behavior: 'smooth'}), 100);">
               Schedule a Consultation
             </a>
           </div>
