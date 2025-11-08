@@ -2,7 +2,7 @@
 
 ## Issue Resolved
 
-**Problem:** Preview at https://pretty-planet-travel.preview.emergentagent.com/ showed blank page with "You need to enable JavaScript to run this app."
+**Problem:** Preview at https://royal-travel-portal.preview.emergentagent.com/ showed blank page with "You need to enable JavaScript to run this app."
 
 **Root Cause:** Missing production build files and SPA routing configuration
 
@@ -360,7 +360,7 @@ yarn build
 - ✅ Ready for production deployment
 
 ### Next Steps
-1. **Test Preview URL:** Visit https://pretty-planet-travel.preview.emergentagent.com/
+1. **Test Preview URL:** Visit https://royal-travel-portal.preview.emergentagent.com/
 2. **Verify Functionality:** Test all pages and features
 3. **Check Mobile:** Test responsive design
 4. **Monitor Logs:** Check for any runtime errors
