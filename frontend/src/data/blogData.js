@@ -367,7 +367,7 @@ export const blogPosts = [
           <h3 class="text-3xl font-playfair font-bold mb-6">✨ Start Planning Your Dharamshala Wedding Today</h3>
           <p class="text-xl mb-8 font-montserrat">Let Pretty Planet Travels & Events turn your mountain wedding dreams into reality.</p>
           <div class="flex flex-col sm:flex-row gap-6 justify-center">
-            <a href="/contact" class="inline-block bg-white text-rose-600 font-bold px-10 py-4 rounded-full hover:shadow-2xl transform hover:scale-105 transition-all font-montserrat text-lg">
+            <a href="/#contact" class="inline-block bg-white text-rose-600 font-bold px-10 py-4 rounded-full hover:shadow-2xl transform hover:scale-105 transition-all font-montserrat text-lg" onclick="event.preventDefault(); window.location.href='/'; setTimeout(() => document.getElementById('contact')?.scrollIntoView({behavior: 'smooth'}), 100);">
               📞 Start Planning My Dharamshala Wedding
             </a>
           </div>
