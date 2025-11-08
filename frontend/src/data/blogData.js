@@ -217,8 +217,8 @@ export const blogPosts = [
   },
   {
     id: 3,
-    slug: "top-10-luxury-wedding-venues-himachal-pradesh-2026",
-    title: "Top 10 Luxury Wedding Venues in Himachal Pradesh for 2026",
+    slug: "top-10-luxury-wedding-venues-himachal-dharamshala-2026",
+    title: "Top 10 Luxury Wedding Venues in Himachal Pradesh — Why Dharamshala Leads the List for 2026",
     metaDescription: "Discover the most exclusive luxury wedding venues in Himachal Pradesh for 2026. From heritage resorts to modern luxury properties, find the perfect location for your dream destination wedding.",
     author: "Pretty Planet Travels & Events",
     date: "October 15, 2025",
