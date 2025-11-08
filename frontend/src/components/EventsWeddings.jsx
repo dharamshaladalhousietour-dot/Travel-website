@@ -737,7 +737,7 @@ Looking forward to creating unforgettable memories with Pretty Planet!`;
                   const caption = document.getElementById('lightbox-caption');
                   modal.style.display = 'flex';
                   modalImg.src = 'https://customer-assets.emergentagent.com/job_pretty-planet-travel/artifacts/qhauf7tw_IMG_1483.JPG';
-                  caption.innerHTML = '<h3 class="text-2xl font-playfair font-semibold mb-2">Traditional Pichwai Décor</h3><p>Vibrant Pichwai-inspired wedding setup with floral detailing</p>';
+                  caption.innerHTML = '<h3 class="text-2xl font-playfair font-semibold mb-2" style="color: #CBA135;">Traditional Pichwai Décor</h3><p>Vibrant Pichwai-inspired wedding setup with floral detailing</p>';
                 }}
               >
                 <img 
