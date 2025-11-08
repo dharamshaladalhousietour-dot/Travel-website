@@ -984,7 +984,7 @@ Looking forward to creating unforgettable memories with Pretty Planet!`;
                   const caption = document.getElementById('lightbox-caption');
                   modal.style.display = 'flex';
                   modalImg.src = 'https://customer-assets.emergentagent.com/job_pretty-planet-travel/artifacts/on1ijzbs_IMG_1423.JPG';
-                  caption.innerHTML = '<h3 class="text-2xl font-playfair font-semibold mb-2">Luxury Bar Setup</h3><p>Indoor wedding bar setup with mirrored patterns and chandelier lighting</p>';
+                  caption.innerHTML = '<h3 class="text-2xl font-playfair font-semibold mb-2" style="color: #CBA135;">Luxury Bar Setup</h3><p>Indoor wedding bar setup with mirrored patterns and chandelier lighting</p>';
                 }}
               >
                 <img 
