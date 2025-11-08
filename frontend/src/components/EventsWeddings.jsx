@@ -801,7 +801,7 @@ Looking forward to creating unforgettable memories with Pretty Planet!`;
                   const caption = document.getElementById('lightbox-caption');
                   modal.style.display = 'flex';
                   modalImg.src = 'https://customer-assets.emergentagent.com/job_pretty-planet-travel/artifacts/c09ne97a_IMG_1480.JPG';
-                  caption.innerHTML = '<h3 class="text-2xl font-playfair font-semibold mb-2">Sangeet Night Glam</h3><p>Modern sangeet celebration with elegant golden backdrop and stage lights</p>';
+                  caption.innerHTML = '<h3 class="text-2xl font-playfair font-semibold mb-2" style="color: #CBA135;">Sangeet Night Glam</h3><p>Modern sangeet celebration with elegant golden backdrop and stage lights</p>';
                 }}
               >
                 <img 
