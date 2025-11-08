@@ -225,7 +225,7 @@ export const blogPosts = [
     readTime: "12 min read",
     category: "Venue Guide",
     featuredImage: "/assets/portfolio1.jpg",
-    excerpt: "Planning a luxury wedding in Himachal Pradesh? Explore our curated list of the top 10 venues that combine stunning Himalayan beauty with world-class amenities.",
+    excerpt: "Nestled in the lap of the Dhauladhar ranges, Dharamshala has emerged as Himachal Pradesh's crown jewel for luxury weddings in 2026. Discover why this serene mountain town tops our list of the 10 best wedding destinations.",
     content: `
       <div class="blog-content">
         <h2>Introduction: Why Himachal Pradesh for Luxury Weddings?</h2>
