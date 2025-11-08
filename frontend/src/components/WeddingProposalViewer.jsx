@@ -137,7 +137,7 @@ const WeddingProposalViewer = ({ isOpen, onClose }) => {
                 },
                 {
                   title: "Shadow Service",
-                  items: ["01 Shadow assistant each for Bride and Groom", "01 Shadow each for mother of bride and groom (9 AM to 7 PM for two days)"]
+                  items: ["01 shadow assistant each for bride and groom for two days from 9 AM to 7 PM."]
                 },
                 {
                   title: "Hospitality Desk",
