@@ -824,7 +824,7 @@ Looking forward to creating unforgettable memories with Pretty Planet!`;
                 </div>
               </div>
 
-              {/* Image 4: Sunset Bar Setup */}
+              {/* Image 4: Sangeet Night Glam */}
               <div 
                 className="group relative overflow-hidden rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 cursor-pointer"
                 onClick={() => {
@@ -833,12 +833,12 @@ Looking forward to creating unforgettable memories with Pretty Planet!`;
                   const caption = document.getElementById('lightbox-caption');
                   modal.style.display = 'flex';
                   modalImg.src = 'https://customer-assets.emergentagent.com/job_pretty-planet-travel/artifacts/ae3x8fjs_IMG_1477.JPG';
-                  caption.innerHTML = '<h3 class="text-2xl font-playfair font-semibold mb-2" style="color: #CBA135;">Sunset Bar Setup</h3><p>Outdoor cocktail bar with floral canopy at sunset wedding</p>';
+                  caption.innerHTML = '<h3 class="text-2xl font-playfair font-semibold mb-2" style="color: #CBA135;">Sangeet Night Glam</h3><p>Modern sangeet celebration with elegant golden backdrop and stage lights</p>';
                 }}
               >
                 <img 
                   src="https://customer-assets.emergentagent.com/job_pretty-planet-travel/artifacts/ae3x8fjs_IMG_1477.JPG"
-                  alt="Outdoor cocktail bar with floral canopy at sunset wedding"
+                  alt="Modern sangeet celebration with elegant golden backdrop and stage lights"
                   className="w-full h-[400px] object-cover transition-transform duration-700 group-hover:scale-110"
                   loading="lazy"
                 />
@@ -851,8 +851,8 @@ Looking forward to creating unforgettable memories with Pretty Planet!`;
                   </div>
                 </div>
                 <div className="absolute bottom-0 left-0 right-0 p-6 text-white bg-gradient-to-t from-black/80 to-transparent">
-                  <h3 className="text-xl font-playfair font-semibold mb-1" style={{ color: '#CBA135' }}>Sunset Bar Setup</h3>
-                  <p className="text-sm font-montserrat">Outdoor cocktail bar with floral canopy at sunset wedding</p>
+                  <h3 className="text-xl font-playfair font-semibold mb-1" style={{ color: '#CBA135' }}>Sangeet Night Glam</h3>
+                  <p className="text-sm font-montserrat">Modern sangeet celebration with elegant golden backdrop and stage lights</p>
                 </div>
               </div>
 
