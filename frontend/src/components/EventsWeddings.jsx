@@ -708,6 +708,7 @@ Looking forward to creating unforgettable memories with Pretty Planet!`;
                 </Button>
               </Link>
             </div>
+            </div>
           </div>
         </section>
 
