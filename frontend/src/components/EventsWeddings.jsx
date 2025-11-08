@@ -646,18 +646,18 @@ Looking forward to creating unforgettable memories with Pretty Planet!`;
                 </div>
               </div>
 
-              {/* Image 3: Krishna Floral Décor */}
+              {/* Image 3: Sacred Shrinathji Mandap */}
               <div className="group relative overflow-hidden rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2">
                 <img 
                   src="https://customer-assets.emergentagent.com/job_pretty-planet-travel/artifacts/dtz9gv5h_IMG_1504%20%281%29.JPG"
-                  alt="Traditional wedding setup inspired by Krishna art and florals"
+                  alt="Spiritual wedding décor with Shrinathji idol and floral mandap design"
                   className="w-full h-[400px] object-cover transition-transform duration-700 group-hover:scale-110"
                   loading="lazy"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                 <div className="absolute bottom-0 left-0 right-0 p-6 text-white transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
-                  <h3 className="text-2xl font-playfair font-semibold mb-2" style={{ color: '#CBA135' }}>Krishna Floral Décor</h3>
-                  <p className="font-montserrat">Traditional wedding setup inspired by Krishna art and florals</p>
+                  <h3 className="text-2xl font-playfair font-semibold mb-2" style={{ color: '#CBA135' }}>Sacred Shrinathji Mandap</h3>
+                  <p className="font-montserrat">Spiritual wedding décor with Shrinathji idol and floral mandap design</p>
                 </div>
               </div>
 
