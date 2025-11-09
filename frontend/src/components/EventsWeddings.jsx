@@ -409,10 +409,10 @@ Looking forward to creating unforgettable memories with Pretty Planet!`;
           <div className="max-w-7xl mx-auto">
             <div className="text-center mb-16">
               <h2 className="text-4xl md:text-5xl font-playfair font-semibold mb-6" style={{ color: '#2D2D2D' }}>
-                Explore Our Signature Wedding Packages
+                Destination Wedding Packages in Himachal Pradesh
               </h2>
               <p className="text-lg md:text-xl font-montserrat font-light max-w-3xl mx-auto" style={{ color: '#3B3B3B', lineHeight: '1.5' }}>
-                Each package is thoughtfully curated to create unforgettable memories in the most enchanting settings
+                Best wedding decorator in Dharamshala crafting luxury celebrations in enchanting Himalayan settings
               </p>
             </div>
 
