@@ -171,9 +171,9 @@ Looking forward to creating unforgettable memories with Pretty Planet!`;
   return (
     <>
       <SEOHead 
-        title="Luxury & Destination Weddings in Dharamshala | Pretty Planet Travels & Events"
-        description="Plan your dream wedding in Dharamshala with Pretty Planet Travels & Events. From luxury resort weddings to eco-friendly celebrations, we craft unforgettable Himalayan experiences."
-        keywords="wedding planners in Dharamshala, destination weddings in Himachal, luxury wedding packages, mountain view wedding ceremony, eco-friendly wedding, heritage wedding venues, Pretty Planet Travels & Events, Dharamshala destination wedding planner"
+        title="Best Wedding Planner in Dharamshala | Top Event Planner in Himachal | Pretty Planet Travels & Events"
+        description="Pretty Planet Travels & Events - Best wedding decorator in Dharamshala. Luxury destination wedding planner in Himachal Pradesh. Top-rated event planner for unforgettable celebrations."
+        keywords="best wedding planner in Dharamshala, event planner in Dharamshala, luxury weddings in Dharamshala, destination wedding planner in Himachal, Pretty Planet Travels & Events Dharamshala, best wedding decorator in Dharamshala, top wedding planner in Himachal, top event planner in Dharamshala, Dharamshala wedding venues, Himachal Pradesh destination wedding"
       />
 
       <style>{`
