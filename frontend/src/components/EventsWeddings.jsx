@@ -635,7 +635,7 @@ Looking forward to creating unforgettable memories with Pretty Planet!`;
               <div className="group relative overflow-hidden rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2">
                 <img 
                   src="https://customer-assets.emergentagent.com/job_pretty-planet-travel/artifacts/fa5cll3o_IMG_1510%20%281%29.JPG"
-                  alt="Vibrant Himachal wedding décor with red and orange flowers"
+                  alt="Top event planner Dharamshala - Vibrant wedding décor in Himachal Pradesh by Pretty Planet"
                   className="w-full h-[400px] object-cover transition-transform duration-700 group-hover:scale-110"
                   loading="lazy"
                 />
