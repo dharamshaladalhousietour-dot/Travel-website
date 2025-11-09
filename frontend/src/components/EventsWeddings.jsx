@@ -34,7 +34,7 @@ const EventsWeddingsLuxury = () => {
       customText: "Tailored to your vision and guest experience",
       features: ["5-Star Resort Venue", "400-600 Guests", "4-Day Grand Celebration", "Premium Décor & Styling", "Spa & Wellness Facilities", "Professional Photography & Videography"],
       image: "/assets/portfolio2.jpg",
-      altText: "Luxury resort wedding in Dharamshala with 5-star hospitality and décor by Pretty Planet Travels & Events",
+      altText: "Best luxury resort wedding in Dharamshala - Top wedding planner in Himachal - Pretty Planet Travels & Events",
       fileName: "luxury-resort-wedding.jpg"
     },
     {
