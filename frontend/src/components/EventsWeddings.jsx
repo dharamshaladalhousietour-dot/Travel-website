@@ -595,10 +595,10 @@ Looking forward to creating unforgettable memories with Pretty Planet!`;
             {/* Main Showcase Title */}
             <div className="text-center mb-16">
               <h2 className="text-5xl md:text-6xl font-playfair font-bold mb-3" style={{ color: '#CBA135' }}>
-                Wedding Décor Showcase
+                Best Wedding Decorator in Dharamshala - Portfolio
               </h2>
               <p className="text-xl md:text-2xl font-montserrat font-light italic mb-8" style={{ color: '#E7C5A0' }}>
-                Curated Moments by Pretty Planet
+                Luxury wedding décor by Pretty Planet - Top event planner in Himachal
               </p>
               <div className="w-32 h-1 mx-auto" style={{ background: 'linear-gradient(90deg, #CBA135 0%, #E7C5A0 100%)' }}></div>
             </div>
