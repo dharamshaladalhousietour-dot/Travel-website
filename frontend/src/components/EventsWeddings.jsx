@@ -620,7 +620,7 @@ Looking forward to creating unforgettable memories with Pretty Planet!`;
               <div className="group relative overflow-hidden rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2">
                 <img 
                   src="https://customer-assets.emergentagent.com/job_pretty-planet-travel/artifacts/61lsv454_IMG_1513%20%281%29.JPG"
-                  alt="Elegant floral arch for Dharamshala mountain wedding"
+                  alt="Best wedding decorator Dharamshala - Elegant floral arch by top wedding planner in Himachal"
                   className="w-full h-[400px] object-cover transition-transform duration-700 group-hover:scale-110"
                   loading="lazy"
                 />
