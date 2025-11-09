@@ -54,7 +54,7 @@ const EventsWeddingsLuxury = () => {
       customText: "Personalized to create your perfect intimate celebration",
       features: ["Scenic Himalayan Location", "100-200 Guests", "2-Day Intimate Event", "Bespoke Décor Design", "Personalized Service", "Gourmet Catering"],
       image: "/assets/portfolio1.jpg",
-      altText: "Mountain-view wedding ceremony in Dharamshala with floral décor by Pretty Planet Travels & Events",
+      altText: "Mountain view wedding ceremony Dharamshala - Best wedding decorator in Dharamshala Pretty Planet Events",
       fileName: "mountain-view-wedding-ceremony.jpg"
     },
     {
