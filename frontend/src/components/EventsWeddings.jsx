@@ -344,7 +344,7 @@ Looking forward to creating unforgettable memories with Pretty Planet!`;
         <section className="py-16 px-4 animate-fade-in-up" style={{ background: 'linear-gradient(135deg, #FFE8EC 0%, #FFF0F3 25%, #FFF9F7 50%, #FFE8EC 100%)' }}>
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-4xl md:text-5xl font-playfair font-semibold mb-4" style={{ color: '#2D2D2D' }}>
-              Your Wedding Journey Starts Here
+              Luxury Wedding Planning in Dharamshala | Pretty Planet
             </h2>
             
             {/* Thin Gold Divider Under Title */}
