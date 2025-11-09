@@ -680,7 +680,7 @@ Looking forward to creating unforgettable memories with Pretty Planet!`;
               <div className="md:col-span-2 group relative overflow-hidden rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2">
                 <img 
                   src="https://customer-assets.emergentagent.com/job_pretty-planet-travel/artifacts/8e8ttsmv_IMG_1499.JPG"
-                  alt="Luxury evening wedding with chandeliers and candles"
+                  alt="Luxury wedding decorator Dharamshala - Evening chandeliers by best wedding planner Himachal"
                   className="w-full h-[500px] object-cover transition-transform duration-700 group-hover:scale-110"
                   loading="lazy"
                 />
