@@ -1195,6 +1195,16 @@ const TourPackages = () => {
           </p>
         </div>
 
+        {/* SEO H2 Section */}
+        <div className="text-center mb-8">
+          <h2 className="text-3xl md:text-4xl font-bold text-blue-800 mb-4">
+            Shimla Manali Tour Package | Dharamshala Dalhousie Tours
+          </h2>
+          <p className="text-lg text-gray-600 max-w-4xl mx-auto">
+            Explore our curated Himachal tour packages by the best travel agent in Dharamshala
+          </p>
+        </div>
+
         {/* Filter Tabs */}
         <div className="flex flex-wrap justify-center gap-4 mb-12">
           <div className="flex items-center space-x-2 bg-white rounded-full p-2 shadow-lg">
