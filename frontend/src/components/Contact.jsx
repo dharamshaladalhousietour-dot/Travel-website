@@ -9,14 +9,9 @@ import { Label } from './ui/label';
 
 const Contact = () => {
   const [formData, setFormData] = useState({
-    firstName: '',
-    lastName: '',
-    email: '',
+    name: '',
     phone: '',
-    service: '',
-    destination: '',
-    budget: '',
-    message: ''
+    serviceType: ''
   });
   
   const [isSubmitted, setIsSubmitted] = useState(false);
@@ -25,30 +20,30 @@ const Contact = () => {
     setFormData(prev => ({ ...prev, [field]: value }));
   };
 
+  const handleWhatsAppClick = () => {
+    const message = "Hi! I'd like to get a personalized quote for my trip/event in Dharamshala.";
+    window.open(`https://wa.me/918679333355?text=${encodeURIComponent(message)}`, '_blank');
+  };
+
   const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log('Form submitted:', formData);
+    console.log('Simplified form submitted:', formData);
 
     // Validate required fields
-    if (!formData.firstName || !formData.lastName || !formData.email || !formData.message) {
-      alert('Please fill in all required fields: First Name, Last Name, Email, and Message');
+    if (!formData.name || !formData.phone || !formData.serviceType) {
+      alert('Please fill in all fields: Name, Phone, and Service Type');
       return;
     }
 
     try {
       // Create formatted message for WhatsApp
-      const fullName = `${formData.firstName} ${formData.lastName}`;
-      const formattedMessage = `📩 New Contact Form Enquiry
+      const formattedMessage = `📩 Quick Enquiry - Contact Form
 
-👤 Name: ${fullName}
-📧 Email: ${formData.email}
-📱 Phone: ${formData.phone || 'Not provided'}
+👤 Name: ${formData.name}
+📱 Phone: ${formData.phone}
+🎯 Service Type: ${formData.serviceType}
 
-🎯 Service: ${formData.service || 'Not specified'}
-📍 Destination/Venue: ${formData.destination || 'Not specified'}
-💰 Budget: ${formData.budget || 'Not specified'}
-
-💬 Message: ${formData.message}`;
+💬 Request: I'd like to get a personalized quote.`;
 
       // Submit to backend API first (for email notification)
       const backendUrl = process.env.REACT_APP_BACKEND_URL || '';
@@ -59,27 +54,31 @@ const Contact = () => {
           'Content-Type': 'application/json',
         },
         body: JSON.stringify({
-          name: fullName,
-          email: formData.email,
-          phone: formData.phone || 'Not provided',
-          destination: formData.destination || 'Contact Form Enquiry',
+          name: formData.name,
+          email: 'contact@form.com', // placeholder for simplified form
+          phone: formData.phone,
+          destination: formData.serviceType,
           start_date: new Date().toISOString().split('T')[0],
           end_date: new Date().toISOString().split('T')[0],
           adults: '1',
           kids: '0',
-          days: 'Contact Form',
-          budget: formData.budget || 'Not specified',
-          message: formData.message,
+          days: 'Quick Enquiry',
+          budget: 'To be discussed',
+          message: `Service Type: ${formData.serviceType}`,
           formatted_message: formattedMessage
         })
       });
 
       if (response.ok) {
-        console.log('✅ Contact form enquiry submitted to backend');
+        console.log('✅ Simplified contact form submitted to backend');
         
         // Send WhatsApp message with full details
         const whatsappMessage = encodeURIComponent(formattedMessage);
-        const whatsappUrl = `https://wa.me/918679333355?text=${whatsappMessage}`;
+        // Choose WhatsApp number based on service type
+        const whatsappNumber = formData.serviceType.includes('Wedding') || formData.serviceType.includes('Event') 
+          ? '918679333354' 
+          : '918679333355';
+        const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${whatsappMessage}`;
         
         // Open WhatsApp in new tab
         window.open(whatsappUrl, '_blank');
@@ -97,7 +96,12 @@ const Contact = () => {
     setTimeout(() => {
       setIsSubmitted(false);
       setFormData({
-        firstName: '',
+        name: '',
+        phone: '',
+        serviceType: ''
+      });
+    }, 3000);
+  };
         lastName: '',
         email: '',
         phone: '',
