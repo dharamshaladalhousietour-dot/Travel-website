@@ -137,121 +137,131 @@ const Contact = () => {
   ];
 
   return (
-    <section id="contact" className="py-20 bg-gradient-to-b from-gray-50 to-white">
+    <section id="contact" className="py-12 md:py-20 bg-gradient-to-b from-gray-50 to-white">
       <div className="max-w-7xl mx-auto px-4">
         {/* Section Header */}
-        <div className="text-center mb-16">
-          <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-r from-blue-900 to-blue-800 rounded-full mb-6">
+        <div className="text-center mb-8 md:mb-12">
+          <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-r from-blue-900 to-blue-800 rounded-full mb-4">
             <Mail className="h-8 w-8 text-white" />
           </div>
-          <h2 className="text-4xl md:text-5xl font-bold text-blue-900 mb-6">
+          <h2 className="text-3xl md:text-5xl font-bold text-blue-900 mb-4 font-playfair">
             Get In Touch
           </h2>
-          <div className="w-24 h-1 bg-gradient-to-r from-amber-400 to-amber-600 mx-auto mb-8"></div>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-            Ready to create your perfect experience? Let's discuss your vision 
-            and turn your dreams into reality.
+          <div className="w-24 h-1 bg-gradient-to-r from-amber-400 to-amber-600 mx-auto mb-4"></div>
+          <p className="text-lg md:text-xl text-rose-600 font-semibold max-w-3xl mx-auto leading-relaxed font-montserrat">
+            💖 We'd love to help plan your perfect trip or wedding in Dharamshala.
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-3 gap-12">
-          {/* Contact Form */}
-          <div className="lg:col-span-2">
-            <Card className="shadow-xl border-0 overflow-hidden">
-              <CardContent className="p-8">
-                <div className="mb-8">
-                  <h3 className="text-2xl font-bold text-blue-900 mb-2">
-                    Send Us a Message
+        <div className="grid lg:grid-cols-3 gap-8 md:gap-12">
+          {/* Simplified Contact Form - Above the Fold on Mobile */}
+          <div className="lg:col-span-2 order-1 lg:order-1">
+            <Card className="shadow-2xl border-2 border-rose-100 overflow-hidden bg-gradient-to-br from-white to-blue-50">
+              <CardContent className="p-6 md:p-8">
+                <div className="mb-6">
+                  <h3 className="text-2xl md:text-3xl font-bold text-blue-900 mb-3 font-playfair">
+                    Quick Enquiry Form
                   </h3>
-                  <p className="text-gray-600">
-                    Fill out the form below and we'll get back to you within 24 hours.
+                  <p className="text-gray-600 font-montserrat text-sm md:text-base">
+                    Fill in your details and we'll contact you within 1 hour! ⚡
                   </p>
                 </div>
 
                 {isSubmitted ? (
                   <div className="text-center py-12">
-                    <div className="inline-flex items-center justify-center w-20 h-20 bg-green-100 rounded-full mb-6">
+                    <div className="inline-flex items-center justify-center w-20 h-20 bg-green-100 rounded-full mb-6 animate-bounce">
                       <CheckCircle className="h-10 w-10 text-green-600" />
                     </div>
-                    <h4 className="text-2xl font-bold text-green-600 mb-4">
-                      ✅ Thank you for your enquiry! Our team will contact you soon.
+                    <h4 className="text-2xl font-bold text-green-600 mb-4 font-playfair">
+                      ✅ Thank You!
                     </h4>
-                    <p className="text-gray-600">
-                      Your enquiry has been sent to WhatsApp and Email successfully!
+                    <p className="text-gray-600 font-montserrat">
+                      Our team will contact you very soon with your personalized quote!
                     </p>
                   </div>
                 ) : (
-                  <form onSubmit={handleSubmit} className="space-y-6">
-                    {/* Name Fields */}
-                    <div className="grid md:grid-cols-2 gap-6">
-                      <div className="space-y-2">
-                        <Label htmlFor="firstName" className="text-sm font-medium text-gray-700">
-                          First Name *
-                        </Label>
-                        <Input
-                          id="firstName"
-                          value={formData.firstName}
-                          onChange={(e) => handleInputChange('firstName', e.target.value)}
-                          placeholder="John"
-                          required
-                          className="h-12"
-                        />
-                      </div>
-                      <div className="space-y-2">
-                        <Label htmlFor="lastName" className="text-sm font-medium text-gray-700">
-                          Last Name *
-                        </Label>
-                        <Input
-                          id="lastName"
-                          value={formData.lastName}
-                          onChange={(e) => handleInputChange('lastName', e.target.value)}
-                          placeholder="Doe"
-                          required
-                          className="h-12"
-                        />
-                      </div>
+                  <form onSubmit={handleSubmit} className="space-y-5">
+                    {/* Name Field */}
+                    <div className="space-y-2">
+                      <Label htmlFor="name" className="text-base font-semibold text-gray-800 font-montserrat">
+                        Your Name *
+                      </Label>
+                      <Input
+                        id="name"
+                        value={formData.name}
+                        onChange={(e) => handleInputChange('name', e.target.value)}
+                        placeholder="Enter your full name"
+                        required
+                        className="h-14 text-lg border-2 border-gray-300 focus:border-blue-500 transition-all"
+                      />
                     </div>
 
-                    {/* Contact Fields */}
-                    <div className="grid md:grid-cols-2 gap-6">
-                      <div className="space-y-2">
-                        <Label htmlFor="email" className="text-sm font-medium text-gray-700">
-                          Email Address *
-                        </Label>
-                        <Input
-                          id="email"
-                          type="email"
-                          value={formData.email}
-                          onChange={(e) => handleInputChange('email', e.target.value)}
-                          placeholder="john@example.com"
-                          required
-                          className="h-12"
-                        />
-                      </div>
-                      <div className="space-y-2">
-                        <Label htmlFor="phone" className="text-sm font-medium text-gray-700">
-                          Phone Number
-                        </Label>
-                        <Input
-                          id="phone"
-                          type="tel"
-                          value={formData.phone}
-                          onChange={(e) => handleInputChange('phone', e.target.value)}
-                          placeholder="+1 (555) 123-4567"
-                          className="h-12"
-                        />
-                      </div>
+                    {/* Phone Field */}
+                    <div className="space-y-2">
+                      <Label htmlFor="phone" className="text-base font-semibold text-gray-800 font-montserrat">
+                        Phone Number *
+                      </Label>
+                      <Input
+                        id="phone"
+                        type="tel"
+                        value={formData.phone}
+                        onChange={(e) => handleInputChange('phone', e.target.value)}
+                        placeholder="+91 9876543210"
+                        required
+                        className="h-14 text-lg border-2 border-gray-300 focus:border-blue-500 transition-all"
+                      />
                     </div>
 
-                    {/* Service and Destination */}
-                    <div className="grid md:grid-cols-2 gap-6">
-                      <div className="space-y-2">
-                        <Label className="text-sm font-medium text-gray-700">
-                          Service Interested In *
-                        </Label>
-                        <Select onValueChange={(value) => handleInputChange('service', value)}>
-                          <SelectTrigger className="h-12">
-                            <SelectValue placeholder="Select a service" />
+                    {/* Service Type Dropdown */}
+                    <div className="space-y-2">
+                      <Label className="text-base font-semibold text-gray-800 font-montserrat">
+                        I'm Interested In *
+                      </Label>
+                      <Select onValueChange={(value) => handleInputChange('serviceType', value)} required>
+                        <SelectTrigger className="h-14 text-lg border-2 border-gray-300 focus:border-blue-500">
+                          <SelectValue placeholder="Select your service type" />
+                        </SelectTrigger>
+                        <SelectContent>
+                          <SelectItem value="Dharamshala Wedding Planning">💍 Dharamshala Wedding Planning</SelectItem>
+                          <SelectItem value="Destination Wedding">💐 Destination Wedding</SelectItem>
+                          <SelectItem value="Himachal Travel Package">✈️ Himachal Travel Package</SelectItem>
+                          <SelectItem value="Corporate Event">🏢 Corporate Event</SelectItem>
+                          <SelectItem value="Dharamshala Tour">🏔️ Dharamshala Tour</SelectItem>
+                          <SelectItem value="Honeymoon Package">💕 Honeymoon Package</SelectItem>
+                          <SelectItem value="Other">🎯 Other Services</SelectItem>
+                        </SelectContent>
+                      </Select>
+                    </div>
+
+                    {/* Emotional CTA Button */}
+                    <div className="pt-4 space-y-4">
+                      <Button
+                        type="submit"
+                        size="lg"
+                        className="w-full h-16 text-lg md:text-xl font-bold bg-gradient-to-r from-rose-600 to-pink-600 hover:from-rose-700 hover:to-pink-700 text-white shadow-xl hover:shadow-2xl transition-all transform hover:scale-105 font-montserrat"
+                      >
+                        <Send className="mr-3 h-6 w-6" />
+                        💖 Get My Personalized Quote
+                      </Button>
+
+                      {/* WhatsApp Button */}
+                      <Button
+                        type="button"
+                        onClick={handleWhatsAppClick}
+                        size="lg"
+                        className="w-full h-16 text-lg md:text-xl font-bold bg-gradient-to-r from-green-600 to-green-700 hover:from-green-700 hover:to-green-800 text-white shadow-xl hover:shadow-2xl transition-all transform hover:scale-105 font-montserrat"
+                      >
+                        <svg className="mr-3 h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+                          <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+                        </svg>
+                        💬 Chat on WhatsApp Now
+                      </Button>
+                    </div>
+                  </form>
+                )}
+              </CardContent>
+            </Card>
+          </div>
                           </SelectTrigger>
                           <SelectContent>
                             <SelectItem value="travel">Travel & Tours</SelectItem>
