@@ -64,7 +64,7 @@ const EventsWeddingsLuxury = () => {
       customText: "Crafted with care for you and the environment",
       features: ["Eco-Friendly Venue", "50-100 Guests", "1-2 Day Celebration", "Organic Farm-to-Table Catering", "Nature-Inspired Décor", "Sustainable Practices"],
       image: "/assets/portfolio3.jpg",
-      altText: "Eco-friendly mountain wedding in Himachal Pradesh by Pretty Planet Travels & Events",
+      altText: "Eco-friendly luxury wedding Himachal - Top event planner Dharamshala - Pretty Planet sustainable weddings",
       fileName: "eco-friendly-mountain-wedding.jpg"
     }
   ];
