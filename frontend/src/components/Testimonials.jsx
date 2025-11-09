@@ -55,6 +55,90 @@ const Testimonials = () => {
       </div>
 
       <div className="max-w-7xl mx-auto px-4 relative z-10">
+        {/* Rating Badge Section */}
+        <div className="text-center mb-12">
+          <div className="inline-flex items-center justify-center bg-white/10 backdrop-blur-lg border border-white/20 rounded-full px-6 py-3 mb-8 shadow-xl">
+            <div className="flex items-center gap-3">
+              <div className="flex">
+                {[...Array(5)].map((_, i) => (
+                  <Star key={i} className="h-6 w-6 text-amber-400 fill-current" />
+                ))}
+              </div>
+              <div className="h-8 w-px bg-white/30"></div>
+              <div className="text-left">
+                <div className="text-2xl font-bold text-white">4.9★</div>
+                <div className="text-xs text-blue-100">200+ Clients</div>
+              </div>
+            </div>
+          </div>
+          
+          {/* Quick Reviews Row - Google Style */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto mb-12">
+            {/* Review 1 */}
+            <div className="bg-white/10 backdrop-blur-lg border border-white/20 rounded-xl p-6 text-left hover:bg-white/20 transition-all duration-300 shadow-lg">
+              <div className="flex items-center gap-3 mb-3">
+                <div className="w-12 h-12 rounded-full bg-gradient-to-br from-amber-400 to-amber-600 flex items-center justify-center text-white font-bold text-lg">
+                  R
+                </div>
+                <div>
+                  <div className="font-semibold text-white">Rahul & Priya</div>
+                  <div className="flex text-amber-400">
+                    {[...Array(5)].map((_, i) => (
+                      <Star key={i} className="h-4 w-4 fill-current" />
+                    ))}
+                  </div>
+                </div>
+              </div>
+              <p className="text-blue-100 text-sm leading-relaxed">
+                "Our Dharamshala wedding was a dream! Pretty Planet handled everything perfectly - from venue selection to décor. Highly recommend!"
+              </p>
+              <div className="mt-3 text-xs text-blue-200">Wedding Planning</div>
+            </div>
+            
+            {/* Review 2 */}
+            <div className="bg-white/10 backdrop-blur-lg border border-white/20 rounded-xl p-6 text-left hover:bg-white/20 transition-all duration-300 shadow-lg">
+              <div className="flex items-center gap-3 mb-3">
+                <div className="w-12 h-12 rounded-full bg-gradient-to-br from-blue-400 to-blue-600 flex items-center justify-center text-white font-bold text-lg">
+                  S
+                </div>
+                <div>
+                  <div className="font-semibold text-white">Sneha Mehta</div>
+                  <div className="flex text-amber-400">
+                    {[...Array(5)].map((_, i) => (
+                      <Star key={i} className="h-4 w-4 fill-current" />
+                    ))}
+                  </div>
+                </div>
+              </div>
+              <p className="text-blue-100 text-sm leading-relaxed">
+                "Exceptional travel planning! Our Himachal tour was perfectly organized. Every detail was taken care of. 10/10 experience!"
+              </p>
+              <div className="mt-3 text-xs text-blue-200">Travel Package</div>
+            </div>
+            
+            {/* Review 3 */}
+            <div className="bg-white/10 backdrop-blur-lg border border-white/20 rounded-xl p-6 text-left hover:bg-white/20 transition-all duration-300 shadow-lg">
+              <div className="flex items-center gap-3 mb-3">
+                <div className="w-12 h-12 rounded-full bg-gradient-to-br from-purple-400 to-purple-600 flex items-center justify-center text-white font-bold text-lg">
+                  A
+                </div>
+                <div>
+                  <div className="font-semibold text-white">Amit & Kavya</div>
+                  <div className="flex text-amber-400">
+                    {[...Array(5)].map((_, i) => (
+                      <Star key={i} className="h-4 w-4 fill-current" />
+                    ))}
+                  </div>
+                </div>
+              </div>
+              <p className="text-blue-100 text-sm leading-relaxed">
+                "Best decision ever! Our destination wedding in Dharamshala was magical. Professional team, stunning venue, flawless execution!"
+              </p>
+              <div className="mt-3 text-xs text-blue-200">Destination Wedding</div>
+            </div>
+          </div>
+        </div>
+
         {/* Section Header */}
         <div className="text-center mb-16">
           <div className="inline-flex items-center justify-center w-16 h-16 bg-white/20 backdrop-blur-sm rounded-full mb-6">
