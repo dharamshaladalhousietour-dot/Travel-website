@@ -970,7 +970,7 @@ const TourPackages = () => {
             {!imageError ? (
               <img
                 src={getOptimizedImageUrl(pkg.image)}
-                alt={`${pkg.title} - ${pkg.duration} tour package in ${pkg.region}. Explore ${pkg.highlights[0]}, ${pkg.highlights[1]} and more with Pretty Planet Travels`}
+                alt={`${pkg.title} by best travel agent in Dharamshala - ${pkg.duration} ${pkg.region === 'Himachal' ? 'Himachal tour package' : 'tour package'} - Pretty Planet Travels Dharamshala`}
                 loading="lazy"
                 decoding="async"
                 onLoad={handleImageLoad}
