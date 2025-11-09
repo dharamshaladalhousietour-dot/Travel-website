@@ -24,7 +24,61 @@ const WhatsAppButton = () => {
   const [isCallHovered, setIsCallHovered] = useState(false);
 
   return (
-    <div className="fixed bottom-6 right-6 z-50 flex flex-col items-end gap-4">
+    <>
+      {/* Mobile Sticky Enquire Now / WhatsApp Bar */}
+      <div className="md:hidden fixed bottom-0 left-0 right-0 z-50 bg-gradient-to-r from-green-600 to-green-500 shadow-2xl border-t-2 border-green-400">
+        <div className="flex items-center justify-between px-4 py-3">
+          <button
+            onClick={() => setShowOptions(!showOptions)}
+            className="flex-1 flex items-center justify-center gap-3 bg-white text-green-600 font-bold py-3 px-6 rounded-lg hover:bg-green-50 transition-all transform active:scale-95 shadow-lg"
+          >
+            <MessageCircle className="h-6 w-6" />
+            <span className="text-lg">Enquire Now</span>
+          </button>
+          <a
+            href="tel:+918679333354"
+            className="ml-3 bg-white text-blue-600 p-3 rounded-lg hover:bg-blue-50 transition-all transform active:scale-95 shadow-lg"
+          >
+            <Phone className="h-6 w-6" />
+          </a>
+        </div>
+        
+        {/* Service Options for Mobile */}
+        {showOptions && (
+          <div className="absolute bottom-full left-0 right-0 bg-white shadow-2xl p-4 mb-2 mx-4 rounded-lg animate-fade-scale">
+            <h3 className="text-gray-800 font-bold mb-3 text-center">Choose Service</h3>
+            
+            <button
+              onClick={handleTravelWhatsApp}
+              className="w-full flex items-center space-x-3 p-3 bg-blue-50 hover:bg-blue-100 rounded-lg mb-2 transition-colors"
+            >
+              <div className="w-10 h-10 bg-blue-500 rounded-full flex items-center justify-center">
+                <MessageCircle className="h-5 w-5 text-white" />
+              </div>
+              <div className="text-left">
+                <div className="font-semibold text-gray-800">Travel & Tours</div>
+                <div className="text-sm text-gray-600">+91 8679333355</div>
+              </div>
+            </button>
+            
+            <button
+              onClick={handleEventsWhatsApp}
+              className="w-full flex items-center space-x-3 p-3 bg-purple-50 hover:bg-purple-100 rounded-lg transition-colors"
+            >
+              <div className="w-10 h-10 bg-purple-500 rounded-full flex items-center justify-center">
+                <MessageCircle className="h-5 w-5 text-white" />
+              </div>
+              <div className="text-left">
+                <div className="font-semibold text-gray-800">Weddings & Events</div>
+                <div className="text-sm text-gray-600">+91 8679333354</div>
+              </div>
+            </button>
+          </div>
+        )}
+      </div>
+
+      {/* Desktop Floating Buttons */}
+      <div className="hidden md:flex fixed bottom-6 right-6 z-50 flex-col items-end gap-4">
       {/* Call Now Button */}
       <div 
         className="relative"
