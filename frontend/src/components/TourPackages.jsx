@@ -1174,10 +1174,10 @@ const TourPackages = () => {
   return (
     <section id="tour-packages" className="py-20 bg-gradient-to-b from-gray-50 to-white">
       <SEOHead 
-        title="Tour Packages | Pretty Planet Travels - Himachal Kashmir Manali Tours"
-        description="Explore 50+ tour packages including Kashmir honeymoon, Manali romantic getaways, Himachal adventure tours. Best prices guaranteed. Book online or call +91 8679333355."
+        title="Best Travel Agent in Dharamshala | Himachal Tour Packages | Pretty Planet Travels"
+        description="Pretty Planet Travels - Best travel agent in Dharamshala. Book Dharamshala Dalhousie tour package, Shimla Manali tour package, and Himachal tour packages. Expert Dharamshala tour agent since 2010."
         canonical="https://www.prettyplanettravels.com/tour-packages"
-        keywords="Himachal tour packages, Kashmir honeymoon, Manali tours, Dharamshala packages, adventure tours, family vacation packages"
+        keywords="travel agent in Dharamshala, best travel agent in Dharamshala, Dharamshala Dalhousie tour package, Himachal tour packages, Dharamshala tour agent, Shimla Manali tour package, Pretty Planet Travels Dharamshala, Himachal Pradesh tours, Kashmir honeymoon packages, Manali tour packages"
       />
       <div className="max-w-7xl mx-auto px-4">
         {/* Header */}
