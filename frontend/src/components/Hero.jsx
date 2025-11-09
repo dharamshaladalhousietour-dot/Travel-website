@@ -136,10 +136,32 @@ const Hero = () => {
             we turn your vision into extraordinary experiences.
           </p>
           
-          {/* Tagline */}
-          <p className="text-sm sm:text-base md:text-lg text-amber-300 font-semibold mb-8 max-w-4xl mx-auto text-center px-4 font-montserrat">
-            ✨ Trusted Event & Wedding Planners in Dharamshala | Pretty Planet Travels & Events
-          </p>
+          {/* Premium Tagline with Badge Style */}
+          <div className="mb-8 flex justify-center px-4">
+            <div className="relative inline-flex items-center gap-3 bg-gradient-to-r from-amber-500/20 via-yellow-400/20 to-amber-500/20 backdrop-blur-lg border-2 border-amber-400/50 rounded-full px-6 py-3 shadow-2xl hover:shadow-amber-500/50 transition-all duration-300 hover:scale-105">
+              {/* Shine effect */}
+              <div className="absolute inset-0 rounded-full bg-gradient-to-r from-transparent via-white/10 to-transparent animate-shimmer"></div>
+              
+              {/* Trust Icon */}
+              <span className="text-3xl animate-pulse">🏆</span>
+              
+              {/* Tagline Text */}
+              <p className="relative z-10 text-base sm:text-lg md:text-xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-amber-200 via-yellow-300 to-amber-200 font-playfair tracking-wide">
+                Trusted Event & Wedding Planners in Dharamshala
+              </p>
+              
+              {/* Divider */}
+              <span className="text-amber-300 text-xl">|</span>
+              
+              {/* Brand Name */}
+              <p className="relative z-10 text-base sm:text-lg md:text-xl font-bold text-white font-montserrat">
+                Pretty Planet Travels & Events
+              </p>
+              
+              {/* Star decoration */}
+              <span className="text-2xl animate-pulse">⭐</span>
+            </div>
+          </div>
           
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8 px-4">
