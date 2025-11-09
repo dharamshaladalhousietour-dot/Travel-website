@@ -131,9 +131,14 @@ const Hero = () => {
             <br className="sm:hidden" />
             <span className="inline-block transform hover:scale-105 transition-transform duration-300">Moments</span>
           </h1>
-          <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-blue-100 mb-8 max-w-3xl mx-auto leading-relaxed text-center px-4">
+          <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-blue-100 mb-4 max-w-3xl mx-auto leading-relaxed text-center px-4">
             From magical destinations to seamless corporate events and dream weddings, 
             we turn your vision into extraordinary experiences.
+          </p>
+          
+          {/* Tagline */}
+          <p className="text-sm sm:text-base md:text-lg text-amber-300 font-semibold mb-8 max-w-4xl mx-auto text-center px-4 font-montserrat">
+            ✨ Trusted Event & Wedding Planners in Dharamshala | Pretty Planet Travels & Events
           </p>
           
           {/* CTA Buttons */}
