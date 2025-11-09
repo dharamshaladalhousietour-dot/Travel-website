@@ -1185,13 +1185,13 @@ const TourPackages = () => {
           <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-r from-blue-900 to-blue-800 rounded-full mb-6">
             <MapPin className="h-8 w-8 text-white" />
           </div>
-          <h2 className="text-4xl md:text-5xl font-bold text-blue-900 mb-6">
-            Tour Packages
-          </h2>
+          <h1 className="text-4xl md:text-5xl font-bold text-blue-900 mb-6">
+            Best Travel Agent in Dharamshala | Himachal Tour Packages
+          </h1>
           <div className="w-24 h-1 bg-gradient-to-r from-amber-400 to-amber-600 mx-auto mb-8"></div>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-            Explore our handcrafted tour packages across Kashmir, Himachal Pradesh, 
-            Rajasthan, Uttarakhand, and South India with expert local guidance.
+            Pretty Planet Travels Dharamshala - Your trusted Dharamshala tour agent for Shimla Manali tour packages, 
+            Dharamshala Dalhousie tour packages, and complete Himachal Pradesh tours with expert local guidance.
           </p>
         </div>
 
