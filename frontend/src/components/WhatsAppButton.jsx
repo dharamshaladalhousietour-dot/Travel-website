@@ -182,6 +182,7 @@ const WhatsAppButton = () => {
         <div className="absolute inset-0 rounded-full bg-green-500 opacity-20 blur-xl transform scale-75"></div>
       </div>
     </div>
+    </>
   );
 };
 
