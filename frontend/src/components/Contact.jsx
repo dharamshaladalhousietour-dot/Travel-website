@@ -262,83 +262,12 @@ const Contact = () => {
               </CardContent>
             </Card>
           </div>
-                          </SelectTrigger>
-                          <SelectContent>
-                            <SelectItem value="travel">Travel & Tours</SelectItem>
-                            <SelectItem value="corporate">Corporate Events</SelectItem>
-                            <SelectItem value="wedding">Weddings & Celebrations</SelectItem>
-                            <SelectItem value="consultation">Consultation</SelectItem>
-                          </SelectContent>
-                        </Select>
-                      </div>
-                      <div className="space-y-2">
-                        <Label className="text-sm font-medium text-gray-700">
-                          Preferred Destination/Venue
-                        </Label>
-                        <Input
-                          value={formData.destination}
-                          onChange={(e) => handleInputChange('destination', e.target.value)}
-                          placeholder="Paris, Bali, Local venue, etc."
-                          className="h-12"
-                        />
-                      </div>
-                    </div>
-
-                    {/* Budget */}
-                    <div className="space-y-2">
-                      <Label className="text-sm font-medium text-gray-700">
-                        Budget Range
-                      </Label>
-                      <Select onValueChange={(value) => handleInputChange('budget', value)}>
-                        <SelectTrigger className="h-12">
-                          <SelectValue placeholder="Select your budget range" />
-                        </SelectTrigger>
-                        <SelectContent>
-                          <SelectItem value="under-25k">Under ₹25,000</SelectItem>
-                          <SelectItem value="25k-50k">₹25,000 - ₹50,000</SelectItem>
-                          <SelectItem value="50k-100k">₹50,000 - ₹1,00,000</SelectItem>
-                          <SelectItem value="100k-200k">₹1,00,000 - ₹2,00,000</SelectItem>
-                          <SelectItem value="200k-plus">₹2,00,000+</SelectItem>
-                          <SelectItem value="flexible">Flexible</SelectItem>
-                        </SelectContent>
-                      </Select>
-                    </div>
-
-                    {/* Message */}
-                    <div className="space-y-2">
-                      <Label htmlFor="message" className="text-sm font-medium text-gray-700">
-                        Tell Us About Your Vision *
-                      </Label>
-                      <Textarea
-                        id="message"
-                        value={formData.message}
-                        onChange={(e) => handleInputChange('message', e.target.value)}
-                        placeholder="Share details about your dream experience, special requirements, dates, or any questions you have..."
-                        required
-                        className="min-h-[120px] resize-none"
-                      />
-                    </div>
-
-                    {/* Submit Button */}
-                    <Button 
-                      type="submit" 
-                      size="lg" 
-                      className="w-full bg-gradient-to-r from-blue-900 to-blue-800 hover:from-blue-800 hover:to-blue-700 text-white py-4 font-semibold"
-                    >
-                      <Send className="h-5 w-5 mr-2" />
-                      Send Message
-                    </Button>
-                  </form>
-                )}
-              </CardContent>
-            </Card>
-          </div>
 
           {/* Contact Information */}
-          <div className="space-y-8">
+          <div className="space-y-6 md:space-y-8 order-2 lg:order-2">
             {contactInfo.map((info, index) => (
               <Card key={index} className="border-0 shadow-lg hover:shadow-xl transition-shadow duration-300">
-                <CardContent className="p-6">
+                <CardContent className="p-5 md:p-6">
                   <div className="flex items-start space-x-4">
                     <div className="flex-shrink-0">
                       <div className="w-12 h-12 bg-gradient-to-r from-blue-900 to-blue-800 rounded-lg flex items-center justify-center text-white">
@@ -346,10 +275,10 @@ const Contact = () => {
                       </div>
                     </div>
                     <div>
-                      <h4 className="font-bold text-blue-900 mb-3">{info.title}</h4>
+                      <h4 className="font-bold text-blue-900 mb-2 md:mb-3 font-playfair text-base md:text-lg">{info.title}</h4>
                       <div className="space-y-1">
                         {info.details.map((detail, idx) => (
-                          <p key={idx} className="text-gray-600 text-sm">{detail}</p>
+                          <p key={idx} className="text-gray-600 text-xs md:text-sm font-montserrat">{detail}</p>
                         ))}
                       </div>
                     </div>
