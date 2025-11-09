@@ -305,13 +305,13 @@ Looking forward to creating unforgettable memories with Pretty Planet!`;
               </div>
               
               <h1 className="text-4xl md:text-6xl lg:text-7xl font-playfair font-semibold mb-6 leading-tight drop-shadow-lg animate-fade-in-up" style={{ color: '#3B3B3B' }}>
-                Dream Weddings in Dharamshala
+                Best Wedding Planner in Dharamshala
               </h1>
-              <h2 className="text-4xl md:text-5xl font-playfair font-normal mb-6 leading-tight animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
-                Crafted with Love, Luxury, and Himalayan Charm
+              <h2 className="text-3xl md:text-4xl lg:text-5xl font-playfair font-normal mb-6 leading-tight animate-fade-in-up" style={{ animationDelay: '0.2s', color: '#2D2D2D' }}>
+                Top Event Planner in Himachal | Luxury Destination Weddings
               </h2>
               <p className="text-lg md:text-2xl font-light mb-8 max-w-4xl mx-auto leading-relaxed drop-shadow-md italic animate-fade-in-up" style={{ animationDelay: '0.4s', lineHeight: '1.5' }}>
-                "Your love story deserves the magic of the mountains — let's begin your journey today."
+                "Pretty Planet Travels & Events - Your trusted wedding decorator in Dharamshala for unforgettable celebrations"
               </p>
 
               {/* CTA Buttons with Animation - Unified Sizing */}
