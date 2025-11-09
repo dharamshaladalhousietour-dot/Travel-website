@@ -102,16 +102,6 @@ const Contact = () => {
       });
     }, 3000);
   };
-        lastName: '',
-        email: '',
-        phone: '',
-        service: '',
-        destination: '',
-        budget: '',
-        message: ''
-      });
-    }, 3000);
-  };
 
   const contactInfo = [
     {
