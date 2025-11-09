@@ -44,7 +44,7 @@ const EventsWeddingsLuxury = () => {
       customText: "Customized wedding package designed around your dreams",
       features: ["Mountain View Venue", "300-500 Guests", "3-Day Celebration", "Traditional Meets Modern", "Complete Event Management", "Luxury Guest Accommodations"],
       image: "/assets/hero-dharamshala.jpg",
-      altText: "Destination wedding in Dharamshala with Dhauladhar mountain views by Pretty Planet Travels & Events",
+      altText: "Destination wedding planner in Himachal Pradesh - Dharamshala mountain wedding by best event planner Pretty Planet",
       fileName: "dharamshala-destination-wedding.jpg"
     },
     {
