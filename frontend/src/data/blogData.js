@@ -386,6 +386,473 @@ export const blogPosts = [
       </div>
     `,
     tags: ["Dharamshala Weddings", "Luxury Wedding Venues Himachal", "Destination Wedding Planner Dharamshala", "Himachal Wedding Venues 2026", "Top Wedding Destinations", "Mountain Weddings"]
+  },
+  {
+    id: 4,
+    slug: "best-luxury-wedding-decor-themes-dharamshala",
+    title: "Best Luxury Wedding Decor Themes in Dharamshala - 2026 Trends",
+    author: "Rajeev Kaushal",
+    date: "November 10, 2025",
+    readTime: "10 min read",
+    category: "Wedding Decor",
+    image: "https://images.unsplash.com/photo-1519741497674-611481863552?w=1200&q=80",
+    excerpt: "Discover the most stunning luxury wedding decor themes perfect for Dharamshala celebrations. From mountain chic to traditional Himachali elegance - explore 2026's top trends.",
+    metaDescription: "Explore luxury wedding decor themes for Dharamshala by Pretty Planet - Best wedding decorator in Himachal. Mountain elegance, traditional themes, and modern luxury designs for 2026.",
+    content: `
+      <div class="blog-content">
+        <h2 style="color: #D9B38C;">🎨 Luxury Wedding Decor Trends for Dharamshala 2026</h2>
+        
+        <p>As Dharamshala's leading wedding decorators, we at <a href="/events-weddings" class="text-rose-600 hover:text-rose-700 font-semibold">Pretty Planet Travels & Events</a> have witnessed the evolution of wedding aesthetics in the Himalayas. For 2026, couples are seeking décor that blends luxury with the natural beauty of Dharamshala's mountain landscape.</p>
+
+        <p>Here are the top 8 luxury wedding decor themes that will dominate Dharamshala weddings in 2026:</p>
+
+        <div class="divider-line" style="width: 100px; height: 2px; background: linear-gradient(90deg, #D9B38C 0%, #F8C7CC 100%); margin: 2rem auto;"></div>
+
+        <h2 style="color: #F8C7CC;">1. ⛰️ Mountain Elegance - Dhauladhar-Inspired Luxury</h2>
+        
+        <p><strong>Why It's Trending:</strong> This theme celebrates Dharamshala's iconic Dhauladhar mountain range with a color palette inspired by the peaks at sunset.</p>
+
+        <h3 style="color: #2D2D2D;">Key Elements:</h3>
+        <ul class="custom-list">
+          <li>🎨 <strong>Color Palette:</strong> Soft whites, blush pinks, golden amber, and deep blues</li>
+          <li>🌸 <strong>Florals:</strong> White orchids, blush roses, eucalyptus, and local mountain wildflowers</li>
+          <li>✨ <strong>Lighting:</strong> Warm fairy lights cascading like mountain mist, uplighting on trees</li>
+          <li>🪑 <strong>Furniture:</strong> Elegant white sofas, golden-framed mirrors, crystal chandeliers</li>
+          <li>🏔️ <strong>Backdrop:</strong> Natural mountain views enhanced with sheer drapes and floral installations</li>
+        </ul>
+
+        <p><em>Perfect for:</em> Couples who want to embrace Dharamshala's natural beauty while maintaining sophisticated luxury.</p>
+
+        <h2 style="color: #D9B38C;">2. 🕉️ Traditional Himachali Heritage Theme</h2>
+        
+        <p><strong>Why It's Trending:</strong> More couples are honoring local Himachali culture by incorporating traditional elements into their luxury weddings.</p>
+
+        <h3 style="color: #2D2D2D;">Key Elements:</h3>
+        <ul class="custom-list">
+          <li>🎨 <strong>Color Palette:</strong> Rich reds, vibrant yellows, forest greens, and gold accents</li>
+          <li>🌺 <strong>Florals:</strong> Marigolds, roses, dahlias arranged in traditional Himachali patterns</li>
+          <li>🛕 <strong>Structures:</strong> Traditional wooden mandap with hand-carved details, prayer flags</li>
+          <li>🎭 <strong>Decor Elements:</strong> Brass lamps, Kullu shawls as draping, Chamba rumal embroidery</li>
+          <li>🍃 <strong>Natural Touches:</strong> Deodar pine branches, local herbs, traditional earthenware</li>
+        </ul>
+
+        <p><em>Perfect for:</em> Couples wanting to celebrate their roots while enjoying modern luxury amenities.</p>
+
+        <h2 style="color: #F8C7CC;">3. 🌟 Royal Rajasthani Fusion in the Mountains</h2>
+        
+        <p><strong>Why It's Trending:</strong> Bringing Rajasthan's royal grandeur to Dharamshala's serene mountains creates a unique luxury experience.</p>
+
+        <h3 style="color: #2D2D2D;">Key Elements:</h3>
+        <ul class="custom-list">
+          <li>🎨 <strong>Color Palette:</strong> Royal purple, rich gold, deep maroon, and ivory</li>
+          <li>👑 <strong>Structures:</strong> Jharokha-style mandap, Mughal-inspired arches, royal canopies</li>
+          <li>💎 <strong>Decor:</strong> Crystal chandeliers, gold-embroidered drapes, peacock feather accents</li>
+          <li>🕯️ <strong>Lighting:</strong> Grand candelabras, traditional lanterns, royal uplighting</li>
+          <li>🌸 <strong>Florals:</strong> Red roses, orchids, and jasmine in ornate gold vases</li>
+        </ul>
+
+        <p><em>Perfect for:</em> Couples dreaming of a royal wedding with the tranquility of mountain surroundings.</p>
+
+        <h2 style="color: #D9B38C;">4. 🌿 Eco-Luxe Sustainable Elegance</h2>
+        
+        <p><strong>Why It's Trending:</strong> Conscious luxury is the future - couples want stunning décor that's environmentally responsible.</p>
+
+        <h3 style="color: #2D2D2D;">Key Elements:</h3>
+        <ul class="custom-list">
+          <li>🌱 <strong>Materials:</strong> Bamboo structures, recycled wood, biodegradable fabrics</li>
+          <li>🌸 <strong>Florals:</strong> Locally sourced seasonal flowers, potted plants (as favors)</li>
+          <li>🕯️ <strong>Lighting:</strong> Solar-powered LED lights, beeswax candles</li>
+          <li>🎨 <strong>Color Palette:</strong> Earthy greens, natural browns, soft creams, sage green</li>
+          <li>♻️ <strong>Sustainability:</strong> Zero-waste décor, compostable elements, reusable items</li>
+        </ul>
+
+        <p><em>Perfect for:</em> Eco-conscious couples who refuse to compromise on elegance.</p>
+
+        <div class="cta-section bg-gradient-to-r from-rose-50 to-amber-50 rounded-xl p-8 my-8 text-center border-2 border-rose-200">
+          <h3 class="text-2xl font-playfair font-semibold mb-4" style="color: #2D2D2D;">💐 Ready to Create Your Dream Wedding Decor?</h3>
+          <p class="mb-6 text-gray-700 font-montserrat">As Dharamshala's <strong>best wedding decorator</strong>, we bring these luxury themes to life with perfection. Contact us for a personalized decor consultation.</p>
+          <div class="flex flex-col sm:flex-row gap-4 justify-center">
+            <a href="/events-weddings" class="inline-block bg-gradient-to-r from-rose-500 to-pink-500 text-white font-semibold px-8 py-3 rounded-full hover:shadow-xl transition-all font-montserrat" onclick="event.preventDefault(); window.location.href='/events-weddings';">
+              View Wedding Packages
+            </a>
+            <a href="/#contact" class="inline-block border-2 border-rose-500 text-rose-600 font-semibold px-8 py-3 rounded-full hover:bg-rose-50 transition-all font-montserrat" onclick="event.preventDefault(); window.location.href='/'; setTimeout(() => document.getElementById('contact')?.scrollIntoView({behavior: 'smooth'}), 100);">
+              📞 Get Decor Consultation
+            </a>
+          </div>
+        </div>
+
+        <h2 style="color: #F8C7CC;">5. 🌸 Bohemian Mountain Romance</h2>
+        
+        <p><strong>Why It's Trending:</strong> Free-spirited couples love the relaxed luxury of boho-chic paired with mountain vibes.</p>
+
+        <h3 style="color: #2D2D2D;">Key Elements:</h3>
+        <ul class="custom-list">
+          <li>🎨 <strong>Color Palette:</strong> Terracotta, burnt orange, cream, sage green, mustard yellow</li>
+          <li>🌾 <strong>Textures:</strong> Macramé hangings, woven rugs, dreamcatchers, tassels</li>
+          <li>🌺 <strong>Florals:</strong> Pampas grass, dried flowers, wildflowers, succulents</li>
+          <li>🪔 <strong>Lighting:</strong> Lanterns, Edison bulbs, candles in glass hurricanes</li>
+          <li>🎪 <strong>Structures:</strong> Tipi-style structures, low seating with colorful cushions</li>
+        </ul>
+
+        <p><em>Perfect for:</em> Laid-back couples wanting a luxurious yet relaxed mountain wedding.</p>
+
+        <h2 style="color: #D9B38C;">6. ❄️ Winter Wonderland Luxury</h2>
+        
+        <p><strong>Why It's Trending:</strong> December to February weddings in Dharamshala offer a magical snowy backdrop.</p>
+
+        <h3 style="color: #2D2D2D;">Key Elements:</h3>
+        <ul class="custom-list">
+          <li>❄️ <strong>Color Palette:</strong> Icy blues, silver, white, champagne gold</li>
+          <li>🌟 <strong>Decor:</strong> Crystal installations, silver branches, white orchids, frosted glass</li>
+          <li>🕯️ <strong>Lighting:</strong> Thousands of white fairy lights, crystal chandeliers</li>
+          <li>🔥 <strong>Warmth Elements:</strong> Fire pits, fur throws, heated lounge areas</li>
+          <li>⛄ <strong>Winter Touch:</strong> Faux snow accents, pinecones, evergreen garlands</li>
+        </ul>
+
+        <p><em>Perfect for:</em> Couples wanting a magical winter wedding with snowy mountain views.</p>
+
+        <h2 style="color: #F8C7CC;">7. 🏵️ Modern Minimalist Luxury</h2>
+        
+        <p><strong>Why It's Trending:</strong> "Less is more" philosophy with high-end materials and clean lines.</p>
+
+        <h3 style="color: #2D2D2D;">Key Elements:</h3>
+        <ul class="custom-list">
+          <li>🎨 <strong>Color Palette:</strong> Monochromatic whites, blacks, grays with metallic accents</li>
+          <li>🌿 <strong>Florals:</strong> Single-variety arrangements (all white roses or all orchids)</li>
+          <li>✨ <strong>Structures:</strong> Clean geometric mandaps, acrylic installations</li>
+          <li>💡 <strong>Lighting:</strong> Modern LED strips, architectural uplighting</li>
+          <li>🪑 <strong>Furniture:</strong> Sleek modern chairs, glass tables, minimalist lounges</li>
+        </ul>
+
+        <p><em>Perfect for:</em> Contemporary couples who appreciate sophisticated simplicity.</p>
+
+        <h2 style="color: #D9B38C;">8. 🌺 Tropical Paradise in the Hills</h2>
+        
+        <p><strong>Why It's Trending:</strong> Bringing beach vibes to the mountains creates a unique and unexpected luxury theme.</p>
+
+        <h3 style="color: #2D2D2D;">Key Elements:</h3>
+        <ul class="custom-list">
+          <li>🌴 <strong>Color Palette:</strong> Coral, turquoise, lime green, sunshine yellow, white</li>
+          <li>🍹 <strong>Decor:</strong> Palm leaves, bamboo tiki bars, colorful tassels</li>
+          <li>🌺 <strong>Florals:</strong> Tropical blooms like bird of paradise, anthuriums, hibiscus</li>
+          <li>🎵 <strong>Vibe:</strong> Relaxed resort-style seating with vibrant cushions</li>
+          <li>🥥 <strong>Fun Elements:</strong> Coconut water bars, tropical fruit displays</li>
+        </ul>
+
+        <p><em>Perfect for:</em> Fun-loving couples who want an unconventional destination wedding.</p>
+
+        <div class="divider-line" style="width: 100px; height: 2px; background: linear-gradient(90deg, #D9B38C 0%, #F8C7CC 100%); margin: 2rem auto;"></div>
+
+        <h2 style="color: #2D2D2D;">💼 Why Choose Pretty Planet as Your Dharamshala Wedding Decorator?</h2>
+
+        <p>As the <strong>best wedding decorator in Dharamshala</strong>, we don't just follow trends - we create them. Here's what sets us apart:</p>
+
+        <ul class="custom-list">
+          <li>🎨 <strong>Custom Theme Creation:</strong> We design unique themes based on your vision</li>
+          <li>🏔️ <strong>Local Expertise:</strong> 10+ years of experience with Dharamshala venues</li>
+          <li>💎 <strong>Luxury Vendors:</strong> Partnerships with premium decor suppliers</li>
+          <li>📸 <strong>Instagram-Worthy:</strong> Every corner is designed for stunning photos</li>
+          <li>⏰ <strong>Flawless Execution:</strong> On-time setup with attention to every detail</li>
+          <li>♻️ <strong>Sustainable Options:</strong> Eco-friendly luxury decor available</li>
+        </ul>
+
+        <h2 style="color: #D9B38C;">📅 Booking Timeline for 2026 Weddings</h2>
+
+        <p>Our best wedding decorator services book up 12-16 months in advance for peak season. If you're planning a 2026 wedding:</p>
+
+        <ul>
+          <li><strong>Now - December 2025:</strong> Finalize your decor theme and venue</li>
+          <li><strong>January - March 2026:</strong> Detailed mockups and vendor coordination</li>
+          <li><strong>April 2026 onwards:</strong> Final walkthroughs and execution</li>
+        </ul>
+
+        <div class="cta-section bg-gradient-to-r from-rose-500 via-pink-500 to-amber-400 rounded-2xl p-10 my-10 text-center text-white shadow-2xl">
+          <h3 class="text-3xl font-playfair font-bold mb-6">✨ Let's Create Your Dream Wedding Decor</h3>
+          <p class="text-xl mb-8 font-montserrat">Contact Dharamshala's top wedding decorator for a personalized decor proposal</p>
+          <div class="flex flex-col sm:flex-row gap-6 justify-center">
+            <a href="/#contact" class="inline-block bg-white text-rose-600 font-bold px-10 py-4 rounded-full hover:shadow-2xl transform hover:scale-105 transition-all font-montserrat text-lg" onclick="event.preventDefault(); window.location.href='/'; setTimeout(() => document.getElementById('contact')?.scrollIntoView({behavior: 'smooth'}), 100);">
+              📞 Get Your Decor Consultation
+            </a>
+          </div>
+        </div>
+
+        <p class="mt-8 text-center text-2xl font-playfair italic" style="color: #D9B38C;">"Where luxury meets the mountains - every celebration becomes art."</p>
+      </div>
+    `,
+    tags: ["Wedding Decor Dharamshala", "Best Wedding Decorator", "Luxury Wedding Themes", "Dharamshala Wedding Planning", "Himachal Wedding Decor", "2026 Wedding Trends"]
+  },
+  {
+    id: 5,
+    slug: "why-dharamshala-himachal-top-event-wedding-destination-2026",
+    title: "Why Dharamshala Is Himachal's Top Event & Wedding Destination for 2026",
+    author: "Riny Kaushal",
+    date: "November 11, 2025",
+    readTime: "12 min read",
+    category: "Destination Weddings",
+    image: "https://images.unsplash.com/photo-1519167758481-83f29da8b8f4?w=1200&q=80",
+    excerpt: "Discover why Dharamshala has become Himachal Pradesh's #1 choice for luxury weddings and events in 2026. Explore what makes this mountain paradise unbeatable.",
+    metaDescription: "Why Dharamshala is the top wedding and event destination in Himachal Pradesh for 2026. Expert insights from Pretty Planet Travels - Best event planner in Dharamshala.",
+    content: `
+      <div class="blog-content">
+        <h2 style="color: #D9B38C;">🏔️ Dharamshala: Himachal's Crown Jewel for 2026</h2>
+        
+        <p>As Himachal Pradesh's leading event and wedding planners, we at <a href="/events-weddings" class="text-rose-600 hover:text-rose-700 font-semibold">Pretty Planet Travels & Events</a> have witnessed Dharamshala's remarkable rise to become the state's most sought-after destination for luxury celebrations.</p>
+
+        <p>In 2026, Dharamshala isn't just competing with other Himachal destinations - it's redefining what a mountain wedding and event experience should be. Here's why couples and corporations are choosing Dharamshala over Shimla, Manali, and other hill stations:</p>
+
+        <div class="divider-line" style="width: 100px; height: 2px; background: linear-gradient(90deg, #D9B38C 0%, #F8C7CC 100%); margin: 2rem auto;"></div>
+
+        <h2 style="color: #F8C7CC;">1. ✈️ Unmatched Accessibility</h2>
+        
+        <h3 style="color: #2D2D2D;">Why It Matters:</h3>
+        <p>Unlike Manali (requiring a 14-hour drive from Delhi) or Spiti Valley (requiring multiple days of travel), Dharamshala offers luxury without the logistics nightmare.</p>
+
+        <h3 style="color: #2D2D2D;">Key Advantages:</h3>
+        <ul class="custom-list">
+          <li>✈️ <strong>Gaggal Airport (10 km):</strong> Direct flights from Delhi (1 hour), Mumbai, Chandigarh</li>
+          <li>🚗 <strong>Road Connectivity:</strong> Well-maintained highways from Delhi (10-11 hours), Chandigarh (4 hours)</li>
+          <li>🚌 <strong>Luxury Bus Services:</strong> Volvo and sleeper coach options daily</li>
+          <li>🏨 <strong>Local Transport:</strong> Reliable taxi services and rental cars available</li>
+          <li>📱 <strong>Connectivity:</strong> Excellent mobile network and wifi across the city</li>
+        </ul>
+
+        <p><strong>Real Impact:</strong> Your international and elderly guests can arrive comfortably without arduous mountain journeys.</p>
+
+        <h2 style="color: #D9B38C;">2. 🏨 World-Class Luxury Infrastructure</h2>
+        
+        <h3 style="color: #2D2D2D;">The Luxury Factor:</h3>
+        <p>Dharamshala has emerged as Himachal's luxury hospitality hub with properties that rival 5-star resorts anywhere in India.</p>
+
+        <h3 style="color: #2D2D2D;">Top Properties:</h3>
+        <ul class="custom-list">
+          <li>💎 <strong>Hyatt Regency Dharamshala:</strong> 300+ guest capacity, modern luxury</li>
+          <li>🌟 <strong>Radisson Blu Resort:</strong> Expansive event spaces, mountain views</li>
+          <li>🏔️ <strong>The Amoha by ITC Storii:</strong> Boutique luxury, personalized service</li>
+          <li>🌺 <strong>Fortune Park Moksha:</strong> ITC property with Himachal charm</li>
+          <li>🏛️ <strong>Multiple Premium Properties:</strong> 15+ luxury options for guest accommodation</li>
+        </ul>
+
+        <p><strong>Comparison:</strong> While Manali has luxury properties, they're spread out. Dharamshala's luxury is concentrated, making multi-venue coordination seamless.</p>
+
+        <h2 style="color: #F8C7CC;">3. 🏔️ Dhauladhar Mountain Backdrop - Nature's Luxury</h2>
+        
+        <h3 style="color: #2D2D2D;">The Visual Advantage:</h3>
+        <p>The Dhauladhar range provides a dramatic, snow-capped backdrop that's unmatched in Himachal for wedding photography and events.</p>
+
+        <h3 style="color: #2D2D2D;">Why It's Special:</h3>
+        <ul class="custom-list">
+          <li>📸 <strong>Instagram-Perfect:</strong> Every angle offers stunning photo opportunities</li>
+          <li>☀️ <strong>Consistent Views:</strong> Unlike cloud-prone Manali, Dharamshala offers clearer mountain views</li>
+          <li>🌄 <strong>Sunrise & Sunset:</strong> Breathtaking golden hour lighting for ceremonies</li>
+          <li>❄️ <strong>Snow Peaks:</strong> Visible year-round from most venues</li>
+          <li>🌲 <strong>Natural Beauty:</strong> Pine forests, tea gardens, and valleys surround the city</li>
+        </ul>
+
+        <div class="cta-section bg-gradient-to-r from-rose-50 to-amber-50 rounded-xl p-8 my-8 text-center border-2 border-rose-200">
+          <h3 class="text-2xl font-playfair font-semibold mb-4" style="color: #2D2D2D;">🎊 Planning a Dharamshala Event or Wedding?</h3>
+          <p class="mb-6 text-gray-700 font-montserrat">As the <strong>top event planner in Dharamshala</strong>, we know every venue, every vendor, and every detail that makes Dharamshala perfect. Let's create your unforgettable celebration.</p>
+          <div class="flex flex-col sm:flex-row gap-4 justify-center">
+            <a href="/events-weddings" class="inline-block bg-gradient-to-r from-rose-500 to-pink-500 text-white font-semibold px-8 py-3 rounded-full hover:shadow-xl transition-all font-montserrat" onclick="event.preventDefault(); window.location.href='/events-weddings';">
+              View Event Packages
+            </a>
+            <a href="/#contact" class="inline-block border-2 border-rose-500 text-rose-600 font-semibold px-8 py-3 rounded-full hover:bg-rose-50 transition-all font-montserrat" onclick="event.preventDefault(); window.location.href='/'; setTimeout(() => document.getElementById('contact')?.scrollIntoView({behavior: 'smooth'}), 100);">
+              📞 Get Free Consultation
+            </a>
+          </div>
+        </div>
+
+        <h2 style="color: #D9B38C;">4. 🕉️ Spiritual & Cultural Richness</h2>
+        
+        <h3 style="color: #2D2D2D;">The Dharamshala Experience:</h3>
+        <p>Home to the Dalai Lama and Tibetan government-in-exile, Dharamshala offers a unique spiritual dimension that adds depth to celebrations.</p>
+
+        <h3 style="color: #2D2D2D;">Cultural Elements:</h3>
+        <ul class="custom-list">
+          <li>🙏 <strong>Tibetan Monasteries:</strong> Tsuglagkhang Complex, Namgyal Monastery</li>
+          <li>🎨 <strong>Art & Craft:</strong> Traditional Tibetan art, thangka paintings, handicrafts</li>
+          <li>🎭 <strong>Cultural Performances:</strong> Tibetan dance and music available for events</li>
+          <li>🍜 <strong>Cuisine:</strong> Tibetan, Himachali, and international food options</li>
+          <li>🧘 <strong>Wellness:</strong> Yoga retreats, meditation centers, spa experiences</li>
+        </ul>
+
+        <p><strong>Event Advantage:</strong> Corporate retreats can combine team building with mindfulness programs unique to Dharamshala.</p>
+
+        <h2 style="color: #F8C7CC;">5. 🌤️ Perfect Year-Round Weather</h2>
+        
+        <h3 style="color: #2D2D2D;">Climate Advantage:</h3>
+        <p>Dharamshala's moderate altitude (1,457m vs Shimla's 2,200m) means comfortable weather without extreme cold.</p>
+
+        <h3 style="color: #2D2D2D;">Seasonal Benefits:</h3>
+        <ul class="custom-list">
+          <li>🌸 <strong>Spring (March-May):</strong> Pleasant 15-25°C, blooming flowers, clear skies</li>
+          <li>☀️ <strong>Summer (June-August):</strong> Cool 20-30°C, escape from plains' heat</li>
+          <li>🍂 <strong>Autumn (Sept-Nov):</strong> Crystal clear views, comfortable 10-20°C</li>
+          <li>❄️ <strong>Winter (Dec-Feb):</strong> Cool but not freezing, snow views, magical ambiance</li>
+        </ul>
+
+        <p><strong>Wedding Planning Benefit:</strong> Less weather-related uncertainty compared to high-altitude destinations.</p>
+
+        <h2 style="color: #D9B38C;">6. 💰 Best Value for Luxury</h2>
+        
+        <h3 style="color: #2D2D2D;">Cost Efficiency:</h3>
+        <p>Dharamshala offers luxury at 20-30% lower costs compared to Goa, Udaipur, or international destinations.</p>
+
+        <h3 style="color: #2D2D2D;">Value Factors:</h3>
+        <ul class="custom-list">
+          <li>💵 <strong>Accommodation:</strong> Luxury rooms at ₹4,000-8,000 vs ₹12,000+ in Goa</li>
+          <li>🍽️ <strong>Catering:</strong> High-quality food at reasonable rates</li>
+          <li>🎨 <strong>Decor:</strong> Competitive vendor pricing with premium results</li>
+          <li>📸 <strong>Photography:</strong> Excellent photographers at fair rates</li>
+          <li>✈️ <strong>Guest Travel:</strong> Domestic flights cheaper than international</li>
+        </ul>
+
+        <p><strong>Budget Reality:</strong> A 200-guest luxury wedding costs ₹25-35 lakhs in Dharamshala vs ₹50-70 lakhs in Goa.</p>
+
+        <h2 style="color: #F8C7CC;">7. 🎯 Corporate Event Infrastructure</h2>
+        
+        <h3 style="color: #2D2D2D;">Why Corporations Choose Dharamshala:</h3>
+        <p>Beyond weddings, Dharamshala has become Himachal's top choice for corporate offsites, conferences, and team-building events.</p>
+
+        <h3 style="color: #2D2D2D;">Business Facilities:</h3>
+        <ul class="custom-list">
+          <li>🏢 <strong>Conference Halls:</strong> Modern AV equipment, high-speed internet</li>
+          <li>🎤 <strong>Event Spaces:</strong> Indoor halls accommodating 500+ guests</li>
+          <li>🏃 <strong>Team Building:</strong> Trekking, paragliding, cricket stadium access</li>
+          <li>🍽️ <strong>Business Dining:</strong> Multiple cuisine options for international clients</li>
+          <li>☕ <strong>Work-Friendly:</strong> Cafes and co-working spaces available</li>
+        </ul>
+
+        <p><strong>Corporate Advantage:</strong> Combine business with wellness - meetings in the morning, mountains in the evening.</p>
+
+        <h2 style="color: #D9B38C;">8. 🌟 Local Expertise & Vendor Network</h2>
+        
+        <h3 style="color: #2D2D2D;">The Pretty Planet Advantage:</h3>
+        <p>As Dharamshala's established event planners, we've built relationships with the city's best vendors over 10+ years.</p>
+
+        <h3 style="color: #2D2D2D;">Our Network Includes:</h3>
+        <ul class="custom-list">
+          <li>🏨 <strong>All Major Venues:</strong> Preferred partner status and priority booking</li>
+          <li>📸 <strong>Top Photographers:</strong> Award-winning professionals familiar with Dharamshala</li>
+          <li>🎨 <strong>Premium Decorators:</strong> Teams who understand mountain venue logistics</li>
+          <li>🍰 <strong>Caterers:</strong> Multi-cuisine experts with hygiene certifications</li>
+          <li>🚗 <strong>Transport:</strong> Reliable luxury vehicle providers</li>
+          <li>🎵 <strong>Entertainment:</strong> DJs, bands, and cultural performers</li>
+        </ul>
+
+        <p><strong>Why It Matters:</strong> We know which vendor will deliver and which won't - saving you money and stress.</p>
+
+        <h2 style="color: #F8C7CC;">9. 🎨 Diverse Venue Options</h2>
+        
+        <h3 style="color: #2D2D2D;">Venue Variety:</h3>
+        <p>From luxury resorts to outdoor gardens, Dharamshala offers diverse settings for every celebration style.</p>
+
+        <h3 style="color: #2D2D2D;">Venue Types:</h3>
+        <ul class="custom-list">
+          <li>🏨 <strong>Luxury Resorts:</strong> 5-star properties with full-service facilities</li>
+          <li>🌳 <strong>Outdoor Gardens:</strong> Mountain view lawns for ceremonies</li>
+          <li>🏛️ <strong>Heritage Properties:</strong> Colonial-era buildings with character</li>
+          <li>🏔️ <strong>Mountain Villas:</strong> Intimate settings for smaller celebrations</li>
+          <li>🏞️ <strong>Tea Gardens:</strong> Unique backdrop for photo shoots and mehendi</li>
+        </ul>
+
+        <p><strong>Flexibility:</strong> Different venues for different functions - sangeet at a resort, ceremony in gardens, reception in a grand hall.</p>
+
+        <h2 style="color: #D9B38C;">10. 🚀 2026 Infrastructure Upgrades</h2>
+        
+        <h3 style="color: #2D2D2D;">What's New in 2026:</h3>
+        <p>Dharamshala continues to invest in infrastructure, making it even more wedding and event-friendly.</p>
+
+        <h3 style="color: #2D2D2D;">Recent & Upcoming Developments:</h3>
+        <ul class="custom-list">
+          <li>✈️ <strong>Airport Expansion:</strong> More direct flights, larger aircraft capacity</li>
+          <li>🛣️ <strong>Road Improvements:</strong> Better highways reducing travel time from Delhi</li>
+          <li>🏨 <strong>New Properties:</strong> 3 luxury resorts opening in 2026</li>
+          <li>🏟️ <strong>HPCA Stadium:</strong> World-class cricket venue available for events</li>
+          <li>🚡 <strong>Cable Car Project:</strong> Upcoming ropeway will add tourist attractions</li>
+        </ul>
+
+        <div class="divider-line" style="width: 100px; height: 2px; background: linear-gradient(90deg, #D9B38C 0%, #F8C7CC 100%); margin: 2rem auto;"></div>
+
+        <h2 style="color: #2D2D2D;">📊 Dharamshala vs Other Himachal Destinations</h2>
+
+        <table class="comparison-table" style="width: 100%; border-collapse: collapse; margin: 2rem 0;">
+          <thead>
+            <tr style="background: linear-gradient(135deg, #D9B38C 0%, #F8C7CC 100%); color: white;">
+              <th style="padding: 1rem; text-align: left;">Factor</th>
+              <th style="padding: 1rem; text-align: center;">Dharamshala</th>
+              <th style="padding: 1rem; text-align: center;">Shimla</th>
+              <th style="padding: 1rem; text-align: center;">Manali</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr style="background: #f9f9f9;">
+              <td style="padding: 1rem; font-weight: 600;">Airport Access</td>
+              <td style="padding: 1rem; text-align: center;">✅ 10 km</td>
+              <td style="padding: 1rem; text-align: center;">❌ 50+ km</td>
+              <td style="padding: 1rem; text-align: center;">❌ 50+ km</td>
+            </tr>
+            <tr>
+              <td style="padding: 1rem; font-weight: 600;">5-Star Properties</td>
+              <td style="padding: 1rem; text-align: center;">✅ 5+</td>
+              <td style="padding: 1rem; text-align: center;">⚠️ 2-3</td>
+              <td style="padding: 1rem; text-align: center;">✅ 4</td>
+            </tr>
+            <tr style="background: #f9f9f9;">
+              <td style="padding: 1rem; font-weight: 600;">Mountain Views</td>
+              <td style="padding: 1rem; text-align: center;">🏔️ Dhauladhar</td>
+              <td style="padding: 1rem; text-align: center;">⛰️ Distant</td>
+              <td style="padding: 1rem; text-align: center;">🏔️ Excellent</td>
+            </tr>
+            <tr>
+              <td style="padding: 1rem; font-weight: 600;">Weather Stability</td>
+              <td style="padding: 1rem; text-align: center;">✅ Excellent</td>
+              <td style="padding: 1rem; text-align: center;">✅ Good</td>
+              <td style="padding: 1rem; text-align: center;">⚠️ Variable</td>
+            </tr>
+            <tr style="background: #f9f9f9;">
+              <td style="padding: 1rem; font-weight: 600;">Cost Efficiency</td>
+              <td style="padding: 1rem; text-align: center;">💰💰</td>
+              <td style="padding: 1rem; text-align: center;">💰💰💰</td>
+              <td style="padding: 1rem; text-align: center;">💰💰💰</td>
+            </tr>
+            <tr>
+              <td style="padding: 1rem; font-weight: 600;">Accessibility</td>
+              <td style="padding: 1rem; text-align: center;">⭐⭐⭐⭐⭐</td>
+              <td style="padding: 1rem; text-align: center;">⭐⭐⭐⭐</td>
+              <td style="padding: 1rem; text-align: center;">⭐⭐⭐</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <h2 style="color: #D9B38C;">🎯 Why Pretty Planet Is Dharamshala's #1 Event & Wedding Planner</h2>
+
+        <p>Our 10+ years of exclusive focus on Dharamshala events and weddings gives us unmatched expertise:</p>
+
+        <ul class="custom-list">
+          <li>🏆 <strong>150+ Successful Events:</strong> Weddings, corporate offsites, celebrations</li>
+          <li>🤝 <strong>Venue Partnerships:</strong> Priority access and best rates at all properties</li>
+          <li>🎨 <strong>Award-Winning Décor:</strong> Instagram-worthy setups that guests remember</li>
+          <li>📸 <strong>Perfect Execution:</strong> Every event runs on time, every detail perfect</li>
+          <li>💬 <strong>Local Language:</strong> We speak Hindi, English, Punjabi, and Himachali</li>
+          <li>🚨 <strong>Emergency Backup:</strong> Always prepared with Plan B for mountain weather</li>
+        </ul>
+
+        <div class="cta-section bg-gradient-to-r from-rose-500 via-pink-500 to-amber-400 rounded-2xl p-10 my-10 text-center text-white shadow-2xl">
+          <h3 class="text-3xl font-playfair font-bold mb-6">🎉 Ready to Experience Dharamshala's Magic?</h3>
+          <p class="text-xl mb-8 font-montserrat">Let's create your unforgettable celebration in Himachal's most beautiful destination</p>
+          <div class="flex flex-col sm:flex-row gap-6 justify-center">
+            <a href="/#contact" class="inline-block bg-white text-rose-600 font-bold px-10 py-4 rounded-full hover:shadow-2xl transform hover:scale-105 transition-all font-montserrat text-lg" onclick="event.preventDefault(); window.location.href='/'; setTimeout(() => document.getElementById('contact')?.scrollIntoView({behavior: 'smooth'}), 100);">
+              📞 Schedule Site Visit & Consultation
+            </a>
+          </div>
+        </div>
+
+        <p class="mt-8 text-center text-2xl font-playfair italic" style="color: #D9B38C;">"Dharamshala - Where every celebration becomes a mountain memory."</p>
+
+        <p class="mt-6 text-gray-600 italic font-montserrat">Explore our complete <a href="/events-weddings" class="text-rose-600 hover:text-rose-700 font-semibold">wedding and event services</a> or <a href="/#contact" class="text-rose-600 hover:text-rose-700 font-semibold" onclick="event.preventDefault(); window.location.href='/'; setTimeout(() => document.getElementById('contact')?.scrollIntoView({behavior: 'smooth'}), 100);">contact our Dharamshala experts</a> today.</p>
+      </div>
+    `,
+    tags: ["Dharamshala Events", "Top Event Planner Dharamshala", "Himachal Wedding Destination", "Dharamshala vs Manali", "Corporate Events Dharamshala", "Destination Wedding 2026"]
   }
 ];
 
