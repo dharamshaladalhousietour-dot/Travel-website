@@ -210,7 +210,7 @@ const Hero = () => {
         <div className="bg-white/95 backdrop-blur-lg rounded-2xl p-4 sm:p-6 shadow-2xl max-w-5xl mx-4 sm:mx-auto">
           {showThankYou && (
             <div className="mb-6 p-4 bg-green-100 border border-green-400 text-green-700 rounded-lg text-center">
-              <p className="font-semibold">Thank you for your enquiry! Our team will get back to you within 1 hour.</p>
+              <p className="font-semibold text-lg">Thank you! Your travel enquiry has been received. Our team will get back to you within 1 hour.</p>
             </div>
           )}
           
