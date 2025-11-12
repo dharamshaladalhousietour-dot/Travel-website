@@ -101,7 +101,7 @@ const Hero = () => {
             className="absolute inset-0 w-full h-full object-cover"
           >
             <source 
-              src="https://customer-assets.emergentagent.com/job_755c6f10-3caa-480e-a9ee-33d257ddbaaf/artifacts/t2akrta4_WhatsApp%20Video%202025-11-12%20at%2016.26.10_894aedb9.mp4" 
+              src="/hero-video.mp4" 
               type="video/mp4" 
             />
             Your browser does not support the video tag.
