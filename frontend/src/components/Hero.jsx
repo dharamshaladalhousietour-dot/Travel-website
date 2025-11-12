@@ -102,15 +102,27 @@ const Hero = () => {
       {/* Video Background */}
       <div className="absolute inset-0 z-0">
         <div className="relative h-full w-full">
+          {/* Fallback Background Image */}
+          <div 
+            className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+            style={{
+              backgroundImage: 'url(https://images.unsplash.com/photo-1648034902541-b239c599114e)',
+              zIndex: 0
+            }}
+          />
+          
           {/* Video Element */}
           <video 
+            ref={videoRef}
             autoPlay 
             loop 
             muted 
             playsInline
             preload="auto"
             className="absolute inset-0 w-full h-full object-cover"
-            style={{ backgroundColor: '#1a1a1a' }}
+            style={{ zIndex: 1 }}
+            onError={(e) => console.log('Video loading error:', e)}
+            onLoadedData={() => console.log('Video loaded successfully')}
           >
             <source 
               src="/hero-video.mp4" 
