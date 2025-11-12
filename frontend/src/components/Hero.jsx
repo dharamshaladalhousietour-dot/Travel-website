@@ -125,7 +125,7 @@ const Hero = () => {
             onLoadedData={() => console.log('Video loaded successfully')}
           >
             <source 
-              src="/hero-video.mp4" 
+              src="/assets/hero-video.mp4" 
               type="video/mp4" 
             />
             Your browser does not support the video tag.
