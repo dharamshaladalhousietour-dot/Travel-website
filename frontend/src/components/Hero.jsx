@@ -115,7 +115,7 @@ const Hero = () => {
       </div>
 
       {/* Content */}
-      <div className="relative z-10 max-w-7xl mx-auto px-4 py-20 text-center">
+      <div className="relative z-20 max-w-7xl mx-auto px-4 py-20 text-center">
         <div className="mb-12">
           <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-bold text-white mb-6 leading-tight font-playfair text-center">
             <span className="inline-block transform hover:scale-105 transition-transform duration-300">Create</span>
