@@ -89,22 +89,26 @@ const Hero = () => {
 
   return (
     <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      {/* Background Images */}
+      {/* Video Background */}
       <div className="absolute inset-0 z-0">
         <div className="relative h-full w-full">
-          {/* Primary background image - Himachal Pradesh Mountains */}
-          <div 
-            className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-            style={{
-              backgroundImage: 'url(https://images.unsplash.com/photo-1648034902541-b239c599114e)'
-            }}
-          />
+          {/* Video Element */}
+          <video 
+            autoPlay 
+            loop 
+            muted 
+            playsInline
+            className="absolute inset-0 w-full h-full object-cover"
+          >
+            <source 
+              src="https://customer-assets.emergentagent.com/job_755c6f10-3caa-480e-a9ee-33d257ddbaaf/artifacts/t2akrta4_WhatsApp%20Video%202025-11-12%20at%2016.26.10_894aedb9.mp4" 
+              type="video/mp4" 
+            />
+            Your browser does not support the video tag.
+          </video>
           
-          {/* Overlay gradient */}
-          <div className="absolute inset-0 bg-gradient-to-r from-blue-900/70 via-blue-800/50 to-transparent"></div>
-          
-          {/* Secondary overlay for text readability */}
-          <div className="absolute inset-0 bg-black/20"></div>
+          {/* Dark Overlay for text readability */}
+          <div className="absolute inset-0 bg-black/50"></div>
         </div>
       </div>
 
