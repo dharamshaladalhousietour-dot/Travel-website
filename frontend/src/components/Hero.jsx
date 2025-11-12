@@ -393,6 +393,11 @@ const Hero = () => {
               </Button>
             </div>
           </form>
+          
+          {/* Response Time Note */}
+          <p className="text-center text-sm italic text-gray-600 mt-3">
+            Our team will get back to you within 1 hour of your enquiry.
+          </p>
         </div>
       </div>
     </section>
