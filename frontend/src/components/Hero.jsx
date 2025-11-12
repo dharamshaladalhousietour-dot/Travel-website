@@ -98,7 +98,9 @@ const Hero = () => {
             loop 
             muted 
             playsInline
+            preload="auto"
             className="absolute inset-0 w-full h-full object-cover"
+            style={{ backgroundColor: '#1a1a1a' }}
           >
             <source 
               src="/hero-video.mp4" 
@@ -108,7 +110,7 @@ const Hero = () => {
           </video>
           
           {/* Dark Overlay for text readability */}
-          <div className="absolute inset-0 bg-black/50"></div>
+          <div className="absolute inset-0 bg-black/50 z-10"></div>
         </div>
       </div>
 
