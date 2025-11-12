@@ -12,11 +12,8 @@ const Hero = () => {
     endDate: '',
     adults: '',
     kids: '',
-    days: '',
-    budget: '',
-    name: '',
-    email: '',
-    phone: ''
+    phone: '',
+    message: ''
   });
 
   const [showThankYou, setShowThankYou] = useState(false);
@@ -27,20 +24,14 @@ const Hero = () => {
     
     try {
       // Create formatted message for WhatsApp and email
-      const formattedMessage = `📩 New Travel Enquiry Received
-👤 Name: ${enquiryData.name || 'Not provided'}
-📧 Email: ${enquiryData.email || 'Not provided'}
-📱 Phone: ${enquiryData.phone || 'Not provided'}
+      const formattedMessage = `📩 New Travel Enquiry from Pretty Planet Website
 
 📍 Destination: ${enquiryData.destination}
-📅 Dates: ${enquiryData.startDate} – ${enquiryData.endDate}
-👨‍👩‍👧 Pax: ${enquiryData.adults} Adults${enquiryData.kids && enquiryData.kids !== '0' ? `, ${enquiryData.kids}` : ''}
-💰 Budget: ${enquiryData.budget || 'Not specified'}
-🕒 Duration: ${enquiryData.days}
+📅 Travel Dates: ${enquiryData.startDate} to ${enquiryData.endDate}
+👥 No. of Pax: ${enquiryData.adults} Adults${enquiryData.kids && enquiryData.kids !== '0' ? `, ${enquiryData.kids} Kids` : ''}
+📱 Contact Number: ${enquiryData.phone}
+💬 Message: ${enquiryData.message || 'No additional message'}`;
 
-💬 Message: Homepage enquiry form submission`;
-
-      // Submit to backend API
       const backendUrl = process.env.REACT_APP_BACKEND_URL || '';
       
       const response = await fetch(`${backendUrl}/api/enquiry`, {
@@ -53,13 +44,13 @@ const Hero = () => {
           start_date: enquiryData.startDate,
           end_date: enquiryData.endDate,
           adults: enquiryData.adults,
-          kids: enquiryData.kids,
-          days: enquiryData.days,
-          name: enquiryData.name || 'Homepage Visitor',
-          email: enquiryData.email || 'homepage@enquiry.com',
-          phone: enquiryData.phone || 'Not provided',
-          budget: enquiryData.budget || 'Not specified',
-          message: 'Homepage enquiry form submission',
+          kids: enquiryData.kids || '0',
+          days: 'To be calculated',
+          name: 'Homepage Visitor',
+          email: 'info@prettyplanettravels.com',
+          phone: enquiryData.phone,
+          budget: 'To be discussed',
+          message: enquiryData.message || 'Homepage travel enquiry',
           formatted_message: formattedMessage
         })
       });
@@ -69,9 +60,7 @@ const Hero = () => {
         
         // Send WhatsApp message
         const whatsappMessage = encodeURIComponent(formattedMessage);
-        const whatsappUrl = `https://wa.me/918679333355?text=${whatsappMessage}`;
-        
-        // Open WhatsApp in new tab
+        const whatsappUrl = `https://wa.me/918679333354?text=${whatsappMessage}`;
         window.open(whatsappUrl, '_blank');
         console.log('✅ WhatsApp message sent from homepage');
       } else {
@@ -80,24 +69,22 @@ const Hero = () => {
     } catch (error) {
       console.error('❌ Error submitting homepage enquiry:', error);
     }
-    
-    // Show thank you message
+
     setShowThankYou(true);
-    // Reset form
-    setEnquiryData({
-      destination: '',
-      startDate: '',
-      endDate: '',
-      adults: '',
-      kids: '',
-      days: '',
-      budget: '',
-      name: '',
-      email: '',
-      phone: ''
-    });
-    // Hide thank you message after 5 seconds
-    setTimeout(() => setShowThankYou(false), 5000);
+    
+    // Reset form and hide thank you message after 5 seconds
+    setTimeout(() => {
+      setShowThankYou(false);
+      setEnquiryData({
+        destination: '',
+        startDate: '',
+        endDate: '',
+        adults: '',
+        kids: '',
+        phone: '',
+        message: ''
+      });
+    }, 5000);
   };
 
   return (
