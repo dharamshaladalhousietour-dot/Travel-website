@@ -200,7 +200,7 @@ def test_cors_headers():
         response = requests.options(
             f"{API_BASE_URL}/enquiry",
             headers={
-                "Origin": "https://royal-travel-portal.preview.emergentagent.com",
+                "Origin": "https://hero-video-update.preview.emergentagent.com",
                 "Access-Control-Request-Method": "POST",
                 "Access-Control-Request-Headers": "Content-Type"
             },
