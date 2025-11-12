@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { Button } from './ui/button';
 import { Input } from './ui/input';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from './ui/select';
@@ -17,6 +17,16 @@ const Hero = () => {
   });
 
   const [showThankYou, setShowThankYou] = useState(false);
+  const videoRef = useRef(null);
+
+  useEffect(() => {
+    // Ensure video plays on mount
+    if (videoRef.current) {
+      videoRef.current.play().catch(err => {
+        console.log('Video autoplay prevented:', err);
+      });
+    }
+  }, []);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
