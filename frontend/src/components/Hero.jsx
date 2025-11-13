@@ -214,6 +214,14 @@ const Hero = () => {
               size="lg" 
               variant="outline" 
               className="w-full sm:w-auto border-2 border-white text-white hover:bg-white hover:text-blue-900 px-6 sm:px-8 py-4 text-base sm:text-lg font-semibold transition-all duration-300 backdrop-blur-sm"
+              onClick={() => {
+                if (window.fbq) {
+                  window.fbq('trackCustom', 'PlanTripClick', {
+                    button_name: 'Plan Your Trip',
+                    location: 'Hero Section'
+                  });
+                }
+              }}
             >
               Plan Your Trip
             </Button>
