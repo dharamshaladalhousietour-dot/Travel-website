@@ -140,16 +140,15 @@ const Hero = () => {
       <div className="relative z-20 max-w-7xl mx-auto px-4 py-20 text-center">
         <div className="mb-12">
           <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-bold text-white mb-6 leading-tight font-playfair text-center" style={{ textShadow: '0 4px 12px rgba(0, 0, 0, 0.8), 0 2px 6px rgba(0, 0, 0, 0.9)' }}>
-            <span className="inline-block transform hover:scale-105 transition-transform duration-300 bg-black/30 px-3 py-1 rounded-lg">Create</span>
+            <span className="inline-block transform hover:scale-105 transition-transform duration-300">Create</span>
             <br className="sm:hidden" />
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-400 via-yellow-300 to-orange-400 animate-pulse inline-block px-3 py-1" style={{ textShadow: '0 4px 12px rgba(0, 0, 0, 0.9), 0 2px 6px rgba(0, 0, 0, 1)' }}> Unforgettable </span>
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-400 via-yellow-300 to-orange-400 animate-pulse" style={{ textShadow: '0 4px 12px rgba(0, 0, 0, 0.9), 0 2px 6px rgba(0, 0, 0, 1)' }}> Unforgettable </span>
             <br className="sm:hidden" />
-            <span className="inline-block transform hover:scale-105 transition-transform duration-300 bg-black/30 px-3 py-1 rounded-lg">Moments</span>
+            <span className="inline-block transform hover:scale-105 transition-transform duration-300">Moments</span>
           </h1>
           <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-white mb-4 max-w-3xl mx-auto leading-relaxed text-center px-4" style={{ textShadow: '0 3px 8px rgba(0, 0, 0, 0.8), 0 1px 4px rgba(0, 0, 0, 0.9)' }}>
-            <span className="inline-block bg-black/30 px-2 py-1 rounded">From magical destinations to seamless corporate events and dream weddings,</span>
-            <br />
-            <span className="inline-block bg-black/30 px-2 py-1 rounded mt-1">we turn your vision into extraordinary experiences.</span>
+            From magical destinations to seamless corporate events and dream weddings, 
+            we turn your vision into extraordinary experiences.
           </p>
           
           {/* Premium Tagline with Badge Style */}
