@@ -68,6 +68,16 @@ const Hero = () => {
       if (response.ok) {
         console.log('✅ Homepage enquiry submitted to backend');
         
+        // Track form submission with Meta Pixel
+        if (window.fbq) {
+          window.fbq('track', 'Lead', {
+            content_name: 'Homepage Enquiry Form',
+            content_category: 'Travel Enquiry',
+            destination: enquiryData.destination,
+            adults: enquiryData.adults
+          });
+        }
+        
         // Send WhatsApp message
         const whatsappMessage = encodeURIComponent(formattedMessage);
         const whatsappUrl = `https://wa.me/918679333354?text=${whatsappMessage}`;
