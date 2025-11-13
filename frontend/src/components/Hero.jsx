@@ -249,6 +249,12 @@ const Hero = () => {
               size="lg" 
               className="w-full sm:w-auto bg-gradient-to-r from-rose-600 to-pink-600 hover:from-rose-700 hover:to-pink-700 text-white px-8 sm:px-10 py-5 text-base sm:text-lg font-bold transition-all duration-300 transform hover:scale-105 shadow-xl"
               onClick={() => {
+                if (window.fbq) {
+                  window.fbq('trackCustom', 'WhatsAppWeddingClick', {
+                    button_name: 'Plan My Dream Wedding Now',
+                    location: 'Hero Section'
+                  });
+                }
                 const message = "Hi! I want to plan my dream wedding with Pretty Planet.";
                 window.open(`https://wa.me/918679333354?text=${encodeURIComponent(message)}`, '_blank');
               }}
