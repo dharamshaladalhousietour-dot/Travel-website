@@ -198,6 +198,13 @@ const Hero = () => {
               packageName="General Travel Booking"
               onSuccess={(response) => {
                 console.log('✅ Homepage payment successful:', response);
+                if (window.fbq) {
+                  window.fbq('track', 'Purchase', {
+                    value: 50,
+                    currency: 'INR',
+                    content_name: 'Travel Booking Payment'
+                  });
+                }
               }}
               onError={(error) => {
                 console.error('❌ Homepage payment error:', error);
@@ -206,6 +213,14 @@ const Hero = () => {
               <Button 
                 size="lg" 
                 className="w-full sm:w-auto bg-gradient-to-r from-green-600 to-green-700 hover:from-green-700 hover:to-green-800 text-white px-6 sm:px-8 py-4 text-base sm:text-lg font-bold transition-all duration-300 transform hover:scale-105 shadow-xl animate-pulse"
+                onClick={() => {
+                  if (window.fbq) {
+                    window.fbq('trackCustom', 'PayNowClick', {
+                      button_name: 'Pay Now - Live Mode',
+                      location: 'Hero Section'
+                    });
+                  }
+                }}
               >
                 💳 Pay Now - Live Mode
               </Button>
