@@ -233,6 +233,12 @@ const Hero = () => {
               size="lg" 
               className="w-full sm:w-auto bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white px-8 sm:px-10 py-5 text-base sm:text-lg font-bold transition-all duration-300 transform hover:scale-105 shadow-xl"
               onClick={() => {
+                if (window.fbq) {
+                  window.fbq('trackCustom', 'WhatsAppTravelClick', {
+                    button_name: 'Get My Customized Travel Plan',
+                    location: 'Hero Section'
+                  });
+                }
                 const message = "Hi! I want to get my customized travel plan.";
                 window.open(`https://wa.me/918679333355?text=${encodeURIComponent(message)}`, '_blank');
               }}
