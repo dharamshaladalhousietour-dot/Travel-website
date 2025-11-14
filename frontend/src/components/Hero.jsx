@@ -72,7 +72,7 @@ const Hero = () => {
             content_name: 'Homepage Enquiry Form',
             content_category: 'Travel Enquiry',
             destination: enquiryData.destination,
-            adults: enquiryData.adults
+            pax: enquiryData.pax
           });
         }
         
