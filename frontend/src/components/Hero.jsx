@@ -9,9 +9,7 @@ const Hero = () => {
   const [enquiryData, setEnquiryData] = useState({
     destination: '',
     startDate: '',
-    endDate: '',
-    adults: '',
-    kids: '',
+    pax: '',
     phone: '',
     message: ''
   });
