@@ -35,8 +35,8 @@ const Hero = () => {
       const formattedMessage = `📩 New Travel Enquiry from Pretty Planet Website
 
 📍 Destination: ${enquiryData.destination}
-📅 Travel Dates: ${enquiryData.startDate} to ${enquiryData.endDate}
-👥 No. of Pax: ${enquiryData.adults} Adults${enquiryData.kids && enquiryData.kids !== '0' ? `, ${enquiryData.kids} Kids` : ''}
+📅 Start Date: ${enquiryData.startDate}
+👥 No. of Pax: ${enquiryData.pax}
 📱 Contact Number: ${enquiryData.phone}
 💬 Message: ${enquiryData.message || 'No additional message'}`;
 
@@ -50,9 +50,9 @@ const Hero = () => {
         body: JSON.stringify({
           destination: enquiryData.destination,
           start_date: enquiryData.startDate,
-          end_date: enquiryData.endDate,
-          adults: enquiryData.adults,
-          kids: enquiryData.kids || '0',
+          end_date: '',
+          adults: enquiryData.pax,
+          kids: '0',
           days: 'To be calculated',
           name: 'Homepage Visitor',
           email: 'info@prettyplanettravels.com',
