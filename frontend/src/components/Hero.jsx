@@ -96,9 +96,7 @@ const Hero = () => {
       setEnquiryData({
         destination: '',
         startDate: '',
-        endDate: '',
-        adults: '',
-        kids: '',
+        pax: '',
         phone: '',
         message: ''
       });
