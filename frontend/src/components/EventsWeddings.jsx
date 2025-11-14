@@ -1367,6 +1367,61 @@ Looking forward to creating unforgettable memories with Pretty Planet!`;
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               </div>
+
+              {/* Photo 6 */}
+              <div className="group relative overflow-hidden rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2">
+                <img 
+                  src="https://customer-assets.emergentagent.com/job_755c6f10-3caa-480e-a9ee-33d257ddbaaf/artifacts/053rts78_IMG_1418.jpeg"
+                  alt="Beautiful wedding decor and celebration moments in Dharamshala"
+                  className="w-full h-[350px] object-cover transition-transform duration-700 group-hover:scale-110"
+                  loading="lazy"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              </div>
+
+              {/* Photo 7 */}
+              <div className="group relative overflow-hidden rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2">
+                <img 
+                  src="https://customer-assets.emergentagent.com/job_755c6f10-3caa-480e-a9ee-33d257ddbaaf/artifacts/6l3m0rn8_PHOTO-2025-05-01-15-57-51.jpeg"
+                  alt="Stunning wedding photography by Pretty Planet Events in Himachal"
+                  className="w-full h-[350px] object-cover transition-transform duration-700 group-hover:scale-110"
+                  loading="lazy"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              </div>
+
+              {/* Photo 8 */}
+              <div className="group relative overflow-hidden rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2">
+                <img 
+                  src="https://customer-assets.emergentagent.com/job_755c6f10-3caa-480e-a9ee-33d257ddbaaf/artifacts/4qsd4l77_IMG_0991.jpeg"
+                  alt="Elegant wedding venue setup by top event planner in Dharamshala"
+                  className="w-full h-[350px] object-cover transition-transform duration-700 group-hover:scale-110"
+                  loading="lazy"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              </div>
+
+              {/* Photo 9 */}
+              <div className="group relative overflow-hidden rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2">
+                <img 
+                  src="https://customer-assets.emergentagent.com/job_755c6f10-3caa-480e-a9ee-33d257ddbaaf/artifacts/dla6gj4k_IMG_0996.jpeg"
+                  alt="Luxury wedding decor and ambiance by Pretty Planet in Himachal Pradesh"
+                  className="w-full h-[350px] object-cover transition-transform duration-700 group-hover:scale-110"
+                  loading="lazy"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              </div>
+
+              {/* Photo 10 */}
+              <div className="group relative overflow-hidden rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2">
+                <img 
+                  src="https://customer-assets.emergentagent.com/job_755c6f10-3caa-480e-a9ee-33d257ddbaaf/artifacts/n7knzkn5_IMG_0959.jpeg"
+                  alt="Wedding celebration and special moments captured by Pretty Planet Events"
+                  className="w-full h-[350px] object-cover transition-transform duration-700 group-hover:scale-110"
+                  loading="lazy"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              </div>
             </div>
           </div>
         </section>
