@@ -388,6 +388,22 @@ const WeddingProposalViewer = ({ isOpen, onClose }) => {
               </p>
             </div>
 
+            {/* Second Package Pricing */}
+            <div className="text-center mb-10">
+              <div className="inline-block px-12 py-6 rounded-2xl shadow-xl mb-4" 
+                style={{ background: 'linear-gradient(135deg, #F8C7CC 0%, #D9B38C 100%)' }}>
+                <p className="text-lg text-white mb-2">Wedding Planning & Management Package</p>
+                <p className="text-5xl font-playfair font-bold text-white">₹3,50,000 - ₹4,00,000</p>
+                <p className="text-white mt-2">+ GST</p>
+              </div>
+              <p className="text-gray-600 max-w-2xl mx-auto">
+                Flat fee for up to 200-250 guests and 2 days of wedding celebrations
+              </p>
+              <p className="text-gray-600 max-w-2xl mx-auto mt-2 text-sm italic">
+                Additional day cost: ₹50,000 per day
+              </p>
+            </div>
+
             {/* Optional Add-on */}
             <div className="bg-amber-50 rounded-xl p-6 mb-10 border-2 border-amber-200">
               <h3 className="text-xl font-playfair font-semibold mb-3" style={{ color: '#D9B38C' }}>
