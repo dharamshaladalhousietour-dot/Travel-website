@@ -278,132 +278,80 @@ const Hero = () => {
         </div>
 
         {/* Enquiry Form */}
-        <div className="bg-white/75 backdrop-blur-md rounded-2xl p-4 sm:p-6 shadow-2xl max-w-5xl mx-4 sm:mx-auto">
+        <div className="bg-white/75 backdrop-blur-md rounded-2xl p-3 sm:p-4 shadow-2xl max-w-4xl mx-4 sm:mx-auto">
           {showThankYou && (
-            <div className="mb-6 p-4 bg-green-100 border border-green-400 text-green-700 rounded-lg text-center">
-              <p className="font-semibold text-lg">Thank you! Your travel enquiry has been received. Our team will get back to you within 1 hour.</p>
+            <div className="mb-3 p-3 bg-green-100 border border-green-400 text-green-700 rounded-lg text-center">
+              <p className="font-semibold text-base">Thank you! Your travel enquiry has been received. Our team will get back to you within 1 hour.</p>
             </div>
           )}
           
           <form onSubmit={handleSubmit}>
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 items-end">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 items-end">
               {/* Destination */}
-              <div className="space-y-2">
-                <label className="text-sm font-medium text-gray-700 flex items-center gap-1">
-                  <MapPin className="h-4 w-4" />
+              <div className="space-y-1">
+                <label className="text-xs font-medium text-gray-700 flex items-center gap-1">
+                  <MapPin className="h-3 w-3" />
                   Destination
                 </label>
                 <Select 
                   value={enquiryData.destination}
                   onValueChange={(value) => setEnquiryData({...enquiryData, destination: value})}
                 >
-                  <SelectTrigger className="h-12">
+                  <SelectTrigger className="h-9">
                     <SelectValue placeholder="Select Destination" />
                   </SelectTrigger>
                   <SelectContent>
-                    <SelectItem value="shimla">Shimla, Himachal Pradesh</SelectItem>
-                    <SelectItem value="kashmir">Kashmir Valley</SelectItem>
-                    <SelectItem value="manali">Manali, Himachal Pradesh</SelectItem>
-                    <SelectItem value="dharamshala">Dharamshala, Himachal Pradesh</SelectItem>
-                    <SelectItem value="srinagar">Srinagar, Kashmir</SelectItem>
+                    <SelectItem value="shimla">Shimla</SelectItem>
+                    <SelectItem value="kashmir">Kashmir</SelectItem>
+                    <SelectItem value="manali">Manali</SelectItem>
+                    <SelectItem value="dharamshala">Dharamshala</SelectItem>
+                    <SelectItem value="srinagar">Srinagar</SelectItem>
                     <SelectItem value="leh-ladakh">Leh Ladakh</SelectItem>
                     <SelectItem value="goa">Goa</SelectItem>
                     <SelectItem value="kerala">Kerala</SelectItem>
                     <SelectItem value="rajasthan">Rajasthan</SelectItem>
-                    <SelectItem value="other">Other (Specify in message)</SelectItem>
+                    <SelectItem value="other">Other</SelectItem>
                   </SelectContent>
                 </Select>
               </div>
 
               {/* Start Date */}
-              <div className="space-y-2">
-                <label className="text-sm font-medium text-gray-700 flex items-center gap-1">
-                  <Calendar className="h-4 w-4" />
+              <div className="space-y-1">
+                <label className="text-xs font-medium text-gray-700 flex items-center gap-1">
+                  <Calendar className="h-3 w-3" />
                   Start Date
                 </label>
                 <Input 
                   type="date" 
-                  className="h-12"
+                  className="h-9"
                   value={enquiryData.startDate}
                   onChange={(e) => setEnquiryData({...enquiryData, startDate: e.target.value})}
                 />
               </div>
 
-              {/* End Date */}
-              <div className="space-y-2">
-                <label className="text-sm font-medium text-gray-700 flex items-center gap-1">
-                  <Calendar className="h-4 w-4" />
-                  End Date
+              {/* No. of Pax */}
+              <div className="space-y-1">
+                <label className="text-xs font-medium text-gray-700 flex items-center gap-1">
+                  <Users className="h-3 w-3" />
+                  No. of Pax
                 </label>
                 <Input 
-                  type="date" 
-                  className="h-12"
-                  value={enquiryData.endDate}
-                  onChange={(e) => setEnquiryData({...enquiryData, endDate: e.target.value})}
+                  type="text" 
+                  className="h-9"
+                  placeholder="e.g. 2 Adults, 1 Kid"
+                  value={enquiryData.pax}
+                  onChange={(e) => setEnquiryData({...enquiryData, pax: e.target.value})}
                 />
               </div>
 
-              {/* Adults (Pax) */}
-              <div className="space-y-2">
-                <label className="text-sm font-medium text-gray-700 flex items-center gap-1">
-                  <Users className="h-4 w-4" />
-                  Adults (Pax)
-                </label>
-                <Select 
-                  value={enquiryData.adults}
-                  onValueChange={(value) => setEnquiryData({...enquiryData, adults: value})}
-                >
-                  <SelectTrigger className="h-12">
-                    <SelectValue placeholder="Adults" />
-                  </SelectTrigger>
-                  <SelectContent>
-                    <SelectItem value="1">1 Adult</SelectItem>
-                    <SelectItem value="2">2 Adults</SelectItem>
-                    <SelectItem value="3">3 Adults</SelectItem>
-                    <SelectItem value="4">4 Adults</SelectItem>
-                    <SelectItem value="5">5 Adults</SelectItem>
-                    <SelectItem value="6">6 Adults</SelectItem>
-                    <SelectItem value="7">7 Adults</SelectItem>
-                    <SelectItem value="8">8 Adults</SelectItem>
-                    <SelectItem value="9">9 Adults</SelectItem>
-                    <SelectItem value="10+">10+ Adults</SelectItem>
-                  </SelectContent>
-                </Select>
-              </div>
-
-              {/* Kids (with age) */}
-              <div className="space-y-2">
-                <label className="text-sm font-medium text-gray-700 flex items-center gap-1">
-                  <Users className="h-4 w-4" />
-                  Kids (with age)
-                </label>
-                <Select 
-                  value={enquiryData.kids}
-                  onValueChange={(value) => setEnquiryData({...enquiryData, kids: value})}
-                >
-                  <SelectTrigger className="h-12">
-                    <SelectValue placeholder="Kids" />
-                  </SelectTrigger>
-                  <SelectContent>
-                    <SelectItem value="0">No Kids</SelectItem>
-                    <SelectItem value="1 (2-5 years)">1 Kid (2-5 years)</SelectItem>
-                    <SelectItem value="1 (6-12 years)">1 Kid (6-12 years)</SelectItem>
-                    <SelectItem value="2 (2-5 years)">2 Kids (2-5 years)</SelectItem>
-                    <SelectItem value="2 (6-12 years)">2 Kids (6-12 years)</SelectItem>
-                    <SelectItem value="2 (mixed ages)">2 Kids (mixed ages)</SelectItem>
-                    <SelectItem value="3+ kids">3+ Kids</SelectItem>
-                  </SelectContent>
-                </Select>
-              </div>
-
               {/* Phone */}
-              <div className="space-y-2">
-                <label className="text-sm font-medium text-gray-700 flex items-center gap-1">
+              <div className="space-y-1">
+                <label className="text-xs font-medium text-gray-700 flex items-center gap-1">
                   📱 Phone
                 </label>
                 <Input 
                   type="tel" 
-                  className="h-12"
+                  className="h-9"
                   placeholder="+91 9999999999"
                   value={enquiryData.phone}
                   onChange={(e) => setEnquiryData({...enquiryData, phone: e.target.value})}
