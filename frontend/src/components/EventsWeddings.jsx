@@ -1297,6 +1297,80 @@ Looking forward to creating unforgettable memories with Pretty Planet!`;
           </div>
         </section>
 
+        {/* Our Wedding Decor & Moments Gallery Section */}
+        <section className="py-20 px-4 bg-gradient-to-b from-white via-rose-50/30 to-white">
+          <div className="max-w-7xl mx-auto">
+            {/* Section Title */}
+            <div className="text-center mb-16">
+              <h2 className="text-5xl md:text-6xl font-playfair font-bold mb-3" style={{ color: '#CBA135' }}>
+                Our Wedding Decor & Moments
+              </h2>
+              <p className="text-xl md:text-2xl font-montserrat font-light italic mb-8" style={{ color: '#E7C5A0' }}>
+                Captured Memories from Our Beautiful Celebrations
+              </p>
+              <div className="w-32 h-1 mx-auto" style={{ background: 'linear-gradient(90deg, #CBA135 0%, #E7C5A0 100%)' }}></div>
+            </div>
+
+            {/* Photo Grid */}
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+              {/* Photo 1 */}
+              <div className="group relative overflow-hidden rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2">
+                <img 
+                  src="https://customer-assets.emergentagent.com/job_755c6f10-3caa-480e-a9ee-33d257ddbaaf/artifacts/s7761bes_IMG_1387.png"
+                  alt="Beautiful wedding decor by Pretty Planet Travels & Events in Dharamshala"
+                  className="w-full h-[350px] object-cover transition-transform duration-700 group-hover:scale-110"
+                  loading="lazy"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              </div>
+
+              {/* Photo 2 */}
+              <div className="group relative overflow-hidden rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2">
+                <img 
+                  src="https://customer-assets.emergentagent.com/job_755c6f10-3caa-480e-a9ee-33d257ddbaaf/artifacts/qcjnp0iy_PHOTO-2025-05-01-15-22-29.jpeg"
+                  alt="Elegant wedding setup by top event planner in Himachal Pradesh"
+                  className="w-full h-[350px] object-cover transition-transform duration-700 group-hover:scale-110"
+                  loading="lazy"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              </div>
+
+              {/* Photo 3 */}
+              <div className="group relative overflow-hidden rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2">
+                <img 
+                  src="https://customer-assets.emergentagent.com/job_755c6f10-3caa-480e-a9ee-33d257ddbaaf/artifacts/bcfr7n7r_IMG_8205.jpeg"
+                  alt="Stunning wedding moments captured at Dharamshala destination wedding"
+                  className="w-full h-[350px] object-cover transition-transform duration-700 group-hover:scale-110"
+                  loading="lazy"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              </div>
+
+              {/* Photo 4 */}
+              <div className="group relative overflow-hidden rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2">
+                <img 
+                  src="https://customer-assets.emergentagent.com/job_755c6f10-3caa-480e-a9ee-33d257ddbaaf/artifacts/w0rgcsrx_0F4A7193.jpeg"
+                  alt="Luxury wedding decor and setup by Pretty Planet in Himachal"
+                  className="w-full h-[350px] object-cover transition-transform duration-700 group-hover:scale-110"
+                  loading="lazy"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              </div>
+
+              {/* Photo 5 */}
+              <div className="group relative overflow-hidden rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2">
+                <img 
+                  src="https://customer-assets.emergentagent.com/job_755c6f10-3caa-480e-a9ee-33d257ddbaaf/artifacts/3ns3l5v1_1732257183187.655.jpeg"
+                  alt="Wedding celebration moments by best wedding planner in Dharamshala"
+                  className="w-full h-[350px] object-cover transition-transform duration-700 group-hover:scale-110"
+                  loading="lazy"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* Floating WhatsApp & Call Buttons - Event Expert Only */}
         <div className="fixed bottom-24 right-6 z-50 flex flex-col gap-4 animate-bounce-slow">
           {/* Call Button - Event Expert */}
