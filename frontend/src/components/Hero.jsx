@@ -360,33 +360,33 @@ const Hero = () => {
             </div>
             
             {/* Message - Full Width */}
-            <div className="mt-4 space-y-2">
-              <label className="text-sm font-medium text-gray-700 flex items-center gap-1">
+            <div className="mt-2 space-y-1">
+              <label className="text-xs font-medium text-gray-700 flex items-center gap-1">
                 💬 Message (Optional)
               </label>
               <Input 
                 type="text" 
-                className="h-12"
-                placeholder="Any specific requirements or questions..."
+                className="h-9"
+                placeholder="Any specific requirements..."
                 value={enquiryData.message}
                 onChange={(e) => setEnquiryData({...enquiryData, message: e.target.value})}
               />
             </div>
             
             {/* Submit Button */}
-            <div className="mt-6 text-center">
+            <div className="mt-3 text-center">
               <Button 
                 type="submit"
-                size="lg" 
-                className="w-full md:w-auto bg-gradient-to-r from-blue-900 to-blue-800 hover:from-blue-800 hover:to-blue-700 text-white px-12 py-4 text-lg font-semibold transition-all duration-300 transform hover:scale-105 shadow-xl"
+                size="sm" 
+                className="w-full md:w-auto bg-gradient-to-r from-blue-900 to-blue-800 hover:from-blue-800 hover:to-blue-700 text-white px-8 py-2 text-sm font-semibold transition-all duration-300 transform hover:scale-105 shadow-xl"
               >
-                📨 Send Booking Enquiry
+                📨 Send Enquiry
               </Button>
             </div>
           </form>
           
           {/* Response Time Note */}
-          <p className="text-center text-sm italic text-gray-600 mt-3">
+          <p className="text-center text-xs italic text-gray-600 mt-2">
             Our team will get back to you within 1 hour of your enquiry.
           </p>
         </div>
