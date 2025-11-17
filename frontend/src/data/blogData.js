@@ -590,6 +590,7 @@ export const blogPosts = [
     date: "November 11, 2025",
     readTime: "12 min read",
     category: "Destination Weddings",
+    featuredImage: "https://customer-assets.emergentagent.com/job_755c6f10-3caa-480e-a9ee-33d257ddbaaf/artifacts/6l3m0rn8_PHOTO-2025-05-01-15-57-51.jpeg",
     image: "https://customer-assets.emergentagent.com/job_755c6f10-3caa-480e-a9ee-33d257ddbaaf/artifacts/6l3m0rn8_PHOTO-2025-05-01-15-57-51.jpeg",
     excerpt: "Discover why Dharamshala has become Himachal Pradesh's #1 choice for luxury weddings and events in 2026. Explore what makes this mountain paradise unbeatable.",
     metaDescription: "Why Dharamshala is the top wedding and event destination in Himachal Pradesh for 2026. Expert insights from Pretty Planet Travels - Best event planner in Dharamshala.",
