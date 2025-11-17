@@ -224,7 +224,7 @@ export const blogPosts = [
     date: "November 8, 2025",
     readTime: "12 min read",
     category: "Venue Guide",
-    featuredImage: "/assets/portfolio1.jpg",
+    featuredImage: "https://customer-assets.emergentagent.com/job_755c6f10-3caa-480e-a9ee-33d257ddbaaf/artifacts/3ns3l5v1_1732257183187.655.jpeg",
     excerpt: "Nestled in the lap of the Dhauladhar ranges, Dharamshala has emerged as Himachal Pradesh's crown jewel for luxury weddings in 2026. Discover why this serene mountain town tops our list of the 10 best wedding destinations.",
     content: `
       <div class="blog-content">
