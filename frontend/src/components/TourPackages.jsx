@@ -1233,8 +1233,8 @@ const TourPackages = () => {
           ))}
         </div>
 
-        {/* Himachal Tour Packages Section */}
-        <div className="mt-24 mb-16">
+        {/* Himachal Tour Packages Section - Card Style */}
+        <div className="mt-24 mb-16 bg-gradient-to-b from-blue-50 to-white py-16">
           <div className="text-center mb-12">
             <h2 className="text-4xl md:text-5xl font-bold text-blue-900 mb-4">
               Himachal Tour Packages – Pretty Planet Travels
@@ -1242,7 +1242,7 @@ const TourPackages = () => {
             <div className="w-32 h-1 bg-gradient-to-r from-blue-600 to-amber-500 mx-auto"></div>
           </div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 px-4 md:px-0">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 px-4 md:px-8 max-w-7xl mx-auto">
             {/* Package 1 */}
             <div className="bg-white rounded-2xl shadow-xl p-6 hover:shadow-2xl transition-all duration-300 border-2 border-blue-100">
               <h3 className="text-2xl font-bold text-blue-900 mb-3">
