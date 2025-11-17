@@ -395,7 +395,7 @@ export const blogPosts = [
     date: "November 10, 2025",
     readTime: "10 min read",
     category: "Wedding Decor",
-    image: "https://images.pexels.com/photos/1444442/pexels-photo-1444442.jpeg?auto=compress&cs=tinysrgb&w=1200",
+    image: "https://customer-assets.emergentagent.com/job_755c6f10-3caa-480e-a9ee-33d257ddbaaf/artifacts/s7761bes_IMG_1387.png",
     excerpt: "Discover the most stunning luxury wedding decor themes perfect for Dharamshala celebrations. From mountain chic to traditional Himachali elegance - explore 2026's top trends.",
     metaDescription: "Explore luxury wedding decor themes for Dharamshala by Pretty Planet - Best wedding decorator in Himachal. Mountain elegance, traditional themes, and modern luxury designs for 2026.",
     content: `
