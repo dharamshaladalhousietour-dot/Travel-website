@@ -117,24 +117,23 @@ const Hero = () => {
             }}
           />
           
-          {/* Video Element */}
+          {/* Video Element - Optimized for Performance */}
           <video 
             ref={videoRef}
             autoPlay 
             loop 
             muted 
             playsInline
-            preload="auto"
+            preload="metadata"
             className="absolute inset-0 w-full h-full object-cover"
             style={{ zIndex: 1 }}
-            onError={(e) => console.log('Video loading error:', e)}
-            onLoadedData={() => console.log('Video loaded successfully')}
+            loading="lazy"
+            poster={null}
           >
             <source 
               src="/assets/hero-video.mp4" 
               type="video/mp4" 
             />
-            Your browser does not support the video tag.
           </video>
           
           {/* Ivory Overlay for text readability */}
