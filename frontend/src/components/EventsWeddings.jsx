@@ -1221,11 +1221,12 @@ Looking forward to creating unforgettable memories with Pretty Planet!`;
                           <SelectValue placeholder="Select budget range" />
                         </SelectTrigger>
                         <SelectContent>
-                          <SelectItem value="₹3-5 Lakhs">₹3-5 Lakhs</SelectItem>
-                          <SelectItem value="₹5-8 Lakhs">₹5-8 Lakhs</SelectItem>
-                          <SelectItem value="₹8-12 Lakhs">₹8-12 Lakhs</SelectItem>
-                          <SelectItem value="₹12-20 Lakhs">₹12-20 Lakhs</SelectItem>
-                          <SelectItem value="₹20+ Lakhs">₹20+ Lakhs</SelectItem>
+                          <SelectItem value="₹10–20 Lakhs">₹10–20 Lakhs</SelectItem>
+                          <SelectItem value="₹20–35 Lakhs">₹20–35 Lakhs</SelectItem>
+                          <SelectItem value="₹35–50 Lakhs">₹35–50 Lakhs</SelectItem>
+                          <SelectItem value="₹50 Lakhs – 1 Crore">₹50 Lakhs – 1 Crore</SelectItem>
+                          <SelectItem value="₹1 Crore – 2 Crores">₹1 Crore – 2 Crores</SelectItem>
+                          <SelectItem value="₹2 Crores+">₹2 Crores+</SelectItem>
                         </SelectContent>
                       </Select>
                     </div>
