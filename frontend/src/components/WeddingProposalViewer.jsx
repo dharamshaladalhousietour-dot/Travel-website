@@ -404,6 +404,29 @@ const WeddingProposalViewer = ({ isOpen, onClose }) => {
               </p>
             </div>
 
+            {/* Important Note - Meetings & Venue Visits */}
+            <div className="bg-gradient-to-r from-rose-50 to-amber-50 rounded-2xl p-8 mb-10 border-2 border-rose-200 shadow-lg max-w-4xl mx-auto">
+              <div className="flex items-start gap-3">
+                <span className="text-3xl">📌</span>
+                <div>
+                  <h3 className="text-xl font-playfair font-bold mb-3" style={{ color: '#C89B7B' }}>
+                    Important Note
+                  </h3>
+                  <div className="space-y-3 text-gray-700">
+                    <p className="leading-relaxed">
+                      As part of our paid <span className="font-semibold italic">Wedding Planning & Management Services</span>, our package includes <span className="font-semibold">up to three complimentary meetings or venue visits</span>.
+                    </p>
+                    <p className="leading-relaxed">
+                      If you require additional meetings beyond the included three, we are happy to arrange them.
+                    </p>
+                    <p className="leading-relaxed">
+                      Please note that <span className="font-semibold text-rose-700">each additional meeting/venue visit will be chargeable at ₹10,000/- per visit</span> as per our planning policy.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
             {/* Optional Add-on */}
             <div className="bg-amber-50 rounded-xl p-6 mb-10 border-2 border-amber-200">
               <h3 className="text-xl font-playfair font-semibold mb-3" style={{ color: '#D9B38C' }}>
