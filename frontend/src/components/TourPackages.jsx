@@ -1237,7 +1237,7 @@ const TourPackages = () => {
         <div className="mt-24 mb-16 bg-gradient-to-b from-blue-50 to-white py-16">
           <div className="text-center mb-12">
             <h2 className="text-4xl md:text-5xl font-bold text-blue-900 mb-4">
-              Himachal Tour Packages – Pretty Planet Travels
+              Top Selling Packages of Pretty Planet Travels
             </h2>
             <div className="w-32 h-1 bg-gradient-to-r from-blue-600 to-amber-500 mx-auto"></div>
           </div>
