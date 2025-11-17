@@ -1233,6 +1233,238 @@ const TourPackages = () => {
           ))}
         </div>
 
+        {/* Himachal Tour Packages Section */}
+        <div className="mt-24 mb-16">
+          <div className="text-center mb-12">
+            <h2 className="text-4xl md:text-5xl font-bold text-blue-900 mb-4">
+              Himachal Tour Packages – Pretty Planet Travels
+            </h2>
+            <div className="w-32 h-1 bg-gradient-to-r from-blue-600 to-amber-500 mx-auto"></div>
+          </div>
+
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 px-4 md:px-0">
+            {/* Package 1 */}
+            <div className="bg-white rounded-2xl shadow-xl p-6 hover:shadow-2xl transition-all duration-300 border-2 border-blue-100">
+              <h3 className="text-2xl font-bold text-blue-900 mb-3">
+                1. Himalayan Golden Circuit – Dharamshala • Dalhousie • Amritsar (7 Days)
+              </h3>
+              <p className="text-sm text-gray-600 mb-4 font-semibold">Ex Amritsar</p>
+              <div className="space-y-2 text-gray-700 mb-4">
+                <p><span className="font-semibold">Day 1</span> – Arrival Amritsar → Dharamshala</p>
+                <p><span className="font-semibold">Day 2</span> – Dharamshala Local: Dalai Lama Temple, Dal Lake, Naddi</p>
+                <p><span className="font-semibold">Day 3</span> – Mcleodganj & Bhagsunag</p>
+                <p><span className="font-semibold">Day 4</span> – Dharamshala → Dalhousie</p>
+                <p><span className="font-semibold">Day 5</span> – Khajjiar Day Trip</p>
+                <p><span className="font-semibold">Day 6</span> – Dalhousie → Amritsar: Golden Temple, Wagah Border</p>
+                <p><span className="font-semibold">Day 7</span> – Departure</p>
+              </div>
+              <p className="text-gray-700 mb-2"><span className="font-semibold">Hotels:</span> Sky Heaven / Alps Resort / Country Inn</p>
+              <p className="text-blue-900 font-bold text-lg mb-4">Price: Contact us</p>
+              <Button 
+                className="w-full bg-green-600 hover:bg-green-700 text-white"
+                onClick={() => window.open('https://wa.me/918679333354?text=Hi! I\'m interested in Himalayan Golden Circuit package', '_blank')}
+              >
+                💬 WhatsApp Enquiry
+              </Button>
+            </div>
+
+            {/* Package 2 */}
+            <div className="bg-white rounded-2xl shadow-xl p-6 hover:shadow-2xl transition-all duration-300 border-2 border-blue-100">
+              <h3 className="text-2xl font-bold text-blue-900 mb-3">
+                2. Mystic Hills Retreat – Dharamshala (4 Days)
+              </h3>
+              <div className="space-y-2 text-gray-700 mb-4">
+                <p><span className="font-semibold">Day 1</span> – Arrival → Naddi Sunset</p>
+                <p><span className="font-semibold">Day 2</span> – Dalai Lama Temple • Bhagsu Waterfall • Mcleodganj</p>
+                <p><span className="font-semibold">Day 3</span> – Dal Lake • St John's Church • Stadium</p>
+                <p><span className="font-semibold">Day 4</span> – Departure</p>
+              </div>
+              <p className="text-gray-700 mb-2"><span className="font-semibold">Hotels:</span> Dhauladhar / Triund Heights</p>
+              <p className="text-blue-900 font-bold text-lg mb-4">Price: Contact us</p>
+              <Button 
+                className="w-full bg-green-600 hover:bg-green-700 text-white"
+                onClick={() => window.open('https://wa.me/918679333354?text=Hi! I\'m interested in Mystic Hills Retreat package', '_blank')}
+              >
+                💬 WhatsApp Enquiry
+              </Button>
+            </div>
+
+            {/* Package 3 */}
+            <div className="bg-white rounded-2xl shadow-xl p-6 hover:shadow-2xl transition-all duration-300 border-2 border-blue-100">
+              <h3 className="text-2xl font-bold text-blue-900 mb-3">
+                3. Khajjiar Alpine Escape – Dalhousie (3 Days)
+              </h3>
+              <div className="space-y-2 text-gray-700 mb-4">
+                <p><span className="font-semibold">Day 1</span> – Arrival → Mall Road</p>
+                <p><span className="font-semibold">Day 2</span> – Khajjiar • Kalatop • Panchpula</p>
+                <p><span className="font-semibold">Day 3</span> – Departure</p>
+              </div>
+              <p className="text-gray-700 mb-2"><span className="font-semibold">Hotels:</span> Mongas / Alps Resort</p>
+              <p className="text-blue-900 font-bold text-lg mb-4">Price: Contact us</p>
+              <Button 
+                className="w-full bg-green-600 hover:bg-green-700 text-white"
+                onClick={() => window.open('https://wa.me/918679333354?text=Hi! I\'m interested in Khajjiar Alpine Escape package', '_blank')}
+              >
+                💬 WhatsApp Enquiry
+              </Button>
+            </div>
+
+            {/* Package 4 */}
+            <div className="bg-white rounded-2xl shadow-xl p-6 hover:shadow-2xl transition-all duration-300 border-2 border-blue-100">
+              <h3 className="text-2xl font-bold text-blue-900 mb-3">
+                4. Twin Peaks Magic – Dharamshala + Dalhousie (5 Days)
+              </h3>
+              <div className="space-y-2 text-gray-700 mb-4">
+                <p><span className="font-semibold">Day 1</span> – Arrival Dharamshala</p>
+                <p><span className="font-semibold">Day 2</span> – Dharamshala Local</p>
+                <p><span className="font-semibold">Day 3</span> – Mcleodganj → Dalhousie</p>
+                <p><span className="font-semibold">Day 4</span> – Khajjiar Day Trip</p>
+                <p><span className="font-semibold">Day 5</span> – Departure</p>
+              </div>
+              <p className="text-gray-700 mb-2"><span className="font-semibold">Hotels:</span> Sky Heaven / Mount View</p>
+              <p className="text-blue-900 font-bold text-lg mb-4">Price: Contact us</p>
+              <Button 
+                className="w-full bg-green-600 hover:bg-green-700 text-white"
+                onClick={() => window.open('https://wa.me/918679333354?text=Hi! I\'m interested in Twin Peaks Magic package', '_blank')}
+              >
+                💬 WhatsApp Enquiry
+              </Button>
+            </div>
+
+            {/* Package 5 */}
+            <div className="bg-white rounded-2xl shadow-xl p-6 hover:shadow-2xl transition-all duration-300 border-2 border-blue-100">
+              <h3 className="text-2xl font-bold text-blue-900 mb-3">
+                5. Queen of Hills – Shimla (4 Days)
+              </h3>
+              <div className="space-y-2 text-gray-700 mb-4">
+                <p><span className="font-semibold">Day 1</span> – Mall Road</p>
+                <p><span className="font-semibold">Day 2</span> – Kufri • Adventure Park • Jakhoo</p>
+                <p><span className="font-semibold">Day 3</span> – Shimla Local</p>
+                <p><span className="font-semibold">Day 4</span> – Departure</p>
+              </div>
+              <p className="text-gray-700 mb-2"><span className="font-semibold">Hotels:</span> Willow Banks / Snow Valley</p>
+              <p className="text-blue-900 font-bold text-lg mb-4">Price: Contact us</p>
+              <Button 
+                className="w-full bg-green-600 hover:bg-green-700 text-white"
+                onClick={() => window.open('https://wa.me/918679333354?text=Hi! I\'m interested in Queen of Hills Shimla package', '_blank')}
+              >
+                💬 WhatsApp Enquiry
+              </Button>
+            </div>
+
+            {/* Package 6 */}
+            <div className="bg-white rounded-2xl shadow-xl p-6 hover:shadow-2xl transition-all duration-300 border-2 border-blue-100">
+              <h3 className="text-2xl font-bold text-blue-900 mb-3">
+                6. Romantic Highlands – Shimla & Manali (6 Days)
+              </h3>
+              <div className="space-y-2 text-gray-700 mb-4">
+                <p><span className="font-semibold">Day 1</span> – Shimla Arrival</p>
+                <p><span className="font-semibold">Day 2</span> – Kufri</p>
+                <p><span className="font-semibold">Day 3</span> – Shimla → Manali</p>
+                <p><span className="font-semibold">Day 4</span> – Solang Valley • Atal Tunnel</p>
+                <p><span className="font-semibold">Day 5</span> – Manali Local</p>
+                <p><span className="font-semibold">Day 6</span> – Departure</p>
+              </div>
+              <p className="text-gray-700 mb-2"><span className="font-semibold">Hotels:</span> Sukh Sadan / Snow Peak Retreat</p>
+              <p className="text-blue-900 font-bold text-lg mb-4">Price: Contact us</p>
+              <Button 
+                className="w-full bg-green-600 hover:bg-green-700 text-white"
+                onClick={() => window.open('https://wa.me/918679333354?text=Hi! I\'m interested in Romantic Highlands package', '_blank')}
+              >
+                💬 WhatsApp Enquiry
+              </Button>
+            </div>
+
+            {/* Package 7 */}
+            <div className="bg-white rounded-2xl shadow-xl p-6 hover:shadow-2xl transition-all duration-300 border-2 border-blue-100">
+              <h3 className="text-2xl font-bold text-blue-900 mb-3">
+                7. Snowbound Paradise – Manali (5 Days)
+              </h3>
+              <div className="space-y-2 text-gray-700 mb-4">
+                <p><span className="font-semibold">Day 1</span> – Arrival Manali</p>
+                <p><span className="font-semibold">Day 2</span> – Solang Valley</p>
+                <p><span className="font-semibold">Day 3</span> – Atal Tunnel • Sissu</p>
+                <p><span className="font-semibold">Day 4</span> – Hidimba • Vashisht • Old Manali</p>
+                <p><span className="font-semibold">Day 5</span> – Departure</p>
+              </div>
+              <p className="text-gray-700 mb-2"><span className="font-semibold">Hotels:</span> Manali Heights / Kanishka</p>
+              <p className="text-blue-900 font-bold text-lg mb-4">Price: Contact us</p>
+              <Button 
+                className="w-full bg-green-600 hover:bg-green-700 text-white"
+                onClick={() => window.open('https://wa.me/918679333354?text=Hi! I\'m interested in Snowbound Paradise Manali package', '_blank')}
+              >
+                💬 WhatsApp Enquiry
+              </Button>
+            </div>
+
+            {/* Package 8 */}
+            <div className="bg-white rounded-2xl shadow-xl p-6 hover:shadow-2xl transition-all duration-300 border-2 border-blue-100">
+              <h3 className="text-2xl font-bold text-blue-900 mb-3">
+                8. Sacred Bliss Trail – Dharamshala & Palampur (4 Days)
+              </h3>
+              <div className="space-y-2 text-gray-700 mb-4">
+                <p><span className="font-semibold">Day 1</span> – Arrival</p>
+                <p><span className="font-semibold">Day 2</span> – Dalai Lama • Norbulingka • Tea Gardens</p>
+                <p><span className="font-semibold">Day 3</span> – Chamunda • Palampur Valley</p>
+                <p><span className="font-semibold">Day 4</span> – Departure</p>
+              </div>
+              <p className="text-gray-700 mb-2"><span className="font-semibold">Hotels:</span> Sarovar Portico / The Bliss</p>
+              <p className="text-blue-900 font-bold text-lg mb-4">Price: Contact us</p>
+              <Button 
+                className="w-full bg-green-600 hover:bg-green-700 text-white"
+                onClick={() => window.open('https://wa.me/918679333354?text=Hi! I\'m interested in Sacred Bliss Trail package', '_blank')}
+              >
+                💬 WhatsApp Enquiry
+              </Button>
+            </div>
+
+            {/* Package 9 */}
+            <div className="bg-white rounded-2xl shadow-xl p-6 hover:shadow-2xl transition-all duration-300 border-2 border-blue-100">
+              <h3 className="text-2xl font-bold text-blue-900 mb-3">
+                9. Sky Above Earth Below – Bir Billing Adventure (3 Days)
+              </h3>
+              <div className="space-y-2 text-gray-700 mb-4">
+                <p><span className="font-semibold">Day 1</span> – Arrival → Bir Cafés</p>
+                <p><span className="font-semibold">Day 2</span> – Paragliding • Monasteries</p>
+                <p><span className="font-semibold">Day 3</span> – Departure</p>
+              </div>
+              <p className="text-gray-700 mb-2"><span className="font-semibold">Hotels:</span> Zostel Premium / Colonel's Resort</p>
+              <p className="text-blue-900 font-bold text-lg mb-4">Price: Contact us</p>
+              <Button 
+                className="w-full bg-green-600 hover:bg-green-700 text-white"
+                onClick={() => window.open('https://wa.me/918679333354?text=Hi! I\'m interested in Sky Above Earth Below Bir Billing package', '_blank')}
+              >
+                💬 WhatsApp Enquiry
+              </Button>
+            </div>
+
+            {/* Package 10 */}
+            <div className="bg-white rounded-2xl shadow-xl p-6 hover:shadow-2xl transition-all duration-300 border-2 border-blue-100">
+              <h3 className="text-2xl font-bold text-blue-900 mb-3">
+                10. The Himalayan Frontier – Spiti Valley (8 Days)
+              </h3>
+              <div className="space-y-2 text-gray-700 mb-4">
+                <p><span className="font-semibold">Day 1</span> – Chandigarh → Nako</p>
+                <p><span className="font-semibold">Day 2</span> – Nako → Tabo</p>
+                <p><span className="font-semibold">Day 3</span> – Tabo → Dhankar → Kaza</p>
+                <p><span className="font-semibold">Day 4</span> – Key • Hikkim • Komic</p>
+                <p><span className="font-semibold">Day 5</span> – Langza</p>
+                <p><span className="font-semibold">Day 6</span> – Chandratal</p>
+                <p><span className="font-semibold">Day 7</span> – Rohtang Route</p>
+                <p><span className="font-semibold">Day 8</span> – Departure</p>
+              </div>
+              <p className="text-gray-700 mb-2"><span className="font-semibold">Hotels:</span> Snow Lion / Camps</p>
+              <p className="text-blue-900 font-bold text-lg mb-4">Price: Contact us</p>
+              <Button 
+                className="w-full bg-green-600 hover:bg-green-700 text-white"
+                onClick={() => window.open('https://wa.me/918679333354?text=Hi! I\'m interested in The Himalayan Frontier Spiti Valley package', '_blank')}
+              >
+                💬 WhatsApp Enquiry
+              </Button>
+            </div>
+          </div>
+        </div>
+
         {/* CTA Section */}
         <div className="text-center mt-16 bg-gradient-to-r from-blue-900 to-blue-800 rounded-2xl p-12 text-white">
           <h3 className="text-3xl font-bold mb-4">
