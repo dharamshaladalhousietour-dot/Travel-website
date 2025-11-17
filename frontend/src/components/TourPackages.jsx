@@ -1599,7 +1599,7 @@ const TourPackages = () => {
             {/* Package 10 - Card Style */}
             <div className="bg-white rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden group">
               <div className="relative h-56 overflow-hidden">
-                <img src="https://images.unsplash.com/photo-1626610365745-c9e7a6c0e456?w=600" alt="Spiti Valley Tour Package" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
+                <img src="https://images.pexels.com/photos/1660995/pexels-photo-1660995.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Spiti Valley Tour Package" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
                 <div className="absolute top-3 left-3 bg-blue-600 text-white px-3 py-1 rounded-full text-xs font-semibold">Himachal</div>
                 <div className="absolute top-3 right-3 bg-green-600 text-white px-4 py-2 rounded-lg font-bold shadow-lg">₹29,999</div>
               </div>
