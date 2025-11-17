@@ -1334,7 +1334,7 @@ const TourPackages = () => {
             <div className="bg-white rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden group">
               <div className="relative h-56 overflow-hidden">
                 <img 
-                  src="https://images.unsplash.com/photo-1609137144813-7d9921338f24?w=600" 
+                  src="https://images.pexels.com/photos/1365425/pexels-photo-1365425.jpeg?auto=compress&cs=tinysrgb&w=600" 
                   alt="Dharamshala Tour Package"
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                 />
