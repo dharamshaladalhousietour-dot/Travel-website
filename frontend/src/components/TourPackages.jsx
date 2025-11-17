@@ -1248,7 +1248,7 @@ const TourPackages = () => {
               {/* Image with overlays */}
               <div className="relative h-56 overflow-hidden">
                 <img 
-                  src="https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?w=600" 
+                  src="https://images.pexels.com/photos/414171/pexels-photo-414171.jpeg?auto=compress&cs=tinysrgb&w=600" 
                   alt="Dharamshala Dalhousie Tour"
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                 />
