@@ -9,7 +9,7 @@ export const blogPosts = [
     date: "November 7, 2025",
     readTime: "8 min read",
     category: "Weddings",
-    featuredImage: "/assets/hero-dharamshala.jpg",
+    featuredImage: "https://customer-assets.emergentagent.com/job_755c6f10-3caa-480e-a9ee-33d257ddbaaf/artifacts/bcfr7n7r_IMG_8205.jpeg",
     excerpt: "Imagine exchanging vows against the snow-kissed backdrop of the Himalayas, surrounded by crisp mountain air, pine forests, and panoramic views that take your breath away. Welcome to Dharamshala — a destination where love and nature come together to create the most unforgettable weddings.",
     content: `
       <div class="blog-content">
