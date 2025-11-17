@@ -124,6 +124,7 @@ import RefundPolicy from "./components/RefundPolicy";
 import TravelInsurance from "./components/TravelInsurance";
 import PackageDetail from "./components/PackageDetail";
 import NotFound from "./components/NotFound";
+import ContentProtection from "./components/ContentProtection";
 
 // Home Component with optional scrollTo section
 const Home = ({ scrollTo }) => {
