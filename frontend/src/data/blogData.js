@@ -112,7 +112,7 @@ export const blogPosts = [
     date: "October 28, 2025",
     readTime: "10 min read",
     category: "Real Weddings",
-    featuredImage: "/assets/portfolio2.jpg",
+    featuredImage: "https://customer-assets.emergentagent.com/job_755c6f10-3caa-480e-a9ee-33d257ddbaaf/artifacts/w0rgcsrx_0F4A7193.jpeg",
     excerpt: "Step into the grandeur of the Kangra Royal Wedding – a celebration of heritage, love, and Himalayan magnificence that brought together royalty from across the world.",
     content: `
       <div class="blog-content">
