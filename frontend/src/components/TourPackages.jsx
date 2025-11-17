@@ -1404,26 +1404,36 @@ const TourPackages = () => {
               </div>
             </div>
 
-            {/* Package 4 */}
-            <div className="bg-white rounded-2xl shadow-xl p-6 hover:shadow-2xl transition-all duration-300 border-2 border-blue-100">
-              <h3 className="text-2xl font-bold text-blue-900 mb-3">
-                4. Twin Peaks Magic – Dharamshala + Dalhousie (5 Days)
-              </h3>
-              <div className="space-y-2 text-gray-700 mb-4">
-                <p><span className="font-semibold">Day 1</span> – Arrival Dharamshala</p>
-                <p><span className="font-semibold">Day 2</span> – Dharamshala Local</p>
-                <p><span className="font-semibold">Day 3</span> – Mcleodganj → Dalhousie</p>
-                <p><span className="font-semibold">Day 4</span> – Khajjiar Day Trip</p>
-                <p><span className="font-semibold">Day 5</span> – Departure</p>
+            {/* Package 4 - Card Style */}
+            <div className="bg-white rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden group">
+              <div className="relative h-56 overflow-hidden">
+                <img src="https://images.unsplash.com/photo-1571595231640-e29617c7f1bf?w=600" alt="Dharamshala Dalhousie Twin Peaks" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
+                <div className="absolute top-3 left-3 bg-blue-600 text-white px-3 py-1 rounded-full text-xs font-semibold">Himachal</div>
+                <div className="absolute top-3 right-3 bg-green-600 text-white px-4 py-2 rounded-lg font-bold shadow-lg">₹15,999</div>
               </div>
-              <p className="text-gray-700 mb-2"><span className="font-semibold">Hotels:</span> Sky Heaven / Mount View</p>
-              <p className="text-blue-900 font-bold text-lg mb-4">Price: Contact us</p>
-              <Button 
-                className="w-full bg-green-600 hover:bg-green-700 text-white"
-                onClick={() => window.open('https://wa.me/918679333354?text=Hi! I\'m interested in Twin Peaks Magic package', '_blank')}
-              >
-                💬 WhatsApp Enquiry
-              </Button>
+              <div className="p-4">
+                <div className="flex items-center justify-between mb-3">
+                  <div className="flex items-center gap-1"><span className="text-yellow-500">⭐</span><span className="text-sm font-semibold">4.8</span><span className="text-xs text-gray-500">(95+ reviews)</span></div>
+                  <div className="text-sm text-gray-600 font-medium">🕒 4N / 5D</div>
+                </div>
+                <h3 className="text-lg font-bold text-gray-900 mb-3 line-clamp-2">Twin Peaks Magic – Dharamshala + Dalhousie</h3>
+                <div className="flex flex-wrap gap-2 mb-4">
+                  <span className="text-xs bg-blue-100 text-blue-700 px-2 py-1 rounded-full">Mcleodganj</span>
+                  <span className="text-xs bg-blue-100 text-blue-700 px-2 py-1 rounded-full">Khajjiar</span>
+                  <span className="text-xs bg-blue-100 text-blue-700 px-2 py-1 rounded-full">Twin Cities</span>
+                </div>
+                <div className="grid grid-cols-2 gap-2 mb-2">
+                  <Button variant="outline" size="sm" className="text-xs border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white">View Details</Button>
+                  <Button size="sm" className="text-xs bg-blue-600 hover:bg-blue-700 text-white" onClick={() => window.open('https://wa.me/918679333354?text=Hi! I\'m interested in Twin Peaks Magic package', '_blank')}>Send Enquiry</Button>
+                </div>
+                <div className="grid grid-cols-2 gap-2">
+                  <Button size="sm" className="text-xs bg-green-600 hover:bg-green-700 text-white" onClick={() => window.open('https://wa.me/918679333354?text=Hi! I\'m interested in Twin Peaks Magic package', '_blank')}>Enquire Now</Button>
+                  <Button size="sm" className="text-xs bg-amber-600 hover:bg-amber-700 text-white">Plan Your Trip</Button>
+                </div>
+                <div className="mt-4 pt-3 border-t border-gray-200">
+                  <p className="text-sm text-gray-600">Starting from <span className="text-lg font-bold text-green-600">₹15,999</span></p>
+                </div>
+              </div>
             </div>
 
             {/* Package 5 */}
