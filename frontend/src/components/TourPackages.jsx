@@ -1375,7 +1375,7 @@ const TourPackages = () => {
             {/* Package 3 - Card Style */}
             <div className="bg-white rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden group">
               <div className="relative h-56 overflow-hidden">
-                <img src="https://images.pexels.com/photos/4577399/pexels-photo-4577399.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Dalhousie Khajjiar Tour" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
+                <img src="https://images.pexels.com/photos/4577399/pexels-photo-4577399.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Dalhousie Khajjiar Tour" loading="lazy" decoding="async" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
                 <div className="absolute top-3 left-3 bg-blue-600 text-white px-3 py-1 rounded-full text-xs font-semibold">Himachal</div>
                 <div className="absolute top-3 right-3 bg-green-600 text-white px-4 py-2 rounded-lg font-bold shadow-lg">₹9,999</div>
               </div>
@@ -1407,7 +1407,7 @@ const TourPackages = () => {
             {/* Package 4 - Card Style */}
             <div className="bg-white rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden group">
               <div className="relative h-56 overflow-hidden">
-                <img src="https://images.pexels.com/photos/3738673/pexels-photo-3738673.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Dharamshala Dalhousie Twin Peaks" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
+                <img src="https://images.pexels.com/photos/3738673/pexels-photo-3738673.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Dharamshala Dalhousie Twin Peaks" loading="lazy" decoding="async" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
                 <div className="absolute top-3 left-3 bg-blue-600 text-white px-3 py-1 rounded-full text-xs font-semibold">Himachal</div>
                 <div className="absolute top-3 right-3 bg-green-600 text-white px-4 py-2 rounded-lg font-bold shadow-lg">₹15,999</div>
               </div>
@@ -1439,7 +1439,7 @@ const TourPackages = () => {
             {/* Package 5 - Card Style */}
             <div className="bg-white rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden group">
               <div className="relative h-56 overflow-hidden">
-                <img src="https://images.pexels.com/photos/3593922/pexels-photo-3593922.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Shimla Tour Package" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
+                <img src="https://images.pexels.com/photos/3593922/pexels-photo-3593922.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Shimla Tour Package" loading="lazy" decoding="async" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
                 <div className="absolute top-3 left-3 bg-blue-600 text-white px-3 py-1 rounded-full text-xs font-semibold">Himachal</div>
                 <div className="absolute top-3 right-3 bg-green-600 text-white px-4 py-2 rounded-lg font-bold shadow-lg">₹11,999</div>
               </div>
@@ -1471,7 +1471,7 @@ const TourPackages = () => {
             {/* Package 6 - Card Style */}
             <div className="bg-white rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden group">
               <div className="relative h-56 overflow-hidden">
-                <img src="https://images.pexels.com/photos/1562/italian-landscape-mountains-nature.jpg?auto=compress&cs=tinysrgb&w=600" alt="Shimla Manali Tour" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
+                <img src="https://images.pexels.com/photos/1562/italian-landscape-mountains-nature.jpg?auto=compress&cs=tinysrgb&w=600" alt="Shimla Manali Tour" loading="lazy" decoding="async" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
                 <div className="absolute top-3 left-3 bg-blue-600 text-white px-3 py-1 rounded-full text-xs font-semibold">Himachal</div>
                 <div className="absolute top-3 right-3 bg-green-600 text-white px-4 py-2 rounded-lg font-bold shadow-lg">₹19,999</div>
               </div>
@@ -1503,7 +1503,7 @@ const TourPackages = () => {
             {/* Package 7 - Card Style */}
             <div className="bg-white rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden group">
               <div className="relative h-56 overflow-hidden">
-                <img src="https://images.pexels.com/photos/2901209/pexels-photo-2901209.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Manali Tour Package" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
+                <img src="https://images.pexels.com/photos/2901209/pexels-photo-2901209.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Manali Tour Package" loading="lazy" decoding="async" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
                 <div className="absolute top-3 left-3 bg-blue-600 text-white px-3 py-1 rounded-full text-xs font-semibold">Himachal</div>
                 <div className="absolute top-3 right-3 bg-green-600 text-white px-4 py-2 rounded-lg font-bold shadow-lg">₹16,999</div>
               </div>
@@ -1535,7 +1535,7 @@ const TourPackages = () => {
             {/* Package 8 - Card Style */}
             <div className="bg-white rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden group">
               <div className="relative h-56 overflow-hidden">
-                <img src="https://images.pexels.com/photos/417074/pexels-photo-417074.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Dharamshala Palampur Tour" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
+                <img src="https://images.pexels.com/photos/417074/pexels-photo-417074.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Dharamshala Palampur Tour" loading="lazy" decoding="async" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
                 <div className="absolute top-3 left-3 bg-blue-600 text-white px-3 py-1 rounded-full text-xs font-semibold">Himachal</div>
                 <div className="absolute top-3 right-3 bg-green-600 text-white px-4 py-2 rounded-lg font-bold shadow-lg">₹13,999</div>
               </div>
@@ -1567,7 +1567,7 @@ const TourPackages = () => {
             {/* Package 9 - Card Style */}
             <div className="bg-white rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden group">
               <div className="relative h-56 overflow-hidden">
-                <img src="https://images.pexels.com/photos/1906658/pexels-photo-1906658.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Bir Billing Paragliding Tour" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
+                <img src="https://images.pexels.com/photos/1906658/pexels-photo-1906658.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Bir Billing Paragliding Tour" loading="lazy" decoding="async" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
                 <div className="absolute top-3 left-3 bg-blue-600 text-white px-3 py-1 rounded-full text-xs font-semibold">Himachal</div>
                 <div className="absolute top-3 right-3 bg-green-600 text-white px-4 py-2 rounded-lg font-bold shadow-lg">₹8,999</div>
               </div>
@@ -1599,7 +1599,7 @@ const TourPackages = () => {
             {/* Package 10 - Card Style */}
             <div className="bg-white rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden group">
               <div className="relative h-56 overflow-hidden">
-                <img src="https://images.pexels.com/photos/1660995/pexels-photo-1660995.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Spiti Valley Tour Package" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
+                <img src="https://images.pexels.com/photos/1660995/pexels-photo-1660995.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Spiti Valley Tour Package" loading="lazy" decoding="async" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
                 <div className="absolute top-3 left-3 bg-blue-600 text-white px-3 py-1 rounded-full text-xs font-semibold">Himachal</div>
                 <div className="absolute top-3 right-3 bg-green-600 text-white px-4 py-2 rounded-lg font-bold shadow-lg">₹29,999</div>
               </div>
