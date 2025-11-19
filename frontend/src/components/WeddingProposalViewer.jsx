@@ -404,6 +404,23 @@ const WeddingProposalViewer = ({ isOpen, onClose }) => {
               </p>
             </div>
 
+            {/* Important Note - Planning Fee Validity */}
+            <div className="bg-gradient-to-r from-amber-50 to-rose-50 rounded-2xl p-8 mb-10 border-2 border-amber-200 shadow-lg max-w-4xl mx-auto">
+              <div className="flex items-start gap-3">
+                <span className="text-3xl">⚠️</span>
+                <div>
+                  <h3 className="text-xl font-playfair font-bold mb-3" style={{ color: '#C89B7B' }}>
+                    Important Note
+                  </h3>
+                  <div className="space-y-2 text-gray-700">
+                    <p className="leading-relaxed">
+                      <span className="font-bold">The quoted Wedding Planning fee is valid only when Wedding Décor services are also booked with Pretty Planet Travels & Events.</span> Décor pricing will be additional and will be customized based on your guest count and overall décor budget.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
             {/* Important Note - Meetings & Venue Visits */}
             <div className="bg-gradient-to-r from-rose-50 to-amber-50 rounded-2xl p-8 mb-10 border-2 border-rose-200 shadow-lg max-w-4xl mx-auto">
               <div className="flex items-start gap-3">
