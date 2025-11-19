@@ -1254,89 +1254,95 @@ const TourPackages = () => {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 px-4 md:px-8 max-w-7xl mx-auto">
-            {/* Package 1 - Card Style */}
-            <div className="bg-white rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden group">
+            {/* Package 1 - Himalayan Golden Circuit */}
+            <div className="bg-white rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden">
               {/* Image with overlays */}
               <div className="relative h-56 overflow-hidden">
                 <img 
                   src="https://images.pexels.com/photos/414171/pexels-photo-414171.jpeg?auto=compress&cs=tinysrgb&w=600" 
-                  alt="Dharamshala Dalhousie Tour"
+                  alt="Himalayan Golden Circuit - Dharamshala Dalhousie Amritsar Tour"
+                  loading="lazy"
+                  decoding="async"
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                 />
-                <div className="absolute top-3 left-3 bg-blue-600 text-white px-3 py-1 rounded-full text-xs font-semibold">
-                  Himachal
-                </div>
-                <div className="absolute top-3 right-3 bg-green-600 text-white px-4 py-2 rounded-lg font-bold shadow-lg">
-                  ₹18,999
-                </div>
+                <div className="absolute top-3 left-3 bg-blue-600 text-white px-3 py-1 rounded-full text-xs font-semibold">7D/6N</div>
+                <div className="absolute top-3 right-3 bg-green-600 text-white px-4 py-2 rounded-lg font-bold shadow-lg">₹18,999</div>
               </div>
 
-              {/* Content */}
               <div className="p-4">
-                {/* Rating & Duration */}
                 <div className="flex items-center justify-between mb-3">
                   <div className="flex items-center gap-1">
                     <span className="text-yellow-500">⭐</span>
                     <span className="text-sm font-semibold">4.8</span>
                     <span className="text-xs text-gray-500">(120+ reviews)</span>
                   </div>
-                  <div className="text-sm text-gray-600 font-medium">
-                    🕒 6N / 7D
-                  </div>
+                  <div className="text-sm text-gray-600 font-medium">Ex Amritsar</div>
                 </div>
 
-                {/* Package Title */}
-                <h3 className="text-lg font-bold text-gray-900 mb-3 line-clamp-2">
-                  Himalayan Golden Circuit – Dharamshala • Dalhousie • Amritsar
-                </h3>
+                <h3 className="text-lg font-bold text-gray-900 mb-2">Himalayan Golden Circuit</h3>
+                <p className="text-sm text-gray-600 mb-3">Dharamshala • Dalhousie • Khajjiar • Amritsar</p>
 
-                {/* Highlights Tags */}
                 <div className="flex flex-wrap gap-2 mb-4">
                   <span className="text-xs bg-blue-100 text-blue-700 px-2 py-1 rounded-full">Dalai Lama Temple</span>
-                  <span className="text-xs bg-blue-100 text-blue-700 px-2 py-1 rounded-full">Khajjiar</span>
+                  <span className="text-xs bg-blue-100 text-blue-700 px-2 py-1 rounded-full">Khajjiar Meadows</span>
                   <span className="text-xs bg-blue-100 text-blue-700 px-2 py-1 rounded-full">Golden Temple</span>
                 </div>
 
-                {/* Buttons Row 1 */}
+                {/* Expandable Itinerary */}
+                {expandedPackage === 1 && (
+                  <div className="mb-4 p-3 bg-gray-50 rounded-lg text-xs max-h-60 overflow-y-auto">
+                    <p className="font-bold mb-2">Day-by-Day Itinerary:</p>
+                    <div className="space-y-2">
+                      <p><strong>Day 1:</strong> Amritsar → Dharamshala (Sky Heaven Resort)</p>
+                      <p><strong>Day 2:</strong> Dalai Lama Temple, Dal Lake, Naddi</p>
+                      <p><strong>Day 3:</strong> McLeodganj & Bhagsunag Waterfall</p>
+                      <p><strong>Day 4:</strong> Transfer to Dalhousie, Mall Road</p>
+                      <p><strong>Day 5:</strong> Khajjiar Day Trip, Kalatop Sanctuary</p>
+                      <p><strong>Day 6:</strong> Golden Temple, Wagah Border</p>
+                      <p><strong>Day 7:</strong> Departure</p>
+                      <p className="mt-2 text-green-700"><strong>Includes:</strong> Hotel, cab, breakfast</p>
+                      <p className="text-red-600"><strong>Excludes:</strong> Meals, entry fees</p>
+                    </div>
+                  </div>
+                )}
+
                 <div className="grid grid-cols-2 gap-2 mb-2">
                   <Button 
                     variant="outline"
                     size="sm"
                     className="text-xs border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white"
+                    onClick={() => setExpandedPackage(expandedPackage === 1 ? null : 1)}
                   >
-                    View Details
+                    {expandedPackage === 1 ? 'Hide Details' : 'View Details'}
                   </Button>
                   <Button 
                     size="sm"
                     className="text-xs bg-blue-600 hover:bg-blue-700 text-white"
-                    onClick={() => window.open('https://wa.me/918679333354?text=Hi! I\'m interested in Himalayan Golden Circuit package', '_blank')}
+                    onClick={() => scrollToEnquiryForm('Himalayan Golden Circuit')}
                   >
-                    Send Enquiry
+                    Book Now
                   </Button>
                 </div>
 
-                {/* Buttons Row 2 */}
                 <div className="grid grid-cols-2 gap-2">
                   <Button 
                     size="sm"
                     className="text-xs bg-green-600 hover:bg-green-700 text-white"
-                    onClick={() => window.open('https://wa.me/918679333354?text=Hi! I\'m interested in Himalayan Golden Circuit package', '_blank')}
+                    onClick={() => scrollToEnquiryForm('Himalayan Golden Circuit')}
                   >
                     Enquire Now
                   </Button>
                   <Button 
                     size="sm"
                     className="text-xs bg-amber-600 hover:bg-amber-700 text-white"
+                    onClick={() => scrollToEnquiryForm('Himalayan Golden Circuit')}
                   >
                     Plan Your Trip
                   </Button>
                 </div>
 
-                {/* Starting Price */}
                 <div className="mt-4 pt-3 border-t border-gray-200">
-                  <p className="text-sm text-gray-600">
-                    Starting from <span className="text-lg font-bold text-green-600">₹18,999</span>
-                  </p>
+                  <p className="text-sm text-gray-600">Starting from <span className="text-lg font-bold text-green-600">₹18,999</span></p>
                 </div>
               </div>
             </div>
