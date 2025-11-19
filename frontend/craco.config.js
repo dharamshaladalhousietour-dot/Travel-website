@@ -11,7 +11,43 @@ module.exports = {
     alias: {
       '@': path.resolve(__dirname, 'src'),
     },
-    configure: (webpackConfig) => {
+    configure: (webpackConfig, { env }) => {
+      
+      // Production optimizations
+      if (env === 'production') {
+        // Remove console.logs in production
+        webpackConfig.optimization = {
+          ...webpackConfig.optimization,
+          usedExports: true,
+          minimize: true,
+          splitChunks: {
+            chunks: 'all',
+            cacheGroups: {
+              vendor: {
+                test: /[\\/]node_modules[\\/]/,
+                name: 'vendors',
+                priority: 10,
+                reuseExistingChunk: true,
+              },
+              radix: {
+                test: /[\\/]node_modules[\\/]@radix-ui[\\/]/,
+                name: 'radix-vendor',
+                priority: 20,
+                reuseExistingChunk: true,
+              },
+              common: {
+                minChunks: 2,
+                priority: 5,
+                reuseExistingChunk: true,
+              },
+            },
+          },
+          runtimeChunk: 'single',
+        };
+
+        // Remove source maps in production
+        webpackConfig.devtool = false;
+      }
       
       // Disable hot reload completely if environment variable is set
       if (config.disableHotReload) {
@@ -41,6 +77,33 @@ module.exports = {
       }
       
       return webpackConfig;
+    },
+  },
+  style: {
+    postcss: {
+      mode: 'file',
+      loaderOptions: {
+        postcssOptions: {
+          plugins: [
+            [
+              'autoprefixer',
+              {
+                // Options
+              },
+            ],
+            [
+              'cssnano',
+              {
+                preset: ['default', {
+                  discardComments: {
+                    removeAll: true,
+                  },
+                }],
+              },
+            ],
+          ],
+        },
+      },
     },
   },
 };
