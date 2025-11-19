@@ -1488,32 +1488,87 @@ const TourPackages = () => {
               </div>
             </div>
 
-            {/* Package 4 - Card Style */}
-            <div className="bg-white rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden group">
+            {/* Package 4 - Twin Peaks Magic */}
+            <div className="bg-white rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden">
               <div className="relative h-56 overflow-hidden">
-                <img src="https://images.pexels.com/photos/3738673/pexels-photo-3738673.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Dharamshala Dalhousie Twin Peaks" loading="lazy" decoding="async" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
-                <div className="absolute top-3 left-3 bg-blue-600 text-white px-3 py-1 rounded-full text-xs font-semibold">Himachal</div>
+                <img 
+                  src="https://images.pexels.com/photos/3738673/pexels-photo-3738673.jpeg?auto=compress&cs=tinysrgb&w=600" 
+                  alt="Twin Peaks Dharamshala Dalhousie Tour"
+                  loading="lazy" decoding="async"
+                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                />
+                <div className="absolute top-3 left-3 bg-blue-600 text-white px-3 py-1 rounded-full text-xs font-semibold">4D/5N</div>
                 <div className="absolute top-3 right-3 bg-green-600 text-white px-4 py-2 rounded-lg font-bold shadow-lg">₹15,999</div>
               </div>
               <div className="p-4">
                 <div className="flex items-center justify-between mb-3">
-                  <div className="flex items-center gap-1"><span className="text-yellow-500">⭐</span><span className="text-sm font-semibold">4.8</span><span className="text-xs text-gray-500">(95+ reviews)</span></div>
-                  <div className="text-sm text-gray-600 font-medium">🕒 4N / 5D</div>
+                  <div className="flex items-center gap-1">
+                    <span className="text-yellow-500">⭐</span>
+                    <span className="text-sm font-semibold">4.8</span>
+                    <span className="text-xs text-gray-500">(95+ reviews)</span>
+                  </div>
+                  <div className="text-sm text-gray-600 font-medium">Twin Cities</div>
                 </div>
-                <h3 className="text-lg font-bold text-gray-900 mb-3 line-clamp-2">Twin Peaks Magic – Dharamshala + Dalhousie</h3>
+                <h3 className="text-lg font-bold text-gray-900 mb-2">Twin Peaks Magic</h3>
+                <p className="text-sm text-gray-600 mb-3">Dharamshala • Dalhousie • Khajjiar</p>
                 <div className="flex flex-wrap gap-2 mb-4">
-                  <span className="text-xs bg-blue-100 text-blue-700 px-2 py-1 rounded-full">Mcleodganj</span>
+                  <span className="text-xs bg-blue-100 text-blue-700 px-2 py-1 rounded-full">McLeodganj</span>
                   <span className="text-xs bg-blue-100 text-blue-700 px-2 py-1 rounded-full">Khajjiar</span>
-                  <span className="text-xs bg-blue-100 text-blue-700 px-2 py-1 rounded-full">Twin Cities</span>
+                  <span className="text-xs bg-blue-100 text-blue-700 px-2 py-1 rounded-full">Buddhist Temples</span>
                 </div>
+
+                {/* Expandable Itinerary */}
+                {expandedPackage === 4 && (
+                  <div className="mb-4 p-3 bg-gray-50 rounded-lg text-xs max-h-60 overflow-y-auto">
+                    <p className="font-bold mb-2">Day-by-Day Itinerary:</p>
+                    <div className="space-y-2">
+                      <p><strong>Day 1:</strong> Arrival Dharamshala, check-in at hotel in McLeodganj. Evening walk at McLeodganj market, Tibetan cafes. Overnight stay.</p>
+                      <p><strong>Day 2:</strong> Full day Dharamshala sightseeing - Dalai Lama Temple Complex, Tsuglagkhang, Bhagsunag Waterfall, Dal Lake, Naddi viewpoint. Evening at leisure.</p>
+                      <p><strong>Day 3:</strong> Dharamshala to Dalhousie (4-hour drive). Check-in at hotel. Evening Mall Road exploration, Gandhi Chowk shopping.</p>
+                      <p><strong>Day 4:</strong> Khajjiar day excursion - Mini Switzerland, Khajjiar Lake, Kalatop Wildlife Sanctuary, adventure activities. Return Dalhousie evening.</p>
+                      <p><strong>Day 5:</strong> Morning Dalhousie local - Subhash Baoli, Panjpulla, St. John's Church. Departure with memories.</p>
+                      <p className="mt-2 text-green-700"><strong>Hotels:</strong> 3-star hotels in McLeodganj & Dalhousie</p>
+                      <p className="text-green-700"><strong>Includes:</strong> 4N accommodation, breakfast, all transfers, sightseeing</p>
+                      <p className="text-red-600"><strong>Excludes:</strong> Lunch/dinner, adventure activities, entry fees, personal expenses</p>
+                    </div>
+                  </div>
+                )}
+
                 <div className="grid grid-cols-2 gap-2 mb-2">
-                  <Button variant="outline" size="sm" className="text-xs border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white">View Details</Button>
-                  <Button size="sm" className="text-xs bg-blue-600 hover:bg-blue-700 text-white" onClick={() => window.open('https://wa.me/918679333354?text=Hi! I\'m interested in Twin Peaks Magic package', '_blank')}>Send Enquiry</Button>
+                  <Button 
+                    variant="outline"
+                    size="sm"
+                    className="text-xs border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white"
+                    onClick={() => setExpandedPackage(expandedPackage === 4 ? null : 4)}
+                  >
+                    {expandedPackage === 4 ? 'Hide Details' : 'View Details'}
+                  </Button>
+                  <Button 
+                    size="sm"
+                    className="text-xs bg-blue-600 hover:bg-blue-700 text-white"
+                    onClick={() => scrollToEnquiryForm('Twin Peaks Magic')}
+                  >
+                    Book Now
+                  </Button>
                 </div>
+
                 <div className="grid grid-cols-2 gap-2">
-                  <Button size="sm" className="text-xs bg-green-600 hover:bg-green-700 text-white" onClick={() => window.open('https://wa.me/918679333354?text=Hi! I\'m interested in Twin Peaks Magic package', '_blank')}>Enquire Now</Button>
-                  <Button size="sm" className="text-xs bg-amber-600 hover:bg-amber-700 text-white">Plan Your Trip</Button>
+                  <Button 
+                    size="sm"
+                    className="text-xs bg-green-600 hover:bg-green-700 text-white"
+                    onClick={() => scrollToEnquiryForm('Twin Peaks Magic')}
+                  >
+                    Enquire Now
+                  </Button>
+                  <Button 
+                    size="sm"
+                    className="text-xs bg-amber-600 hover:bg-amber-700 text-white"
+                    onClick={() => scrollToEnquiryForm('Twin Peaks Magic')}
+                  >
+                    Plan Your Trip
+                  </Button>
                 </div>
+
                 <div className="mt-4 pt-3 border-t border-gray-200">
                   <p className="text-sm text-gray-600">Starting from <span className="text-lg font-bold text-green-600">₹15,999</span></p>
                 </div>
