@@ -169,7 +169,9 @@ const Home = ({ scrollTo }) => {
 const TourPackagesPage = () => (
   <div className="min-h-screen">
     <Header />
-    <TourPackages />
+    <Suspense fallback={<LoadingFallback />}>
+      <TourPackages />
+    </Suspense>
     <Footer />
     <WhatsAppButton />
   </div>
