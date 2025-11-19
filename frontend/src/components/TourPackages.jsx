@@ -1749,32 +1749,87 @@ const TourPackages = () => {
               </div>
             </div>
 
-            {/* Package 7 - Card Style */}
-            <div className="bg-white rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden group">
+            {/* Package 7 - Snowbound Paradise Manali */}
+            <div className="bg-white rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden">
               <div className="relative h-56 overflow-hidden">
-                <img src="https://images.pexels.com/photos/2901209/pexels-photo-2901209.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Manali Tour Package" loading="lazy" decoding="async" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
-                <div className="absolute top-3 left-3 bg-blue-600 text-white px-3 py-1 rounded-full text-xs font-semibold">Himachal</div>
+                <img 
+                  src="https://images.pexels.com/photos/2901209/pexels-photo-2901209.jpeg?auto=compress&cs=tinysrgb&w=600" 
+                  alt="Snowbound Paradise Manali Tour"
+                  loading="lazy" decoding="async"
+                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                />
+                <div className="absolute top-3 left-3 bg-blue-600 text-white px-3 py-1 rounded-full text-xs font-semibold">4D/5N</div>
                 <div className="absolute top-3 right-3 bg-green-600 text-white px-4 py-2 rounded-lg font-bold shadow-lg">₹16,999</div>
               </div>
               <div className="p-4">
                 <div className="flex items-center justify-between mb-3">
-                  <div className="flex items-center gap-1"><span className="text-yellow-500">⭐</span><span className="text-sm font-semibold">4.8</span><span className="text-xs text-gray-500">(130+ reviews)</span></div>
-                  <div className="text-sm text-gray-600 font-medium">🕒 4N / 5D</div>
+                  <div className="flex items-center gap-1">
+                    <span className="text-yellow-500">⭐</span>
+                    <span className="text-sm font-semibold">4.8</span>
+                    <span className="text-xs text-gray-500">(130+ reviews)</span>
+                  </div>
+                  <div className="text-sm text-gray-600 font-medium">Manali</div>
                 </div>
-                <h3 className="text-lg font-bold text-gray-900 mb-3 line-clamp-2">Snowbound Paradise – Manali</h3>
+                <h3 className="text-lg font-bold text-gray-900 mb-2">Snowbound Paradise</h3>
+                <p className="text-sm text-gray-600 mb-3">Manali • Solang • Sissu</p>
                 <div className="flex flex-wrap gap-2 mb-4">
                   <span className="text-xs bg-blue-100 text-blue-700 px-2 py-1 rounded-full">Solang Valley</span>
                   <span className="text-xs bg-blue-100 text-blue-700 px-2 py-1 rounded-full">Atal Tunnel</span>
-                  <span className="text-xs bg-blue-100 text-blue-700 px-2 py-1 rounded-full">Hidimba</span>
+                  <span className="text-xs bg-blue-100 text-blue-700 px-2 py-1 rounded-full">Hadimba</span>
                 </div>
+
+                {/* Expandable Itinerary */}
+                {expandedPackage === 7 && (
+                  <div className="mb-4 p-3 bg-gray-50 rounded-lg text-xs max-h-60 overflow-y-auto">
+                    <p className="font-bold mb-2">Day-by-Day Itinerary:</p>
+                    <div className="space-y-2">
+                      <p><strong>Day 1:</strong> Arrival Manali, check-in hotel. Evening Mall Road exploration, Club House. Overnight Manali.</p>
+                      <p><strong>Day 2:</strong> Manali local sightseeing - Hadimba Devi Temple, Manu Temple, Tibetan Monastery, Vashisht Village hot springs. Old Manali cafe hopping. Overnight Manali.</p>
+                      <p><strong>Day 3:</strong> Solang Valley full day - paragliding, zorbing, cable car ride. Optional: Atal Tunnel to Sissu (snow activities). Return evening. Overnight Manali.</p>
+                      <p><strong>Day 4:</strong> Naggar Castle, Nicholas Roerich Art Gallery, river rafting at Kullu. Evening leisure. Overnight Manali.</p>
+                      <p><strong>Day 5:</strong> Morning free for shopping at Mall Road. Check-out and departure with beautiful mountain memories.</p>
+                      <p className="mt-2 text-green-700"><strong>Hotel:</strong> 3-star hotel in Manali town</p>
+                      <p className="text-green-700"><strong>Includes:</strong> 4N accommodation, breakfast, all transfers, sightseeing</p>
+                      <p className="text-red-600"><strong>Excludes:</strong> Lunch/dinner, adventure activities, Atal Tunnel entry, personal expenses</p>
+                    </div>
+                  </div>
+                )}
+
                 <div className="grid grid-cols-2 gap-2 mb-2">
-                  <Button variant="outline" size="sm" className="text-xs border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white">View Details</Button>
-                  <Button size="sm" className="text-xs bg-blue-600 hover:bg-blue-700 text-white" onClick={() => window.open('https://wa.me/918679333354?text=Hi! I\'m interested in Snowbound Paradise Manali package', '_blank')}>Send Enquiry</Button>
+                  <Button 
+                    variant="outline"
+                    size="sm"
+                    className="text-xs border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white"
+                    onClick={() => setExpandedPackage(expandedPackage === 7 ? null : 7)}
+                  >
+                    {expandedPackage === 7 ? 'Hide Details' : 'View Details'}
+                  </Button>
+                  <Button 
+                    size="sm"
+                    className="text-xs bg-blue-600 hover:bg-blue-700 text-white"
+                    onClick={() => scrollToEnquiryForm('Snowbound Paradise')}
+                  >
+                    Book Now
+                  </Button>
                 </div>
+
                 <div className="grid grid-cols-2 gap-2">
-                  <Button size="sm" className="text-xs bg-green-600 hover:bg-green-700 text-white" onClick={() => window.open('https://wa.me/918679333354?text=Hi! I\'m interested in Snowbound Paradise Manali package', '_blank')}>Enquire Now</Button>
-                  <Button size="sm" className="text-xs bg-amber-600 hover:bg-amber-700 text-white">Plan Your Trip</Button>
+                  <Button 
+                    size="sm"
+                    className="text-xs bg-green-600 hover:bg-green-700 text-white"
+                    onClick={() => scrollToEnquiryForm('Snowbound Paradise')}
+                  >
+                    Enquire Now
+                  </Button>
+                  <Button 
+                    size="sm"
+                    className="text-xs bg-amber-600 hover:bg-amber-700 text-white"
+                    onClick={() => scrollToEnquiryForm('Snowbound Paradise')}
+                  >
+                    Plan Your Trip
+                  </Button>
                 </div>
+
                 <div className="mt-4 pt-3 border-t border-gray-200">
                   <p className="text-sm text-gray-600">Starting from <span className="text-lg font-bold text-green-600">₹16,999</span></p>
                 </div>
