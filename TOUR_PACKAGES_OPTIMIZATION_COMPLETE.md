@@ -275,7 +275,7 @@ All requirements have been implemented:
 ---
 
 **Next Steps:**
-1. Test on preview URL: https://hero-video-update.preview.emergentagent.com/tour-packages
+1. Test on preview URL: https://travel-view-details.preview.emergentagent.com/tour-packages
 2. Run PageSpeed Insights
 3. Verify all CTAs working
 4. Check mobile experience
