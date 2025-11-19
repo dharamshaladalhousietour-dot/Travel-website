@@ -124,11 +124,11 @@ const Hero = () => {
             loop 
             muted 
             playsInline
-            preload="metadata"
+            preload="none"
             className="absolute inset-0 w-full h-full object-cover"
             style={{ zIndex: 1 }}
-            loading="lazy"
-            poster={null}
+            width="1920"
+            height="1080"
           >
             <source 
               src="/assets/hero-video.mp4" 
