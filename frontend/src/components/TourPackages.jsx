@@ -1661,32 +1661,88 @@ const TourPackages = () => {
               </div>
             </div>
 
-            {/* Package 6 - Card Style */}
-            <div className="bg-white rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden group">
+            {/* Package 6 - Hill Station Trio */}
+            <div className="bg-white rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden">
               <div className="relative h-56 overflow-hidden">
-                <img src="https://images.pexels.com/photos/1562/italian-landscape-mountains-nature.jpg?auto=compress&cs=tinysrgb&w=600" alt="Shimla Manali Tour" loading="lazy" decoding="async" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
-                <div className="absolute top-3 left-3 bg-blue-600 text-white px-3 py-1 rounded-full text-xs font-semibold">Himachal</div>
+                <img 
+                  src="https://images.pexels.com/photos/1562/italian-landscape-mountains-nature.jpg?auto=compress&cs=tinysrgb&w=600" 
+                  alt="Shimla Manali Hill Station Tour"
+                  loading="lazy" decoding="async"
+                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                />
+                <div className="absolute top-3 left-3 bg-blue-600 text-white px-3 py-1 rounded-full text-xs font-semibold">5D/6N</div>
                 <div className="absolute top-3 right-3 bg-green-600 text-white px-4 py-2 rounded-lg font-bold shadow-lg">₹19,999</div>
               </div>
               <div className="p-4">
                 <div className="flex items-center justify-between mb-3">
-                  <div className="flex items-center gap-1"><span className="text-yellow-500">⭐</span><span className="text-sm font-semibold">4.9</span><span className="text-xs text-gray-500">(150+ reviews)</span></div>
-                  <div className="text-sm text-gray-600 font-medium">🕒 5N / 6D</div>
+                  <div className="flex items-center gap-1">
+                    <span className="text-yellow-500">⭐</span>
+                    <span className="text-sm font-semibold">4.9</span>
+                    <span className="text-xs text-gray-500">(150+ reviews)</span>
+                  </div>
+                  <div className="text-sm text-gray-600 font-medium">Hill Trio</div>
                 </div>
-                <h3 className="text-lg font-bold text-gray-900 mb-3 line-clamp-2">Romantic Highlands – Shimla & Manali</h3>
+                <h3 className="text-lg font-bold text-gray-900 mb-2">Hill Station Trio</h3>
+                <p className="text-sm text-gray-600 mb-3">Shimla • Manali • Solang</p>
                 <div className="flex flex-wrap gap-2 mb-4">
-                  <span className="text-xs bg-blue-100 text-blue-700 px-2 py-1 rounded-full">Shimla</span>
-                  <span className="text-xs bg-blue-100 text-blue-700 px-2 py-1 rounded-full">Manali</span>
+                  <span className="text-xs bg-blue-100 text-blue-700 px-2 py-1 rounded-full">Mall Road</span>
                   <span className="text-xs bg-blue-100 text-blue-700 px-2 py-1 rounded-full">Solang Valley</span>
+                  <span className="text-xs bg-blue-100 text-blue-700 px-2 py-1 rounded-full">Rohtang</span>
                 </div>
+
+                {/* Expandable Itinerary */}
+                {expandedPackage === 6 && (
+                  <div className="mb-4 p-3 bg-gray-50 rounded-lg text-xs max-h-60 overflow-y-auto">
+                    <p className="font-bold mb-2">Day-by-Day Itinerary:</p>
+                    <div className="space-y-2">
+                      <p><strong>Day 1:</strong> Arrival Shimla, check-in hotel. Evening Mall Road walk, Ridge, Scandal Point. Overnight Shimla.</p>
+                      <p><strong>Day 2:</strong> Shimla local - Kufri, Jakhoo Temple, Green Valley. Evening leisure. Overnight Shimla.</p>
+                      <p><strong>Day 3:</strong> Shimla to Manali (7-8 hours scenic drive via Kullu Valley). Check-in hotel. Evening Old Manali exploration. Overnight Manali.</p>
+                      <p><strong>Day 4:</strong> Manali local - Hadimba Temple, Manu Temple, Vashisht hot springs, Mall Road. Overnight Manali.</p>
+                      <p><strong>Day 5:</strong> Solang Valley excursion - adventure activities (paragliding, zorbing), Atal Tunnel, Sissu. Return evening. Overnight Manali.</p>
+                      <p><strong>Day 6:</strong> Morning free for shopping. Check-out and departure with wonderful Himachal memories.</p>
+                      <p className="mt-2 text-green-700"><strong>Hotels:</strong> 3-star hotels in Shimla & Manali</p>
+                      <p className="text-green-700"><strong>Includes:</strong> 5N accommodation, breakfast, all transfers, sightseeing</p>
+                      <p className="text-red-600"><strong>Excludes:</strong> Lunch/dinner, adventure activities, Rohtang Pass permit, entry fees</p>
+                    </div>
+                  </div>
+                )}
+
                 <div className="grid grid-cols-2 gap-2 mb-2">
-                  <Button variant="outline" size="sm" className="text-xs border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white">View Details</Button>
-                  <Button size="sm" className="text-xs bg-blue-600 hover:bg-blue-700 text-white" onClick={() => window.open('https://wa.me/918679333354?text=Hi! I\'m interested in Romantic Highlands package', '_blank')}>Send Enquiry</Button>
+                  <Button 
+                    variant="outline"
+                    size="sm"
+                    className="text-xs border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white"
+                    onClick={() => setExpandedPackage(expandedPackage === 6 ? null : 6)}
+                  >
+                    {expandedPackage === 6 ? 'Hide Details' : 'View Details'}
+                  </Button>
+                  <Button 
+                    size="sm"
+                    className="text-xs bg-blue-600 hover:bg-blue-700 text-white"
+                    onClick={() => scrollToEnquiryForm('Hill Station Trio')}
+                  >
+                    Book Now
+                  </Button>
                 </div>
+
                 <div className="grid grid-cols-2 gap-2">
-                  <Button size="sm" className="text-xs bg-green-600 hover:bg-green-700 text-white" onClick={() => window.open('https://wa.me/918679333354?text=Hi! I\'m interested in Romantic Highlands package', '_blank')}>Enquire Now</Button>
-                  <Button size="sm" className="text-xs bg-amber-600 hover:bg-amber-700 text-white">Plan Your Trip</Button>
+                  <Button 
+                    size="sm"
+                    className="text-xs bg-green-600 hover:bg-green-700 text-white"
+                    onClick={() => scrollToEnquiryForm('Hill Station Trio')}
+                  >
+                    Enquire Now
+                  </Button>
+                  <Button 
+                    size="sm"
+                    className="text-xs bg-amber-600 hover:bg-amber-700 text-white"
+                    onClick={() => scrollToEnquiryForm('Hill Station Trio')}
+                  >
+                    Plan Your Trip
+                  </Button>
                 </div>
+
                 <div className="mt-4 pt-3 border-t border-gray-200">
                   <p className="text-sm text-gray-600">Starting from <span className="text-lg font-bold text-green-600">₹19,999</span></p>
                 </div>
