@@ -149,14 +149,16 @@ const Home = ({ scrollTo }) => {
   return (
     <div className="min-h-screen">
       <Header />
-      <Hero />
-      <About />
-      <Services />
-      <Packages />
-      <Testimonials />
-      <Gallery />
-      <BlogPreview />
-      <Contact />
+      <Suspense fallback={<LoadingFallback />}>
+        <Hero />
+        <About />
+        <Services />
+        <Packages />
+        <Testimonials />
+        <Gallery />
+        <BlogPreview />
+        <Contact />
+      </Suspense>
       <Footer />
       <WhatsAppButton />
     </div>
