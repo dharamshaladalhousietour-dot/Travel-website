@@ -12,6 +12,17 @@ const TourPackages = () => {
   const [selectedRegion, setSelectedRegion] = useState('All');
   const [showEnquiryForm, setShowEnquiryForm] = useState(false);
   const [selectedPackage, setSelectedPackage] = useState(null);
+  const [expandedPackage, setExpandedPackage] = useState(null);
+  
+  // Scroll to enquiry form
+  const scrollToEnquiryForm = (packageName) => {
+    const formSection = document.getElementById('enquiry-form-section');
+    if (formSection) {
+      formSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      setShowEnquiryForm(true);
+      setSelectedPackage({ title: packageName });
+    }
+  };
   
   console.log('TourPackages render - showEnquiryForm:', showEnquiryForm, 'selectedPackage:', selectedPackage?.title);
 
