@@ -989,8 +989,8 @@ const TourPackages = () => {
                 className={`w-full h-48 object-cover transition-opacity duration-300 ${
                   imageLoaded ? "opacity-100" : "opacity-0"
                 }`}
-                width="800"
-                height="400"
+                width="600"
+                height="300"
               />
             ) : (
               <div 
