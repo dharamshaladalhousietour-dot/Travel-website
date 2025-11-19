@@ -1647,6 +1647,56 @@ const TourPackages = () => {
           </div>
         </div>
 
+        {/* Enquiry Form Section */}
+        <div id="enquiry-form-section" className="mt-16 bg-gradient-to-b from-blue-50 to-white rounded-2xl p-8 shadow-lg">
+          <div className="text-center mb-8">
+            <h3 className="text-3xl font-bold text-blue-900 mb-3">
+              {selectedPackage ? `Enquire About: ${selectedPackage.title}` : 'Book Your Dream Holiday'}
+            </h3>
+            <p className="text-lg text-gray-600">Fill in the form below and we'll get back to you within 1 hour</p>
+          </div>
+          
+          <div className="max-w-2xl mx-auto bg-white p-6 rounded-xl shadow-md">
+            <form className="space-y-4">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div>
+                  <label className="block text-sm font-medium text-gray-700 mb-2">Name *</label>
+                  <input type="text" required className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent" placeholder="Your name" />
+                </div>
+                <div>
+                  <label className="block text-sm font-medium text-gray-700 mb-2">Phone *</label>
+                  <input type="tel" required className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent" placeholder="+91 9999999999" />
+                </div>
+              </div>
+              
+              <div>
+                <label className="block text-sm font-medium text-gray-700 mb-2">Email</label>
+                <input type="email" className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent" placeholder="your@email.com" />
+              </div>
+              
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div>
+                  <label className="block text-sm font-medium text-gray-700 mb-2">Travel Date</label>
+                  <input type="date" className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent" />
+                </div>
+                <div>
+                  <label className="block text-sm font-medium text-gray-700 mb-2">No. of Travelers</label>
+                  <input type="number" min="1" className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent" placeholder="2" />
+                </div>
+              </div>
+              
+              <div>
+                <label className="block text-sm font-medium text-gray-700 mb-2">Message</label>
+                <textarea rows="3" className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent" placeholder="Any specific requirements..."></textarea>
+              </div>
+              
+              <Button type="submit" size="lg" className="w-full bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white">
+                📩 Submit Enquiry
+              </Button>
+            </form>
+          </div>
+        </div>
+
         {/* CTA Section */}
         <div className="text-center mt-16 bg-gradient-to-r from-blue-900 to-blue-800 rounded-2xl p-12 text-white">
           <h3 className="text-3xl font-bold mb-4">
@@ -1657,10 +1707,12 @@ const TourPackages = () => {
             for a personalized tour package.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" className="bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-600 hover:to-amber-700 text-white px-8">
+            <Button size="lg" className="bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-600 hover:to-amber-700 text-white px-8"
+              onClick={() => scrollToEnquiryForm('Custom Package')}>
               Custom Package Request
             </Button>
-            <Button size="lg" variant="outline" className="border-2 border-white text-white hover:bg-white hover:text-blue-900 px-8">
+            <Button size="lg" variant="outline" className="border-2 border-white text-white hover:bg-white hover:text-blue-900 px-8"
+              onClick={() => window.open('https://wa.me/918679333354?text=Hi! I want to talk to a travel expert', '_blank')}>
               Talk to Expert
             </Button>
           </div>
