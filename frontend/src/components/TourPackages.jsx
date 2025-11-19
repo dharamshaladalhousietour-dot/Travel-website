@@ -1366,11 +1366,10 @@ const TourPackages = () => {
                     <span className="text-sm font-semibold">4.7</span>
                     <span className="text-xs text-gray-500">(85+ reviews)</span>
                   </div>
-                  <div className="text-sm text-gray-600 font-medium">🕒 3N / 4D</div>
+                  <div className="text-sm text-gray-600 font-medium">Dharamshala</div>
                 </div>
-                <h3 className="text-lg font-bold text-gray-900 mb-3 line-clamp-2">
-                  Mystic Hills Retreat – Dharamshala
-                </h3>
+                <h3 className="text-lg font-bold text-gray-900 mb-2">Mystic Hills Retreat</h3>
+                <p className="text-sm text-gray-600 mb-3">Dharamshala Spiritual Tour</p>
                 <div className="flex flex-wrap gap-2 mb-4">
                   <span className="text-xs bg-blue-100 text-blue-700 px-2 py-1 rounded-full">Dalai Lama Temple</span>
                   <span className="text-xs bg-blue-100 text-blue-700 px-2 py-1 rounded-full">Bhagsu Waterfall</span>
