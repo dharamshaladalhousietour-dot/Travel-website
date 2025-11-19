@@ -181,7 +181,9 @@ const TourPackagesPage = () => (
 const EventsWeddingsPage = () => (
   <div className="min-h-screen">
     <Header />
-    <EventsWeddings />
+    <Suspense fallback={<LoadingFallback />}>
+      <EventsWeddings />
+    </Suspense>
     <Footer />
     <WhatsAppButton />
   </div>
