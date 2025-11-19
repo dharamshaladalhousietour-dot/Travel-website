@@ -101,30 +101,39 @@
 // export default App;
 
 
-import React from "react";
+import React, { Suspense, lazy } from "react";
 import "./App.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Header from "./components/Header";
-import Hero from "./components/Hero";
-import About from "./components/About";
-import Services from "./components/Services";
-import Packages from "./components/Packages";
-import TourPackages from "./components/TourPackages";
-import EventsWeddings from "./components/EventsWeddings";
-import Testimonials from "./components/Testimonials";
-import Gallery from "./components/Gallery";
-import Blog from "./components/Blog";
-import BlogPost from "./components/BlogPost";
-import BlogPreview from "./components/BlogPreview";
-import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import WhatsAppButton from "./components/WhatsAppButton";
-import TermsConditions from "./components/TermsConditions";
-import RefundPolicy from "./components/RefundPolicy";
-import TravelInsurance from "./components/TravelInsurance";
-import PackageDetail from "./components/PackageDetail";
-import NotFound from "./components/NotFound";
 import ContentProtection from "./components/ContentProtection";
+
+// Lazy load components for better code splitting
+const Hero = lazy(() => import("./components/Hero"));
+const About = lazy(() => import("./components/About"));
+const Services = lazy(() => import("./components/Services"));
+const Packages = lazy(() => import("./components/Packages"));
+const TourPackages = lazy(() => import("./components/TourPackages"));
+const EventsWeddings = lazy(() => import("./components/EventsWeddings"));
+const Testimonials = lazy(() => import("./components/Testimonials"));
+const Gallery = lazy(() => import("./components/Gallery"));
+const Blog = lazy(() => import("./components/Blog"));
+const BlogPost = lazy(() => import("./components/BlogPost"));
+const BlogPreview = lazy(() => import("./components/BlogPreview"));
+const Contact = lazy(() => import("./components/Contact"));
+const TermsConditions = lazy(() => import("./components/TermsConditions"));
+const RefundPolicy = lazy(() => import("./components/RefundPolicy"));
+const TravelInsurance = lazy(() => import("./components/TravelInsurance"));
+const PackageDetail = lazy(() => import("./components/PackageDetail"));
+const NotFound = lazy(() => import("./components/NotFound"));
+
+// Loading component
+const LoadingFallback = () => (
+  <div className="flex items-center justify-center min-h-screen">
+    <div className="animate-spin rounded-full h-12 w-12 border-t-2 border-b-2 border-blue-600"></div>
+  </div>
+);
 
 // Home Component with optional scrollTo section
 const Home = ({ scrollTo }) => {
