@@ -1373,7 +1373,7 @@ const TourPackages = () => {
                 <div className="flex flex-wrap gap-2 mb-4">
                   <span className="text-xs bg-blue-100 text-blue-700 px-2 py-1 rounded-full">Dalai Lama Temple</span>
                   <span className="text-xs bg-blue-100 text-blue-700 px-2 py-1 rounded-full">Bhagsu Waterfall</span>
-                  <span className="text-xs bg-blue-100 text-blue-700 px-2 py-1 rounded-full">Mcleodganj</span>
+                  <span className="text-xs bg-blue-100 text-blue-700 px-2 py-1 rounded-full">Dal Lake</span>
                 </div>
                 <div className="grid grid-cols-2 gap-2 mb-2">
                   <Button variant="outline" size="sm" className="text-xs border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white">View Details</Button>
