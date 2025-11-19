@@ -1836,32 +1836,86 @@ const TourPackages = () => {
               </div>
             </div>
 
-            {/* Package 8 - Card Style */}
-            <div className="bg-white rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden group">
+            {/* Package 8 - Sacred Bliss Trail */}
+            <div className="bg-white rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden">
               <div className="relative h-56 overflow-hidden">
-                <img src="https://images.pexels.com/photos/417074/pexels-photo-417074.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Dharamshala Palampur Tour" loading="lazy" decoding="async" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
-                <div className="absolute top-3 left-3 bg-blue-600 text-white px-3 py-1 rounded-full text-xs font-semibold">Himachal</div>
+                <img 
+                  src="https://images.pexels.com/photos/417074/pexels-photo-417074.jpeg?auto=compress&cs=tinysrgb&w=600" 
+                  alt="Sacred Bliss Dharamshala Palampur Tour"
+                  loading="lazy" decoding="async"
+                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                />
+                <div className="absolute top-3 left-3 bg-blue-600 text-white px-3 py-1 rounded-full text-xs font-semibold">3D/4N</div>
                 <div className="absolute top-3 right-3 bg-green-600 text-white px-4 py-2 rounded-lg font-bold shadow-lg">₹13,999</div>
               </div>
               <div className="p-4">
                 <div className="flex items-center justify-between mb-3">
-                  <div className="flex items-center gap-1"><span className="text-yellow-500">⭐</span><span className="text-sm font-semibold">4.7</span><span className="text-xs text-gray-500">(90+ reviews)</span></div>
-                  <div className="text-sm text-gray-600 font-medium">🕒 3N / 4D</div>
+                  <div className="flex items-center gap-1">
+                    <span className="text-yellow-500">⭐</span>
+                    <span className="text-sm font-semibold">4.7</span>
+                    <span className="text-xs text-gray-500">(90+ reviews)</span>
+                  </div>
+                  <div className="text-sm text-gray-600 font-medium">Tea Country</div>
                 </div>
-                <h3 className="text-lg font-bold text-gray-900 mb-3 line-clamp-2">Sacred Bliss Trail – Dharamshala & Palampur</h3>
+                <h3 className="text-lg font-bold text-gray-900 mb-2">Sacred Bliss Trail</h3>
+                <p className="text-sm text-gray-600 mb-3">Dharamshala • Palampur • Tea Gardens</p>
                 <div className="flex flex-wrap gap-2 mb-4">
                   <span className="text-xs bg-blue-100 text-blue-700 px-2 py-1 rounded-full">Norbulingka</span>
                   <span className="text-xs bg-blue-100 text-blue-700 px-2 py-1 rounded-full">Tea Gardens</span>
                   <span className="text-xs bg-blue-100 text-blue-700 px-2 py-1 rounded-full">Chamunda</span>
                 </div>
+
+                {/* Expandable Itinerary */}
+                {expandedPackage === 8 && (
+                  <div className="mb-4 p-3 bg-gray-50 rounded-lg text-xs max-h-60 overflow-y-auto">
+                    <p className="font-bold mb-2">Day-by-Day Itinerary:</p>
+                    <div className="space-y-2">
+                      <p><strong>Day 1:</strong> Arrival Dharamshala, check-in hotel. Evening visit Dal Lake, St. John Church. Overnight Dharamshala.</p>
+                      <p><strong>Day 2:</strong> McLeodganj sightseeing - Dalai Lama Temple, Norbulingka Institute (Tibetan arts), Bhagsunag Temple and Waterfall, Tibetan Museum. Evening leisure. Overnight Dharamshala.</p>
+                      <p><strong>Day 3:</strong> Dharamshala to Palampur. Visit Andretta Artists Village, pottery workshop. Palampur tea gardens walk, tea tasting. Chamunda Devi Temple. Overnight Palampur.</p>
+                      <p><strong>Day 4:</strong> Morning Neugal Khad (picnic spot), Saurabh Van Vihar. Departure from Palampur with serene memories of tea country.</p>
+                      <p className="mt-2 text-green-700"><strong>Hotels:</strong> 3-star hotels in Dharamshala & Palampur</p>
+                      <p className="text-green-700"><strong>Includes:</strong> 3N accommodation, breakfast, all transfers, sightseeing, tea garden tour</p>
+                      <p className="text-red-600"><strong>Excludes:</strong> Lunch/dinner, workshop charges, entry fees, personal expenses</p>
+                    </div>
+                  </div>
+                )}
+
                 <div className="grid grid-cols-2 gap-2 mb-2">
-                  <Button variant="outline" size="sm" className="text-xs border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white">View Details</Button>
-                  <Button size="sm" className="text-xs bg-blue-600 hover:bg-blue-700 text-white" onClick={() => window.open('https://wa.me/918679333354?text=Hi! I\'m interested in Sacred Bliss Trail package', '_blank')}>Send Enquiry</Button>
+                  <Button 
+                    variant="outline"
+                    size="sm"
+                    className="text-xs border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white"
+                    onClick={() => setExpandedPackage(expandedPackage === 8 ? null : 8)}
+                  >
+                    {expandedPackage === 8 ? 'Hide Details' : 'View Details'}
+                  </Button>
+                  <Button 
+                    size="sm"
+                    className="text-xs bg-blue-600 hover:bg-blue-700 text-white"
+                    onClick={() => scrollToEnquiryForm('Sacred Bliss Trail')}
+                  >
+                    Book Now
+                  </Button>
                 </div>
+
                 <div className="grid grid-cols-2 gap-2">
-                  <Button size="sm" className="text-xs bg-green-600 hover:bg-green-700 text-white" onClick={() => window.open('https://wa.me/918679333354?text=Hi! I\'m interested in Sacred Bliss Trail package', '_blank')}>Enquire Now</Button>
-                  <Button size="sm" className="text-xs bg-amber-600 hover:bg-amber-700 text-white">Plan Your Trip</Button>
+                  <Button 
+                    size="sm"
+                    className="text-xs bg-green-600 hover:bg-green-700 text-white"
+                    onClick={() => scrollToEnquiryForm('Sacred Bliss Trail')}
+                  >
+                    Enquire Now
+                  </Button>
+                  <Button 
+                    size="sm"
+                    className="text-xs bg-amber-600 hover:bg-amber-700 text-white"
+                    onClick={() => scrollToEnquiryForm('Sacred Bliss Trail')}
+                  >
+                    Plan Your Trip
+                  </Button>
                 </div>
+
                 <div className="mt-4 pt-3 border-t border-gray-200">
                   <p className="text-sm text-gray-600">Starting from <span className="text-lg font-bold text-green-600">₹13,999</span></p>
                 </div>
