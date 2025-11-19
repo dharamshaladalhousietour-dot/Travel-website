@@ -1352,7 +1352,8 @@ const TourPackages = () => {
               <div className="relative h-56 overflow-hidden">
                 <img 
                   src="https://images.pexels.com/photos/1365425/pexels-photo-1365425.jpeg?auto=compress&cs=tinysrgb&w=600" 
-                  alt="Dharamshala Tour Package"
+                  alt="Mystic Hills Retreat Dharamshala Tour"
+                  loading="lazy" decoding="async"
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                 />
                 <div className="absolute top-3 left-3 bg-blue-600 text-white px-3 py-1 rounded-full text-xs font-semibold">Himachal</div>
