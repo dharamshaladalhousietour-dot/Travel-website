@@ -1375,6 +1375,20 @@ const TourPackages = () => {
                   <span className="text-xs bg-blue-100 text-blue-700 px-2 py-1 rounded-full">Bhagsu Waterfall</span>
                   <span className="text-xs bg-blue-100 text-blue-700 px-2 py-1 rounded-full">Dal Lake</span>
                 </div>
+                {expandedPackage === 2 && (
+                  <div className="mb-4 p-3 bg-gray-50 rounded-lg text-xs max-h-60 overflow-y-auto">
+                    <p className="font-bold mb-2">Day-by-Day Itinerary:</p>
+                    <div className="space-y-2">
+                      <p><strong>Day 1:</strong> Arrival Dharamshala, Naddi Sunset Point (Sky Heaven Resort)</p>
+                      <p><strong>Day 2:</strong> Dalai Lama Temple, Naddi Village, Dal Lake, Nature Walk</p>
+                      <p><strong>Day 3:</strong> McLeodganj Market, Bhagsu Waterfall, Monastery, Café Street</p>
+                      <p><strong>Day 4:</strong> Departure</p>
+                      <p className="mt-2"><strong>Hotels:</strong> Sky Heaven Resort / Dhauladhar / Triund Heights</p>
+                      <p className="text-green-700"><strong>Includes:</strong> Hotel, cab, breakfast</p>
+                      <p className="text-red-600"><strong>Excludes:</strong> Entry fees, lunch/dinner</p>
+                    </div>
+                  </div>
+                )}
                 <div className="grid grid-cols-2 gap-2 mb-2">
                   <Button variant="outline" size="sm" className="text-xs border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white">View Details</Button>
                   <Button size="sm" className="text-xs bg-blue-600 hover:bg-blue-700 text-white" onClick={() => window.open('https://wa.me/918679333354?text=Hi! I\'m interested in Mystic Hills Retreat package', '_blank')}>Send Enquiry</Button>
