@@ -2007,32 +2007,90 @@ const TourPackages = () => {
               </div>
             </div>
 
-            {/* Package 10 - Card Style */}
-            <div className="bg-white rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden group">
+            {/* Package 10 - The Himalayan Frontier */}
+            <div className="bg-white rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden">
               <div className="relative h-56 overflow-hidden">
-                <img src="https://images.pexels.com/photos/1660995/pexels-photo-1660995.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Spiti Valley Tour Package" loading="lazy" decoding="async" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
-                <div className="absolute top-3 left-3 bg-blue-600 text-white px-3 py-1 rounded-full text-xs font-semibold">Himachal</div>
+                <img 
+                  src="https://images.pexels.com/photos/1660995/pexels-photo-1660995.jpeg?auto=compress&cs=tinysrgb&w=600" 
+                  alt="Spiti Valley Himalayan Frontier Tour"
+                  loading="lazy" decoding="async"
+                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                />
+                <div className="absolute top-3 left-3 bg-blue-600 text-white px-3 py-1 rounded-full text-xs font-semibold">7D/8N</div>
                 <div className="absolute top-3 right-3 bg-green-600 text-white px-4 py-2 rounded-lg font-bold shadow-lg">₹29,999</div>
               </div>
               <div className="p-4">
                 <div className="flex items-center justify-between mb-3">
-                  <div className="flex items-center gap-1"><span className="text-yellow-500">⭐</span><span className="text-sm font-semibold">4.9</span><span className="text-xs text-gray-500">(180+ reviews)</span></div>
-                  <div className="text-sm text-gray-600 font-medium">🕒 7N / 8D</div>
+                  <div className="flex items-center gap-1">
+                    <span className="text-yellow-500">⭐</span>
+                    <span className="text-sm font-semibold">4.9</span>
+                    <span className="text-xs text-gray-500">(180+ reviews)</span>
+                  </div>
+                  <div className="text-sm text-gray-600 font-medium">Spiti Valley</div>
                 </div>
-                <h3 className="text-lg font-bold text-gray-900 mb-3 line-clamp-2">The Himalayan Frontier – Spiti Valley</h3>
+                <h3 className="text-lg font-bold text-gray-900 mb-2">The Himalayan Frontier</h3>
+                <p className="text-sm text-gray-600 mb-3">Spiti • Kaza • Chandratal</p>
                 <div className="flex flex-wrap gap-2 mb-4">
                   <span className="text-xs bg-blue-100 text-blue-700 px-2 py-1 rounded-full">Kaza</span>
                   <span className="text-xs bg-blue-100 text-blue-700 px-2 py-1 rounded-full">Chandratal</span>
                   <span className="text-xs bg-blue-100 text-blue-700 px-2 py-1 rounded-full">Key Monastery</span>
                 </div>
+
+                {/* Expandable Itinerary */}
+                {expandedPackage === 10 && (
+                  <div className="mb-4 p-3 bg-gray-50 rounded-lg text-xs max-h-60 overflow-y-auto">
+                    <p className="font-bold mb-2">Day-by-Day Itinerary:</p>
+                    <div className="space-y-2">
+                      <p><strong>Day 1:</strong> Manali to Kaza via Rohtang Pass/Atal Tunnel (7-8 hours). Acclimatization at Kaza (3,650m). Overnight Kaza.</p>
+                      <p><strong>Day 2:</strong> Kaza local - Key Monastery (largest in Spiti), Kibber Village (one of highest inhabited), Chicham Bridge (Asia's highest). Overnight Kaza.</p>
+                      <p><strong>Day 3:</strong> Kaza to Tabo (ancient monastery, 996 AD), Dhankar Monastery (cliff-top monastery). Return Kaza. Overnight Kaza.</p>
+                      <p><strong>Day 4:</strong> Kaza to Pin Valley - Pin Valley National Park, Mud Village, last village. Return Kaza evening. Overnight Kaza.</p>
+                      <p><strong>Day 5:</strong> Kaza to Chandratal Lake (Moon Lake) via Kunzum Pass. Camping at Chandratal (4,300m), stargazing. Overnight camps.</p>
+                      <p><strong>Day 6:</strong> Chandratal sunrise, return to Manali via Rohtang Pass. Check-in Manali hotel. Overnight Manali.</p>
+                      <p><strong>Day 7:</strong> Manali local sightseeing, shopping, leisure. Overnight Manali.</p>
+                      <p><strong>Day 8:</strong> Departure from Manali with unforgettable Spiti memories.</p>
+                      <p className="mt-2 text-green-700"><strong>Hotels:</strong> Basic guesthouses in Kaza, camping at Chandratal, hotel in Manali</p>
+                      <p className="text-green-700"><strong>Includes:</strong> 7N accommodation, breakfast, all transfers by Tempo Traveller/SUV, inner line permits, camping gear</p>
+                      <p className="text-red-600"><strong>Excludes:</strong> Lunch/dinner, entry fees, personal gear, high altitude medication</p>
+                    </div>
+                  </div>
+                )}
+
                 <div className="grid grid-cols-2 gap-2 mb-2">
-                  <Button variant="outline" size="sm" className="text-xs border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white">View Details</Button>
-                  <Button size="sm" className="text-xs bg-blue-600 hover:bg-blue-700 text-white" onClick={() => window.open('https://wa.me/918679333354?text=Hi! I\'m interested in The Himalayan Frontier Spiti Valley package', '_blank')}>Send Enquiry</Button>
+                  <Button 
+                    variant="outline"
+                    size="sm"
+                    className="text-xs border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white"
+                    onClick={() => setExpandedPackage(expandedPackage === 10 ? null : 10)}
+                  >
+                    {expandedPackage === 10 ? 'Hide Details' : 'View Details'}
+                  </Button>
+                  <Button 
+                    size="sm"
+                    className="text-xs bg-blue-600 hover:bg-blue-700 text-white"
+                    onClick={() => scrollToEnquiryForm('The Himalayan Frontier')}
+                  >
+                    Book Now
+                  </Button>
                 </div>
+
                 <div className="grid grid-cols-2 gap-2">
-                  <Button size="sm" className="text-xs bg-green-600 hover:bg-green-700 text-white" onClick={() => window.open('https://wa.me/918679333354?text=Hi! I\'m interested in The Himalayan Frontier Spiti Valley package', '_blank')}>Enquire Now</Button>
-                  <Button size="sm" className="text-xs bg-amber-600 hover:bg-amber-700 text-white">Plan Your Trip</Button>
+                  <Button 
+                    size="sm"
+                    className="text-xs bg-green-600 hover:bg-green-700 text-white"
+                    onClick={() => scrollToEnquiryForm('The Himalayan Frontier')}
+                  >
+                    Enquire Now
+                  </Button>
+                  <Button 
+                    size="sm"
+                    className="text-xs bg-amber-600 hover:bg-amber-700 text-white"
+                    onClick={() => scrollToEnquiryForm('The Himalayan Frontier')}
+                  >
+                    Plan Your Trip
+                  </Button>
                 </div>
+
                 <div className="mt-4 pt-3 border-t border-gray-200">
                   <p className="text-sm text-gray-600">Starting from <span className="text-lg font-bold text-green-600">₹29,999</span></p>
                 </div>
