@@ -107,8 +107,8 @@ const Hero = () => {
             className="w-full h-full object-cover"
             loading="eager"
             fetchpriority="high"
-            width="1600"
-            height="900"
+            width="1200"
+            height="1599"
           />
         </picture>
         
