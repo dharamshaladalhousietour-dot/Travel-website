@@ -93,18 +93,6 @@ const Packages = () => {
                     </Badge>
                   </div>
                   
-                  {/* Favorite Button */}
-                  <button 
-                    onClick={() => toggleFavorite(pkg.id)}
-                    className="absolute top-4 right-4 w-10 h-10 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center transition-all duration-300 hover:bg-white/30"
-                  >
-                    <Heart 
-                      className={`h-5 w-5 transition-colors ${
-                        favorites.has(pkg.id) ? 'text-red-500 fill-current' : 'text-white'
-                      }`} 
-                    />
-                  </button>
-                  
                   {/* Price Badge */}
                   <div className="absolute bottom-4 right-4">
                     <div className="bg-white rounded-lg p-3 shadow-lg">
