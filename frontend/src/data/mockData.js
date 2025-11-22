@@ -182,6 +182,43 @@ export const mockBlogPosts = [
 ];
 
 export const mockGalleryImages = [
+  // Featured Hero Slider Images
+  {
+    id: 'hero1',
+    url: "https://customer-assets.emergentagent.com/job_47eae915-c1b0-4770-bc09-eb4cfcef3060/artifacts/43uvop3p_IMG_1580.jpeg",
+    category: "Weddings",
+    title: "Garden Wedding Decor",
+    description: "Beautiful outdoor wedding setup with elegant decorations"
+  },
+  {
+    id: 'hero2',
+    url: "https://customer-assets.emergentagent.com/job_47eae915-c1b0-4770-bc09-eb4cfcef3060/artifacts/xf3etlp5_IMG_1589.jpeg",
+    category: "Weddings",
+    title: "Elegant Chandelier Setup",
+    description: "Stunning indoor venue with chandelier centerpiece"
+  },
+  {
+    id: 'hero3',
+    url: "https://customer-assets.emergentagent.com/job_47eae915-c1b0-4770-bc09-eb4cfcef3060/artifacts/jcmcgh65_IMG_1581.jpeg",
+    category: "Weddings",
+    title: "Premium Wedding Venue",
+    description: "Luxurious wedding venue setup and decoration"
+  },
+  {
+    id: 'hero4',
+    url: "https://customer-assets.emergentagent.com/job_47eae915-c1b0-4770-bc09-eb4cfcef3060/artifacts/fd0tumop_IMG_1586.jpeg",
+    category: "Weddings",
+    title: "Wedding Venue Details",
+    description: "Detailed view of wedding venue arrangements"
+  },
+  {
+    id: 'hero5',
+    url: "https://customer-assets.emergentagent.com/job_47eae915-c1b0-4770-bc09-eb4cfcef3060/artifacts/a9phrbvf_IMG_1582.jpeg",
+    category: "Weddings",
+    title: "Floral Wedding Decorations",
+    description: "Exquisite floral arrangements for weddings"
+  },
+  
   // Wedding Portfolio Images
   {
     id: 1,
