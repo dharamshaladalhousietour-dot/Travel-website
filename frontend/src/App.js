@@ -108,6 +108,7 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import WhatsAppButton from "./components/WhatsAppButton";
 import ContentProtection from "./components/ContentProtection";
+import PayNowButton from "./components/PayNowButton";
 
 // Lazy load components for better code splitting
 const Hero = lazy(() => import("./components/Hero"));
