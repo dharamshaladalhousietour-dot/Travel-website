@@ -169,7 +169,7 @@ const Packages = () => {
                         <div className="p-2 bg-green-50 rounded-lg">
                           <h5 className="text-xs font-semibold text-green-800 mb-1">✅ Inclusions</h5>
                           <ul className="text-xs text-gray-600 space-y-1">
-                            {pkg.inclusions.slice(0, 3).map((item, idx) => (
+                            {pkg.inclusions.map((item, idx) => (
                               <li key={idx}>• {item}</li>
                             ))}
                           </ul>
@@ -179,7 +179,7 @@ const Packages = () => {
                         <div className="p-2 bg-red-50 rounded-lg">
                           <h5 className="text-xs font-semibold text-red-800 mb-1">❌ Exclusions</h5>
                           <ul className="text-xs text-gray-600 space-y-1">
-                            {pkg.exclusions.slice(0, 3).map((item, idx) => (
+                            {pkg.exclusions.map((item, idx) => (
                               <li key={idx}>• {item}</li>
                             ))}
                           </ul>
