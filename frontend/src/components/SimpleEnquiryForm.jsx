@@ -114,6 +114,9 @@ const SimpleEnquiryForm = ({ packageTitle = "", onClose = null }) => {
         setSubmitStatus('success');
         console.log('✅ Enquiry submitted successfully to backend');
         
+        // Show thank you popup
+        setShowThankYouPopup(true);
+        
         // Send WhatsApp message with full details
         const whatsappMessage = encodeURIComponent(formattedMessage);
         const whatsappUrl = `https://wa.me/918679333355?text=${whatsappMessage}`;
@@ -122,10 +125,10 @@ const SimpleEnquiryForm = ({ packageTitle = "", onClose = null }) => {
         window.open(whatsappUrl, '_blank');
         console.log('✅ WhatsApp message sent');
         
-        // Close modal after 3 seconds
+        // Close modal after popup closes (4 seconds)
         setTimeout(() => {
           if (onClose) onClose();
-        }, 3000);
+        }, 4500);
         
       } else {
         throw new Error('Failed to submit enquiry to backend');
