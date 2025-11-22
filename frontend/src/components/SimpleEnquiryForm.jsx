@@ -25,6 +25,7 @@ const SimpleEnquiryForm = ({ packageTitle = "", onClose = null }) => {
 
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitStatus, setSubmitStatus] = useState(null);
+  const [showThankYouPopup, setShowThankYouPopup] = useState(false);
 
   const handleInputChange = (field, value) => {
     setFormData(prev => ({
