@@ -127,7 +127,7 @@ const Packages = () => {
                   </p>
                   
                   {/* Highlights */}
-                  <div className="space-y-2 mb-6">
+                  <div className="space-y-2 mb-4">
                     <div className="flex flex-wrap gap-2">
                       {pkg.highlights.map((highlight, index) => (
                         <Badge key={index} variant="secondary" className="text-xs bg-blue-50 text-blue-700 border border-blue-200">
@@ -136,11 +136,83 @@ const Packages = () => {
                       ))}
                     </div>
                   </div>
+
+                  {/* Hotels */}
+                  {pkg.hotels && (
+                    <div className="mb-4 p-3 bg-gray-50 rounded-lg">
+                      <h4 className="font-semibold text-sm text-gray-800 mb-2">🏨 Hotels (3★)</h4>
+                      {Object.entries(pkg.hotels).map(([city, hotel], index) => (
+                        <p key={index} className="text-xs text-gray-600">
+                          <span className="font-medium capitalize">{city}:</span> {hotel}
+                        </p>
+                      ))}
+                    </div>
+                  )}
+
+                  {/* Expandable Itinerary */}
+                  {pkg.itinerary && expandedItinerary === pkg.id && (
+                    <div className="mb-4 p-3 bg-blue-50 rounded-lg max-h-64 overflow-y-auto">
+                      <h4 className="font-semibold text-sm text-gray-800 mb-2">📅 Day-wise Itinerary</h4>
+                      {pkg.itinerary.map((day, index) => (
+                        <div key={index} className="mb-2">
+                          <p className="text-xs font-semibold text-blue-900">Day {day.day}: {day.title}</p>
+                          <p className="text-xs text-gray-600">{day.description}</p>
+                        </div>
+                      ))}
+                    </div>
+                  )}
+
+                  {/* Inclusions & Exclusions */}
+                  {expandedItinerary === pkg.id && (
+                    <div className="mb-4 grid grid-cols-2 gap-2">
+                      {pkg.inclusions && (
+                        <div className="p-2 bg-green-50 rounded-lg">
+                          <h5 className="text-xs font-semibold text-green-800 mb-1">✅ Inclusions</h5>
+                          <ul className="text-xs text-gray-600 space-y-1">
+                            {pkg.inclusions.slice(0, 3).map((item, idx) => (
+                              <li key={idx}>• {item}</li>
+                            ))}
+                          </ul>
+                        </div>
+                      )}
+                      {pkg.exclusions && (
+                        <div className="p-2 bg-red-50 rounded-lg">
+                          <h5 className="text-xs font-semibold text-red-800 mb-1">❌ Exclusions</h5>
+                          <ul className="text-xs text-gray-600 space-y-1">
+                            {pkg.exclusions.slice(0, 3).map((item, idx) => (
+                              <li key={idx}>• {item}</li>
+                            ))}
+                          </ul>
+                        </div>
+                      )}
+                    </div>
+                  )}
                   
-                  {/* CTA Button */}
-                  <Button className="w-full bg-gradient-to-r from-blue-900 to-blue-800 hover:from-blue-800 hover:to-blue-700 text-white group-hover:shadow-lg transition-all duration-300">
-                    View Details
-                  </Button>
+                  {/* 3 Action Buttons */}
+                  <div className="grid grid-cols-3 gap-2">
+                    <Button 
+                      variant="outline"
+                      size="sm"
+                      className="text-xs border-blue-600 text-blue-600 hover:bg-blue-50"
+                      onClick={() => window.location.href = `/package/${pkg.title.toLowerCase().replace(/\s+/g, '-')}`}
+                    >
+                      View Details
+                    </Button>
+                    <Button 
+                      size="sm"
+                      className="text-xs bg-green-600 hover:bg-green-700 text-white"
+                      onClick={() => window.location.href = 'tel:+918679333355'}
+                    >
+                      Call Now
+                    </Button>
+                    <Button 
+                      size="sm"
+                      className="text-xs bg-blue-600 hover:bg-blue-700 text-white"
+                      onClick={() => toggleItinerary(pkg.id)}
+                    >
+                      {expandedItinerary === pkg.id ? 'Hide' : 'View'} Itinerary
+                    </Button>
+                  </div>
                 </CardContent>
               </div>
             </Card>
