@@ -227,7 +227,40 @@ export const mockPackages = [
     reviews: 203,
     image: "https://images.unsplash.com/photo-1708186320869-0a527e67023d",
     category: "Luxury",
-    highlights: ["Private Helicopter", "Luxury Resorts", "Adventure Sports", "Cultural Experiences"]
+    highlights: ["Private Helicopter", "Luxury Resorts", "Adventure Sports", "Cultural Experiences"],
+    hotels: {
+      shimla: "Hotel Willow Banks / Clarkes Hotel",
+      manali: "Manu Allaya Resort / Span Resort",
+      dharamshala: "Hyatt Regency / Fortune Park Moksha"
+    },
+    itinerary: [
+      { day: 1, title: "Arrival Shimla", description: "Delhi to Shimla → Check-in luxury resort → Evening Mall Road & Ridge walk" },
+      { day: 2, title: "Shimla Heritage Tour", description: "Viceregal Lodge → Jakhoo Temple → Annandale → Christ Church → Shopping" },
+      { day: 3, title: "Shimla to Manali", description: "Scenic drive to Manali via Kullu Valley → Check-in premium resort → Leisure evening" },
+      { day: 4, title: "Manali Local Sightseeing", description: "Hadimba Temple → Manu Temple → Vashisht Hot Springs → Tibetan Monastery → Old Manali" },
+      { day: 5, title: "Solang Valley Adventure", description: "Full day Solang Valley → Paragliding, Zorbing, Cable Car (optional activities)" },
+      { day: 6, title: "Atal Tunnel & Sissu", description: "Atal Tunnel excursion → Sissu Waterfall → Lahaul Valley views → Return Manali" },
+      { day: 7, title: "Manali to Dharamshala", description: "Drive to Dharamshala → Check-in luxury hotel → Evening at leisure in McLeod Ganj" },
+      { day: 8, title: "Dharamshala Spiritual Tour", description: "Dalai Lama Temple → Norbulingka Institute → Bhagsu Waterfall → Tibetan markets" },
+      { day: 9, title: "Kangra Valley & Palampur", description: "Kangra Fort → Tea gardens → Baijnath Temple → Return Dharamshala" },
+      { day: 10, title: "Departure", description: "Leisure morning → Transfer to airport/railway station for onward journey" }
+    ],
+    inclusions: [
+      "9 Nights stay in 3★ deluxe/4★ hotels",
+      "All meals (Breakfast, Lunch & Dinner)",
+      "Private luxury vehicle for entire circuit",
+      "Professional tour guide",
+      "All sightseeing as per itinerary",
+      "Driver allowance, parking, tolls, permits"
+    ],
+    exclusions: [
+      "Airfare / train tickets",
+      "Adventure activity charges (Paragliding, Zorbing)",
+      "Helicopter ride (can be arranged on request)",
+      "Personal expenses & tips",
+      "Monument entrance fees",
+      "Anything not mentioned in inclusions"
+    ]
   }
 ];
 
