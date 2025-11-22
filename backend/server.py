@@ -376,6 +376,31 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
+@app.on_event("startup")
+async def startup_db_client():
+    """Test MongoDB connection on startup"""
+    try:
+        # Test the connection by running a simple command
+        await client.admin.command('ping')
+        logger.info(f"✅ Successfully connected to MongoDB: {db_name}")
+        
+        # Log connection type
+        if 'mongodb.net' in mongo_url or 'mongodb+srv' in mongo_url:
+            logger.info("🌐 Connected to MongoDB Atlas (Cloud)")
+        else:
+            logger.info("💻 Connected to MongoDB (Local)")
+            
+    except Exception as e:
+        logger.error(f"❌ Failed to connect to MongoDB: {str(e)}")
+        logger.error(f"MongoDB URL pattern: {mongo_url.split('@')[0] if '@' in mongo_url else 'local'}")
+        # Don't raise exception, let the app start but log the error
+        # This allows health checks to work even if DB is temporarily unavailable
+
 @app.on_event("shutdown")
 async def shutdown_db_client():
-    client.close()
+    """Close MongoDB connection on shutdown"""
+    try:
+        client.close()
+        logger.info("✅ MongoDB connection closed successfully")
+    except Exception as e:
+        logger.error(f"❌ Error closing MongoDB connection: {str(e)}")
