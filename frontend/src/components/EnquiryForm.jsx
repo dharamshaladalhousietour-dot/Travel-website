@@ -333,6 +333,7 @@ const EnquiryForm = ({ packageTitle = "", onClose = null }) => {
         </form>
       </CardContent>
     </Card>
+    </>
   );
 };
 
