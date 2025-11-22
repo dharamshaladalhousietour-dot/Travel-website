@@ -111,26 +111,27 @@ const EnquiryForm = ({ packageTitle = "", onClose = null }) => {
   };
 
   return (
-    <Card className="w-full max-w-2xl mx-auto">
-      <CardHeader className="bg-gradient-to-r from-blue-900 to-blue-800 text-white rounded-t-lg">
-        <CardTitle className="text-xl font-bold flex items-center">
-          <Send className="h-5 w-5 mr-2" />
-          Send Enquiry {packageTitle && `- ${packageTitle}`}
-        </CardTitle>
-      </CardHeader>
+    <>
+      {/* Thank You Popup */}
+      <ThankYouPopup 
+        isOpen={showThankYouPopup} 
+        onClose={() => setShowThankYouPopup(false)} 
+      />
       
-      <CardContent className="p-6">
-        {submitStatus === 'success' && (
-          <div className="mb-6 p-4 bg-green-100 border border-green-400 text-green-700 rounded-lg text-center">
-            <p className="font-semibold">Thank you for your enquiry! Our team will get back to you within 1 hour.</p>
-          </div>
-        )}
-
-        {submitStatus === 'error' && (
-          <div className="mb-6 p-4 bg-red-100 border border-red-400 text-red-700 rounded-lg text-center">
-            <p className="font-semibold">Sorry, there was an error submitting your enquiry. Please try again.</p>
-          </div>
-        )}
+      <Card className="w-full max-w-2xl mx-auto">
+        <CardHeader className="bg-gradient-to-r from-blue-900 to-blue-800 text-white rounded-t-lg">
+          <CardTitle className="text-xl font-bold flex items-center">
+            <Send className="h-5 w-5 mr-2" />
+            Send Enquiry {packageTitle && `- ${packageTitle}`}
+          </CardTitle>
+        </CardHeader>
+        
+        <CardContent className="p-6">
+          {submitStatus === 'error' && (
+            <div className="mb-6 p-4 bg-red-100 border border-red-400 text-red-700 rounded-lg text-center">
+              <p className="font-semibold">Sorry, there was an error submitting your enquiry. Please try again.</p>
+            </div>
+          )}
 
         <form onSubmit={handleSubmit} className="space-y-6">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
