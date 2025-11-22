@@ -198,6 +198,7 @@ function App() {
   return (
     <div className="App">
       <ContentProtection />
+      <FloatingCTAButtons />
       <Router>
         <Routes>
           <Route path="/" element={<Home />} />
