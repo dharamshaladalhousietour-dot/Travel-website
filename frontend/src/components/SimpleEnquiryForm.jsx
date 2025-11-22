@@ -366,6 +366,7 @@ const SimpleEnquiryForm = ({ packageTitle = "", onClose = null }) => {
         </form>
       </CardContent>
     </Card>
+    </>
   );
 };
 
