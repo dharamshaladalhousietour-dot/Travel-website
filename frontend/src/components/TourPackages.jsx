@@ -1367,13 +1367,13 @@ const TourPackages = () => {
                     </div>
                   </div>
                 )}
-                <div className="grid grid-cols-2 gap-2 mb-2">
+                <div className="grid grid-cols-3 gap-2">
                   <Button variant="outline" size="sm" className="text-xs border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white" onClick={() => setExpandedPackage(expandedPackage === 2 ? null : 2)}>{expandedPackage === 2 ? 'Hide Details' : 'View Details'}</Button>
-                  <Button size="sm" className="text-xs bg-blue-600 hover:bg-blue-700 text-white" onClick={() => scrollToEnquiryForm('Mystic Hills Retreat')}>Book Now</Button>
-                </div>
-                <div className="grid grid-cols-2 gap-2">
-                  <Button size="sm" className="text-xs bg-green-600 hover:bg-green-700 text-white" onClick={() => scrollToEnquiryForm('Mystic Hills Retreat')}>Enquire Now</Button>
-                  <Button size="sm" className="text-xs bg-amber-600 hover:bg-amber-700 text-white" onClick={() => scrollToEnquiryForm('Mystic Hills Retreat')}>Plan Your Trip</Button>
+                  <Button size="sm" className="text-xs bg-green-600 hover:bg-green-700 text-white" onClick={() => window.location.href = 'tel:+918679333355'}>Call Now</Button>
+                  <Button size="sm" className="text-xs bg-blue-600 hover:bg-blue-700 text-white" onClick={() => {
+                      const message = `Hi! I want to book Mystic Hills Retreat\n\nDuration: 4D/3N\nPrice: ₹12,999\n\nPlease provide me with more details.`;
+                      window.open(`https://wa.me/918679333354?text=${encodeURIComponent(message)}`, '_blank');
+                    }}>Book Now</Button>
                 </div>
                 <div className="mt-4 pt-3 border-t border-gray-200">
                   <p className="text-sm text-gray-600">Starting from <span className="text-lg font-bold text-green-600">₹12,999</span></p>
