@@ -189,7 +189,32 @@ export const mockPackages = [
     reviews: 112,
     image: "https://images.unsplash.com/photo-1694203818327-5d013bec1b78",
     category: "Cultural",
-    highlights: ["Dalai Lama Temple", "McLeod Ganj", "Triund Trek", "Meditation Sessions"]
+    highlights: ["Dalai Lama Temple", "McLeod Ganj", "Triund Trek", "Meditation Sessions"],
+    hotels: {
+      dharamshala: "Hotel Bhagsu / Hotel Asia Health Resorts",
+      mcleodganj: "Hotel Snow Lion / Hotel Tibet"
+    },
+    itinerary: [
+      { day: 1, title: "Arrival & Local Orientation", description: "Arrival Dharamshala → Transfer to hotel → Evening walk in McLeod Ganj market" },
+      { day: 2, title: "Spiritual Dharamshala", description: "Dalai Lama Temple → Tibetan Museum → Norbulingka Institute → Tibetan handicraft shopping" },
+      { day: 3, title: "Triund Trek Adventure", description: "Early morning Triund trek (9km) → Enjoy panoramic Dhauladhar views → Return by evening" },
+      { day: 4, title: "Kangra Valley Exploration", description: "Kangra Fort → Masroor Rock Cut Temples → Tea gardens → Palampur visit" },
+      { day: 5, title: "Departure", description: "Bhagsu Waterfall visit → Bhagsunath Temple → Departure" }
+    ],
+    inclusions: [
+      "4 Nights stay in 3★ hotels",
+      "Breakfast & Dinner (MAP Plan)",
+      "All transfers by private cab",
+      "Tibetan cultural center visits",
+      "Driver allowance, parking, tolls"
+    ],
+    exclusions: [
+      "Airfare / train tickets",
+      "Lunch",
+      "Personal trekking guide for Triund",
+      "Entrance fees to monuments",
+      "Anything not mentioned in inclusions"
+    ]
   },
   {
     id: 6,
