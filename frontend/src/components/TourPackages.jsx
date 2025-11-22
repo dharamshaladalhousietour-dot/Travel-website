@@ -1505,7 +1505,7 @@ const TourPackages = () => {
                   </div>
                 )}
 
-                <div className="grid grid-cols-2 gap-2 mb-2">
+                <div className="grid grid-cols-3 gap-2">
                   <Button 
                     variant="outline"
                     size="sm"
@@ -1516,27 +1516,20 @@ const TourPackages = () => {
                   </Button>
                   <Button 
                     size="sm"
+                    className="text-xs bg-green-600 hover:bg-green-700 text-white"
+                    onClick={() => window.location.href = 'tel:+918679333355'}
+                  >
+                    Call Now
+                  </Button>
+                  <Button 
+                    size="sm"
                     className="text-xs bg-blue-600 hover:bg-blue-700 text-white"
-                    onClick={() => scrollToEnquiryForm('Twin Peaks Magic')}
+                    onClick={() => {
+                      const message = `Hi! I want to book Twin Peaks Magic\n\nDuration: 4D/5N\nPrice: ₹15,999\n\nPlease provide me with more details.`;
+                      window.open(`https://wa.me/918679333354?text=${encodeURIComponent(message)}`, '_blank');
+                    }}
                   >
                     Book Now
-                  </Button>
-                </div>
-
-                <div className="grid grid-cols-2 gap-2">
-                  <Button 
-                    size="sm"
-                    className="text-xs bg-green-600 hover:bg-green-700 text-white"
-                    onClick={() => scrollToEnquiryForm('Twin Peaks Magic')}
-                  >
-                    Enquire Now
-                  </Button>
-                  <Button 
-                    size="sm"
-                    className="text-xs bg-amber-600 hover:bg-amber-700 text-white"
-                    onClick={() => scrollToEnquiryForm('Twin Peaks Magic')}
-                  >
-                    Plan Your Trip
                   </Button>
                 </div>
 
