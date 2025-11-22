@@ -115,7 +115,28 @@ export const mockPackages = [
     reviews: 156,
     image: "https://images.unsplash.com/photo-1620720970374-5b7e67e1e610",
     category: "Family",
-    highlights: ["Solang Valley", "River Rafting", "Hadimba Temple", "Local Cultural Shows"]
+    highlights: ["Solang Valley", "River Rafting", "Hadimba Temple", "Local Cultural Shows"],
+    hotels: {
+      manali: "Hotel Snow Park / Hotel Mountain Top"
+    },
+    itinerary: [
+      { day: 1, title: "Arrival & Temples", description: "Arrival → Hidimba Temple → Mall Road" },
+      { day: 2, title: "Solang Adventures", description: "Solang Valley – adventure activities" },
+      { day: 3, title: "Atal Tunnel", description: "Atal Tunnel + Sissu Waterfall" },
+      { day: 4, title: "Cultural Day", description: "Vashisht, Monastery, Club House" },
+      { day: 5, title: "Naggar Exploration", description: "Naggar Castle + Jana Waterfall" },
+      { day: 6, title: "Departure", description: "Departure" }
+    ],
+    inclusions: [
+      "5 Nights stay",
+      "Breakfast & Dinner",
+      "Private taxi for all tours",
+      "All parking, tolls"
+    ],
+    exclusions: [
+      "Paragliding / Zorbing",
+      "Rohtang permit (if applicable)"
+    ]
   },
   {
     id: 4,
