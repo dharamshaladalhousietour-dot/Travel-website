@@ -80,7 +80,29 @@ export const mockPackages = [
     reviews: 95,
     image: "https://images.unsplash.com/photo-1657894736581-ccc35d62d9e2",
     category: "Honeymoon",
-    highlights: ["Toy Train Ride", "Mall Road Walk", "Kufri Adventures", "Private Candlelight Dinner"]
+    highlights: ["Toy Train Ride", "Mall Road Walk", "Kufri Adventures", "Private Candlelight Dinner"],
+    hotels: {
+      shimla: "Hotel Sukh Sagar / Hotel CK International"
+    },
+    itinerary: [
+      { day: 1, title: "Arrival & Mall Road", description: "Arrival → Mall Road → Ridge Walk" },
+      { day: 2, title: "Kufri Fun", description: "Kufri Fun Campus + Himalayan Nature Park" },
+      { day: 3, title: "Romantic Escape", description: "Mashobra, Naldehra → Candlelight dinner option" },
+      { day: 4, title: "Heritage Tour", description: "Jakhoo Temple, Christ Church, Scandal Point" },
+      { day: 5, title: "Departure", description: "Departure" }
+    ],
+    inclusions: [
+      "4 Nights stay in 3★ hotel",
+      "Breakfast & Dinner",
+      "Private cab for sightseeing",
+      "Flower bed decoration (once)",
+      "Honeymoon Cake (once)"
+    ],
+    exclusions: [
+      "Adventure park entry",
+      "Pony rides",
+      "Personal expenses"
+    ]
   },
   {
     id: 3,
