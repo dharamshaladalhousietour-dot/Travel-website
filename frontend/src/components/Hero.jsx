@@ -94,61 +94,26 @@ const Hero = () => {
 
   return (
     <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      {/* Image Slider Background */}
+      {/* Optimized Single Hero Banner */}
       <div className="absolute inset-0 z-0">
-        <div className="relative h-full w-full">
-          {/* Slider Images */}
-          {heroImages.map((image, index) => (
-            <div
-              key={index}
-              className={`absolute inset-0 transition-opacity duration-1000 ${
-                index === currentSlide ? 'opacity-100' : 'opacity-0'
-              }`}
-            >
-              <img
-                src={image}
-                alt={`Hero slide ${index + 1}`}
-                className="w-full h-full object-cover"
-                loading={index === 0 ? 'eager' : 'lazy'}
-                width="1920"
-                height="1080"
-              />
-            </div>
-          ))}
-          
-          {/* Overlay for text readability */}
-          <div className="absolute inset-0 bg-black/40 z-10"></div>
-          
-          {/* Slider Controls */}
-          <button
-            onClick={prevSlide}
-            className="absolute left-4 top-1/2 -translate-y-1/2 z-20 bg-white/20 hover:bg-white/30 backdrop-blur-sm p-3 rounded-full transition-all duration-300 hover:scale-110"
-            aria-label="Previous slide"
-          >
-            <ChevronLeft className="h-6 w-6 text-white" />
-          </button>
-          <button
-            onClick={nextSlide}
-            className="absolute right-4 top-1/2 -translate-y-1/2 z-20 bg-white/20 hover:bg-white/30 backdrop-blur-sm p-3 rounded-full transition-all duration-300 hover:scale-110"
-            aria-label="Next slide"
-          >
-            <ChevronRight className="h-6 w-6 text-white" />
-          </button>
-          
-          {/* Slider Indicators */}
-          <div className="absolute bottom-8 left-1/2 -translate-x-1/2 z-20 flex gap-2">
-            {heroImages.map((_, index) => (
-              <button
-                key={index}
-                onClick={() => setCurrentSlide(index)}
-                className={`w-2 h-2 rounded-full transition-all duration-300 ${
-                  index === currentSlide ? 'bg-white w-8' : 'bg-white/50 hover:bg-white/75'
-                }`}
-                aria-label={`Go to slide ${index + 1}`}
-              />
-            ))}
-          </div>
-        </div>
+        <picture>
+          <source 
+            srcSet="/assets/hero-banner.webp" 
+            type="image/webp"
+          />
+          <img
+            src="/assets/hero-banner.webp"
+            alt="Pretty Planet Travels - Destination Weddings and Tours in Himachal Pradesh"
+            className="w-full h-full object-cover"
+            loading="eager"
+            fetchpriority="high"
+            width="1600"
+            height="900"
+          />
+        </picture>
+        
+        {/* Overlay for text readability */}
+        <div className="absolute inset-0 bg-black/40 z-10"></div>
       </div>
 
       {/* Content */}
