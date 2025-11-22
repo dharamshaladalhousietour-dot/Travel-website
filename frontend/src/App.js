@@ -160,6 +160,7 @@ const Home = ({ scrollTo }) => {
         <BlogPreview />
         <Contact />
       </Suspense>
+      <PayNowButton />
       <Footer />
       <WhatsAppButton />
     </div>
