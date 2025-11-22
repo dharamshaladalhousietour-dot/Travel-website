@@ -174,6 +174,7 @@ const TourPackagesPage = () => (
     <Suspense fallback={<LoadingFallback />}>
       <TourPackages />
     </Suspense>
+    <PayNowButton />
     <Footer />
     <WhatsAppButton />
   </div>
