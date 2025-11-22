@@ -205,12 +205,12 @@ function App() {
           <Route path="/gallery" element={<Home scrollTo="gallery" />} />
           <Route path="/tour-packages" element={<TourPackagesPage />} />
           <Route path="/events-weddings" element={<EventsWeddingsPage />} />
-          <Route path="/blog" element={<><Header /><Suspense fallback={<LoadingFallback />}><Blog /></Suspense><PayNowButton /><Footer /><WhatsAppButton /></>} />
-          <Route path="/blog/:slug" element={<><Header /><Suspense fallback={<LoadingFallback />}><BlogPost /></Suspense><PayNowButton /><Footer /><WhatsAppButton /></>} />
-          <Route path="/terms-conditions" element={<><Header /><Suspense fallback={<LoadingFallback />}><TermsConditions /></Suspense><PayNowButton /><Footer /><WhatsAppButton /></>} />
-          <Route path="/refund-policy" element={<><Header /><Suspense fallback={<LoadingFallback />}><RefundPolicy /></Suspense><PayNowButton /><Footer /><WhatsAppButton /></>} />
-          <Route path="/travel-insurance" element={<><Header /><Suspense fallback={<LoadingFallback />}><TravelInsurance /></Suspense><PayNowButton /><Footer /><WhatsAppButton /></>} />
-          <Route path="/package/:packageSlug" element={<><Header /><Suspense fallback={<LoadingFallback />}><PackageDetail /></Suspense><PayNowButton /><Footer /><WhatsAppButton /></>} />
+          <Route path="/blog" element={<><Header /><Suspense fallback={<LoadingFallback />}><Blog /></Suspense><PayNowButton /><Footer /></>} />
+          <Route path="/blog/:slug" element={<><Header /><Suspense fallback={<LoadingFallback />}><BlogPost /></Suspense><PayNowButton /><Footer /></>} />
+          <Route path="/terms-conditions" element={<><Header /><Suspense fallback={<LoadingFallback />}><TermsConditions /></Suspense><PayNowButton /><Footer /></>} />
+          <Route path="/refund-policy" element={<><Header /><Suspense fallback={<LoadingFallback />}><RefundPolicy /></Suspense><PayNowButton /><Footer /></>} />
+          <Route path="/travel-insurance" element={<><Header /><Suspense fallback={<LoadingFallback />}><TravelInsurance /></Suspense><PayNowButton /><Footer /></>} />
+          <Route path="/package/:packageSlug" element={<><Header /><Suspense fallback={<LoadingFallback />}><PackageDetail /></Suspense><PayNowButton /><Footer /></>} />
           <Route path="*" element={<Suspense fallback={<LoadingFallback />}><NotFound /></Suspense>} />
         </Routes>
       </Router>
