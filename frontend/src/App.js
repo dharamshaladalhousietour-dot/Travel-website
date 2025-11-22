@@ -162,7 +162,6 @@ const Home = ({ scrollTo }) => {
       </Suspense>
       <PayNowButton />
       <Footer />
-      <WhatsAppButton />
     </div>
   );
 };
