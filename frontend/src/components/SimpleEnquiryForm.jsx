@@ -6,6 +6,7 @@ import { Label } from './ui/label';
 import { Card, CardContent, CardHeader, CardTitle } from './ui/card';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from './ui/select';
 import { Send, X } from 'lucide-react';
+import ThankYouPopup from './ThankYouPopup';
 
 const SimpleEnquiryForm = ({ packageTitle = "", onClose = null }) => {
   const [formData, setFormData] = useState({
