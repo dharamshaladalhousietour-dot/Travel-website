@@ -18,10 +18,22 @@ import razorpay
 ROOT_DIR = Path(__file__).parent
 load_dotenv(ROOT_DIR / '.env')
 
-# MongoDB connection
-mongo_url = os.environ['MONGO_URL']
-client = AsyncIOMotorClient(mongo_url)
-db = client[os.environ['DB_NAME']]
+# MongoDB connection with Atlas support
+mongo_url = os.environ.get('MONGO_URL', 'mongodb://localhost:27017')
+db_name = os.environ.get('DB_NAME', 'test_database')
+
+# Configure MongoDB client with appropriate settings for both local and Atlas
+client = AsyncIOMotorClient(
+    mongo_url,
+    serverSelectionTimeoutMS=5000,  # 5 second timeout
+    connectTimeoutMS=10000,  # 10 second connection timeout
+    socketTimeoutMS=10000,  # 10 second socket timeout
+    maxPoolSize=50,  # Connection pool size
+    minPoolSize=10,
+    retryWrites=True,  # Enable retryable writes for Atlas
+    w='majority'  # Write concern for Atlas
+)
+db = client[db_name]
 
 # Create the main app without a prefix
 app = FastAPI()
