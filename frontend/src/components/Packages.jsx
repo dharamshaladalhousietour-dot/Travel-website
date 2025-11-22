@@ -7,7 +7,7 @@ import { mockPackages } from '../data/mockData';
 
 const Packages = () => {
   const [activeFilter, setActiveFilter] = useState('All');
-  const [favorites, setFavorites] = useState(new Set());
+  const [expandedItinerary, setExpandedItinerary] = useState(null);
 
   const categories = ['All', 'Luxury', 'Honeymoon', 'Family', 'Adventure', 'Cultural'];
   
@@ -15,16 +15,8 @@ const Packages = () => {
     ? mockPackages 
     : mockPackages.filter(pkg => pkg.category === activeFilter);
 
-  const toggleFavorite = (id) => {
-    setFavorites(prev => {
-      const newFavorites = new Set(prev);
-      if (newFavorites.has(id)) {
-        newFavorites.delete(id);
-      } else {
-        newFavorites.add(id);
-      }
-      return newFavorites;
-    });
+  const toggleItinerary = (id) => {
+    setExpandedItinerary(expandedItinerary === id ? null : id);
   };
 
   const getCategoryColor = (category) => {
