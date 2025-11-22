@@ -142,35 +142,30 @@ const SimpleEnquiryForm = ({ packageTitle = "", onClose = null }) => {
   };
 
   return (
-   <Card className="w-full max-w-2xl mx-auto bg-white shadow-2xl relative z-[9999]">
-      <CardHeader className="bg-gradient-to-r from-blue-900 to-blue-800 text-white rounded-t-lg relative p-4 md:p-6">
-        {onClose && (
-          <button
-            onClick={onClose}
-            className="absolute top-4 right-4 text-white hover:bg-white hover:text-blue-900 rounded-full p-1 transition-colors"
-          >
-            <X className="h-5 w-5" />
-          </button>
-        )}
-        <CardTitle className="text-xl font-bold flex items-center">
-          <Send className="h-5 w-5 mr-2" />
-          Send Enquiry {packageTitle && `- ${packageTitle}`}
-        </CardTitle>
-      </CardHeader>
+    <>
+      {/* Thank You Popup */}
+      <ThankYouPopup 
+        isOpen={showThankYouPopup} 
+        onClose={() => setShowThankYouPopup(false)} 
+      />
       
-    <CardContent className="p-4 md:p-6 lg:p-8 overflow-visible relative z-[50]">
-        {submitStatus === 'success' && (
-          <div className="mb-6 p-4 bg-green-100 border border-green-400 text-green-700 rounded-lg text-center">
-            <p className="font-semibold">✅ Thank you for your enquiry! Our team will contact you soon.</p>
-            <p className="text-sm mt-2">Your enquiry has been sent to WhatsApp and Email successfully!</p>
-          </div>
-        )}
-
-        {submitStatus === 'sent_whatsapp' && (
-          <div className="mb-6 p-4 bg-blue-100 border border-blue-400 text-blue-700 rounded-lg text-center">
-            <p className="font-semibold">WhatsApp message sent! Our team will contact you soon.</p>
-          </div>
-        )}
+      <Card className="w-full max-w-2xl mx-auto bg-white shadow-2xl relative z-[9999]">
+        <CardHeader className="bg-gradient-to-r from-blue-900 to-blue-800 text-white rounded-t-lg relative p-4 md:p-6">
+          {onClose && (
+            <button
+              onClick={onClose}
+              className="absolute top-4 right-4 text-white hover:bg-white hover:text-blue-900 rounded-full p-1 transition-colors"
+            >
+              <X className="h-5 w-5" />
+            </button>
+          )}
+          <CardTitle className="text-xl font-bold flex items-center">
+            <Send className="h-5 w-5 mr-2" />
+            Send Enquiry {packageTitle && `- ${packageTitle}`}
+          </CardTitle>
+        </CardHeader>
+        
+        <CardContent className="p-4 md:p-6 lg:p-8 overflow-visible relative z-[50]">
 
         <form onSubmit={handleSubmit} className="space-y-6">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
