@@ -1,9 +1,8 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Button } from './ui/button';
 import { Input } from './ui/input';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from './ui/select';
-import { Calendar, Users, MapPin } from 'lucide-react';
-import RazorpayCheckout from './RazorpayCheckout';
+import { Calendar, Users, MapPin, ChevronLeft, ChevronRight } from 'lucide-react';
 
 const Hero = () => {
   const [enquiryData, setEnquiryData] = useState({
@@ -15,16 +14,32 @@ const Hero = () => {
   });
 
   const [showThankYou, setShowThankYou] = useState(false);
-  const videoRef = useRef(null);
+  const [currentSlide, setCurrentSlide] = useState(0);
 
+  // Hero slider images
+  const heroImages = [
+    'https://customer-assets.emergentagent.com/job_47eae915-c1b0-4770-bc09-eb4cfcef3060/artifacts/43uvop3p_IMG_1580.jpeg',
+    'https://customer-assets.emergentagent.com/job_47eae915-c1b0-4770-bc09-eb4cfcef3060/artifacts/xf3etlp5_IMG_1589.jpeg',
+    'https://customer-assets.emergentagent.com/job_47eae915-c1b0-4770-bc09-eb4cfcef3060/artifacts/jcmcgh65_IMG_1581.jpeg',
+    'https://customer-assets.emergentagent.com/job_47eae915-c1b0-4770-bc09-eb4cfcef3060/artifacts/fd0tumop_IMG_1586.jpeg',
+    'https://customer-assets.emergentagent.com/job_47eae915-c1b0-4770-bc09-eb4cfcef3060/artifacts/a9phrbvf_IMG_1582.jpeg'
+  ];
+
+  // Auto-advance slider every 5 seconds
   useEffect(() => {
-    // Ensure video plays on mount
-    if (videoRef.current) {
-      videoRef.current.play().catch(err => {
-        console.log('Video autoplay prevented:', err);
-      });
-    }
-  }, []);
+    const timer = setInterval(() => {
+      setCurrentSlide((prev) => (prev + 1) % heroImages.length);
+    }, 5000);
+    return () => clearInterval(timer);
+  }, [heroImages.length]);
+
+  const nextSlide = () => {
+    setCurrentSlide((prev) => (prev + 1) % heroImages.length);
+  };
+
+  const prevSlide = () => {
+    setCurrentSlide((prev) => (prev - 1 + heroImages.length) % heroImages.length);
+  };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
