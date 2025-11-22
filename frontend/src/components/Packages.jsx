@@ -194,7 +194,7 @@ const Packages = () => {
                       variant="outline"
                       size="sm"
                       className="text-xs border-blue-600 text-blue-600 hover:bg-blue-50"
-                      onClick={() => window.location.href = `/package/${pkg.title.toLowerCase().replace(/\s+/g, '-')}`}
+                      onClick={() => toggleItinerary(pkg.id)}
                     >
                       View Details
                     </Button>
@@ -210,7 +210,7 @@ const Packages = () => {
                       className="text-xs bg-blue-600 hover:bg-blue-700 text-white"
                       onClick={() => toggleItinerary(pkg.id)}
                     >
-                      {expandedItinerary === pkg.id ? 'Hide' : 'View'} Itinerary
+                      View Itinerary
                     </Button>
                   </div>
                 </CardContent>
