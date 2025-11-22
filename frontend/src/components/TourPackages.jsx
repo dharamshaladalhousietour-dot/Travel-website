@@ -1051,44 +1051,29 @@ const TourPackages = () => {
           </div>
 
           <div className="flex flex-col space-y-3">
-            {/* Primary Action Buttons - Always Visible */}
-            <div className="flex flex-col sm:flex-row space-y-2 sm:space-y-0 sm:space-x-2">
-              <Link to={`/package/${pkg.slug}`} className="flex-1">
-                <Button 
-                  className="w-full bg-blue-600 hover:bg-blue-700 transition-colors duration-200"
-                >
-                  View Details
-                </Button>
-              </Link>
+            {/* Action Buttons - View Details, Call Now, Book Now */}
+            <div className="grid grid-cols-3 gap-2">
               <Button 
-                variant="outline" 
-                className="flex-1 border-blue-600 text-blue-600 hover:bg-blue-50 transition-colors duration-200"
+                variant="outline"
+                className="border-blue-600 text-blue-600 hover:bg-blue-50 transition-colors duration-200 text-sm"
+                onClick={() => setExpandedPackage(expandedPackage === pkg.id ? null : pkg.id)}
+              >
+                {expandedPackage === pkg.id ? 'Hide Details' : 'View Details'}
+              </Button>
+              <Button 
+                className="bg-green-600 hover:bg-green-700 text-white transition-colors duration-200 text-sm"
+                onClick={() => window.location.href = 'tel:+918679333355'}
+              >
+                Call Now
+              </Button>
+              <Button 
+                className="bg-blue-600 hover:bg-blue-700 text-white transition-colors duration-200 text-sm"
                 onClick={() => {
-                  console.log('Send Enquiry clicked for:', pkg.title);
-                  setSelectedPackage(pkg);
-                  setShowEnquiryForm(true);
+                  const message = `Hi! I want to book ${pkg.title}\n\nDuration: ${pkg.duration}\nPrice: ${pkg.price}\n\nPlease provide me with more details.`;
+                  window.open(`https://wa.me/918679333354?text=${encodeURIComponent(message)}`, '_blank');
                 }}
               >
-                <Send className="h-4 w-4 mr-2" />
-                Send Enquiry
-              </Button>
-            </div>
-
-            {/* CTA Buttons - Plan Your Trip & Enquire Now */}
-            <div className="flex flex-col sm:flex-row space-y-2 sm:space-y-0 sm:space-x-2">
-              <Button 
-                className="flex-1 bg-gradient-to-r from-teal-600 to-blue-600 hover:from-teal-700 hover:to-blue-700 text-white font-semibold shadow-md"
-                onClick={handleEnquireNow}
-              >
-                <Send className="h-4 w-4 mr-2" />
-                Enquire Now
-              </Button>
-              <Button 
-                variant="outline" 
-                className="flex-1 border-2 border-teal-600 text-teal-700 hover:bg-teal-50 font-semibold"
-                onClick={handleEnquireNow}
-              >
-                Plan Your Trip
+                Book Now
               </Button>
             </div>
             
