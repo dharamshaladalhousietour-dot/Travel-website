@@ -40,7 +40,34 @@ export const mockPackages = [
     reviews: 128,
     image: "https://images.unsplash.com/photo-1708179070772-abf3a1d16b74",
     category: "Luxury",
-    highlights: ["Houseboat Stay", "Shikara Rides", "Gulmarg Snow", "Saffron Gardens"]
+    highlights: ["Houseboat Stay", "Shikara Rides", "Gulmarg Snow", "Saffron Gardens"],
+    hotels: {
+      srinagar: "Hotel Royal Heritage / Hotel Grand Mir",
+      gulmarg: "Hotel Khaleel Palace / Hotel Pine Spring",
+      pahalgam: "Hotel Green Heights / Hotel Woodland"
+    },
+    itinerary: [
+      { day: 1, title: "Arrival & Dal Lake", description: "Srinagar arrival → Dal Lake Shikara ride → Houseboat stay" },
+      { day: 2, title: "Mughal Gardens", description: "Srinagar local – Mughal Gardens, Nishat, Shalimar, Shankaracharya" },
+      { day: 3, title: "Gulmarg Excursion", description: "Gulmarg excursion – Gondola ride (optional)" },
+      { day: 4, title: "Sonmarg Sightseeing", description: "Sonmarg sightseeing – Thajiwas Glacier" },
+      { day: 5, title: "Pahalgam Valley", description: "Pahalgam – Aru, Betaab, Chandanwari" },
+      { day: 6, title: "Srinagar Leisure", description: "Srinagar markets + leisure" },
+      { day: 7, title: "Departure", description: "Departure" }
+    ],
+    inclusions: [
+      "6 Nights stay in 3★ hotels",
+      "Breakfast & Dinner (MAP Plan)",
+      "All sightseeing & transfers by private vehicle",
+      "Driver allowance, parking, tolls",
+      "Shikara Ride (1 Hour)"
+    ],
+    exclusions: [
+      "Airfare",
+      "Gondola / pony rides / rafting",
+      "Lunch",
+      "Anything not mentioned in inclusions"
+    ]
   },
   {
     id: 2,
