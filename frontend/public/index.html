@@ -36,6 +36,51 @@
         <!-- Canonical URL - Self-referencing for homepage -->
         <link rel="canonical" href="https://prettyplanettravels.com/" />
         
+        <!-- Structured Data - Organization -->
+        <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "TravelAgency",
+          "name": "Pretty Planet Travels & Events",
+          "description": "Professional travel planning for Himachal Pradesh tours, Kashmir packages, and destination weddings in India",
+          "url": "https://prettyplanettravels.com",
+          "logo": "https://prettyplanettravels.com/assets/ppte-logo-new.jpg",
+          "image": "https://prettyplanettravels.com/assets/ppte-logo-new.jpg",
+          "telephone": "+91-86793-33355",
+          "email": "info@prettyplanettravels.com",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Dharamshala",
+            "addressRegion": "Himachal Pradesh",
+            "addressCountry": "IN"
+          },
+          "sameAs": [
+            "https://www.facebook.com/prettyplanettravels",
+            "https://www.instagram.com/prettyplanettravels"
+          ],
+          "priceRange": "₹₹",
+          "areaServed": {
+            "@type": "Country",
+            "name": "India"
+          }
+        }
+        </script>
+        
+        <!-- Structured Data - Website -->
+        <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "WebSite",
+          "name": "Pretty Planet Travels & Events",
+          "url": "https://prettyplanettravels.com",
+          "potentialAction": {
+            "@type": "SearchAction",
+            "target": "https://prettyplanettravels.com/tour-packages?search={search_term_string}",
+            "query-input": "required name=search_term_string"
+          }
+        }
+        </script>
+        
         <!-- Additional SEO Meta Tags -->
         <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
         <meta name="googlebot" content="index, follow" />
