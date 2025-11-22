@@ -207,12 +207,12 @@ function App() {
           <Route path="/gallery" element={<Home scrollTo="gallery" />} />
           <Route path="/tour-packages" element={<TourPackagesPage />} />
           <Route path="/events-weddings" element={<EventsWeddingsPage />} />
-          <Route path="/blog" element={<><Header /><Suspense fallback={<LoadingFallback />}><Blog /></Suspense><Footer /><WhatsAppButton /></>} />
-          <Route path="/blog/:slug" element={<><Header /><Suspense fallback={<LoadingFallback />}><BlogPost /></Suspense><Footer /><WhatsAppButton /></>} />
-          <Route path="/terms-conditions" element={<><Header /><Suspense fallback={<LoadingFallback />}><TermsConditions /></Suspense><Footer /><WhatsAppButton /></>} />
-          <Route path="/refund-policy" element={<><Header /><Suspense fallback={<LoadingFallback />}><RefundPolicy /></Suspense><Footer /><WhatsAppButton /></>} />
-          <Route path="/travel-insurance" element={<><Header /><Suspense fallback={<LoadingFallback />}><TravelInsurance /></Suspense><Footer /><WhatsAppButton /></>} />
-          <Route path="/package/:packageSlug" element={<><Header /><Suspense fallback={<LoadingFallback />}><PackageDetail /></Suspense><Footer /><WhatsAppButton /></>} />
+          <Route path="/blog" element={<><Header /><Suspense fallback={<LoadingFallback />}><Blog /></Suspense><PayNowButton /><Footer /><WhatsAppButton /></>} />
+          <Route path="/blog/:slug" element={<><Header /><Suspense fallback={<LoadingFallback />}><BlogPost /></Suspense><PayNowButton /><Footer /><WhatsAppButton /></>} />
+          <Route path="/terms-conditions" element={<><Header /><Suspense fallback={<LoadingFallback />}><TermsConditions /></Suspense><PayNowButton /><Footer /><WhatsAppButton /></>} />
+          <Route path="/refund-policy" element={<><Header /><Suspense fallback={<LoadingFallback />}><RefundPolicy /></Suspense><PayNowButton /><Footer /><WhatsAppButton /></>} />
+          <Route path="/travel-insurance" element={<><Header /><Suspense fallback={<LoadingFallback />}><TravelInsurance /></Suspense><PayNowButton /><Footer /><WhatsAppButton /></>} />
+          <Route path="/package/:packageSlug" element={<><Header /><Suspense fallback={<LoadingFallback />}><PackageDetail /></Suspense><PayNowButton /><Footer /><WhatsAppButton /></>} />
           <Route path="*" element={<Suspense fallback={<LoadingFallback />}><NotFound /></Suspense>} />
         </Routes>
       </Router>
