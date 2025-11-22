@@ -365,6 +365,28 @@ async def send_payment_notifications(payment: PaymentSuccess):
         logger.error(f"❌ Error sending payment notifications: {str(e)}")
         return False
 
+@api_router.get("/health")
+async def health_check():
+    """Health check endpoint with MongoDB connectivity test"""
+    health_status = {
+        "status": "healthy",
+        "service": "prettyplanet-api",
+        "database": "unknown"
+    }
+    
+    try:
+        # Test MongoDB connection
+        await client.admin.command('ping')
+        health_status["database"] = "connected"
+        logger.debug("Health check: MongoDB connection OK")
+    except Exception as e:
+        health_status["status"] = "degraded"
+        health_status["database"] = "disconnected"
+        health_status["error"] = str(e)
+        logger.warning(f"Health check: MongoDB connection failed - {str(e)}")
+    
+    return health_status
+
 # Include the router in the main app
 app.include_router(api_router)
 
