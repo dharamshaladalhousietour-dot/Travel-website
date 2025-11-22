@@ -187,6 +187,7 @@ const EventsWeddingsPage = () => (
     <Suspense fallback={<LoadingFallback />}>
       <EventsWeddings />
     </Suspense>
+    <PayNowButton />
     <Footer />
     <WhatsAppButton />
   </div>
