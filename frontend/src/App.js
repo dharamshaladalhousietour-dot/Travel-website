@@ -106,7 +106,6 @@ import "./App.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
-import WhatsAppButton from "./components/WhatsAppButton";
 import ContentProtection from "./components/ContentProtection";
 import PayNowButton from "./components/PayNowButton";
 import FloatingCTAButtons from "./components/FloatingCTAButtons";
