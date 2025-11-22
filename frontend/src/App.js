@@ -175,7 +175,6 @@ const TourPackagesPage = () => (
     </Suspense>
     <PayNowButton />
     <Footer />
-    <WhatsAppButton />
   </div>
 );
 
