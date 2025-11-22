@@ -187,7 +187,6 @@ const EventsWeddingsPage = () => (
     </Suspense>
     <PayNowButton />
     <Footer />
-    <WhatsAppButton />
   </div>
 );
 
