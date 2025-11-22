@@ -63,6 +63,9 @@ const EnquiryForm = ({ packageTitle = "", onClose = null }) => {
       if (response.ok) {
         setSubmitStatus('success');
         
+        // Show thank you popup
+        setShowThankYouPopup(true);
+        
         // Send WhatsApp message
         const whatsappMessage = encodeURIComponent(formattedMessage);
         const whatsappUrl = `https://wa.me/918679333355?text=${whatsappMessage}`;
@@ -83,11 +86,11 @@ const EnquiryForm = ({ packageTitle = "", onClose = null }) => {
           message: ''
         });
         
-        // Auto-close after 5 seconds if onClose is provided
+        // Auto-close after popup closes (4 seconds) if onClose is provided
         if (onClose) {
           setTimeout(() => {
             onClose();
-          }, 5000);
+          }, 4500);
         }
       } else {
         throw new Error('Failed to submit enquiry');
