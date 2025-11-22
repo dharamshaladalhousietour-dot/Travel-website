@@ -149,7 +149,34 @@ export const mockPackages = [
     reviews: 87,
     image: "https://images.unsplash.com/photo-1745737204244-db3bbf72e3fa",
     category: "Adventure",
-    highlights: ["Pangong Lake", "Nubra Valley", "Magnetic Hill", "Monastery Tours"]
+    highlights: ["Pangong Lake", "Nubra Valley", "Magnetic Hill", "Monastery Tours"],
+    hotels: {
+      leh: "Hotel Lotus / Hotel Himalaya",
+      nubra: "Camp Nubra / Desert Himalaya Resort"
+    },
+    itinerary: [
+      { day: 1, title: "Arrival Leh", description: "Arrival Leh → Rest for acclimatization" },
+      { day: 2, title: "Local Sightseeing", description: "Leh local – Shanti Stupa, Leh Palace, Market" },
+      { day: 3, title: "Pangong Lake", description: "Leh to Pangong Lake via Changla Pass → Camp/Hotel" },
+      { day: 4, title: "Return to Leh", description: "Pangong to Leh via same route" },
+      { day: 5, title: "Nubra Valley", description: "Leh to Nubra via Khardung La → Hunder Sand Dunes, Camel Ride" },
+      { day: 6, title: "Turtuk Village", description: "Nubra to Turtuk (last village) → Return Nubra" },
+      { day: 7, title: "Return Leh", description: "Nubra to Leh → Evening at leisure" },
+      { day: 8, title: "Departure", description: "Departure from Leh" }
+    ],
+    inclusions: [
+      "7 Nights accommodation (Hotel + Camps)",
+      "All meals (Breakfast + Dinner)",
+      "Private vehicle for sightseeing",
+      "Inner Line Permits",
+      "Experienced driver"
+    ],
+    exclusions: [
+      "Airfare",
+      "Lunch",
+      "Camel ride charges",
+      "Personal expenses"
+    ]
   },
   {
     id: 5,
