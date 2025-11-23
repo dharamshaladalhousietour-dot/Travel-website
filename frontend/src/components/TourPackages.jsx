@@ -1172,41 +1172,6 @@ const TourPackages = () => {
                   </AccordionContent>
                 </AccordionItem>
               </Accordion>
-
-              <div className="flex flex-col space-y-3">
-                <div className="flex space-x-2">
-                  <Button 
-                    className="flex-1 bg-gradient-to-r from-teal-600 to-blue-600 hover:from-teal-700 hover:to-blue-700 text-white font-semibold"
-                    onClick={() => {
-                      setSelectedPackage(pkg);
-                      setShowEnquiryForm(true);
-                    }}
-                  >
-                    <Send className="h-4 w-4 mr-2" />
-                    Enquire Now
-                  </Button>
-                  <Button 
-                    variant="outline" 
-                    className="flex-1 border-2 border-teal-600 text-teal-700 hover:bg-teal-50 font-semibold"
-                    onClick={() => {
-                      setSelectedPackage(pkg);
-                      setShowEnquiryForm(true);
-                    }}
-                  >
-                    Plan Your Trip
-                  </Button>
-                </div>
-                <Button variant="ghost" className="w-full text-green-600 hover:text-green-700 hover:bg-green-50">
-                  <a 
-                    href={`https://wa.me/918679333355?text=Hi! I'm interested in ${pkg.title} package`}
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                    className="flex items-center justify-center w-full"
-                  >
-                    WhatsApp Quick Chat
-                  </a>
-                </Button>
-              </div>
             </div>
           )}
         </CardContent>
