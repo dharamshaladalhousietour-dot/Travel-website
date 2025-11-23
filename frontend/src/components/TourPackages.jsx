@@ -943,9 +943,41 @@ const TourPackages = () => {
 
   const regions = ['All', 'Kashmir', 'Himachal', 'Rajasthan', 'Uttarakhand', 'Goa', 'Kerala', 'Madhya Pradesh', 'Karnataka', 'West Bengal', 'International'];
   
-  const filteredPackages = selectedRegion === 'All' 
-    ? tourPackages 
-    : tourPackages.filter(pkg => pkg.region === selectedRegion);
+  // Helper function to match duration
+  const matchesDuration = (packageDuration, searchDuration) => {
+    if (!searchDuration) return true;
+    
+    // Extract number of nights from package duration (e.g., "5 Nights / 6 Days" -> 5)
+    const nightsMatch = packageDuration.match(/(\d+)\s*Nights?/i);
+    if (!nightsMatch) return true;
+    
+    const nights = parseInt(nightsMatch[1]);
+    
+    // Map search duration to night ranges
+    const durationMap = {
+      '2-3': [2, 3],
+      '4-5': [4, 5],
+      '6-7': [6, 7],
+      '8-10': [8, 10],
+      '11+': [11, 999]
+    };
+    
+    const range = durationMap[searchDuration];
+    if (!range) return true;
+    
+    return nights >= range[0] && nights <= range[1];
+  };
+  
+  // Filter packages based on region and duration (from search)
+  const filteredPackages = tourPackages.filter(pkg => {
+    // Region filter
+    const matchesRegion = selectedRegion === 'All' || pkg.region === selectedRegion;
+    
+    // Duration filter (only if search duration is provided)
+    const matchesSearchDuration = matchesDuration(pkg.duration, searchDuration);
+    
+    return matchesRegion && matchesSearchDuration;
+  });
 
   const PackageCard = ({ pkg }) => {
     const [showDetails, setShowDetails] = useState(false);
