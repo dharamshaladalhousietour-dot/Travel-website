@@ -1248,6 +1248,57 @@ const TourPackages = () => {
           </p>
         </div>
 
+        {/* Search Results Banner */}
+        {(searchDestination || searchDuration) && (
+          <div className="mb-8 bg-gradient-to-r from-blue-50 to-blue-100 rounded-2xl p-6 border-l-4 border-blue-600 shadow-md">
+            <div className="flex items-start justify-between flex-wrap gap-4">
+              <div className="flex items-center gap-3">
+                <div className="bg-blue-600 rounded-full p-2">
+                  <Filter className="h-5 w-5 text-white" />
+                </div>
+                <div>
+                  <h3 className="text-lg font-semibold text-blue-900">Search Results</h3>
+                  <div className="flex flex-wrap gap-2 mt-2">
+                    {searchDestination && (
+                      <Badge className="bg-blue-600 text-white px-3 py-1">
+                        📍 {searchDestination}
+                      </Badge>
+                    )}
+                    {searchDuration && (
+                      <Badge className="bg-green-600 text-white px-3 py-1">
+                        🕒 {searchDuration} Days
+                      </Badge>
+                    )}
+                    {searchExCity && (
+                      <Badge className="bg-gray-600 text-white px-3 py-1">
+                        ✈️ From {searchExCity}
+                      </Badge>
+                    )}
+                    {searchPax && (
+                      <Badge className="bg-purple-600 text-white px-3 py-1">
+                        👥 {searchPax} {searchPax === '1' ? 'Person' : 'People'}
+                      </Badge>
+                    )}
+                  </div>
+                  <p className="text-sm text-gray-700 mt-2">
+                    Found <strong>{filteredPackages.length}</strong> packages matching your search
+                  </p>
+                </div>
+              </div>
+              <Button
+                variant="outline"
+                size="sm"
+                onClick={() => {
+                  window.location.href = '/tour-packages';
+                }}
+                className="text-blue-700 border-blue-300 hover:bg-blue-50"
+              >
+                Clear Filters
+              </Button>
+            </div>
+          </div>
+        )}
+
         {/* Filter Tabs */}
         <div className="flex flex-wrap justify-center gap-4 mb-12">
           <div className="flex items-center space-x-2 bg-white rounded-full p-2 shadow-lg">
