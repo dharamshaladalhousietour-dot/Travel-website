@@ -153,6 +153,7 @@ const Home = ({ scrollTo }) => {
       <Header />
       <Suspense fallback={<LoadingFallback />}>
         <Hero />
+        <SearchBar />
         <About />
         <Services />
         <Packages />
