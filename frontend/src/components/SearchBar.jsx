@@ -94,16 +94,13 @@ const SearchBar = () => {
             </div>
 
             {/* 3. Travel Date */}
-            <div className="space-y-2">
-              <label className="text-sm font-semibold text-gray-700 flex items-center gap-1">
-                <Calendar className="h-4 w-4 text-blue-600" />
-                Travel Date
-              </label>
+            <div className="space-y-1">
+              <label className="text-xs font-medium text-gray-600">Travel Date</label>
               <input
                 type="date"
                 value={searchData.travelDate}
                 onChange={(e) => handleInputChange('travelDate', e.target.value)}
-                className="w-full h-12 px-4 rounded-xl border-2 border-gray-200 hover:border-blue-400 focus:border-blue-500 focus:outline-none transition-colors"
+                className="w-full h-10 px-3 rounded-lg border border-gray-300 hover:border-blue-500 focus:border-blue-500 focus:outline-none transition-colors text-sm"
                 min={new Date().toISOString().split('T')[0]}
               />
             </div>
