@@ -148,33 +148,17 @@ const SearchBar = () => {
             </div>
           </div>
 
-          {/* Search Button */}
-          <div className="flex justify-center md:justify-end">
+          {/* Search Button - Now inside grid on large screens */}
+          <div className="col-span-1 md:col-span-3 lg:col-span-1 flex items-end">
             <Button
               type="submit"
-              className="w-full md:w-auto px-12 h-12 bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 flex items-center gap-2"
+              className="w-full h-10 bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white font-semibold rounded-lg shadow-md hover:shadow-lg transition-all duration-300 flex items-center justify-center gap-2"
             >
-              <Search className="h-5 w-5" />
-              Search Packages
+              <Search className="h-4 w-4" />
+              <span className="hidden sm:inline">Search</span>
             </Button>
           </div>
         </form>
-
-        {/* Quick Stats */}
-        <div className="mt-6 flex flex-wrap justify-center gap-6 text-sm text-gray-600">
-          <div className="flex items-center gap-2">
-            <span className="w-2 h-2 bg-green-500 rounded-full"></span>
-            <span>50+ Destinations</span>
-          </div>
-          <div className="flex items-center gap-2">
-            <span className="w-2 h-2 bg-blue-500 rounded-full"></span>
-            <span>5000+ Happy Travelers</span>
-          </div>
-          <div className="flex items-center gap-2">
-            <span className="w-2 h-2 bg-yellow-500 rounded-full"></span>
-            <span>Best Price Guarantee</span>
-          </div>
-        </div>
       </div>
     </div>
   );
