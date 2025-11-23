@@ -1495,7 +1495,7 @@ const TourPackages = () => {
                     className="text-xs border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white"
                     onClick={() => setExpandedPackage(expandedPackage === 3 ? null : 3)}
                   >
-                    {expandedPackage === 3 ? 'Hide Details' : 'View Details'}
+                    {expandedPackage === 3 ? 'Hide' : 'View Itinerary'}
                   </Button>
                   <Button 
                     size="sm"
@@ -1575,7 +1575,7 @@ const TourPackages = () => {
                     className="text-xs border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white"
                     onClick={() => setExpandedPackage(expandedPackage === 4 ? null : 4)}
                   >
-                    {expandedPackage === 4 ? 'Hide Details' : 'View Details'}
+                    {expandedPackage === 4 ? 'Hide' : 'View Itinerary'}
                   </Button>
                   <Button 
                     size="sm"
@@ -1654,7 +1654,7 @@ const TourPackages = () => {
                     className="text-xs border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white"
                     onClick={() => setExpandedPackage(expandedPackage === 5 ? null : 5)}
                   >
-                    {expandedPackage === 5 ? 'Hide Details' : 'View Details'}
+                    {expandedPackage === 5 ? 'Hide' : 'View Itinerary'}
                   </Button>
                   <Button 
                     size="sm"
@@ -1735,7 +1735,7 @@ const TourPackages = () => {
                     className="text-xs border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white"
                     onClick={() => setExpandedPackage(expandedPackage === 6 ? null : 6)}
                   >
-                    {expandedPackage === 6 ? 'Hide Details' : 'View Details'}
+                    {expandedPackage === 6 ? 'Hide' : 'View Itinerary'}
                   </Button>
                   <Button 
                     size="sm"
@@ -1815,7 +1815,7 @@ const TourPackages = () => {
                     className="text-xs border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white"
                     onClick={() => setExpandedPackage(expandedPackage === 7 ? null : 7)}
                   >
-                    {expandedPackage === 7 ? 'Hide Details' : 'View Details'}
+                    {expandedPackage === 7 ? 'Hide' : 'View Itinerary'}
                   </Button>
                   <Button 
                     size="sm"
@@ -1894,7 +1894,7 @@ const TourPackages = () => {
                     className="text-xs border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white"
                     onClick={() => setExpandedPackage(expandedPackage === 8 ? null : 8)}
                   >
-                    {expandedPackage === 8 ? 'Hide Details' : 'View Details'}
+                    {expandedPackage === 8 ? 'Hide' : 'View Itinerary'}
                   </Button>
                   <Button 
                     size="sm"
@@ -1972,7 +1972,7 @@ const TourPackages = () => {
                     className="text-xs border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white"
                     onClick={() => setExpandedPackage(expandedPackage === 9 ? null : 9)}
                   >
-                    {expandedPackage === 9 ? 'Hide Details' : 'View Details'}
+                    {expandedPackage === 9 ? 'Hide' : 'View Itinerary'}
                   </Button>
                   <Button 
                     size="sm"
@@ -2055,7 +2055,7 @@ const TourPackages = () => {
                     className="text-xs border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white"
                     onClick={() => setExpandedPackage(expandedPackage === 10 ? null : 10)}
                   >
-                    {expandedPackage === 10 ? 'Hide Details' : 'View Details'}
+                    {expandedPackage === 10 ? 'Hide' : 'View Itinerary'}
                   </Button>
                   <Button 
                     size="sm"
