@@ -128,16 +128,13 @@ const SearchBar = () => {
             </div>
 
             {/* 5. Trip Duration */}
-            <div className="space-y-2">
-              <label className="text-sm font-semibold text-gray-700 flex items-center gap-1">
-                <Clock className="h-4 w-4 text-blue-600" />
-                Trip Duration
-              </label>
+            <div className="space-y-1">
+              <label className="text-xs font-medium text-gray-600">Duration</label>
               <Select 
                 value={searchData.duration} 
                 onValueChange={(value) => handleInputChange('duration', value)}
               >
-                <SelectTrigger className="h-12 rounded-xl border-2 border-gray-200 hover:border-blue-400 focus:border-blue-500 transition-colors">
+                <SelectTrigger className="h-10 rounded-lg border border-gray-300 hover:border-blue-500 focus:border-blue-500 transition-colors">
                   <SelectValue placeholder="Days" />
                 </SelectTrigger>
                 <SelectContent>
