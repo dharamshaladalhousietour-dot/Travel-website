@@ -106,16 +106,13 @@ const SearchBar = () => {
             </div>
 
             {/* 4. No. of Pax */}
-            <div className="space-y-2">
-              <label className="text-sm font-semibold text-gray-700 flex items-center gap-1">
-                <Users className="h-4 w-4 text-blue-600" />
-                No. of Pax
-              </label>
+            <div className="space-y-1">
+              <label className="text-xs font-medium text-gray-600">Travelers</label>
               <Select 
                 value={searchData.pax} 
                 onValueChange={(value) => handleInputChange('pax', value)}
               >
-                <SelectTrigger className="h-12 rounded-xl border-2 border-gray-200 hover:border-blue-400 focus:border-blue-500 transition-colors">
+                <SelectTrigger className="h-10 rounded-lg border border-gray-300 hover:border-blue-500 focus:border-blue-500 transition-colors">
                   <SelectValue placeholder="People" />
                 </SelectTrigger>
                 <SelectContent>
