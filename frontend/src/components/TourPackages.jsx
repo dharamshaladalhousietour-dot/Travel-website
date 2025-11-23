@@ -1508,8 +1508,8 @@ const TourPackages = () => {
                     size="sm"
                     className="text-xs bg-blue-600 hover:bg-blue-700 text-white"
                     onClick={() => {
-                      const message = `Hi! I want to book Khajjiar Alpine Escape\n\nDuration: 2D/3N\nPrice: ₹9,999\n\nPlease provide me with more details.`;
-                      window.open(`https://wa.me/918679333354?text=${encodeURIComponent(message)}`, '_blank');
+                      setSelectedPackage({ title: 'Khajjiar Alpine Escape', duration: '2D/3N', price: '₹9,999' });
+                      setShowEnquiryForm(true);
                     }}
                   >
                     Submit Booking
@@ -1588,8 +1588,8 @@ const TourPackages = () => {
                     size="sm"
                     className="text-xs bg-blue-600 hover:bg-blue-700 text-white"
                     onClick={() => {
-                      const message = `Hi! I want to book Twin Peaks Magic\n\nDuration: 4D/5N\nPrice: ₹15,999\n\nPlease provide me with more details.`;
-                      window.open(`https://wa.me/918679333354?text=${encodeURIComponent(message)}`, '_blank');
+                      setSelectedPackage({ title: 'Twin Peaks Magic', duration: '4D/5N', price: '₹15,999' });
+                      setShowEnquiryForm(true);
                     }}
                   >
                     Submit Booking
