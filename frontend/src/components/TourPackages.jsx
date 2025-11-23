@@ -1512,7 +1512,7 @@ const TourPackages = () => {
                       window.open(`https://wa.me/918679333354?text=${encodeURIComponent(message)}`, '_blank');
                     }}
                   >
-                    Book Now
+                    Submit Booking
                   </Button>
                 </div>
 
@@ -1592,7 +1592,7 @@ const TourPackages = () => {
                       window.open(`https://wa.me/918679333354?text=${encodeURIComponent(message)}`, '_blank');
                     }}
                   >
-                    Book Now
+                    Submit Booking
                   </Button>
                 </div>
 
@@ -1671,7 +1671,7 @@ const TourPackages = () => {
                       window.open(`https://wa.me/918679333354?text=${encodeURIComponent(message)}`, '_blank');
                     }}
                   >
-                    Book Now
+                    Submit Booking
                   </Button>
                 </div>
 
@@ -1752,7 +1752,7 @@ const TourPackages = () => {
                       window.open(`https://wa.me/918679333354?text=${encodeURIComponent(message)}`, '_blank');
                     }}
                   >
-                    Book Now
+                    Submit Booking
                   </Button>
                 </div>
 
@@ -1832,7 +1832,7 @@ const TourPackages = () => {
                       window.open(`https://wa.me/918679333354?text=${encodeURIComponent(message)}`, '_blank');
                     }}
                   >
-                    Book Now
+                    Submit Booking
                   </Button>
                 </div>
 
@@ -1911,7 +1911,7 @@ const TourPackages = () => {
                       window.open(`https://wa.me/918679333354?text=${encodeURIComponent(message)}`, '_blank');
                     }}
                   >
-                    Book Now
+                    Submit Booking
                   </Button>
                 </div>
 
@@ -1989,7 +1989,7 @@ const TourPackages = () => {
                       window.open(`https://wa.me/918679333354?text=${encodeURIComponent(message)}`, '_blank');
                     }}
                   >
-                    Book Now
+                    Submit Booking
                   </Button>
                 </div>
 
@@ -2072,7 +2072,7 @@ const TourPackages = () => {
                       window.open(`https://wa.me/918679333354?text=${encodeURIComponent(message)}`, '_blank');
                     }}
                   >
-                    Book Now
+                    Submit Booking
                   </Button>
                 </div>
 
