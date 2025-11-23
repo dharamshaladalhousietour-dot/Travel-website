@@ -112,6 +112,7 @@ import FloatingCTAButtons from "./components/FloatingCTAButtons";
 
 // Lazy load components for better code splitting
 const Hero = lazy(() => import("./components/Hero"));
+const SearchBar = lazy(() => import("./components/SearchBar"));
 const About = lazy(() => import("./components/About"));
 const Services = lazy(() => import("./components/Services"));
 const Packages = lazy(() => import("./components/Packages"));
