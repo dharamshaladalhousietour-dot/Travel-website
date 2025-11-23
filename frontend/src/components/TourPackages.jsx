@@ -1,18 +1,33 @@
-import React, { useState } from 'react';
-import { MapPin, Clock, Users, Star, Download, Send, X } from 'lucide-react';
+import React, { useState, useEffect } from 'react';
+import { MapPin, Clock, Users, Star, Download, Send, X, Filter } from 'lucide-react';
 import { Card, CardContent } from './ui/card';
 import { Button } from './ui/button';
 import { Badge } from './ui/badge';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from './ui/accordion';
 import SimpleEnquiryForm from './SimpleEnquiryForm';
-import { Link } from 'react-router-dom';
+import { Link, useSearchParams } from 'react-router-dom';
 import SEOHead from './SEOHead';
 
 const TourPackages = () => {
+  const [searchParams] = useSearchParams();
   const [selectedRegion, setSelectedRegion] = useState('All');
   const [showEnquiryForm, setShowEnquiryForm] = useState(false);
   const [selectedPackage, setSelectedPackage] = useState(null);
   const [expandedPackage, setExpandedPackage] = useState(null);
+  
+  // Get search parameters from URL
+  const searchDestination = searchParams.get('destination');
+  const searchDuration = searchParams.get('duration');
+  const searchExCity = searchParams.get('exCity');
+  const searchDate = searchParams.get('date');
+  const searchPax = searchParams.get('pax');
+  
+  // Set initial region based on search destination
+  useEffect(() => {
+    if (searchDestination) {
+      setSelectedRegion(searchDestination);
+    }
+  }, [searchDestination]);
   
   // Scroll to enquiry form
   const scrollToEnquiryForm = (packageName) => {
