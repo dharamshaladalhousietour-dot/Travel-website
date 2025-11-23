@@ -1,0 +1,206 @@
+import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
+import { Search, MapPin, Plane, Calendar, Users, Clock } from 'lucide-react';
+import { Button } from './ui/button';
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from './ui/select';
+
+const SearchBar = () => {
+  const navigate = useNavigate();
+  const [searchData, setSearchData] = useState({
+    destination: '',
+    exCity: '',
+    travelDate: '',
+    pax: '',
+    duration: ''
+  });
+
+  const handleSearch = (e) => {
+    e.preventDefault();
+    
+    // Build query parameters
+    const params = new URLSearchParams();
+    if (searchData.destination) params.append('destination', searchData.destination);
+    if (searchData.duration) params.append('duration', searchData.duration);
+    if (searchData.exCity) params.append('exCity', searchData.exCity);
+    if (searchData.travelDate) params.append('date', searchData.travelDate);
+    if (searchData.pax) params.append('pax', searchData.pax);
+    
+    // Navigate to tour packages page with query params
+    navigate(`/tour-packages?${params.toString()}`);
+  };
+
+  const handleInputChange = (field, value) => {
+    setSearchData(prev => ({
+      ...prev,
+      [field]: value
+    }));
+  };
+
+  return (
+    <div className="w-full bg-gradient-to-br from-blue-50 via-white to-blue-50 py-8 md:py-12">
+      <div className="max-w-7xl mx-auto px-4">
+        {/* Title */}
+        <div className="text-center mb-6">
+          <h2 className="text-2xl md:text-3xl font-bold text-blue-900 mb-2">
+            Find Your Perfect Trip
+          </h2>
+          <p className="text-gray-600">Search from 50+ curated tour packages</p>
+        </div>
+
+        {/* Search Form */}
+        <form onSubmit={handleSearch} className="bg-white rounded-2xl shadow-2xl p-4 md:p-6 border border-gray-100">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-4 mb-4">
+            
+            {/* 1. Destination */}
+            <div className="space-y-2">
+              <label className="text-sm font-semibold text-gray-700 flex items-center gap-1">
+                <MapPin className="h-4 w-4 text-blue-600" />
+                Destination
+              </label>
+              <Select 
+                value={searchData.destination} 
+                onValueChange={(value) => handleInputChange('destination', value)}
+              >
+                <SelectTrigger className="h-12 rounded-xl border-2 border-gray-200 hover:border-blue-400 focus:border-blue-500 transition-colors">
+                  <SelectValue placeholder="Where to?" />
+                </SelectTrigger>
+                <SelectContent className="max-h-64">
+                  <SelectItem value="Kashmir">Kashmir</SelectItem>
+                  <SelectItem value="Himachal">Himachal Pradesh</SelectItem>
+                  <SelectItem value="Rajasthan">Rajasthan</SelectItem>
+                  <SelectItem value="Uttarakhand">Uttarakhand</SelectItem>
+                  <SelectItem value="Goa">Goa</SelectItem>
+                  <SelectItem value="Kerala">Kerala</SelectItem>
+                  <SelectItem value="Karnataka">Karnataka</SelectItem>
+                  <SelectItem value="West Bengal">West Bengal</SelectItem>
+                  <SelectItem value="Madhya Pradesh">Madhya Pradesh</SelectItem>
+                  <SelectItem value="International">International</SelectItem>
+                </SelectContent>
+              </Select>
+            </div>
+
+            {/* 2. Ex-City (Leaving From) */}
+            <div className="space-y-2">
+              <label className="text-sm font-semibold text-gray-700 flex items-center gap-1">
+                <Plane className="h-4 w-4 text-blue-600" />
+                Leaving From
+              </label>
+              <Select 
+                value={searchData.exCity} 
+                onValueChange={(value) => handleInputChange('exCity', value)}
+              >
+                <SelectTrigger className="h-12 rounded-xl border-2 border-gray-200 hover:border-blue-400 focus:border-blue-500 transition-colors">
+                  <SelectValue placeholder="City" />
+                </SelectTrigger>
+                <SelectContent className="max-h-64">
+                  <SelectItem value="Delhi">Delhi</SelectItem>
+                  <SelectItem value="Mumbai">Mumbai</SelectItem>
+                  <SelectItem value="Bangalore">Bangalore</SelectItem>
+                  <SelectItem value="Kolkata">Kolkata</SelectItem>
+                  <SelectItem value="Chennai">Chennai</SelectItem>
+                  <SelectItem value="Hyderabad">Hyderabad</SelectItem>
+                  <SelectItem value="Pune">Pune</SelectItem>
+                  <SelectItem value="Ahmedabad">Ahmedabad</SelectItem>
+                  <SelectItem value="Jaipur">Jaipur</SelectItem>
+                  <SelectItem value="Chandigarh">Chandigarh</SelectItem>
+                </SelectContent>
+              </Select>
+            </div>
+
+            {/* 3. Travel Date */}
+            <div className="space-y-2">
+              <label className="text-sm font-semibold text-gray-700 flex items-center gap-1">
+                <Calendar className="h-4 w-4 text-blue-600" />
+                Travel Date
+              </label>
+              <input
+                type="date"
+                value={searchData.travelDate}
+                onChange={(e) => handleInputChange('travelDate', e.target.value)}
+                className="w-full h-12 px-4 rounded-xl border-2 border-gray-200 hover:border-blue-400 focus:border-blue-500 focus:outline-none transition-colors"
+                min={new Date().toISOString().split('T')[0]}
+              />
+            </div>
+
+            {/* 4. No. of Pax */}
+            <div className="space-y-2">
+              <label className="text-sm font-semibold text-gray-700 flex items-center gap-1">
+                <Users className="h-4 w-4 text-blue-600" />
+                No. of Pax
+              </label>
+              <Select 
+                value={searchData.pax} 
+                onValueChange={(value) => handleInputChange('pax', value)}
+              >
+                <SelectTrigger className="h-12 rounded-xl border-2 border-gray-200 hover:border-blue-400 focus:border-blue-500 transition-colors">
+                  <SelectValue placeholder="People" />
+                </SelectTrigger>
+                <SelectContent>
+                  <SelectItem value="1">1 Person</SelectItem>
+                  <SelectItem value="2">2 People</SelectItem>
+                  <SelectItem value="3">3 People</SelectItem>
+                  <SelectItem value="4">4 People</SelectItem>
+                  <SelectItem value="5">5 People</SelectItem>
+                  <SelectItem value="6">6 People</SelectItem>
+                  <SelectItem value="7+">7+ People</SelectItem>
+                </SelectContent>
+              </Select>
+            </div>
+
+            {/* 5. Trip Duration */}
+            <div className="space-y-2">
+              <label className="text-sm font-semibold text-gray-700 flex items-center gap-1">
+                <Clock className="h-4 w-4 text-blue-600" />
+                Trip Duration
+              </label>
+              <Select 
+                value={searchData.duration} 
+                onValueChange={(value) => handleInputChange('duration', value)}
+              >
+                <SelectTrigger className="h-12 rounded-xl border-2 border-gray-200 hover:border-blue-400 focus:border-blue-500 transition-colors">
+                  <SelectValue placeholder="Days" />
+                </SelectTrigger>
+                <SelectContent>
+                  <SelectItem value="2-3">2-3 Days</SelectItem>
+                  <SelectItem value="4-5">4-5 Days</SelectItem>
+                  <SelectItem value="6-7">6-7 Days</SelectItem>
+                  <SelectItem value="8-10">8-10 Days</SelectItem>
+                  <SelectItem value="11+">11+ Days</SelectItem>
+                </SelectContent>
+              </Select>
+            </div>
+          </div>
+
+          {/* Search Button */}
+          <div className="flex justify-center md:justify-end">
+            <Button
+              type="submit"
+              className="w-full md:w-auto px-12 h-12 bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 flex items-center gap-2"
+            >
+              <Search className="h-5 w-5" />
+              Search Packages
+            </Button>
+          </div>
+        </form>
+
+        {/* Quick Stats */}
+        <div className="mt-6 flex flex-wrap justify-center gap-6 text-sm text-gray-600">
+          <div className="flex items-center gap-2">
+            <span className="w-2 h-2 bg-green-500 rounded-full"></span>
+            <span>50+ Destinations</span>
+          </div>
+          <div className="flex items-center gap-2">
+            <span className="w-2 h-2 bg-blue-500 rounded-full"></span>
+            <span>5000+ Happy Travelers</span>
+          </div>
+          <div className="flex items-center gap-2">
+            <span className="w-2 h-2 bg-yellow-500 rounded-full"></span>
+            <span>Best Price Guarantee</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default SearchBar;
