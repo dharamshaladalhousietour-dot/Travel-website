@@ -1358,27 +1358,27 @@ const TourPackages = () => {
                   <Button 
                     variant="outline"
                     size="sm"
-                    className="text-xs border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white"
+                    className="text-xs border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white font-semibold"
                     onClick={() => setExpandedPackage(expandedPackage === 1 ? null : 1)}
                   >
-                    {expandedPackage === 1 ? 'Hide Details' : 'View Details'}
+                    {expandedPackage === 1 ? 'Hide' : 'View Itinerary'}
                   </Button>
                   <Button 
                     size="sm"
-                    className="text-xs bg-green-600 hover:bg-green-700 text-white"
+                    className="text-xs bg-green-600 hover:bg-green-700 text-white font-semibold"
                     onClick={() => window.location.href = 'tel:+918679333355'}
                   >
                     Call Now
                   </Button>
                   <Button 
                     size="sm"
-                    className="text-xs bg-blue-600 hover:bg-blue-700 text-white"
+                    className="text-xs bg-blue-600 hover:bg-blue-700 text-white font-semibold"
                     onClick={() => {
-                      const message = `Hi! I want to book Himalayan Golden Circuit\n\nDuration: 7D/6N\nPrice: ₹18,999\n\nPlease provide me with more details.`;
-                      window.open(`https://wa.me/918679333354?text=${encodeURIComponent(message)}`, '_blank');
+                      setSelectedPackage({ title: 'Himalayan Golden Circuit', duration: '7D/6N', price: '₹18,999' });
+                      setShowEnquiryForm(true);
                     }}
                   >
-                    Book Now
+                    Submit Booking
                   </Button>
                 </div>
 
