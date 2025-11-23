@@ -1098,29 +1098,29 @@ const TourPackages = () => {
           </div>
 
           <div className="flex flex-col space-y-3">
-            {/* Action Buttons - View Details, Call Now, Book Now */}
+            {/* Action Buttons - View Itinerary, Call Now, Submit Booking Request */}
             <div className="grid grid-cols-3 gap-2">
               <Button 
                 variant="outline"
-                className="border-blue-600 text-blue-600 hover:bg-blue-50 transition-colors duration-200 text-sm"
+                className="border-blue-600 text-blue-600 hover:bg-blue-50 transition-colors duration-200 text-xs sm:text-sm font-semibold"
                 onClick={() => setExpandedPackage(expandedPackage === pkg.id ? null : pkg.id)}
               >
-                {expandedPackage === pkg.id ? 'Hide Details' : 'View Details'}
+                {expandedPackage === pkg.id ? 'Hide' : 'View Itinerary'}
               </Button>
               <Button 
-                className="bg-green-600 hover:bg-green-700 text-white transition-colors duration-200 text-sm"
+                className="bg-green-600 hover:bg-green-700 text-white transition-colors duration-200 text-xs sm:text-sm font-semibold"
                 onClick={() => window.location.href = 'tel:+918679333355'}
               >
                 Call Now
               </Button>
               <Button 
-                className="bg-blue-600 hover:bg-blue-700 text-white transition-colors duration-200 text-sm"
+                className="bg-blue-600 hover:bg-blue-700 text-white transition-colors duration-200 text-xs sm:text-sm font-semibold"
                 onClick={() => {
-                  const message = `Hi! I want to book ${pkg.title}\n\nDuration: ${pkg.duration}\nPrice: ${pkg.price}\n\nPlease provide me with more details.`;
-                  window.open(`https://wa.me/918679333354?text=${encodeURIComponent(message)}`, '_blank');
+                  setSelectedPackage(pkg);
+                  setShowEnquiryForm(true);
                 }}
               >
-                Book Now
+                Submit Booking
               </Button>
             </div>
             
