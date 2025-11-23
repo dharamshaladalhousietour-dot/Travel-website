@@ -37,19 +37,11 @@ const SearchBar = () => {
   };
 
   return (
-    <div className="w-full bg-gradient-to-br from-blue-50 via-white to-blue-50 py-8 md:py-12">
-      <div className="max-w-7xl mx-auto px-4">
-        {/* Title */}
-        <div className="text-center mb-6">
-          <h2 className="text-2xl md:text-3xl font-bold text-blue-900 mb-2">
-            Find Your Perfect Trip
-          </h2>
-          <p className="text-gray-600">Search from 50+ curated tour packages</p>
-        </div>
-
+    <div className="w-full bg-white py-6">
+      <div className="max-w-6xl mx-auto px-4">
         {/* Search Form */}
-        <form onSubmit={handleSearch} className="bg-white rounded-2xl shadow-2xl p-4 md:p-6 border border-gray-100">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-4 mb-4">
+        <form onSubmit={handleSearch} className="bg-white rounded-xl shadow-lg p-4 border border-gray-200">
+          <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-6 gap-3">
             
             {/* 1. Destination */}
             <div className="space-y-2">
