@@ -44,16 +44,13 @@ const SearchBar = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-6 gap-3">
             
             {/* 1. Destination */}
-            <div className="space-y-2">
-              <label className="text-sm font-semibold text-gray-700 flex items-center gap-1">
-                <MapPin className="h-4 w-4 text-blue-600" />
-                Destination
-              </label>
+            <div className="space-y-1">
+              <label className="text-xs font-medium text-gray-600">Destination</label>
               <Select 
                 value={searchData.destination} 
                 onValueChange={(value) => handleInputChange('destination', value)}
               >
-                <SelectTrigger className="h-12 rounded-xl border-2 border-gray-200 hover:border-blue-400 focus:border-blue-500 transition-colors">
+                <SelectTrigger className="h-10 rounded-lg border border-gray-300 hover:border-blue-500 focus:border-blue-500 transition-colors">
                   <SelectValue placeholder="Where to?" />
                 </SelectTrigger>
                 <SelectContent className="max-h-64">
