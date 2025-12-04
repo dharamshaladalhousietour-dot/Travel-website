@@ -128,6 +128,7 @@ const RefundPolicy = lazy(() => import("./components/RefundPolicy"));
 const TravelInsurance = lazy(() => import("./components/TravelInsurance"));
 const PackageDetail = lazy(() => import("./components/PackageDetail"));
 const NotFound = lazy(() => import("./components/NotFound"));
+const FilteredPackages = lazy(() => import("./components/FilteredPackages"));
 
 // Loading component
 const LoadingFallback = () => (
