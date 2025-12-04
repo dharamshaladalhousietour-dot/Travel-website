@@ -388,12 +388,14 @@ async def health_check():
     return health_status
 
 # Chatbot Models
+from typing import Optional
+
 class ChatMessage(BaseModel):
     session_id: str
     message: str
-    user_name: str = None
-    user_email: str = None
-    user_phone: str = None
+    user_name: Optional[str] = None
+    user_email: Optional[str] = None
+    user_phone: Optional[str] = None
 
 class ChatResponse(BaseModel):
     response: str
