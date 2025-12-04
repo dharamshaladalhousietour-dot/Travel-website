@@ -396,6 +396,9 @@ class ChatMessage(BaseModel):
     user_name: Optional[str] = None
     user_email: Optional[str] = None
     user_phone: Optional[str] = None
+    service_type: Optional[str] = None
+    event_date: Optional[str] = None
+    guest_count: Optional[str] = None
 
 class ChatResponse(BaseModel):
     response: str
