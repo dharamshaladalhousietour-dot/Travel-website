@@ -151,11 +151,18 @@ const AIChatbot = () => {
 
   const handleLeadSubmit = (e) => {
     e.preventDefault();
-    if (leadInfo.name && leadInfo.phone) {
+    if (leadInfo.name && leadInfo.phone && leadInfo.serviceType) {
       setLeadCaptured(true);
       setShowLeadForm(false);
-      handleSendMessage(`Hi, I'm ${leadInfo.name}. I'd like to know more about your packages.`);
+      const serviceText = leadInfo.serviceType === 'travel' ? 'Travel & Tour Packages' : 
+                         leadInfo.serviceType === 'wedding' ? 'Dharamshala Weddings' : 
+                         'Events in Dharamshala';
+      handleSendMessage(`Hi, I'm ${leadInfo.name}. I'm interested in ${serviceText}.`);
     }
+  };
+
+  const handleEmail = () => {
+    window.location.href = 'mailto:holidays@prettyplanettravels.com';
   };
 
   const handleWhatsApp = () => {
