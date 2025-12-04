@@ -933,7 +933,6 @@ const TourPackages = () => {
     : tourPackages.filter(pkg => pkg.region === selectedRegion);
 
   const PackageCard = ({ pkg }) => {
-    const [showDetails, setShowDetails] = useState(false);
     const [imageError, setImageError] = useState(false);
     const [imageLoaded, setImageLoaded] = useState(false);
 
