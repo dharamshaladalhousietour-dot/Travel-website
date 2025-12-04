@@ -246,20 +246,20 @@ const AIChatbot = () => {
               <p className="text-xs text-blue-200">Dharamshala Specialist</p>
             </div>
           </div>
-          <div className="flex items-center gap-1">
+          <div className="flex items-center gap-2">
             <button
               onClick={handleMinimize}
-              className="p-2 hover:bg-white hover:text-blue-900 rounded-full transition-all duration-200 bg-blue-800"
+              className="p-2 bg-white text-blue-900 hover:bg-blue-100 rounded-lg transition-all duration-200 shadow-lg"
               title="Minimize"
             >
-              <Minus className="h-5 w-5 font-bold" />
+              <Minus className="h-5 w-5 stroke-[3]" />
             </button>
             <button
               onClick={handleClose}
-              className="p-2 hover:bg-white hover:text-blue-900 rounded-full transition-all duration-200 bg-blue-800"
+              className="p-2 bg-white text-red-600 hover:bg-red-50 rounded-lg transition-all duration-200 shadow-lg"
               title="Close"
             >
-              <X className="h-6 w-6 font-bold" />
+              <X className="h-6 w-6 stroke-[3]" />
             </button>
           </div>
         </div>
