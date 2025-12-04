@@ -130,6 +130,9 @@ const PackageDetail = lazy(() => import("./components/PackageDetail"));
 const NotFound = lazy(() => import("./components/NotFound"));
 const FilteredPackages = lazy(() => import("./components/FilteredPackages"));
 
+// Import AI Chatbot (not lazy loaded for instant availability)
+import AIChatbot from "./components/AIChatbot";
+
 // Loading component
 const LoadingFallback = () => (
   <div className="flex items-center justify-center min-h-screen">
