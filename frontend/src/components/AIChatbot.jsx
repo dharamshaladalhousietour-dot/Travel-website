@@ -182,13 +182,6 @@ const AIChatbot = () => {
     '🏔️ Travel & Tour Packages'
   ];
 
-  const actionButtons = [
-    { text: '📋 Share Details', action: () => setShowLeadForm(true) },
-    { text: '💬 WhatsApp Us', action: handleWhatsApp },
-    { text: '📞 Call Now', action: handleCall },
-    { text: '📧 Email Us', action: handleEmail }
-  ];
-
   const toggleChat = () => {
     setIsOpen(!isOpen);
     setIsMinimized(false);
