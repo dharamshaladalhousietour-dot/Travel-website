@@ -37,77 +37,35 @@ const Hero = () => {
     setSearchError('');
     console.log('Homepage search submitted:', enquiryData);
     
-    try {
-      // Create formatted message for WhatsApp and email
-      const formattedMessage = `📩 New Travel Enquiry from Pretty Planet Website
-
-📍 Destination: ${enquiryData.destination}
-📅 Start Date: ${enquiryData.startDate}
-👥 No. of Pax: ${enquiryData.pax}
-📱 Contact Number: ${enquiryData.phone}
-💬 Message: ${enquiryData.message || 'No additional message'}`;
-
-      const backendUrl = process.env.REACT_APP_BACKEND_URL || '';
-      
-      const response = await fetch(`${backendUrl}/api/enquiry`, {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({
-          destination: enquiryData.destination,
-          start_date: enquiryData.startDate,
-          end_date: '',
-          adults: enquiryData.pax,
-          kids: '0',
-          days: 'To be calculated',
-          name: 'Homepage Visitor',
-          email: 'info@prettyplanettravels.com',
-          phone: enquiryData.phone,
-          budget: 'To be discussed',
-          message: enquiryData.message || 'Homepage travel enquiry',
-          formatted_message: formattedMessage
-        })
-      });
-
-      if (response.ok) {
-        console.log('✅ Homepage enquiry submitted to backend');
-        
-        // Track form submission with Meta Pixel
-        if (window.fbq) {
-          window.fbq('track', 'Lead', {
-            content_name: 'Homepage Enquiry Form',
-            content_category: 'Travel Enquiry',
-            destination: enquiryData.destination,
-            pax: enquiryData.pax
-          });
-        }
-        
-        // Send WhatsApp message
-        const whatsappMessage = encodeURIComponent(formattedMessage);
-        const whatsappUrl = `https://wa.me/918679333354?text=${whatsappMessage}`;
-        window.open(whatsappUrl, '_blank');
-        console.log('✅ WhatsApp message sent from homepage');
-      } else {
-        console.error('❌ Failed to submit homepage enquiry to backend');
-      }
-    } catch (error) {
-      console.error('❌ Error submitting homepage enquiry:', error);
+    // Check if destination is provided
+    if (!enquiryData.destination || enquiryData.destination.trim() === '') {
+      setSearchError('Please enter a destination to search.');
+      return;
     }
 
-    setShowThankYou(true);
-    
-    // Reset form and hide thank you message after 5 seconds
-    setTimeout(() => {
-      setShowThankYou(false);
-      setEnquiryData({
-        destination: '',
-        startDate: '',
-        pax: '',
-        phone: '',
-        message: ''
-      });
-    }, 5000);
+    // Search for matching destination (case-insensitive, partial match)
+    const searchTerm = enquiryData.destination.toLowerCase().trim();
+    const match = destinationMapping.find(mapping => 
+      mapping.keywords.some(keyword => searchTerm.includes(keyword) || keyword.includes(searchTerm))
+    );
+
+    if (match) {
+      // Track search with Meta Pixel
+      if (window.fbq) {
+        window.fbq('trackCustom', 'PackageSearch', {
+          search_term: enquiryData.destination,
+          matched_url: match.url
+        });
+      }
+      
+      // Redirect to matched page
+      console.log(`✅ Redirecting to: ${match.url} for destination: ${enquiryData.destination}`);
+      window.location.href = match.url;
+    } else {
+      // No match found - show error message
+      setSearchError('No matching packages found.');
+      console.log(`❌ No match found for: ${enquiryData.destination}`);
+    }
   };
 
   return (
