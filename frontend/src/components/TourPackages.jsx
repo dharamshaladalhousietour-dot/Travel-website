@@ -1111,6 +1111,14 @@ const TourPackages = () => {
                 </ul>
               </div>
 
+              <div>
+                <h4 className="font-bold text-blue-600 mb-2">🏨 Hotel Details</h4>
+                <div className="text-sm bg-blue-50 p-3 rounded-lg">
+                  <p className="font-semibold text-blue-900">3-Star Hotels</p>
+                  <p className="text-gray-700 mt-1">Hotel name will be shared at the time of booking</p>
+                </div>
+              </div>
+
               <Accordion type="single" collapsible className="w-full">
                 <AccordionItem value="itinerary">
                   <AccordionTrigger>Day-wise Itinerary</AccordionTrigger>
