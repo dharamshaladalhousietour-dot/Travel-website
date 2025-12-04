@@ -191,6 +191,18 @@ const EventsWeddingsPage = () => (
   </div>
 );
 
+// Filtered Packages Page
+const FilteredPackagesPage = () => (
+  <div className="min-h-screen">
+    <Header />
+    <Suspense fallback={<LoadingFallback />}>
+      <FilteredPackages />
+    </Suspense>
+    <PayNowButton />
+    <Footer />
+  </div>
+);
+
 function App() {
   return (
     <div className="App">
