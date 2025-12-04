@@ -76,7 +76,10 @@ const AIChatbot = () => {
           setLeadInfo({
             name: data.messages[0].user_name || '',
             email: data.messages[0].user_email || '',
-            phone: data.messages[0].user_phone || ''
+            phone: data.messages[0].user_phone || '',
+            serviceType: data.messages[0].service_type || '',
+            eventDate: data.messages[0].event_date || '',
+            guestCount: data.messages[0].guest_count || ''
           });
           setLeadCaptured(true);
         }
