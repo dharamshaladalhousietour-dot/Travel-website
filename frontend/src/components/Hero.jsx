@@ -14,10 +14,28 @@ const Hero = () => {
   });
 
   const [showThankYou, setShowThankYou] = useState(false);
+  const [searchError, setSearchError] = useState('');
+
+  // Destination to page mapping (case-insensitive, partial match)
+  const destinationMapping = [
+    { keywords: ['dharam', 'dharamshala'], url: '/tour-packages' },
+    { keywords: ['dalhousie'], url: '/tour-packages' },
+    { keywords: ['jaipur'], url: '/tour-packages' },
+    { keywords: ['jaisalmer'], url: '/tour-packages' },
+    { keywords: ['shimla'], url: '/tour-packages' },
+    { keywords: ['manali'], url: '/tour-packages' },
+    { keywords: ['kashmir', 'srinagar'], url: '/tour-packages' },
+    { keywords: ['leh', 'ladakh', 'leh-ladakh'], url: '/tour-packages' },
+    { keywords: ['goa'], url: '/tour-packages' },
+    { keywords: ['kerala'], url: '/tour-packages' },
+    { keywords: ['rajasthan'], url: '/tour-packages' },
+    { keywords: ['wedding', 'events', 'event'], url: '/events-weddings' },
+  ];
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log('Homepage enquiry submitted:', enquiryData);
+    setSearchError('');
+    console.log('Homepage search submitted:', enquiryData);
     
     try {
       // Create formatted message for WhatsApp and email
