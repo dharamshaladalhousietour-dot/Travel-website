@@ -191,14 +191,25 @@ const AIChatbot = () => {
 
   const toggleChat = () => {
     setIsOpen(!isOpen);
+    setIsMinimized(false);
     if (!isOpen && messages.length === 0) {
       // Welcome message
       setMessages([{
         type: 'bot',
-        text: "Hello! 👋 Welcome to Pretty Planet Travels & Events! I'm your AI travel assistant.\n\nI can help you with:\n• Tour packages across India\n• Destination weddings\n• Corporate events\n• Travel recommendations\n\nHow can I assist you today?",
+        text: "Welcome to Pretty Planet Travels & Events! 🏔️\n\nWe specialize in Dharamshala-based services:\n\n💍 Dharamshala Weddings\n🎉 Events in Dharamshala\n🏔️ Travel & Tour Packages\n\nWhich service interests you?",
         timestamp: new Date().toISOString()
       }]);
     }
+  };
+
+  const handleMinimize = () => {
+    setIsMinimized(true);
+    setIsOpen(false);
+  };
+
+  const handleClose = () => {
+    setIsOpen(false);
+    setIsMinimized(false);
   };
 
   if (!isOpen) {
