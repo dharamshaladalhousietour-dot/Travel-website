@@ -213,7 +213,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<Home scrollTo="about" />} />
           <Route path="/services" element={<Home scrollTo="services" />} />
-          <Route path="/packages" element={<Home scrollTo="packages" />} />
+          <Route path="/packages" element={<FilteredPackagesPage />} />
           <Route path="/contact" element={<Home scrollTo="contact" />} />
           <Route path="/gallery" element={<Home scrollTo="gallery" />} />
           <Route path="/tour-packages" element={<TourPackagesPage />} />
