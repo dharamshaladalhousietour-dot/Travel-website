@@ -211,6 +211,7 @@ function App() {
     <div className="App">
       <ContentProtection />
       <FloatingCTAButtons />
+      <AIChatbot />
       <Router>
         <Routes>
           <Route path="/" element={<Home />} />
