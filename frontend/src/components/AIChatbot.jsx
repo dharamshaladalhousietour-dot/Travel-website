@@ -1,10 +1,12 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { MessageCircle, X, Send, Phone, User, Mail, PhoneCall } from 'lucide-react';
+import { MessageCircle, X, Send, Phone, Mail, Minus } from 'lucide-react';
 import { Button } from './ui/button';
 import { Input } from './ui/input';
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from './ui/select';
 
 const AIChatbot = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [isMinimized, setIsMinimized] = useState(false);
   const [messages, setMessages] = useState([]);
   const [inputMessage, setInputMessage] = useState('');
   const [isLoading, setIsLoading] = useState(false);
@@ -13,7 +15,10 @@ const AIChatbot = () => {
   const [leadInfo, setLeadInfo] = useState({
     name: '',
     email: '',
-    phone: ''
+    phone: '',
+    serviceType: '',
+    eventDate: '',
+    guestCount: ''
   });
   const [leadCaptured, setLeadCaptured] = useState(false);
   
