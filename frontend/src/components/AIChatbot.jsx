@@ -217,11 +217,12 @@ const AIChatbot = () => {
       <div className="fixed bottom-6 right-6 z-[9999]">
         <button
           onClick={toggleChat}
-          className="group bg-gradient-to-r from-blue-900 to-blue-800 hover:from-blue-800 hover:to-blue-700 text-white rounded-full p-4 shadow-2xl transition-all duration-300 transform hover:scale-110 animate-bounce-slow"
+          className="group bg-gradient-to-r from-blue-900 to-blue-800 hover:from-blue-800 hover:to-blue-700 text-white rounded-full p-4 shadow-2xl transition-all duration-300 transform hover:scale-110"
           aria-label="Open Chat"
+          style={{ animation: 'none' }}
         >
           <MessageCircle className="h-6 w-6" />
-          <span className="absolute -top-1 -right-1 bg-red-500 text-white text-xs rounded-full h-5 w-5 flex items-center justify-center animate-pulse">
+          <span className="absolute -top-1 -right-1 bg-green-500 text-white text-[10px] font-bold rounded-full h-5 w-5 flex items-center justify-center">
             AI
           </span>
         </button>
