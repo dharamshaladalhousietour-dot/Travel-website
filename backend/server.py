@@ -387,6 +387,121 @@ async def health_check():
     
     return health_status
 
+# Chatbot Models
+class ChatMessage(BaseModel):
+    session_id: str
+    message: str
+    user_name: str = None
+    user_email: str = None
+    user_phone: str = None
+
+class ChatResponse(BaseModel):
+    response: str
+    session_id: str
+
+# Chatbot Endpoints
+@api_router.post("/chat", response_model=ChatResponse)
+async def chat(chat_message: ChatMessage):
+    """AI Chatbot endpoint for Pretty Planet Travels"""
+    try:
+        from emergentintegrations.llm.chat import LlmChat, UserMessage
+        
+        # Get API key from environment
+        api_key = os.environ.get('EMERGENT_LLM_KEY', 'sk-emergent-9458a7296Ad065bA72')
+        
+        # System message with context about Pretty Planet Travels
+        system_message = """You are an AI travel assistant for Pretty Planet Travels & Events, a premium travel company based in Himachal Pradesh, India.
+
+**About Pretty Planet Travels:**
+- Specializes in tours across Himachal Pradesh (Shimla, Manali, Dharamshala, Dalhousie, Kashmir, Leh Ladakh)
+- Also offers tours to Goa, Kerala, Rajasthan (Jaipur, Jaisalmer)
+- Expert in destination weddings and corporate events
+- Provides customized packages, hotel bookings, and complete travel planning
+
+**Your Role:**
+1. Help customers find the perfect tour package
+2. Answer questions about destinations, pricing, itineraries
+3. Provide travel recommendations based on preferences
+4. Collect customer details (name, email, phone) for follow-up
+5. Guide users to book packages or contact the team
+
+**Key Information:**
+- Packages range from ₹22,999 to ₹89,999 for 3-10 days
+- All packages include hotels, meals (MAP/AP), transfers, sightseeing
+- 3-star hotels with upgrades available
+- Contact: +91 8679333355 (Call/WhatsApp)
+- Website: Pretty Planet Travels
+
+**Communication Style:**
+- Friendly, helpful, and professional
+- Ask clarifying questions to understand needs
+- Provide specific recommendations
+- Always offer to connect with the team for bookings
+
+If a user wants to book or needs detailed information, collect their name, email, and phone number, then tell them the team will contact them within 1 hour."""
+
+        # Create LlmChat instance
+        chat_instance = LlmChat(
+            api_key=api_key,
+            session_id=chat_message.session_id,
+            system_message=system_message
+        ).with_model("openai", "gpt-4o-mini")
+        
+        # Add user context if provided
+        user_context = ""
+        if chat_message.user_name:
+            user_context += f"\nUser Name: {chat_message.user_name}"
+        if chat_message.user_email:
+            user_context += f"\nUser Email: {chat_message.user_email}"
+        if chat_message.user_phone:
+            user_context += f"\nUser Phone: {chat_message.user_phone}"
+        
+        message_text = chat_message.message
+        if user_context:
+            message_text += user_context
+        
+        # Send message and get response
+        user_message = UserMessage(text=message_text)
+        response = await chat_instance.send_message(user_message)
+        
+        # Store chat history in database
+        chat_history = {
+            "id": str(uuid.uuid4()),
+            "session_id": chat_message.session_id,
+            "user_message": chat_message.message,
+            "bot_response": response,
+            "user_name": chat_message.user_name,
+            "user_email": chat_message.user_email,
+            "user_phone": chat_message.user_phone,
+            "timestamp": datetime.utcnow()
+        }
+        await db.chat_history.insert_one(chat_history)
+        
+        logger.info(f"Chat message processed for session: {chat_message.session_id}")
+        
+        return ChatResponse(
+            response=response,
+            session_id=chat_message.session_id
+        )
+        
+    except Exception as e:
+        logger.error(f"Error in chat endpoint: {str(e)}")
+        raise HTTPException(status_code=500, detail=f"Chat service error: {str(e)}")
+
+@api_router.get("/chat-history/{session_id}")
+async def get_chat_history(session_id: str):
+    """Get chat history for a session"""
+    try:
+        history = await db.chat_history.find(
+            {"session_id": session_id},
+            {"_id": 0}
+        ).sort("timestamp", 1).to_list(100)
+        
+        return {"session_id": session_id, "messages": history}
+    except Exception as e:
+        logger.error(f"Error fetching chat history: {str(e)}")
+        raise HTTPException(status_code=500, detail="Failed to fetch chat history")
+
 # Include the router in the main app
 app.include_router(api_router)
 
