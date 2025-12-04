@@ -43,29 +43,17 @@ const Hero = () => {
       return;
     }
 
-    // Search for matching destination (case-insensitive, partial match)
-    const searchTerm = enquiryData.destination.toLowerCase().trim();
-    const match = destinationMapping.find(mapping => 
-      mapping.keywords.some(keyword => searchTerm.includes(keyword) || keyword.includes(searchTerm))
-    );
-
-    if (match) {
-      // Track search with Meta Pixel
-      if (window.fbq) {
-        window.fbq('trackCustom', 'PackageSearch', {
-          search_term: enquiryData.destination,
-          matched_url: match.url
-        });
-      }
-      
-      // Redirect to matched page
-      console.log(`✅ Redirecting to: ${match.url} for destination: ${enquiryData.destination}`);
-      window.location.href = match.url;
-    } else {
-      // No match found - show error message
-      setSearchError('No matching packages found.');
-      console.log(`❌ No match found for: ${enquiryData.destination}`);
+    // Track search with Meta Pixel
+    if (window.fbq) {
+      window.fbq('trackCustom', 'PackageSearch', {
+        search_term: enquiryData.destination
+      });
     }
+    
+    // Redirect to packages page with destination as query parameter
+    const destination = encodeURIComponent(enquiryData.destination.trim());
+    console.log(`✅ Redirecting to: /packages?destination=${destination}`);
+    window.location.href = `/packages?destination=${destination}`;
   };
 
   return (
