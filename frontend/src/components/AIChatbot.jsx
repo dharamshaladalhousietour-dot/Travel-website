@@ -342,34 +342,94 @@ const AIChatbot = () => {
 
         {/* Lead Capture Form */}
         {showLeadForm && !leadCaptured && (
-          <div className="p-4 bg-blue-50 border-t border-blue-200">
-            <p className="text-sm font-semibold text-blue-900 mb-3">Let's stay connected!</p>
-            <form onSubmit={handleLeadSubmit} className="space-y-2">
-              <Input
-                type="text"
-                placeholder="Your Name *"
-                value={leadInfo.name}
-                onChange={(e) => setLeadInfo({...leadInfo, name: e.target.value})}
-                className="text-sm"
-                required
-              />
-              <Input
-                type="email"
-                placeholder="Email"
-                value={leadInfo.email}
-                onChange={(e) => setLeadInfo({...leadInfo, email: e.target.value})}
-                className="text-sm"
-              />
-              <Input
-                type="tel"
-                placeholder="Phone Number *"
-                value={leadInfo.phone}
-                onChange={(e) => setLeadInfo({...leadInfo, phone: e.target.value})}
-                className="text-sm"
-                required
-              />
-              <Button type="submit" className="w-full bg-blue-900 hover:bg-blue-800 text-sm">
-                Continue Chat
+          <div className="p-4 bg-blue-50 border-t border-blue-200 max-h-96 overflow-y-auto">
+            <div className="flex items-center justify-between mb-3">
+              <p className="text-sm font-bold text-blue-900">Share Your Details</p>
+              <button 
+                onClick={() => setShowLeadForm(false)}
+                className="text-gray-500 hover:text-gray-700"
+              >
+                <X className="h-4 w-4" />
+              </button>
+            </div>
+            <form onSubmit={handleLeadSubmit} className="space-y-3">
+              <div>
+                <label className="text-xs font-semibold text-gray-700 mb-1 block">Name *</label>
+                <Input
+                  type="text"
+                  placeholder="Your name"
+                  value={leadInfo.name}
+                  onChange={(e) => setLeadInfo({...leadInfo, name: e.target.value})}
+                  className="text-sm"
+                  required
+                />
+              </div>
+              
+              <div>
+                <label className="text-xs font-semibold text-gray-700 mb-1 block">Service Type *</label>
+                <Select 
+                  value={leadInfo.serviceType} 
+                  onValueChange={(value) => setLeadInfo({...leadInfo, serviceType: value})}
+                  required
+                >
+                  <SelectTrigger className="text-sm">
+                    <SelectValue placeholder="Select service" />
+                  </SelectTrigger>
+                  <SelectContent>
+                    <SelectItem value="travel">Travel & Tour Packages</SelectItem>
+                    <SelectItem value="wedding">Dharamshala Weddings</SelectItem>
+                    <SelectItem value="event">Events in Dharamshala</SelectItem>
+                  </SelectContent>
+                </Select>
+              </div>
+
+              <div>
+                <label className="text-xs font-semibold text-gray-700 mb-1 block">Date</label>
+                <Input
+                  type="date"
+                  value={leadInfo.eventDate}
+                  onChange={(e) => setLeadInfo({...leadInfo, eventDate: e.target.value})}
+                  className="text-sm"
+                />
+              </div>
+
+              <div>
+                <label className="text-xs font-semibold text-gray-700 mb-1 block">Guest Count</label>
+                <Input
+                  type="number"
+                  placeholder="Number of guests"
+                  value={leadInfo.guestCount}
+                  onChange={(e) => setLeadInfo({...leadInfo, guestCount: e.target.value})}
+                  className="text-sm"
+                  min="1"
+                />
+              </div>
+
+              <div>
+                <label className="text-xs font-semibold text-gray-700 mb-1 block">Contact Number *</label>
+                <Input
+                  type="tel"
+                  placeholder="Your phone number"
+                  value={leadInfo.phone}
+                  onChange={(e) => setLeadInfo({...leadInfo, phone: e.target.value})}
+                  className="text-sm"
+                  required
+                />
+              </div>
+
+              <div>
+                <label className="text-xs font-semibold text-gray-700 mb-1 block">Email</label>
+                <Input
+                  type="email"
+                  placeholder="Your email"
+                  value={leadInfo.email}
+                  onChange={(e) => setLeadInfo({...leadInfo, email: e.target.value})}
+                  className="text-sm"
+                />
+              </div>
+
+              <Button type="submit" className="w-full bg-gradient-to-r from-blue-900 to-blue-800 hover:from-blue-800 hover:to-blue-700 text-sm font-bold">
+                Submit Details
               </Button>
             </form>
           </div>
