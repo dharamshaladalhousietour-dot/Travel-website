@@ -187,26 +187,19 @@ const Hero = () => {
                   <MapPin className="h-3 w-3" />
                   Destination
                 </label>
-                <Select 
+                <Input 
+                  type="text" 
+                  className="h-9"
+                  placeholder="e.g. Dharamshala, Manali..."
                   value={enquiryData.destination}
-                  onValueChange={(value) => setEnquiryData({...enquiryData, destination: value})}
-                >
-                  <SelectTrigger className="h-9">
-                    <SelectValue placeholder="Select Destination" />
-                  </SelectTrigger>
-                  <SelectContent>
-                    <SelectItem value="shimla">Shimla</SelectItem>
-                    <SelectItem value="kashmir">Kashmir</SelectItem>
-                    <SelectItem value="manali">Manali</SelectItem>
-                    <SelectItem value="dharamshala">Dharamshala</SelectItem>
-                    <SelectItem value="srinagar">Srinagar</SelectItem>
-                    <SelectItem value="leh-ladakh">Leh Ladakh</SelectItem>
-                    <SelectItem value="goa">Goa</SelectItem>
-                    <SelectItem value="kerala">Kerala</SelectItem>
-                    <SelectItem value="rajasthan">Rajasthan</SelectItem>
-                    <SelectItem value="other">Other</SelectItem>
-                  </SelectContent>
-                </Select>
+                  onChange={(e) => {
+                    setEnquiryData({...enquiryData, destination: e.target.value});
+                    setSearchError('');
+                  }}
+                />
+                {searchError && (
+                  <p className="text-xs text-red-600 mt-1">{searchError}</p>
+                )}
               </div>
 
               {/* Start Date */}
