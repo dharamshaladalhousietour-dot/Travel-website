@@ -249,17 +249,17 @@ const AIChatbot = () => {
           <div className="flex items-center gap-1">
             <button
               onClick={handleMinimize}
-              className="p-2 hover:bg-blue-700 rounded-full transition-colors"
+              className="p-2 hover:bg-white hover:text-blue-900 rounded-full transition-all duration-200 bg-blue-800"
               title="Minimize"
             >
-              <Minus className="h-4 w-4" />
+              <Minus className="h-5 w-5 font-bold" />
             </button>
             <button
               onClick={handleClose}
-              className="p-2 hover:bg-blue-700 rounded-full transition-colors"
+              className="p-2 hover:bg-white hover:text-blue-900 rounded-full transition-all duration-200 bg-blue-800"
               title="Close"
             >
-              <X className="h-5 w-5" />
+              <X className="h-6 w-6 font-bold" />
             </button>
           </div>
         </div>
