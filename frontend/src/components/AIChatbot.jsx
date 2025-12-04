@@ -176,13 +176,17 @@ const AIChatbot = () => {
     window.location.href = 'tel:+918679333355';
   };
 
-  const quickReplies = [
-    '🏔️ Himachal packages',
-    '💑 Honeymoon packages',
-    '💼 Corporate events',
-    '💍 Destination weddings',
-    '📞 Contact details',
-    '💰 Package pricing'
+  const mainOptions = [
+    '💍 Dharamshala Weddings',
+    '🎉 Events in Dharamshala',
+    '🏔️ Travel & Tour Packages'
+  ];
+
+  const actionButtons = [
+    { text: '📋 Share Details', action: () => setShowLeadForm(true) },
+    { text: '💬 WhatsApp Us', action: handleWhatsApp },
+    { text: '📞 Call Now', action: handleCall },
+    { text: '📧 Email Us', action: handleEmail }
   ];
 
   const toggleChat = () => {
