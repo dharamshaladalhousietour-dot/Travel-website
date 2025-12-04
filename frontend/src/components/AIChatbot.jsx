@@ -437,49 +437,47 @@ const AIChatbot = () => {
 
         {/* Input Area */}
         <div className="p-4 bg-white border-t border-gray-200">
-          {!leadCaptured && messages.length > 3 && !showLeadForm && (
-            <button
-              onClick={() => setShowLeadForm(true)}
-              className="w-full mb-3 py-2 bg-blue-900 hover:bg-blue-800 text-white text-sm rounded-lg transition-colors"
-            >
-              📋 Share your details for better assistance
-            </button>
-          )}
-          
-          <div className="flex gap-2 items-center">
+          <div className="flex gap-2 items-center mb-3">
             <Input
               type="text"
               placeholder="Type your message..."
               value={inputMessage}
               onChange={(e) => setInputMessage(e.target.value)}
               onKeyPress={(e) => e.key === 'Enter' && handleSendMessage()}
-              className="flex-1"
+              className="flex-1 text-sm"
               disabled={isLoading}
             />
             <Button
               onClick={() => handleSendMessage()}
               disabled={isLoading || !inputMessage.trim()}
-              className="bg-gradient-to-r from-blue-900 to-blue-800 hover:from-blue-800 hover:to-blue-700"
+              className="bg-gradient-to-r from-blue-900 to-blue-800 hover:from-blue-800 hover:to-blue-700 px-4"
             >
               <Send className="h-5 w-5" />
             </Button>
           </div>
           
-          {/* Action Buttons */}
-          <div className="flex gap-2 mt-3">
+          {/* Contact Buttons */}
+          <div className="grid grid-cols-2 gap-2">
             <button
               onClick={handleWhatsApp}
-              className="flex-1 flex items-center justify-center gap-2 py-2 bg-green-600 hover:bg-green-700 text-white text-sm rounded-lg transition-colors"
+              className="flex items-center justify-center gap-1.5 py-2 bg-green-600 hover:bg-green-700 text-white text-xs font-semibold rounded-lg transition-colors"
             >
-              <PhoneCall className="h-4 w-4" />
+              <Phone className="h-3.5 w-3.5" />
               WhatsApp
             </button>
             <button
               onClick={handleCall}
-              className="flex-1 flex items-center justify-center gap-2 py-2 bg-blue-600 hover:bg-blue-700 text-white text-sm rounded-lg transition-colors"
+              className="flex items-center justify-center gap-1.5 py-2 bg-blue-600 hover:bg-blue-700 text-white text-xs font-semibold rounded-lg transition-colors"
             >
-              <Phone className="h-4 w-4" />
+              <Phone className="h-3.5 w-3.5" />
               Call Now
+            </button>
+            <button
+              onClick={handleEmail}
+              className="flex items-center justify-center gap-1.5 py-2 bg-purple-600 hover:bg-purple-700 text-white text-xs font-semibold rounded-lg transition-colors col-span-2"
+            >
+              <Mail className="h-3.5 w-3.5" />
+              Email: holidays@prettyplanettravels.com
             </button>
           </div>
         </div>
