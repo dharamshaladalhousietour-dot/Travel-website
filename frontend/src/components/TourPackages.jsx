@@ -1085,7 +1085,7 @@ const TourPackages = () => {
             </div>
           </div>
 
-          {showDetails && (
+          {expandedPackage === pkg.id && (
             <div className="border-t pt-4 space-y-4">
               <div>
                 <h4 className="font-bold text-green-600 mb-2">Inclusions</h4>
