@@ -184,7 +184,14 @@ const Hero = () => {
                     setEnquiryData({...enquiryData, destination: e.target.value});
                     setSearchError('');
                   }}
+                  list="destinations-list"
+                  autoComplete="off"
                 />
+                <datalist id="destinations-list">
+                  {destinations.map((dest, index) => (
+                    <option key={index} value={dest} />
+                  ))}
+                </datalist>
                 {searchError && (
                   <p className="text-xs text-red-600 mt-1">{searchError}</p>
                 )}
