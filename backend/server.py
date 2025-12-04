@@ -493,6 +493,9 @@ Collect lead info and tell them: "Thank you! Our team will contact you within 1 
             "user_name": chat_message.user_name,
             "user_email": chat_message.user_email,
             "user_phone": chat_message.user_phone,
+            "service_type": chat_message.service_type,
+            "event_date": chat_message.event_date,
+            "guest_count": chat_message.guest_count,
             "timestamp": datetime.utcnow()
         }
         await db.chat_history.insert_one(chat_history)
