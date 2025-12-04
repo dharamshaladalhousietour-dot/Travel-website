@@ -469,6 +469,12 @@ Collect lead info and tell them: "Thank you! Our team will contact you within 1 
             user_context += f"\nUser Email: {chat_message.user_email}"
         if chat_message.user_phone:
             user_context += f"\nUser Phone: {chat_message.user_phone}"
+        if chat_message.service_type:
+            user_context += f"\nService Type: {chat_message.service_type}"
+        if chat_message.event_date:
+            user_context += f"\nEvent Date: {chat_message.event_date}"
+        if chat_message.guest_count:
+            user_context += f"\nGuest Count: {chat_message.guest_count}"
         
         message_text = chat_message.message
         if user_context:
