@@ -242,21 +242,22 @@ const AIChatbot = () => {
               <span className="absolute -bottom-1 -right-1 h-3 w-3 bg-green-400 rounded-full border-2 border-white"></span>
             </div>
             <div>
-              <h3 className="font-bold text-lg">Pretty Planet AI</h3>
-              <p className="text-xs text-blue-200">Travel Assistant</p>
+              <h3 className="font-bold text-lg">Pretty Planet</h3>
+              <p className="text-xs text-blue-200">Dharamshala Specialist</p>
             </div>
           </div>
-          <div className="flex items-center gap-2">
+          <div className="flex items-center gap-1">
             <button
-              onClick={handleWhatsApp}
+              onClick={handleMinimize}
               className="p-2 hover:bg-blue-700 rounded-full transition-colors"
-              title="Chat on WhatsApp"
+              title="Minimize"
             >
-              <PhoneCall className="h-4 w-4" />
+              <Minus className="h-4 w-4" />
             </button>
             <button
-              onClick={toggleChat}
+              onClick={handleClose}
               className="p-2 hover:bg-blue-700 rounded-full transition-colors"
+              title="Close"
             >
               <X className="h-5 w-5" />
             </button>
