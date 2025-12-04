@@ -114,7 +114,10 @@ const AIChatbot = () => {
           message: messageText,
           user_name: leadCaptured ? leadInfo.name : null,
           user_email: leadCaptured ? leadInfo.email : null,
-          user_phone: leadCaptured ? leadInfo.phone : null
+          user_phone: leadCaptured ? leadInfo.phone : null,
+          service_type: leadCaptured ? leadInfo.serviceType : null,
+          event_date: leadCaptured ? leadInfo.eventDate : null,
+          guest_count: leadCaptured ? leadInfo.guestCount : null
         })
       });
 
